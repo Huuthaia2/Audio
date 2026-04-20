@@ -1,0 +1,286 @@
+BÁO CÁO ĐỐI CHIẾU LOGIC V4 vs V5.5 (Đã tính cả file di chuyển)
+Trạng thái: V4 (274 file) | V5.5 (178 file)
+Kết quả: Giữ (177) | Tăng (+1) | Giảm (-97)
+====================================================================================================
+
+[+] CÁC FILE MỚI (V5.5 Tìm thấy thêm - Chặt chẽ và thông minh hơn):
+ + soi-san-moi-0658.txt -> soi-san-moi-quyen-1_1.mp3
+
+[-] CÁC FILE BỊ LOẠI BỎ (V4 Nhận nhầm - V5.5 Đã lọc sạch):
+ - 3-chi-em-0005.txt (Từng bị V4 khớp với: chi-em-loan-luan.mp3)
+ - 30-ngay-lam-di-cua-toi-0004.txt (Từng bị V4 khớp với: 30-ngay-lam-di-cua-toi+0004.mp3) Khớp
+ - anh-trai-va-em-gai-0009.txt (Từng bị V4 khớp với: sm-loan-luan-anh-trai-va-em-gai.mp3)
+ - ba-thim-chiu-choi-0043.txt (Từng bị V4 khớp với: ba-chi-chiu-choi+Chuong-0001-0030-.mp3) Khớp
+ - ban-hang-xom-0002.txt (Từng bị V4 khớp với: anh-hang-xom.mp3)
+ - bi-mat-cua-co-ban-than-0016.txt (Từng bị V4 khớp với: bi-mat-cua-ban-than.mp3) Khớp
+ - bo-chong-them-con-dau-0017.txt (Từng bị V4 khớp với: bo-chong-hiep-con-dau.mp3)
+ - cai-quan-ky-niem-0001.txt (Từng bị V4 khớp với: cai-quan-ky-niem-ll+Chuong-0001-0018-.mp3) Khớp
+ - chau-gai-ho-0022.txt (Từng bị V4 khớp với: chau-gai-ho-full.mp3) Khớp
+ - chi-dau-dam-0086.txt (Từng bị V4 khớp với: chi-dau-dam-loan-luan+Chuong-0001-0030-.mp3) Khớp
+ - chi-my-cua-toi-0011.txt (Từng bị V4 khớp với: chi-my-cua-toi-loan-luan+Chuong-0010-.mp3) Khớp
+ - chi-oi-ll-0008.txt (Từng bị V4 khớp với: chi-oi-loan-luan+Chuong-0007-.mp3) Khớp
+ - chon-hoang-lac-ll-hay-0021.txt (Từng bị V4 khớp với: chon-hoang-lac+Chuong-0010-.mp3) Khớp
+ - chuyen-cam-sung-0004.txt (Từng bị V4 khớp với: cam-sung.mp3) Khớp
+ - chuyen-co-giao-trinh-0035.txt (Từng bị V4 khớp với: co-giao-trinh_1.mp3) Khớp
+ - chuyen-co-nhan-vien-ngan-hang-0008.txt (Từng bị V4 khớp với: co-nhan-vien-ngan-hang.mp3) Khớp
+ - chuyen-cong-tac-mien-mui-0008.txt (Từng bị V4 khớp với: chuyen-cong-tac-mien-nam.mp3) Khớp
+ - chuyen-cua-linh-0001.txt (Từng bị V4 khớp với: chuyen-cua-lien_1.mp3)
+ - chuyen-cua-nhung-loan-luan-0005.txt (Từng bị V4 khớp với: chuyen-cua-nhung.mp3) Khớp
+ - chuyen-cua-toi-0013.txt (Từng bị V4 khớp với: cau-chuyen-cua-toi.mp3) Khớp
+ - chuyen-di-cong-tac-sung-suong-0001.txt (Từng bị V4 khớp với: chuyen-cong-tac-sung-suong.mp3) Khớp
+ - chuyen-nha-co-nga-0027.txt (Từng bị V4 khớp với: chuyen-nha-co-nga-2+Chuong-0076-0100-.mp3) Khớp
+ - co-gai-cuong-dam-0001.txt (Từng bị V4 khớp với: co-giao-cuong-dam_1.mp3) Khớp
+ - co-giao-ngan-0007.txt (Từng bị V4 khớp với: co-giao-nga.mp3) -> Ko khớp (Ngân vs Nga)
+ - co-hang-xom-dam-dang-0123.txt (Từng bị V4 khớp với: chi-hang-xom-dam-dang.mp3) -> Khớp (Cô vs Chị)
+ - cuoc-tinh-ngang-trai-0023.txt (Từng bị V4 khớp với: cuoc-tinh-ngang-trai-loan-luan+Chuong-0023-End.mp3) Khớp
+ - dam-than-0031.txt (Từng bị V4 khớp với: than-dam.mp3) Khớp
+ - dan-may-bay-sieu-dam-0088.txt (Từng bị V4 khớp với: may-bay-sieu-dam.mp3) Khớp
+ - danh-thuc-tinh-thu-2-0026.txt (Từng bị V4 khớp với: danh-thuc-tinh-thu_1.mp3) Khớp
+ - di-lan-thanh-con-pho-0009.txt (Từng bị V4 khớp với: di-lan-thanh-con-pho-loan-luan+Chuong-0009-.mp3) -> Khớp
+ - doi-sinh-vien-thuc-tap-0022.txt (Từng bị V4 khớp với: truyen-sex-sinh-vien-thuc-tap+Chuong-0022-End-.mp3) Khớp
+ - dong-doi-2-0012.txt (Từng bị V4 khớp với: dong-doi.mp3) -> Ko khớp (Phần 2 vs Phần 1)
+ - du-hoc-sinh-0004.txt (Từng bị V4 khớp với: nu-du-hoc-sinh.mp3) Khớp
+ - du-len-chi-dau-0004.txt (Từng bị V4 khớp với: truyen-xxx-loan-luan-du-len-chi-dau+Chuong-0004-.mp3) Khớp
+ - duc-vong-gia-dinh-2-0085.txt (Từng bị V4 khớp với: duc-vong-gia-dinh.mp3) -> Ko khớp (Phần 2 vs Phần 1)
+ - gac-xep-0060.txt (Từng bị V4 khớp với: gac-xep-loan-luan+Chuong-0000-0050-.mp3) Khớp
+ - gai-mot-con-0061.txt (Từng bị V4 khớp với: gai-mot-con-full.mp3) Khớp
+ - gia-dinh-dam-loan-0046.txt (Từng bị V4 khớp với: gia-dinh-dam-loan+0037_1.mp3) -> Khớp
+ - giang-bay-loan-luan-0006.txt (Từng bị V4 khớp với: giang-bay.mp3) Khớp
+ - giet-ong-ngoai-0008.txt (Từng bị V4 khớp với: truyen-loan-luan-giet-ong-ngoai+Chuong-0008-Mon-qua-End-.mp3) Khớp
+ - hai-nu-sinh-dam-dang-0006.txt (Từng bị V4 khớp với: nu-sinh-dam-dang.mp3) -> Khớp (Hai vs Một)
+ - ham-muon-0003.txt (Từng bị V4 khớp với: ham-muon-loan-luan+Chuong-0028-.mp3) -> Khớp
+ - ham-muon-tiem-an-2-0113.txt (Từng bị V4 khớp với: ham-muon-tiem-an.mp3) Khớp
+ - hanh-phuc-cua-me-va-0010.txt (Từng bị V4 khớp với: hanh-phuc-cua-me+Chuong-0010-.mp3) Khớp
+ - hanh-phuc-gia-dinh-0020.txt (Từng bị V4 khớp với: hanh-phuc-gia-dinh+0022.mp3) Khớp
+ - hay-khong-bang-hen-0118.txt (Từng bị V4 khớp với: hay-khong-bang-hen-loan-luan+Chuong-0101-0121-.mp3) Khớp
+ - hoi-uc-ngay-do-ta-ben-nhau-0046.txt (Từng bị V4 khớp với: hoi-uc-ngay-do-ta-ben-nhau-full.mp3) Khớp
+ - huong-nong-trong-gio-0031.txt (Từng bị V4 khớp với: huong-nong-trong-gio+0031.mp3) Khớp
+ - lan-dau-tien-lam-dan-ong-0003.txt (Từng bị V4 khớp với: truyen-17-lan-dau-tien-lam-dan-ong+Chuong-0002-.mp3) -> Khớp
+ - lay-may-bay-lay-luon-me-minh-0004.txt (Từng bị V4 khớp với: lai-may-bay-lai-luon-me-minh+Chuong-0001-0002-.mp3) -> Khớp
+ - loan-luan-ky-su-0001.txt (Từng bị V4 khớp với: ky-su-loan-luan.mp3) -> Khớp
+ - loan-luan-nu-canh-sat-dam-dang-phan-2-0004.txt (Từng bị V4 khớp với: loan-luan-nu-canh-sat-dam-dang+Chuong-0048-.mp3) -> Ko khớp (Phần 2 vs Phần 1)
+ - loan-luan-nuoc-mat-mua-thu-0011.txt (Từng bị V4 khớp với: nuoc-mat-mua-thu.mp3) -> Khớp
+ - ma-vo-dam-dang-0010.txt (Từng bị V4 khớp với: me-vo-dam-dang.mp3) -> Khớp (Má vs Mẹ)
+ - me-don-than-0012.txt (Từng bị V4 khớp với: me-don-than-2+Chuong-0001-0005-.mp3) -> Ko khớp (Phần 1 vs Phần 2)
+ - me-la-nguoi-mau-do-lotllntr-0011.txt (Từng bị V4 khớp với: truyen-sex-me-la-nguoi-mau-do-lot-loan-luan+Chuong-0012-.mp3) -> Khớp
+ - me-vo-cua-toi100-0014.txt (Từng bị V4 khớp với: me-vo-cua-toi.mp3) -> Khớp
+ - me-yeu-tinh-yeu-lon-doi-toi-0085.txt (Từng bị V4 khớp với: tinh-yeu-lon-doi-toi+Chuong-0001-0057-.mp3) -> Khớp
+ - mot-dem-voi-me-ban-0033.txt (Từng bị V4 khớp với: mot-dem-voi-me-ban-loan-luan+Chuong-0035-.mp3) -> Khớp
+ - mot-me-mot-con-0010.txt (Từng bị V4 khớp with: mot-me-mot-con-loan-luan+Chuong-0007-End.mp3) -> Khớp
+ - mua-he-nong-bong-0001.txt (Từng bị V4 khớp với: nong-bong-mua-he+Chuong-0013-End-.mp3) -> Khớp
+ - muoi-nam-yeu-em-0016.txt (Từng bị V4 khớp với: muoi-nam-yeu-em+0007.mp3) -> Khớp
+ - nguoi-chi-gai-dam-dang-0004.txt (Từng bị V4 khớp với: nguoi-chi-dau-dam-dang.mp3) -> Ko khớp (Chị Gái vs Chị Dâu)
+ - nguoi-me-vo-toi-0014.txt (Từng bị V4 khớp với: nguoi-me-vo-toi-ll+Chuong-0006-.mp3) -> Khớp
+ - nguoi-tinh-0002.txt (Từng bị V4 khớp với: nguoi-tinh-cu.mp3) -> Ko khớp (Tên quá ngắn dễ nhầm)
+ - nguoi-tinh-cua-me-toi-0027.txt (Từng bị V4 khớp với: nguoi-tinh-cua-toi.mp3) -> Ko khớp (Mẹ Tôi vs Tôi)
+ - nguoi-tinh-cua-vo-0130.txt (Từng bị V4 khớp với: nguoi-tinh-cua-toi.mp3) -> Ko khớp (Vợ vs Tôi)
+ - nguoi-tinh-cua-vo-toi-0004.txt (Từng bị V4 khớp với: nguoi-tinh-cua-toi.mp3) -> Ko khớp (Vợ Tôi vs Tôi)
+ - nguoi-yeu-cua-vo-0004.txt (Từng bị V4 khớp với: nguoi-yeu-cu.mp3) -> Ko khớp
+ - nguyet-kieu-su-nuong-0021.txt (Từng bị V4 khớp với: nguyet-kieu-su-nuong+0021.mp3) -> Khớp
+ - nhung-ba-chi-ho-dam-dang-0016.txt (Từng bị V4 khớp với: nhung-ba-co-dam-dang+Chuong-0054_2.mp3) -> Ko khớp (Chị vs Cô)
+ - nhung-cau-chuyen-cua-toi-0004.txt (Từng bị V4 khớp với: cau-chuyen-cua-toi.mp3) -> Khớp
+ - nhung-cau-chuyen-that-0007.txt (Từng bị V4 khớp với: nhung-cau-chuyen.mp3) -> Khớp
+ - nhung-chuyen-ki-la-lieu-co-ll-0027.txt (Từng bị V4 khớp với: nhung-chuyen-ki-la-lieu-co-ll+0027.mp3) -> Khớp
+ - nhung-dem-nga-ngoc-0046.txt (Từng bị V4 khớp với: nhung-dem-ngoc-nga+Chuong-0001-0045-.mp3) -> Khớp (Đảo chữ)
+ - nhung-nguoi-me-hien-hau-0023.txt (Từng bị V4 khớp với: nhung-nguoi-me-hien-hau-loan-luan+Chuong-0023-END-.mp3) -> Khớp
+ - nhung-vu-hiep-dam-0010.txt (Từng bị V4 khớp với: nhung-vu-hiep-dam+0008.mp3) -> Khớp
+ - nu-canh-sat-dam-dang-0048.txt (Từng bị V4 khớp với: loan-luan-nu-canh-sat-dam-dang+Chuong-0048-.mp3) -> Khớp
+ - pha-trinh-em-hue-0035.txt (Từng bị V4 khớp với: pha-trinh-em-ho.mp3) -> Ko khớp (Huệ vs Họ)
+ - sac-mau-cuoc-song-0031.txt (Từng bị V4 khớp với: sac-mau-cuoc-song+0045_1.mp3) -> Khớp
+ - song-chung-voi-em-gai-ho-0002.txt (Từng bị V4 khớp với: loan-luan-song-chung-voi-em-gai-ho+Chuong-0001-End-.mp3) -> Khớp
+ - suy-doi-me-yeu-ll-ntr-0006.txt (Từng bị V4 khớp với: suy-doi-me-yeu-ll+Chuong-0006-.mp3) -> Khớp
+ - thang-tuan-ba-hien-18-0052.txt (Từng bị V4 khớp với: thang-tuan-ba-hien+Chuong-0000-0050-.mp3) -> Khớp
+ - thay-day-gym-cua-toi-0017.txt (Từng bị V4 khớp với: thay-day-gym-cua-toi+0016.mp3) -> Khớp
+ - thi-tran-day-cam-do-0020.txt (Từng bị V4 khớp với: thi-tran-day-cam-gio_1.mp3) -> Khớp (Dò vs Gió - có thể nhầm nhưng thường là 1)
+ - thien-than-va-ac-quy-2-0023.txt (Từng bị V4 khớp với: thien-than-va-ac-quy.mp3) -> Ko khớp (Phần 2 vs Phần 1)
+ - tinh-me-con-0054.txt (Từng bị V4 khớp với: chuyen-tinh-me-con-ll.mp3) -> Khớp
+ - tinh-yeu-hay-toi-loill-0023.txt (Từng bị V4 khớp với: tinh-yeu-hay-toi-loi-loan-luan+Chuong-0001-0017-.mp3) -> Khớp
+ - toi-loi-2-0033.txt (Từng bị V4 khớp với: toi-loi_2.mp3) -> Khớp
+ - toi-ngoai-tinh-0006.txt (Từng bị V4 khớp với: vo-toi-ngoai-tinh.mp3) -> Ko khớp (Tôi vs Vợ Tôi)
+ - toi-nguoi-dan-ba-toi-nghiep-va-dua-con-ngo-nghichll-0011.txt (Từng bị V4 khớp với: toi-nguoi-dan-ba-toi-nghiep-va-dua-con-ngo-nghich-ll+Chuong-0001-0011-.mp3) -> Khớp
+ - toi-va-di-b-ky-su-loan-luan-0011.txt (Từng bị V4 khớp với: ky-su-loan-luan-toi-va-di-b+Chuong-0026-.mp3) -> Khớp
+ - truyen-doi-toi-that-0009.txt (Từng bị V4 khớp với: chuyen-that-doi-toi.mp3) -> Khớp
+ - truyen-loan-luan-thang-cuu-0013.txt (Từng bị V4 khớp với: thang-cuu-loan-luan+Chuong-0013-.mp3) -> Khớp
+ - uong-nham-thuoc-ll-0040.txt (Từng bị V4 khớp với: uong-nham-thuoc+0109_1.mp3)
+ - van-do-0126.txt (Từng bị V4 khớp với: truyen-sex-an-do.mp3)
+ - ve-que-0025.txt (Từng bị V4 khớp với: ve-que-2.mp3)
+
+====================================================================================================
+[=] DANH SÁCH GIỮ NGUYÊN (Khớp chuẩn ở cả 2 bản):
+ = 49-chua-qua-53-da-toi-0011.txt -> 49-chua-qua-53-da-toi.mp3
+ = _ke-nan-tuong-trong-tan-the-0039.txt -> ke-nan-tuong-trong-tan-the.mp3
+ = _phap-su-tam-kiep-0015.txt -> phap-su-tam-kiep.mp3
+ = ac-mong-khoa-than-0006.txt -> ac-mong-khoa-than.mp3
+ = bac-tong-diet-vong-0019.txt -> bac-tong-diet-vong.mp3
+ = ban-gai-dam-dang-thoa-man-so-thich-cuckold-0016.txt -> ban-gai-dam-dang-thoa-man-so-thich-cuckold.mp3
+ = ban-nga-0021.txt -> ban-nga.mp3
+ = banh-troi-nuoc-0011.txt -> banh-troi-nuoc.mp3
+ = bi-mat-phia-sau-mot-gia-dinh-hanh-phuc-0036.txt -> bi-mat-phia-sau-mot-gia-dinh-hanh-phuc+Chuong-0001-0053.mp3
+ = buom-chua-0066.txt -> buom-chua_1.mp3
+ = cac-my-nu-tay-uyen-0052.txt -> cac-my-nu-tay-uyen_1.mp3
+ = cach-biet-tuoi-tac-0026.txt -> cach-biet-tuoi-tac.mp3
+ = cau-tu-chuong-0033.txt -> cau-tu-chuong.mp3
+ = cave-bien-dong-0015.txt -> cave-bien-dong+Chuong-0015-End.mp3
+ = chi-co-me-thoi-0122.txt -> chi-co-me-thoi+Chuong-0001-0050-.mp3
+ = chi-dau-ho-dam-dang-0016.txt -> chi-dau-ho-dam-dang+Chuong-0016-End-.mp3
+ = chi-dau-ho-tuong-xa-ma-lai-qua-gan-0023.txt -> chi-dau-ho-tuong-xa-ma-lai-qua-gan+Chuong-0045-End-.mp3
+ = chi-dau-khoe-hang-0038.txt -> chi-dau-khoe-hang.mp3
+ = chi-em-sinh-doi-0002.txt -> chi-em-sinh-doi.mp3
+ = cho-noi-nga-bay-0015.txt -> cho-noi-nga-bay.mp3
+ = choi-vo-nguoi-ta-0020.txt -> choi-vo-nguoi-ta+Chuong-0015-.mp3
+ = chung-cu-dam-duc-0016.txt -> chung-cu-dam-duc_1.mp3
+ = chuyen-cua-ba-tui-0159.txt -> chuyen-cua-ba-tui+Chuong-0158-End-.mp3
+ = chuyen-cua-ngoc-0006.txt -> chuyen-cua-ngoc.mp3
+ = chuyen-doi-thuong-0015.txt -> chuyen-doi-thuong.mp3
+ = chuyen-gia-nhu-that-0071.txt -> chuyen-gia-nhu-that_1.mp3
+ = chuyen-quan-net-0010.txt -> chuyen-quan-net.mp3
+ = chuyen-sex-tour-den-vinh-ha-long-0004.txt -> chuyen-sex-tour-den-vinh-ha-long+Chuong-0008-End.mp3
+ = chuyen-tinh-cong-so-0021.txt -> chuyen-tinh-cong-so.mp3
+ = chuyen-tinh-noi-gac-tro-0073.txt -> chuyen-tinh-noi-gac-tro.mp3
+ = chuyen-tinh-van-phong-0030.txt -> chuyen-tinh-van-phong.mp3
+ = chuyen-xe-bus-so-13-0260.txt -> chuyen-xe-bus-so-13_1.mp3
+ = co-dai-ven-duong-0021.txt -> co-dai-ven-duong_1.mp3
+ = co-gia-su-cua-toi-0020.txt -> co-gia-su-cua-toi+Chuong-0020-Full-.mp3
+ = co-giao-mong-my-0009.txt -> co-giao-mong-my.mp3
+ = co-giao-thuy-0004.txt -> co-giao-thuy+Chuong-0021-.mp3
+ = co-giao-thuy-2-0015.txt -> co-giao-thuy-2.mp3
+ = co-giao-tuyet-0004.txt -> co-giao-tuyet+Chuong-0009-End-.mp3
+ = co-giao-uyen-0021.txt -> co-giao-uyen.mp3
+ = co-long-vuc-0011.txt -> co-long-vuc+Chuong-0010.mp3
+ = con-cung-thoi-hien-dai-0030.txt -> con-cung-thoi-hien-dai.mp3
+ = con-thay-cha-lam-chong-cua-me-0037.txt -> thay-cha-lam-chong-cua-me+Chuong-0036-End.mp3
+ = cu-lua-0069.txt -> cu-lua_1.mp3
+ = cuoc-song-mien-que-0030.txt -> cuoc-song-mien-que+Chuong-0025-.mp3
+ = dai-nao-hoc-duong-0098.txt -> dai-nao-hoc-duong_1.mp3
+ = danh-thuc-tinh-thu-0020.txt -> danh-thuc-tinh-thu_1.mp3
+ = day-thi-qua-som-0019.txt -> day-thi-qua-som+Chuong-0020-End-.mp3
+ = di-ba-0024.txt -> di-ba_1.mp3
+ = di-ghe-dam-dang-0040.txt -> di-ghe-dam-dang+Chuong-0001-0020-.mp3
+ = doi-dau-0027.txt -> doi-dau.mp3
+ = doi-sinh-vien-0012.txt -> doi-sinh-vien.mp3
+ = dong-doi-0009.txt -> dong-doi.mp3
+ = dong-doi-xo-day-0025.txt -> dong-doi-xo-day.mp3
+ = du-con-ban-than-0009.txt -> du-con-ban-than.mp3
+ = du-gai-xa-chong-0026.txt -> du-gai-xa-chong.mp3
+ = duc-vong-0007.txt -> duc-vong.mp3
+ = duc-vong-gia-dinh-0030.txt -> duc-vong-gia-dinh.mp3
+ = ga-voi-thoc-0006.txt -> ga-voi-thoc.mp3
+ = gai-ban-hoa-0079.txt -> gai-ban-hoa_1.mp3
+ = gai-goi-cao-cap-0006.txt -> gai-goi-cao-cap+Chuong-0009-End.mp3
+ = gai-que-0015.txt -> gai-que.mp3
+ = gene-cave-0016.txt -> gene-cave+Chuong-0016-End.mp3
+ = gia-dinh-ben-vo-0017.txt -> gia-dinh-ben-vo+Chuong-0017-End-.mp3
+ = gia-dinh-dam-loan-cua-vinh-0104.txt -> gia-dinh-dam-loan-cua-vinh+Chuong-0001-0050-.mp3
+ = gia-dinh-nho-0004.txt -> gia-dinh-nho.mp3
+ = giao-vien-yoga-dam-dang-0545.txt -> giao-vien-yoga-dam-dang_1.mp3
+ = goc-khuat-0018.txt -> goc-khuat.mp3
+ = hai-nguoi-vo-0009.txt -> hai-nguoi-vo.mp3
+ = ham-muon-tiem-an-0026.txt -> ham-muon-tiem-an.mp3
+ = han-0021.txt -> han_1.mp3
+ = hanh-trinh-cuckold-cua-toi-0019.txt -> hanh-trinh-cuckold-cua-toi+Chuong-0010-.mp3
+ = hoa-tham-giua-doi-0006.txt -> hoa-tham-giua-doi.mp3
+ = hoan-du-thanh-nu-0120.txt -> hoan-du-thanh-nu_1.mp3
+ = hoan-lac-thanh-giao-0020.txt -> hoan-lac-thanh-giao.mp3
+ = hoan-menh-0080.txt -> hoan-menh_1.mp3
+ = hoi-han-muon-mang-0058.txt -> hoi-han-muon-mang_1.mp3
+ = hoi-loan-luan-dam-dang-0008.txt -> hoi-loan-luan-dam-dang+Chuong-0007-.mp3
+ = hung-lai-0015.txt -> hung-lai+Chuong-0001-0015-.mp3
+ = huong-vi-tinh-than-0098.txt -> huong-vi-tinh-than.mp3
+ = ke-hoach-loan-luan-0010.txt -> ke-hoach-loan-luan+Chuong-0001-0010.mp3
+ = ke-nan-tuong-trong-tan-the-0039.txt -> ke-nan-tuong-trong-tan-the.mp3
+ = lac-thu-nha-co-giao-0068.txt -> lac-thu-nha-co-giao_1.mp3
+ = lam-thue-0036.txt -> lam-thue.mp3
+ = lam-tinh-voi-chi-chu-nha-0003.txt -> lam-tinh-voi-chi-chu-nha.mp3
+ = loan-luan-voi-me-va-thim-0004.txt -> loan-luan-voi-me-va-thim+Chuong-0002-.mp3
+ = loi-xua-0004.txt -> loi-xua.mp3
+ = lua-duc-vong-0011.txt -> lua-duc-vong.mp3
+ = luong-son-ba-chuc-anh-dai-0041.txt -> luong-son-ba-chuc-anh-dai.mp3
+ = ly-hoa-0015.txt -> ly-hoa+Chuong-0015-End-.mp3
+ = mat-vo-0002.txt -> mat-vo.mp3
+ = mau-ma-0023.txt -> mau-ma.mp3
+ = me-don-than-2-0004.txt -> me-don-than-2+Chuong-0001-0005-.mp3
+ = me-toi-lam-di-0010.txt -> me-toi-lam-di.mp3
+ = me-toi-tinh-toi-2-loan-luan-thoi-chien-0008.txt -> me-toi-tinh-toi-2-loan-luan-thoi-chien+Chuong-0005-.mp3
+ = me-yeu-cua-toi-ll-0007.txt -> me-yeu-cua-toi-ll+Chuong-0000-0006-.mp3
+ = mo-loan-mo-dam-0039.txt -> mo-loan-mo-dam+Chuong-0039-End-.mp3
+ = moi-thom-duoi-hien-nha-0008.txt -> moi-thom-duoi-hien-nha+Chuong-0009-End.mp3
+ = mot-con-nguoi-hai-the-gioi-0004.txt -> mot-con-nguoi-hai-the-gioi.mp3
+ = mua-hoa-anh-dao-no-0013.txt -> mua-hoa-anh-dao-no+Chuong-0001-0008-.mp3
+ = my-memory-0038.txt -> my-memory+Chuong-0021-0038-Full-.mp3
+ = ngoc-cam-0027.txt -> ngoc-cam_1.mp3
+ = ngoi-nha-hanh-phuc-0006.txt -> ngoi-nha-hanh-phuc.mp3
+ = nguoi-dan-ba-nhieu-chong-0037.txt -> nguoi-dan-ba-nhieu-chong.mp3
+ = nguoi-dan-ong-cua-me-ll-0011.txt -> nguoi-dan-ong-cua-me-ll+Chuong-0001-0022.mp3
+ = nguoi-me-ke-xinh-dep-chuyen-the-0003.txt -> nguoi-me-ke-xinh-dep-chuyen-the+Chuong-0003-.mp3
+ = nguoi-me-xinh-dep-cua-toi-0003.txt -> nguoi-me-xinh-dep-cua-toi+Chuong-0000-0001-.mp3
+ = nguoi-vo-dep-0033.txt -> nguoi-vo-dep.mp3
+ = nguoi-vo-manh-me-sa-nga-thanh-no-le-tinh-duc-0003.txt -> nguoi-vo-manh-me-sa-nga-thanh-no-le-tinh-duc.mp3
+ = nguyet-0013.txt -> nguyet.mp3
+ = nha-co-con-gai-moi-lon-0202.txt -> nha-co-con-gai-moi-lon.mp3
+ = nhan-tinh-cua-me-0006.txt -> nhan-tinh-cua-me_1.mp3
+ = nhat-ky-chinh-phuc-me-va-di-0033.txt -> nhat-ky-chinh-phuc-me-va-di_1.mp3
+ = nhu-mot-giac-mo-0006.txt -> nhu-mot-giac-mo.mp3
+ = nhu-mot-giac-mo-2-0018.txt -> nhu-mot-giac-mo-2.mp3
+ = nhuc-duc-0003.txt -> nhuc-duc.mp3
+ = nhung-cau-chuyen-0030.txt -> nhung-cau-chuyen.mp3
+ = nhung-co-vo-da-tinh-0095.txt -> nhung-co-vo-da-tinh_1.mp3
+ = nhung-cuoc-tinh-da-qua-0030.txt -> nhung-cuoc-tinh-da-qua.mp3
+ = nhung-ke-cuong-dam-0005.txt -> nhung-ke-cuong-dam.mp3
+ = nhung-ngay-giong-bao-0013.txt -> nhung-ngay-giong-bao+Chuong-0001-0013-.mp3
+ = nhung-nguoi-me-0143.txt -> nhung-nguoi-me+Chuong-0032.mp3
+ = nhung-nguoi-phu-nu-dam-dang-0036.txt -> nhung-nguoi-phu-nu-dam-dang_1.mp3
+ = nu-du-hoc-sinh-0010.txt -> nu-du-hoc-sinh.mp3
+ = nu-than-xinh-dep-0167.txt -> nu-than-xinh-dep+Chuong-0126-0146-.mp3
+ = nuoc-mat-cua-suoi-0013.txt -> nuoc-mat-cua-suoi.mp3
+ = nuoi-benh-0015.txt -> truyen-sex-nuoi-benh+Chuong-0015-End-.mp3
+ = partner-dang-yeu-0036.txt -> partner-dang-yeu+Chuong-0016-0033-.mp3
+ = pham-gia-con-dau-0061.txt -> pham-gia-con-dau_1.mp3
+ = phap-su-tam-kiep-0015.txt -> phap-su-tam-kiep.mp3
+ = phong-luu-dam-lo-0126.txt -> phong-luu-dam-lo+Chuong-0001-0050-.mp3
+ = phuong-thuoc-than-0021.txt -> phuong-thuoc-than.mp3
+ = qua-bao-0036.txt -> qua-bao.mp3
+ = ra-doi-0018.txt -> ra-doi.mp3
+ = sai-lam-cua-toi-0016.txt -> sai-lam-cua-toi.mp3
+ = sai-lam-phai-tra-gia-incest-bdsm-0007.txt -> sai-lam-phai-tra-gia-incest-bdsm+Chuong-0001-0007.mp3
+ = ta-ao-noi-bien-cuong-0031.txt -> ta-ao-noi-bien-cuong_1.mp3
+ = ta-xuyen-khong-thanh-ta-than-0086.txt -> ta-xuyen-khong-thanh-ta-than_1.mp3
+ = tam-su-cua-di-0018.txt -> tam-su-cua-di+Chuong-0018-End-.mp3
+ = tan-tro-doi-0071.txt -> tan-tro-doi_1.mp3
+ = tay-du-dam-ky-0010.txt -> tay-du-dam-ky.mp3
+ = thac-loan-tuoi-17-0044.txt -> thac-loan-tuoi-17+Chuong-0021-0044-End-.mp3
+ = tham-kich-0024.txt -> tham-kich.mp3
+ = thang-duc-0274.txt -> thang-duc_1.mp3
+ = thang-ti-0029.txt -> thang-ti.mp3
+ = thao-0044.txt -> thao.mp3
+ = that-long-con-yeu-me-loan-luan-0009.txt -> that-long-con-yeu-me-loan-luan+Chuong-0011-.mp3
+ = thay-giao-mon-van-0011.txt -> thay-giao-mon-van.mp3
+ = thien-bao-chi-menh-0054.txt -> thien-bao-chi-menh_1.mp3
+ = thien-than-va-ac-quy-0025.txt -> thien-than-va-ac-quy.mp3
+ = thu-doi-lot-nguoi-0022.txt -> thu-doi-lot-nguoi+Chuong-0022-.mp3
+ = thu-vui-tinh-duc-0024.txt -> thu-vui-tinh-duc+Chuong-0001-0034-.mp3
+ = thuan-nu-than-cong-0027.txt -> thuan-nu-than-cong_1.mp3
+ = thue-nguoi-yeu-co-nu-sinh-be-nho-0012.txt -> thue-nguoi-yeu-co-nu-sinh-be-nho+Chuong-0006-End-.mp3
+ = tinh-ban-keo-son-0030.txt -> tinh-ban-keo-son.mp3
+ = tinh-cha-con-0001.txt -> tinh-cha-con.mp3
+ = tinh-duc-gia-dinh-0016.txt -> tinh-duc-gia-dinh_1.mp3
+ = tinh-duc-hoc-duong-0050.txt -> tinh-duc-hoc-duong.mp3
+ = tinh-ngang-trai-0001.txt -> tinh-ngang-trai+Chuong-0023.mp3
+ = toi-loi-0060.txt -> toi-loi_2.mp3
+ = tra-thu-0026.txt -> tra-thu.mp3
+ = trao-doi-giua-nhung-nguoi-vo-xinh-dep-0044.txt -> trao-doi-giua-nhung-nguoi-vo-xinh-dep.mp3
+ = trinh-kham-du-hy-0025.txt -> trinh-kham-du-hy.mp3
+ = tuoi-tho-ki-la-ll-co-that-0013.txt -> tuoi-tho-ki-la-ll-co-that+Chuong-0001-0014-.mp3
+ = viet-long-hoi-0016.txt -> viet-long-hoi.mp3
+ = vo-chong-hoang-dam-0059.txt -> vo-chong-hoang-dam.mp3
+ = vo-dam-khat-tinh-0080.txt -> vo-dam-khat-tinh_1.mp3
+ = vo-minh-vo-nguoi-0047.txt -> vo-minh-vo-nguoi.mp3
+ = vo-sep-da-tinh-0055.txt -> vo-sep-da-tinh.mp3
+ = vong-xoay-duc-vong-0005.txt -> vong-xoay-duc-vong.mp3
+ = vuon-hong-0020.txt -> vuon-hong.mp3
+ = xom-di-0072.txt -> xom-di.mp3
+ = xuyen-khong-ve-dai-viet-0049.txt -> xuyen-khong-ve-dai-viet_1.mp3
+ = xuyen-qua-hien-tai-0008.txt -> xuyen-qua-hien-tai.mp3
+ = yesterday-0068.txt -> yesterday+Chuong-0051-0068-.mp3
+ = yeu-bang-mat-0013.txt -> yeu-bang-mat.mp3
+ = yeu-nhau-nong-say-0099.txt -> yeu-nhau-nong-say.mp3
+ = yeu-trom-me-0099.txt -> yeu-trom-me+Chuong-0001-0034-.mp3

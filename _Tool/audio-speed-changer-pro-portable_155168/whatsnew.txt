@@ -1,0 +1,55 @@
+What's new (+) and enhanced (!) in Audio Speed Changer Pro 1.5 released on September 27, 2012 (comparing to v1.4)?
+
+[+] Added full support for the Windows Media Audio (WMA) file format as input.
+[+] From now on, the overall conversion progress is displayed on the Windows 7/8 task bar.
+[+] Tested against the Ubuntu GNU/Linux Desktop 12.04 AMD64 + Wine 1.4 final -- no issues or flaws spotted.
+[!] Upgraded the used list control.
+[!] Improved handling of WMA- and AAC-encoded audio files on Windows Vista and 7.
+[!] Confirmed compatibility with the Windows 8 Release Preview.
+[!] Upgraded the utilized audio libraries.
+[!] A couple of internal fixes.
+
+
+History of Changes
+-----------------------------------
+
+1.4 (January 15, 2012)
+[+] Added the command line interface. See the readme file for syntax details.
+[+] The app is now digitally signed.
+[+] Ensured compatibility with the developer preview of Windows 8.
+[!] The Add Directory command: remembering of the most recent used path.
+[!] Enhanced playing back and rewinding of extra-short tracks.
+[!] Fixed a possible leak of strings of the main list control.
+[!] All the used audio libraries are now up to date.
+[!] Updated the library for reading ID3v2 tags.
+[!] Updated the setup script to assign comments to the created shortcuts.
+[!] UI: a few grammar corrections.
+[!] Various small improvements.
+
+1.3 (December 17, 2010)
+[+] Output to uncompressed PCM/WAV file added.
+[+] New program settings: Sequence Length, Seek Window, and Overlap Length.
+[!] Added website links into the Help menu.
+[!] Updated the internal audio playback library.
+[!] Some minor enhancements.
+
+1.2 (September 25, 2010)
+[+] Now there is a total file counter on the status bar.
+[+] Added the Add Directory item into the file list popup menu.
+[!] Now Audio Speed Changer Pro displays progress when normalizing volume.
+[!] Updated the internal audio effects library.
+[!] A lot of internal enhancements in the program code.
+[!] Corrected some typos in the readme.
+
+1.1 (July 26, 2010)
+[+] Added an option for preserving directory structure if source files are from the same parent directory.
+[+] Ability to add all supported files from a certain folder (check out the new Edit -> Add Directory menu item).
+[+] Added the "Updating the Product" paragraph into the readme documentation.
+[!] Enhanced diagnosing if initialization of the audio subsystem fails.
+[!] Now the Comment field is multiline (was single-line).
+[!] Updated the internal encoding subsystem.
+[!] Enhanced UI of the browsing for destination folder dialog window.
+[!] Added version information into the product installer.
+
+1.0 (March 26, 2010)
+The first public release of Audio Speed Changer Pro.

@@ -1,0 +1,37 @@
+[23:49:45:684]: Message: sleep interrupted, StackTrace: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at thread.MutilDownload.run(MutilDownload.java:225)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:49:45:684]: Message: sleep interrupted, StackTrace: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at thread.MutilDownload.run(MutilDownload.java:225)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:49:45:723]: Message: Stream closed, StackTrace: java.io.IOException: Stream closed
+	at sun.nio.cs.StreamEncoder.ensureOpen(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at java.io.OutputStreamWriter.write(Unknown Source)
+	at java.io.Writer.write(Unknown Source)
+	at thread.MutilDownload.run(MutilDownload.java:187)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:49:45:737]: Message: Stream closed, StackTrace: java.io.IOException: Stream closed
+	at sun.nio.cs.StreamEncoder.ensureOpen(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at java.io.OutputStreamWriter.write(Unknown Source)
+	at java.io.Writer.write(Unknown Source)
+	at thread.MutilDownload.run(MutilDownload.java:187)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:49:45:741]: Message: Stream closed, StackTrace: java.io.IOException: Stream closed
+	at sun.nio.cs.StreamEncoder.ensureOpen(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at java.io.OutputStreamWriter.write(Unknown Source)
+	at java.io.Writer.write(Unknown Source)
+	at thread.MutilDownload.run(MutilDownload.java:187)
+	at java.lang.Thread.run(Unknown Source)
+

@@ -1,0 +1,1135 @@
+[21:12:06:778]: Message: userConfig.data (The system cannot find the file specified), StackTrace: java.io.FileNotFoundException: userConfig.data (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at utils.XMLParse.loadConfig(XMLParse.java:17)
+	at mkgethtml.Config.loadConfig(Config.java:292)
+	at mkgethtml.Config.initConfig(Config.java:278)
+	at main.Main.main(Main.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:58)
+
+[21:12:07:310]: Message: userConfig.data (The system cannot find the file specified), StackTrace: java.io.FileNotFoundException: userConfig.data (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at utils.XMLParse.loadConfig(XMLParse.java:17)
+	at mkgethtml.Config.loadConfig(Config.java:292)
+	at mkgethtml.Config.get(Config.java:265)
+	at mkgethtml.SettingOption.getInt(SettingOption.java:98)
+	at common.CommonValue.initValue(CommonValue.java:338)
+	at mkgethtml.Config.initConfig(Config.java:280)
+	at main.Main.main(Main.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:58)
+
+[21:46:36:409]: Message: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, StackTrace: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
+	at sun.security.ssl.Handshaker.process_record(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at java.net.URL.openStream(Unknown Source)
+	at utils.CheckUpdate$2.run(CheckUpdate.java:321)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at sun.security.validator.Validator.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 16 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 22 more
+
+[22:50:08:283]: Message: Stream closed, StackTrace: java.io.IOException: Stream closed
+	at sun.nio.cs.StreamEncoder.ensureOpen(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at java.io.OutputStreamWriter.write(Unknown Source)
+	at java.io.Writer.write(Unknown Source)
+	at thread.MutilDownload.run(MutilDownload.java:183)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:51:57:532]: Message: Stream closed, StackTrace: java.io.IOException: Stream closed
+	at sun.nio.cs.StreamEncoder.ensureOpen(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at java.io.OutputStreamWriter.write(Unknown Source)
+	at java.io.Writer.write(Unknown Source)
+	at thread.MutilDownload.run(MutilDownload.java:183)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:54:10:517]: Message: Stream closed, StackTrace: java.io.IOException: Stream closed
+	at sun.nio.cs.StreamEncoder.ensureOpen(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at java.io.OutputStreamWriter.write(Unknown Source)
+	at java.io.Writer.write(Unknown Source)
+	at thread.MutilDownload.run(MutilDownload.java:183)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:36:138]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:36:541]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:36:951]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:37:354]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:37:765]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:38:184]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:38:584]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:39:002]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:39:420]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:39:871]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:40:335]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:42:040]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:45:515]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:45:917]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:46:327]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:46:744]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:47:141]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:47:562]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:47:990]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:48:650]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:49:046]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:49:494]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:49:902]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:50:293]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:50:694]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:51:122]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:51:530]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:51:928]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:52:324]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:52:716]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:53:108]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:53:520]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:53:921]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:54:374]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:54:787]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:55:184]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:55:595]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:55:990]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:56:394]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:56:799]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:57:199]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:57:605]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:58:038]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:58:430]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:58:848]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:59:260]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[22:59:59:659]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:00:040]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:00:441]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:00:836]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:01:228]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:01:623]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:02:014]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:02:414]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:02:811]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:03:241]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:03:634]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:04:029]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:04:444]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:04:876]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:05:279]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:05:698]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:06:097]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:06:495]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:06:881]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:07:288]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:07:694]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:08:104]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:08:463]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:08:839]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:09:141]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:09:219]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:09:521]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:09:617]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:09:920]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:10:026]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:10:317]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:10:425]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:10:733]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:10:881]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:11:253]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:11:362]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:11:663]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:11:755]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:12:082]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:12:162]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:12:473]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:12:558]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:12:869]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:12:950]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:13:255]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:13:351]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:13:650]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:13:742]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:14:045]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:14:141]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:14:455]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:14:537]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:14:848]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:14:946]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:15:333]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:15:458]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:15:814]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:15:948]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:16:227]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:16:350]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:16:621]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:16:748]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:17:046]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:17:165]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:17:549]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:17:560]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:17:945]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:00:17:954]: Message: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html, StackTrace: java.io.IOException: Server returned HTTP response code: 403 for URL: http://truyensextv99.com/404.html
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at mkgethtml.GetHtmlCss.getHtmlStringFromURLbyCharset(GetHtmlCss.java:433)
+	at thread.TAuto.getListChapter(TAuto.java:692)
+	at thread.TAuto.doWork(TAuto.java:426)
+	at thread.TAuto.run(TAuto.java:904)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:03:13:695]: Message: sleep interrupted, StackTrace: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at thread.MutilDownload.run(MutilDownload.java:225)
+	at java.lang.Thread.run(Unknown Source)
+
+[23:04:53:629]: Message: Stream closed, StackTrace: java.io.IOException: Stream closed
+	at sun.nio.cs.StreamEncoder.ensureOpen(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at java.io.OutputStreamWriter.write(Unknown Source)
+	at java.io.Writer.write(Unknown Source)
+	at thread.MutilDownload.run(MutilDownload.java:183)
+	at java.lang.Thread.run(Unknown Source)
+

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_421" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>ENCODING</string>
+   </object>
+   <string>UTF-8</string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>CONVERTER</string>
+   </object>
+   <string></string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>IS_USE_2_LEVEL_FOR_TOC</string>
+   </object>
+   <boolean>false</boolean>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>MAXCONNECTION</string>
+   </object>
+   <int>5</int>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>SOURCE</string>
+   </object>
+   <string></string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>ISLOADIMAGE</string>
+   </object>
+   <boolean>false</boolean>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>STATUS</string>
+   </object>
+   <string></string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>TIME_OUT</string>
+   </object>
+   <int>60</int>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>REMEMBER_ONE_PER_FILE</string>
+   </object>
+   <boolean>false</boolean>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>IS_SHOW_PAGE_HAS_IMAGE</string>
+   </object>
+   <boolean>false</boolean>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>INFO</string>
+   </object>
+   <string>&lt;br/&gt;Được tạo bằng phần mềm: &lt;a href =&quot;https://sourceforge.net/projects/gethtmlfromurl/&quot;&gt;GetTextFromHtml-V1.5.6&lt;/a&gt;</string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>LANGUAGE</string>
+   </object>
+   <string>vi</string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>TWO_LEVEL_BREAK_CHAPTER_COUNT</string>
+   </object>
+   <int>50</int>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>SHOW_TIPS_ON_DOWNLOAD_FAILED</string>
+   </object>
+   <boolean>true</boolean>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>DELETE_ON_EXIST</string>
+   </object>
+   <string></string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>EBOOKNAME</string>
+   </object>
+   <string></string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>TWO_LEVEL_CHAPTER_TITLE</string>
+   </object>
+   <string>Chương</string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>SLEEP_TIME</string>
+   </object>
+   <int>60</int>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>AUTHOR</string>
+   </object>
+   <string></string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>EBOOKCREATOR</string>
+   </object>
+   <string>mkbyme</string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>RECENT_FOLDER</string>
+   </object>
+   <string>C:\Users\Windows\Documents</string>
+  </void>
+  <void method="put">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>common.Enumeration$EnumConfigKey</class>
+    <string>LINE_HEIGHT</string>
+   </object>
+   <int>16</int>
+  </void>
+ </object>
+</java>

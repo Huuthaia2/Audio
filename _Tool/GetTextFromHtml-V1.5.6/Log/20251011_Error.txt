@@ -1,0 +1,9 @@
+[23:57:23:871]: Message: Stream closed, StackTrace: java.io.IOException: Stream closed
+	at sun.nio.cs.StreamEncoder.ensureOpen(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.write(Unknown Source)
+	at java.io.OutputStreamWriter.write(Unknown Source)
+	at java.io.Writer.write(Unknown Source)
+	at thread.MutilDownload.run(MutilDownload.java:187)
+	at java.lang.Thread.run(Unknown Source)
+
