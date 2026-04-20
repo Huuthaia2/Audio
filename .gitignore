@@ -11,10 +11,10 @@ venv.bak/
 .idea/
 .vscode/
 *.log
-scratch/
-zDaCoMp3/
-Text Mp3/
-truyencogiaothao/
+# scratch/
+# zDaCoMp3/
+# Text Mp3/
+# truyencogiaothao/
 # Ignore potential audio files if they are large and not meant to be in git
 # *.mp3
 # *.wav

@@ -1,0 +1,1416 @@
+==============================
+ TITLE: Kỹ sư hóa học
+==============================
+
+
+
+==================== Chương 1 ====================
+
+Truyện hoàn toàn tưởng tương, tên nhân vật chỉ đặt cho có mà thôi.
+
+
+
+***
+
+Chap 1. 
+
+HẠNH, 42 tuổi, từng tốt nghiệp đại học nghành hóa hữu cơ với tấm bằng đỏ. Ngày đó, Bao nhiêu cơ hội mở ra trước mắt cô về một tương lai ổn định, rất nhiều công ty liên doanh đã sẵn sàng dành cho cô một vị trí ở phòng nghiên cứu phát triển sản phẩm. Các công ty trong nước, với sự trọng thị nhân tài chuyên môn, cũng sẵn sàng nâng mức lương cao vượt khung để săn đón cô.
+
+Tuy nhiên, với cô gái xuất thân từ 1 thị xã nhỏ như Hạnh, có cha mẹ đều là giáo viên và công chức mẫu mực, con đường cô chọn an toàn và giản dị vô cùng: vào một công ty dược nhà nước – nhân tài bản thân họ đã có ước muốn cống hiến sẵn có, cho xã hội và cả bản thân.
+
+Với chuyên môn xuất sắc, chỉ sau 10 năm, Hạnh thăng tiến khá nhanh (chỉ thua Con ông cháu cha), từ một nhân viên phòng KCS lên trưởng bộ phậm RD của công ty, kiêm phó giám đốc.
+
+Làn sóng cổ phần hóa, là nỗi sợ của bao nhiêu doanh nghiệp NN làm ăn kém cỏi, thì trái lại với cty Hạnh,nó lại là một luồng gió mát lành. Cty dần tiến lên chiếm 1 thị phần đáng nể trong nước, thậm chí đã có những sản phẩm dược tin cậy được xuất khẩu.
+
+nói sơ qua về gđ nhỏ của Hạnh. Cô thật hạnh phúc với chồng là 1 sĩ quan quân đội và 1 cô công chúa đáng yêu đang tuổi 12. Hai vch quyết định vì công danh sự nghiêp, cộng với tư tưởng tân tiến có chừng mực của gđ nhà chồng, họ chỉ sinh có 1 thiên thần nhỏ là đủ cảm giác hạnh phúc và đầm ấm.
+
+Từ khi niêm yết trên thị trừing chứng khoán, giá cổ phiếu cty liên tục giữ ổn định ở mức cao. Toàn công ty áp dụng mô hình quản lý tiên bộ và trở thành một mẫu mực cho các doanh nghiệp nn cổ phần hóa hết sức thành công. Cv của Hạnh và ban giám đốc cũng vì thế mà khoa học hơn, nhàn nhã hơn. Một tương lai tươi sáng tưởng chừng khômg thể khác được với gđ Hạnh.
+
+***
+
+CÁc Dược chất hạn chế phát triển của tế bào ung thư lần lượt được các cty dược lớn trên thế giới cho ra đời, thử nghiệm. Đứng trứic làn sóng RD sôi nổi này, cty Hạnh cũng không thể làm ngơ: một thị trường lớn mở ra trc mắt với nguồn lợi nhuận khổng lồ cũng như ý nghĩa y học cao cả của nó làm ban lãnh đạo cty ra một qiyết định quan trọng.
+
+Cuộc họp kéo dài 2 h đồng hồ sáng thứ 2 ấy, toàn cty và đặc biệt là bộ phận nghiên cưu dược chất do Hạnh phụ trách quyết tâm đi theo hướng mới: sử dụng nguyên liệu thuốc nam trong nước để biến thành 1 vũ khí lợi hại chống căn bệnh ung thư.
+
+– phía RD của cô Hạnh còn ý kiến nào khác không?
+
+– dạ thưa giám đốc, theo tôi nghĩ đây là một kế hoạch tuyệt vời nhưng dài hơi. Chúng ta cần thêm nhân tài, cô nhấn mạnh.
+
+– haizz, nhân tài như lá mùa thu, cô biết đấy Hạnh ạ. Tìm đâu ra lắm nhân tài cho bộ phận cô như thế.
+
+– rất đơn giản thưa anh, Hạnh vừa nói vừa cười, tôi sẽ đi thỉnh giảng tại các trường Đại học Y dược trên toàn quôca, vừa nhân tiện quàng bá cokng ty vừa săn đầu người cho cty ta.
+
+– Hay, ra cô này bây giờ bắt đầu thèm cả danh ở lĩnh vực bàn lâm đây- giám đốc sảng khoái đùa.
+
+Hạnh cười, cô mơ màng đến viễn cảnh đứng lại trên giảng đường đại học với vai trò mới – giảng viên.
+
+
+
+==================== Chương 2 ====================
+
+Chap 2.
+
+
+Sinh viên khóa tuổi 9x không như cô tưởng khi đọc ưua các tờ báo lá cải trên mạng. Họ nghịch ngợm, phá cách, nhưng rất giỏi giang. Tương lai của nghành dược và của đất nước không đến nỗi tệ- Hạnh nghĩ.
+
+Hạnh không khó khăn khi nhận được 1 vị trí thỉnh giảng với sv năm thứ 3. Theo cô ở giai đoạn này, sv tuy chưa có kiến thức hoàn thiện, nhưng vì vậy nhân tài sẽ dễ phát lộ. Và cô không nhầm về họ. Một sv có kiến thức xuất sắc nhất đã nổi lên và lọt vào mắt xanh tuyển dụng của cô. Đó là Lưu.
+
+Lưu học giỏi, thông minh, nhưng điểm số k hề xuất sắc đầu lớp. Cũng phải thôi, tài nhiều thì lắm tật. Lưu không thân thiết vớii ai đặc biệt trong lớp, điểm các môn thì phập phù, khi cao khi thấp. Quê Lưu ở tận tây bắc, nhưng cha mẹ cũng gom góp bằng cách nào đó mua cho Lưu 1 căn chung cư ngay từ năm thứ nhất ( có lẽ gom từ tiền chạy xe ôm hoặc bán chổi đót, đại loại như vậy chúng ta không cần quá quan tâm).
+
+Lưu thể hiện như 1 cậu thanh niên đa nhân cách. Cậu vui vẻ với các bạn, không thân thiết hẳn với ai, đẹp trai và vẻ lãng tử hiện rõ nhưng không hề rượu chè cờ bạc. Dáng hơi ngang tàng ngầm, có chút lấc cấc khi chất vấn giảng viên trong giờ học. Hạnh, tuy không ưa nết này của sv, nhưng cô đều mỉm cười bao dung.với một trưởng bộ phận RD CỦA 1 CTY dược có tiếng, các câu hỏi về bào chế oái oăm của Luu không thể làm khó cho Hạnh đươc.
+
+
+Mỏi tay mai viết vào chap chính.
+
+
+
+==================== Chương 3 ====================
+
+Chap3: bezedrin
+
+Buổi chiều hôm ấy, sau giờ học, Lưu đi theo cô giáo:
+
+– thưas cô, em có thể đề đạt với cô 2 ý nhỏ được không ạ? 
+
+– tôi sẵn sàng lắng nghe đây. HẠnh trả lời ánh mắt nheo lại xen lẫn ngạc nhiên và chút tò mò.
+
+E có thể đến cty cô với tư cách tìm hiểu đẻ sau này thực tâp tốt nghiệp khoing ạ? Ít nhất vớu vai trò sv của cô?
+
++ được mà. Sáng thứ 7 tôi có mặt ở cty, e có thể đến. CÒn vđề thứ 2? Hạnh nói và chuyển tay xách cặp, fhể hiện sự vội vã.
+
+Vấn đề 2 thuần túy chuyên môn e xin fép hỏi sau ạ.
+
+Sáng thứ 7, Lưu đến cty, HẠnh sai 1 cô nhân viên dành thời gian 15 phút giới thiệu sơ qua về cty, về bộ phận nghiên cứu dược chất mà cô phụ trách. Lưu chăm chú, thậm chí ghi chép đầy đủ.
+
+
+Chap 3 tiếp.
+
+VẤn đề 2 thưục ra đợn giản hơn Hạnh nghĩ về câu hỏi có thể có của 1 sv xuất sắc. Lưu hỏi Hạnh cung cấp các tư liệu lịch sử dược tính của bezedrin – một loại thuốc bán theo đơn đã k còn sx đại trà. Lý do của Lưu làm H cảm động và có nhận thức khác về cậu sv này. Lưu muốn dùng loại dựic chất này để trị chứng trầm cảm cho em gái mớu hơn 10t của cậu.
+
+Thật ra cty cũng khiong có nhiều tư liệu gì hơn trên mạng cả, nhưung k làm Lưu thất vọng, H nói:
+
+– thật ra chúng tôi học theo lối ngày xưa, khi chưa có internet. Vì thế tủ sách ở nhà của tôu còn lưu rất nhiều bản in roneo. Tôi sẽ lục lọi và e chịu khó đọc.
+
+Lưu cảm ơn và ra về. Hạnh lại cuốn vào cv. Cô thầm đắc thắng về sáng kiến săn nhân tài không tệ của mình.
+
+"""
+
+Không có nhiều tài liệu, nhưng 3 tập giấy chép tay mỏng của Hạnh (thật ra là của thầy giáo cũ của HẠnh cho cô), cũng đủ để Lưu thỏa mãn cơn khát tài liệu hơn những gì ít ỏi tìm thấy trên mạng. Cô hẹn cậu sv đến cafe căng tin trừing để cho mượn, chuyện không có gì đáng nói.thái độ vui mừng quá mức, gần như hơi phấn kích ngầm của Lưu khi xem lướt tài liệu cũng k làm Hạnh quá để tâm.
+
+***
+
+Chiều cuối năm thứ 3, HẠNh được cả lớp mời dự một bữa tiệc nhỏ nhẹ nhàng nhân hết 1 học phần quan trọng của các cô cậu. Vì là việc riêng và biết sẽ uống tý chút bia rượu, Hạnh đi tãi đến.
+
+Tất nhêin 1 nữa doanh nhân bận rộn không thể ngồi rề rà như đám sv. HẠNH cáo từ nửa chừng để ra về và Lưu là người gọi xe taxi cho cô giáo.
+
+– anh chạy cẩn thận giúp em nhé, bố em đã họp xong chưa anh? Lưu hỏi người lái chiếc xe thuê màu đen, ở đầu xe có biểu tượng 4 vòng tròn xếp chồng nhau.
+
+Hóa ra đaya không phải taxi. Bố Lưu, một cán bộ côngg đoàn cấp tỉnh, nhân chuyên ctac xuống thăm con trai. Cậu con có lẽ muốn ra oai vớu cô giáo chăng? Hạnh thầm nghĩ mỉm cười, nhưng cô bứic lên xe.
+
+NẮNg chiều xiên khoai làm cô mỏi mắt. Vừa kéo tấm chắn nắng xuống, Hạnh lim dim…
+
+…
+
+Thức dậy lúc 5h chièu trên 1 chiếc giường lớn trong 1 căn phòng chung cư xa lạ, Hạnh ngạc nhiên: quần áo cô vẫn mặc chỉnh tề trên người, và tiếng của Lưu nhẹ nhàng phía phòng bên cạnh đã đánh thức cô hẳn:
+
+– em cảm ơn cô về tài liệu dược chất bezedrin. Cô chắc bận nhiều việc nên không cần chú ý nó là tiền chất của amphetamin phải không ạ?
+
+Lưu vẫn lễ phép.
+
+– em nói gì tôi không hiểu? Tôi đang ở đâu đây?
+
+– xin chúc mừng cô đã được cty Funepharma tuyển dụng.
+
+– tiếng của anh "tài xế" khi nãy.
+
+– nhưng tôi đâu có nhu cầu ấy? CÁC người nói gì lạ vậy?
+
+– giọng của lưu: thưa cô, cty funepharma không có tên trên danh mục doanh nghiệp cả trong nước lẫn quốc tế. Nó chỉ có 2 trụ sở chỉnh tại Colombia và Myanmar. Nay cty mở chi nhánh thứ ba và trân trọng thông báo cô đã được tuyển dụng. Cô không được phép từ chối, thông baó miệng này thay cho giấy thu nhận.
+
+..
+
+
+!!!
+
+
+
+==================== Chương 4 ====================
+
+Chap 4: ctu funepharma
+
+Như cái teen của nó, chơi chữ ghép giữa funeral (đám tang) và pharmacy (dược) – nó là cty của bọn trùn ma túy xuyên lục địa Mỹ – Á. do sự truy quét mạnh tay của interpol, giới trùm ma túy quyết định hướng đến sản xuất ma túy theo hướng địa phương hóa và đa dạng nguồn nguyên liệu. Ý thứ nhất dễ hiểu – chúng sẽ cố gẳng tổ chức sx ma túy ngay tại từng tiểu vùng trên thế giới để phân phốu tiêu thụ. TUY nhiên hướng thứ 2 lại hỗ trợ cho hướng thứ nhất: chúng sẽ chế tạo ma túy tổng hợp từ các loại cây cỏ vốn vô hại. NHÂN tài như Hạnh vì thế được chúng để mắt, và Lưu – giám đốc chi nhánh đông nam á của cty chịu trách nhiệm cưỡng ép tuyển dụng. Trớ trêu, từ vai trò săn nhân tài, HẠNh lại là người bị săn.
+
+THực chất bố của LƯu không là cán bộ cấp nào hết, xe cộ và tài xế đều là của cty đó.
+
+
+Chap 4: phỏng vấn tuyển dụng
+
+– nếu cô không chấp nhận thì sao? HẠNh hơi hoang mamg nhưng chủ động nói cứng.
+
+– dạ không sao cả, thìchungs tôi đưa cô về thôi ạ, tiếng anh "láu xe". Nhưng một chuyên gia như cô không có nhã hứng xem qua cơ sở sản xuất của cty sao? KHi đí quyết định chưa muộn, cô có thể làm bán tgian mà.
+
+"Cũng chả hại gì, alưu nó sẵn sàng đuqa mình về kia mà, chắc say 1 chút vì uokngs cả bia lẫm rượu thôi", H nghĩ thầm.
+
+– Cô đàn ở trong phòng nghỉ của cty thội ạ, em.mời cô. Tiếng Lưu cắt ngang dòng suy nghĩ.
+
+Một gian phòng thí nghiệm hóa dược cỡ lớn rất hiện đại, máy móc đều là đời cao của các hãng máy phân tích nổi tiếng thế giới như philips, Hitachi, làm Hạnh không khỏi trầm trồ về quy mô cty. Con mắt chuyên gia của cô không bỏ ưua từng lô ống nghiệm nhỏ made in Germany đặt trên các giá gọn gàng.
+
+Khi sx còn hoành tráng hơn. Tuy không quy mô lớn như cty của hạnh, nhưng toàn máy móc bào chế hết sức hiện đại và tinh vi. Cô thích thú mặc áo blu trắng đi thăm khắp các phòng, nghiêm trang làm 1 vài thí nghiệm giả định.
+
+– thôi tôi xin phép vì đã muộn.
+
+– tôi mong cô hãy nhận lời đề nghị làm bán tgián cho cty, chế đothỏa mãn mọi yêu cầu khó tính thưa cô.
+
+– cảm ơn thịnh tìn của anh, nhưng tôi sẽ không suy nghĩ đaau ạ. Cáo từ anh tôi xin phép.
+
+– dù sao cô cũng nên cầm card visit của tôi, tôi tên Dũng, phó giám đốc. Tôi tin tối nay cô sẽ gọi cho tôi.xin phép được đưa cô về.
+
+HẠNh ngạc nhiên trứic sự tự tin của anh phó giám đốc xa lạ.
+
+
+
+==================== Chương 4.1 ====================
+
+tiếp chap 4: phỏng vấn tuyển dụng
+
+
+cơm tối xong, vì là ngày chồng đc nghỉ phép nên gđ Hạnh vui hơn rất nhiều. mia đến 9h tối, Hạnh mới mở máy tính một chút, chủ yếu xem các email về cv. Bất chợt, 1 email từ Lưu không có tiêu đề làm Hạnh hơi chú ý một chút. CHồng đang đợi nên Hạnh cũng không chăm chú lắm. Nội dung email chỉ là mấy tấm hình Hạnh đang mắc áo blu trắng đứng thí nghiệm trong phòng thí nghiệm của cty funepharma, tuy nhiên kéo xuống dưới thì nội dung của nó lại đáng chú ý:
+
+"với các tấm hình này, cô nên nhận lời đề nghị của chúng tôi, nếu không nó sẽ làm hại đến đường công danh của cô. Hẹn cô Hạnh vào 9h tối thứ 3 tuần sau tại quán càfe X, đường Y. Trân trọng".
+
+Xì. lý do gì phải đến nhỉ.
+
+Sáng hôm sau Hạnh chợt nhớ lại bức email. Cô xem kỹ lại 1 lần nữa thì chợt giật mình: toàn bộ thiết bị của cty Funepharma mà cô đứng bên cạnh, hình như là dây chuyền để bào che amphetamin – một loại ma túy tổng hợp. Trời! sao mootj chuyeen gia như mình có thể bỏ qua, có sơ hở đến thế! Không ổn rồi, thôi đến hẹn với Dũng xem sao vậy, thậm chí nếu cần mình sẽ tố cáo là xong.
+
+**
+
+Tối thứ 3, đúng 9h 15 H có mặt tại quán cafe y lời hẹn.chỉ có Dũng ở đó. Dũng nói ngắn gọn:
+
++ chúng tôi biết cô có thể k nhận lời mời và có nhiều động thái k thích hợp. tuy nhiên cái tôi cần nhấn mạnh là sự liên đới của cô, nếu được cơ quan điều tra làm rõ, cũng vãn coi như tiêu tan sự nghiệp. còn số phận chúng tôi k cần cô lo.
+
+Một câu ngắn gọn, nhưng gần như đánh gục Hạnh – một cô chuyên gia xuất sắc về hóa dược, về các phản ứng, hóa chất, thậm chí cả lọc lõi vừa đủ trên thương trường; nhưng sự việc này quá bất ngờ nằm ngoài tầm kiểm soát.
+
++ Cô H hãy suy nghĩ thật kỹ, thật ra chúng tôi cũng chỉ cần cô với vai trò tư vẫn – chuyên gia. các sản phẩm chúng tôi coi như cô không nắm rõ, vì vậy cty hy vọng ký hợp đồng lv partime với cô với chỉ 1 vai trò "tư vấn công nghệ cho từng công đoạn", tôi nhấn mạnh – tư vấn công đoạn chứ không tư vấn toàn sản phẩm. điều này là chúng tôi giữ cho cô. sau hợp đồng 6 tháng, cô hoàn toàn chia tay chúng tôi. Mức lương tổng cộng cho 6 tháng tư vẫn là 300 ngàn đô la Mỹ, mức này do cty đặt ra, không có quyền thêm hay bớt!
+
+
+
+==================== Chương 4.2 ====================
+
+"cũng đành nhắm mắt bước chân". Hạnh chỉ nghĩ được có vậy.
+
+vả lại số thù lao quá lớn, tuy không đến mức làm mờ mắt 1 phó giám đốc – chuyên gia như cô, nhưng quả là số tiền không phải cái móng tay.
+
+"thôi thì chỉ 6 tháng. mà mình vẫn còn cơ hội rút nếu bọn chúng giở trò, cứ đến buổi phóng vấn xem chúng gồm những ai".
+
+Giờ hẹn đã đến, địa điểm phỏng vấn là một tòa biệt thự bề thế láy làm trụ sở giao dịch của cty, nằm trong một khu chung cư cao cấp hiện chỉ mới lấp kín có 1/4 số ngôi nhà. 
+
++ Trân trọng chào mừng cô Hạnh. cô có nhã ý dùng gì để tôi chuẩn bị. xin lỗi cô hnay tạp vụ đi vắng, chỉ có bà quét rác thì không điêu luyện lắm trong việc pha chế nước hoa quả, nên tôi sẽ tự tay chuẩn bị.
+
++ Anh Dũng đi vào vấn đề chính đi, làm ơn cho tôi xin cốc nước lavie.
+
++Vâng vậy không khách sáo cô ạ.
+
+Nhấp 1 ngụm nước, Hạnh băt đầu hỏi Dũng rất nhiều câu hỏi về cty, có câu hỏi thẳng, có câu hỏi thăm dò, nhưng câu trả lời của Dũng đơn giản hơn cô tưởng: Cô chỉ lv partime và làm chuyên gia, cho ý kiến NẾU chúng tôi gặp khó khăn trong một vài khâu. Các câu hỏi của cô tôi sẽ chuyển đến bộ phận mua sắm thiệt bị và kỹ thuật.
+
++ Nhưng…
+
+Một cơn đau đầu rất nhẹ tưởng như thoáng qua; tiếp theo là một cơn hưng phấn raatsn nhẹ. Hạnh cảm thấy đâu đây trong gió, có mùi long não trộn lẫn với mùi hoa oải hương và một vài thứ mùi thơm khác mà cô chưa hề biết đến. Hạnh lịm đi.
+
+*****
+
+Tỉnh dậy – có lẽ phải cỡ mấy tiếng đồng hồ sau Hạnh mới chòng tỉnh – cô nằm yên trên sofa vẫn của căn biệt thự đó. Có một tiếng nói rất quen. đúng rồi, tiếng của Lưu – cậu sv xuất sắc:
+
++ Cảm ơn cô giáo về cuốn sách cô cho mượn. Nhờ nó mà em biết rõ về liều luwognj và hiệu ứng an toàn của 
+
+
+Benzedrine!
+
+
+
+==================== Chương 5 ====================
+
++ Các…các người tiêm nó vào tôi!!!?!! đồ lưu manh!!!! Hạnh hét lên.
+
+– Thưa cô, không ạ. cô chưa bao giờ đọc cuốn sách chép tay đó – benzedrin có thể ngấm qua đường ăn uống vào cơ thể, nếu ta chú ý pha chế với một vài thủ thuật rất nhỏ.
+
+– Đồ tồi!! Các cậu làm vậy với mục đích khuất phục tôi sao. đê hèn.
+
+– Dạ thưa cô, xin trân trọng thông báo cô đã được tuyển dụng vào cty Funepharma. mức lương vẫn như cũ cho 6 tháng, còn thời hạn là tùy chúng em…à quên…chúng tôi.
+
+– Không bao GIỜ OOOOOO. Hạnh hét lên. tôi sẽ tố cáo các người. dù mất tất cả tôi cũng sẽ…
+
+chưa kịp nói dứt câu, cơn hưng phấn từ đâu quay lại với Hạnh. Cô thấy bứt rứt, nóng nực, cảm thấy muốn bừng cháy nhè nhẹ. Cố kiềm chế hòng qua được ảnh hưởng của thuốc, nhưng…đến đây ta phải nói chút vè benzedrin.
+
+
+
+==================== Chương 6 ====================
+
+đời không như mơ – dù chỉ là một giấc mơ rẻ tiền nhất!
+
+3 ngày sau, email của Hạnh lại có mail đến , của Luuwu, tất nhiên rồi. email rất ngắn gọn, không kèm theo tiêu đề. Nhưng Hạnh tá hỏa: toàn bộ đoạn quay video cảnh cô ngấm thuốc, và một số ảnh chụp phân đoạn "nóng" nhất của video, được Lưu gửi đến cô. email chỉ kèm theo một câu nhắn không thể ngắn hơn, không chủ ngữ vị ngữ. nó đơn giản là một câu triệu tập:
+
+"9h tối thứ 5. yêu cầu đến chỗ cũ. có thể có thêm những thỏa thuận nhất định nếu cs tinh thần hợp tác".
+
+!!!!!!!!!!!
+
+tiên sư nó, chỉ thiếu câu chào thân ái và quyết tâm, mà thằng này kiệm lời.
+
+—***—
+
+tiếp Hạnh hôm đó vẫn chỉ Dúng và Lưu. căn phòng sáng choang, đèn chùm trên đầu rực rỡ.
+
+Vẫn giọng lịch thiệp lành lùng của Lưu:
+
+– Trước tin em xin lỗi cô, nhưng cty không thể có được một chuyên gia nào thích hợp hơn cô, thích hợp cả về trình độ lẫn khả năng cty kiểm soát đc về mặt nhân sự. Lưu nhấn mạnh từ "kiểm soát".
+
+– Các người hãy trả và xóa toàn bộ, tôi đồng ý với điều kiện hợp đồng 6 tháng như đã nói.
+
+Dũng xen vào giọng lạnh băng còn hơn cả Lưu, hắn nói giọng chưởng HK:
+
+– Điều kiện đủ cả, tiền công như đã nói, chỉ xem cô em có tiêu được không thôi!
+
+– Là sao??? Các người dùng trò bỉ ổi này để ép tôi và xóa lời hứa?
+
+– Cô em nghĩ sao nếu video này phát tán? hắn hỏi ngắn gọn.
+
+BỐP!
+
+tiếng của cái tát mạnh, đanh gọn và 4 ngoáy tay của Dũng in hằn trên má Hạnh. "QUỲ XUỐNG".
+
+Lưu xoa vai cô giáo – đã là cựu cô giáo của hắn – "cô mau làm theo lệnh giám đốc đi. đây là thử thách đầu tiên của tổ chức đối với nhân sự mới".
+
+Hạnh đành ngoan ngoãn quỳ xuống sàn nhà, chưa kịp hiểu ý gì.
+
+Vẫn lại là Dũng:
+
+– Cô em nghe đây.côchinhs thức được cty tuyển dụng. tuy nhiên, cty được sự nâng đỡ của 1 tổ chức rất lớn – cô thừa hiểu là tổ chức nào – vì vậy, ở đây mức thù lao không thành vấn đề.
+
+– Vậy…vậy.. các người muốn gì?
+
+– Trung thành, trung thành, tuyệt đối trung thành.
+
+-Đồ bỉ ổi, các người đã dùng video để ép tôi vào đường này rồi, các người thắng rồi đó.
+
+– Chưa hề đủ. Trước mắt cô có thể bị khuất phục, nhwung nếu cô lại vì công đạo trỗi dậy trong lòng, thì chúng tôi sẽ không thể tồn tại, chúng tôi cần hơn cả sự trung thành của một chuyên gia khó kiếm như cô.
+
+…..
+
+– Nói chính xác nhé cô Hạnh – đó là sự tận tâm dâng hiến. tất cả. nên nhớ là TẤT CẢ.
+
+bài học đầu tôi đã vừa dạy cô. xin lỗi nhé, sự lịch thiệp với phụ nữ không có chỗ ở đây, tất cả chỉ là cv.
+
+– Các người..muốn gì…ở tôi…Hạnh dằn từng tiếng.
+
+Lưu bước lại gần Hạnh, trên tay vẫn là 1 cốc nước lavi trong veo "UỐNG HẾT" , hắn nói.
+
+Hạnh chưa kịp phản ứng, thì với tư thế quỳ khó khăn trên sàn nhà, Lưu đã ép và dốc gần hết cốc nước vào miệng cô.
+
+Như lần trước, điều thần kỳ không hề xảy ra. Thuốc ngấm, Hạnh lại lên cơn hưng phấn, tuy nhiên khi cô lảo đảo định ra nằm trên sofa thì giọng ra lệnh của DŨng là cô sự tỉnh trong 1 giây:
+
++ QUỳ nguyên ở đó và cởi áo ra cô em.
+
+Hạnh chống cự trong vô vọng, một phần do sức lực của hai gã đàn ông và một phần lớn vì tác dụng của thứ thuốc chết tiệt mà bí mất của nó cô đã vô tình nối giáo cho giặc.
+
+Lại một thời gian trôi qua trong im lặng. Lưu và DŨng vẫn ngồi im. Hạnh sau tác dụng của thuốc lại lảo đảo đứng dậy, mặc áo váy, ra về.
+
+chỉ 11h đêm, Hạnh đã xối xả xối nước trong phòng tắm nhà mình. cô xoa sữa tắm lên khắp người, dội nước lạnh xối xả như muốn xóa đi sự tủi nhục đã lõa lồ thân thể trước tên sv. "thật may bọn chúng không xâm hại mình. còn video thì đã quay mất rồi, 1 chứ 3 clip thực ra k khác gì nhau. cái chính là phải tìm cách thoát khỏi bọn nhớp nhúa này" – cô nghĩ.
+
+quấn khăn tắm đi vào phòng. con gái cô đã được chị giúp việc ru ngủ từ lâu. hạnh chợt thấy tin nhắn đến đt. Gì thế nhỉ, ai nhắn lúc này? hay là lại bọn chúng??? nhưng bọn chúng quen dùng email cơ mà??
+
+tin nhắn – của Lưu đập vào mắt cô: "  Cơn nứng sắpđến chưa cô giáo? theo tôi dự liệu thì 5 phút nữa nó sẽ đến và giúp cô nhiều cảm giác hơn. G9".
+
+
+
+==================== Chương 7 ====================
+
+Hạnh buông điện thoại xuống, nghĩ hoang mang. đúng 5 phút sau (chính xác là 4 phút 46 giây), cơ thể Hạnh bắt đầu cảm nhận sự khác lạ: người hạnh nóng ran, chủ yếu ở bả vai và ngực; cơn nóng kéo dần xuống bụng và hạ bộ, não Hạnh cảm thấy như thiếu máu đưa lên làm cô hoa mắt. Ngồi phịch xuống ghế đệm giữa phòng khách, chiếc khăn tắm rơi hờ khỏi người cô. 
+
+
+Một cảm giác hứng tình xuất hiện. thật kỳ lạ, rõ ràng tác dụng của thuốc đã qua và cô về đến nhà, hay không lẽ bọn chúng làm trò quỷ quái gì trên cơ thể cô lúc cô mê man? nhưng rõ ràng cô để ý, chúng không hề động vào người cô dù chỉ 1 chút.
+
+không biết nữa, cảm giác lộn xộn, bất an, kèm với hưng phấn xuất hiện trong cơ thể cô ngày một rõ dần. hai núm vú cô căng cứng, hơi nhức nhối, như cần một bàn tay dịu dàng xoa bóp; bụng cô qặn lên từng cơn, không hẳn là đau, mà chỉ như những con co bất chợt của cơ hoành, phía dưới, âm hộ cô cảm thấy nhớp nhúa đánh tan cảm giác tinh khôi khi vừa từ phòng tắm bước ra. chúng làm gì cô vậy? cô k thể đủ lý trí để suy xét thêm nữa, hai mắt cô mờ dần, cảm giác tê tê lan dần dọc sống lưng, xuống đến tận xương cụt, bất giác Hạnh chạm nhẹ tay vào vùng kín của mình.
+
+sức nóng lan tỏa trên cơ thể cô dần biến mất, thay vào đó là cảm giác khao khát xen lẫn thỏa mãn rất rõ, thế nhưng, cái cảm giác đó vừa thỏa mãn vừa chống chếnh. uoc gì chồng cô vẫn còn hạn nghỉ phép, hoặc ước gì cô được chắp cánh bay ngay lên đơn vị anh, nhưng đây là 11h rưỡi đêm. con và bà giúp việc đã ngủ say, Hạnh cảm thấy cô đơn và hoang mang vô cùng.
+
+cô đi lại phía phòng tắm, chiếc khăn tắm nãy quấn ngang người giờ rơi trên nền gạch hoa của sàn nhà. Hạnh không đi, mà lết từng bước, cảm giác khó chiu, bức bối xen lẫn cơ thể cô. hạnh xoa tay vào vùng kín mạnh hơn, ngón tay giữa cô chạm nhẹ vào mép âm hộ.
+
+nước từ âm hộ cô rỉ ra, cô đưa ngón tay vào sâu hơn nữa. hồi sv, chỉ lo học hành, dạy thêm…Hạnh thậm chí không hề có bạn trai dù nhan săc cô cũng không đến mức nào: làn da hơi nâu nhưng bù lại là nụ cười tỏa nắng thân thiện, cơ thể cô tuy không cân đối nhưng tràn đấy sức sống. Cô hầu như xa lạ với thủ dâm, chuyện giới tính.
+
+giờ đây, Hạnh đang tự thỏa mãn mình một phần bằng cách vân vê mép âm hộ. cô không dám đưa ngín tay sâu hơn; nước vẫn rỉ ra, trơn nhoẹt, ướt hết hai bên đùi Hạnh.
+
+…
+
+cả đêm hôm đó, cơn hứng tình hành hạ H cho tới sáng. Cô không nhớ gì hết, cả cv lẫn mối đe dọa của Lưu và Dũng đang kéo cô vào tập đoàn bào chế ma túy.
+
+—–
+
+Sáng hôm sau, Hạnh nhắn tin cho GĐ và trưởng phòng hành chính, cô xin nghỉ 1 ngày do "việc đột xuất". Thực ra, do thiếu ngủ và muốn tĩnh tâm suy tính nên Hạnh cần thêm chút thời gian mà thôi.
+
+Trời chẳng chiều người. 15h chiều, email của Lưu lại đến khuyaays động sự an tâm giả tạo của Hạnh. "triệu tập: 16h50 nhận việc. nơi cũ".
+
+
+Hạnh muốn chửi, muốn nguyền rủa. nhưng trong đầu óc lành mạnh của cô, ngay cả tiếng rủa thầm cũng chỉ hơn người khác mắng yêu nhau 1 chút. Nhưng cô ý thức được rõ ràng: chúng đã gọi, không thể không đến khi chưa tìm ra đối sách khả dĩ.
+
+
+
+==================== Chương 8 ====================
+
+5h chiều. lần này tiếp Hạnh chỉ có Lưu. Vẫn tiếng "chào cô ạ" nhưng sao nghe đầy quyền uy lẫn dọa nạt. Hanh thủng thẳng nhưng nhỏ nhẹ: "Có việc gì không? hay bọn em đã nghĩ lại mà tha đeo bám tôi?".
+
+– Bắt tay vào cv ngay thôi cô, thưa cô. hnay cty chính thức cần kiến thức và sự tư vấn của cô về chiếc máy sắc ký mới. chúng ta không có nhiều thời gian lắm đâu ạ. Vẫn tiệng ạ lễ phép nhưng được Lưu nhấn mạnh – mời cô dùng nước.
+
+ Hạnh định chối từ. cô thừa hiểu thứ nước này trao từ tay Lưu, nhưng một cái nhìn sắc lạnh khiến Hạnh vô kế khả thi để tự bảo vệ. cô lắp bắp đón lấy cốc nước.
+
+
+Chiếc sắc ký mới là mấy phân tích hợp chất hiện đại bậc nhất được mua từ Mỹ. các bộ phận còn đang tháo rời (đương nhiên, do chúng nhập lậu 100%). Việc của Hạnh là lắp ráp và chạy thử.
+
+
+Công việc không mới mẻ đối với 1 chuyên gia cỡ Hạnh. khi đồng hồ chỉ 18h30, chiếc máy đã chạy trơn tru. một vài mẫu thử đã được kiểm tra. HOÀN HẢO. Hạnh thở phào, gạt mồ hôi lấm tấm trên trán dù phòng có điều hòa mát lạnh.
+
+
+Bước lại bồn rửa tay, cô thoa xà phòng, cởi găng tay và rửa tay theo đúng quy trình an toàn vệ sinh. Khi với lên chiếc khăn lau màu trắng, Hạnh chợt thấy trong người khác lạ: phải, không thể là cái gì khác, cơn hưng phấn tình dục hôm qua kéo tới. Hạnh những tuowingr nó sẽ kéo tới muộn hơn, vì cố đã làm việc hết sức gấp gáp chóng vánh. nhưng sự thật là, nó đã kéo tới. tên Lưu lần này chắc pha chế thuốc với liều lượng khác hẳn. Nó kéo đến sớm hơn cô tưởng. Sáng nay, điều duy nhất cô nghĩ được là chúng sẽ bắt cô lệ thuộc vào 1 loại ma túy để dễ bề quay clip, nhằm sai khiến được cô, nhưng Hạnh quá ngây thơ!
+
+Run lẩy bẩy, cô đi tưởng chừng không vững; hai đầu gối như khuỵu xuống, âm hộ gầm gào, ẩm ướt, cảm thấy nước đang rỉ ra không thể ngăn nổi. Cô chỉ hơi hoa mắt, nhưng bất giác, cánh cửa phòng thí nghiệm lại hiện ra rõ mồn một. bản năng thúc giục, cô đưa tay xuống phía dưới…
+
+đứng sững trước của phòng đang mở là Lưu. thản nhiên, tay đút túi quần, nhìn cô giáo của hắn như một kẻ dửng dưng không thể dửng dưng hơn.
+
+Cơn hứng tình trọng Hạnh ltraof lên theo từng đợt, dữ dội, gầm rú hơn hẳn khuya hôm qua. H quằn quại, đi hoặc bò lết ra đến cửa cô không rõ nữa. Hình ảnh chồng, con, đồng nghiệp…tất cả lướt nhanh trong trí óc cô, nhạt nhòa, cứ rõ rồi lại nhạt dần..
+
+bò lết đến được cửa phòng, Hạnh chỉ còn biết túm chặt lấy hai chân của Lưu – phải, chính là tên sv nham hiểm ấy – bám được vào đùi Lưu để tránh bị ngã hẳn trên sàn,  Hạnh quên như chưa từng nhớ mình là ai. chạm phải vật gì đó đăng căng cứng giữa hai chân của Lưu, cô như mê đi, túm lấy..
+
+
+Lưu chầm chậm lùi ra khỏi cửa phòng, về phía bộ sofa fongf khách. Hạnh gần như mất hoàn toàn kiểm soát; cô lết theo Lưu, chầm chậm, phía dưới nước âm hộ vẫn rỉ ra từng đợt, sôi sục. Cô chỉ còn 1 điểm tựa duy nhất lúc này: cái vật căng cứng giữa hai chân của Lưu.
+
+Trò đuổi bắt diễn ra chậm chạp, Lưu từ từ tháo thắt lưng quần, vừa lùi chậm rãi. Hạnh lúc này chỉ biết lết theo; thật tình cô không thể nhận ra ai nữa cả; bây giờ chỉ còn bản năng và bản năng mà thôi. thật là liều thuốc tai ác. có lẽ sức công phá của nó nằm ngoài dự liệu của cả cái tên pha chế ra nó.
+
+Lưu lùi chậm lại. Hạnh bò sát đến nơi, túm láy 2 cẳng chân, rồi 2 đầu gối hắn; chiếc quần dài đã cới thắt lưng tuột xuống khỏi hông của Lưu, H nhào lên.
+
+– Hứng lắm phải không bà giảng viên? Lưu từ tốn xoa đầu cô.
+
+– a..a..ư.. Hạnh không biết đó là cô đáp lời hắn hay sao nữa. lúc này, miệng cô khô khốc, trong khi âm hộ đã ướt đẫm từ bao giờ. cô giơ tay, cố gắng túm lấy dương vật Lwuu sau lớp quần lót đàn ông.
+
+Hắn ấn đầu cô xuống: "nào, thèm lắm phải không EM?" hắn nhấn nhá từng từ.
+
+– a.. â.. đáp lại hắn vẫn chỉ là những tiếng ú ớ của Hạnh. không với tới được dương vật của Lưu, cô chỉ biết ôm chặt lấy hai đùi hắn, miệng không ngừng rên la.
+
+
+trong góc cáo của phòng khách, chiếc camerra nhấp nháy đèn đỏ từng đợt, nhịp nhàng.
+
+dưới sàn nhà, một cảnh tượng điên rồ đang diễn ra: Hạnh cứ với lên, định cầm vào dương vật Lưu thì lại bị hắn ấn đầu xuống. Cô không ngừng rên la, ú ớ.
+
+Như chừng sốt ruột, hắn tát cô 1 cái như trời giáng "Bốp ppppppppppp".
+
+
+
+==================== Chương 9 ====================
+
+Tiếp.
+
+Tâm trạng của Lưu thực ra rất mâu thuẫn. HẮN nhìn thâý Hạnh bị cơn nứng tình giày vò, tất nhiên bản năng giống đực của LƯU trỗi dậy một cách tự nhiên. THẾ nhưng, Hạnh không phải kẻ thù trong giớu của hắn, cũng không đủ nhan sắc mặn mà để làm hắn đắm say. HẠNH ĐƠN GIẢN  chỉ là một đối tựing mà hắn và tổ chức đen tối của hắn cần, rất cần. 
+
+CÁI nháy mắt ra hiệu của Dũng phía sau cánh cửa buồng trong khép hờ làm hắn sực tỉnh. LƯU túm lấy tóc Hạnh, kéo ngửa cô ra phía sau, quật dương vật đen đét vào mặt cô, mũi cô, và cơn nứng của hắn lên tới đỉnh điểm ưúa nhanh.khi tay H chỉ vừa chạm đc vào khúc thịt thìtừ đó một dòng tinh khí đã bắn tung tóe lên khắp khuôn mặt đờ đẩn , lên cả tóc của cô.
+
+KỊch bản thu nạp Hạnh thô bạo và nhuốm mùi nhục dục này, tất cả do tên Dũng đạo diễn, đã bị lưu diễn xuất quá tồi: cái chính là thỏa mãn cơn nứng tình của HẠNH trong lúc này, thì LƯU coi nhue chưa đạt được bởi kinh nghiệm non nớt của hắn. TÊN DŨNG thấy hắn bắt buộc phaira tay.
+
+CÒN tiếp.
+
+
+phần tiếp:
+
+Tên Dũng quyết định ra tay. hắn quyết định phải để con mồi là Hạnh chịu sự phụ thuộc hoàn toàn vào tổ chức, bởi kiếm được 1 người có chuyên môn cao trong bào chế ma tuy tổng hợp vốn đã không dễ dàng. Người đó có thể bắt buộc phải làm việc cho chúng, nhưng nếu không trung thành thì mọi sự coi như đổ bể. Những người làm việc vì tiền không thôi, thì sẵn sáng bán đứng bọn chúng cũng vì tiền; đe dọa về tính mạng thì nhiều khi cũng không đủ sự răn đe nếu như con người ta bị dồn đến đường cùng, vì vậy tên Dũng quyết định dùng tiền và danh dự gia đình để trói con mồi của hắn. 
+
+Dũng tiến lại, đưa mắt ra hiệu cho Lưu vẫn chưa hết xấu hổ và bối rối, Lưu đi vào phòng trong.
+
+
+Trên sàn nhà, Hạnh đang ngồi bệt, chân co chân duỗi, mặt và tóc bám bết đám tinh dịch sền sệt của Lưu, miệng vẫn ú ớ, thậm chí không thể lảm nhảm được điều gì có nghĩa, bởi thuốc đã ngấm và Lưu pha có hơi quá liều 1 chút. Khi quá liều, sự hưng phấn chuyển thành trạng thái ức chế, cơ thể đòi hỏi mạnh về tình dục nhưng lý trí lại mất hoàn toàn kiểm soát. Lúc này, để có được một trận làm tình mỹ mãn là không thể – Dũng biết rõ điều ấy – bởi Hạnh còn không thể đủ minh mẫn để nhận ra ai với ai, mình đang ở đâu.
+
+
+Hắn cầm cốc nước mát, tiến laij gần Hạnh. Tay hắn cởi phanh áo Hạnh ra để lộ bầu vú tròn nhỏ của Hạnh và toàn bộ phần bụng; hắn dội nước chầm chậm từ đầu của Hạnh, nước mát chảy qua khuôn mặt Hạnh, rửa bớt lượng tinh dịch trên mặt. nước chảy qua bầu ngực hạnh, qua bụng và xuống làm ướt hết phần hạ thể của cô.
+
+
+Tác dụng của cốc nước đã có vẻ đúng dự liệu của tên Dũng. Hạnh tỉnh ra đôi chút, khuôn mặt tuy vẫn còn man dại, nhưng đôi mắt đã trở nên tinh tường và có thần hơn. Cô nhìn DŨng, hoảng sợ lấy tay cố gắng khép 2 vạt áo che đi bộ ngực, chân co lại. 
+
+–  tôi…tôi xin các người đấy, để tôi về.. Hạnh chợt khóc nấc lên.
+
+Dũng không nói gì, hắn tiên lại gần Hạnh, chân đi giày của Dũng bất chợt đặt ngay trên sàn nhà giữa hai đùi của Hạnh, làm cô không thể khép hai đùi lại. Hạnh yếu ớt lùi ra phía sau, nhưng DŨng đã túm tóc cô:
+
+– cô em không muốn thỏa mãn sao? anh sẽ chiều em, chỉ cần ngoan.
+
+– không, tôi xin anh, tôi đã có gia đình. anh thèm thuồng gì ở tôi nữa?
+
+– anh chỉ muốn thỏa mãn nhân viên cưng thôi, cô em hãy cứ tận hưởng đi.
+
+nói đoạn, DŨng kéo tóc Hạnh, làm cô chúi úp mặt vào hạ bộ của hắn. Hạnh dãy dụa nhưng vô vọng. mu bàn chân của DŨng, đúng hơn là mu giày của hắn, kê vào giữa háng cô, hắn cựa nhẹ bàn chân, cà lên đúng phần nhạy cảm nhất của người phụ nữ. Mu giày cạ đi cạ lại qua quần xi lip của Hạnh, làm mép lồn của H lập tức bị kích thích đến mức khó chịu. tác dụng của thuốc chưa hết, chỉ được dòng nước mát vừa rồi làm dịu bớt nay lại trào lên. Hạnh cảm thấy quá nứng, cô lùi lại thêm nhưng đầu tóc đã bị DŨng giữ chặt, làm cho sự kháng cự nhìn có vẻ chỉ là miễn cưỡng. Dũng cử động bàn chân liên tục, cọ qua cọ lại, làm Hạnh lại bắt đầu như mê man trong cơn hứng nhục dục không thể cưỡng lại.
+
+– a..a. tôi ..xin các người..
+
+Hạnh rên rỉ
+
+
+Mặc kệ, tên Dũng vẫn khoan thai. hắn kéo sát mặt H áp chặt vào hạ bộ của hắn và chân vẫn cọ qua lại liên tục bên ngoài âm đạo của Hạnh. Nước bắt đầu rỉ ra thêm. ướt át, thêm phần nhớp nháp vì vừa rồi chiếc quần xilip bị dội ướt. Hạnh cảm thấy khó chịu xen lẫn cơ nứng kéo đến. Lần này, phần âm đạo của Hạnh là nơi tập trung đến 90% cảm giác hưng phấn, trong khi trí óc cô tỉnh táo hơn so với khi thuốc mới ngấm. Hạnh ban đàu còn dãy dụa, nhưng phần vì đầu tóc bị tên Dũng ghì chặt, phần nữa vì cảm giác không thể cưỡng được ở hạ thể, cô bắt đầu lắc qua, lắc lại, nhưng đùi đã có xu hướng kẹp chặt bàn chân đi giày của DŨng.
+
+
+Dũng nơi tay túm tóc Hạnh cho lỏng ra 1 chút, tay còn lại hắn xoa lên tóc, lên mặt cô, mơn trớn chứ không còn chút thô bạo nào. Hạnh kẹp chặt hai đùi vào mũi giày của Dũng, lắc mông qua lại trong tư thế ngồi bệt trên sàn nhà. Phải, Hạnh đã chuyển sang trạng thái thủ dâm với bàn chân của Dũng đang kê sát cửa âm hộ của cô, cách 1 lần vải mỏng của chiếc quần xilip. nước của Hạnh chảy thêm ra, thêm nữa, co bắt đầu rên lên:
+
+-ơ..ơ…ơ…xin ….xin..
+
+những tiếng rên và nấc của Hạnh không còn rõ ràng nữa, nhưng nội dung của nó chắc chắn vẫn có sự kiểm soát của lý trí, thế nhưng phần dục vọng do cơn hứng đem lại đã chen vào nhiều hơn. Hạnh cảm thấy ướt át, khó chịu không tả nổi. Cô thèm một cái gì làm dịu nó, nhưng cô k dám nghĩ đến, cũng k thể dudur lý trí mà nghĩ đến cho rành rọt.
+
+Dũng biết thời cơ chơi Hạnh đã đến, hắn thản nhiên cởi quần dài, nhưng chiếc áo sơ mi trên người thì k kịp – không còn thời gian nữa. khi thắt lưng cua Dũng vừa trượt qua, rơi nhanh xuống trc mặt Hạnh, hăn lại túm tóc dô, ấn sát mặt Hạnh vào cái dương vật đang căng cứng. 
+
+
+Lý trí lại hoàn toàn bay mất. Truoéc mặt Hạnh bây giờ, khúc thịt đó chính là cái cô cần,,cái duy nhất cô cần lúc này. chỉ nó mới làm dịu cơn nứng, làm hạ nhiệt cho cô. Vô thức Hạnh cầm lấy dương vật của Dũng. tay cô ban đầu còn mân mê, sau đó nhanh chóng nắm chặt và kéo nó về phía mình, cô vuốt lên vuốt xuống làm DŨng cũng cảm thấy sung sướng cực độ.
+
+
+Dũng chợt bước lùi lại. Cái chân phải đang dí sát và làm khổ âm hộ của Hạnh, chợt được rút ra dứt khoát để hắn lùi lại 1 bước, và dương vật hắn vì thế cũng xa tầm tay của Hạnh 1 chút. Hạnh bất giác nhổm dậy khỏi tư thế ngồi bệt, quỳ lên và bò them Dũng. Lúc này cô chỉ cần túm lấy cái khúc thịt đó, và lấp đi sự trống rỗng dày vò trong âm hộ.
+
+
+
+chỉ đợi có thế, DŨng bước ra phia sau Hạnh, lật gấu vay cô lên và tét 1 nhát thật mạnh vào mông Hạnh. Hạnh thét lên vì đau:
+
+– Á aaaaaa…ơ…ơ..
+
+Dũng dứt khoát dùng bàn tay vừa tét mông Hạnh, gạt chiếc quấn xilip của cô xuống làm nó vòng nagng qua khoeo chân cô. hắn đưa bàn tay móc thẳng vào lồn Hạnh.
+
+– A…Â…ơ…ơ….
+
+Hạnh nấc lên. Cuối cùng cái cảm giác âm hộ ướt nhẹp, không phải, mà là ướt đẫm, được một thứ gì lấp đầy chỗ trống, đã đem cô lên đỉnh thần tiên. nhưng sao nó vẫn trống quá, trống quá. CŨng phải thôi, Dũng chỉ đưa tay vào móc nhẹ trong lồn của Hạnh. Ngón tay hắn có to bằng quả chuối mắn được đâu, Hạnh vẫn thấy không thể đủ, dù nước dâm của cô trào ra thêm, Hạnh rên rỉ:
+
+– Anh…cac người…anh..ơ ơ ơ.
+
+– Thèm được địt vào lồn chưa cô em? Hắn hỏi dứt khoát lạnh lùng.
+
+– Anh..ơ…ơ.. 
+
+DŨng vẫn móc ngón tay, không trả lời. Hắn đưa sát vào sâu trong lồn Hạnh, ngón cái hắn khều nhẹ bên ngoài mép lồn. tiếng nhép nhép liên hồi, Hạnh như nảy người lên trong sự kích thích nhưng trống trải khó tả. Tay Dũng vẫn miệt mài, trong im lặng.
+
+
+Bỗng DŨng rút hẳn tay ra, tét nhẹ 1 lần nữa lên mông Hạnh, cái vỗ chỉ đủ làm cô hơi rát. Trống rỗng hoàn toàn, Hạnh cảm thấy chơ vơ, cô bệt xuống sàn nhà như cũ.
+
+
+DŨng đi ra phia trc mặt Hạnh, nâng cằm cô lên:
+
+– CÔ EM CÓ THỂ RA VỀ.
+
+….
+
+….
+
+bất chợt, Hạnh vồ lấy, phải – vồ lấy dương vật của hắn,nhổm người lên:
+
+– Em…anh…em thèm….cho em …cho emm…cô thở gấp gáp, hổn hển
+
+Không đợi thêm câu khác nữa (mặc dù trong kịch bản của hắn nên có câu đó), Dũng nâng Hạnh lên trong tư thế quỳ như cũ, hắn túm tóc cô kéo ngược làm cô ngửa đầu ra như trong tư thế hắn cầm cương ngựa. Dũng kê dương vật vào cửa mình Hạnh, rà qua rà lại rồi…SUJTTTTTTTTTTTTTTTTT. Hắn cắm thẳng, dứt khoát, cái dương vật căng cứng vào trong Hạnh.
+
+–Á AAAAAAAAAAAAAAAA….
+
+hẠNH HÉT lên.DŨng thụt dương vật ra vào, từng nhát, từng nhát 1. tay phải hắn kéo tóc cô làm cô ngửa mặt lên, mặt Hạnh lúc này hướng về phía chiêc camerra chính ở góc phòng. Tay trái DŨng vỗ đen đét vào mông Hạnh, như thể hắn ra roi, cầm cương ngựa cho Hạnh làm ngựa phi của hắn vậy. 
+
+Từng đợt, từng đợt , hắn chọc khúc thịt của hắn cứng ngắc xuyên vào lồn Hạnh. chỉ được 10 phút, Dũng gần như la lên, rút vội dương vật ra và từng dòng tinh dịch nóng hổi, nhướp nháp, phun lên lưng, lên mông cô. cả 2 đổ sụp xuống nền nhà.
+
+
+
+==================== Chương 10 ====================
+
+Lệ thuộc
+
+
+
+Ê ẩm và nhục nhã, Hạnh ra về sau khi cô lại bị ép uống 1 cốc nước có pha thuốc nữa. Tên Dũng đã tính toán sẵn nên Lưu pha 1 lượng thuốc ít hơn rất nhiều.
+
+
+Rời khỏi taxi, Hạnh chạy nhanh vào thang máy lên căn hộ của minh. Mới hơn 6h chiều, và mở cửa cho cô chính là chồng cô:
+
+
+– EM làm sao mặt mày tái nhợt vậy? công ty họp hành căng thẳng quá sao? 
+
+
+– Sao anh về đột xuất vậy, Hạnh hỏi hơi có nét thảng thốt cố giấu.
+
+
+Tưởng Hạnh bị cảm, Nguyên pha nước chanh cho vợ. Cô uống 1 hơi, vừa do khát vừa hy vọng chỗ thuốc kia nhạt bớt thật nhanh.
+
+
+…
+
+
+Đêm ấy, Lưu, sau đó là DŨng, đều gọi điện cho Hạnh. Bọn chúng chỉ đơn giản là muốn kiểm tra tác dụng của liều ma túy nhưng Hạnh không nghe máy. Tất nhiên rồi, Hạnh không dám nghe máy và cũng không cần nghe máy, đêm ấy Nguyên bất ngờ hoàn toàn về sự nồng nàn của vợ. Cảm giác ân hận, tội lỗi, cộng với tác dụng của liều thuốc, làm nên một Hạnh nồng nàn, mãnh liệt mà Nguyên chưa thấy bao giờ.
+
+
+Sau 2 ngày ở nhà chỉ do chuyến công tác đột xuất và được thủ trưởng cho chút thời gian tranh thủ, Nguyên lại lên đơn vị. Hạnh không dám hé răng với chồng, dù rất rất muốn. CÔ chưa biết phải mở lời ra sao, cần chồng giúp can thiệp như thế nào. Tiễn anh trong nước mắt, Hạnh làm Nguyên thêm 1 lần cảm thấy ngác nhiên vì vợ.
+
+
+———-
+
+
+
+==================== Chương 11 ====================
+
+phần tiếp:
+
+cả tối hôm ây, cứ 1 lát lại có 1 email của Lưu. một loạt email duy nhất với nội dung: "ngày mai triệu tập. 5h30". Tên này điên thật rồi. dù là 1 nội dung sao phải mail đi lại nhiều lần – Hạnh chả buồn quan tâm nữa. Cô trả lời 1 số email quan trọng từ công ty, ăn cùng con gái và người giúp việc, sau 10 h Hạnh mới uể oải bước vào phòng tắm.
+
+Cái quần lót thấm đẫm mồ hôi và cả dịch nhầy, Hạnh chợt thấy rất kỳ lạ. Cô không hiểu vì sao có thể mình đổi khác như vậy, cô chỉ nhớ cả ngày hôm nay bọn chúng gần như tra tấn cô và cô không hề nhớ là bản thân có chút nứng tình nào cả. tất cả chỉ là sợ hãi và ghe tởm, tại sao dịch ra nhiều vậy? hay nội tiết của cô có vấn đề xấu?? Thôi mặc kệ, hơi đâu mà nghĩ quá nhiều. Cô chỉ cần lsao thoát ngay dc bọn chúng, hoặc chí ít là chúng chỉ ràng buộc cô làm việc cho chúng có thời hạn ngắn là đủ rồi. Cởi hết quần áo, Hạnh để luồng nước ấm áp mơn man cơ thể mình và ngả người trong bồn tắm.
+
+Bất chợt Hạnh lại đưa tay xuống âm hộ. Không hẳn là bất chợt, mà một cơn kích thích phía trong âm đạo không biết do đâu chợt đến. Hạnh xoa ngoài mu, càng xoa cơn nứng càng kéo tới. Tay trấi Hạnh xoa bầu ngực mình, mặt ngơ ngác có phần khó hiểu. Tay phải cô xoa, day mạnh dần âm hộ, cơn nứng càng kéo đến. Cô ngỡ ngàng với thân thể của mình, Với 1 loạt biến cố kinh hãi vừa qua dồn dập, sao mình có thể hứng tình bất chợt như thế??? Hạnh đưa ngón tay vào cửa mình. Cô đứng lên bước khỏi bồn tắm, người vẫn bám bọt của sữa tắm trơn nhẫy. Cô ngồi trên thành bồn tắm, xoa mu lồn và đưa dần 1, rồi 2 ngón tay vào cửa mình. Hạnh không dám đưa tay vào sâu, cô hầu như chưa từng thực sự thủ dâm!
+
+Hạnh thở dốc, run lẩy bẩy. Cô vội vàng thọc sâu ngón tay vào âm đạo, cô rên kh khẽ, trí óc chỉ loáng thoáng hình ảnh người chồng thân yêu giờ đang ở rất xa. Hình ảnh Nguyên rất rõ rệt, sau đó cứ mờ dần, mờ theo cơn nứng lồn không thể kiểm soát của Hạnh. Nước dâm ướt nhoẹt hai ngón tay Hạnh. Cô thọc 2 ngón tay nhanh dần, nhanh nữa, mân mê khắp các điểm nhạy cảm của âm đạo và 2 đầu vú săn cứng. Hạnh gần như hét lên trong im lặng. miệng cô há hốc, mắt dại đi. nước dâm chảy ra như k thể nào ngăn được, cô gần như kiệt sức ngồi sụp xuống bên cạnh bồn tắm.
+
+Khi cơn nứng được thỏa mãn và vơi đi đôi chút, Hạnh tắm qua loa rồi cứ thế quấn khăn tắm, đi chân trần về phòng ngủ và nằm vật trên đệm. Cả đêm hôm ấy, các cơn kích thích thỉnh thoảng lại âm ỉ, Hạnh hầu như không thể yên giấc mặc dù bình thường cô ngủ luôn ngon giấc.
+
+Sáng hôm sau Hạnh dậy muộn. CHoàngdaayj, đồng hồ đã 8h45. Mặc vội chiếc juyp, trang điểm và chải tóc qua loa, Hạnh không còn kịp xuống tầng hầm chung cư lấy xe. Cô bắt vội chiếc taxi màu vàng cũ kỹ xuất hiện trước mặt và vội vã đến công ty. CUộc họp hội đồng quản trị mở rộng đang chờ cô.
+
+Buổi họp diễn ra chóng vánh. chỉ là các tuyên bố ngắn của CEO và chủ tịch HĐQT. Hạnh bước về phòng PGĐ của cô, bật máy tính. 30 mấy email của Lưu. Hạnh không cần xem, cô mạnh tay xóa  hết. Thẫn thờ, cô ngửa người ra ghế thì điện thoại rung lên.
+
+– ALo, Tôi Hạnh nghe.
+
+– CÔ em ngủ ngon không? có lệnh triệu tập cô em. như cũ, 5h30 sau giờ làm việc của cô tại công ty. – đầukia là giọng lành lạnh của tên DŨng.
+
+– tôi đã. Hạnh cộc lốc.
+
+– Cô em có vẻ muốn chống lệnh?? Cô có nghĩ đến hậu quả không??
+
+– Tôi sẽ đến…. nhưng xin các người.
+
+– Vậy trân trọng hẹn cô em 5h45. haha. hắn cười, cái cười chẳng ăn nhập gì với câu chuyện, và cúp máy. "Đồ điên"
+
+
+"Reng…….reng….". lần này là tiéng chuông điện thoại nội bộ. Tổng giám đốc gọi cô.
+
+Cầm tập tài liệu nhỏ, Hạnh bước sang phòng TGĐ ở cuối hành lang tầng 3. Chợt điện thoại lại reo. Vẫn tên DŨng. "đồ chết tiệt".
+
+– ALo. Các người không để tôi yên vậy?
+
+– Cô em ….chujttttttttttttt.
+
+sau cái hôn còn vô lý hơn cả điệu cười, hắn lại cúp máy. Hạnh bấm nút tắt rung của điện thoại, và nửa phút sau cô đã ngồi đối diện với TGĐ.
+
+– Cô Hạnh này, TGĐ gọing thân tình, gần đây chuyện cty rất tốt, tôi chỉ trao đổi riêng về vấn đề dự án thôi. Cô đã lập đủ hồ sơ nhân sự chưa? các nhân tài mới có gì nổi bật không?
+
+– Dạ, em vẫn tiến hành, mọi việc vẫn trọng dự tính anh ạ.
+
+– Ừ, tôi trao đổi vậy thôi, chứ đã khiển tướng là tin dùng, chuyện này không lớn đối với năng lực của cô mà. Tôi chỉ lo cô bận quá thôi.
+
+– Dạ, em đảm đương được ạ.
+
+– Tốt rồi Hạnh. mà cô Hạnh này, sao dạo gần đây sắc mặt cô không ổn lắm? có phải sk có chút vấn đề không cô?
+
+TGĐ đã 62 tuổi. Ông rất thân tình với toàn bộ nhân viên, và với Hạnh càng như vậy. Với ông, cô không chỉ là 1 phó tướng, mà như 1 sư trưởng, chỉ huy 1 sư đoàn quan trọng của tập đoàn quân do ông chèo lái vậy. Vốn xuất thân từ quân đội, ông luôn ví von như thế.
+
+– Dạ cám ơn anh, em hơi thiếu ngủ 2 hôm nay chứ không sao ạ. Hạnh hơi ấp úng.
+
+– Cô ngồi 1 lát rồi hãy về phòng. tôi thấy mặt cô tái nhượt đi. Uống nước đi,..khoan..để tôi ..cô cứ ngồi yên đó. chỗ anh em thân tình cô đừng khách sao – vừa nói, TGĐ vừa đưa ly nước.
+
+Hạnh lí nhí cảm ơn và uống 1 hơi. TGĐ lắc đầu vẻ ái ngại cho sk của cô.
+
+Sao thế này, lại một cơn nứng bất ngờ nhưng rất nhanh, kéo đến. Hạnh tái mét sắc mặt, còn ông TGĐ ngạc nhiên nhìn cô.
+
+– Có sao không Hạnh? Tôi gọi xe đưa cô đến bệnh viện ngay nhé?
+
+– Không…không…em không..Hạnh ép hai đùi vào nhau thật chặt, giọng lí nhí. Cô chưa hiểu cơ thể mình tại sao có phản ứng đó, nhưng cô hiểu đó là gì. SỰ việc tối hôm qua lại tái diễn.
+
+– Em choáng chút, em đỡ rồi ạ. e xin phép về phòng nghỉ 1 lát.
+
+– Ừ. TGĐ nói với theo  – chiều nên nghỉ đi Hạnh.
+
+– Dạ.
+
+Hạnh bước về phòng, nhưng hai chân cô như ríu lại. Cô cảm thấy rõ âm hộ mình giật nảy lên, từng cơn, từng cơn. Hạnh khép chặt hai đùi lại, ôm chặt tập tài liệu và gần như lê về phòng, sập cửa.
+
+Cơn giật âm hộ càng mạnh hơn, Hạnh ngồi ngửa trên ghế phó GĐ, cô không điều khiển nổi mình nữa. Hạnh lại đưa tay xuống dưới…
+
+QUần lót cô đã ướt đẫm. Hạnh xoa tay, xoa mạnh nữa, nhưng dù phòng biệt lập, cô cũng chỉ dám xoa ngoài quần lót. Một cảm giác sợ hãi của sự lộ liễu khiến cơn nứng như kìm được lại.
+
+Ngày làm viecje cũng nhanh chóng trôi qua. Các chồng tài liệu, báo cáo, rồi các báo cáo chuyên môn…cũng chiếm hết thời gian của 1 PGĐ như Hạnh.
+
+—
+
+Hạnh quyêtds định đến chỗ Lưu và Dũng sớm hơn một chút. Cô chỉ kịp nghĩ "thúc đẩy nhanh việc của bọn chúng, có lẽ bọn chúng sẽ sớm buông tha cô". Lúc này, Hạnh chỉ nghĩ được có thế.
+
+Lưu là người bước ra mở cửa. không thấy mặt tên DŨng đâu. Hạnh cũng không hỏi. Hắn có phải chỗ thân tình như đồng nghiệp đâu. Cô còn mong một tai nạn hay cái chết bất chợt đến làm cả 2 tên vĩnh viễn biến mất, như vậy cô mới được yên. Một ý nghĩ điên dại lóe lên trong đầu Hạnh..
+
+– Các người cần gì ở tôi hôm nay? Tôi có thể thúc đẩy công việc của các người nhanh hơn, tôi mệt mỏi lắm rồi, Hạnh nói 1 hơi.
+
+Lưu tiến lại gần Hạnh. cô lùi lại, đầy cảnh giác.
+
+– Hôm nay chúng ta chỉ gút lại cam kết của cô giáo với cty thôi, công việc chính còn dài mà , cô giáo vội gì.
+
+Cái từ "cô giáo" tên Lưu thốt ra sao đầy giả tạo và kinh tởm. "đồ khốn.." Hạnh thầm nghĩ.
+
+– TÔi đã chẳng cam kết, thậm chí xin làm xong để các người nhanh buông tha cho tôi sao?
+
+– Ngày rộng tháng dài, cty còn phát triển mà, và cô còn đóng góp lâu dài.
+
+– Không đời nào!
+
+– Thôi, việc chính hôm nay là gút lại các thỏa thuận một lần nữa cô giáo ạ. Lưu nhấn mạnh.
+
+ – Tôi xin các người đấy, hãy buông tha cho tôi. Hạnh chỉ còn biết hạ giọng. Cô hiểu rõ gay gắt là vô ích.
+
+– khoan thai đi lại phía bộ sofa, Lưu chỉ tay ra hiệu cho Hạnh ngồi và
+
+( lát viết tiếp)
+
+
+Tiếp.
+
+Ra hiệu cho Hạnh ngồi, Lưu nói ngắn gọn:
+
+– tổ chức cần cô, với tư cách 1 chuyên gia bào chế có kinh nghiệm. Chúng tôi không có nhiều thời gian để tìm người khác, vì vậy cô chỉ còn cách hợp tác, cô giáo của em ạ.
+
+HẠNH dướn người trên ghế định phản đổi nhưng LƯu tiếp lời ngay:
+
+– tổ chức không dùng các thủ đoạn manh động ngay từ ban đầu, cô phải hiểu điều đó. TUy nhiên, cô còn gia đình, danh dự, cả cha mẹ đang tự hào về cô, tổ chức có thể chà đạp lên tất cả mà không hề cần 1 nhát dao hay viên đạn. Cô có lẽ cũng không phải không rõ điều đó chứ?
+
+ĐOẠN diễn văn đầy màu đen của LƯU đã đánh gục HẠNH gần như hoàn toàn. Cô bật ngửa ra ghế, run lâyd bẩy và bất ngò ôm mặt khóc rưng rức.
+
+– tôi xin em, xin..các người. Có thể buông tha cho tôi …mà…mà..cô nấc lên.
+
+– tổ chức đã nói qua lời tôi, chúng tôi không còn thời gian nữa. Cô chỉ còn con đừing hợp tác thôi.
+
+HẠNH bất chợt, như 1 cố gắng cuối cùng, quỳ sụp xuống ôm lấy đầu gối của LƯU :
+
+– LƯu, cô mong e còn chút lương tâm, hay thương xót cũng đc…hức….hức
+
+Lưu cười nhạt:
+
+– cô giáo của em ạ,cô tửing tôi sinh ra đã gia nhập tổ chức này sao!!! Không những cô, mà không ai có thể xuống khi đã cưỡi hổ, cô hiểu không?
+
+HẠNH vẫn khóc nức nở, nhưtội nghiệp cô, LƯU bất chợt có động tác thật tình người, hắn vuóit mái tóc HẠNH :
+
+– vả lại, ngoài khoản thù lao hậu như đã quyết ban đầu, cô còn được hưởng nhiều đặc quyền nữa…hắn bỏ lửng câu nói và đi lại phía chiếc tủ kê 1 độc bình màu vàng nhạt. Lưu bật 1 công tắc màu cam nằm lẫn giữa màu vàng của chiếc độc bình và vân gỗ, cười bí hiểm.
+
+
+Lưu mở cánh tủ, lấy ra một xấp đô la đặt trên mặt bàn trong khi HẠNh vẫn nức nở khóc:
+
+– như em đã nói, hợp tác với tổ chức, cô được hường cả quyền lợi về vật chất lẫn sự chăm sóc tinh thần. Đây là thù lao cho nửa tháng đầu tiên của cô như đã hứa, 25 ngàn đô la. Phần còn lại ở sau cánh tủ kia và cô có thể nhận nó sau khi ra về.
+
+HẮn mỉm cưởi:
+
+– còn sự chƯM sóc về tinh thần, rất đặc biệt, cô sẽ nhận thấy ngay sau đây.
+
+HẮN ngồi lại trên ghế, ôm lấy đầu và xoa lên tóc HẠNH. CÔ bỗng cảm thấy cơn nứng lan dần từ điểm nhạy cảm, chạy dọc lan suóit từ âm hộ đến hai bờ mông lên sống lưng. Hạnh run rẩy, chưa kịp hiểu điều gì thì giọng lưu lại vang lên:
+
+– hôm qua, chúng tôi đã cấy 1 bộ rung nhỏ xíu vào âm đạo của cô. NÓ đc kết nối theo công nghệ 7G rất đặc biệt và bây giờ chắc cô đã hết thắc mắc về những cơn nứng tối qua và sáng nay rồi chứ?
+
+– em…emm.. các người làm vậy để làm gì? BUông tha cho tôi điiii.
+
+– để kiểm soát cô hoàn toàn. KẾ hoạch của tổ chức, là cho cô những thù lao hấp dẫn tương xứng với đóng góp, đồng thời kiểm soát hoàn toàn thân thể cũng như tâm hồn của cô.
+
+
+KIỂM soát hoàn toàn linh hồn cô, mới giữ đc bí mật và sự trung thành tuyệt đối- lưu nhắc lại – bất kể cô có muốn hay không.!
+
+HẠNH đang còn ngơ ngác thì một cơn kích thíc dữ dội tấn công hạ thể cô không thương tiếc. Cái cơn bứt rứt hôm qua, k thể so sanhs nổi cảm giác lúc này của HẠNH. Lồn HẠNH giật lên từng hồi, cơn co giật như trúng phong, nứic dâm từ âm đạo không rỉ ra nữa mà gần trào ra. CƠN co giật lan tỏa nhanh chóng và lan sang hậu môn, làm lỗ đít HẠNH co thắt liên tục, rần rật. CÔ ú ớ và hoàn toàn mất đi sự kiểm soát. CƠ thể Hạnh không thể chống cự noỉi nữa. Lý trí cô vẫn hằn rõ hình ảnh NGUYÊN, ng ck thân yêu của cô, nhưng miệng cô ú ớ. CỐ gắng kẹp hai đùi lại, nhưng cơn giật càng vì thế trở nên mạnh mẽ hơn, cô ngứic cặp mắt lờ đờ nhìn Lưu, miệng há hốc:
+
+– các người…..em…tôi…làm sao thế này…..
+
+Khuôn mặt, cái cườu mỉm của Lưu mờ ảo lướt qua thị giác của cô.
+
+HẠNH vồ lấy hai đùi LƯU, cô cnàg cố cưỡng thì cơn nứng càng mạnh. Lưu cuoài nhạt:hắn đã bật điều khiển tùe xa ở mức cao nhất, một ng phụ nữ tuy trong sạch nhueng ít kinh nghiệm tình trường như hạnh sao có thể chống cự nổi.
+
+(CÒN tiếp)
+
+
+HẠNh vồ lấy 2 đùi LƯU. CÔ áp mặt vào hạ bộ hắn, giọng hổn hển, đứt quãng:
+
+– tôi…em…..ơ ơ ơ…
+
+CÀng kẹp chân lại cô càng k điều khiển để làm chủ cơn nứng, Hạnh liền dạng chân ra theo bản năng. NGay lập tức, cô cảm thấy nứic như xối ra,âm đạo trống rỗng, vẫn giật giật.
+
+– cô giáo của em muốn gì nào?
+
+KHÔNG đợi HẠNH trả lời, LƯu nhanh nhẹn cởi thắt lưng quần, tuột toàn bộ quần dài lẫn quần lót của hắn xuống mắt cá chân, túm tóc HẠNH úp dúi mặt cô vào hạ bộ hắn.
+
+Hạnh mê đi, dù vậy bản năng con cái lại trỗu dậy. Cô vẫn hiểu rõ, đúng ra cơ thể đàn bà của cô hiểu, rằng đây là vật mà cô cần duy nhất trong lúc này. Cô ôm chặt đùi của LƯU, ngấu nghiến…
+
+
+
+==================== Chương 12 ====================
+
+…Hạnh mê đi, dù vậy bản năng con cái lại trỗu dậy. Cô vẫn hiểu rõ, đúng ra cơ thể đàn bà của cô hiểu, rằng đây là vật mà cô cần duy nhất trong lúc này. Cô ôm chặt đùi của LƯU, ngấu nghiến…
+
+Hạnh hầu như khôgn quen với khẩu dâm, cho nên cô cầm chặt con cu đăng cứng đơ của Lưu, lúng túng, vuốt ve, rồi cầm thật chặt nóng hổi trong cả 2 bàn tay. Thấy vậy, Lưu một tay đang xoa chuyển sang vít đầu cô xuống, tay kia hắn bóp vào 2 cánh mũi của HẠNH. hẠNH CHỈ có biết há miệng thở dốc trong man dại, và ngậm trọn con cu của hắn trong miệng. nước miếng cô sặc sụa, H lắc đầu không ngừng, miệng chỉ biết ú ớ. quả là về khoản này, còn phải đào tạo Hạnh rất nhiều! Lưu mất kiên nhẫn với màn khẩu dâm đầy đe dọa của răng Hạnh, hắn liền đứng phắt dậy làm cô mất đà. Hạnh vội ngẩng đầu lên nhìn dương vật Luu đang xa khỏi cái miệng và tay mình, cô dướn người vồ lấy, chới với.
+
+Lưu đẩy mạnh cô ngã úp người lên phần ghế sofa mà hắn vừa ngồi, đồng thời đá chân 1 cái cho văng chiếc quần ra khỏi mắt cá chân. hắn vẫn bận nguyên phía trên là áo sơ mi, cà vạt, vội vàng đến nối k kijpp cởi. Lưu đi ra phía tủ, hắn vặn chiết áp cho độ rung của chiếc máy nhỏ xíu cấy trong lồn Hạnh đến nút max, rồi quay ra ohias sau cô. Hạnh run bần bật, bị Lưu ấn vào giữa lưng và gáy nên phải úp mặt trên mặt sofa, cô ú ớ: ơ…..ơ……
+
+âm đạo bị kích thích hết mức, nước dâm chảy ra ướt nhẹp 2 bên đùi phía trong của Hạnh. Lưu tét mạnh tay phải vào 1 bên mông cô. Hạnh giật nảy lên lại rên ư ử vì nứng, co co đùi giãy dụa.
+
+Lưu quyết định kích thích đánh đổ hắn ý chí còn sót lại của cô. hắn xọc 2 ngón tay vào lồn Hạnh, thụt vào sâu chỉ 1 đốt ngón tay, nhưng thụt ra thụt vào rất nhanh.
+
+– Á á á á á á … Hạnh hét lên, cô vô thức ướn người, lùi mông lại phía sau, như muốn tay Lưu vì thế mà thụt sâu hơn, nhưng hắn vội rút tay lại.
+
+hắn tiếp tục thụt ra thụt vào như vậy, đủ banh 2 mép âm đạo của co nhưng lại đủ nông để cho cô chới với. bất ngờ, Lưu rút 2 ngó n tay ướt nhẹp nước dâm của Hạnh ra và xoa quanh 1 vòng lỗ hậu môn của Hạnh, rồi đưa dần dần 2 ngón vào đó.
+
+– A AAAAAAAAAAAAAAAAA, chết……em… tôi……….
+
+k rõ Hạnh gọi Lưu là em, hay gì nữa. ngôn ngữ của cô lẫn lộn, chỉ còn ngôn ngứ hình thể của Hạnh: quằn quại, lắc lư cặp mông vì cơn nứng ào ạt đến, tấn công đồng thời cả 2 lỗ sâu kín của cô. chỉ chờ có thế, Lưu dằn từng tiếng:
+
+– ANH ĐỊT EM ĐÂY HẠNH.
+
+noid đoạn Lưu cắm PHUJPPPPPPPPPPPPPP dương vật vào lỗ lồn đang nhãy nước của cô.
+
+– aaaaaaa…địt……………a…em……..tôi……..
+
+Hạnh thét lên, căn phòng chảo đảo. đèn chùm rung rinh.
+
+Lưu thật ra không chờ tiếng "địt" của Hạnh. khi gọi cô giáo-người hướng dẫn của mình bằng từ "EM", cơn nứng đã lên tận trí não của hắn trước cả khi nó chạy xuống đđầ dương vật.
+
+Hắn dập, dập liên hồi dương vật căng cứng vào lồn Hạnh. Hắn giã. đúng, hắn đang giã vào cô giáo mình bằng cái chày thẳng căng của hắn. Hạnh quằn quại, rên xiết. chưa bao giờ trong đời cô được lên đỉnh nhanh và với cường độ mạnh đến vậy. hai tay Lưu vịn vào hông cô, bấu chặt. Hạnh cấu chặt lấy mặt nệm của sofa, cô lùi ra theo từng nhát giã gạo của Lưu
+
+a-aaaaaaaaaaaaaaaaaa-á       á…địt  ….
+
+– Hạnh ơi, anh đang giã vào lồn em…â
+
+aaa
+
+Lưu hét lên. hắn không chịu nổi cái âm đạo chặt chội mới qua 1 chủ nhân của Hạnh. Hắn giã liên hồi, trong cơn tưng tức muốn thoát ra của tinh dịch ở đầu dương vật. Hắn bấu chặt tay lên mông Hạnh lằn đỏ. hắn giã nhanh, mạnh, như một chiếc máy khâu…-Á asas aaaaaaaaaaaaaaaaaaa
+
+Bổng Hạnh hét lên 1 lần nữa. Tay cô chônngs làm nửa thân trước và đầu cô mnhoomr lên, bấu chặt suýt rách cả nệm da của sô pha. Lồn Hạnh có thắt, từng đợt, như 1 cái vòng kim cô bóp chặt lấy dương vật Lưu. CHỉ đợi có thể, Lưu thả lỏng người, nhấp như vũ bão lần cuối rồi phun hết vào trong sâu thẳm của Hạnh.
+
+
+(tiếp) 
+
+Hạnh gục xuống mặt ghế. Cô chưa bao giờ trải qua các giây phút dục tình ghê gớm đến như vậy. Lưu chậm rãi, thả bịch người xuống chiếc ghế sofa đơn. CÒn Hạnh, sau phút giật nảy người lên vì dao động tắt dần của những cơn có thắt liên hồi vì lên đỉnh của âm hộ, cô quay trở lại với thực tế. Xấu hổ không thể chui được xuống đất, Hạnh len lén kéo váy xuống và đi vào nhà vệ sinh sửa sang lại xống áo.
+
+Cô trở ra, mặt đỏ bừng rồi tái dại đi. Lưu là kẻ cưỡng ép cô, nhưng cô lại k dám nhìn vào hắn. Cô sợ ư? không? chỉ là cảm giác xấu hổ vì đã lên đỉnh mà không che giấu nổi hắn. Cô lí nhí
+
+– không còn việc gì, tôi về đấy.
+
+Nói rồi cô với túi xách định bước ra cửa. Lưu như bừng tỉnh sau cơn hoan lạc:
+
+– Tiền!
+
+hắn gọn lỏn, thái độ không hẳn là kẻ cả, rồi cầm 1 chiếc túi vứt về phía chân Hạnh. Cô đứng đờ người ra, phần vì khó tin phần vì vẫn còn cơn hoảng sợ xen với tủi hổ.
+
+Lưu vơ lấy những kẹp đô la nhét vội vào túi cho Hạnh. Cô cầm quai túi mà như người mất hồn. Lưu bất chợt đứng dậy, hắn choàng tay ôm lấy cô rồi hôn nhẹ lên trán cô:
+
+– cô giáo về đi, chiều mai nhé.
+
+=======
+
+cả đêm cho đến trưa ngày hôm sau, giữ bộn bề các email về cv, tuyệt nhiên bọn Dũng và Lưu không hề gửi 1 email nào. Hạnh chợt nhận thấy mình có ý đợi email của bọn chúng. cô không hiểu nổi bản thân mình, nhưng công việc cuốn cô đi.
+
+4h 30 chiều, vẫn tuyệt nhiên không có tin tức gì. Hạnh sốt ruột, cô mong bọn chúng hủy cuộc hẹn chiều nay, nhưng cô vẫn có ý ngóng bọn chúng viêt email nói rõ. Mà tuyệt nhiên không thấy!
+
+6 rưỡi, H quyết định về nhà. Cố tắm rửa, ăn tối cùng con gái và bà giúp việc. 10 rưỡi tối, Hạnh chuẩn bị ngồi vào bàn xử lý các tài liệu của công ty thì nghe tiếng điện thoại rung. Email của tên Lưu:
+
+" khuya có việc gấp cần cô, nhưng có thể đến sớm vào sáng mai, trước 7h sáng".
+
+lại một cơn rung nhè nhẹ kích vào âm hộ của Hạnh. Cơn rung đó không đủ để làm Hạnh thấy khó chịu vì nứng, nhưng mặt cô đỏ như gấc, cô cầm đt trả lời email: 
+
+"thôi để tôi qua luôn bây giờ, mai tôi không thể".
+
+Cô bắt đầu không hiểu mình nữa.
+
+
+Chỉ có DŨng đón Hạnh ở cửa căn biệt thự. hắn có vẻ trầm ngâm, ra hiệu mời cô vào nhưng không nói gì. hạnh lùi lũi bước vào. Dù đi vội nhưng để đề phòng con mắt của 2 tên dâm tặc, cô cũng kịp mặc 1 chiếc quần jean và chếc áo sơ mi đuôi tôm.
+
+Tên DŨng trầm ngâm là phải. Hắn có phần lo lắng, bởi số hàng mới nhận là các mẫu ma túy tinh chế chuẩn từ Nam Mỹ mới về. Việc bọn hắn cần Hạnh làm là dùng máy sắc kế để đọc toàn bộ thành phần hóa học của các mẫu ma túy mới này, sau đó số mẫu này sẽ bị hủy hoàn toàn. Công việc hiện chỉ là giai đoạn chuẩn bị, các trùm ma túy từ công ty mẹ Funepharrma không ngu gì phát tán số hàng lớn vào VN ngay. thậm chí, chúng còn yêu cầu chi nhánh tại ĐNA xử lý ngay các mẫu này trong vòng 48 tiếng đồng hồ.
+
+Hạnh cám đầu xử lý các mấu mới. Một cv mà trc đây có ác mộng cô cũng chưa bao giờ nghĩ 1 ngày mình sẽ phải làm nó. Cô làm rất nhanh, nhanh nhất có thể, chỉ mong cv kết thúc sớm, 2-3h sáng như Hạnh nhẩm tính. chỉ có 1 tên Dũng, Hạnh càng không muốn lưu lại căn biệt thự này lâu hơn. 
+
+Hạnh lúi húi làm, còn Tên DŨng cứ ra vào phòng thí nghiệm liên tục. hắn chỉ đợi Hạnh đưa lên máy soi xong 1 mẫu nào, lập tức hắn đem ra và đốt ngay lập tức. tên này cẩn thận hơn cả yêu cầu của các ông trùm bên kia đại dương.
+
+Đến mẫu cuối cùng, Hạnh thở phào, tắt máy và rửa tay, tháo găng tay rối ra khỏi phòng. Cô định bụng đi về ngay, nhưng DŨng chợt tiến lại gần cô. Hạnh bất giác lo sợ:
+
+– tôi..xong việc của các anh rồi., tôi phải về.
+
+DŨng k nói gì. rất nhanh, hắn đặt tay lên vai Hạnh:
+
+– Ở lại đến sáng cô em. ha ha ha. hắn cười khả ố.
+
+– Không, ..tôi phải về,. buông tôi…
+
+Co gạt tay hắn trên vai và buowcss nhanh ra chỗ giá để giày. nhưng cô sao kipj với tên DŨng, hắn nhào tới gần như vồ lấy cô, hai tay hắn như gọng kìm ôm ngang ngực cô, mạc cô giãy giụa. DŨng gần như bê bổng Hạnh lên, kéo tới chiếc ghế sofa và quăng Hạnh trên ghế. Hạnh nhào lên tính chạy, nhưng hắn lại ôm chặt cô 1 lần nữa:
+
+– Cô em ngoan nào, a sẽ để e được giải trí tý chút thôi.
+
+Hắn 1 tay ghì chặt Hạnh, kéo cô tới gần phía chiếc độc bình màu vàng nhạt có để nút bấm điều khiển chiêc máy rung. hắn với tay gạt nút điều khiển lên độ cao nhất và cười:
+
+– Nào nào, cô em, chỉ 1 chút thôi rồi ta khiêu vũ mà.
+
+Hiệu quả đến thật nhanh như ý đồ của DŨng. chỉ vài giây sau khi bật nút điều khiển từ xa, chiếc máy trong cửa mình Hạnh đã cho thấy tác dụng của nó: Hạnh run lên bần bật, cảm thấy cơn rung rộng thật mạnh chạy dọc từ cửa mình cô vào rất sâu. Co ép hai đùi lại chống cự, nhưng mặc, âm hộ Hạnh bắt đầu phản ứng. Nước dâm rỉ ra dưới háng cô, ướt át, khó chịu. Hạnh vẫn không ngừng chống cự hòng thoát cánh tay như gọng kìm của tên DŨng, nhưng cơ thể cô run lên như nói điều ngược lại. Dũng hiểu con mồi đã sắp sẵn sàng, hắn thả tay buông Hạnh ra và túm tóc cô. giật tóc là Hạnh phải ngửa mặt lên, hắn bất chợt tát 1 cú như trời giáng vào mặt Hạnh:
+
+– Bốp!. Con ngựa cái, mày còn làm bộ chống cự nữa không?
+
+nói rồi hắn túm tóc cô, lôi xềnh xệch ra chiếc ghế sooffa dài. Ngồi xuống ghế, DŨng túm tóc Hạnh ấn cô vào hạ bộ của hắn:
+
+– Hôm nay a sẽ chỉ cho cô em cách phục vụ đàn ông cho ra dáng nhé.
+
+Hạnh vẫn chống cự, giãy giụa càng mạnh nhưng mặt cô vẫn bị hắn ấn sát vào hạ bộ hắn. Tay cô chới với vô ích, nhưng cơn rung điểm nhạy cảm do chiếc máy gây ra càng lúc càng mạnh. Hạnh giãy giụa yếu dần.
+
+cơn nứng càng lúc càng công phá âm hộ cô. nước đã ướt đẫm, thấm ra cả chiếc quần jean cô đang mặc, Hạnh thở hổn hển, cô thôi không đập tay trong vô vọng nữa. Biết đa đến lúc, tên DŨng nới lỏng cánh tay túm tóc Hạnh và kéo cô ngửa mặt lên, vẫn quỳ giữa 2 chân hắn:
+
+– Nào cô em, bây giờ cô muốn gì nào , anh thưởng.
+
+(chiều viết tiếp vì phải đi vội quá)
+
+
+
+==================== Chương 13 ====================
+
+(tiếp)
+
+Dũng nâng cằm Hạnh làm cô phải ngửa mặt lên. Hắn hỏi lại:
+
+– Nào cô em thích a thưởng gì?
+
+Hạnh mờ mắt, miệng chỉ biết lắp bắp vì cơn nứng lồn đang hành hạ, cô không còn phân boệt được bất kỳ một ranh giới nào nữa. Âm đạo cô đang bị chiếc máy rung bé xíu tấn công tơi bời:
+
+– ..địt….e….anh….
+
+Dũng chỉ chờ có thế, hắn cười khả ố và cởi thắt lưng từ từ, chầm chậm như trêu người cơn nứng của Hạnh. bất thần Hạnh vồ 2 tay vào thắt lưng qyaanf hắn, cô cố gắng kéo tụt chiếc quần hắn đang mặc xuống nhưng vì thắt lưng chưa tháo, nên chiếc quần trên người DŨng k hề nhúc nhích. Hạnh càng nứng, càng cuống, cô hầu như quên mất phải cởi 1 chiếc thắt lưng như thế nào. DŨng vẫn cứ khoan thai, cởi chầm chậm thắt lưng và khóa quần. Hạnh vội vàng vồ lấy cạp quần sịp của hắn kéo tuột xuống và gục mặt vào đó. cô bú cu DŨng như chưa hề được bú bao giờ. Dũng lim dim, ngửa mặt hít hà thưởng thức:
+
+-ái dà….âhhhh…em bú chưa chuyên nghiệp đâu nhưng sướng…
+
+quả thật, Hạnh rất ít bú cu. cô chỉ ngậm lấy và mút lấy lệ, và thật ra tên Dũng k sướng. hắn nghĩ "phải đào tạo cho cô emnayf 1 khóa bú cu cao cấp mới được".
+
+DŨng vừa ;im dim thì Hạnh đã chồm lên người hắn. cơn nứng làm cho cô muốn gần như hiếp hắn chứ không phải hắn chơi cô. Biết đc như vậy nhưng DŨng đè 2 vai Hạnh xuống, sức đàn ông làm Hạnh bất lực ngồi bệt xuống nền nhà, háng cô đè đúng vào mu bàn chân đã để sẵn ở đó của DŨng. hắn day day bàn chân, cơn nứng của H càng bị kích thích thêm. Cô hổn hển:
+
+-địt….em….địt…
+
+– Ngoan nào cô em, sao vội thế. Em muốn a địt e lắm không cưng?
+
+Hạnh chỉ thều thào:
+
+– em ..muốn…địt e…………a aaaaa
+
+– Vậy anh bảo gì em phải làm theo. Nói rồi Dũng tiếp tục ghì chặt vai Hạnh ấn xuống, đồng thời day mạnh bàn chân. Mu bàn chân hẳn ngọ nguậy chà sát vào bên ngoài quần lót Hạnh, nơi mà bên trong đã bị cơn rung tấn công tơi tả.
+
+– em…..xin …địt e…e làm theo…Anh
+
+Dũng mỉm cười ra lệnh khô khốc:
+
+– Đứng lên và thoát y, cô em.
+
+Hạnh lật đật đứng dậy, miệng vẫn lắp bắp, nhưng cô lột nhanh cái áo qua đầu và tụt váy theo ý Dũng, cô đứng trơ như khúc gỗ:  Hạnh chỉ là cởi váy áo chứ nào biết thoát y! Cô lật đật kéo khóa váy nhưng chiếc khóa như mắc kẹt lại, Hạnh giật tung chiếc váy tụt khỏi chân và nhanh chóng lột nốt chiếc quần lót đen của cô trc mặt Dũng, sau đó đứng như khúc gỗ.
+
+– Quỳ xuống! Chống mông lại đây cô em – DŨng quát to.
+
+Hạnh giật bắn người. Cô lật đật quỳ xuống và quay toàn bộ phần mông về phía DŨng. Hắn xoa xoa 2 ngón tay vào cửa mình đang chảy nước của Hạnh, nói khẽ:
+
+– Anh địt em nhé? địt vào đâu nào?
+
+Hạnh ú ớ. cô chỉ lắp bắp k ra tiếng:
+
+-địt em….địt em…
+
+Dũng không nhịn được nữa. Hắn kê đầu cu tuy không to nhưng dài của hắn vào cửa lồn cô và "SẬP ppppppppppppppppppp", Dũng cắm sâu vào lồn Hạnh.
+
+Hạnh rú lên:
+
+– Á Á Á…………..
+
+Lần này, kịch bản của bọn Dũng và Lưu khác hẳn.
+
+Hắn giã vào lồn Hạnh rất mạnh, nhưng khoan thai, chậm rãi. từng cú giã là làm cô đê mê. Cũng phải thôi, cô đã bị kích thích cửa lồn đến mất cả lý trí.Nhưng hắn chỉ chọc thật mạnh con cặc vào lồn cô, từng nhát từng nhát 1, làm cô chưa đủ thỏa mãn. Hạnh chúi người truowvs từng cú giã của hắn, nhưng cô lùi lại như muốn hắn dập nhanh hơn:
+
+-â  địt e…..địt….nữa…………
+
+bất ngờ hắn túm tóc Hạnh, giật mạnh cho đầu cô ngửa lên như tư thế cầm cương 1 con ngựa – 1 con ngựa cái. Hắn giã thêm một nhát thật sâu khiên Hạnh rú lên lạc cả giọng:
+
+– A A….AAAAAA Á..
+
+Dũng ngừng ngay lại làm Hạnh chống chếnh. Cô hét lên:
+
+– Địt emmmmmmmmmmmmmmmm..
+
+Dũng vẫn không dập tiếp. Hắn giữ im và gằn giọng:
+
+– Cô em muốn được anh địt không.
+
+– Em muốn…….nữa ….
+
+Dũng dập thêm 1 nhát, lại ngưng và rít lên:
+
+– BÒ THEO ANH. Hắn nói dứt khoát, lạnh lùng rút cặc ra khỏi lồn Hạnh.
+
+Cô choáng váng, cơn thỏa mãn đã sắp lên đỉnh thì bị ngừng lại. Hạnh cuống cuồng bò theo DŨng.
+
+Lần này hắn đi vào phòng phia sau nhà, bên cạnh PTN. tay hắn túm tóc Hạnh kéo cô bò theo hắn, xềnh xệch. Nhưng hắn vẫn còn thương hoa tiêc ngọc, Dũng đi chậm đủ để Hạnh bò theo sau hắn.
+
+thật ra Dũng muốn đến gần nhất thị trường của chiếc camerra siêu nét gắn trong phòng đó. Hắn túm tóc Hạnh lật lên làm cô ngửa đầu ra:
+
+– Anh quay video cảnh anh chơi em nhé.
+
+Tuy là câu hỏi, thật ra tên DŨng đâu có cần Hạnh trả lời. Hắn vẫn túm tóc, đi ra fias sau cô và kê đàu cặc sát mép lồn Hạnh, rê qua rê lại.
+
+Hạnh oằn người, mông lắc lắc và cố lùi lại hòng để con cặc hăn chọc ngay vào lồn cô cho thỏa cơn nứng, nhưng tên DŨng lùi lại, kéo cô ngửa lên nhìn vào chiếc camerra và hỏi:
+
+– cô em muốn gì nào?
+
+Hạnh đã mất hết lý trí. cô hét to:
+
+– Địt emmmmmmmmmmmmmm….
+
+Á Á ÁÁ Á ÁÁ Á ÁÁ Á ÁÁ Á ÁÁ Á ÁÁ Á ÁÁ Á Á
+
+cchir đợi có vậy, DUng cắm thẳng vào. Lần này hắn giã như vũ bão.
+
+(còn tiếp)
+
+
+KỲ SAU: ĐẶC SỨ GOMEZ
+
+
+đặc sứ Gomez
+
+
+Sân bay đã 1h30 đêm. Chuyến bay Bz301 của hãng hàng không tư nhân Brazil hạ cánh chỉ có hơn 70 hành khách trên khoang. Họ chủ yếu là người du lịch đi theo đoàn. ra đón họ là 3 nhân viên của các cty du lịch lữ hành, mặt ngái ngủ với tấm biển viết nguệch ngoạc trên tay. Việc làm thủ tục diễn ra nhanh chóng là gần 70 hành khách đã lục tục theo chân 3 người ra đón, chỉ cón lại 2 hành khách đi lẻ.
+
+Người da ngăm đen, cao lớn, với nét mặt có vẻ hiền từ là Nizil. Đây chỉ là biệt danh. Nếu có ai biết thực sự tiểu sử, gốc gác của hắn, chắc hẳn sẽ hoảng hồn. Gốc Kenya, Hắn từng góp mặt nhiều năm trong các tổ chức khủng bố nổi tiếng ở lục địa đen, từng chỉ huy vài chục nhó cướp biển khác nhau ở Somalia. năm 2006, nhân vụ các cường quốc đem tàu hải quân đến đông Phi tiễu trừ phản loạn, hắn liền lủi và mất dạng. Cao 1m92, sức khỏe vô địch, nhất là được thừa kế khả năng chạy bộ siêu đẳng của người đông Phi với rất nhiều đồng bào của hắn từng giành huy chương vàng olympic, công với tài bắn súng 2 tay như một và sự lỳ lợm không ngán bất cứ đối thủ nào, Nizil là vệ sĩ đắc lực của Gomez – đặc phái viên mà tổ chức ma túy xuyên quốc gia phái đến ĐNÁ lần này.
+
+người thứ 2 có dáng vẻ của 1 nông dân Mỹ latin, thường đội mũ rộng vành và ngậm phì phèo chiếc tẩu thuốc trên môi như ta thường thấy. Vẻ mặt hiền hậu, có phần bất cần đời, nhưng cái thần của đôi mắt hắn thì những ai có kinh nghiệm cũng khó tưởng tượng được về tiểu sử và "thành tích" của hắn.
+
+=====
+
+Panama 1999. Cuộc ném bom của liên minh NATO vào SERBIA đang diễn ra ác liệt tại châu Âu. phong trào chống Mỹ và chống chiến tranh lại gợi cảm hứng lên các tổ chức cả cách mạng lẫn tội phạm ở châu Mỹ LAtin. Tại 1 khu rừng rậm nằm cách kênh đào Panama 130 cây số về phía bắc, là 1 trại nghỉ dưỡng nhỏ biệt lập  – thật ra là 1 căn cứ nhỏ nhưng đầy đủ tiện nghi của 1 nhóm biệt kích Mỹ.
+
+Căn cứ luôn thay đổi nhân sự, toán người này ra đi và biến mất, toán người khác lại tới. Họ là những tân binh trẻ của lực lượng thủy quân lục chiến, đang thực hiện 1 khóa huấn luyện bí mật, với các kỹ năng cũng hết sức bí mật. Sự tồn tại của căn cứ này, chúng ở đó với nhiệm vụ gì, có lẽ đến Tổng thống cũng không chắc đã biết!bí ẩn đến mức dân địa phương cũng không nhận ra sự tồn tại của chúng. Thế nhưng..với nhóm ma túy nhỏ 10 người của Gomez thì không!
+
+Một kế hoạch liều lĩnh được Gomez đặt ra: đánh cướp căn cứ để lấy vũ khí, đô la, và các thứ khác có trời mới biết ở trong đó.
+
+Nhóm của Gomez khi đó chỉ là 1 nhóm buôn bán ma túy vặt. chúng lấy cocain từ các nguồn hàng không ổn định tại Colombia, sau đó đem về bán lẻ cho các con nghiện địa phương. Tiền thu được tuy có nhiều, nhưng chúng tiêu pha hết sức dè dặt, thậm chí có phần kham khổ. Đây là một chiến lược lâu dài của kẻ có tầm nhìn xa như Gomez: hắn thu nạp chủ yếu là trẻ con lang thang trên đường phố thủ đô, và bọn này nghe lệnh của hắn răm rắp, không hề thắc mắc nhiều về ăn chia, hoa hồng hay đại loại các thứ như thế. với chúng, cuộc sống đơn giản: buôn ma túy, đánh giết theo lệnh Gomez, và ăn chơi khi hắn cho phép.
+
+Để thực hiện được mục tiêu tưởng chừng như rồ dại ấy, cái mà Gomez sử dụng là 1 vũ khí bí hiểm hết mức: "rễ cây ma quỷ" của các phù thủy châu Phi. Hắn có được nó 1 cách tình cờ từ Nizil, khi gã này lẩn trốn khỏi sự truy nã của các chính phủ ở đông Phi và chuồn sang Mỹ latin. Để đối phó với 1 đám 10 đến 15 lính thủy đánh bộ Mỹ, dù là tan binh đi chăng nữa, thì nếu chỉ dùng sức của đám Gomez có khác gì đem trứng chọi với đá! Vũ khí bí mật này phải được sử dụng!
+
+(còn tiếp)
+
+
+
+==================== Chương 14 ====================
+
+Chap tiếp: cuộc tấn công của Gomez.
+
+HẮN thừa hiểu, chỉ dùng vũ khí bí mật này may ra mới giành phần thắng. Một kế hoạch hoàn hảo và kỹ lượng được Gomez và Nizil lập ra.
+
+VÀO 1 đêm không trăng, bất chợt toán lính thủy đánh bộ phát hiện 1 đám cháy rừng nhỏ xảy ra ngay gần căn cứ của họ. CŨNg chỉ là 1 đám cháy nhỏ, vặt vãnh, cho nên viên thiếu tá chỉ huy cũng định không când quan tâm mhiều. HẮN châm điếu thuốc, lơ đãng nhả khói.
+
+Bỗng xuất hiện tên lính phụ trách liên lạc:
+
+– thưa ngài có thông báo từ trung tâm.
+
+CHẠY vội vào fòng liên lạc, trên màn hình vẻn vẹn 1 dòng chữ ngắn:
+
+"DẬP tắt ngay đám cháy rừng nhỏ, tọa độ x – y, cườmg độ sáng đã vượt mức cảnh báo của vệ tinh. OVer".
+
+
+Quy trình đó hoàn toàn năm trong giáo án huấn luyện, tuy nhiên mưu cao của bọn Gomez là ở đó. 2 lính được cử ra dập đám cháy bằng các dụng cụ thông thường, dùng các vòi nước vừa đủ quy mô nhỏ của đám cháy. Đám lửa được khống chế hoàn toàn chỉ sau 10 phút.
+
+Nhưng. TẤT cả đều ở chữ nhưng. ĐỜI vốn vậy! Trong đám cháy của cây rừng, bọn gomez đã đặt sẵn chất gây mê"rễ cây của quỷ". Khi lửa tắt, mới là lúc đám tàn tro còn lại kích thích rễ này cháy âm.ỉ, thực ra là nhiệt lượng chỉ đủ cho lớp lõi của rễ bị om, như sấy khô mà thôi. Chính lúc này, chất ảo diệu mới theo làn khói nhẹ, gần như khokng mùi, bay phảng phất trong không khí.
+
+Một đàn e của gomez dùng ống nhòm , ngồi vắt vẻo trên cành cây cách căn cứ 1km,bắt đầu đếm:
+
+– 1 rồi đại ca. HÌnh như là tên trực.
+
+– câm! NHìn tiếp đi.
+
+– dạ.
+
+– 2…3. MỘT thằng nữa chạy ra. Không 3, 4 rhằng. Gục này….gục.
+
+– 1 2 3..5 . 5 gục nữa rồi đại ka. XONG.
+
+HẮN quan sát kỹ và đếm lại 10 tên lính thủy đânh bộ đang đổ dần dần trong sân của căn cứ. Sau đó hắn tụt xuống khỏi thân cây. GIỌNG gomez:
+
+– anh em. XUNG…PHONG…
+
+(THẰNG NÀY CẢM HỨNG MẠNH TỪ CHIẾN TRANH VM ĐÂY).
+
+LÂT VIÊ TIẾPT. DÙNG ĐT NÊN NGẮT NGẮN MN THCẢM
+
+
+(Tiếp)tên đầu tiên vừa vượt qua cổng trại, bất chợt hắn khựng lại. MỘt loạt đạn cưa ngang chân hắn và 1 viên điểm xạ giữa ngực.
+
+CÒn 1 tay súng! Gomez quyết định rất nhanh: phải tiêu diệt ụ đề kháng này nếu không rất có thể nhóm biệt kích Mỹ khác sẽ đến rất nhanh. CÓ thể tên còn lại đã kịp báo động về căn cứ ở xa.
+
+Xả 1 loạt đạn AR15 VÀO đám lính say mùi "rễ cây của quỷ", Gomez vẫy tay. Bọn chúng chia 2 mũi bao vaay và bắn xối xả vào fía vừa fát ra tieứng súng.
+
+Đáp lại bọn Gomez, 2 quả lựu đạn được phóng ra, có lẽ từ súng fóng lựu, đã cưa đứt chân của 4 đứa nữa. TIếng rên la của đàn em làm Gomez và nizil nổi điên. HAI tên quyết định liều chết áp sát căn lều cuôus cùng, thật nhanh, nhằm không cho tay súng còn sót lại dùng lựu đạn 1 lần nữa.
+
+CHợt nizil đưa tay lên miệng,hắn ra hiệu cho gomez "suỵt ttttt". BẰNg giác quan lọc lõi của 1 kẻ đã lẩn lút chiến đấu trong câc khu rừng rậm, Gomez hiểu Nizil đã có phương án. HẮN k lầm.
+
+Nizil chạy rất nhamh về fía căn lều, vừa chạy vừa bắn xốuixả. HẮN làm vậy cốt để nhử tay súng bí ẩn bắn nốt 1 loạt đạn và bị lộ vị trí. QUả thật, có tiếng súng ngắn gọn đáp lại. "Pằng pằng pằng". Chỉ đợi có thế, Gomez bắn tiếp 1 loạt đạn nữa về fía tay súng, và nizil, nhanh như 1 con vượn, vèo 1 nhát tiến đến sát phía trái của kẻ bí ẩn. Chỉ bằng 1 cú đá, thân hình kia đổ gục và khẩu súng văng ra. Nizil rút dao găm nhằm kết liễu, nhưng hắn khựng lại.
+
+MÁI tóc dài vàng hoe, xòa ra khỏu chiếc mũ berê của tay súng  còn sots lại kia, chính là nguyên nhân làm hắn đổi ý.
+
+
+Tiếp.
+
+Tù binh là MEgan Alison, hạ sĩ thực tập. Megan có thể nói là 1 tiểu thư đài các còn sót lại của thế kỷ 20, nên đáng lẽ không được nhận vào lực lượng đặc biệt. THẾ nhưng, lòng mhiệt thành của bố cô, một thủ lĩnh khét tiếng cuối cùng của đảng 3K (phong trào cực hữu phân biệt chủng tộc ở Mỹ), cô được nhận vì lý lịch.
+
+MEgan k coi chuyến huấn luyện bí mật này là một cuộc dạo chơi. CÔ hết sức nghiêm túc trong tuân thủ quy trình huấn luyện, bởi với cô, trở thành 1 sĩ quan đặc nhiệm khét tiếng, sẵn sàng diệt trừ kẻ thù của nước Mỹ trên bất cứ điểm nóng nào của thế giới, chính là niềm tự hào vô hạn. 
+
+…và nay. Lúc này đây, MEgan đang bị căng 4 chân tay, lột trần truồng trong tư thế nằm sấp, nhưng đầu bị kéo ngẩng lên vì mái tóc dài vàng hoe của cô ả bị kéo ngược lên trần nhà, và miệng cô bị 1 thanh gỗ chend vào khiến khokng thể kêu la được. Cặp chân dài, trắng tuyệt đẹp nhưng đã có phần săn chắc do thgian khổ luyện, bị 2 chiếc dây buộc vào cổ chân kéo căng ra.cặp mông trần của MEgan phơi ra trc 10 cặp mắt hau háu xen lẫn căm thù của Gomez, Nizil và 3 tên đàn em chưa bị thương.
+
+
+
+==================== Chương 15 ====================
+
+Tiếp.
+
+Tháo miếng gạc ra khỏi miệng Megan, GOMEz cười gằn:
+
+– the fucking bitch, you ve killed our brothers, you have to pay now.
+
+(Từ đây để tiện theo dõi tốt nhất chúng ta dịch ra tiếng Việt, chỉ cần hiểu rằng bọn này và cả cô ng Mỹ đều nói tiếng Anh như gió 
+ ).
+
+– đồ khốn nạn, bọn mọi chúng mày thả tao ra ngayf.
+
+BỐPPPPP. NỬA CÚ tát của Nizil đủ làm cô ả lệch mặt.
+
+Gomez cười gằn 1 lần nữa, rồu hạ giọng:
+
+– các anh em, cho nó hiểu chuyện nào.
+
+HẮn nói đoạn, bứic ra chiếc ghế duy nhất trong phòng và vắt chân ngồi đó. 
+
+Nhổ ra miếng nc bọt kèm với 1 chieức răng gãy, Megan vẫn làu bàu:
+
+– thả tao ngay, chúng mày sẽ trả giá vì bắt công dân Hoa Kỳ.
+
+Nizil định giơ tay lên, nhưng Gomez nói nhẹ:
+
+– ông bạn thân mến, ta phải cư xử văn minh chứ. 
+
+– còn mày, hét to nữa đi. Đây là căn cứ của bọn tao. Lều trại chúng mày giờ làm mồi cho lửa rồi. Chúng tao xin lôĩi cô em nhé, đã để cô e trần như nhộng về đây.
+
+Nizil liền hạ tay xuống. HẮn vuốt ve vai của ả MEGAN rồi bất ngờ vòng qua ngực, bóp mạnh 2 bầu vú căng tròn của cô.với Bàn tay to rộng nhào nặn, megan kêu thét lên đau đớn. Hắn lặng im, cứ nhào nặn liên hồi. Megan giãy dụa làm rung cả 2 chiếc dây trói, hét vang căn fòng:
+
+– a a quân khốn. Thả tao ra.
+
+3 tên còn lại lập tức đứng vào khoảng giữa 2 chan đang căng ra hết cỡ của cô, chúng lặng im đưa tay xoa nhẹ đôi bờ mông căng mọng, trắng muốt. Chúng cứ xoa dần, xoa dần vào khe mông của Megan làm cô vừa hét lên nhục nhã, vừa lắc người qua lại hòng thoát thân trong vô vọng. Một tên cúi xuống ghé tai Megan:
+
+– nào thưởng thức mùi vị Mẽo. Tao chỉ mới chơi đĩ 2 lần thôi, hnay miễn phí phải ra trò chứ.
+
+Nizil vẫn nhào nặn chậm chạp và thô bạo bầu ngực của cô hạ sĩ thực tập. Hắn k có vẻ gì của một kẻ khát đàn bà, mà vẻ mặt hắn chăm chú, say sưa như 1 thợ gốm lành nghề đang nhào nặn đất sét vậy. MEgan đã thở dốc, nhưng miệng cô vẫn liên tục chửi rửa.
+
+1 trong 3 tên đàn em của Gomez, khi nãy vừa ghé tai megan, liền đi ra fía sau cô. Hắn cúi xuống, từ tốn liếm dọc sống lưng cô hạ sĩ. Hắn liếm láp như người tình hơn là đang hành hạ Megan. Liếm dọc sống lưng, hăn liếm xuống 2 bờ mông cô, rồi bất thần liếm thẳng vào khe sau của cô. Megan hét lên.
+
+Cô thở hổn hển, miệng chỉ còn lẩm nhẩm:
+
+-Fuck…fuck all ..you.
+
+MẶc kệ, tên kia vẫm tiêls tục chăm sóc khe cửa hậu của cô. HẮn liếm láp nhẹ nhàng. MEgan bắt đầu bị bản năng xen lẫn vào sự căm tức.cô lắc mông, thở hổn hển.
+
+– đồ mọi rợ, đồ con lợn. Tao là sĩ quan Mỹ! Lãnh sự quán sẽ tìm tao.
+
+Ngực cô hẳn đỏ. CẶp vú nhàu nát đỏ rực dưới bàn tay to như cái xẻng quân dụng của Nizil. HẮn bất thình lình quát:
+
+– con đĩ thối tha. Câm mồm.
+
+Hắn bỏ cặp vú cô ở đó, đưa tay bóp mạnh vào 2 bên má MEgan. K chống cự nổi, miệng cô há ra, đau đớn.
+
+VẪY tay với 1 tên đàn em, hắn nói:
+
+– mày dùng dụng cụ đặc biệt bịt mồm nó. Ồn ào quá. HẮn nhấn mạnh chữ "đặc biệt".
+
+Hiểu ý rất nhanh, tên kia tụt quần xuống ngang mắt cá chân, đưa dương vật rà rà trên mặt megan rồi hắn chọc thẳng vào miệng cô, đánh ótttttt 1 cái. MEGAM Ú Ớ LẮC LẮC, nhưng bàn tay to như gọng kìm của Nizil làm cô chỉ biết há miệng chịu trận. (Mỏi tay lát viết tiếp, trên đt nên các chiến hữu thcảm)
+
+
+Tên đàn em cứ giã cái chày của hắn vào tận cổ họng Megan. Cô nàng chỉ biết thở dốc, mắt trợn ngược vì khó thở. HẮn giã như điên. Đây k còn là 1 màn blowjob ép buộc nữa, mà hắn coi cái miệng cô hạ sĩ thủy quân lục chiến khokng khác gì cái âm hộ để hắn chơi. HẮN thụt ra thụt vào, nhưng miệng vẫn hỏi nizil:
+
+– đại ca, nhỡ nó cắn.
+
+– mày yên tâm. Tao hứa nó sẽ rụng hết răng.
+
+MEgan quả không dám. CÔ đau đớn phía trên, và mê mẩn ở phía dưới vì bị tên kia liếm láp, nhưng lý trí vẫn đủ nhận ra rằng với bọn này, không thể liều mạng. Cô chỉ boết ú ớ. 
+
+Tên đang thụt cặc vào miệng của Megan dường như hết chịu nổi. HẮN vịn hai tay vào đầu cô rồi bắn xối xả, tinh khí phụt tân sâu trong cổ họng megan.
+
+Khi hắn rút con cu ỉu xìu ra, vẫn còn 1 lượng tinh trùng fụt lên mặt cô hạ sĩ. Hắn thở dốc, ngồi bệt xuống nền nhà.
+
+– phụpppp. ĐỒ lợn.megan vừa nhổ đám tinh trùng ra khỏi miệng, vừa chửi.
+
+– con lợn cái này, mày sẽ hát ngay thôi. Nizil nói đủ nghe, không cười.
+
+
+tiêop.
+
+Nizil không nói đùa. hắn không có tính đùa vui bao giờ, dù người Phi rất hay cười nhưng hắn là 1 ngoại lệ. Hắn nói với cô hạ sĩ thực tập:
+
+– con bitch, mày đã thứ đồ đen chưa, hả con khốn con gái đảng phân biệt chủng tộc 3K?
+
+– mày là đồ lợn, lợn đen!
+
+– Tao cho mày nếm ngay thôi, nhiều lắm con ạ.
+
+hắn từ từ tụt quần ra, chậm rãi, như người ta thay quần áo ngủ vậy. Megan do đầu bị kéo lên vì mái tóc vàng hoe bị cột vào sợi dây, nên có thể nhìn hết con cu của hắn lừng lững, dù k quá to nhưng rất dài, dễ chừng "đến 2 mấy cm". cô ả nghĩ và phát hoảng vì biết ddieuf gì sẽ đến.
+
+Nizil cầm cu quật chan chát vào mặt Megan:
+
+– mày nhìn và thưởng thức đi trước khi nó đâm xuyên cái lồn da trắng của mày, con đĩ!
+
+– đồ thối tha! megan hét lên
+
+Nizil lạnh lùng, hắn bịt mũi cô ả lại chỉ bằng 2 ngón tay. hắn kẹp chặt mùi làm cô hạ sĩ phải há ra vì ngạt thở. hắn đưa đầu cu đỏ ửng với cái thân đen trũi rà vào môi Megan, rà ngang qua mũi cô, rồi bất ngờ chọc sâu vào họng cô:
+
+– ặc ….ặc…á á á
+
+megan ú ớ. theo phản xạ cô cắn vào con cặc của Nizil làm hắn đau đớn rút vội ra, thân cặc đã rớm vết cắn và một ít máu tươi chảy ra.
+
+– tao sẽ vô hiệu hóa mày, chó cái !
+
+Nizil lạnh lùng tiến đến Gomez. k nói k rằng, hắn tháo tuột chiếc giày của Gomez làm chính Gomez cũng ngạc nhiên k kịp phản ứng. hắn tiến lại Megan, bịt mũi cô lần nữa làm cô há miệng ra đớp đớp. hắn nhét mũi giày vào miệng Megan. Megan chỉ biết giãy dụa, ú ớ trong cổ họng. dẫu sao với cô, con cặc đen dài thòng lõng của Nizil vẫn còn ghê tởm hơn chiếc giày. cô tràoi nước mắt vì nghẹn và khó thở.
+
+Nizil chợt đi ra phía chân cô. hắn lần lượt cởi trói cho cô thoát khỏi 2 chiếc dây buộc căng cổ chân. rất ngạc nhiên, nhưng Gomexz im lặng. hắn mặc kệ tên đồng bọn. Nzil tiếp tục cởi nốt 2 sợ dây đang kéo căng 2 cổ tay của Megan, nhưng hắn không có ý định thả tự do cho 2 cánh tay cô hạ sĩ. hắn trói gô 2 cánh tay cô sát vào 2 bên sườn, quấn thêm vài vòng cho thật chặt, sau đó hắn nói rành rọt:
+
+– con chó cái, tao cho mày 30 giây để chạy thoát.
+
+không kịp nghĩ hắn đùa hay nói thực, Me gan quyết định chạy trốn. Cô gần như phi vèo ra cửa, tuyệt nhiên đồng bọn của Nizil không có ai cản đường. Trần truồng,Megan chạy trong tư thế bị bó hau cánh tay, chỉ có đôi chân trần nhưng được cử động tự do.
+
+"Mày nhầm, đồ lợn đen thối tha", cô nghĩ. Đây cũng là một bài tập thường xuyên của thủy quân lục chiến: cố gắng trốn thoát kẻ địch khi chân, tay, hoặc cả 2, đều bị trói.
+
+Nizil và đồng bọn quả đã lầm. chúng không ngờ Megan chạy nhanh như thế. chỉ thoáng 1 cái, cô đã mất hút sau vạt cây cạnh căn nhà căn cứ của bọn chúng. Cô chạy rất nhẹ, thậm chí tiếng đạp lá rừng khô không vang hơn tiếng đạp lá của 1 con nai.
+
+Bọn Gomez ngơ ngác, nhưng chúng không dám thắc mắc với nizil. tuy Gomez mới là thủ lĩnh nhưng có thể nói Nizil là khai quốc công thần của nhóm. 
+
+Megan chạy thật nhanh, nhanh nhất với khả năng mà cô  đã được huấn luyện. cô chạy thẳng 1 mạch, không ngoái lại. chạy thẳng về hướng bắc, cô tin chắc có thể bỏ xa được Nizil, k để hắn bắt kịp trong vòng 3km. chỉ 3km thôi, chỉ vậy sẽ đủ để cô có thể thoát khỏi bọn khốn kiếp. "tao sẽ báo về trung tâm, và UAV tấn công sẽ nghiền nát bọn khốn. nghiền nát tất cả". 
+
+Tuy Nizil lầm về khả năng chạy huấn luyện xuất sắc của Megan, nhưng người nhầm to lại chính là cô hạ sĩ. Không biết xuất thân rừng rậm Phi châu của hắn, cô đã lầm hoàn toàn về hắn.
+
+
+
+==================== Chương 16 ====================
+
+Nhả được chiếc giày của Gomez ra khỏi miệng và chạy chừng được 4 cây số, với tốc độ nhanh nhất có thể của một người bị trói 2 tay, Megan thở dốc. Chỉ một vạt cây rừng nữa, có lẽ cô sẽ ra khỏi rừng – Megan nghĩ vậy vì cô k xác định đc vị trí căn cứ của Gomez.
+
+Vừa ra khỏi vạt cây cuối cùng, cô hạ sĩ chợt đâm sầm vào một gốc cây lớn. Có lẽ rất lớn,vì cô ngã vật ra phía sau, mông cô hạ xuống 1 chùm rễ cây đau điếng. Nizil đừng như trời trồng ở đó. hắn tiến đến:
+
+– Chạy không đạt yêu cầu, con đĩ. mày trả giá vì huấn luyện chưa tốt.
+
+Nizil vác cô hạ sĩ lên và như 1 cái chăn bông. cô đá chân, giãy giãy trong vô vọng.
+
+vừa vác cô gái trên vai, Nizil vừa đưa 2 ngón tay xoa cặp mông trắng muốt của cô. hắn xoa xoa quanh hậu môn Megan rồi từ tốn chọc thẳng 2 ngó tay vào lỗ nhị của cô.
+
+– A…A…..
+
+Nizil không nhiều lời. hắn xọc thẳng cả 3, rồi 4 ngón tay vào hậu môn làm Megan đau đớn hét lên. cứ thế, hắn vừa hành hạ vừa vác cô về phía khu căn cứ của Gomez. Cô hạ sĩ đau đớn, hét váng cả khu rừng, nhưng Nizil hầu như 1 kẻ không cảm xúc. Hắn rút tay khỏi lỗ hậu mộn của Megan, rồi chụm cả 4 ngón tay, hắn chọc chầm chậm vào cửa mình cô.
+
+– Á Á á á á……………..
+
+nizil lặng thinh. hắn ngoáy 1,2,3 rồi 4 ngón tay vào cửa mình cô. hắn móc, móc rất nhẹ nhưng dứt khoát, giống như thể hắn định moi ruột hoặc tử cung cô gái ra khỏi đố vậy. Megan quằn quại, cô vừa đau đớn, vừa bị lích thích điểm G, làm nước dâm bắt đầu rỉ ra. Thế nhưng, cơn nứng chưa đủ bởi bàn tay to và thô ráp của Nizil làm cô đau đơn hơn là cảm giác kích thích.
+
+VỨt "uỵch"Megan xuống nền nhà, Nizil tiến đến bên cô. Một cái tát cực mạnh làmMegan choáng váng. Cô ngã ngửa, nằm vật trên sàn nhà. Nizil tiến tới, 2 chân hắn dẫm lên hai đùi cô một cách không thương tiếc làm cô phải dạng háng, phơi âm hộ lún phún các chân lông màu vàng hoe trước cặp mắt của toàn bộ đồng bọn của Gomez và Nizil.
+
+– Chúng mày…thả tao ra…muốn gì……
+
+Nizil giọng trầm trầm:
+
+– Tao thấy, cô em đã không chịu đổ đủ mồ hôi nơi quân trường, nên bây giờ mới lĩnh đủ hậu quả. Giá cô em huấn luyện tốt hơn, có phải bọn anh có trò đuổi bắt lâu và thú vị hơn không?
+
+– quân khốn nạn!
+
+Nizil:
+
+– Anh sẽ huấn luyện cô em tiếp tục nhé, nhanh và hiệu quả hơn thủy quân lục chiến của cái cường quốc rẻ rách của cô, nàng nhé!
+
+(thằng này chuyển sang kiểu cách).
+
+Hắn nói đoạn, dẫm nghiến cả 2 bàn chân to bè lên hai đùi cô gái. Cô hét lên đau đớn.
+
+– A ………..A………………a..
+
+Nizil bật ngón tay đánh "tách" 1 tiếng, 1 tên đàn em của Gomezđem lại 1 khúc gỗ xù xì. Đợi ánh mắt của Nizil, tên này túm tóc Megan và chèn khúc gỗ ngang chỗ thắt lưng, rồi xuống ngang hông của cô. Khúc gỗ còn nguyên vỏ cây và các tai của cành cây chưa được róc hết, làm cho Megan lại thét lên đau đớn.
+
+– Đừng vội người đẹp 3K – Nizil nói – chúng ta sẽ tập lại từng động tác huấn luyện quân nhân cơ bản nhé.
+
+nói xong hắn dẫm mạnh chân lên 2 đùi Megan. Mông bị ép vào thân cây nằm ngang, cô gái theo phản xạ liền gập người ngồi dậy, như động tác tập gập người. chỉ chờ có thể Nizil túm tóc cô, dúi sát khuôn mặt xinh đẹp của cô vào hạ bộ hắn.
+
+– Giỏi lắm cô em, làm lại nào. Bopospppppppppppp. 1 cái tát nảy lửa,Megan bật ngả người xuống, mông cô lại chạm vào thân cây sù sì, rớm máu.
+
+Nizil cởi quần xuống ngang mắt cá chân, con cu dài thòng thõng của hắn chạy từ bìu dái xuống ngang độ dài của cặp đùi, đen sì, chỉ có caí đầu khấc đỏ hỏn lộ ra.
+
+– Nào tập lại nào cô em. Hắn lại đạp 1 nhát, 2 chân vàng ngang bắp vế Megan.
+
+Dù k muốn nhưng theo phản xạ, cô nàng lại gập người dậy và mặt cô lại áp sát con cặc dài thòng lòng của Nizil. 
+
+Lặp lại động tác dã mann đó hàng chục lần, Megan đau đớn, gần như kiệt sức. Lần thứ 29, khi Nizil lặp lại cú đạp vào 2 bên bắp vế, Megan bật người lên và cô áp mặt hẳn vào hạ bộ của Nizil.
+
+– Hoặc là tập thêm, hoặc há miệng rộng ra, con chó cái!
+
+Megan đầu hàng. Cô há miệng ra đớp lấy con cặc dài đen của Nizil. Cô phát tởm vì cái mùi đặc trưng của hắn, nhưng quá đau đớn, mông cô túa lên mấy chục vệt máu tuowii, nên Megan không còn dám thử sức với cái trò súc vật của hắn thêm.
+
+– Bú cho tao, hoặc là mày sẽ được huấn luyện tiếp. Ghi nhớ, at sẽ bẻ răng mày nếu sai sót.
+
+Megan thở hắt. Cô quả thật đã đầu hàng. Cô ngậm lấy con cu của nIzil, ngậm ơ hờ cho có lệ. Ngay lấp tức, Nizil nâng cằm cô ra, rút con cặc hắn ra khỏi miệng cô và đạp không thương tiếc lên ngực Megan, khiến cô lại nằm ngửa ra, cặp mông trắng đã đỏ lựng vì các vệt máu lại đập lên khúc gỗ:
+
+– Á AAAAAAAAAAAAAAAAAAAA….đau……………….
+
+– Vậy mày làm lại. Bú cặc taop mau lên, tao không nói lần 3.
+
+megan lật đật làm theo, cô lại nhướn mông, đau đớn ngồi dậy trong khi hai bắp đùi vẫn rên siết dưới 2 bàn chân của Nizil. Cô nhỏm lên, ngậm chặt lấy con cặc của hắn và bắt đầu bú.Nó quá dài, khiên hầu như cả cổ họng cô chỉ ngậm được phân nửa, Bị kích thích chỉ ở đầu cu, Nizil tức khí. hắn túm lấy mái tóc vàng hoe của cô gái da trắng và ấn sâu vào. Con cặc hắn công phá cổ họng Megan không thương tiếc. Cô sặc sụa. Nước dãi chảy ra ướt hết cằm, ướt cả vào bìu dái của tên Nizil. Hắn vẫn ghì chặt cô, chọc sâu cặc vào miệng Megan. Cô lắc lắc, ú ớ, giãy giãy. Nizil thả đầu cô hạ sĩ ra rồi ra lệnh:
+
+– Mày, cởi trói tay cho nó. Tao sẽ làm thịt con điếm Mẽo thối tha cho chúng mày học tập.
+
+Tay được thả tự do, nhưng quả thật lần này Megan đã mất hoàn toàn ý chí. THao luyện gian khổ nhưng là chủ động, thì cô và nhiều tân binh có thể vượt qua được; còn lần tra tấn này, quả là quá sức đối với 1 tiểu thư như cô. 
+
+Nizil cầm thắt lưng. Hắn quật 1 nhát không thương tiếc vào mặt megan:
+
+– Chát ttttttttttttttttttttttttttt!
+
+– Á a…………………..cô gái hét lên đau đớn, mặt cô hằn lên 1 vết của thắt lưng.
+
+– Quỳ xuống và bò theo tao, con chó cái 3K – Nizil có thể là rất căm thù chủ nghĩa phân biệt chủng tộc, nên mọi phụ nữ da trắng hắn đều gán như vậy.
+
+Megan sợ sệt, quỳ xuống chống 2 tay trên sàn và cúi gằm xuống.
+
+-Chátttttttttttttttttttt. một rồi 2, 3 lần nữa, chiếc thắt lưng gây ra 3 vết hằn đỏ, rớm máu trên mông và lưng Megan.- Bò đi, con chó cái!
+
+Megan k dám trái lệnh, Cô bò ra phía trước, theo lệnh Nizil gần như vô thức. Nizil cầm thắt lưng, đi phía sau cô. Hắn quật 1 nhát, theo chiều dọc, vào giữa khe mông và hậu môn của Megan:
+
+-Á …………………….Á………….Cô hạ sĩ hét lên đau đớn.
+
+– Nếu mày tuân lệnh, mày sẽ ít đau đớn, con chó cái!
+
+Megan vẫn bò ra phía trước. Cô đã tiến sát góc phòng. Bất thần, Nizil choàng chiếc thắt lưng qua cổ cổ gái. hắn quấn 1 vòng, xích cổ cô bằng chiếc thắt lưng quân dụng của hắn:
+
+– Giống hệt con chó cái rồi đấy. Haha. lúc này bật lên tiếng cười xảo trá. tiếng cười không phải của Nizil mà là của Gomez.
+
+Nizil vẫn k cười. hắn có lý do để không cười, vì nếu Gomez chỉ căm thù nước Mỹ thì Nizil lại khác – hắn căm thù tất cả người da trắng, dù bất kỳ quốc tịch nào. Hắn đưa chân lên, rà rà vào háng Megan, chà sát lên vùng cửa mình của cô, hắn chà đi chà lại. THế rồi, hắn đưa thẳng ngón chân cái vào cửa mình cô hạ sĩ. Hắn chọc ngón chân vào đó, ngoáy tròn. hắn muốn hành hạ cô hạ sĩ thủy quân lục chiến Mỹ như 1 con chó cái thực thụ.
+
+– A…á….A..ư…ư….Megan hét lên, tuy nhiên trong tiếng hét đau đớn, có cả tiếng rên của giống cái.
+
+nizil tiếp tục động tác cũ. Hắn thản nhiên ngoáy ngón chân cái to bằng2 ngón chân người bình thường. Ngoáy quanh môi âm hộ, hắn thô bạo chọc thẳng lút cán nogns chân cái vào cửa mình Megan.
+
+– A…ưu….ư…..cô hạ sĩ vẫn hét lên, nhưng lần này tiếng "ư…ư…" đã dần thay chỗ cho tiếng "á á " đau đớn. Nước ở cửa mình cô, rỉ ra – nó đã phản bội lại quân nhân kiên cường Megan Alisson.
+
+
+(tiếp)
+
+Megan đã bị cơ thể mình phản bội. Cô bắt đầu vô thức rỉ nước ra, càng ngày càng nhiều đẫm cả đám lông xoăn xoăn màu vàng hoe như mái tóc của cô. Nizil túm lấy chiếc thắt lưng giờ đang trở thành chiếc vòng đeo cổ của cô hạ sĩ, hắn kéo lên và ghì chặt làm cô ú ớ, khó thở. hắn hành hạ Megan vài lần nữa, sau đó hắn tiếp tục chọc ngón chân vào cửa mình cô. Megan lại rên lên, nhưng tiếng rên nghẹn lại vì cổ bị Nizil siết lại. Tiếng ư…ư….trong họng cô không thoát đc hết, trwor nên giống tiếng rên ử ử của động vật cái đang động đực, làm 3 tên đàn em của Gomez cực kỳ phấn kích. Trừ 1 tên vừa bị loại khỏi vòng chiến do cái cu của hắn đã xả hết tinh trùng vào miệng và mặt Megan, thì hai tên còn lại bắt đầu không chịu nổi nữa. Chúng đến gần, phụ giúp Nizil bằng cách cúi xuống vò nhàu 2 bầu vú của cô. Megan đau đớn, cảm thấy bị sỉ nhục vì chúng đang như vắt sữa của cô vậy. Dường như đọc được ý nghĩ đó, Nizil quát lấy oai với 2 tên:
+
+– Chúng mày khoan. tao sẽ tạo ddieuf kiện, cho chúng mày vắt kiệt sữa của con chó cái này.
+
+Thích chí vì nứng, bọn chúng lại buông vú Megan ra và chăm chú chờ đợi trò hành hạ của Nizil.
+
+Tên Nizil cột phần còn lại của chiếc dây lưng hắn đang thắt trên cổ Megan vào 1 chân ghế. Làm như thế, đầu cô hạ sĩ bị chúi xuống, rất bất tiện và khó chịu cho cô. Ở tư thế này, Megan đau rát ở cổ do phải cúi đầu theo sức kéo của chiếc dây lưng, cô trùng người nằm sập xuống nền nhà. Nizil lạnh lùng tiến ra sau cô, hắn thọc 2 ngón tay vào cửa mình cô đang ép sát nền nhà, móc sâu 2 ngón tay 1 tiếng "Sutjttttttttttttttttttt" vào âm đạo megan. thụt ra thụt vào 2 ngón tay dài như của tinh tinh, hắn bắt đầu làm Megan lấy lại cảm giác phấn kích tình dục. Cô lại "ư…ư…" trong cổ họng, nước dâm tràn ra. Nizil vừa móc, thụt 2 ngón tay sâu vào cửa mình cô, vừa kéo lên. Bất giác Megan lại nhổm cặp mông lên, theo bàn tay kéo lên của hắn. Dường như đã mất ý thức, cô chỉ muốn 2 ngón tay to như trái chuối rừng Amazon của hắn không thoát đc ra khỏi âm đạo cô:
+
+-a…ư…….đồ……a………..Á
+
+Megan rên rồi hét ro một tiếng "Á", vì ngón tay cái của Nizil, nãy còn đang để bên ngoài âm đạo, đã ấn mạnh 1 nhát vào hậu môn Megan. Cô đau như thấu vào cơ thể, để im ngón cái trong hậu môn Megan, Nizil lại thụt thụt 2 ngón tay trong âm đaoạ cô. Cơn sướng âm ỉ lại trở lại, Megan quên phắt đau đớn vừa rồi, lồn cô lại rỉ nước.
+
+– A….ư……..
+
+Lặp lại trò chơi cũ, Megan hết sướng, lại đau thấu trực tràng. không lạ lẫm gì với chuyện làm tình, nhưng đây là lần đầu lỗ đít cô nàng bị tấn công thô bạo, cái cách thô bạo hơn cả với 1 con điếm rẻ mạt, cái thô bạo với súc vật. Cô cảm thấy nhục nhã, đau đơn, căm hận, nhưng các cảm giác lẫn lộn đó càng dâng lên, cơn nứng càng lan tỏa từ âm hộ cô, sang hậu môn, lan dần lên dọc sống lưng.
+
+ Nizil là bậc thầy về hành hạ tình dục. thật tâm, hắn không phải người dữ tợn đối với phụ nữ hay trẻ em yếu đuối. Lý tưởng của cuộc đời hắn, là chống lại bất công phân biệt chủng tộc. Thế nhưng chính vì lẽ đó, mọi phụ nữ da trắng đều chỉ là công cụ thỏa mãn bạo lực tình dục của hắn. Một kẻ đi sai đường – đúng là hắn đã sai đường – nhưng hắn là sản phẩm của lịch sử – cái lịch sử đau thương mà châu Phi đã phải gánh chịu, cũng là cái lịch sử nhơ nhớp do thực dân da trắng gây ra trên đất châu Phi.
+
+Nizil biết rõ cách làm Megan quen với cơn đau. Nếu chỉ 1 mình, hắn sẽ hiếp và giết phắt cô đi, thế nhưng trước mặt đồng bọn của Gomez, hắn muốn lấy một chút số má, đồng thời cho bọn kia đc thỏa mãn nhục dục của 1 kẻ quái dị như hắn. Hắn thọc sâu thêm ngón cái vào lỗ đít Megan không thương tiếc.
+
+– Á Á ………………..
+
+Megan lại thét lên, hắn lại ngừng và thụt hai ngón tay và lồn cô, giúp cô lấy lại cơn nứng. Nước lồn vẫn không ngừng rỉ ra, Megan như mờ đi. Đây là kiểu kích thchs cơn sướng mà một kẻ hiểu biết thực tế rất phong phú như Nizil mới biết. Cơn đau từ hậu môn sẽ kích thích hệ thần kinh thực vật dọc theo tủy sống, làm cô trở nên quen dần với cơn đau, và chịu đựng được để thỏa mãn cơn cuồng tình dục có lẽ còn kéo dài của mấy tên bọn chúng.
+
+
+
+==================== Chương 17 ====================
+
+Megan rên ư ử. sau 1 loạt cách kích thích kèm tra tấn lỗ đít của Nizil, cơ thể cố đã hoàn toàn đầu hàng. Cô thấy mình khát nước vô cùng, lỗ lồn cũng rỗng không, trống trải. Cô quay lại nhìn Nizil, cái nhìn đầy man dại, vô thần thức. Chỉ đợi có vậy, hắn ngoắc tay với 1 trong 2 tên đàn em:
+
+– Mày.
+
+Không đợi "sếp phó" nhắc lại, tên này – vốn đã trần truồng – lật dật ra phía sau Megan, không chần chừ, tra ngay cái dương vật to đùng nhưng hơi ngắn của hắn vào cuẳ mình cô:
+
+– AAAAAAAAAAAAAAAA….fuckkkkkkkkkkkkkkkkk…..Megan thét lên. tiếng thét của sự thỏa mãn do cửa mình được lấp đầy.
+
+Khoái chí, tên này rút dương vật ra hẳn khỏi lồn cô, rồi hắn lại kê đầu dv vào và lại Dậppppppppppppppppppppppppppppppp!
+
+Nước dâm phụt ra từ âm hộ Megan. Cô hạ sĩ thực tập lên tám tầng mây. Cô hét lên, định lùi cặp mông lại phía sau theo bản năng, nhưng cổ đã bị chiếc thắt lưng kiềm chặt. Cô thở dốc, mắt lờ đờ:
+
+– Fuckkk you….fuckkkkkkkkkkkkk………more…A aaaaaaaaaa
+
+tên này không đợi thêm nữa. Hắn nhịp nhàng giã từng cú, mạnh bạo, thủng thẳng. Hắn muốn vừa địt vào lồn cô vừa quan sát cơn khát nhục dục của cô lên cao, tay hắn bấu chặt cặp mông trắng muốt của Megan, hằn đỏ.
+
+Hắn giã nhịp nhàng, không đủ nhanh, làm cho Megan cảm thấy ức chế, nhưng cô bị kiềm chế gần chặt cứng. Cô lờ đờ, miệng rên ư ử chịu trận.
+
+Nhấp được chừng 10 phút, không kiềm chế nổi với cái lồn sâu hun hút và cặp mông trong mẩy, trắng muốt, cái lưng trần eo thon, rỉ máu của vết roi của Megan, tên đàn em bắn xối xả vào trong cô. hắn ỉu xìu, rút ra, ngồi bệt thở dốc như tên trước đó.
+
+Ngay lập tức, Nizil ngoắc tên kia ra hiệu đi về phía đầu cô hạ sĩ. Nhanh nhẹn không kém tên trước, tên này túm lấy mái toc dài vàng hoa của cô, đưa con cu dài và nhọn đầu kề lên môi cô, quét đi quét lại. 
+
+Gần như đã mất lý trí, trong Megan bây giờ chỉ còn các từ "pennis, fuck", cô ngậm lấy cu của hắn, đúng hơn là đớp lấy, ngậm chặt trong miệng, lưỡi cô xoắn lại, đê mê. đây là lần đầu tiên trong đời, cô bú dương vật đàn ông trong 1 tự thế nhục nhã đến thế.
+
+Tên này bắt đầu thụt dương vật ra vào miệng Megan. Lưỡi cô xoắn lấy, nhưng không xoắn nổi hết chiều dài cu của hắn. Hắn cầm 2 tay đang chống xuống đất của cô, kéo lên. Như hiểu ý, mà cũng có thể do mất điểm tựa, Megan đưa 2 tay túm lấy mông hắn, Mặt cô hoàn toàn vục vào hạ bộ của hắn, miệng ngậm chặt con cu như thể nó sẽ rời đi mất. Nứng tột độ, tên nauỳ nhấp như máy khâu vào mồm Megan, cô ú ớ, cảm thấy tắc thở.
+
+– UU.. uuu..uuuuu,…….
+
+Dập được thêm 5 phút, hắn bắn từng đợt tinh dịch đặc kẹt, nhơm nhớp, vào sâu cổ họng cô. megan ho sặc sụa, một phần lớn tinh dịch cô phải bất đắc dĩ nuốt vào trong. Hắn rút dv ra, cầm nó đập bộp, bộp vào mặt cô hạ sĩ.
+
+Chỉ chờ có thế, Nizil nhập cuộc:
+
+– Vắt sữa nào con chó cái.
+
+nói rồi hắn tra ngay con cặc khổng lồ vào, đúng vậy, vào lỗ đít Megan. Phaajppppppppppppppppp 1 tiếng, Megan thét lạc cả giọng:
+
+– Á!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Nizil Dập từng cú, mạnh me, dứt khoát. Megan thét lên theo từng nhịp dập của hắn. Hắn Nhấp không thương tiếc, tàn phá cái lỗ chưa hề dudowcjd khai phá chính thức trên cơ thể Megan. Lỗ đít cô co thắt, rát và nóng không thể tưởng tượng. cặc của hắn vào đến đâu, toàn sống lưng của cô như nóng rẫy lên, hậu môn bị nong ra hết cỡ. Megan hét lạc cả giọng. 
+
+Nizil ra vào chậm rãi. Hắn cũng có thể là sẽ không thể kiềm chế được quá lâu do đã mấy tháng không gần đàn bà. 
+
+ĐỘt nhiên, Megan cảm thấy tử cung cô co thắt. Nó đến từng cơn, từng cơn. Xen giữa cơn co thắt sung sướng của tử cung, là những cú chọc của cây gậy thịt vào lỗ đít cô bỏng rát. Nước dâm, tinh dịch, tất cả các thứ nước trong âm đạo cô bị tử cung co bóp, trào ra từng đợt, từng đợt. Megan như lịm đi.
+
+(còn tiếp)
+
+
+(tiếp)
+
+Sau cuộc cưỡng hiếp, Megan như đờ đẫn. Cảm giác nhục nhã của 1 thủy quân lục chiến, dẫu là tập sự, xen lẫn với sự dày vò thân thể đầy nhục dục, khiên cô lần đầu tiên trải nghiệm cảm giác ấy trong đời. Cô không điều khiển nổi cảm xúc của mình, bật lên khóc nức nở.
+
+Xen lẫn các cơn khóc nấc lên, Megan cười sùng sục như 1 kẻ điên. Cô đã hoàn toàn mất tự chủ. Nước lồn cô chảy không ngừng trong phòng giam, lẫn với sự tủi hổ của nước mắt.
+
+Cảm thấy cô quân nhân đã gần như điên dại, cộng với mưu đồ riêng của mình, Gomez hạ lệnh cho đàn em:
+
+– CHo nó sống, đồ lợn Mẽo. Nhưng hãy để dáu vết của tổ chức ta trên cơ thể nó. Thật rõ nét vào.
+
+Đám đàn em sững sờ:
+
+– Nhưng…đại ca…Chúng ta có logo nào đâu?
+
+Nizil, không nói không rằng, vạch bờ vai cho chúng thấy hình của 1 con lười châu Phi mà hắn xăm trên người. Con lười đó là một động vật rất hiền từ, chuyên bám vào các cành cây hầu như không cử động cả ngày lẫn đêm, đến cả ăn nó cũng "lười". Cái lười của Nizil là sự rình mò kẻ địch: Kiên nhẫn mật phục.
+
+Nizil quát:
+
+– Đặt dấu vết này trên người nó!
+
+Gomez vỗ tay tán thưởng:
+
+– Tuyệt vời, chiến hữu của tôi. anh em, ai có năng khiếu hội họa đây?
+
+Một tên đàn em, dáng còm nhom như moi từ duoqwis đất lên, giơ tay:
+
+– Em xin thực hiện ý tưởng nghệ thuật của 2 đại ca!
+
+Rồi không đợi chỉ lệnh, hắn đi nhóm 1 đống lửa to.
+
+—–
+
+– Mày định thực hiện ra sao, nói tao nghe? – Gomez hỏi tên đàn em khi đống lửa đã nhóm lên cháy rần rật.
+
+Tên đàn em chỉ nói:
+
+– Ông anh, hãy tin thằng này chứ. em bắn súng không giỏi bằng đại ca, chứ khoản tranh gỗ đại ca phải gọi em bằng cụ!
+
+Một cái tát trời giáng, hắn vêu mỏ, tay ôm cái mũi đầy máu:
+
+– EM xin lỗi đại ca, e chỉ đùa.
+
+– Làm việc đi.
+
+Megan bị trói nằm sấp, ngực, và bụng dưới được nâng lên bằng hai thanh gỗ, treo lên như 1 con lợn sắp nướng. (Thật tội cho lính thủy đánh bộ Mỹ!!!).hai chân cũng bị 1 thanh củi nong làm cho dạng ra, hai mắt cá nàng bị trói vào 2 đầu của thanh củi, khiến tạo thành một tư thế chổng mông, phơi cả lỗ lồn và hậu môn ra như mời gọi cuộc cưỡng hoếp mới.
+
+Tên đàn em "nghệ sĩ", rút 1 thanh thông nòng súng đã mài gần như nhọn tương đối, đút vào đống lửa rừng rực cháy. đợi cho đầu thanh thép nhỏ đỏ rực, hắn rút ra và cương quyết vệt 1 nhát độ gần gang tay ngang phần lưng trên lỗ hậu môn của megan 1 đoạn.
+
+– Á aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa….
+
+tiếng thét khủng khiếp của Megan vang lên, chim chóc bay toán loạn cả cánh rừng.
+
+– Mẹ kiếp………….quân khốn nạm………………………
+
+Nizil tiến lại phía trước cô nàng, hắn tháo ngay chiếc giày ra, và rút chiếc tất đang đi, nhét dứt khoát vào miệng Megan. Cô ú ớ, lắc đầu quầy quậy và rên rỉ.
+
+Trong từng động tác quằn người vì đau đớn của Megan, chiếc mũi dùi tự tạo, đỏ rực, vẽ thành 1 cành cây ngang thắt lưng phía trên lỗ hậu môn của cô nàng. Tiếp theo, hình ảnh 1 con lười ngủ gục, tay bám vào cành cây  thân thõng xuống, khuôn mặt lim dim nhưng hướng nhìn vào hạ bộ của cô, đã hoàn thành.
+
+(còn tiếp).
+

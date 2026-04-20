@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Story Auditor Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --primary: #38bdf8;
+            --accent: #f472b6;
+            --success: #4ade80;
+            --text: #f8fafc;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
+            background-image: radial-gradient(circle at top left, #1e293b 0%, #0f172a 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .stat-item {
+            background: var(--card-bg);
+            padding: 0.5rem 1.5rem;
+            border-radius: 99px;
+            border: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+        }
+
+        .audit-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 8px;
+        }
+
+        th {
+            text-align: left;
+            padding: 1rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+
+        tr {
+            transition: all 0.3s ease;
+        }
+
+        td {
+            padding: 1.2rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        td:first-child { border-left: 1px solid var(--border); border-radius: 12px 0 0 12px; }
+        td:last-child { border-right: 1px solid var(--border); border-radius: 0 12px 12px 0; text-align: center; }
+
+        tr.active td {
+            background: rgba(56, 189, 248, 0.2) !important;
+            border-top: 1px solid var(--primary);
+            border-bottom: 1px solid var(--primary);
+        }
+
+        tr.active td:first-child { border-left: 1px solid var(--primary); }
+        tr.active td:last-child { border-right: 1px solid var(--primary); }
+
+        .filename {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .filename:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .mp3-name { color: var(--success); }
+        .mp3-name:hover { color: #86efac; }
+
+        /* Custom Checkbox */
+        .checkbox-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 26px;
+        }
+
+        .checkbox-wrapper input { opacity: 0; width: 0; height: 0; }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: #475569;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px; width: 18px;
+            left: 4px; bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider { background-color: var(--success); }
+        input:checked + .slider:before { transform: translateX(24px); }
+
+        .controls {
+            position: sticky;
+            bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            z-index: 100;
+        }
+
+        button {
+            background: linear-gradient(135deg, var(--primary), #0ea5e9);
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            border-radius: 16px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.4);
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(56, 189, 248, 0.5);
+        }
+
+        /* Modal for Output */
+        #output-modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: var(--bg);
+            padding: 2rem;
+            border-radius: 24px;
+            border: 1px solid var(--primary);
+            max-width: 800px;
+            width: 90%;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            background: #1e293b;
+            color: #4ade80;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            font-family: monospace;
+            margin-top: 1rem;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Audio Auditor Pro</h1>
+            <div class="stats">
+                <div class="stat-item">Tổng: <span id="total-count">0</span></div>
+                <div class="stat-item">Đã khớp: <span id="matched-count" style="color: var(--success)">0</span></div>
+            </div>
+        </header>
+
+        <div class="audit-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th width="40%">File Story (.txt)</th>
+                        <th width="40%">Candidate MP3</th>
+                        <th width="20%">Trạng thái Khớp</th>
+                    </tr>
+                </thead>
+                <tbody id="audit-body">
+                    <!-- Data will be injected here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="controls">
+            <button onclick="saveResults()">LƯU & XUẤT DỮ LIỆU</button>
+        </div>
+    </div>
+
+    <div id="output-modal">
+        <div class="modal-content">
+            <h3>✅ Tuyệt vời! Hãy copy đoạn mã dưới đây gửi lại cho tôi:</h3>
+            <textarea id="output-text" readonly></textarea>
+            <div style="margin-top: 1.5rem; text-align: right;">
+                <button onclick="closeModal()">ĐÓNG</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Inline data injected by the script
+        const rawData = [];
+
+        function render() {
+            const body = document.getElementById('audit-body');
+            body.innerHTML = '';
+            
+            let matched = 0;
+            rawData.forEach((item, index) => {
+                if (item.matched) matched++;
+                const row = document.createElement('tr');
+                row.id = `row-${index}`;
+                row.onclick = () => highlightRow(index);
+                row.innerHTML = `
+                    <td><a href="${item.txt_url}" target="_blank" class="filename">${item.txt}</a></td>
+                    <td><a href="${item.mp3_url}" target="_blank" class="filename mp3-name">${item.mp3}</a></td>
+                    <td>
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" ${item.matched ? 'checked' : ''} onchange="toggle(${index})">
+                            <span class="slider"></span>
+                        </label>
+                    </td>
+                `;
+                body.appendChild(row);
+            });
+
+            document.getElementById('total-count').innerText = rawData.length;
+            document.getElementById('matched-count').innerText = matched;
+        }
+
+        function highlightRow(index) {
+            document.querySelectorAll('tr').forEach(r => r.classList.remove('active'));
+            document.getElementById(`row-${index}`).classList.add('active');
+        }
+
+        function toggle(index) {
+            rawData[index].matched = !rawData[index].matched;
+            document.getElementById('matched-count').innerText = rawData.filter(i => i.matched).length;
+        }
+
+        function saveResults() {
+            const matchedFiles = rawData.filter(i => i.matched).map(i => i.txt);
+            const output = JSON.stringify(matchedFiles, null, 2);
+            document.getElementById('output-text').value = "AUDIT_RESULT_START\n" + output + "\nAUDIT_RESULT_END";
+            document.getElementById('output-modal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('output-modal').style.display = 'none';
+        }
+
+        render();
+    </script>
+</body>
+</html>
