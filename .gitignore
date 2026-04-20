@@ -16,8 +16,8 @@ venv.bak/
 # Text Mp3/
 # truyencogiaothao/
 # Ignore potential audio files if they are large and not meant to be in git
-# *.mp3
-# *.wav
+*.mp3
+*.wav
 # AL/Business Central (from remote template, kept for compatibility if needed)
 .alcache/
 .alpackages/
