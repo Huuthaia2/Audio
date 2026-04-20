@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 Kho Truyện Tóm Tắt</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0d0d14;--surface:#16161f;--card:#1e1e2e;--border:#2a2a3e;
+  --accent:#a78bfa;--accent2:#7c3aed;--text:#e2e8f0;--muted:#64748b;
+  --green:#10b981;--red:#f43f5e;
+}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh}
+
+/* HEADER */
+header{background:linear-gradient(135deg,#1e1b4b,#312e81,#1e1b4b);padding:20px 24px;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;backdrop-filter:blur(10px)}
+.header-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-size:22px;font-weight:700;background:linear-gradient(135deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap}
+.search-wrap{flex:1;min-width:200px;position:relative}
+#searchInput{width:100%;background:rgba(255,255,255,.07);border:1px solid var(--border);border-radius:12px;padding:10px 16px 10px 42px;color:var(--text);font-size:14px;outline:none;transition:.2s}
+#searchInput:focus{border-color:var(--accent);background:rgba(167,139,250,.08)}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:16px}
+.stats{color:var(--muted);font-size:13px;white-space:nowrap}
+
+/* LAYOUT */
+.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 70px)}
+
+/* SIDEBAR */
+.sidebar{width:220px;flex-shrink:0;padding:20px 12px;border-right:1px solid var(--border);position:sticky;top:70px;height:calc(100vh - 70px);overflow-y:auto}
+.sidebar h3{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:12px;padding:0 8px}
+.cat-btn{display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;background:none;border:none;color:var(--muted);cursor:pointer;border-radius:10px;font-size:13px;text-align:left;transition:.15s;margin-bottom:2px}
+.cat-btn:hover{background:rgba(167,139,250,.1);color:var(--text)}
+.cat-btn.active{background:linear-gradient(135deg,rgba(167,139,250,.2),rgba(99,102,241,.15));color:var(--accent);font-weight:600}
+.cat-count{margin-left:auto;background:rgba(167,139,250,.15);color:var(--accent);padding:2px 7px;border-radius:20px;font-size:11px}
+
+/* MAIN */
+main{flex:1;padding:20px;overflow:hidden}
+.view-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px}
+.view-title{font-size:16px;font-weight:600;color:var(--accent)}
+.sort-bar{display:flex;gap:8px}
+.sort-btn{padding:6px 14px;background:var(--card);border:1px solid var(--border);border-radius:8px;color:var(--muted);cursor:pointer;font-size:12px;transition:.15s}
+.sort-btn:hover,.sort-btn.active{border-color:var(--accent);color:var(--accent)}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;cursor:pointer;transition:.2s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),#60a5fa);opacity:0;transition:.2s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 25px rgba(167,139,250,.15)}
+.card:hover::before{opacity:1}
+.card-cat{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--accent);margin-bottom:8px;opacity:.8}
+.card-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.badge{padding:3px 9px;border-radius:20px;font-size:11px;font-weight:500}
+.badge-sum{background:rgba(16,185,129,.15);color:var(--green)}
+.badge-chapters{background:rgba(99,102,241,.15);color:#818cf8}
+.badge-raw{background:rgba(245,158,11,.15);color:#fbbf24}
+.card-icon{margin-left:auto;font-size:18px;opacity:.4}
+.card-actions{display:flex;gap:6px;margin-top:10px}
+.btn-read{flex:1;padding:7px 10px;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:600;transition:.15s}
+.btn-sum{background:rgba(16,185,129,.15);color:var(--green);border:1px solid rgba(16,185,129,.25)}
+.btn-sum:hover{background:rgba(16,185,129,.3)}
+.btn-raw{background:rgba(245,158,11,.12);color:#fbbf24;border:1px solid rgba(245,158,11,.2)}
+.btn-raw:hover{background:rgba(245,158,11,.25)}
+.no-results{text-align:center;padding:60px 20px;color:var(--muted)}
+.no-results .emoji{font-size:48px;margin-bottom:12px}
+
+/* READER MODAL */
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:200;backdrop-filter:blur(4px);animation:fadeIn .2s}
+.overlay.open{display:flex;align-items:flex-start;justify-content:center;padding:20px}
+.reader{background:var(--surface);border:1px solid var(--border);border-radius:20px;width:100%;max-width:800px;max-height:90vh;display:flex;flex-direction:column;animation:slideUp .25s ease}
+.reader-header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:12px}
+.reader-header h2{flex:1;font-size:18px;font-weight:700;line-height:1.3;background:linear-gradient(135deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.close-btn{background:rgba(255,255,255,.07);border:1px solid var(--border);color:var(--text);width:36px;height:36px;border-radius:10px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.15s}
+.close-btn:hover{background:var(--red);border-color:var(--red)}
+.reader-meta{padding:12px 24px;border-bottom:1px solid var(--border);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.tab-btns{margin-left:auto;display:flex;gap:6px}
+.tab-btn{padding:5px 14px;border-radius:8px;border:1px solid var(--border);background:none;color:var(--muted);cursor:pointer;font-size:12px;font-weight:600;transition:.15s}
+.tab-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.raw-notice{padding:10px 24px;background:rgba(245,158,11,.08);border-bottom:1px solid rgba(245,158,11,.15);font-size:12px;color:#fbbf24;display:none}
+.reader-body{padding:24px;overflow-y:auto;flex:1;line-height:1.9;font-size:14.5px;color:#cbd5e1}
+.reader-body pre{white-space:pre-wrap;font-family:'Inter',sans-serif}
+.section-head{color:var(--accent);font-weight:700;font-size:15px;margin:20px 0 8px;border-left:3px solid var(--accent);padding-left:10px}
+.section-body{color:#cbd5e1;margin-bottom:16px}
+.sep{border:none;border-top:1px solid var(--border);margin:20px 0}
+
+/* LOADING */
+.loading{display:none;text-align:center;padding:40px;color:var(--muted)}
+.spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 12px}
+
+/* ANIMATIONS */
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+
+@media(max-width:768px){
+  .sidebar{display:none}
+  .grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">📚 Kho Truyện</div>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input id="searchInput" type="text" placeholder="Tìm kiếm tên truyện...">
+    </div>
+    <div class="stats" id="statsText">Đang tải...</div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <h3>Thể loại</h3>
+    <div id="catList"></div>
+  </aside>
+  <main>
+    <div class="view-header">
+      <div class="view-title" id="viewTitle">Tất cả truyện</div>
+      <div class="sort-bar">
+        <button class="sort-btn active" onclick="setSort('name')">A-Z</button>
+        <button class="sort-btn" onclick="setSort('size')">Dài nhất</button>
+      </div>
+    </div>
+    <div class="loading" id="loading"><div class="spinner"></div>Đang tải danh sách...</div>
+    <div class="grid" id="storyGrid"></div>
+  </main>
+</div>
+
+<!-- READER MODAL -->
+<div class="overlay" id="overlay" onclick="closeReader(event)">
+  <div class="reader" id="reader">
+    <div class="reader-header">
+      <h2 id="readerTitle">Đang tải...</h2>
+      <button class="close-btn" onclick="closeReader()">✕</button>
+    </div>
+    <div class="reader-meta" id="readerMeta">
+      <div class="tab-btns" id="tabBtns"></div>
+    </div>
+    <div class="raw-notice" id="rawNotice">📖 Hiển thị 600,000 ký tự đầu. File gốc có thể dài hơn.</div>
+    <div class="reader-body" id="readerBody"></div>
+  </div>
+</div>
+
+<script>
+let allStories = [];
+let filtered = [];
+let activecat = 'all';
+let sortMode = 'name';
+
+const CAT_ICONS = {
+  'Mẹ Con':'👩‍👦','Cha Chồng - Con Dâu':'👨‍👧','Cave / Gái Gọi':'💃',
+  'Chị Dâu':'💋','Anh Em - Chị Em':'👫','Loạn Luân':'🔥'
+};
+
+async function init() {
+  document.getElementById('loading').style.display = 'block';
+  try {
+    const res = await fetch('/api/stories');
+    allStories = await res.json();
+    buildCategories();
+    applyFilter();
+    document.getElementById('statsText').textContent = `${allStories.length} truyện`;
+  } catch(e) {
+    document.getElementById('loading').innerHTML = '❌ Không kết nối được server. Hãy chạy story_server.py trước!';
+    document.getElementById('loading').style.display = 'block';
+  }
+}
+
+function buildCategories() {
+  const counts = {};
+  allStories.forEach(s => counts[s.category] = (counts[s.category]||0)+1);
+  const catList = document.getElementById('catList');
+  
+  let html = `<button class="cat-btn active" onclick="setCategory('all')">
+    <span>🌐</span> Tất cả <span class="cat-count">${allStories.length}</span></button>`;
+  
+  Object.entries(counts).forEach(([cat, count]) => {
+    const icon = CAT_ICONS[cat] || '📖';
+    html += `<button class="cat-btn" onclick="setCategory('${cat}')">
+      <span>${icon}</span> ${cat} <span class="cat-count">${count}</span></button>`;
+  });
+  catList.innerHTML = html;
+}
+
+function setCategory(cat) {
+  activecat = cat;
+  document.querySelectorAll('.cat-btn').forEach(b => {
+    b.classList.toggle('active', 
+      (cat === 'all' && b.textContent.includes('Tất cả')) ||
+      b.textContent.trim().startsWith(CAT_ICONS[cat]||'') && b.textContent.includes(cat));
+  });
+  document.getElementById('viewTitle').textContent = cat === 'all' ? 'Tất cả truyện' : cat;
+  applyFilter();
+}
+
+function setSort(mode) {
+  sortMode = mode;
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  applyFilter();
+}
+
+function applyFilter() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  filtered = allStories.filter(s => {
+    const matchCat = activecat === 'all' || s.category === activecat;
+    const matchQ = !q || s.title.toLowerCase().includes(q) || s.file.includes(q);
+    return matchCat && matchQ;
+  });
+  if (sortMode === 'size') filtered.sort((a,b) => b.size - a.size);
+  else filtered.sort((a,b) => a.title.localeCompare(b.title, 'vi'));
+  
+  document.getElementById('statsText').textContent = `${filtered.length}/${allStories.length} truyện`;
+  renderGrid();
+}
+
+function renderGrid() {
+  document.getElementById('loading').style.display = 'none';
+  const grid = document.getElementById('storyGrid');
+  if (!filtered.length) {
+    grid.innerHTML = `<div class="no-results"><div class="emoji">🔍</div><div>Không tìm thấy truyện nào</div></div>`;
+    return;
+  }
+  
+  // Extract chapter count from filename
+  const chapterCount = f => {
+    const m = f.match(/-(\d+)\.txt$/);
+    return m ? parseInt(m[1]) : 0;
+  };
+
+  grid.innerHTML = filtered.map(s => {
+    const chapters = chapterCount(s.file);
+    const icon = CAT_ICONS[s.category] || '📖';
+    const encId = encodeURIComponent(s.id);
+    const safeTitle = s.title.replace(/'/g,'&apos;').replace(/"/g,'&quot;');
+    const safeCat = s.category.replace(/'/g,'&apos;');
+    return `<div class="card">
+      <div class="card-cat">${icon} ${s.category}</div>
+      <div class="card-title">${s.title}</div>
+      <div class="card-meta">
+        <span class="badge badge-sum">📝 Tóm tắt</span>
+        ${s.has_raw ? `<span class="badge badge-raw">📖 Có truyện gốc</span>` : ''}
+        ${chapters > 0 ? `<span class="badge badge-chapters">${chapters} chương</span>` : ''}
+      </div>
+      <div class="card-actions">
+        <button class="btn-read btn-sum" onclick="openStory('${encId}','${safeTitle}','${safeCat}','sum')">📝 Đọc tóm tắt</button>
+        ${s.has_raw ? `<button class="btn-read btn-raw" onclick="openStory('${encId}','${safeTitle}','${safeCat}','raw')">📖 Đọc truyện</button>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+let currentStoryId = '';
+let currentStoryHasRaw = false;
+
+async function openStory(encodedId, title, category, mode='sum') {
+  const id = decodeURIComponent(encodedId);
+  currentStoryId = id;
+  const story = allStories.find(s => s.id === id);
+  currentStoryHasRaw = story ? story.has_raw : false;
+
+  const overlay = document.getElementById('overlay');
+  overlay.classList.add('open');
+  document.getElementById('readerTitle').textContent = title;
+
+  // Build meta + tabs
+  const meta = document.getElementById('readerMeta');
+  meta.innerHTML = `<span class="badge badge-sum">${CAT_ICONS[category]||'📖'} ${category}</span>`;
+  const tabDiv = document.createElement('div');
+  tabDiv.className = 'tab-btns';
+  tabDiv.innerHTML = `<button class="tab-btn ${mode==='sum'?'active':''}" onclick="switchTab('sum')">📝 Tóm tắt</button>
+    ${currentStoryHasRaw ? `<button class="tab-btn ${mode==='raw'?'active':''}" onclick="switchTab('raw')">📖 Truyện gốc</button>` : ''}`;
+  meta.appendChild(tabDiv);
+
+  document.getElementById('readerBody').innerHTML = '<div class="spinner" style="margin:40px auto"></div>';
+  await loadContent(id, mode);
+}
+
+async function switchTab(mode) {
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.toggle('active', 
+      (mode==='sum' && b.textContent.includes('Tóm')) ||
+      (mode==='raw' && b.textContent.includes('Truyện'))
+    );
+  });
+  document.getElementById('readerBody').innerHTML = '<div class="spinner" style="margin:40px auto"></div>';
+  await loadContent(currentStoryId, mode);
+}
+
+async function loadContent(id, mode) {
+  const notice = document.getElementById('rawNotice');
+  notice.style.display = 'none';
+  try {
+    if (mode === 'sum') {
+      const res = await fetch(`/api/story?id=${encodeURIComponent(id)}`);
+      const data = await res.json();
+      renderStory(data.content);
+    } else {
+      const res = await fetch(`/api/rawstory?id=${encodeURIComponent(id)}`);
+      const data = await res.json();
+      if (data.error) { document.getElementById('readerBody').innerHTML = `<p style="color:#f43f5e">❌ ${data.error}</p>`; return; }
+      if (data.total_size > 600000) notice.style.display = 'block';
+      renderRaw(data.content);
+    }
+  } catch(e) {
+    document.getElementById('readerBody').innerHTML = '<p style="color:#f43f5e">❌ Không tải được nội dung</p>';
+  }
+}
+
+function renderStory(raw) {
+  const body = document.getElementById('readerBody');
+  const lines = raw.split('\n');
+  let html = '';
+  
+  const sectionMap = {
+    '1. Giới thiệu': '1. 📌 Giới thiệu',
+    '2. Tình huống': '2. 🎭 Tình huống',
+    '3. Diễn biến': '3. 📜 Diễn biến',
+    '4. Cao trào': '4. ⚡ Cao trào',
+    '5. Đỉnh điểm': '5. 🔥 Đỉnh điểm',
+    '6. Kết luận': '6. 🏁 Kết luận',
+  };
+
+  for (let line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) { html += '<br>'; continue; }
+    
+    // Header file
+    if (trimmed.startsWith('===') || trimmed.startsWith('---')) {
+      html += `<hr class="sep">`;
+      continue;
+    }
+    if (trimmed.startsWith('TÓM TẮT TRUYỆN') || trimmed.startsWith('File gốc') || trimmed.startsWith('Thể loại') || trimmed.startsWith('Nhân vật')) {
+      html += `<div style="color:var(--muted);font-size:12px;margin-bottom:4px">${trimmed}</div>`;
+      continue;
+    }
+    
+    // Sections
+    let isSection = false;
+    for (const [key, label] of Object.entries(sectionMap)) {
+      if (trimmed.startsWith(key)) {
+        html += `<div class="section-head">${label}</div>`;
+        const rest = trimmed.slice(key.length).replace(/^[:.]?\s*/, '');
+        if (rest) html += `<div class="section-body">${rest}</div>`;
+        isSection = true; break;
+      }
+    }
+    if (!isSection) html += `<div class="section-body">${trimmed}</div>`;
+  }
+  body.innerHTML = html;
+}
+
+function renderRaw(raw) {
+  const body = document.getElementById('readerBody');
+  const lines = raw.split('\n');
+  let html = '';
+  for (let line of lines) {
+    const t = line.trim();
+    if (!t) { html += '<br>'; continue; }
+    if (t.match(/^={5,}/)) { html += '<hr class="sep">'; continue; }
+    if (t.match(/^Chương \d+/i) || t.match(/^={3,} Chương/i)) {
+      html += `<div class="section-head">📖 ${t}</div>`;
+    } else {
+      html += `<div class="section-body">${t}</div>`;
+    }
+  }
+  body.innerHTML = html;
+}
+
+function closeReader(e) {
+  if (!e || e.target === document.getElementById('overlay')) {
+    document.getElementById('overlay').classList.remove('open');
+    document.getElementById('readerBody').innerHTML = '';
+  }
+}
+
+document.getElementById('searchInput').addEventListener('input', applyFilter);
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeReader(); });
+
+init();
+</script>
+</body>
+</html>
