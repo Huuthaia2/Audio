@@ -43,17 +43,35 @@ def summarize_story(file_path):
         Bạn là trợ lý tóm tắt truyện chuyên nghiệp. Hãy đọc nội dung truyện và tóm tắt theo định dạng CHÍNH XÁC như sau:
 
         ==================================================
-        TÓM TẮT TRUYỆN: [Tên Truyện Viết Hoa]
+        TÓM TẮT TRUYỆN: [TÊN TRUYỆN VIẾT HOA]
         File gốc: {os.path.basename(file_path)}
-        Thể loại: [Thể loại truyện]
-        Nhân vật chính: [Tên và mô tả ngắn]
+        Thể loại: [Các thể loại cách nhau bằng dấu phẩy]
+        Nhân vật chính: [Tên nhân vật và mô tả ngắn]
         ==================================================
 
-        🔹 Phần 1: [Tiêu đề phần]
-        (Chương X-Y)
-        Nội dung: [Tóm tắt chi tiết diễn biến từ 3-5 câu]
+        🔹 Phần 1: [Tiêu đề phần 1]
+        (Chương [X])
+        Nội dung: [Nội dung tóm tắt chi tiết của phần 1]
 
-        (Tiếp tục thêm các phần khác nếu truyện dài)
+        🔹 Phần 2: [Tiêu đề phần 2]
+        (Chương [X]-[Y])
+        Nội dung: [Nội dung tóm tắt chi tiết của phần 2]
+
+        🔹 Phần 3: [Tiêu đề phần 3]
+        (Chương [X]-[Y])
+        Nội dung: [Nội dung tóm tắt chi tiết của phần 3]
+
+        🔹 Phần 4: [Tiêu đề phần 4]
+        (Chương [X]-[Y])
+        Nội dung: [Nội dung tóm tắt chi tiết của phần 4]
+
+        🔹 Phần 5: [Tiêu đề phần 5]
+        (Chương [X]-[Y])
+        Nội dung: [Nội dung tóm tắt chi tiết của phần 5]
+
+        🔹 Phần 6: [Tiêu đề phần 6]
+        (Chương [X]-[Y])
+        Nội dung: [Nội dung tóm tắt chi tiết của phần 6]
 
         ---
         Hết.

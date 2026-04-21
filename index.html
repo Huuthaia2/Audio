@@ -169,13 +169,13 @@ const CAT_ICONS = {
 async function init() {
   document.getElementById('loading').style.display = 'block';
   try {
-    const res = await fetch('/api/stories');
+    const res = await fetch('stories.json');
     allStories = await res.json();
     buildCategories();
     applyFilter();
     document.getElementById('statsText').textContent = `${allStories.length} truyện`;
   } catch(e) {
-    document.getElementById('loading').innerHTML = '❌ Không kết nối được server. Hãy chạy story_server.py trước!';
+    document.getElementById('loading').innerHTML = '❌ Không tải được danh sách truyện. Hãy đảm bảo file stories.json tồn tại!';
     document.getElementById('loading').style.display = 'block';
   }
 }
@@ -306,18 +306,18 @@ async function loadContent(id, mode) {
   notice.style.display = 'none';
   try {
     if (mode === 'sum') {
-      const res = await fetch(`/api/story?id=${encodeURIComponent(id)}`);
-      const data = await res.json();
-      renderStory(data.content);
+      // id format: folder/filename.txt
+      const res = await fetch(`Tóm tắt/${id}`);
+      const text = await res.text();
+      renderStory(text);
     } else {
-      const res = await fetch(`/api/rawstory?id=${encodeURIComponent(id)}`);
-      const data = await res.json();
-      if (data.error) { document.getElementById('readerBody').innerHTML = `<p style="color:#f43f5e">❌ ${data.error}</p>`; return; }
-      if (data.total_size > 600000) notice.style.display = 'block';
-      renderRaw(data.content);
+      const res = await fetch(`truyencogiaothao/${id}`);
+      const text = await res.text();
+      if (text.length > 500000) notice.style.display = 'block';
+      renderRaw(text);
     }
   } catch(e) {
-    document.getElementById('readerBody').innerHTML = '<p style="color:#f43f5e">❌ Không tải được nội dung</p>';
+    document.getElementById('readerBody').innerHTML = '<p style="color:#f43f5e">❌ Không tải được nội dung. Lỗi: ' + e.message + '</p>';
   }
 }
 
