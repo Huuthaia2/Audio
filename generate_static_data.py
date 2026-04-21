@@ -15,8 +15,25 @@ CATEGORIES = {
     "8-Loạn Luân": "Loạn Luân",
 }
 
-def slug_to_title(slug):
-    name = re.sub(r'-\d+\.txt$', '', slug)
+def get_title_from_file(fpath, fallback_slug):
+    """Đọc tiêu đề có dấu từ nội dung file"""
+    try:
+        with open(fpath, 'r', encoding='utf-8', errors='replace') as f:
+            # Chỉ đọc 10 dòng đầu để tìm tiêu đề
+            for _ in range(10):
+                line = f.readline()
+                if not line: break
+                line = line.strip()
+                # Tìm dòng "TÓM TẮT TRUYỆN: ..."
+                match = re.search(r'TÓM TẮT TRUYỆN:\s*(.*)', line, re.IGNORECASE)
+                if match:
+                    title = match.group(1).strip()
+                    if title: return title.title()
+    except:
+        pass
+    
+    # Fallback: Chuyển slug file thành tên không dấu (như cũ)
+    name = re.sub(r'-\d+\.txt$', '', fallback_slug)
     name = name.replace('-', ' ')
     return name.title()
 
@@ -41,7 +58,7 @@ def generate_stories_json():
                 "file": fname,
                 "folder": folder,
                 "category": cat_name,
-                "title": slug_to_title(fname),
+                "title": get_title_from_file(fpath, fname),
                 "size": size,
                 "has_raw": has_raw,
             })
