@@ -12,6 +12,10 @@
   --accent:#a78bfa;--accent2:#7c3aed;--text:#e2e8f0;--muted:#64748b;
   --green:#10b981;--red:#f43f5e;
 }
+body.light-mode {
+  --bg:#f8fafc;--surface:#ffffff;--card:#ffffff;--border:#e2e8f0;
+  --accent:#7c3aed;--accent2:#6d28d9;--text:#0f172a;--muted:#64748b;
+}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh}
 
 /* HEADER */
@@ -23,6 +27,9 @@ header{background:linear-gradient(135deg,#1e1b4b,#312e81,#1e1b4b);padding:20px 2
 #searchInput:focus{border-color:var(--accent);background:rgba(167,139,250,.08)}
 .search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:16px}
 .stats{color:var(--muted);font-size:13px;white-space:nowrap}
+.theme-toggle{background:rgba(255,255,255,.07);border:1px solid var(--border);color:var(--text);width:36px;height:36px;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:18px;transition:.15s}
+.theme-toggle:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+body.light-mode .theme-toggle{background:rgba(0,0,0,.05)}
 
 /* LAYOUT */
 .layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 70px)}
@@ -119,6 +126,7 @@ main{flex:1;padding:20px;overflow:hidden}
       <input id="searchInput" type="text" placeholder="Tìm kiếm tên truyện...">
     </div>
     <div class="stats" id="statsText">Đang tải...</div>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Đổi giao diện">🌓</button>
   </div>
 </header>
 
@@ -160,6 +168,23 @@ let allStories = [];
 let filtered = [];
 let activecat = 'all';
 let sortMode = 'name';
+
+function initTheme() {
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light-mode');
+    document.getElementById('themeToggle').textContent = '☀️';
+  } else {
+    document.getElementById('themeToggle').textContent = '🌙';
+  }
+}
+
+function toggleTheme() {
+  const isLight = document.body.classList.toggle('light-mode');
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  document.getElementById('themeToggle').textContent = isLight ? '☀️' : '🌙';
+}
+
+initTheme();
 
 const CAT_ICONS = {
   'Mẹ Con':'👩‍👦','Cha Chồng - Con Dâu':'👨‍👧','Cave / Gái Gọi':'💃',
