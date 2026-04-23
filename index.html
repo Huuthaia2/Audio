@@ -187,8 +187,11 @@ function toggleTheme() {
 initTheme();
 
 const CAT_ICONS = {
-  'Mẹ Con':'👩‍👦','Cha Chồng - Con Dâu':'👨‍👧','Cave / Gái Gọi':'💃',
-  'Chị Dâu':'💋','Anh Em - Chị Em':'👫','Loạn Luân':'🔥'
+  'Mẹ Con':'👩‍👦','Mẹ vợ':'👩‍🦱','Ghen tuông':'😠','Máy Bay':'✈️','Cô Giáo - Học Sinh':'👩‍🏫',
+  'Ngoại Tình':'💔','Y Tá - Bác Sĩ':'🏥','Bạo Dâm':'⛓️','Vợ Dâm':'👰','Chuyện cũ':'📜',
+  'Dâm thư Trung Quốc':'🇨🇳','truyện trung':'🏮','Truyện dâm hiệp':'⚔️','Kỹ Năng & Hành Động':'🎯',
+  'Địa Điểm & Đối Tượng':'📍','Phong Cách & Cảm Xúc':'💖','Cave':'💃','Cave / Gái Gọi':'💃','HE':'❤️',
+  'Chị dâu':'💋','Anh Em - Chị Em':'👫','Hàng xóm':'🏘️','Loạn Luân':'🔥','Mẹ bạn':'👩‍👩‍👦','Truyện dài':'📚'
 };
 
 async function init() {
@@ -213,7 +216,10 @@ function buildCategories() {
   let html = `<button class="cat-btn active" onclick="setCategory('all')">
     <span>🌐</span> Tất cả <span class="cat-count">${allStories.length}</span></button>`;
   
-  Object.entries(counts).forEach(([cat, count]) => {
+  // Sort categories by count or name
+  const sortedCats = Object.entries(counts).sort((a,b) => b[1] - a[1]);
+
+  sortedCats.forEach(([cat, count]) => {
     const icon = CAT_ICONS[cat] || '📖';
     html += `<button class="cat-btn" onclick="setCategory('${cat}')">
       <span>${icon}</span> ${cat} <span class="cat-count">${count}</span></button>`;
@@ -224,9 +230,10 @@ function buildCategories() {
 function setCategory(cat) {
   activecat = cat;
   document.querySelectorAll('.cat-btn').forEach(b => {
-    b.classList.toggle('active', 
-      (cat === 'all' && b.textContent.includes('Tất cả')) ||
-      b.textContent.trim().startsWith(CAT_ICONS[cat]||'') && b.textContent.includes(cat));
+    // Exact match for category name to avoid partial matches
+    const btnText = b.textContent.replace(/\s+\d+$/, '').trim();
+    const catWithIcon = (CAT_ICONS[cat] ? CAT_ICONS[cat] + ' ' : '') + cat;
+    b.classList.toggle('active', (cat === 'all' && btnText.includes('Tất cả')) || btnText === catWithIcon || btnText.endsWith(cat));
   });
   document.getElementById('viewTitle').textContent = cat === 'all' ? 'Tất cả truyện' : cat;
   applyFilter();
@@ -243,7 +250,7 @@ function applyFilter() {
   const q = document.getElementById('searchInput').value.toLowerCase().trim();
   filtered = allStories.filter(s => {
     const matchCat = activecat === 'all' || s.category === activecat;
-    const matchQ = !q || s.title.toLowerCase().includes(q) || s.file.includes(q);
+    const matchQ = !q || s.title.toLowerCase().includes(q) || s.file.toLowerCase().includes(q);
     return matchCat && matchQ;
   });
   if (sortMode === 'size') filtered.sort((a,b) => b.size - a.size);
@@ -263,40 +270,39 @@ function renderGrid() {
   
   // Extract chapter count from filename
   const chapterCount = f => {
-    const m = f.match(/-(\d+)\.txt$/);
+    const m = f.match(/-(\d+)\.txt$/) || f.match(/\+(\d+)\.txt$/);
     return m ? parseInt(m[1]) : 0;
   };
 
   grid.innerHTML = filtered.map(s => {
     const chapters = chapterCount(s.file);
     const icon = CAT_ICONS[s.category] || '📖';
-    const encId = encodeURIComponent(s.id);
+    const encUid = encodeURIComponent(s.uid);
     const safeTitle = s.title.replace(/'/g,'&apos;').replace(/"/g,'&quot;');
     const safeCat = s.category.replace(/'/g,'&apos;');
     return `<div class="card">
       <div class="card-cat">${icon} ${s.category}</div>
       <div class="card-title">${s.title}</div>
       <div class="card-meta">
-        <span class="badge badge-sum">📝 Tóm tắt</span>
-        ${s.has_raw ? `<span class="badge badge-raw">📖 Có truyện gốc</span>` : ''}
+        ${s.has_sum ? `<span class="badge badge-sum">📝 Tóm tắt</span>` : ''}
+        ${s.has_raw ? `<span class="badge badge-raw">📖 Truyện gốc</span>` : ''}
         ${chapters > 0 ? `<span class="badge badge-chapters">${chapters} chương</span>` : ''}
       </div>
       <div class="card-actions">
-        <button class="btn-read btn-sum" onclick="openStory('${encId}','${safeTitle}','${safeCat}','sum')">📝 Đọc tóm tắt</button>
-        ${s.has_raw ? `<button class="btn-read btn-raw" onclick="openStory('${encId}','${safeTitle}','${safeCat}','raw')">📖 Đọc truyện</button>` : ''}
+        ${s.has_sum ? `<button class="btn-read btn-sum" onclick="openStory('${encUid}','${safeTitle}','${safeCat}','sum')">📝 Đọc tóm tắt</button>` : ''}
+        ${s.has_raw ? `<button class="btn-read btn-raw" onclick="openStory('${encUid}','${safeTitle}','${safeCat}','raw')">📖 Đọc truyện</button>` : ''}
       </div>
     </div>`;
   }).join('');
 }
 
-let currentStoryId = '';
-let currentStoryHasRaw = false;
+let currentStoryUid = '';
 
-async function openStory(encodedId, title, category, mode='sum') {
-  const id = decodeURIComponent(encodedId);
-  currentStoryId = id;
-  const story = allStories.find(s => s.id === id);
-  currentStoryHasRaw = story ? story.has_raw : false;
+async function openStory(encodedUid, title, category, mode='sum') {
+  const uid = decodeURIComponent(encodedUid);
+  currentStoryUid = uid;
+  const story = allStories.find(s => s.uid === uid);
+  if (!story) return;
 
   const overlay = document.getElementById('overlay');
   overlay.classList.add('open');
@@ -307,12 +313,14 @@ async function openStory(encodedId, title, category, mode='sum') {
   meta.innerHTML = `<span class="badge badge-sum">${CAT_ICONS[category]||'📖'} ${category}</span>`;
   const tabDiv = document.createElement('div');
   tabDiv.className = 'tab-btns';
-  tabDiv.innerHTML = `<button class="tab-btn ${mode==='sum'?'active':''}" onclick="switchTab('sum')">📝 Tóm tắt</button>
-    ${currentStoryHasRaw ? `<button class="tab-btn ${mode==='raw'?'active':''}" onclick="switchTab('raw')">📖 Truyện gốc</button>` : ''}`;
+  tabDiv.innerHTML = `
+    ${story.has_sum ? `<button class="tab-btn ${mode==='sum'?'active':''}" onclick="switchTab('sum')">📝 Tóm tắt</button>` : ''}
+    ${story.has_raw ? `<button class="tab-btn ${mode==='raw'?'active':''}" onclick="switchTab('raw')">📖 Truyện gốc</button>` : ''}
+  `;
   meta.appendChild(tabDiv);
 
   document.getElementById('readerBody').innerHTML = '<div class="spinner" style="margin:40px auto"></div>';
-  await loadContent(id, mode);
+  await loadContent(uid, mode);
 }
 
 async function switchTab(mode) {
@@ -323,26 +331,37 @@ async function switchTab(mode) {
     );
   });
   document.getElementById('readerBody').innerHTML = '<div class="spinner" style="margin:40px auto"></div>';
-  await loadContent(currentStoryId, mode);
+  await loadContent(currentStoryUid, mode);
 }
 
-async function loadContent(id, mode) {
+async function loadContent(uid, mode) {
+  const story = allStories.find(s => s.uid === uid);
+  if (!story) return;
+
   const notice = document.getElementById('rawNotice');
   notice.style.display = 'none';
   try {
+    let url = '';
     if (mode === 'sum') {
-      // id format: folder/filename.txt
-      const res = await fetch(`Tóm tắt/${id}`);
-      const text = await res.text();
+      // Summary is usually in Tóm tắt/category/filename.txt or Tóm tắt/id
+      // Let's try Tóm tắt/${id} first (which works for truyencogiaothao)
+      url = `Tóm tắt/${story.id}`;
+    } else {
+      url = `${story.base}/${story.id}`;
+    }
+    
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    
+    if (mode === 'sum') {
       renderStory(text);
     } else {
-      const res = await fetch(`truyencogiaothao/${id}`);
-      const text = await res.text();
       if (text.length > 500000) notice.style.display = 'block';
       renderRaw(text);
     }
   } catch(e) {
-    document.getElementById('readerBody').innerHTML = '<p style="color:#f43f5e">❌ Không tải được nội dung. Lỗi: ' + e.message + '</p>';
+    document.getElementById('readerBody').innerHTML = `<p style="color:#f43f5e">❌ Không tải được nội dung. Lỗi: ${e.message}<br>Đường dẫn: ${mode==='sum'?'Tóm tắt/':''}${story.id}</p>`;
   }
 }
 
@@ -364,6 +383,12 @@ function renderStory(raw) {
     const trimmed = line.trim();
     if (!trimmed) { html += '<br>'; continue; }
     
+    // Icon-based sections (New format)
+    if (trimmed.startsWith('🔹 Chương')) {
+        html += `<div class="section-head">${trimmed}</div>`;
+        continue;
+    }
+
     // Header file
     if (trimmed.startsWith('===') || trimmed.startsWith('---')) {
       html += `<hr class="sep">`;
@@ -374,7 +399,7 @@ function renderStory(raw) {
       continue;
     }
     
-    // Sections
+    // Sections (Old format)
     let isSection = false;
     for (const [key, label] of Object.entries(sectionMap)) {
       if (trimmed.startsWith(key)) {
@@ -397,7 +422,7 @@ function renderRaw(raw) {
     const t = line.trim();
     if (!t) { html += '<br>'; continue; }
     if (t.match(/^={5,}/)) { html += '<hr class="sep">'; continue; }
-    if (t.match(/^Chương \d+/i) || t.match(/^={3,} Chương/i)) {
+    if (t.match(/^Chương \d+/i) || t.match(/^={3,} Chương/i) || t.match(/^={3,} PHẦN/i)) {
       html += `<div class="section-head">📖 ${t}</div>`;
     } else {
       html += `<div class="section-body">${t}</div>`;
