@@ -38,6 +38,22 @@ def clean_title(filename):
     name = name.replace('-', ' ').replace('_', ' ')
     return name.title()
 
+def extract_title_from_file(filepath, fallback_title):
+    try:
+        with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
+            for _ in range(20):  # Check first 20 lines
+                line = f.readline()
+                if not line: break
+                line = line.strip()
+                # Look for TITLE: or Tên truyện: or even = TITLE: =
+                match = re.search(r'(TITLE|Tiêu đề|Tên truyện|TÊN TRUYỆN)\s*:\s*([^=]*[^=\s])', line, re.IGNORECASE)
+                if match:
+                    title = match.group(2).strip()
+                    if title: return title
+    except Exception as e:
+        print(f"Error reading {filepath}: {e}")
+    return fallback_title
+
 def get_stories_from_dir(base_path, relative_to):
     stories = []
     for root, dirs, files in os.walk(base_path):
@@ -60,12 +76,15 @@ def get_stories_from_dir(base_path, relative_to):
                 # Clean category name (remove leading numbers if any)
                 clean_cat = re.sub(r'^\d+-', '', category)
                 
+                fallback = clean_title(f)
+                real_title = extract_title_from_file(full_path, fallback)
+
                 stories.append({
                     "id": rel_path.replace("\\", "/"),
                     "file": f,
                     "folder": folder,
                     "category": clean_cat,
-                    "title": clean_title(f),
+                    "title": real_title,
                     "size": os.path.getsize(full_path),
                     "base": os.path.basename(relative_to)
                 })

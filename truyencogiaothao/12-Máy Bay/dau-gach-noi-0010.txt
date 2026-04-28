@@ -2,30 +2,20 @@
  TITLE: Dấu Gạch Nối
 ==============================
 
-
-
 ==================== Phần 1 ====================
 
 Nơi tôi sanh ra là một đô thị đông đúc, đời sống khá hiện đại, đa phần là thương gia, giàu có. Gia đình tôi cũng khá giả, ba tôi làm thuyền trưởng một tàu buôn gỗ liên lục – hiếm khi ở nhà, mẹ tôi buôn bán mỹ phẩm. Tôi là con một, 17 tuổi, năm cuối trung học.
 
-
 Gia đình tôi ít khi quây quần bên bàn ăn hay họp mặt, ba mẹ tôi quan tâm đến vấn đề buồn vui của tôi nhiều hơn trường lớp, bạn bè. Cuộc sống vật chất của tôi sung túc, không gì vướng bận, bạn bè trang lứa, cũng giàu có như nhau nên không gì phải đua ganh, duyên phần: còn trẻ, chẳng gì phải lo lắng, bỗng ….
-
 
 Hôm ấy, mưa lớn lắm, tôi về nhà sớm hơn dự định, nghĩ bụng về nhà một mình buồn lắm, nhưng quần áo ướt hết, làm sao đi nhóm bạn được, thế cho nên định bụng sẽ nói chuyện phone tầm phào với bạn bè, đợi tạnh mưa rồi sẽ “nhổ neo”. Thế nhưng ….
 
-
-
-
 – “Ôi, anh nhớ em… a ….a ….”
-
-
 – A ….a …. Á ……ôi……… cho em hết đi ôi……………
 
-
-Những tiếng 
+Những tiếng
 “a, ôi, ư, cho em”
-…. làm tôi thêm tò mò, xe mẹ không có nhà, chẳng lẽ là ba ? nhưng ba với ai ? Tôi lần bước lên lầu, cánh cửa phòng ba, mẹ khép kín, không tài nào nhìn vô trong được, những tiếng rên rĩ trong phòng ngày càng dâm tục, khiến tôi thêm tò mò, nghe kỹ vẫn không phân biệt được đó là tiếng ba, mẹ hay chị ở, anh tài xế. Chịu, nhưng tôi biết, từ lúc đó, đầu óc tôi lúc nào cũng lẫn quẩn những từ 
+…. làm tôi thêm tò mò, xe mẹ không có nhà, chẳng lẽ là ba ? nhưng ba với ai ? Tôi lần bước lên lầu, cánh cửa phòng ba, mẹ khép kín, không tài nào nhìn vô trong được, những tiếng rên rĩ trong phòng ngày càng dâm tục, khiến tôi thêm tò mò, nghe kỹ vẫn không phân biệt được đó là tiếng ba, mẹ hay chị ở, anh tài xế. Chịu, nhưng tôi biết, từ lúc đó, đầu óc tôi lúc nào cũng lẫn quẩn những từ
 “chơi em mạnh đi anh”
 “ôi, đụ em đã quá”
 “anh nhớ chim em quá, bót không chịu được …”
@@ -33,1604 +23,929 @@ Những tiếng
 “nè, anh cho em tét chim, tét đít luôn nè”
 “á, á…”
 
-
-Trong phòng bỗng im lắng, tôi ríu chân trốn sau cánh cửa phòng vệ sinh, đợi một lúc, tim tôi bỗng thót lại, tôi thấy mẹ tôi cùng một thanh niên cường tráng, đẹp trai, bước ra khỏi phòng, hắn bế mẹ trên tay, miệng nút vú mẹ, mẹ tôi mắt nhắn nghiền, cong người trên tay hắn, cả hai loã lồ, không một mảnh vải che thân. Mắt tôi như hoa lên, đầu óc quay cuồng, đây là lần đầu tiên tôi thấy cảnh mẹ tôi ân ái, mà lại ân ái với một thanh niên trẻ đẹp, không phải là ba. Lòng tự trọng dành cho mẹ 17 năm, trong phút chốc đã tan biến thành mây khói, phải mẹ tôi đó không? phải người đàn bà 40 tuổi của cha con tôi đó chăng? nước mắt tôi chảy dài, xót cho ba, đau cho gia đình mình. Bỗng nhiên, hắng thả bà ta xuống các bậc cầu thang, họ như một cặp vũ công ăn ý, bà ta ưỡn cặp vú thật cao, hắn ngoạm lấy, ngoạm để, tay trái hắn bóp vắt vú, tay phải hắn móc chim. Tôi không còn tự chủ được nữa, lý trí chao ngã, bàn tay tôi đã rờ chim mình hồi nào không hay, chất nhờn trong người tôi cứ tràn trề, ồ ạt tuôn, nó như một bãi phù sa chưa lần khai phá. Hắn hẫy chân mẹ tôi lên thật cao, đưa miệng vào hôn hít, mẹ tôi ngày càng rên lớn, không những rên mà bà ta còn van xin hắn ban phát ân huệ. Hắn bỗng ngưng lại, rồi nói 
+Trong phòng bỗng im lắng, tôi ríu chân trốn sau cánh cửa phòng vệ sinh, đợi một lúc, tim tôi bỗng thót lại, tôi thấy mẹ tôi cùng một thanh niên cường tráng, đẹp trai, bước ra khỏi phòng, hắn bế mẹ trên tay, miệng nút vú mẹ, mẹ tôi mắt nhắn nghiền, cong người trên tay hắn, cả hai loã lồ, không một mảnh vải che thân. Mắt tôi như hoa lên, đầu óc quay cuồng, đây là lần đầu tiên tôi thấy cảnh mẹ tôi ân ái, mà lại ân ái với một thanh niên trẻ đẹp, không phải là ba. Lòng tự trọng dành cho mẹ 17 năm, trong phút chốc đã tan biến thành mây khói, phải mẹ tôi đó không? phải người đàn bà 40 tuổi của cha con tôi đó chăng? nước mắt tôi chảy dài, xót cho ba, đau cho gia đình mình. Bỗng nhiên, hắng thả bà ta xuống các bậc cầu thang, họ như một cặp vũ công ăn ý, bà ta ưỡn cặp vú thật cao, hắn ngoạm lấy, ngoạm để, tay trái hắn bóp vắt vú, tay phải hắn móc chim. Tôi không còn tự chủ được nữa, lý trí chao ngã, bàn tay tôi đã rờ chim mình hồi nào không hay, chất nhờn trong người tôi cứ tràn trề, ồ ạt tuôn, nó như một bãi phù sa chưa lần khai phá. Hắn hẫy chân mẹ tôi lên thật cao, đưa miệng vào hôn hít, mẹ tôi ngày càng rên lớn, không những rên mà bà ta còn van xin hắn ban phát ân huệ. Hắn bỗng ngưng lại, rồi nói
 “để khi khác nha cưng, bây giờ anh phải đi, còn em cũng phải lo hàng họ”
-Mẹ tôi lắc đầu quầy quậy và nũng nịu 
+Mẹ tôi lắc đầu quầy quậy và nũng nịu
 “cưng ơi, anh thà giết em đi, sao lại để em ướt đũng thế này ?”
 hắn không trả lời, mút lưỡi mẹ thật lâu, như quyến luyến lắm, mẹ bỗng đè hắn xuống, trân quý hôn cu hắn, tôi bỗng ngã quỵ, mắt hoa lên, không còn biết gì nữa…
 
-
-
-
 Lúc tôi tỉnh dậy thì mẹ đã đưa tôi vô bệnh viện, bác sĩ nói tôi bị sốt cao thôi chứ không hề gì. Mẹ với đôi mắt tội lỗi nhìn tôi xót xa.
-
 
 Khi được xuất viện, tôi bảo bà
 
-
 “con muốn gặp hắn!”
-
 
 “ai ?”
 bà hỏi;
 
-
 “người ngủ với Mẹ khi ba đi vắng”
-
 
 “để làm gì ?”
 
-
 Tôi không tìm cho mình được một lý do chính đáng nên đành im lặng.
-
 
 “Con có biết tại sao con không cần đi làm không ? vì ba con kiếm được rất nhiều tiền cho mẹ con mình không vất vả, nếu con nói với ba những chuyện xảy ra trong nhà hôm qua thì cuộc sống mẹ con mình sẽ không còn sung túc và nhàn rỗi mãi như bây giờ!”
 
-
 “bù lại con được gì ? được một người như Mẹ có phải vậy không ?”
-
-
-
 
 “Không, còn sẽ được nhiều hơn thế nếu con muốn!”
 
-
 Tôi chua xót, hoá ra, Mẹ tôi đang làm một cuộc trao đổi. Nước mắt tôi dâng tràn, chảy mãi cho đến khi hình ảnh mẹ mờ dần.
-
 
 1 tháng sau, Mẹ chính thức mang hắn về nhà dùng cơm tối, Hắn là người lịch thiệp, trẻ hơn Mẹ rất nhiều và lớn hơn tôi cũng khá. Hắn như một dấu gạch nối giữa tôi và Mẹ. Hắn rất chu đáo với tôi, nhưng cái chu đáo bề trên, có khoảng cách. Cái khoảng cách đó như một nam châm hút tôi vào quỹ đạo HẮN! Sau gần 3 tuần, tôi bắt đầu có cảm tình với hắn, và không còn tụ tập với bạn bè như xưa, tôi luôn quấn theo chân hắn và Mẹ. Tôi muốn hắn là của riêng tôi. Tôi chiếm thời gian của họ cố ý ngăn cản họ gần nhau cả về thể xác lẫn tâm hồn.
 
-
 Hôm ấy ba gọi điện báo tàu ba đã cặp bến, mai sẽ về nhà. Tôi toan tính cho mình và hắn một buổi hẹn hò chính thức, tôi hoan hởi đi chợ, rủ hắn tới nhà nấu cơm đón Me. Đi làm về; hắn vui vẻ nhận lời, tôi và hắn ở bên nhau thật trong sáng, trong sáng đến mức tôi phát điên. Những cú đụng chạm cố ý do tôi gây ra đều bị hắn phớt lơ! Cơm gần chuẩn bị xong thì tiếng lách cách mở cửa, hắn tưởng Mẹ về nên hoạt bát hẳn lên nhưng không, ba bỗng xuất hiện nơi cửa bếp làm hắn tái người, ba ngạc nhiên đến quên chào hỏi, tôi ôm chầm lấy ba – vị cứu tinh của đời tôi – hắn thừa thải đứng một góc, tôi kéo tay ba đến gần hắn và giới thiệu “ba ơi, đây là bạn trai của con”
 
-
 – Chào cậu
-
-
 – Dạ, chào ……. Bác
-
-
 – Cậu tên gì ?
-
-
 – Dạ … Khoa
-
 
 Ba quay qua tôi hỏi
 
-
 “các con quen nhau lâu chưa ?”
-
 
 Tôi nheo mắt nhìn hắn
 
-
 “bao lâu rồi anh?”
-
 
 Hắn lấy lại vẻ tự chủ, nhanh nhẩu trả lời:
 
+Dạ gần một năm nhưng … Phương không cho con tới nhà …”
 
-Dạ gần một năm nhưng … Phương không cho con tới nhà …” 
-
-
-Ba buông nhẹ 
+Ba buông nhẹ
 “ thế à”
 và quay lưng lên lầu .
 
-
 Vài phút sau Mẹ cũng về tới, khi thấy tôi và hắn gọi nhau “anh, em” bà quắt mắt nhìn, nhưng khi thấy ba, mẹ dịu dàng hỏi
-
 
 “cả nhà muốn mẹ ngạc nhiên hay sao mà không ai điện báo ba mới về ?”
 
-
 Tôi thản nhiên nắm tay Khoa kéo lên lầu nhường Ba Mẹ một góc riêng tư. Khoa ríu chân đi theo tôi vào phòng, khép cửa lại, tôi hỏi hắn
-
 
 “lần đầu tiên gặp ba người yêu anh sợ không ?”
 
-
 Hắn trở về vị trí của mình
-
 
 “cám ơn Phương nhé”
 
-
 Tôi tấn công tiếp
-
 
 “hồi nãy trước mặt ba, anh gọi em là gì ?”
 …
 
-
 “Phương à, tôi nghĩ mình không nên …”
-
 
 “thôi được thế thì để em nói thật với ba”
  tôi lao ra khỏi phòng, hắn đuổi theo, kéo mạnh tôi trở về phòng:
 
-
 – Em còn trong trắng lắm, đừng thương loại người như anh, hỏng một đời . Em biết gì về anh ngoài việc là người tình của Mẹ ? Có lẽ chỉ có thế! Vậy có đáng cho em đổi tương lai mình không ?
-
-
 – Anh nói em nghe về anh đi
-
-
 – Không gì để nói ngoài việc giỏi làm tình !!!!!!
-
-
 – tại sao anh biết Mẹ ?
-
-
 – Anh biết cả Ba em, nhưng ông không nhớ anh mà thôi .
-
-
 – Anh nói gì ?
-
-
 – Ba anh là phó đoàn, cấp dưới ba em, Ba mẹ em đến nhà anh chơi, và Mẹ em biết anh từ đó .
-
-
 – Vậy anh học gì ? làm gì ?
-
-
 – Anh đang theo thủy thủ quân nội địa, không làm được nhiều tiền như ba em, ba anh, nhưng có nhiều thời gian trên đất liền hơn .
-
 
 “Này, hai đứa có ăn cùng ba mẹ không ?”
 
-
 Tôi nhìn hắn, hỏi gằn
-
 
 “anh muốn sao ? muốn là bạn trai của em hay Mẹ ?”
 
-
 “đến nước này, tùy Phương quyết định”
-
 
 Cái vẻ cứng cỏi, bất cất của hắn làm tôi yếu lòng. Tôi hồ hởi nắm tay hắn đi xuống lầu .
 
-
 “ Con đã sửa soạn tiệc cho ba mẹ, bây giờ xin phép ba mẹ cho chúng con đi chơi “
 
-
-Ba nhìn hắn nghiêm khắc hỏi 
+Ba nhìn hắn nghiêm khắc hỏi
 “mấy giờ cậu đưa em về ? “
 
-
 – Dạ khoảng 10 giờ ạ
-
-
 – được , vậy hai đứa đi đi
-
 
 Tôi nắm tay hắn đi ra, Mẹ không dám nhìn theo, nhưng tôi biết Mẹ rất khó chịu trong lòng.
 
-
 *
-
-
 
 ==================== Phần 2 ====================
 
 * *
 
-
 – Cưng của anh, ra đây anh khám coi có mất mát gì không ?
-
 
 Hạnh nũng nịu
 
-
 “sao lần này anh đi lâu thế, làm em khô héo cả rồi”
-
 
 Ông Phong bế vợ lên phòng, mở va ly lấy một chai rượu nhỏ miệng hôn vợ, tay mở nắp “em uống chút này đi, anh sẽ cho em mây mưa cho tới lúc con về, anh mua rượu này ở bên Thái, họ nói, uống vô xung và khoẻ gấp trăm lần .
 
-
 Hạnh ngoan ngoãn chìu chồng, quả nhiên, sau khi uống rượu cùng Phong, người Hạnh nóng ran, cô ham muốn chồng một cách lạ kỳ, Phong cũng không ngoại lệ, Ông xé toạt bộ đồ ngủ của vợ ra, ông ngấu nghiến ngoạm vú vợ, ông lần mò chim Hạnh và hùng hổ móc, Hạnh ríu người, dâm thủy tràn trề, bà cùng không vừa, quay người kiểu ngược xuôi, mút cu Phong tận tình…
-
 
 Phong bỗng bật dậy, lấy vội trong va ly ra một hộp quà, ông thẩy cho vợ và nói,
 
-
-
-
 “miệng mút cu, tay mở quà. Quà cho em đền bù những lúc anh vắng nhà”
-
 
 Hạnh hồ hởi mở, mắt bà sáng rực khi nhìn thấy con cu giả chồng tặng cho …..
 
-
 Qua cặp môi điêu luyện, cu ông Phong muốn nổ tung trong miệng vợ, Nhưng Hạnh còn muốn phục vụ chồng nên không nhả ra, ông Phong nói: đưa anh con cu giả, anh cho em sướng.
-
 
 Miệng nói, tay đẩy nhẹ con cu vô chim vợ, Hạnh oằn người rên sướng cùng từng cú đẩy của chồng, được một lúc, ông phong lấy cu ra khỏi miệng vợ, ông lật Hạnh theo thế bò, ông hùng hổ nhét cu giả vào lồn vợ, một tay bóp vú, một tay nhét cu mình vào đít Hạnh, ông biết, Hạnh sẽ điên lên vì sướng thế cho nên ông cứ thản nhiên thọc, đẩy, bóp mặc cho vợ rít, rên. Riêng Hạnh, dù ngoại tình đã nhiều, nhưng có lẽ, chỉ có lần này là toàn hảo, toàn hảo vì thuốc kích thích, vì đít, vú, chim đều làm việc!!!!
 
-
-
-
 *
-
 
 * *
 
-
 Ra khỏi nhà, Khoa lịch sự mở cửa xe cho Phương và hỏi trỏng
-
 
 “Muốn đi đâu ?”
 
-
 “muốn đi coi phim!”
-
 
 Phong không nói một lời, phóng xe thẳng tới rạp hát, chọn một phim thật cao bồi, mua 2 vé vô coi. Trong bóng tối, thấy những cặp tình nhân tình tứ, Phương cũng muốn làm như họ, cô nhẹ để tay mình lên đùi Khoa, nhưng một lần nữa, Khoa lại từ chối , chàng ân cần nắm tay Phương để lại trên đùi nàng. Chàng biết, nếu tiến tới, Phương sẽ ngã vào, nhưng chàng thật lòng không muốn hủy hoại đời nàng nên cứ phải vờ cứng rắn. Ngồi nghiêm chỉnh được 15 phút, cặp đôi ngồi bên cạnh bắt đầu phát ra những tín hiệu iêu đương, Phong bắt đầu mềm lòng, Phương bị tò mò kích thích nên không còn tự ái, cô nàng tự động ngã vào vai Phong, bản tính đàn ông trong chàng nổi dậy, chàng choàng lấy vai Phương, ôm nàng vào lòng, bản lĩnh của những ngón tay cũng bắt đầu trỗi dậy, chàng thò tay vào tay áo nàng, băng qua lớp ren mỏng của áo ngực, chàng tiến vào thung lũng tình yêu, bắt đầu vo nhẹ đầu vú nàng, Phương như con sâu rúm, hơi thở nàng vòng co theo những ngón tay chàng. Khoa bắt đầu thích thú với cặp vú săn chắc của nàng, theo hơi thở của nàng, chàng biết Phương bắt đầu vào mê hồn trận, nhưng ….. trong rạp hát, đâu thao túng được gì, thế cho nên chàng cứ nhẩn nhơ se đầu vú, bóp mạnh rồi bóp nhẹ, còn tay kia, chàng bắt đầu thám hiểm phía dưới. Có lẽ cố ý nên hôm nay Phương mặc váy, không khó khăn gì để đến cửa tội lỗi, chàng bắt đầu di nhẹ nhón tay trên chim nàng, chàng bắt đầu thám hiểm từng ngóc ngách đời nàng, Phương rướn người theo ngón tay chàng, bây giờ, trong rạp, ngoài đối thoại trong phim là những tiếng mút, móc, nhớp nhẹp của những đôi gái trai đang lần tìm hạnh phúc.
 
-
-
-
 Đèn bắt đầu sáng dần, Khoa rút tay mình ra khỏi người Phương, còn nàng, vẫn như con sâu rúm, cuộn tròng trong người Khoa, dù cố ý gần Phong, nhưng đây là lần đầu nàng để đàn ông toàn quyền trên người mình thế cho nên sự ngại ngùng vẫn lộ ra. Khoa thích thú ghẹo:
-
 
 “Sao, coi phim hay không ?”
 
-
 Phương cúi đầu không nói.
-
 
 “ủa sao im rồi ?”
 
-
 Vẫn không trả lời, Khoa hỏi nhỏ:
-
 
 “Em mắc cỡ hả”
 Phương cúi gằm mặt đánh vào ngực Khoa.
 
-
 “lần đầu cùng …. Đàn ông ?”
 
-
 Phương lí nhí trả lời
-
 
 “phải…”
 .
 
-
 “Trời, vậy mà tui tưởng ….”
-
 
 Khoa ha hả cười và nhìn đồng hồ, bây giờ mới có 8:30, còn hơn tiếng nữa mới phải đưa nàng về, chàng sợ nàng đói bụng nên hỏi
 
-
 “em muốn đi ăn ?”
-
 
 Phương lắc đầu, Khoa nghĩ mãi, chẳng biết đưa nàng đi đâu nên đành lái xe tà tà dạo phố, đi ngang qua công viên, chàng dừng xe một nơi vắng vẻ, kéo nàng ra băng ghế sau, khoá cửa xe lại, để nàng lên đùi mình, Khoa chọc :
 
-
-“bắt đầu từ hôm nay, anh sẽ dạy em cách …. YÊU! tiền học phí sẽ … tính sau, ok ? “ 
-
+“bắt đầu từ hôm nay, anh sẽ dạy em cách …. YÊU! tiền học phí sẽ … tính sau, ok ? “
 
 Phương cúi gằm mặt, không trả lời, Khoa tiếp
 
-
 “trước khi “nhập môn” em phải cho anh biết đôi chút về em, em có bồ chưa ?”
 
-
 – Chưa
-
-
 – Chưa từng gần đàn ông lần nào ?
-
-
 – Chưa
-
-
 – Có …. muốn làm đồ đệ của anh không ?
-
-
 – Có
-
-
 – Nếu là đồ đệ thì phải nghe lời “sư phụ”có biết không?
-
-
 – dạ
-
 
 Tiếng dạ làm chàng nao núng lòng. Ui chao, con gái mới lớn, đáng yêu làm sao!!!
 
-
 – Biết … hôn chưa ?
-
 
 Phương em thẹn lắc đầu .
 
-
 Khoa trìu mến bế nàng đặt lên đùi mình, rướn người lần tìm môi nàng, Lúc đầu nàng còn mím chặt môi, sau, bằng kỹ thuật “mềm lòng”, chàng đã cho nàng một nụ hôn đầu thật nồng cháy. Hôn không thì …. thừa thãi quá, chàng bắt đầu thám hiểm người nàng, Phương lã người ra, mặc Khoa bú vú, mớm môi, bây giờ nàng mới hiểu, tại sao Mẹ mê Khoa….
 
-Hai chữ “lần đầu” cứ vang trong đầu Khoa mãi. Nó làm chàng trai 27 tuổi hứng khởi đến điên lên được. Chàng nhớ mãi năm 17 tuổi, chung vui cùng mối tình đầu, nhưng đó là “lần đầu” của chàng chứ không phải lần đầu của người ấy, và cứ thế, 10 năm trôi qua với hơn 10 mối tình nhưng hai chữ “lần đầu” ấy vẫn chưa một lần xuất hiện cho đến hôm nay. Nhưng có lẽ đây là hậu quả trời phạt, cho chàng một lần đầu với mối tình éo le: Yêu cả hai mẹ con!!!! tội trời đày này làm sao gột rửa sạch. Đầu chàng miên man cùng “lần đầu”; miệng, tay chàng móc nối từng ngõ ngách trên người nàng, Phương oằn oại rên rĩ, tuy không sổ sàng, dâm đãng như Hạnh, nhưng cũng đủ làm thằng bé của chàng nổi cộm trong quần. Tuy rất muốn vui đến tận cùng, nhưng hai chữ “lần đầu” làm chàng trân quý nàng hơn, chàng nhủ thầm: 
+Hai chữ “lần đầu” cứ vang trong đầu Khoa mãi. Nó làm chàng trai 27 tuổi hứng khởi đến điên lên được. Chàng nhớ mãi năm 17 tuổi, chung vui cùng mối tình đầu, nhưng đó là “lần đầu” của chàng chứ không phải lần đầu của người ấy, và cứ thế, 10 năm trôi qua với hơn 10 mối tình nhưng hai chữ “lần đầu” ấy vẫn chưa một lần xuất hiện cho đến hôm nay. Nhưng có lẽ đây là hậu quả trời phạt, cho chàng một lần đầu với mối tình éo le: Yêu cả hai mẹ con!!!! tội trời đày này làm sao gột rửa sạch. Đầu chàng miên man cùng “lần đầu”; miệng, tay chàng móc nối từng ngõ ngách trên người nàng, Phương oằn oại rên rĩ, tuy không sổ sàng, dâm đãng như Hạnh, nhưng cũng đủ làm thằng bé của chàng nổi cộm trong quần. Tuy rất muốn vui đến tận cùng, nhưng hai chữ “lần đầu” làm chàng trân quý nàng hơn, chàng nhủ thầm:
 “không thể nào vội vã được, không thể nào tạo nghiệp cho gia đình nàng….”
 
 Nghĩ vậy nên chàng ngưng lại và âu yếm hỏi nàng:
 
-
 “Em học được gì hôm nay ?”
-
 
 “ummm, học yêu anh”
 
-
 Khoa tinh nghịch, se vú nàng và nói:
-
 
 “sai rồi, mới hôn tí đã quên hết bài vở, nói lại đi”
 
-
 “Em nói rồi mà, học yêu anh”
-
 
 Khoa phát lên đít nàng một cái và mắng yêu
 
-
 “học hôn!!!!”
-
 
 Phương tinh nghịch :
 
-
 “ay da, đau em, ờ ha, học hôn, để em tập lại trước khi về, không thôi quên……”
-
 
 Chưa dứt lời, nàng đã nút vội môi chàng, Khoa tê người, không ngờ nàng mút đã đến thế, đã đến nổi thằng nhỏ của chàng lại một lần nữa cứng cương trong quần. Nụ hôn dài đến bất tận làm chàng tê điếng. Khi Phương trả Khoa về thực tại, cũng là lúc đồng hồ nhảy qua 9:30; Đành tạm ngưng lớp học để trả nàng về với gia đình.
 
-
 Gần đến nhà Khoa hỏi
-
 
 “bây giờ nói với …. Hạnh làm sao ?”
 
-
 “Mẹ đã có ba, ba còn ở nhà thì chúng mình còn ngang nhiên, khi ba đi mình tính tiếp.”
-
 
 “ba đi rồi …. Tính sao ?”
 
-
 Phương tinh nghịch
-
 
 “anh bắt đầu yêu em hả ?”
 
-
 “có … chút chút nên lo!”
-
 
 “lo gì ?”
 
-
 “Em nghĩ coi, yêu em, Hạnh ghen, yêu Hạnh, em ghen, thôi thì … anh yêu người khác cho hai mẹ con em không xót lòng!!!!”
-
 
 Biết Khoa đùa, nhưng Phương vẫn nhói tim, làm sao để chàng vụt khỏi gia đình nàng được, nàng chấn chỉnh
 
-
 “Em và Mẹ sẽ sắp xếp cho anh yên lòng, vì anh, em sẽ chịu thiệt thòi ….”
-
 
 “đừng làm vậy, anh không đáng đâu”
 
-
 Phương nắm chặt tay chàng
-
 
 “dù đáng hay không thì em cũng đã bắt đầu …. Yêu anh rồi!”
 
-
 Trả nàng về lại cho gia đình, trên môi Khoa còn lưu lại đâu đó mùi trinh nữ, mùi con – gái – người – tình ; nghĩ tới đó, lòng chàng chùng xuống: “không biết là trời ban hay trời phạt đây!”
-
-
 
 ==================== Phần 3 ====================
 
 Hạnh dâm đãng nút lưỡi chồng, rồi nói: Cám ơn anh đã cho em một đêm tuyệt vời, ông Phong còn lơ mơ ngủ nên không trả lời, muốn chồng dậy mây mưa trước khi đi làm nên Hạnh tiếp tục hôn chồng, nàng mút vú chồng, rồi lưỡi chuyển nhẹ xuống bộ hạ chồng,
 
-
 “em đói bụng, muốn ăn sáng của anh đây”
-
 
 ông Phong lơ mơ ngủ
 
-
 “ừ, ăn đi em”
 
-
-Hạnh mút thêm vài cái nữa làm con cu Phong chóc ngóc lên trời, không để chồng kịp phản ứng, nàng thản nhiên để cu chồng vô chim mình rồi ngồi xuống thật nhanh, tiếng hự của ông Phong làm nàng hãnh diện vô cùng vì điều đó chứng tỏ chim nàng còn “bót” lắm. Nhấp nhô vài cái, nàng bỗng nhớ tới cú đâm đít hôm qua, đã lắm, nghĩ thế nên nàng nhổm dậy, nhẹ cầm cu chồng để đúng lỗ “tiên phong”nhưng lần này, nàng không làm nhanh được vì đít còn khô, sẽ đau lắm, từ từ ngồi xuống, đã quá, nàng bắt đầu bản “tình ca”: 
+Hạnh mút thêm vài cái nữa làm con cu Phong chóc ngóc lên trời, không để chồng kịp phản ứng, nàng thản nhiên để cu chồng vô chim mình rồi ngồi xuống thật nhanh, tiếng hự của ông Phong làm nàng hãnh diện vô cùng vì điều đó chứng tỏ chim nàng còn “bót” lắm. Nhấp nhô vài cái, nàng bỗng nhớ tới cú đâm đít hôm qua, đã lắm, nghĩ thế nên nàng nhổm dậy, nhẹ cầm cu chồng để đúng lỗ “tiên phong”nhưng lần này, nàng không làm nhanh được vì đít còn khô, sẽ đau lắm, từ từ ngồi xuống, đã quá, nàng bắt đầu bản “tình ca”:
 u, đã quá cưng ơi, anh nông cạn đời em rồi ư …. Ư….”
 
-
-
-
 Cho vợ đong đưa một lúc, Phong bắt đầu thế chủ động của mình: “cẩu phi”; lênh đênh trên biển cả tháng trời, vô tới Thái chưa kịp vui thì tàu đã phải nhổ neo, thế cho nên, lần này ông về nhà còn nguyên vẹn, từ sức tới tâm. Ông quyết chí, sáng nay sẽ cho bà bò càng, bỏ hàng họ mà ở bên ông, nghĩ thế, ông đâm thật mạnh vào đít bà, vài ba cái, lại đâm vô chim, đít – chim, chim-đít làm bà choáng váng mê tơi, làm ông hồ hỡi, chấn phấn. Ông còn nhớ mãi, lần đầu thọc vào đít Hạnh, cô nàng la toáng vì đau, sau dần, nàng ghiền cái thế này, chơi nhau, quên đít là ông sẽ chết với nàng! Hôm kia, ghé Thái, định bụng chỉ mua rượu “dâm”, nhưng vì ông chủ tiệm dụ mãi nên ông mua tặng vợ đồ chơi “giải sức”luôn, không ngờ nàng thích quá nên sáng sớm đã nổi cơn dâm!
-
-
-
 
 “ông xã ơi, cho em sướng hai lỗ một lượt đi!”
  Nàng năn nỉ, gì chứ làm vợ phê thì ông luôn chìu, lật vợ lại, cho nàng nằm bằng nửa lưng, ông lấy đồ chơi đâm dọc ngang trong chim vợ, còn cu mình, dĩ nhiên để hưởng “phước”: lỗ đít chật hẹp, co bóp mạnh hơn lỗ chim.
 
-
 – a………..a……….a…………a……………………..
-
-
 – cho em chết nè
  – vừa nói ông vừa hùng hổ đâm cu nhựa vào lồn vợ và thọc cu mình vô lỗ đít vợ .
-
-
 – ui, chết em rồi á ……………..
-
 
 Trong lúc “đã” với chồng, nàng đã quên giữ ý tứ nên hé toáng lên như lúc 1 mình cùng Khoa mây mưa, Tiếng “Á” của nàng vô tình đã đánh thức Phương dậy, cô bé khó chịu vùi đầu vô gối như trốn chạy cơn dâm đang kéo về trong đầu. “Gía mà, Khoa ở đây, mình sẽ cho ảnh hết, và cũng sẽ hét như ba đang làm với Mẹ. Khoa ơi, Khoa ơi anh có nghe em gọi hay không ?”
 
-
-
-
 -o-
-
 
 Đang mơ màng Khoe bỗng giật mình thức giấc vì hình như có ai vừa gọi chàng, thống thiết lắm, mòn mỏi lắm, mở mắt nhìn ánh nắng qua màn cửa sổ, chàng bật cười:
 
-
 “vớ vẩn, mới 8 giờ sáng, ma nào nó gọi mà giật mình!!!!”
-
 
 cố quay về với giấc ngủ nhưng đầu óc cứ chờn vờn nghĩ tới nhũ hoa săn nhỏ của Phương, tới chim, đít Hạnh, tới cái eo thon nhỏ của Hoà … Phải rồi, lâu rồi chưa gọi Hoà, không biết nàng ra sao, nghĩ tới những lúc làm tình với Hoà, lòng Khoa phấn chấn hẳn lên, chàng huýt sáo, thấy đời đẹp làm sao!
 
-
 Gọi phone cho Hoà, giọng nàng nhẹ như mây “chào Khoa, Khoa khoẻ không ? “
 
-
 – Khoẻ lắm và …
-
-
 – Và sao ?
-
-
 – nhớ tới Hoà nhiều lắm
-
-
 – thật sao ?
-
-
 – Thật, cho Khoa gặp Hoà chút nha ?
-
-
 – Ummmmm, khi nào Khoa rảnh ?
-
-
 – Ngay bây giờ
-
-
 – Bây giờ ? mới có 8:25 hà …
-
-
 – Bây giờ nha, Khoa nhớ Hoà lắm…
-
-
 – Ừ, thì bây giờ …
-
 
 Khoa như cơn gió lốc mang đến cho Hoà nhiều niềm vui, Giữa Hoà và Khoa là một thứ tình cảm trân trọng nhưng không ràng buộc, Hoà có con đường chính trị muốn dấn thân, không muốn vướng bận, Khoa thích mây mưa, không ràng buộc, họ tìm tới nhau khi cần nhau, hết mình, hết sức rồi ai về nhà nấy. Như hôm nay, sau một tuần đi vận động cho chức vụ tương lai, Hoà thật muốn nghĩ ngơi, giải trí, nàng định là sẽ tìm Khoa đi nghĩ mát vài ngày không ngờ, Khoa đã tìm đến nàng. Sau 6 tháng không gặp, Khoa trố mắt nhìn Hoà đón chàng trong bộ đồ ngủ mỏng manh màu đỏ hưng phấn như cố ý gọi mời. Còn Khoa, vẫn đắm say như thuở sinh viên, chàng chào nàng bằng một nụ hôn ướt đẫm tinh sương. Tay không quên bóp vú nàng qua lớp vải mỏng.
 
-
 – Từ từ nào Khoa
-
 
 Không trả lời, Khoa tiếp tục đẩy nàng xuống ghế sô pha, hôn khắp người nàng, chàng vội vã cởi quần áo mình và Hoà ra, liếm khắp người nàng, tới vùng cấm địa, chàng bỗng ngưng lại, say sưa ngắm vùng tam giác quý, tỉa gọn ghẽ, sạch sẽ, mòng đốc ửng hồng e lệ khép nép, ngón tay chàng luồn vào chim nàng làm dâm thủy tuôn trào lai láng, tiếng nhọp nhẹp, trơn nhớt làm chàng nổi máu dâm. Hoà cũng đâu vừa, nàng quay đầu chụp lấy giái chàng, liếm mút từ đít tới hai hòn giái rồi tới cây cà rem, tất cả đều còn nguyên vẹn, và, chuyện gì đến cũng phải đến, Khoa nện nàng đủ kiểu, vác cày, cỡi bạch mã, cẩu dâm cuồng loạn. Nệt đít, giộng chim, ngoáy miệng: đủ cả. Sau gần 1 tiếng quần thảo, xìu, cứng, cứng xìu, cái làm Khoa thích nàng nhất trong tất cả các người tình là “anh nhớ cho em ăn chất quý, đừng bỏ đi, uổng lắm nha…” hối hả, dũng mãnh, chàng xịt hết vào miệng nàng! Ôi, có ai trân quý những giọt gây giống của chàng bằng Hoà đâu!!!!!!
 
 Sau buổi sáng mây mưa, Hoà và Khoa chuẩn bị đồ đạc để đi nghĩ mát cuối tuần. Tạm quên chuyện tình cảm lũng cũng của gia đình Hạnh-Phương, tạm gác công việc làm vào quá khứ, 3 ngày cuối tuần, chỉ để phí sức yêu nhau. Hành hạ nhau. Làm sướng nhau thế là quá đủ rồi.
 
-
 -o-
-
 
 Bốn bữa nay không liên lạc được với Khoa, cả Hạnh và Phương đều như ngồi trên đống lửa, hai mẹ con thấp thỏm vào ra, Phương biếng ăn, không lòng dạ học bài, làm bài. Tuy Hạnh cũng lo lắng nhưng vì mỗi tối và mỗi sáng hai ông bà đều uống rượu dâm nên mây mưa không dứt do vậy bà Hạnh không chút thèm thuồng hơi đàn ông. Chồng mới về nhà được 5 bữa, thế mà lỗ đít bà đã nông hẳn ra. Ông Phong thích làm tình lỗ đít! Lúc đầu, bà cho đó là bệnh hoạn, sau quen dần, đâm ghiền, giờ lại có thêm cái máy phụ giúp nên ông Phong lại lần nữa chiếm ưu hạng trong chuyện gối chăn!
 
 Đang nghĩ tới nụ hôn đầu, điện thoại tay bỗng kêu, thấy số máy của Khoa hiện lên, Phương hồ hỡi
 
-
 “hê lô”
-
 
 “em đang làm gì ?”
 
-
 “nghì tới anh”
-
 
 “đã học thuộc bài chưa ?”
 
-
 “chưa!”
-
 
 “vậy em sẽ bị phạt đó”
 
-
 “phạt gì ?”
-
 
 “gặp sẽ biết !”
 
-
 “khi nào anh đến đón em ?”
-
 
 “ Khi nào em muốn ?”
 
-
 “ngay bây giờ!”
-
 
 “Ba còn nhà không ?”
 
-
 “còn, ba ở lại hơn 3 tuần mới đi”
-
 
 “ vậy thôi, em ra đường, mình gặp nhau ở quán cà phê Hồng nha”
 
-
 “anh sợ Mẹ ?”
 
-
-“Không sợ, chỉ ngại thôi “ 
-
+“Không sợ, chỉ ngại thôi “
 
 “ummm, vậy thi em ra Hồng gặp anh”
 
-
 “vậy được, gặp em sau”
-
 
 Vì mới đi mây mưa về, dùng tận sức nên Khoa chỉ muốn gặp Phương cho thêm vị vui trong tuần chứ không muốn phí sức do vậy, chàng dẫn Phương tới quán cà phê đủ để thám hiểm và tìm hiểu đời nhau.
 
 Không biết do vô tình hay cố ý mà Phương lại mặc cái váy bó sát cặp mông và áo thun ngắn, lòi rốn, rộng thùng thình, dễ cho chàng “hành lạc”, “làm ăn”.
 
-
 Mái tóc chấm vai, cặp môi hồng mọng làm chàng muốn ngậm ngay mà thôi, Nếu nàng là người con gái khác, không phải là con của người tình, thì Khoa đã kéo nàng về nhà mình hành lạc, nhưng với nàng, chàng thật sự trân quý, không muốn phí uổng một nụ hoa. Chàng chỉ muốn làm tình với nàng khi nàng đã chín mùi mà thôi.
 
-
 – Anh làm gì mà nhìn em …. chết chăm vậy ?
-
-
 – Em còn không biết sao ? nhớ em lắm!
-
-
 – Nhớ mà trốn biệt 5 ngày, gọi máy không bắt!!!!!
-
-
 – đừng vậy mà, anh đi công tác, trên biển, máy không bắt sóng được .
-
 
 Phương như trút được gánh nặng “hóa ra ảnh đi làm”!
 
-
 Dẫn Phương vào chòi lá, Khoa sành điệu đốt đèn nơi cửa ra vào, báo hiệu chòi có người, sau khi kêu thức uống, chàng quay qua Phương hỏi:
-
-
 
 ==================== Phần 4 ====================
 
 – Em thuốc bài chưa ?
-
-
 – Em học không vô!
-
 
 Chỉ vào đùi mình, Khoa nói:
 
-
 – Ngồi lên đây.
-
 
 Phương vui vẻ ngồi lên đùi chàng, Khoa nói:
 
-
 – Trả bài cho anh
-
-
 – Em đi học, anh đâu biết gì mà đòi em trả bài ?
-
-
 – À ha, học trò hư, lát thày sẽ phạt, bây giờ thày dạy lại cho nè….
-
 
 Chàng đặt lên môi Phương một nụ hôn cháy bỏng, chàng lùa lưỡi Phương vào miệng mình, mút thật mạnh, Phương ôm chầm lấy Khoa, trao cho chàng nụ hôn nồng cháy ….
 
-
 Khoa bỗng ngưng hôn và nói: phạt em 3 bữa không gặp!!!!!! Dạy có 1 nụ hôn mà 5 ngày chưa thuộc!
 
-
 – Anh ăn gian, em tưởng anh hỏi chuyện trường lớp, ai biết anh hỏi chuyện yêu đương!
-
-
 – Không phải chuyện yêu đương mà là học yêu đương!
-
-
 – Nè, em trả bài lại nếu giỏi, thày rút hình phạt nha!
-
 
 Bắt trả bài hôn đã đời, Khoa dạy nàng hôn vú! Chàng bắt đầu bóp vú nàng, se đầu vú và đặt miệng vào, liếm quanh nhũ hoa nàng rồi mút mạnh dần, khi thấy nàng đơ người, chàng đổi chiến thuật liếm nhẹ và bóp, cứ thế 5 phút, khi nàng lã người, chàng bỗng ngưng và nói:
 
-
-
-
 – Em thực tập trên người anh đi!
-
 
 Phương bừng tỉnh, thôi chết, đâu còn nhớ ảnh đã làm gì mình. Tuy mắc cỡ, nhưng Phương vẫn nhẹ cỡi nút áo Khoa ra, đưa miệng lên vú chàng, mút như đang …. Ăn kẹo!
 
-
 – Em làm sai rồi, thế này làm sao giữ được người yêu! Ngồi im, tập trung tinh thần vào từng cử chỉ của anh rồi lập lại nha.
 
-
-Một lần nữa, Khoa Ru nàng vào giấc mộng yêu, lần này, tuy ráng giữ bình tỉnh để 
+Một lần nữa, Khoa Ru nàng vào giấc mộng yêu, lần này, tuy ráng giữ bình tỉnh để
 “học”
 nhưng Phương vẫn lã người, không tài nào tập trung tinh thần được. Và cứ thế, Khoa dạy, nàng thực tập cho đến khi chia tay thì Khoa cũng đã bắt đầu bị Phương dùng miệng mình đưa chàng vào mê hồn trận, thế mới biết, học sách vở thì khó và lâu, học yêu thì rất lẹ!
 
-
 Trước khi chia tay, Phương nũng nịu: Khi nào em gặp lại anh?
 
-
 – Anh sẽ gọi cho em
-
-
-
-
 – Umm, đừng bắt em chờ lâu quá nha
-
-
 – được rồi, em yên tâm về đi …
-
 
 Chia tay Phương, Khoa lái xe về thẳng nhà, suốt đoạn đường dài, chàng chỉ nghĩ tới cái quần lót ướt nhẹp của Phương dính trên đùi mình.
 
-
 *
-
 
 * *
 
-
 Khoa trốn Phương và Hạnh đúng 3 tuần lễ, một phần vì muốn chấn chỉnh lại tinh thần mình, phần vì muốn tránh ba và chồng người tình, cho đến một hôm, Hạnh bỗng xuất hiện nơi nhà chàng, tươi mát trong bồ đồ tennis, chiếc kính mát to bản làm khuôn mặc nàng nổi hẳn lên, duy có một điều làm Khoa rất ngạc nhiên là suối tóc của Hạnh đã được thay bằng một mái tóc xì tôn, cắt ngắn màu hung đỏ. Vì còn đứng ngoài đường nên Hạnh không dám ôm chầm lấy Khoa như trong nhà, nhưng ánh nhìn nàng thật ấm, Khoa ghẹo:
-
 
 “chồng dâu mà đi nhông thế này ?”
 
-
-
-
 Hạnh nguýt Khoa một cái thật dài và nói:
-
 
 “mặc chồng, chỉ Khoa!!!!”
 
-
 Câu nói ngắn chứa đủ ý nghĩa làm Khoa vui hẳn lên. Vừa khép cửa lại Hạnh đã nhào tới tìm môi Khoa. Miệng hôn, tay cởi áo qiần Khoa ra, xong nàng quỳ xuống sàn nhà, nâng niu hạ bộ Khoa và nút thật nhẹ nhàng. Kiểu cách tôn thờ, nâng niu lmà Khoa sảng khoái, chàng định đè Hạnh ra cho nàng sướng nhưng Hạnh không cho. Nàng cứ trân trọng mút và mút cho đến khi cu Khoa cương cứng lúc này, Hạnh bắt đầu đu lên người Khoa. “Ọt” một tiếng, Khoa đã lút cán trong nàng. Môi tìm môi, họ đắm đuối yêu nhau như chưa từng được yêu bao giờ, chiếc đồng hồ trên tường cứ tích tách chạy, bóng tối chiếm dần không gian nhưng đôi đũa lệnh vẫn ngụp lặn trong tình ái, Khoa có con cu to và dài, tuy không mang đồ chơi theo, nhưng mỗi lần Khoa cho lút cán là mỗi lần Hạnh sung sướng, Khoa cũng đâu vừa, chàng biết Hạnh thích mạnh bạo nên cừa làm tình chàng vừa nhồi vú, nút lưỡi làm Hạnh ríu người, khát nước quá nên Khoa vừa dập Hạnh vừa di cuhyển tới gần tủ lạnh, mở tủ uống nước, xong tiện tay, chàng lấy trái chuối trên đầu tủ, đâm nhẹ vào đít Hạnh, nàng nhổm đít vì vật lạ nhưng lại sa ngay vào vòng ân ái vì những cú bóp vú và đâm thọc của người tình. Đặt Hạnh xuống sàn nhà, Khoa gác chân cô nàng vên vai mình, chàng lấy trái chuối đâm nhẹ vào lồn nàng, nhấp ra vào một lúc, thấy Hạnh đã quen với đồ chơi, lúc này, Khoa bắt đầu lấy nước nhờn từ chim, thoa tròn lên lỗ đít nàng và “Ọt!” “Á” cu chàng đã nằm gọn trong đít Hạnh. Những cú nhấp của cu và chuối làm Hạnh ra tràn trề. Nàng không còn biết gì ngoài sướng vui nhục dục. Chồng mới đi hôm qua, hôm nay đã nằm trong tay người nhí, chim, đít cũng căng nông, khí trắng tràn lan, một số giọt nhiễu xuống sàn, một số chảy xuống lỗ đít, một số dính vào chuối, cả căn nhà, bây giờ chìm vào bóng tối, những tiết ọt ẹt nhớp nhám làm dâm khí tăng nhanh, vừa chơi Khoa vừa hỏi
-
 
 “em phê chưa ?”
 
-
 Hạnh tham lam:
-
 
 “thêm chút nữa”
 
-
 Thế là sức trai tráng lại đóng thật mạnh vào chim nàng, Hạnh thấy thiếu thiếu nên hỏi
-
 
 “trái chuối đâu cưng”
 
-
 – Em … dâm quá, vừa nói, Khoa vừa nện cu vô lồn và chuối vô đít Hạnh
-
 
 Và, cứ thế, người đàn bà đang độ hồi xuân rút dần sinh lực kẻ đa tình…..
 
-
 Sau cuộc đọ sức, Khoa nằm dài bắt Hạnh phục vụ, nàng phải mới cho Khoa ăn, phải lấy khăn ấm lau chùi từng ngõ ngách trên người chàng, rồi nàng và Khoa ra xe khệ nệ bê bia, rượu và thức ăn bỏ vào tủ lạnh, sau cùng, nàng ý tứ bỏ những tờ đô la xanh mượt vào ví Khoa như một lời cảm ơn chân thành.
-
 
 Thấy Hạnh sửa soạn về, Khoa nhõng nhẽo đòi Hạnh đấm lưng, ngồi lên lưng Khoa nàng cởi quần lót ra, cạ chim vào lưng chàng, chưa đấm được mấy cái thì nước nhờn đã dính đầy lưng chàng, Hạnh khúc khích cười, Khoa cũng bắt đầu nổi máu dâm, nhưng sức đâu còn mà nạp đạn, nghĩ thế nên chàng đứng dậy, mở tủ lạnh lấy củ cà rốt, trái chuối cùng trái dưa leo Mỹ to, dài ra và … họ bắt đầu trò chơi mới.
 
 Hạnh bỗng loé ánh tinh nghịch trên mắt, nàng bắt Khoa chổng mông lên trời, nàng liếm lỗ đít và giái chàng, sau đó, nàng lấy tuýp kem trơn trong bóp ra và thoa quanh lỗ đít Khoa, thấy Hạnh chăm sóc đít mình, Khoa vừa cười cừa nhột nhạt
 
-
 “em làm gì anh đó ? đừng làm bậy nha”
-
 
 “cưng nằm im, em thương”
  vừa nói, Hạnh vừa lấy củ cà rốt đã bỏ vạt bỏ hai đầu nhét vào đít chàng.
 
-
 Lần đầu tiên bị đâm lỗ đít, Khoa la toáng, tiếng hét
-
 
 “lần đầu”
 
-
 làm Hạnh thêm dâm, nàng nói
-
 
 “Em muốn là người đầu phá trinh đít anh”
 
-
 “Á, đau quá, á á á …..em ngưng lại lập tức, á”
-
 
 Mặc cho Khoa thét la, dãy dụa, Hạnh vẫn thản nhiên đâm chuối vào đít chàng, từng ly, từng ly cho đến khi Khoa quen dần và bắt đầu thấy sướng. Thấy Khoa bắt đần nằm im và nhổng đít đón cà rốt nhiệt tình, nàng lật chàng lại, bắt đầu chăm lo cho con cu chàng đến lúc cu Khoa cứng lên thì nàng thản nhiên để cu vào lỗ đít mình và “ọt” >thật mạnh, cu chàng đã trong đít nàng, chưa hết, lúc này nàng bắt đầu lấy trái dưa leo nhét vào chim mình, cu chàng tọng vào đít nàng, đít chàng được sức mạnh của nàng đè xuống cùng trái cà rốt, còn chim nàng được cả hai chăm sóc bằng cách tọng thật mạnh trái dưa leo vào đó. Trò chơi mới dã đem đến cho Khoa và nàng niềm cực sướng. Họ quần nhau cả đêm, Hạnh không về nhà, quên đi đứa con gái đang lặng lẽ ghen khóc mềm trên gối….
 
-Hôm nay là ngày thi cuối, xong, sẽ giã từ thuở áo trắng thơ ngây để lên đại học. Môn thi chẳng gì khó, thế mà Phương cứ cắn bút ngẩn ngơ. Cả tháng rồi Khoa bỏ bê nhỏ. Không một cú điện thoại, không lời hỏi thăm. 
-“Khoa ơi, em buồn và hận anh lắm, anh biết không?”. 
-
+Hôm nay là ngày thi cuối, xong, sẽ giã từ thuở áo trắng thơ ngây để lên đại học. Môn thi chẳng gì khó, thế mà Phương cứ cắn bút ngẩn ngơ. Cả tháng rồi Khoa bỏ bê nhỏ. Không một cú điện thoại, không lời hỏi thăm.
+“Khoa ơi, em buồn và hận anh lắm, anh biết không?”.
 
 Bài thi văn của Phương hôm nay quá dễ, là đề tài bình luận tự do, Phương lấy chủ đề Tình Yêu để bình luận. Đây là một đề tài xưa như trái đất, viết ra, chỉ mong đủ điểm vào đại học, không mong gì hơn, nhưng nếu nói về đề tài khác thì Phương chịu! vì đầu óc rối loạn, làm sao bình luận được. Nói là dễ, nhưng viết ra rồi mới thấy đó là một vòng luẩn quẩn không đoạn kết. Tình yêu trai gái trong sáng … làm sao mà có!!!! Không sex thì cũng vụ lợi, không vụ lợi thì cũng bon chen, không bon chen thì cũng áp đặt, và mọi thứ cũng đến giai đoạn sex! Khi nộp bài xong, Phương tự nhủ “bình tâm lại đi nhỏ, mi quá đà rồi, hắn có chi làm mi mê? Sex, ai cũng biết làm, đẹp trai, tướng phong độ đâu hiếm hoi! Vậy mà tại sao mi buồn và ngớ ngẩn vì hắn ? đừng nghĩ tới hắn nữa, tối nay đi party, chắc chắn mi sẽ kiếm được một hoàng tử cho đời mình! “ Vừa nghĩ vẩn vơ vừa bước ra khỏi phòng thi, bỗng đâu cơn gió lốc ào đến, làm bay mất tập giấy đang cầm trên tay, đang loay hoay lượm thì có ai đó trao nàng mấy tờ giấy vừa bay, giật mình ngước lên, hóa ra đó là …. Khoa!!!!! Phượng mừng muốn khóc thế nhưng cơn giận mạnh hơn nên đã làm nàng mất tự chủ, nàng đập ngực Khoa thùm thụp và hét
-
-
 
 ==================== Phần 5 ====================
 
 “tại sao bây giờ anh mới xuất hiện ? anh có biết là em nhớ anh lắm không ?”
 
-
 Khoa đứng như trời trồng, chàng không ngờ Phương lại mất tự chủ dễ vậy, bao cặp mắt đổ dồn vào Khoa, anh chàng thường ngày rất phong độ nhanh nhẹn, tự tin đối phó mọi tình huống, thế mà hôm nay lại đứng như trời trồng! Nước mắt Phương đầm đià rơi, Khoa bỗng thấy mình như tội phạm, không biết nói gì hơn là khoác vai cô nhỏ dìu ra khỏi sân trường. Đưa Phương vào quán cà phê Hồng, không để Phương mở miệng, Khoa đã ôm mặt nàng và đắm đuối hôn, nụ hôn dài cháy bỏng làm tâm trí Phương lú mê, nàng đã quên hết những giận hờn, nàng ôm chặt vai Khoa như sợ chàng biến mất.
-
 
 Sau khúc dạo tình tự, Khoa làm hoà:
 
-
 – Cả tháng nay anh lênh đênh ngoài biển đâu có đến nhà em được, vô tới đất liền là tới thẳng trường em đó.
-
-
-
-
 – Anh có …gạt em không ?
-
 
 Khoa nhìn vào mặt Phương nói:
 
-
 Em nhìn vào mắt anh đi, có thấy dối gian trong đó không?
 
-
 – Em không biết, vì Mẹ làm em nghi ngờ là hai người đã đổi địa điểm!!!
-
-
 – Nghi ngờ gì ?
-
-
 – Mẹ vẫn vui vẻ, có nhiều đêm không về, không trông mong anh như lúc ba có nhà.
-
-
 – Sao em không hỏi Mẹ ?
-
-
 – Em có hỏi, Mẹ cũng nói là không gặp anh, nhưng em không tin.
-
 
 Khoa không ngờ Phương tinh mắt thế, chàng và Hạnh đã đổi chiến thuật lấy nhà chàng làm nơi gặp gỡ. Chính Hạnh cũng xin Khoa đừng bướm hoa với con nàng, nó còn trong trắng lắm, Khoa cũng đã hứa với Hạnh từ nay không gặp Phương nữa, nhưng sáng nay Hạnh gọi phone và nhờ Khoa đến trường đón Phương vì nàng sợ con nàng sẽ sa ngã vào bữa tiệc tốt nghiệp đêm nay. Với Khoa, Hạnh là người đàn bà dâm dục, quyến rũ và giàu có, nàng lo lắng từ miếng cơm, tấm áo đến chi phí chi tiêu hàng ngày của chàng. Không có Hạnh, Khoa sẽ phải dọn về với ba và chị hai, sẽ không có xe hơi xịn, sẽ mất hết toàn bộ. Còn Phương ngoài sự trong trắng ra, nàng không có gì, tương lai còn mịt mờ, xa vời vợi. Yêu nàng, Khoa sẽ không lo lắng cho nàng được gì ngoài chuyện sex (tại MyTruyen.Com)! Đang chán ngán với dòng suy nghĩ “bế tắc”, Khoa bỗng giật thót người vì sự nhột nhạt và tê dại mà Phương đang dành cho chàng: cô bé đang hôn và nút vú chàng!
 
-
-
-
 Khoa ngã người trên ghế bố, mặc cô nhỏ thao túng, trả bài. Kể ra, Phương đã tiến bộ rất nhiều, tuy không kinh nghiệm bằng những ngường đàng bà đã và dang ngự trị trong đời chàng nhưng, so với “bài học vỡ lòng” thì nàng khá lắm!
-
 
 Phương say sưa bú vú liếm và hôn môi Khoa, nàng thiệt là yêu chàng trai này lắm, nàng muốn Khoa sẽ là người đầu tiên và cuối cùng trong đời mình. Nàng đoán, có lẽ Khoa có nhiều đàn bà lắm, sẽ rất khó chiếm ngự trái tim chàng nhưng nàng sẽ dùng hết sức mình để nắm giữ chàng.
 
-
 Khoa mắt nhắm nghiền, thoải dài lưng trên ghế bố hưởng thụ, chàng cố đánh tan những ý nghĩ đen tối trong đầu nhưng sao khó quá vì thằng nhỏ không chịu nghe mệnh lệnh của chàng, nó cứ ngóc đầu như muốn nhảy ra khỏi quần. Cầm tay Phương để lên cu mình, Khoa nói nhỏ: Em xem nè, nó đòi em đó. Phương không trả lời, miệng vẫn bú vú Khoa, tay dịu dàng xoa thằng nhỏ, đây là lần đầu cô bé đụng cu dàng ông, tuy là qua lớp vải nhưng nàng cũng đã rất thích thú, nó như một thế giới mới đối với nàng.
 
-
-
-
 Định mở dây kéo để Phương đụng vào nó, nhưng lý trí đã kéo tay Khoa lại, chàng không muốn phụ lòng Hạnh và cũng không muốn phá hỏng đời Phương. Chàng biết, nếu phá trinh Phương thì cô nàng sẽ sa ngã, sẽ làm tình với bất cứ ai muốn nàng… nhưng cứ cái đà xác thịt này chắc là chàng chịu không nổi và sẽ ….
-
 
 Miên man nghĩ, tay Khoa lần tìm vú Phương hồi nào không hay, chàng bóp, nắn, vân vê nhủ hoa Phương với trăm ngàn thèm muốn, đặt Phương lên đùi mình, cởi nút áo sơ mi nàng ra, vòng tay ra sau, cởi luôn chiếc áo ngực màu da ren mỏng, cặp vú Phương kiêu hãnh đứng dựng, hai đầu vú nhỏ như một nhụy hoa, Khoa tham lam nút, nghiến, trong khi đó, Phương ôm lấy cổ Khoa và ngã người ra sau như muốn cho Khoa toàn bộ cặp vú của mình. Miệng ngấu nghiến cặp vú , tay lần sờ từng đường cong trên người Phương. Cái eo thon dài làm Khoa muốn tuột hết áo quần Phương ra, muốn nàng khoả thân múa cho mình coi và sau đó sẽ cho nàng nếm mùi đàn bà! Đầu Khoa đầy nhục dục, nhưng cũng may, đây là quán cà phê, dù có chòi riêng, nhưng cũng không thao túng được nhiều, Khoa định là bước kế tiếp sẽ dạy Phương cách liếm cu và cho nàng hưởng thụ sự sung sớng khi đàn ông liếm chim mình nhưng bỗng nhiên, chuông điện thoại chàng reo lên. Không bắt phone, Khoa tiếp tục vần vũ cặp ngực cô bé 17 tuổi, nhưng Phương lại bị cú điện thoại chi phối, cô bé ghen hỏi:
 
 Phải mẹ gọi anh không ?
 
-
 “anh không biết”
 
-
 “em muốn anh nghe điện thoại”
-
 
 “ừ, thì nghe!”
 Khoa bực mình trả lời, tuy nhiên, để cô bé không chú ý khi chàng noí chuyện nên Khoa đã bạo tay, mở quần và lần sờ vào chim cô bé, mồng đốc bé xíu làm chàng chi phối đầu, giá mà …. Nhìn được, chắc là phê lắm ….
 
-
 “Khoa đây”
 …..
-
 
 “oh, chị Hai hả, có gì không?”
 ……
 
-
 “hôm nay là sinh nhật của chị ?”
 …..
 
-
 “em về liền, em quên mất”,
-
 
 Khi nghe Khoa nói hai chữ CHỊ HAI là Phương đã quên hết mọi thứ trên đời, nàng bắt đầu ríu người theo những ngón tay của Khoa, tuy người ríu lại, nhưng chân thì cứ dạng to ra để mặc khoa mò mẩm chim mình. Dâm thủy cô bé bắt đầu tràn nhiều, Khoa lấy ngón tay mình ra, thản nhiên mút: NGON! Và cứ như thế, chàng say sưa thọc tay vào lồn nàng, rồi mút, rồi NGON! Khoa định sẽ ngưng để về ăn sinh nhật chị mình nhưng thấy Phương sướng quá nên chàng quyết định cho cô bé hưởng thụ. Khoa bắt đầu dùng kỹ thuật của mình: miệng bú vú, tay trái bóp vú, tay phải móc mòng đốc, Phương rên hư hử làm Khoa thích chí, trổ hết tài nghệ của mình.
 
-
 – Khoa ơi, em … chịu không nổi nữa rồi, á ….u …ơ ….
-
 
 Như không nghe cô bé nói, Khoa lấy ngón tay thọc vào chim cô bé bỗng trong đầu chàng loé lên một dã tâm: Ừ, thì giữ trinh cho cô bé, nhưng…. đụ đít vẫn được mà! Nghĩ vậy nên Khoa bắt đầu lấy nhớt nơi lồn nàng, trét lên lỗ đít và cứ thế xoa nhấn lỗ đít nàng, chàng chăm sóc lỗ đít Phương thật tận tình, vì chàng biết, một ngày thật gần, chàng sẽ khi nhụy lỗ đít nàng, có như thế, Phương sẽ không bị đau như lần đầu chàng bị Hạnh dùng cà rốt phá trinh đít chàng.
 
-
 Riêng Phương, vừa nhột, vừa đã, lại không có kinh nghiệm gối chăn nên nàng nghĩ chuyện thọc tay vô đít cũng là một phần trong bài học “YÊU”, thế cho nên nàng không phản ứng dù có đôi lúc ngón tay Khoa thọc vô đít nàng rất đau… Cuộc vui dang đến hồi sôi động thì Khoa bỗng ngưng tay, chàng nói: Thôi, để hôm khác anh dạy em tiếp, bây giờ em gọi về nhà, báo là sẽ đến nhà anh ăn sinh nhật chị Hai, nhân tiện anh giới thiệu em với chị của anh luôn.
-
 
 – Dạ
 
-
 Phương ngoan ngoãn gọi cho Mẹ, khi nghe Phương nói, Hạnh có vẻ không vui nhưng biết làm sao được, nàng chỉ đành dặn con về sớm rồi cúp máy.
-
 
 Suốt đoạn đường tới nhà Khoa, Phương cứ mỉm cười một mình hoài, nàng cười vì hạnh phúc, vì biết mình sẽ được Khoa dẫn vào thế giới huyền ảo “tình nhân”. Lâu lâu thấy Phương cười một mình, Khoa hỏi:
 
-
 – Em cười gì đó ?
-
-
 – em hạnh phúc được anh thương
-
-
 – cô bé khờ! Đó không phải là thương mà là … YÊU!
-
-
 – Dạ … YÊU
-
-
 – Em thích không?
-
-
 – Thích
-
-
 – Từ nay phải nghe lời anh, học hành cho giỏi biết không ?
-
-
 – dạ, nhưng học giỏi anh có …. thưởng em gì không ?
-
-
 – có
-
-
 – gì ?
-
-
 – thưởng YÊU, nhiều hơn hồi nãy nữa.
-
 
 Phương sung sướng, nắm tay Khoa đưa lên miệng hôn.
 
 Đến nhà Khoa, thấy vài chiếc xe đậu trước cửa, Phương mới giật mình nhìn lại mình: quần áo đồng phục trung học nhìn kỳ quá, nên cô bé xin Khoa:
 
-
 – Cho em đợi anh ngoài này
-
-
 – Sao vậy ?
-
-
 – Em …. thấy mặc như vầy kỳ quá
-
-
 – Không sao mà
-
-
 – Thôi, em đợi anh ngoài này
-
-
 – Đi vào nhà với anh, đánh đòn bây giờ
-
-
 
 ==================== Phần 6 ====================
 
 Vừa nói, Khoa vừa kéo Phương vào nhà.
 
-
 Tiếng ồn áo phía trong vọng ra ngoài, thế nhưng khi chàng và Phương bước vào thì bàn tiệc im lặng hẳn, ai cũng đổ dồn mắt vào Phương. Mấy anh chàng trong bàn tiệc nheo mắt nhìn Khoa như ngầm nói: mày ngon, gặm được cỏ non rồi! Khoa thản nhiên nắm tay Phương kéo đến bên chị Hai giới thiệu: Đây là Phương, con thuyền trưởng Phong. Từ ánh nhìn không mấy cảm tình, Vân chuyển qua thân thiện, cô vồn vã nắm tay Phương: Em lớn đến thế rồi sao, lâu rồi, sao không ghé nhà chị chơi… Phương lý nhí trả lời, nàng muốn độn thổ khi mấy chàng thanh niên trong bàn tiệc soi mói nhìn đồng phục của mình.
 
-
 – Happy birthday chị Hai, Em vừa tan học, không kịp về nhà thay đồ, mong chị thông cảm.
-
-
 – Có gì đâu, Thôi hai em vào bàn ngồi đi.
-
 
 Cả bàn tiệc bắt đầu rôm rang lại. Tuy đi chơi rất nhiều, bạn bè cũng đông, nhưng đây là lần đầu Phương dự tiệc với tư cách bạn gái của chủ nhà, và cũng là lần đầu nàng dự tiệc với “những người dã trưởng thành”.
 
-
-
-
 Tan tiệc, trên đường đưa Phương về, Khoa hỏi:
 
-
 – Em vui không?
-
-
 – Vui nhiều lắm
-
-
 – thiệt ?
-
-
 – Phải, vì được anh chăm lo như một người tình
-
-
 – bộ …. Em không muốn là người tình của anh sao ?
-
-
 – Muốn lắm, nhưng khó ở gần anh quá nên em …. sợ
-
-
 – Sợ gì ?
-
-
 – Không giữ được cho anh!
-
 
 Phong bỗng thắng xe lại, chàng ôm lấy khuôn mặt thiên thần của Phương Và cứng rắn nói:
 
-
 – Em nghe đây, anh sẽ lấy em , em biết chưa ? Vì anh đi làm xa, mình sẽ ít gặp nhau, nhưng em phải nhớ em là của anh, phải học cho giỏi, khi hai đứa mình kiếm được tiền, anh sẽ làm đám cưới với em. Nếu nghèo, và nếu em ngủ với ai khác thì giao ước này hủy bỏ, em biết chưa ???
-
-
 – Anh sợ em … thuộc về kẻ khác vậy sau anh không …. lấy em bây giờ đi ?
-
-
 – Em còn không hiểu được tình trạng của anh sao ? Anh nghèo không lo được cho em nên anh đã lánh mặt em từ ngày đầu, nhưng đến hôm nay thì anh biết là anh đã thuộc về em, mình sẽ cùng nhau xây dựng một mái ấm gia đình, em có đồng ý giữ mình và vì anh mà học cho giỏi không ?
-
-
-
-
 – Em hứa nhưng anh phải giữ liên lạc với em dù mình không gặp mặt, đừng trốn em như anh đã từng làm.
-
-
 – Anh hứa, nếu đi xa, anh sẽ báo em biết, sẽ gọi cho em mỗi ngày nếu ở trong đất liền và sẽ gặp mặt em nếu có thời gian.
-
 
 “hiệp ước tình yêu” được đôi tình nhân dùng môi ký kết, nụ hôn dài như thể lần đầu tiên!
 
-
 – Hôm qua anh đã làm gì con gái em rồi ?
-
-
 – Không làm gì, chỉ “giữ gìn” như em dặn
-
-
 – thật không ?
-
-
 – Thật mà
-
 
 Cái nhíu mày của Khoa làm Hạnh sợ Khoa giận, nàng vồn vả hôn Khoa, nhưng Khoa nghiêng đầu tránh, làm Hạnh sợ hơn, nàng xà người vào Khoa, vội vàng xin lỗi, Khoa làm cao, vẫn giận! Hạnh sợ quá nói:
 
-
 – Em xin lỗi mà, em biết anh tốt với mẹ con em lắm, nhưng em vẫn sợ …
-
-
 – Sợ thì thôi, hai mẹ con đừng gặp anh nữa
  – Khoa làm cao.
-
-
-
-
 – Sao vậy cưng ? cưng muốn gì em cũng chìu, sao lại khó chịu vậy chứ ?
-
 
 Vừa nói Hạnh vừa mân mê tấm ngực trần của Khoa. Khoa nằm ngả người xuống gối hưởng thụ, Hạnh điệu nghệ hôn, liếm khắp người chàng, đến khi thấy Khoa say tình rồi, nàng vội cởi bỏ quần áo mình ra, lấy vú cạ vào người chàng, sau đó, nàng để cu Khoa vào giữa cặp vú mình và bắt đầu cạ mạnh.
 
-
 Khoa rên ư ử như đang phê thuốc phiện, Hạnh cũng không kém, thấy cu Khoa đã cứng, nàng ngồi lên đó, và bắt đầu đong đưa phi ngựa. Một mở màn thật tình tứ, không bạo lực làm Khoa liên tưởng đến Phương … “Không, bà ta đâu thích nhẹ nhàng thế này, nếu Hạnh không thoả mãn thì mình sẽ “chết” cả đêm”, nghĩ thế nên chàng thò tay lấy ổ khoá dưới giường ra, thật nhanh, chàng vật Hạnh xuống. Cọc, cọc, hai tay Hạnh đã bị khoá vô thành giường, Bây giờ thì chàng thản nhiên thao túng, thật chậm, chàng liếm lồn nàng, chàng di đầu lưỡi mình vào mòng đốc nàng, chàng lấy tay thọc vào lỗ chim nàng, một lúc sau, vừa lấy ngón tay thọc vào lồn vừa dùng lưỡi liếm lỗ đít nàng, mỗi khi Kh làm động tác này là Hạnh vùng lên như sư tử cái khát tình, nhưng hai tay bị khoá nên Hạnh càng rên thống thiết hơn. Có lẽ mỗi khi đến nhà Khoa, Hạnh đều đã tắm rửa, chăm sóc lỗ đít, lỗ lồn rất kỹ nên chưa một lần Khoa sợ liếm đít nàng. Riêng Hạnh, vì hai tay bị khóa lại, nàng không tài nào dí đầu Khoa vô lồn mình mạnh hơn hay bóp chim chàng, cho vậy nàng rên ngày càng lớn, miệng van xin, bụng ưỡn cao dâng hiến:
-
 
 “Khoa ơi, cho em sướng đi, em chịu hết nổi rồi”
 
-
 Mặc Hạnh nỉ năn, Khoa vẫn thật chậm liếm lỗ đít, dùng hai, ba ngón tay thọc sâu vào chim nàng còn tay kia, chàng dùng để bóp vú nàng, bóp thật mạnh cho nàng đau điếng, cho nàng sướng điên, sự thao túng mạnh nhẹ và phối hợp tay, lưỡi cố ý đó đã làm Hạnh thèm cu phát điên lên được. Nàng van nài Khoa đâm thật mạnh dù chỉ 1 cái, chìu Hạnh, Khoa để cu ngay lồn nàng, và ót, thật mạnh làm Hạnh rú lớn, chưa được 2 giây, Khoa đã rút ra, đặt vào lỗ đít nàng: Ót, lần này là Khoa rên, vì nó vừa bót vừa nóng làm chàng đã đến tột độ.
 
-
-Trong quá khứ, chưa một người đàn bà nào làm Khoa sướng như Hạnh vì nàng sẵn sàng chịu đau, và thích cực hình, khi bóp vú Hạnh Khoa không cần nhẹ nhàng, chàng có thể nhào nặn tùy thích, càng mạnh, càng nhồi, thì nàng càng rên, ngoài ra, nàng luôn chìu chàng dù bất cứ hình thức nào. Còn Hạnh, nàng mê Khoa vì sức trai tráng, nét lầm lì, cứng cỏi, rất đàn ông trong lúc làm tình cộng thêm chất hoang dã, bạo lực mà chồng nàng không bao giờ làm với nàng, những ưu điểm đó đã làm Hạnh mê Khoa đến dại khờ. Nàng không thể mất Khoa và cũng không bỏ công tìm đàn ông khác, vì với nàng, có Khoa là đã quá đủ, nhiều hôm, khi làm tình với Khoa xong, lỗ đít, lỗ chim, thân thể nàng rát đến muốn bỏng thế mà qua hôm sau, nàng lại thèm Khoa đến điên cuồng. Hạnh đang mê mệt với trò chơi 
+Trong quá khứ, chưa một người đàn bà nào làm Khoa sướng như Hạnh vì nàng sẵn sàng chịu đau, và thích cực hình, khi bóp vú Hạnh Khoa không cần nhẹ nhàng, chàng có thể nhào nặn tùy thích, càng mạnh, càng nhồi, thì nàng càng rên, ngoài ra, nàng luôn chìu chàng dù bất cứ hình thức nào. Còn Hạnh, nàng mê Khoa vì sức trai tráng, nét lầm lì, cứng cỏi, rất đàn ông trong lúc làm tình cộng thêm chất hoang dã, bạo lực mà chồng nàng không bao giờ làm với nàng, những ưu điểm đó đã làm Hạnh mê Khoa đến dại khờ. Nàng không thể mất Khoa và cũng không bỏ công tìm đàn ông khác, vì với nàng, có Khoa là đã quá đủ, nhiều hôm, khi làm tình với Khoa xong, lỗ đít, lỗ chim, thân thể nàng rát đến muốn bỏng thế mà qua hôm sau, nàng lại thèm Khoa đến điên cuồng. Hạnh đang mê mệt với trò chơi
 “khoá, bú”
 thì Khoa đổi trò, chàng nằm xoay lại bắt Hạnh bú cu mình, kiểu 69 này không gì lạ, chỉ khác là Hạnh không tự chủ sức mình được vì đang bị khoá tay, riêng Khoa thì tha hồ thao túng lồn, đít nàng, Chưa hôm nào Khoa đi khúc dạo đầu lâu như hôm nay nên Hạnh đâm ra thèm cu chàng đến lạ, hôn bú miệt mài cho đến khi cu Khoa cứng thì Hạnh bắt đầu năn nỉ
 
-
-“cưng ơi, em điên lên rồi, cưng đụ em đi”…. 
-
+“cưng ơi, em điên lên rồi, cưng đụ em đi”….
 
 Lúc nãy Khoa cũng đã nứng lắm, nhưng chàng không muốn “nhận ân huệ” thế cho nên chàng cứ liếm múc đợi Hạnh năn nỉ, và cuối cùng, khi nàng vừa ỉ ôi thì ngay lập tức, chàng quay đầu lại, cho nàng bò theo tư thế “cẩu chập” và cứ thế từ phía sau, một tay vịn vào eo nàng, một tay bóp vú nàng, và … chàng bắt đầu dập, thật mạnh đến độ đít nàng nông ra một lỗ tròn bằng đồng cắc, sâu thẳm, còn lồn nàng liên tục tiết ra dâm thủy, ướt nhèm nhẹp, trắng đục…
 
-
 – “Ôi, cưng ơi, em yêu cưng quá, á …. Ôi…. ứ…..a ….
-
 
 Nàng bỗng gồng mình đ êể …. “RA”, thấy vậy, Khoa hăng hái đụ cho nàng thoả mãn, vừa chơi, Khoa vừa tự đắc:
 
-
 – Anh cho em sướng nè …. sướng nữa đi cưng ….
-
 
 Đêm đó Hạnh ra cả chục lần, Còn Khoa cu rát đến xưng lên, chàng nghĩ: với đà này chắc là sẽ liệt sớm! Tuy muốn ngưng lại nhưng thấy Hạnh sướng quá nên chàng chơi tới bến. Sáng hôm sau, Khoa phải gọi vô sở nghĩ bịnh vì cu rát, đi không nổi, còn Hạnh, rời nhà Khoa là “nhóm bạn”với mấy bà sồn sồn có chồng ở nước ngoài để mua “đồ chơi” và nhân sâm cho Khoa.
 
 *
 
-
 * *
-
 
 Tới giữa trưa thì Khoa đã lại sức, chàng điện thoại cho Phương như đã hứa, cô bé hôm nay ngoan ngoãn nằm nhà. Chỉ nghĩ đến Khoa thôi là dâm thủy đã tràn trề chứ đừng nói chi ến lúc Khoa đụng vào người. Đôi lúc Phương tự mắc cỡ với chính mình khi nghĩ đến chuyện đụng chạm của Khoa. Đang mơ màng thì Khoa gọi, Phương tỉnh người hẳn ra:
 
-
 – Em đang nghĩ tới anh nè
-
-
 – Hôm nay em làm gì ?
-
-
 
 ==================== Phần 7 ====================
 
 – Em nghĩ hè rồi, tuần tới mới quyết định theo ngành nào cho năm tới, anh có muốn giúp em lựa ngành không ?
-
-
 – Ừ, để anh coi trường nào nhận em rồi sẽ giúp em, em ăn gì chưa ?
-
-
 – Em mới ăn xong rồi, trời nóng lắm, em … làm biếng ra ngoài.
-
-
 – Ừ, vậy … em ngủ đi, để anh đi kiếm gì ăn
-
-
 – Xí, mới nói vậy mà đã vui vẻ đi ăn một mình. Em còn dư đồ ăn nhiều lắm, anh muốn tới nhà em ăn không ?
-
-
 – Không dám đâu, Mẹ em mà thấy là toi!
-
-
 – Anh còn gì với mẹ sao ?
-
-
 – Thôi được, để anh ghé một tí rồi về, giao trước, không ngồi lâu à nha.
-
-
 – Da. …
-
 
 Vừa cúp điện thoại của Khoa xong là Phương vội vã đi tắm, nàng kỳ cọ khắp hang cùng, hẻm nhỏ, xong đâu đó trên người, nàng dùng thuốc bơm của Mẹ xịt vào lồn và đít để tẩy sạch mùi hôi, xong, bôi một lớp kem mềm da khắp người, cuối cùng là mặc vào người chiếc áo đầm ngủ không mỏng lắm nhưng đủ để thấy đồi núi nhấp nhô, và dĩ nhiên là … không mặc quần lót. Ngắm mình trong chiếc áo ngủ trắng hồng, cô bé cười một mình với vẻ tự tin vì…. thấy mình cũng gợi cảm đâu thua gì mẹ!
 
-
-
-
 Xuống bếp, cô bé hâm nồi bò kho lên, để sẵn bánh mì ở ngoài, khi Khoa đến, chỉ cần nướng lên là xong. Gọi điện hỏi Khoa muốn uống gì, Khoa nói nước gì mát mát cũng được, nàng vui vẻ cúp máy và đi pha sinh tố bơ. Thấy Phương lo lắng chu đáo, Khoa Vui lắm, có lẽ suốt 10 năm nay, đây là mối tình “trong trắng” nhất mà Khoa có được. Chàng chưa từng cặp bồ với nữ sinh trung học, cũng chưa từng dạy ai cách hôn hít, chàng thật hạnh phúc vì cùng một lúc có hai người tình. Một để thoả mãn nhu cầu vật chất lẫn tình dục. Còn một là để cho tương lai lẫn rèn luyện cô bé theo ý mình. Ôi, đời đẹp lắm, cuộc đời ơi, cuộc đời ơi!
-
 
 Phương Như một thiên thần gợi cảm đón Kh bằng nu. hôn nồng nàn. Bao nhiêu mệt nhọc bỗng tan biến mất, Khoa hứng khởi nút môi cô bé và dĩ nhiên không quên luồn tay vô áo tìm vú. Khúc dạo đầu thật dễ thương làm Khoa quên cả đói.
 
-
-
-
 Tưởng là đến để bớt nhớ Phương Và quyết chí sẽ không làm gì, thế mà vừa thấy Phương là Kh động lòng tà, bỏ cả ăn, Khoa dìu Phương lên phòng, chàng tham lam vò lấy bầu vú nàng và lần mò chim cô bé, như khám phá ra điều thú vị, chàng mắng yêu:
-
 
 “à, em cố ý khiêu dâm anh, không mặc quần lót phải không ?”
 
-
 Phương bây giờ không còn biết trời đất gì nữa, thân người nàng chảy mềm trong lòng Kh, nhẹ đặt Ph xuống giường, Kh mạnh dạn banh hai chân Ph ra, chàng muốn mình là người đầu tiên ngắm lồn nàng, dù hai chân Phương bị banh, dạng khá lớn nhưng mu nàng vẫn khép kín không thấy được hột le, tuy lông lồn nàng chưa rậm nhưng cũng đủ chứng tỏ đã là thiếu nữ trưởng thành. Lấy tay banh chim nàng ra, Kh thẩn thờ nhìn hột le bóng hồng mà Ph đang dâng cho chàng, liếm thật nhẹ, thật nhẹ, lúc đầu cả m giác nhột nhạt làm Phương khép hai chân lại, sau, Kh thọc 1 ngón tay vào lồn và bắt đầu thụt nhẹ, và …. chân nàng bắt đầu dạng lớn ra, chăm chú nhìn Phương thở dốc, và cứ thế, theo nhịp thở của Ph mà Kh thao túng mạnh nhẹ. Sau một lúc, có lẽ đã phê lắm nên những giọt trắng đục từ lỗ chim trinh của nàng bắt đầu tuôn, Kh hối hả mút lấy, mút để, khí trinh nữ, không ngai ngái như đàn bà, không mặn như gái đã mất trinh, nó thơm tho và ngọt đến lạ. Liếm sạch khí, Kh bắt đầu tấn công xuống lỗ đít cô bé, Ph giật bắn người khi lưỡi Khoa len vào lỗ đít nàng.
-
-
-
 
 Bài học “chim, lồn, đít” đầu tiên đã làm cô bé mê mệt, Phương luôn miệng rên và thỏ thẻ:
 
-
-“anh làm như đã làm với mẹ đi, em muốn cái đó của anh năm trong em” 
-
+“anh làm như đã làm với mẹ đi, em muốn cái đó của anh năm trong em”
 
 Mặc Phương rên rỉ, xin xỏ, Khoa vẫn thản nhiên liếm, mút, thọc, sau 15 phút, Khoa bỗng nằm dài lên giười và ra lệnh:
 
-
 Nãy giờ anh dạy em bài vở lòng “MÚT, LIẾM” bây giỡ em thực tập đi”.
 
-
-Vào phút giây này, nếu Khoa có bảo đi chết thì Phương cũng đi huống chi là …. liếm, mút cu chàng. Phương ngoan ngoãn cởi quần Jean Khoa ra, cô bé vụng về cầm con cu lên, bỏ vô miệng mình và nút nhẹ, dáng vẻ thơ ngây đang học làm người lớn của Phương làm Khoa động lòng, chàng ân cần chỉ giảng cho nàng biết điểm nào làm chàng sướng, điểm nào làm cu cương và khi cu cương thì phải ngậm ra sao …. Sau 20 phút chỉ dạy, Phương đã tiến bộ hơn nhiều, lúc này, Khoa bắt đầu xoay người lại chàng nói: đây là kiểu 69, anh bú chim em, em ngậm cặc anh, làm cho giỏi nha! Phương 
+Vào phút giây này, nếu Khoa có bảo đi chết thì Phương cũng đi huống chi là …. liếm, mút cu chàng. Phương ngoan ngoãn cởi quần Jean Khoa ra, cô bé vụng về cầm con cu lên, bỏ vô miệng mình và nút nhẹ, dáng vẻ thơ ngây đang học làm người lớn của Phương làm Khoa động lòng, chàng ân cần chỉ giảng cho nàng biết điểm nào làm chàng sướng, điểm nào làm cu cương và khi cu cương thì phải ngậm ra sao …. Sau 20 phút chỉ dạy, Phương đã tiến bộ hơn nhiều, lúc này, Khoa bắt đầu xoay người lại chàng nói: đây là kiểu 69, anh bú chim em, em ngậm cặc anh, làm cho giỏi nha! Phương
 “dạ”
 và họ bắt đầu thực tập, chưa ngậm cu Khoa được bao lâu thì Phương phảI nhả ra vì …. Phía dưới Khoa bú đã quá, nàng không tài nào tập trung tinh thần được. Thấy Phương ra xối xả, Khoa xoay người lại, để cu vào lồn nàng, chàng nhẹ nhàng cho thằng nhỏ lách vào trong, Phương hồi hộp đón cu Khoa, nhưng lạ, Khoa chỉ “vẩn vơ” vòng ngoài chứ không cho sâu vô trong nên nàng không thấy đau đớn gì.
 
-
 “a, anh làm em sướng quá, a … a…..”
-
 
 “lát sẽ đau 1 chút, em ráng nghe”
 
-
 – Dạ ….
-
 
 Tiếng Dạ ngây thơ của Phương như 1 tiếng chuông đánh thức lòng tà , Khoa bừng tỉnh, định ngưng hẳn việc mâ y mưa nhưng, thấy Phương rên mê mệt cộng với thằng nhỏ của chàng không chịu ngưng nên …. chàng lật Phương nằm úp xuống và nói: Em chổng đít lên trời, anh …. Phá trinh em. Phương ngoan ngoãn làm theo, Khoa hồ hỡi lấy dâm thủy trét lên lỗ đít Phương, luôn tiê.n chàng lấy ngón tay thọc vào đít cô bé, mới hôm qua, Khoa dã khai nhụy lỗ đít cho Phương thế nên hôm nay, cô bé cũng đã quen không còn lạ lẩm, Khoa “cáo già”, cứ lúc đít lúc chim mà thọc nhẹ, khi thấy cô bé gồng người, Khoa liền giảng: “em phải thư giản người, gồng quá, anh không yêu em được”, Phương làm theo liền, một lúc sau, thấy lỗ đít cô bé đã quen với … 2 ngón tay, Khoa bắt đầu kê cu ngay lỗ đít nàng và nhè nhẹ nông vào, có lẽ cu Khoa quá lớn nên Phương đau muốn ngất, nàng ráng chịu đau để Khoa khai phá, nhưng đau quá, nàng chịu không nổi nửa nên ré lớn và nằm bẹp xuống giường, Khoa nhẹ nhàng rút cu ra, chàng dùng dâm thủy của trét lên lỗ đít nàng cho trơn hơn, ý nghĩ phá trinh lỗ đít cô bé vừa tốt nghiệp lớp 12 làm Khoa mất lý trí, không dừng lại như mọi hôm được, thế cho nên Khoa bắt đầu se hai đầu vú cô bé, 2 ngón tay tiếp thục thám hiểm lồn và đít cho đến khi Phương bắt đầu thống thiết rên, lúc đó, Khoa kê cu ngay trọng điểm và lần này, thật mạnh, chàng tấn công, Phương thét lên vì đau, nhưng 2 phút sau, cô bé bắt dầu quen và sướng nên đít bắt dầu chổng cao đón lấy cu người tình. Khoa bắt dầu quất ngựa truy phong, thường, sức chàng rất dai, nhưng có lẽ vì đít PHương quá chặt, nên sau vài phút là Khoa đã bắn tung tóe trong lỗ đít cô bé. Thấy Khoa ngưng, Phương tưởng chàng giận nên hỏi: sao ngưng vậy anh ?
 
 Khoa phì cười, phát nhẹ lên đít và nói: Em dâm vừa thôi, mai mốt anh làm lâu hơn, lần đầu như thế đủ rồi.
 
-
 Tuy rút cu ra rồi, nhưng Khoa vẫn bắt Phương nằm chỏng mông lên trời, chàng sung sướng banh mông cô bé ra, nhìn khí mình hoà lẫn chút máu nơi vành lỗ đít, chàng thoa nhẹ nhẹ quanh lỗ đít cô bé và nói: đi cầu sẽ rát vài hôm vì đít em bị rách rồi. Mau theo anh qua phòng mẹ, anh chỉ cách làm vệ sinh…
-
 
 Đau quá, Phương đứng dậy không nổi nên Khoa ôm cô bé vào lòng và nói: Bên phòng mẹ em có thuốc và ống bơn, lát nữa, khi bớt đau, em bơm thuốc vô đít rồi cho nó ra hết nha. Cách này tốt nhất nên làm …. trước khi gặp anh và sau khi làm “yêu”!
 
-
 – Em có làm rồi
-
-
 – Ai dạy em ?
  Khoa ngạc nhiên hỏi
 
-
 – Em thấy Mẹ làm thế khi gặp anh và ba
-
-
 – À ha, em học bậy bạ giỏi lắm
  – Khoa mắng yêu
 
 Vữa nói Khoa vừa hôn môi nàng, thấy Phương trong trắng quá, Khoa càng yêu nàng hơn.
 
-
 – Anh nè, sao hồi nãy anh không phá trinh em?
-
-
 – Còn hỏI!!! anh muốn để dành làm đám cưới với em.
 
-
 Phương cảm động ôm chầm lấy Khoa, tình yêu dâng tràn trong tim hai người làm sinh lực cả hai tràn đầy, và, chuyện gì đến thì phải đến, họ lại bắt đầu yêu nhau lần nữa, trước khi về, Khoa còn nút thật mạnh vào 2 bầu vú Phương để làm dấu không cho cô bé sổng chuồng đi chơi bậy bạ. Nhìn hai vết bầm trên vú, Phương hỏi:
-
-
 
 ==================== Phần 8 ====================
 
 – Sao anh làm em đau ?
-
-
 – Em khỡ, cái này là dấu ấn của anh! Tuần này anh không ở trong đất liền, em không đi bậy bạ được vì ai thấy cũng sẽ hiểu là em đã …. Có chủ rồi. hiểu chưa ?
-
-
 – Xí, người ta thương anh đến chết đi được, lòng dạ đâu mà mây mưa! Anh để em làm lại anh!
-
-
 – Con gái không làm con trai được, em khờ quá!!!! Đây là luật đó mà!
  – Khoa tỉnh bơ xí ngạt.
 
-
 Thế mà Phương cũng tin, nàng trìu mến rờ 2 dấu bầm và nói:
-
 
 Em hứa, sẽ chờ anh, bao lâu, em cũng chờ…..
 
-
 Sau hôm phá trinh lỗ đít Phương, Khoa quyết định làm lại cuộc đời bằng cách đi làm ngoài biển nhiều hơn phần vì lương sẽ cao hơn phần là để giữ khoảng cách với Hạnh mà không bị nàng giận.
-
 
 Đã 3 tuần Khoa lênh đênh ngoài biển, 3 tuần đối với những người khác không là bao nhưng đối với Khoa thì đó là một cực hình! thiếu đàn bà, thiếu tiện nghi và nóng cháy. Nhưng vì đã quyết chí lo cho tương lai nên Khoa không nản lòng .
 
-
-
-
-Riêng Hạnh, từ ngày Khoa rong ruổi ngoài khơi, Hạnh thấy đời trống trải và không thú vị chút nào, cả ngày, nàng mơ tưởng đến âm hưởng bạo loạn của Khoa nên bắt đầu để mắt tìm đàn ông khác, đêm tới, nàng lấy 
+Riêng Hạnh, từ ngày Khoa rong ruổi ngoài khơi, Hạnh thấy đời trống trải và không thú vị chút nào, cả ngày, nàng mơ tưởng đến âm hưởng bạo loạn của Khoa nên bắt đầu để mắt tìm đàn ông khác, đêm tới, nàng lấy
 “đồ chơi”
-ra thủ dâm một mình, tuy không đã nhưng cũng đỡ thèm, nàng thường hỏi dò xem Khoa có liên lạc với Phương không, nhưng trăm lần như một, con bé đều 
+ra thủ dâm một mình, tuy không đã nhưng cũng đỡ thèm, nàng thường hỏi dò xem Khoa có liên lạc với Phương không, nhưng trăm lần như một, con bé đều
 “không”
 và đứng dậy bỏ về phòng.
 
-
 Còn Phương, từ ngày biết đến làm tình, cơ thể cô bé nẩy nở và đẹp hẳn lên, cô bé hay chăm chút cho mình, khi mua sắm thì lựa những thứ vả êm, mịn và dễ cởi, dễ luồn để quyến rũ Khoa. Tuy đã 3 tuần không gặp Khoa nhưng cô bé không hề thấy thiếu thốn vì Khoa đi xa cô bé thấy yên tâm ơn khi chàng ở nhà, dù gì, đi xa thì sẽ không gặp và không làm tình với Mẹ được! vậy là thoả mãn lắm rồi.
-
-
-
 
 Ông Phong lần cuối về nhà là 2 tháng trước, kỳ này ông cặp bến ở Hong Kong khá lâu vì hàng họ bị trục trặc với hải quan, vì là người đứng đầu thuyền nên ông không thể bay về thăm vợ được, tuy vậy ông cũng sắm sửa cho vợ quần áo, nhân sâm, sượu kích dâm v.v…, và lần này, ông để vị phó thuyền mang về cho vợ dùm. Ông Phong và ông Sang làm việc với nhau 20 năm nay, tuy vợ mất gần 10 năm nay, tướng tá rất phong độ, tính tình lịch lãm, đàn bà theo nhiều nhưng ông Sang vẫn không lấy vợ khác. Vì không có vợ nên ông Sang thường nhường cho xếp về phép nhiều hơn mình, nhưng vì đã 6 tháng ông chưa gặp mặt con cái cộng thêm lần này tàu bị neo khá lâu nên ông Sáng quyết định mua vé máy bay, bay về thăm con cái 3 ngày cuối tuần. Chuyến đi này, không những về thăm con cái mà ông còn mang quà về cho Hạnh dùm ông Phong. Về tới đất liền là ông Sang tới thăm Hạnh và trao quà cho nàng ngay.
 
-
-
-
 Hôm ấy trời lất phất mưa, Phương đi tập thể dục trong câu lạc bộ, Hạnh ở nhà 1 mình tiếp Sang. Hai người khá thân nhau, họ cười nói vui vẻ. Hạnh vừa pha trà vừa bật Tivi cho Sang coi, không biết nàng bấm gì mà màn hình bỗng hiện lên cảnh một cặp gái trai đang thống thiết rên rỉ, làm tình. Ông Sang là dân từng trải nên vội nói: Không sao đâu Hạnh, lâu rồi tôi chưa coi mấy cảnh này. Hạnh lụp chụp bấm tắt sao đó mà cuốn phim chạy ngược về khúc đầu: cặp tình nhân đang hôn nhau, mơn man nhau …
-
 
 Lâu rồi không có hơi đàn ông nên Hạnh đâm ra thèm muốn hơi đàn ông, đôi mắt nàng dâm đản nhìn màn hình, vú nàng di chuyển lên xuống theo hơi thở gấp ngày càng nhanh. Ông sang, lâu ngày không gần đàn bà, nhà vắng vẻ không người, Ti vi phát ra những tiếng dâm loạn, Hạnh lần mò ngồi xuống ghế, không biết vô tình hay cố ý mà cái váy nàng tốc lên, và cổ áo trễ xuống như gọi mời. Ông Sang thấy vậy nên tâm thần bấn loạn, biết Hạnh là vợ bạn thân nhưng xem ra, nàng cần ông lắm, nghĩ vậy nên ông Sang bắt đầu khúc dạo đầu, lấy tay mò vú Hạnh, thấy nàng không phản đối mà còn có phần “khuyến khích” thêm, ông sang hứng khởi đặt Hạnh lên đùi mình, thọc tay vào chim nàng và bắt đầu lần mò. Một người dâm, không thể thiếu đàn ông, và một người thì thiếu hơi đàn bà đã lâu, họ như hai hỏa diệm sơn bùng cháy và, chuyện gì đến thì phải đến, những tiếng bạch bạch, ọt ẹt, phát ra ngày càng mạnh. Sức khoẻ ông Sang quá tốt, không thua gì Khoa – con trai ông – cộng thêm tính kiên nhẫn, chìu đàn bà (có lẽ Khoa có tính này từ ông Sang chăng?) nên Hạnh cứ ra hết đợt này tới đợt khác. Vì là lần đầu nên cả hai không ai dám dở trò bạo lực hay làm tình khác thường ra, do vậy, lần này, cả hai như chỉ đỡ ghiền chứ chưa sướng hoàn toàn. Sau khi ông Sang ra, Hạnh dò hỏi:
 
-
 – Anh ở lại bao lâu ?
-
-
 – 3 ngày
-
-
 – Mai anh có làm gì không ?
-
-
 – Em cần anh làm gì cho không ?
-
-
 – Em muốn đi chợ, nấu một số thức ăn cho hai anh …
-
-
 – Vậy thì mai anh tới đón em ….
-
 
 Đêm đó, Hạnh ngủ thật ngon, còn ông Sang, thấy có lỗi với bạn nên chập chờn mãi, gần sáng ông mới chợp mắt được …
 
-
 Hôm sau, Hạnh không ra cửa hàng, nàng dành toàn bộ thời gian cho ông Sang. Sợ Phương bắt gặp nên nàng mua thật nhiều quà, giao cho con bé mang về thăm nội ở bến tre, nàng còn dặn nó: Nội lớn tuổi, mà ba mẹ lại ít thời gian, kỳ này con xuống thăm nội, nhân tiện hè, ở chơi 3, 4 ngày nha. Phương ngoan dạ và xách xe rời nhà …
 
-
 Khi Phương đi rồi, Hạnh gọi điện cho ông sang tới đón mình đi chợ, đi chợ xong, hai người về nhà nấu ăn, nàng làm món mắm chưng mà chồng thích cùng vài món khác cho Sang. Tướng nàng nấu ăn thật khêu gợi, chiếc váy bó sát mông và ngắn cũng cỡn làm ng Sang động lòng tà. Thêm vào, mỗi lần nêm nếm là Hạnh cố ý cuối xuống cho ông Sang thấy phía trong. Đứng đàng sau nhìn Hạnh nấu, tóc bới cao, vài cọng loà xoà nơi ót, chiếc áo hai giây như muốn khoe cặp vú trần, bước đến phía sau Hạnh, ông sang ôm eo nàng và lần xuống chim:
-
 
 – Ôi cha, em không bận quần lót ….
  Ông hít hà tìm lỗ lồn nàng
 
-
 – Anh …. muốn em bận quần vào không ?
-
-
 – Không, không, cứ thế này em mới đẹp …
-
 
 Vừa nói ông Sang vừa thọc vào lồn nàng, tiếng dâm thủy ọt ẹt làm ông nứng cu, và tay thọc mạnh hơn. Hạnh đang nếm thức ăn, nhưng do đã quá, nàng tê người, ngỏng đít cao hơn, ông Sang phá:
 
-
 – Em lo nấu cơm đi, không được ngưng lại …
-
 
 Lúc này cu ông cũng đã cứng căng, ông liền cởi quần ra và “ót” ông đâm từ sau tới. Hạnh thở dồn vì bị con cu lớn dài của ông tung hoành trong lồn mình, mấy lần nàng phải ngưng nấu nhưng ông sang là tay cao thủ, nếu nàng ngưng nấu thì ông ngưng chơi, mà vưà chơi, vừa nấu bếp thì nàng khó chịu lắm nhưng …. Cu ông Sang dài và to cộng với những cú dập mạnh trời thần, làm nàng phải lấy tay vịn bếp để đón được trọn sức dộng của ông Sang. Ông sang vừa đụ vừa mê mãi nhìn mông nàng, cặp mông săn tròn trịa làm ông phê, Cu ông dài nên cảm được là đang động vô tử cung nàng, chỉ chơi phía sau không thì chưa thoả nên ông với tay lấy sợi dây nịch trên quần mình và gấp làm dod^i cho ngắn lại, vừa đụ ông vừa quất nhẹ lên mông nàng, ông biết, đàn bà dâm (như Hạnh) thì rất thích “cực hình” thế cho nên ông cứ thản nhiên hành, còn Hạnh thì phê quá, rên hư hử như bị thọc tiết, chưa hết, đụ một lúc, muốn dở trò, nên ông nhổ 1 bãi nước bọt vào đít nàng và, Ót! Ông đâm mạnh vào đít Hạnh, đã quá, nàng rú dài như chó sói trong đêm, cuộc mây mưa hôm nay làm Hạnh mê mẩn vì ông Sang có cách làm tình giống Khoa. Đúng là bố nào con nấy! Nàng thống thiết “van” và ông Sang hồ hỡi “phát”, ông Sang dập Hạnh xối xả, điên cuồng cho đến khi Hạnh rát hán, đau chim, cháy lỗ đít, nàng van xin ông ra để được xả hơi, như sợ uổng khí, trước khi ra, ông bắt Hạnh xoay người lại để ông đụ miệng. Vài phút sau, ông hối hả xịt đầy miệng Hạnh. Đàn bà dâm như Hạnh thì chuyện nuốt khí đàn ông không gì lạ, thế cho nên nàng trân người đón khí ông trong khi mắt nhắm nghiền hưởng thụ …
 
 Ba ngày vào đất liền là ba ngày mây mưa của ông và Hạnh. Họ quấn nhau cả ngày, họ đụ nhau khắp mọi nơi, bếp, phòng khách, phòng tắm, phòng ngủ, lúc nấu ăn, lúc dọn dẹp, lúc giặt đồ … Cả ông Sang và Hạnh đều tiếc ngẩn ngơ vì đã bỏ phí 20 năm chơi, đụ!
 
-
-
 ==================== Phần 9 ====================
 
 Trước khi chia tay, họ còn thoả thuận: Chồng em về thì anh giữ tàu, anh về thì chồng em coi tàu, như vậy là …. Em sẽ luôn có người phục vụ …
 
-
 Sau khi ông Sang đi, cũng là lúc Khoa về đất liền, người đầu tiên chàng liên lạc là … Hạnh! Chàng cần nàng để giải toả khí tồn trong người, và muốn được nàng chăm lo nhà cửa trong lúc ở lại trong đất liền.
-
 
 Mở Màn sự nhớ nhung là Hạnh nhét nhân sâm vô chim mình để khoa ăn, xong, nàng lấy đồ chơi “điện tử” ra và bắt đầu hôn hít nhau.
 
-
 Đồ chơi là một sợi dây xích bạc, 1 dầu gắn liền với con cu giả, trong con cu có bin để rung và còn có lỗ xịt khí như “đồ” thiệt. Đầu giây kia tẻ thêm 2 dây khác, phía cuối 2 dây là 2 ổ Khóa. Thấy Hạnh lục đục mang đồ chơi ra, Khoa loé lên ý nghĩ phá phách: chàng còng tứ chi Hạnh lại, hôn hít, liếm, cà, thọc móc cho đến khi Hạnh ra thật nhiều lần, sau đó, chàng thọc cu giả vào chim và đít nàng, bật rung thật nhẹ cho nàng đủ phê nhưng không sướng, tiếp theo chàng bắt nàng bú cu mình, lần đầu tiên cả 3 lỗ đều làm việc nhưng tay chân bị còng, Hạnh sảng khoái gồng người và mút cu Khoa, một lúc sau, mút không đủ đô nên Khoa bắt đầu đụ miệng nàng, chàng tung hoành ngang dọc đếnn tận cuống họng nàng. Khi thấy mình sắp ra, Khoa ngưng lại, và cứ thế, cu thật, cu giả làm Hạnh sướng đến phát điên, cú cuối, Khoa bật độ rung mạnh hết mức, mở tín hiệu xịt khí cho đồ chơi, đồng thời, chàng cũng bắn khí đầy miệng nàng. Hạnh gồng người, miệng ư ử như trúng phải thuốc tê!
-
-
-
 
 Sau khi gần Hạnh xong, Khoa tắm rửa sạch sẽ rồi gọi tìm Phương, nghe tin Khoa về, Phương thật muốn lái xe về SaiGon để được gặp người yêu liền nhưng Khoa không cho vì …. Chàng sẽ xuống bến tre đón người yêu về ….
 
-
 Chiều tối thì Khoa đến bến xe đò, Phương hồi hộp đi đón người yêu, cô bé nói dối với Nội là phải về Saigon ngay vì phải đi coi kết quả thi. Gặp được Khoa cô bé mừng quýnh, ôm chặt lấy chàng, Khoa cũng nhớ Phương không kém, chàng mút môi nàng thật mạnh. Lâu ngày thiếu hơi đàn ông nên dù chỉ là hôn môi mà Phương cũng đã ra tràn trề, nàng lí nhí nói:
 
-
 – Quần em … ướt hết rồi!
-
-
 – à ha, anh cũng muốn khám coi em có … cho ai khi anh đi vắng không!
-
-
 – Ummm, em không hư vậy đâu, nếu anh muốn khám thì mnìh mình về nhà anh nha ?
-
-
-– Con gái hư, không được đến nhà trai ngủ, biết chưa ? 
+– Con gái hư, không được đến nhà trai ngủ, biết chưa ?
 Khoa mắng yêu.
-
-
-
 
 Chàng dẫn Phương đi ăn, và điểm dừng chân đêm đó của họ là một khách sạn loại trung bình.
 
-
 Vô đến khách sạn là Khoa đè người yêu xuống, hôn ngấu nghiến khắp người nàng, sau đó, chàng dùng miệng cởi quần áo nàng ra, khi nàng không còn gì trên người, Khoa rúng động:
 
-
 – Em đẹp như một pho tượng, anh nhớ em lắm em biết không ?
-
-
 – Em cũng vậy, em nhớ anh lắm
-
 
 Và họ bắt đầu trao nhau những nhớ thương, cuồng dại. Vết bầm mà Khoa làm ra gần tháng trước nay đã biến mất. Chàng say mê liếm lồn, liếm đít nàng, Phương mê mẩn bú cu Khoa, đến lúc Khoa nhịn không nổi, chàng liên lấy trong túy áo ra một chai dầu, thoa đều lên cu mình và nhỏ vào đít Phương, lấy tay di xung quanh lỗ đít và thọc nhẹ vào đít nàng, lần này trơn nhiều nên Phương không hề đau, khi thấy Phương bắt đầu chổng mông đòi “sâu hơn “ nữa, Khoa bắt đầu để cu mình vào đó và nhẹ nhàng đẩy, tuy đã là lần thứ 2 nàng được Khoa chơi đít, cộng thêm có nhiều dầu viện trợ trơn nhớt , nhưng khi toàn bộ cu của Khoa đâm vào đít nàng thì nó vẫn đau rát, thấy Phương đau, Khoa bắt đầu bóp và se đầu vú nàng, đợi khi Phương hết gồng người – tirệu trứng phê! – chàng bắt đầu “vào, ra”. Một lúc sau, Phương bắt đầu sướng, nàng rên rỉ, chổng mông cao đón nhận lút cán của người tình, Khoa bắt đầu hứng thú và mạnh dạn vào ra … Đây là lần đầu chàng chính thức đâm vào lỗ sau gần 1 tháng lênh đênh ngoài đại dương, khi gần bắn tinh, Khoa vội rút ra để gi cuộc vui dài. Phương hụt hẩng ngoáy đầu hỏi:
 
-
-
-
 – Sao vậy anh ?
-
-
 – Anh nghĩ mệt chút thôi, em ngoan ngoãn chổng mông lên nào …
-
 
 Và cứ thế, chàng chơi đít cô bé thả dàn, đôi thoảng, chàng lấy cu ra, đâm đầu khấc vào chim nàng, nhưng không đi xa hơn nửa, vì ….chàng thật tình muốn để dành màng trinh đó cho đêm ddộng phòng cũng như dễ kiểm tra nàng hơn trong thời gian chưa cưới.
 
-
 Đêm đó, chàng “dần” Phương xối xả, vú chim đít được kích thích đến tột độ nên Phương mê mẩn cứ đòi làm đám cưới gấp gấp. Khoa bóp vú nàng và mắng:
-
 
 – Em phải học cho giỏi, kiếm cho nhiều tiền, nuôi anh, để anh ở nhà, dưỡng sức phục vụ em, hiểu không ?
 
-
 Phương đê mê gật đầu. Đó là đêm đầu tiên họ sống như vợ chồng nhưng…. Màn trinh vẫn nguyên vẹn …
 
-
 Thế là Khoa yêu Phương cũng đã gần 4 năm.
-
 
 Phương bây giờ là sinh viên ngoại ngữ năm chót. Tuy chưa tốt nghiệp nhưng nàng đã được sở ngoại vụ nhận làm thông dịch cho các cuộc họp với nước ngoài. Lương bổng, quà cáp bắt đầu khá, đủ để Khoa nghĩ nhà, dưỡng sức phục vụ “vợ!”
 
 Còn Khoa vẫn lênh đênh trên biển. Chàng quyết định để dành tiền cưới vợ nên chăm đi làm xa hơn và dĩ nhiên là ít gặp Hạnh hơn. Tuy ít gặp, nhưng hễ gặp là họ phát cháy!
 
-
 Tình yêu đôi lứa của Khoa và Phương, sau 2 năm vất vả với Hạnh, giờ cũng đã được bà công nhận, tuy không vui và vẫn dùng “đồ của con” nhưng ít ra, bà cũng đã đồng ý và hứa sẽ cho “sắp nhỏ” lấy nhau khi con gái bà tốt nghiệp đại học.
-
 
 Hạnh lúc này mơn mởn hơn xưa vì …. Có tới 3 người phục vụ: chồng, và cha con Khoa!
 
-
 Ông Sang lúc này thường xuyên về “chăm sóc” gia đình hơn xưa, và dĩ nhiên, ngày càng trẻ ra vì ngày hạn đã gặp mưa!
-
 
 Ông Phong có lẽ do vợ đòi hỏi nhiều quá nên rất chăm đi xa, ít khi về nhà, tuy nhiên, khi gặp của ngon, vật lạ ở nước ngoài ông vẫn mua cho vợ, lúc thì tự tay trao, lúc thì ông Sang mang về dùm.
 
 Chị Hai của Khoa, Tuy đã đến hàng “băm” nhưng cũng chưa chịu lấy chồng, đôi khi nhìn chị, Khoa thầm hỏi: chẳng lẽ dáng sexy, vú bự, eo thon, chân dài thế kia mà …. nhịn đàn ông được sao ? chịu, không hiểu nổi!!!!
 
-
 Nhìn lại chặng đường gần 5 năm bên nhau, Khoa thật hãnh diện với… chính mình! Không hãnh diện sao được, giữ một nàng trinh nữ bên cạnh 5 năm trời! Đôi lúc trong cơn sảng khoái, chàng muốn đâm 1 phát cho đã đời, nhưng nghĩ thâ’y tiếc nên đành đi cửa hậu vậy. Còn Phương, nàng gần như đã cho Khoa hết tất cả, từ thể xác đến linh hồn, kỹ thuật làm tình của nàng cũng đã đến hồi siêu đẳng. Nàng có phong cách làm tình nảy lửa của Mẹ, có dáng dấp “trân quý” khi gần đàn ông của Hoà, và phong cách nổi bật nhất đã và đang làm Khoa say mê là biết vâng lời triệt để. Lời Khoa nói là … “thánh” nàng không bao giờ làm trái hay cãi lời, mặt dù, khi đi làm, nàng có cả tá đàn ông theo đuổi, nhưng nàng vẫn một mực chỉ có Khoa.
 
 Ngày Phương ra trường, ông Sang và Khoa đều vô bờ để chúc mừng nàng. Khoa thì dĩ nhiên là phải vô bờ để vui cùng người yêu. Còn ông Sang thì cũng … phải vô bờ vì người “thương” yêu cầu. Riêng ông Phong thì không thấy về.
-
 
 Từ ngày “chơi” được Hạnh, ông Sang mua hẳn cho mình một ngôi nhà nhỏ, xinh, viện cớ là con gái đã ngoài 30, nó cần đời sống riêng nên ông cho hẳn nó ngôi nhà cũ của gia đình ông, nhưng nguyên do chính là … ông muốn xây tổ ấm để mây mưa cùng Hạnh. Ông không muốn mỗi lần làm tình với Hạnh thì phải đi khách sạn, phải năm lên chỗ cả ngàn người đã nằm, càng không muốn làm tình với Hạnh mà lòng nơm nớp lo Phương sẽ bắt gặp. Thế là họ quyết định xây tổ ấm ở một nơi xa thành phố nhưng đủ tiện nghi, đủ yên tỉnh để tiếng rên của Hạnh vang vọng khắp nhà, đủ an toàn nếu như nứng ngoài vườn thì vẫn làm tình ngay tại chỗ được. Biệt thự này, ông và Hạnh đặt tên là: thiên đàng.
 
 Lần này Khoa lên đất liền sớm nên chàng quyết định ghé nhà thăm chị Hai rồi mới đến gặp Phương. Từ ngày mẹ mất, chị Hai thay bờ vai mẹ, chị chăm sóc, lo lắng cho Khoa từng chút, không khác gì mẹ. Đôi lúc, thấy chị cô đơn Khoa rất xót lòng, nhưng… có lẽ do duyên số, bao chàng trai theo đuổi chị, cứ dần dần ra đi, họ chán cái tính vui vẻ nhưng khéo đuổi của chị, không ai đủ kiên nhẫn làm mềm lòng chị.
 
-
-
 ==================== Phần 10 ====================
 
 Nhà chị Hai lúc nào cũng sạch nên mang lại cho Khoa cái cảm giác trìu mến, sảng khoái. Mở tủ lạnh tìm nước uống, chàng ngạc nhiên khi thấy bia sắp đầy trong tủ lạnh, lục lọi trong đầu vẫn không thể nhớ ra là chị Hai biết uống bia, lắc đầu vài cái như muốn tẩy bỏ trăm câu hỏi trong lòng, lấy 1 chai, tu cho đã rồi lên lầu tìm chị. Vừa lên tới lầu thì …
 
-
 – a ….a … cưng ơi, em chết mất …. Ôi, ơ …. Á …
-
 
 Tiếng rên của chị chư búa bổ đầu Khoa, không thể tin vào mắt mình, Khoa dụi mắt mấy cái để nhìn kỹ hơn: người đàn bà trần truồng, tóc xoả dài thướt tha, đứng khom lưng chỏng gọng, hai tay xiết vào thành giường, miệng rên la dâm đãng, chân dạng lớn, mông chổng cao cho một lão xồn xồn đụ thật mạnh từ phía sau tới…. có thể nào đó lại là chị Hai của chàng? người chị mà đối với Khoa từ xưa đến nay vẫn là một trinh nữ trong trắng, không một vết vẫn đục. Người đàn bà trẻ, có cặp chân dài, vòng eo thon và cặp vú lớn, miệng đang rên la theo nhịp nhồi vú của người tình là chị Hai chàng sao ? Không thể tin vào mắt mình, Khoa ngã quỵ, tiếng quỵ ngã không nhỏ, nhưng vì cặp tình nhân đang trong hồi cao điểm nên không ai hay biết gì về sự có mặt của chàng.
 
-
-
-
 Lần mò xuống nhà, mở tủ lạnh lấy thêm chai bia, quay lưng định đi thì chị Hai hốt hoảng gọi:
-
 
 – Em đến lâu chưa ?
 
-
 Theo sau chị là người đàn ông ông mặc áo, dùng khăn lông quấn quanh che của quý. Khoa chết trân khi nhìn thấy ông ta, miệng cứng ngắc không nói nên lời cho đến khi ông ta mở lời với chị Hai:
-
 
 – Em lên lầu nghĩ ngơi để anh nói chuyện một chút.
 
-
 Chị Hai lo lắng nhìn hai người rồi lánh mặt.
-
 
 Khoa muốn xông đến, đập vào mặt ông ta một cú nhưng …. Làm sao được khi người đó là….
 
-
 – Cậu ngồi đi
-
 
 Tiếng ra lệnh làm Khoa bừng tĩnh, nhưng chàng vẫn không mở miệng chào hỏi được.
 
-
 – tôi có làm gì sai với cậu không?
-
 
 Khoa rắn rỏi gằn giọng:
 
-
 – Dạ. thưa bác, người đàn bà mà bác mới thoả mản xong là chị ruột của con! Là con gái của bạn thân bác!
-
-
-
 
 Ông Phong chậm rải mỉa mai, nheo mắt:
 
-
 – Vậy, người đàn bà cung phụng tiền bạc, cho cậu thoả mãn bấy lâu nay là ai ?
-
-
 – Dạ là ….
-
-
 – Có phải là vợ của tôi và còn là mẹ vợ tương lai của cậu không ?
-
 
 Khoa hốt hoảng:
 
-
 – Bác đã biết hết cả rồi ?
-
-
 – Phải, đã biết lâu rồi!
-
-
 – Vậy Bác với chị Hai con đã …. Bao lâu ?
-
-
 – Cậu có cần biết rõ thế không ?
-
-
 – Dạ … không ạ
-
-
 – Vậy thì giữa chúng ta có còn vấn đề gì không ?
-
-
 – Dạ…. không ạ
-
-
 – Từ nay phải tốt với con gái tôi một chút có biết chưa ?
-
-
 – Dạ ….
-
-
 – Có muốn lên lầu thăm hỏi và vấn an chị của cậu không ?
-
-
 – Dạ … con muốn xin bác 1 điều
-
-
 – cậu nói đi
-
-
 – Xin bác đối xử tốt với chị hai của con, chị ấy cô đơn lắm
-
-
-
-
 – điều này tôi nghĩ cậu nên xác nhận với chị của cậu đi, nếu tôi đối xử tệ thì cô ấy đã không ở và chờ đợi tôi bấy lâu nay.
-
 
 Nói xong, Ông Phong thản nhiên quay lưng vào phòng tắm, Khoa mặt nhợt nhạt lên lầu, vừa thấy chị Hai là chàng xả ngay cơn tức:
 
-
 – Chị bắt đầu với ông ấy hồi nào ?
-
-
 – 8, 9 năm nay rồi
-
-
 – Có phải vì ông ta mà chị không chịu lấy chồng
-
-
 – … phải
-
-
 – Ông là là người đầu tiên của … chị hả ?
-
-
 – phải
-
 
 “ Tại sao phải là chị tôi?”
  vừa hét chàng vừa chạy ra đường. Tuyết lo sợ chạy theo nhưng không kịp, nàng lo lắng đi vào buồng tắm với ông Phong, thấy Tuyết lo lắng, ông Phong nói: Cưng đừng lo, nó sẽ không nói gì.
 
-
 – Làm sao mà không nói được ?
-
-
 – Anh bảo đảm mà …
-
 
 Vừa nói ông Phong vưà kéo Tuyết vô vòi tắm, ông hồ hỡi tìm môi Tuyết và đê mê mút dì nhiên là không quên dùng tay nắn, bóp, truyền nhiệt cho người tình bé bỏng của mình, ông muốn dâng tất cẢ sức lực mà mình có cho Tuyết. Ông biết, Tuết rất thương ông nên không chịu lấy chồng, do vậy mà 75% thời gian vô đất liền ông dành cho Tuyết. Riêng Tuyết, tuy đứng dưới vòi nước, nhưng nàng vẫn cảm được những giọt mồ hôi đang rỉ trên người và nàng hầu như đã quên hết những chuyện vừa xảy ra …
 
 *
 
-
 * *
-
 
 Cuối cùng, chuyện gì đến cũng phải đến: Tôi và Phương kết hôn.
 
-
 Trước ngày cưới, Hạnh, tôi và Phương đã cùng nhau trò chuyện. Tôi hứa với Hạnh là từ nay sẽ hết lòng yêu thương Phương
-
 
 Phương hứa với Mẹ là sẽ không ghen sảng, tuy nhiên, nàng muốn Mẹ hạn chế chuyện gần gũi tôi, hoặc tuyệt đối không gần nhau là tốt nhất.
 
-
 Hạnh hứa sẽ cố gắng.
-
 
 Ngày tân hôn thật là mệt, Phương đẹp như thiên sứ. Dịu dàng, trong trắng thơ ngây. Khi tiệc tàn cũng là lúc hai chúng tôi ngất ngư. Tuy vậy khi về đến nhà thì cả hai đều hứng khởi ôn, hôn nhau.
 
-
 Khoa mở màn khúc dạo đầu thật lả lướt làm Phương Ngất ngây, dâm thủy ứa, tràn đầy giường. Phương Cũng đâu vừa, nàng dùng lưỡi và tay làm tôi nứng tột độ. Đến khi chịu không nổi, Khoa đè nàng ra và đâm mạnh vào lỗ đít nàng. Nàng lắc đầu nguầy ngậy vì
 
-
 “em muốn đêm nay phải đúng nghĩa là … đêm động phòng”
-
 
 “anh …. mốn để dành thêm … vài tháng nữa”
  Khoa ghẹo.
 
-
 Nàng không giận mà trái lại càng nổi dâm hơn, cố ý làm cho Khoa chịu không nổi, phải phá trinh nàng.
-
 
 Khoa đâu vừa, chàng đứng giậy pha một ly cocktail cho vợ uống, Phương đang có hứng làm tình, đâu muốn ăn uống chi nhưng
 
-
 “em không uống thì anh không chơi với em đâu”
-
 
 Phương đành chìu chồng, cầm ly cocktail đưa lên môi uống, khi Phương uống cũng là lúc Khoa mút vú nàng liên tục, nhưng nếu ngưng uống thì Khoa ngưng mà …. hết cocktail cũng …. Ngưng luôn! thế cho nên Phương phải chậm rãi uống, tay không được rời ly nước, miệng rên la, nỉ non, cho đến khi uống hết ly cocktail cũng đúng vữa lúc nàng muốn đi phòng vệ sinh để xả, nhưng Khoa không cho, chàng nói: Anh sẽ dạy em cách tự làm mình sướng cũng như cách tự hạ hoả khi anh không có nhà. Bây giờ em thấy bọng đái đầy lắm phải không ? nhờ đầy nên em tự làm mình sướng bằng cách chơi gối, hoặc tự chà phần tam giác vàng của em lên cu hay chân anh đi” Phương liền làm theo, nàng nằm lên người Khoa, lấy chim chà sát vào hạ bộ chàng, quả nhiên, khi mắc tiểu, nứng rất dễ, và ra cũng rất dễ, không cần ai đâm thọc cả. Sau khi “cà, nhấn” 1 lúc thì nàng rướn và gồng người bắn khí tràn trề. Cách này nàng thấy phê nhưng mệt hơn vì phải dùng sức mình khá nhiều.
 
 Nàng đang muốn phê lần nữa thì Khoa bắt nàng phải đi tiểu, khi nàng tiểu xong thì ….. hứng thú làm tình cũng tiêu tan! Chưa hết, Khoa còn bắt nàng uống 1 ly nước lạnh để nhiệt hạ hoàn toàn.
 
-
 – Bây giờ thì em biết cách giải quyết khi không có anh ở nhà rồi phải không ?
-
-
 – Dạ
-
-
 – nhớ, đừng đi tìm đàn ông khác nha, anh sẽ …. giết em nếu em ngủ với đàn ông khác.
-
-
 – Anh kỳ, sao lại nghi kỵ em trong đêm tân hôn. Em sẽ mãi mãi là người đàn bà của anh, anh không tin em sao ?
-
-
 – Tin, nhưng sợ vì em có máu … dâm trong người .
-
-
 – Xí ….
-
-
 – Bây giờ em còn muốn …. Không ?
  Khoa ghẹo vợ
 
-
 – Ummmm, thôi, để dành cho đêm trăng mật nha ông xã ?
-
 
 Khoa im lặng ôm vợ vào lòng, lần này, chàng không đi nhẹ như khúc dạo đầu mà bắt đầu đoạn kết, một đoạn kết thật có hậu như trong mơ .
 

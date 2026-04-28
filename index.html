@@ -62,14 +62,14 @@ main{flex:1;padding:20px;overflow:hidden}
 .badge{padding:3px 9px;border-radius:20px;font-size:11px;font-weight:500}
 .badge-sum{background:rgba(16,185,129,.15);color:var(--green)}
 .badge-chapters{background:rgba(99,102,241,.15);color:#818cf8}
-.badge-raw{background:rgba(245,158,11,.15);color:#fbbf24}
+.badge-raw{background:rgba(59,130,246,.15);color:#60a5fa}
 .card-icon{margin-left:auto;font-size:18px;opacity:.4}
 .card-actions{display:flex;gap:6px;margin-top:10px}
 .btn-read{flex:1;padding:7px 10px;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:600;transition:.15s}
 .btn-sum{background:rgba(16,185,129,.15);color:var(--green);border:1px solid rgba(16,185,129,.25)}
 .btn-sum:hover{background:rgba(16,185,129,.3)}
-.btn-raw{background:rgba(245,158,11,.12);color:#fbbf24;border:1px solid rgba(245,158,11,.2)}
-.btn-raw:hover{background:rgba(245,158,11,.25)}
+.btn-raw{background:rgba(59,130,246,.12);color:#60a5fa;border:1px solid rgba(59,130,246,.2)}
+.btn-raw:hover{background:rgba(59,130,246,.25)}
 .no-results{text-align:center;padding:60px 20px;color:var(--muted)}
 .no-results .emoji{font-size:48px;margin-bottom:12px}
 
@@ -148,20 +148,7 @@ main{flex:1;padding:20px;overflow:hidden}
   </main>
 </div>
 
-<!-- READER MODAL -->
-<div class="overlay" id="overlay" onclick="closeReader(event)">
-  <div class="reader" id="reader">
-    <div class="reader-header">
-      <h2 id="readerTitle">Đang tải...</h2>
-      <button class="close-btn" onclick="closeReader()">✕</button>
-    </div>
-    <div class="reader-meta" id="readerMeta">
-      <div class="tab-btns" id="tabBtns"></div>
-    </div>
-    <div class="raw-notice" id="rawNotice">📖 Hiển thị 600,000 ký tự đầu. File gốc có thể dài hơn.</div>
-    <div class="reader-body" id="readerBody"></div>
-  </div>
-</div>
+
 
 <script>
 let allStories = [];
@@ -184,6 +171,28 @@ function toggleTheme() {
   document.getElementById('themeToggle').textContent = isLight ? '☀️' : '🌙';
 }
 
+function saveState() {
+  const state = {
+    cat: activecat,
+    sort: sortMode,
+    search: document.getElementById('searchInput').value,
+    scroll: window.scrollY
+  };
+  sessionStorage.setItem('libraryState', JSON.stringify(state));
+}
+
+function restoreState() {
+  const saved = sessionStorage.getItem('libraryState');
+  if (saved) {
+    const state = JSON.parse(saved);
+    activecat = state.cat || 'all';
+    sortMode = state.sort || 'name';
+    document.getElementById('searchInput').value = state.search || '';
+    return state;
+  }
+  return null;
+}
+
 initTheme();
 
 const CAT_ICONS = {
@@ -199,8 +208,19 @@ async function init() {
   try {
     const res = await fetch('stories.json');
     allStories = await res.json();
+    
+    const saved = restoreState();
     buildCategories();
+    if (saved) {
+      setCategory(saved.cat, false); // don't scroll top
+    }
     applyFilter();
+    
+    // Restore scroll position after a short delay to ensure grid is rendered
+    if (saved && saved.scroll) {
+      setTimeout(() => window.scrollTo(0, saved.scroll), 100);
+    }
+    
     document.getElementById('statsText').textContent = `${allStories.length} truyện`;
   } catch(e) {
     document.getElementById('loading').innerHTML = '❌ Không tải được danh sách truyện. Hãy đảm bảo file stories.json tồn tại!';
@@ -227,16 +247,17 @@ function buildCategories() {
   catList.innerHTML = html;
 }
 
-function setCategory(cat) {
+function setCategory(cat, scrollTop = true) {
   activecat = cat;
   document.querySelectorAll('.cat-btn').forEach(b => {
-    // Exact match for category name to avoid partial matches
     const btnText = b.textContent.replace(/\s+\d+$/, '').trim();
     const catWithIcon = (CAT_ICONS[cat] ? CAT_ICONS[cat] + ' ' : '') + cat;
     b.classList.toggle('active', (cat === 'all' && btnText.includes('Tất cả')) || btnText === catWithIcon || btnText.endsWith(cat));
   });
   document.getElementById('viewTitle').textContent = cat === 'all' ? 'Tất cả truyện' : cat;
   applyFilter();
+  if (scrollTop) window.scrollTo(0, 0);
+  saveState();
 }
 
 function setSort(mode) {
@@ -244,6 +265,7 @@ function setSort(mode) {
   document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
   event.target.classList.add('active');
   applyFilter();
+  saveState();
 }
 
 function applyFilter() {
@@ -258,6 +280,7 @@ function applyFilter() {
   
   document.getElementById('statsText').textContent = `${filtered.length}/${allStories.length} truyện`;
   renderGrid();
+  saveState();
 }
 
 function renderGrid() {
@@ -298,148 +321,15 @@ function renderGrid() {
 
 let currentStoryUid = '';
 
-async function openStory(encodedUid, title, category, mode='sum') {
-  const uid = decodeURIComponent(encodedUid);
-  currentStoryUid = uid;
-  const story = allStories.find(s => s.uid === uid);
-  if (!story) return;
-
-  const overlay = document.getElementById('overlay');
-  overlay.classList.add('open');
-  document.getElementById('readerTitle').textContent = title;
-
-  // Build meta + tabs
-  const meta = document.getElementById('readerMeta');
-  meta.innerHTML = `<span class="badge badge-sum">${CAT_ICONS[category]||'📖'} ${category}</span>`;
-  const tabDiv = document.createElement('div');
-  tabDiv.className = 'tab-btns';
-  tabDiv.innerHTML = `
-    ${story.has_sum ? `<button class="tab-btn ${mode==='sum'?'active':''}" onclick="switchTab('sum')">📝 Tóm tắt</button>` : ''}
-    ${story.has_raw ? `<button class="tab-btn ${mode==='raw'?'active':''}" onclick="switchTab('raw')">📖 Truyện gốc</button>` : ''}
-  `;
-  meta.appendChild(tabDiv);
-
-  document.getElementById('readerBody').innerHTML = '<div class="spinner" style="margin:40px auto"></div>';
-  await loadContent(uid, mode);
-}
-
-async function switchTab(mode) {
-  document.querySelectorAll('.tab-btn').forEach(b => {
-    b.classList.toggle('active', 
-      (mode==='sum' && b.textContent.includes('Tóm')) ||
-      (mode==='raw' && b.textContent.includes('Truyện'))
-    );
-  });
-  document.getElementById('readerBody').innerHTML = '<div class="spinner" style="margin:40px auto"></div>';
-  await loadContent(currentStoryUid, mode);
-}
-
-async function loadContent(uid, mode) {
-  const story = allStories.find(s => s.uid === uid);
-  if (!story) return;
-
-  const notice = document.getElementById('rawNotice');
-  notice.style.display = 'none';
-  try {
-    let url = '';
-    if (mode === 'sum') {
-      // Summary is usually in Tóm tắt/category/filename.txt or Tóm tắt/id
-      // Let's try Tóm tắt/${id} first (which works for truyencogiaothao)
-      url = `Tóm tắt/${story.id}`;
-    } else {
-      url = `${story.base}/${story.id}`;
-    }
-    
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const text = await res.text();
-    
-    if (mode === 'sum') {
-      renderStory(text);
-    } else {
-      if (text.length > 500000) notice.style.display = 'block';
-      renderRaw(text);
-    }
-  } catch(e) {
-    document.getElementById('readerBody').innerHTML = `<p style="color:#f43f5e">❌ Không tải được nội dung. Lỗi: ${e.message}<br>Đường dẫn: ${mode==='sum'?'Tóm tắt/':''}${story.id}</p>`;
-  }
-}
-
-function renderStory(raw) {
-  const body = document.getElementById('readerBody');
-  const lines = raw.split('\n');
-  let html = '';
-  
-  const sectionMap = {
-    '1. Giới thiệu': '1. 📌 Giới thiệu',
-    '2. Tình huống': '2. 🎭 Tình huống',
-    '3. Diễn biến': '3. 📜 Diễn biến',
-    '4. Cao trào': '4. ⚡ Cao trào',
-    '5. Đỉnh điểm': '5. 🔥 Đỉnh điểm',
-    '6. Kết luận': '6. 🏁 Kết luận',
-  };
-
-  for (let line of lines) {
-    const trimmed = line.trim();
-    if (!trimmed) { html += '<br>'; continue; }
-    
-    // Icon-based sections (New format)
-    if (trimmed.startsWith('🔹 Chương')) {
-        html += `<div class="section-head">${trimmed}</div>`;
-        continue;
-    }
-
-    // Header file
-    if (trimmed.startsWith('===') || trimmed.startsWith('---')) {
-      html += `<hr class="sep">`;
-      continue;
-    }
-    if (trimmed.startsWith('TÓM TẮT TRUYỆN') || trimmed.startsWith('File gốc') || trimmed.startsWith('Thể loại') || trimmed.startsWith('Nhân vật')) {
-      html += `<div style="color:var(--muted);font-size:12px;margin-bottom:4px">${trimmed}</div>`;
-      continue;
-    }
-    
-    // Sections (Old format)
-    let isSection = false;
-    for (const [key, label] of Object.entries(sectionMap)) {
-      if (trimmed.startsWith(key)) {
-        html += `<div class="section-head">${label}</div>`;
-        const rest = trimmed.slice(key.length).replace(/^[:.]?\s*/, '');
-        if (rest) html += `<div class="section-body">${rest}</div>`;
-        isSection = true; break;
-      }
-    }
-    if (!isSection) html += `<div class="section-body">${trimmed}</div>`;
-  }
-  body.innerHTML = html;
-}
-
-function renderRaw(raw) {
-  const body = document.getElementById('readerBody');
-  const lines = raw.split('\n');
-  let html = '';
-  for (let line of lines) {
-    const t = line.trim();
-    if (!t) { html += '<br>'; continue; }
-    if (t.match(/^={5,}/)) { html += '<hr class="sep">'; continue; }
-    if (t.match(/^Chương \d+/i) || t.match(/^={3,} Chương/i) || t.match(/^={3,} PHẦN/i)) {
-      html += `<div class="section-head">📖 ${t}</div>`;
-    } else {
-      html += `<div class="section-body">${t}</div>`;
-    }
-  }
-  body.innerHTML = html;
-}
-
-function closeReader(e) {
-  if (!e || e.target === document.getElementById('overlay')) {
-    document.getElementById('overlay').classList.remove('open');
-    document.getElementById('readerBody').innerHTML = '';
-  }
+function openStory(encodedUid, title, category, mode='sum') {
+  saveState(); // Ensure last scroll position is saved
+  const url = `reader.html?uid=${encodedUid}&mode=${mode}`;
+  window.location.href = url;
 }
 
 document.getElementById('searchInput').addEventListener('input', applyFilter);
-document.addEventListener('keydown', e => { if(e.key === 'Escape') closeReader(); });
+
+window.onscroll = saveState;
 
 init();
 </script>

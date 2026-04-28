@@ -2,8 +2,6 @@
  TITLE: FUTURUM
 ==============================
 
-
-
 ==================== Chương 1 ====================
 
 Chào các bác, tàu ngầm box truyện nhiều năm, nay cũng mạn phép đăng đàn một tác phẩm lần đầu tự sáng tác, mong các bác bớt chút thời gian ngó qua. Nếu hay cho em một like và comment động viên. Nếu còn gì chưa tốt mong các bác chân thành góp ý để em cải thiện.
@@ -12,9 +10,7 @@ Truyện ra có thể không đều, nhưng em hứa là không drop 😀
 
 —————————————————————————————
 
-
 FUTURUM
-
 
 CHAP 1. THE FUTURE​
 
@@ -60,8 +56,6 @@ Không có thưa cậu chủ.
 
 Vậy là lại tiếp tục một ngày như bao ngày khác của một nhân viên văn phòng, khoác lên mình bộ đồ công sở, xách theo túi lap rồi đi thang máy xuống công ty. Nghĩ đến việc người ta cứ phải phơi mặt chạy xe ngoài đường để đến công ty, rồi tắc đường mới thấy chỗ tôi làm quả là thiên đường. Nhà thì tầng 7, công ty thì thuê sàn tầng 3, đi bộ xuống cũng còn tiện. À mà nhà là bố mẹ tôi để lại, chứ cái tầm tuổi như tôi thì phải xuất chúng lắm mới tự mua được nhà, tấc đất tấc vàng, mà đây mới chỉ nói đến nhà chung cư chứ chưa nói đến nhà đất, chắc phải tu mấy kiếp mới tự mua được nhà đất với cái giá hiện tại.
 
-
-
 ==================== Chương 2 ====================
 
 CHAP 2.
@@ -73,7 +67,6 @@ CHAP 2.
 Đệch, sáng sớm đã giục deadline rồi =((
 
 – Sếp đã về đâu anh ơi. Mà anh bảo mấy thằng đệ của anh làm cẩn thận đi, dự án trước dính nhiều bug nên bên Mathucorp nó còn dọa ko ký tiếp đây này.
-
 – Ờ ờ, rồi rồi, đm tập đoàn éo gì phàn nàn lắm vl.
 
 Nói xong lão lẩn cmnl. Người to bụng phệ mà lẩn nhanh vcđ. Người vừa hú lên là lão Dũng, Lead team Code 1. Lão này mồm đã rộng còn nói to, lão có thì thầm thì cả văn phòng cũng còn nghe thấy. Được cái lão chơi với anh em rất hào phóng và thoải mái. Ngoài cái mồm ra chắc anh em chả chê gì. Lão Dũng này cũng thuộc dạng giỏi, cách đây chục năm lão đã lên Lead team từ năm 2x tuổi, mà nhậu cũng giỏi, bụng lão khác gì cái vại bia đâu. Chỉ có cái xấu trai với ăn nói bỗ bã nên mãi các sếp vẫn chỉ cho làm Lead team chứ không lên được. Mà lão có vẻ cũng thích ngồi một chỗ để code hơn là phải đi lo mấy thứ linh tinh.
@@ -81,13 +74,11 @@ Nói xong lão lẩn cmnl. Người to bụng phệ mà lẩn nhanh vcđ. Ngư�
 Tiện nói về công ty tôi, cũng là công ty IT be bé thôi, chuyên nhận outsource cho mấy tập đoàn công nghệ lớn kiểu Viettel, Mathucorp, Elppa … Cả công ty có 3 team code, mỗi team tầm chục mạng, toàn đực rựa. Team nào cũng bị deadline dí liên tục thâu đêm suốt sáng nên thằng coder nào trông cũng như con cú. Đéo hiểu giờ còn có vòi sen tự động rồi mà chúng nó vẫn còn lười tắm nữa. Chả bù team marketing với kinh doanh, thằng nào thằng nấy bóng lộn, vest vủng như đám thổi nến.
 
 – Anh Dũng ơi, chị Hoa bảo tháng này chậm deadline tiếp là bị hạ đánh giá đấy nhá.
-
 – Ấy thôi, để anh bảo mấy thằng đệ, HR làm thế chị nhà thấy ít lương lại chửi anh tội nghiệp.
 
 Đây rồi, thiên thần đây rồi. Ở cái công ty này, giữa một lũ đực rựa thì con gái auto trở thành thiên thần. Mà thiên thần này còn xinh nữa chứ, hí hí. Thiên thần vừa chọc lão Dũng là Thanh Trúc, nhân viên mới tuyển đợt vừa rồi của công ty tôi, làm cho phòng nhân sự (HR), hoa khôi mới nổi của công ty.
 
 – Hôm nay đến sớm thế em
-
 – Dạ vâng, hôm nay em có ngươi lai a Long ạ
 
 Người đẹp tiếng cũng đẹp, đẹp theo cái kiểu thục nữ, nhẹ nhàng, nhìn vào là thấy tâm hồn được thư thái, thoải mái…
@@ -97,9 +88,7 @@ Người đẹp tiếng cũng đẹp, đẹp theo cái kiểu thục nữ, nhẹ
 Giọng nói vừa rồi cũng là của một thiên thần, nhưng là thiên thần sa ngã, hay thiên thần ác quỷ gì đó tôi cũng không biết phải mô tả thế nào. Em này là Mai Anh, cũng vào cùng đợt với Trúc, nhưng làm phòng marketing. Em Mai Anh này với Trúc đều mới ra trường, vào công ty cùng đợt với nhau nên thân nhau luôn. Tuy thân nhưng phải nói là tính cách trái ngược nhau hoàn toàn. Trúc thì dịu dàng nữ tính, Mai Anh thì lúc nào cũng như con nhím. Ngoại hình thì một chín một mười. Trúc có mái tóc đen dài kiểu xoăn song, Mai Anh thì lúc nào tóc cũng buộc cao. Ngay buổi họp công ty đầu tiền nó còn đi đấu khẩu với tôi, từ đó ghim mối thù với tôi luôn.
 
 – Đây nhường cô, đi trước cho nước nó trong.
-
 – Gớm, nước trong cho đôi chim cu tâm tình với nhau à
-
 – Này, lại nói linh tinh cái gì đấy, mặt Trúc đỏ ửng cả lên
 
 Tôi cũng hết biết phải nói gì với cái con hâm này, lúc nào nó cũng khịa tôi. Mà mình ngoài tranh luận công việc ra mà lại đi khịa lại thì cũng kỳ cục. Nên thôi kệ, ai về chuồng nấy. Chỗ tôi thì mỗi team code nhét vào 1 phòng, 1 phòng cho kế toán, 1 phòng làm kho + máy chủ, 1 phòng họp, 1 phòng pantry + nghỉ ngơi nhân viên, 1 phòng của sếp, còn lại là khu không gian mở cho cả team marketing + kinh doanh và HR. Cả công ty như các bạn đã biết đấy, toàn đực rựa, còn đám phụ nữ chỉ có mấy bà kế toán, một vài đứa team marketing, kinh doanh thì tôi không thân lắm, còn lại là bà Hoa trưởng phòng nhân sự với cái Giang nhân sự. Tôi thì làm trợ lý cho sếp về mặt nội bộ, thực ra cũng kiểu một dạng thư ký riêng, nhưng tôi được phép trực tiếp quyết định một số vấn đề nhỏ về mặt hành chính hoặc pháp lý, ngồi giữa phòng sếp với bàn của team HR luôn. Từ ngày Trúc vào, tôi mới thấy ngồi đây đúng là thiên đường, ngoảnh mặt sang bên là được ngắm em Trúc. Nhưng đã có thiên đường thì cũng có địa ngục, lúc nhìn thẳng thì lại thấy cái mẹt của Mai Anh. Vừa mới ngồi chưa kịp ấm mông đã thấy nó lườm mình.
@@ -111,60 +100,33 @@ Mở mail, sếp vẫn chưa về, hôm nay có vẻ tương đối nhàn. Cũng
 Được cái nói thầm mà bọn AI này vẫn nghe thấy mà nhận lệnh, chứ không mọi người nghe thấy chắc chỉ có đào lỗ trốn xuống đất. Thời chúng tôi không còn điện thoại, nên việc nhắn tin chỉ có cách là dùng cặp kính chiếu 1 cái bàn phím ảo lên mặt bàn, rồi ấn vào bàn phím ảo đấy hoặc là dùng tin nhắn thoại. Hoặc loại xịn hơn thì dùng chuyển động của mắt để bấm chữ, nhưng cũng đắt tiền.
 
 – Váy hôm nay xinh thế <3
-
 – Váy em mới mua đấy hihi, xinh thật ko
-
 – Always, mà chất vải trông có vẻ lạ nhỉ
-
 – Anh tinh thế, thấy shop bảo loại mới ra đấy, lên màu đẹp hơn
-
 – Bảo sao hôm nay mắt a cứ thấy chói lóa =)))
-
 – Anh này, chỉ giỏi nịnh :))
-
 – Ơ anh nói thật, giỏi nịnh có mà sếp Hùng đuổi việc từ lâu rồi =))
-
 – Mà sếp Hùng bao giờ về thế anh, có cái bảng lương phòng em đang chờ duyệt ạ.
-
 – Chắc phải sang tuần, em cần gấp không để a xin duyệt online?
-
 – Sang tuần cũng được anh ạ, vẫn chưa đến ngày đổ lương mà anh
-
 – Ấy cẩn thận chậm là ông Dũng lại gào lên đấy =))
-
 – Lương về tài khoản của vợ anh Dũng mà, anh í không biết ngày đâu
-
 -Vợ ổng mới đáng sợ đó em =)))
-
 – Anh Dũng sợ vợ lắm ạ =)))
-
 – Vợ ổng ai cũng sợ em à =))))
-
 – Thế anh Long có sợ vợ không
-
 – Anh đã có vợ đâu
-
 – Thì giả sử nếu anh có vợ
-
 – Thì em cứ thử làm vợ anh thì biết anh có sợ không =))
-
 – Cái anh này, lại trêu em =))
-
 – Mà phim The Night Between ra rồi đấy
-
 – Ui thế ạ, em hóng phim đấy mãi.
-
 – Thế anh đặt vé 8h tòa bên cạnh luôn nhé, mình tan làm thì đi ăn rồi xem
-
 – Thế 9h30 đi ạ, em về sửa soạn tí rồi đi
-
 – Uh, thế 7h mình đi ăn trước nhé, để anh qua đón em.
-
 – Vâng ạ, hi hi.
 
 Ngon rồi, đúng là nhất cự ly nhì tốc độ. Sau vài lần café cũng thấy em bật đèn xanh cho mình rồi, quả này chắc là chốt hạ được luôn, không uổng công tán em luôn từ lúc mới vào. Vừa làm việc vừa nhắn với em chờ tan làm, tranh thủ book bàn tối đi ăn. Những cái ngày thứ 6 này chỉ mong trôi thật nhanh cho đến hết tuần. May tuần này sếp đi vắng, ít việc nên ai cũng về sớm, chỉ còn đội code vẫn ở lại ngồi cày cuốc. Phi vội lên trên nhà, vừa lên thì thấy nhà hàng xóm đang chuyển đồ đạc gì đấy, hình như mới chuyển đến. Liếc qua thấy có dáng phụ nữ đứng ở cửa chỉ trỏ cho đội vận chuyển mang đồ vào nhà.
-
-
 
 ==================== Chương 3 ====================
 
@@ -176,7 +138,6 @@ Nhà mình mới chuyển đến ạ?
 
 Người phụ nữ quay người lại, ôi vl, đập vào mặt là bộ loa to tròn, cái khe căng phồng núp sau cổ áo phông. Phải tịnh tâm kìm nén không được để lộ việc mình nhìn búp người ta.
 
-
 Vâng mình tên Long, ở căn 07 ngay cạnh.
 
 Ôi may quá vừa đến đã gặp hàng xóm luôn rồi, em tên Chi, có gì nhờ anh giúp đỡ nhé. Anh cho em xin số có còn tiện hỏi han cho đỡ bỡ ngỡ ạ.
@@ -184,7 +145,6 @@ Vâng mình tên Long, ở căn 07 ngay cạnh.
 Số mình 0xxxxxxxxx
 
 Đọc xong cái thấy kính hiện luôn info người add, sinh năm 2020. Vl, tức là hơn tôi tận 3 tuổi, nhưng mặt thì trẻ vcđ.
-
 
 Ui chị 30 rồi mà trông trẻ quá, thế này là lớn hơn em rồi, lúc đầu xưng hô như thế ngại quá.
 
@@ -200,13 +160,11 @@ Uhm, bye em.
 
 Nói xong chị quay lưng đi vào. Tuyệt phẩm, ngực to mà mông cũng to, theo cái kiểu tập gym, đầy đặn nở nang vcđ. Tia thêm 1 lúc nữa rồi vào nhà, tranh thủ tắm rửa thay đồ còn đi hẹn Trúc.
 
-
 Lily chuẩn bị lọ xà phòng số 3
 
 Vâng thưa cậu chủ.
 
 Thay bộ oufit cho lịch sự, ko biết có nên xịt thêm nước hoa ko nhỉ.
-
 
 Lily, tao có nên xịt nước hoa nữa không?
 
@@ -214,16 +172,13 @@ Theo phân tích sở thích của cô Trúc, cô Trúc thích mùi nhẹ nhàng
 
 Thôi tạm tin con AI này, vác thêm cái hộp nhỏ đã chuẩn bị từ trước. Mới 6h, xuống hầm lấy xe rồi qua nhà Trúc là vừa. Thời nay chúng tôi hầu như nhà nào cũng đã có ô tô, nhưng không còn đi xe xăng nữa, mà đi xe nhiên liệu nhân tạo. Đám xe điện giờ bị loại bỏ hoàn toàn sau hàng loạt các nghiên cứu chứng minh việc nó chẳng hề bảo vệ môi trường, mà còn phát sinh đống rác thải pin nữa. Giờ xe nhiên liệu nhân tạo gần như là hàng bình dân rồi, tiện lợi, ít phát thải hơn xăng rất nhiều. Giàu có thì họ đi xe hydro. Tôi thì đi một con Tucson thế hệ 9 bản facelift.
 
-
 6h20, cũng may nhà Trúc gần, một khu chung cư nhỏ phía nam Hà Nội. Chỗ này hơi vắng vẻ, xung quanh vẫn còn ngổn ngang xây dựng khu nhà đất liền kề hoặc đất trống giải tỏa, được cái cây cối xanh mát, trong lành.
-
 
 Anh đến rồi này
 
 Đợi em tí, em xuống đây.
 
 Chậc, cái “một tí” của chị em chắc phải dài đến thiên thu vạn tải, quả này chả biết có kịp giờ đặt bàn hay không đây. Ngồi trong xe đợi được 10’ thì em xuống, một chiếc sơ mi trắng với chân váy pastel, trông vừa đẹp vừa dễ thương.
-
 
 Hi hi anh đợi em lâu không
 
@@ -241,7 +196,6 @@ Vưng
 
 Lượn qua nhà hàng steak đã đặt bàn trước, chỗ này của một anh người Mỹ trước là khách hàng nhận tư vấn của tôi. Bàn mình đặt là bàn riêng, view ra vườn hoa ngay cạnh, vừa đẹp vừa riêng tư, trang trí thêm tí hoa và nến, quá tuyệt cho một buổi hẹn hò. Gọi hai phần steak và một phần salad, thêm 2 ly purewine. Gọi là purewine vì nó là 1 dạng rượu vang không cồn, uống cũng na ná rượu vang nhưng vị quả thật không ngon bằng, vì nếu đi xe mà có tí cồn vào cũng đã bị tước bằng ngay nên bắt buộc phải dùng, chứ nếu uống ở nhà thì tôi đã làm 2 ly vang cho chuẩn vị. Trong lúc đợi đồ ăn tôi tranh thủ lấy cái hộp đã chuẩn bị trước ra tặng em.
 
-
 Chúc mừng sinh nhật em
 
 Ui sao anh biết sinh nhật em, nhưng phải đến mai mới là sinh nhật em cơ mà – em tròn mắt.
@@ -254,13 +208,11 @@ Uh em mở đi
 
 Một chiếc dây chuyền lấp lánh, công sức cả tuần chọn của tôi chứ có ít gì đâu. Nhìn mắt em cười tít sure là thích lắm rồi.
 
-
 Để anh đeo cho em nhé.
 
 Vâng
 
 Em vén mái tóc dài qua một bên. Ực, chiếc cổ trắng ngần, nhìn chỉ muốn cắn cho môt cái, lại còn thơm nữa, không biết đây là nước hoa hay mùi tự nhiên của em nữa, tôi vừa nghĩ vừa phải nuốt nước miếng không nó chảy dãi ra mất.
-
 
 Ui đẹp tuyệt vời luôn
 
@@ -282,7 +234,6 @@ Kệ chứ, được ngắm em cả ngày thì ai có cười cũng kệ
 
 Thực ra cái dây chuyền nó không hợp với outfit hôm nay của em lắm, nhưng có mặc áo rách thì em cũng vẫn xinh. Ngồi tán phét thêm 1 lúc thì đồ lên. Giữa cái thời đại mà đồ ăn nhanh nhan nhản, toàn dạng robot làm và phục vụ thì những nhà hàng vẫn giữ nguyên truyền thống sử dụng người nấu và phục vụ thế này vẫn là thích hơn cả. Với cả đây là quán người quen, nguồn thịt đảm bảo, chứ thực sự chúng tôi vẫn còn hơi e sợ từ đợt virus bò cách đây chục năm.
 
-
 Ưm, ngon quá, lâu lắm em mới được ăn steak ngon như này, cảm giác nó cứ như tan ra trong miệng ấy.
 
 Đúng rồi, chỗ này là của người quen của anh nên anh biết, thịt ở đây tươi ngon mà đảm bảo nguồn gốc lắm.
@@ -302,7 +253,6 @@ Khiếp anh có mà là cục kẹo dẻo chứ đất gì
 Đấy, cứ thế mà còn chối em, ghét
 
 Chẹp, người đâu đã xinh còn dễ thương, lườm cái thôi cũng thấy đáng yêu. Xong bữa chúng tôi lượn sang rạp chiếu phim. Chỗ này nằm trong khuôn viên trung tâm thương mại cạnh tòa nhà chỗ công ty chúng tôi. Vừa đi lên vừa nói chuyện. Lúc này em đã chủ động khoác tay tôi rồi.
-
 
 Ơ anh mua trước cả vé lẫn bỏng nước rồi à
 
@@ -328,9 +278,7 @@ Ghét, ghét – em lại đấm thùm thụp vào tay tôi
 
 Vừa kịp phim chiếu, may quá chúng tôi vào không bị sớm nên không phải ngồi xem quảng cáo. Phim này thì cũng không phải sở thích của tôi cho lắm, nhưng thấy review khen hay, rồi nào là người yêu cũ đi xem với nhau kiểu gì cũng quay lại, ai còn đang tán tỉnh nhau thì yêu luôn bla bla, thế nên thôi tôi cứ chọn, để xem có tạo điều kiện thuận lợi gì không.
 
-
 Ngồi xem mà em cứ khoác tay tôi vừa xem vừa ăn bỏng, bực ghê, thế này thì ôm làm sao được. Được gần cuối phim thì đến một đoạn cảm động, thấy cả rạp đầy tiếng thút thít. Quay sang đã thấy em rưng rức từ lúc nào rồi. Em bỏ tay tôi ra để lấy tay lau nước mắt. Cơ hội đây rồi, tôi quàng tay sang ôm lấy em, tay kia thì quệt nhẹ nước mắt trên má em, em ngả đầu vào vai tôi luôn. Đúng là xem trước review quả không sai, thế này lát về tôi có cho 100/10 điểm cũng đồng ý luôn và ngay. Rồi lại đến một đoạn đôi nhân vật chính trong phim tình tứ, ôm hôn nhau. Tôi quay sang em, em ngước mắt nhìn tôi, bốn mắt chạm nhau. Tôi ghé đầu xuống, trao em một nụ hôn thật ngọt ngào.
-
 
 Trúc ơi
 
@@ -340,17 +288,13 @@ Anh yêu em – tôi thì thầm vào tai em, hơi thở phả ra vào tai khi�
 
 Đôi môi lại gắn chặt vào nhau, thật lâu. Một tay em đặt lên ngực tôi, không rõ để làm gì, chắc để xem thằng này có trống ngực không, có thật lòng với bà không =)) Tay tôi thì vẫn ôm em, tay còn lại thì đặt vào cái eo nhỏ nhắn ấy, rồi lại xoa xoa cái bụng phẳng lì. Êm quá. Tách, đèn bật sáng. Ơ mẹ nó chứ, đang cao trào thì đứt dây đàn. Em và tôi giật mình rời môi nhau ra.
 
-
 Cả rạp lục đục ra về, nhìn đôi nào đôi nấy ôm nhau cứng ngắc. Chẹp, chắc họ cũng như tôi, xem phim này để hiện thực hóa cơ hội. Ông nào cũng thấy nét hớn hở lộ rõ trên mặt. Chắc đêm nay Hà Nội lại có động đất rung nhẹ ….
-
-
 
 ==================== Chương 4 ====================
 
 CHAP 4​
 
 Đưa em về đến nhà, lúc này cũng gần 12h, cũng may em thuê nhà ở cùng bạn nên không gặp vấn đề gì, mai lại là ngày nghỉ nữa nên càng thoải mái. Khu nhà em vắng quá, đường thì rộng, cây nhiều, giờ này cũng không thấy người qua lại.
-
 
 Mai em có về với bố mẹ không?
 
@@ -359,7 +303,6 @@ Mai em có về với bố mẹ không?
 Uh đi tàu cao tốc cho êm, chứ đi xe khách đông mà mệt lắm.
 
 Nhoài người sang cởi dây an toàn cho em, lúc này cũng đúng 0h.
-
 
 Chúc mừng sinh nhật em, chuẩn đúng giờ đúng ngày nhé.
 
@@ -371,24 +314,17 @@ Em cũng yêu anh
 
 Hoàn cảnh này còn có thể làm gì nữa, lại trao cho em một nụ hôn thật dài, thật sâu. Lưỡi hai đứa đã bắt đầu tìm đến nhau, hơi thở của em nặng dần. Một tay tôi nắm lấy tay em, tay còn lại bắt đầu bổn phận của nó, chu du trên khắp những đường cong tuyệt mỹ ấy. Từ eo sang bụng, rồi từ bụng trên xuống bụng dưới. Hừm, sơ mi gì mà sờ mãi chả thấy cúc áo đâu, lại còn sơ vin vào váy nữa, tay lại phải nhè nhẹ, vừa xoa bụng, vừa kéo áo lên. Rốt cục mất một lúc, tay tôi cũng nằm trong áo em, lại tiếp tục xoa bụng. Da con gái có khác, vừa mềm vừa mịn, sờ sướng hết cả tay. Đâu cũng phải đến, tay tôi bắt đầu xoa lên ngực em. Tay em nắm nốt cái tay đang xoa của tôi, tầm này thì chắc cho có lệ thôi. Tròn, mềm. Ngực em không phải to lắm nhưng rất vừa tay. Nhẹ nhàng, đẩy áo ngực của em lên. Cảm giác như có chiếc bánh bao vừa đặt vào bàn tay tôi vậy. Mềm mà vẫn căng tròn, ấm nóng. Vừa xoa vừa bóp nhẹ, lần lượt hai bên vú đều được tay tôi chăm sóc kỹ càng. Rời môi em, môi tôi bắt đầu đến tai em. Mút nhẹ, người em run lên. Rồi xuống cổ. Người em cứ thế run lên, hơi thở gấp gáp dần. Môi thì mút cổ, tay thì bóp vú, thỉnh thoảng tôi lại gẩy gẩy, vân nhẹ hai đầu vú, tay kia đã vòng sang lưng em xoa rồi nhẹ nhàng cởi chốt áo lót. Em lúc này đã buông hoàn toàn, ưỡn nhẹ người lên cho tôi dễ cởi chốt hơn. Cặp vú này đẹp quá, tôi chỉ muốn ăn nó ngay tắp lự. Nghĩ làm làm, tôi vén áo em lên, nhoài người thêm sang rồi ngoạm lấy một bên vú mà mút. Tay phải thì vòng qua lưng em, nắm lấy bên vú còn lại mà xoa nắn. Người em ưỡn lên.
 
-
 – Đừng anh
-
 
 Mồm thì đừng anh, nhưng tay em thì lại nắm lấy đầu tôi mà xoa, con gái đúng thật là. Đừng được một câu, xong họng em đã thay thế luôn bằng những tiếng “ư, ư” nhẹ. Không khí trong xe ấm sực lên, chỉ còn tiếng mút của tôi và tiếng thở của em. Lưỡi tôi cứ thế đẩy qua đẩy lại, một bên vú em lúc này không còn chỗ nào là không ướt nước bọt của tôi nữa. Hai đầu ti vừa bị mút, vừa bị xoa nắn giò đã cương lên. Chậc, tay kia của tôi trống quá. Nhẹ nhàng vén váy em lên, tay bắt đầu xoa khắp đùi non. Thực sự tôi không hiểu sao da con gái có thế mềm mịn như này được. Vừa xoa vừa gãi nhẹ rồi nhích dần lên trên. Bên trên thì tay phải với lưỡi vẫn đang miệt mài. Tay trái bên dưới cũng đã lần tới đũng quần lót. Ướt nhẹp. Vừa chạm tay đến đũng quần thì tay em lại nắm lấy cái tay trái tôi, một câu nói quen thuộc lại tiếp tục vang lên khe khẽ
 
-
 – Đừng anh
-
 
 Tay em thì nắm, nhưng ngón tay tôi đã bắt đầu gãi lấy đũng quần. Dâm thủy của em đã thấm ra ngoài quần, ướt mấy đầu ngón tay tôi. Cảm giác như chỉ cần cởi cái quần lót ra là cả một dòng suối sẽ cứ theo đó mà ồ ạt trào ra ngoài vậy. Nhẹ nhàng lấy hai ngón tay vén mép quần lót em ra, ngón giữa chạm nhẹ vào cái khe suối thiên nhiên ấy. Người em giật lên một cái, thở mạnh.
 
-
 – Há há hố hố
 
-
 Hai đứa giật nảy mình, tôi vội rời môi khỏi miếng vú, tay kéo áo với váy của em xuống rồi trở về ghế lái. Em cũng ngồi chỉnh lại trang phục. Đù mé cái lề gì thốn. Thì ra là đám thợ hồ say rượu. May mà đêm tối, kính xe tôi cũng tối nên chắc chúng nó không thấy. Hôm này là cái ngày éo gì toàn bị cắt cảnh lúc cao trào.
-
 
 Bố khỉ cái bọn vô duyên này, đêm tối rồi còn ồn ào mất trật tự – tôi quay ra ngoài nói vu vơ 1 câu
 
@@ -404,7 +340,6 @@ Dạ
 
 Đánh tạm xe vào chỗ đỗ xe của khách rồi đưa em lên nhà. Khu này cũng thoáng mát ra phết, cây xanh nhiều vô kể. Trước lúc về em thơm tôi một cái.
 
-
 Anh về cẩn thận nhé, về nhắn cho em
 
 Uhm, anh về nhé. Yêu em
@@ -412,7 +347,6 @@ Uhm, anh về nhé. Yêu em
 Dạ, yêu anh
 
 …
-
 
 Tít tít tít, chào mừng cậu chủ đã về nhà. Hàm lượng Oxytocin, dopamine và serotonin của cậu chủ cao hơn mọi khi, chắc hôm nay cậu chủ đẫ đi chơi với cô Trúc rất vui.
 
@@ -426,7 +360,6 @@ Không thưa cậu chủ, hôm nay là ngày nghỉ
 
 Lại nhắn cho em mấy dòng
 
-
 Anh về nhà rồi nhé. Em ngủ chưa
 
 Em vừa tẩy trang xong, giờ em ngủ ạ. Muộn rồi anh cũng ngủ nhé.
@@ -437,8 +370,6 @@ Dạ, yêu anh <3
 
 Mệt quá, không ngờ hôn em một tí thôi mà cũng tốn sức như vậy. À không, cả hai tay nữa. May là sáng mai không có việc gì, lại được ngủ nướng tiếp rồi. Khổ nỗi, người thì mỏi nhưng não nó không mệt. Mất một lúc mới ngủ được.
 
-
-
 ==================== Chương 5 ====================
 
 CHAP 5
@@ -446,17 +377,11 @@ CHAP 5
 Sáng 9h tỉnh, vơ lấy cái kính check các thứ, đã thấy Trúc nhắn tin hỏi với nhắc ăn sáng rồi. Hi hi đúng là thiên thần. Nhắn cho em mấy câu rồi làm vệ sinh, ăn sáng. 9 rưỡi, xuống phòng tập gym dưới tòa nhà. Tầm này chắc là cũng vãn vãn người rồi. Tôi sợ nhất cái kiểu đi tập gym mà mấy người cùng xếp hàng chờ tập 1 cái máy. Vừa xuống đã thấy bóng ai quen quen, à là bà chị hàng xóm mới chuyển đến.
 
 – Ơ chị cũng xuống đây tập ạ
-
 – Ơ em, có duyên quá, lại gặp nhau rồi, vừa đến là chị đã tìm phòng gym để tập rồi ấy.
-
 – Thế ạ, chị chăm thế, bảo sao người đẹp thế này. Vừa nói tôi vừa phải kìm nén con cu lại, nhìn bà chị này mặc đồ tập gym mà vòng nào ra vòng nấy, vừa to vừa tròn
-
 – Em lại trêu chị, chị già rồi, người nhão hết cả chứ sao bằng mấy bé ở đây được. Mà bình thường em cũng tập giờ này à
-
 – À cuối tuần nên em nướng tí, chứ thường thì em tập sớm hơn, hoặc muộn hẳn. Chị quen tập giờ này ạ?
-
 – À không, hôm qua con bé nhà chị nó lạ nhà nên khóc quá, chồng thì đi công tác suốt mà bà ngoại thì chưa lên nữa, nên chị phải một mình trông con bé mất ngủ cả đêm.
-
 – Thế ạ, anh nhà làm gì mà hay đi thế chị
 
 Ôi zào, ông xã nhà chị làm giám sát xây dựng, kiếm thì cũng được đấy mà đi suốt, con bé nhà chị có khi còn chả nhớ mặt bố như nào í.
@@ -464,21 +389,15 @@ Sáng 9h tỉnh, vơ lấy cái kính check các thứ, đã thấy Trúc nhắn
 Đến chịu ông anh, có bà vợ ở nhà ngon nghẻ thế này lại cứ đi suốt thế này khác gì mỡ treo miệng mèo. Gái một con trông mòn con mắt, vừa tập vừa chém gió với bà chị hàng xóm, nhìn bà í tập lại càng muốn nổ con ngươi, cái kiểu dân gym người đẹp, khúc nào ra khúc đấy, hơi có tí mỡ do sinh con, chứ không giống mấy cháu teen trẻ trẻ toàn đua đòi cái phòng trào người gầy nhẳng như con cá mắm. Đồ gym thì các bạn biết rồi đấy, bó sát, cổ áo thì sâu, mồ hồi chảy lăn xuống khe ngực cứ phải gọi là. Chém gió thêm thì cũng biết bà chị này cưới cũng lâu mà mới có con được hơn năm, ông chồng thì đi suốt, tháng về chắc được 1, 2 lần gì đấy, có tháng còn không về. Đợt tết vừa rồi xin về mấy ngày đi chúc tết xong lại đi tiếp, kêu sợ thợ thuyền làm nhỡ việc, đúng chuẩn con người đam mê công việc. Bà chị này thì làm văn thư cho một cơ quan nhà nước, gọi là đi làm cho đỡ buồn chứ kinh tế vẫn chồng nuôi là chính.Hai vợ chồng chuyển đến đây cho gần trung tâm hơn, nhiều trường mẫu giáo chất lượng hơn. Thỉnh thoảng thì có bà ngoại lên trông cháu, còn bảo hôm tới gửi bé về ngoại tầm hơn tháng cho đến tuổi đi nhà trẻ, chứ ở trên này khói bụi nhiều mà khó chăm. Tập xong hai chị em cùng đi lên nhà, vừa đi vừa nói chuyện thì thấy cái bóng hành lang nháy nháy.
 
 – Cái bóng này nháy mấy hôm rồi mà không thấy ban quản lý lên thay gì cả chị ạ
-
 – Thế à, à nhắc mới nhớ, cái đèn trần ở nhà chị lúc dọn đồ thợ cũng làm vỡ mất, còn chưa mua cái mới để thay
-
 – Thế mình lên tầng siêu thị rồi mua luôn đèn ở đấy chị ạ, tí e lên lắp hộ cho
-
 – Uh có gì hộ chị nhé, đỡ phải gọi kỹ thuật.
 
 Thế rồi cũng thay hộ bà chị cái đèn trần, tranh thủ bà í nhờ luôn mấy cái, mình thì làm còn bà í thì trông con bé. Toàn việc lặt vặt mà cũng qua giờ trưa mới xong.
 
 – Khiếp, nhiều thế này là em đòi công đấy nhé
-
 – Hi hi, được luôn, để sang tuần chị gửi con bé về ngoại xong làm bữa tân gia mời em nhé. Hay giờ mình xuống đi ăn nhỉ, chị mời nhé
-
 – Ok chị, để em về thay đồ đã
-
 – Uh xong qua bấm chuông gọi chị nhé
 
 Quay về nhà, tranh thủ nhắn với Trúc mấy câu, bố mẹ em vừa tới, cả nhà đang đi ăn. Em đi với nhà nên cũng không nhắn cho nhau nhiều được. Thấy bảo bố mẹ em đổi vé tàu, mai mới về. Chẹp, thế là mất 2 ngày không được gặp em, bọn tôi cũng mới yêu nhau nên việc ra mắt phụ huynh trong hoàn cảnh này cũng không hợp lý cho lắm. Tôi gọi cho ông Nam Sâm, mối quen quà biếu của sếp tôi, đặt lấy một bộ sâm linh chi loại ngon, nhờ ổng cho người gửi qua cho em, nói là bạn em Trúc gửi biếu hai bác, vừa gọi là biếu, vừa có cái để mà đánh tiếng trước. Nói là bạn nhưng chắc các cụ cũng thừa hiểu bạn bè gì tầm này. Em vui lắm, nhắn với tôi bảo bố mẹ em mời “bạn” hôm nào về quê chơi cho biết. Bao nhiêu năm thế hệ thay đổi, nhưng cái tục lệ ra mắt này đúng là vẫn trường tồn.
@@ -488,46 +407,30 @@ Quay lại với bà chị, Trúc thì đang bận mà tôi thì rảnh, nên cu
 Tối chủ nhật, rảnh, đang ngồi xem trận bóng ManUtd, à giờ ManUtd lại trở lại vị thế thống trị, còn tôi thì xem cũng không biết từ bao giờ, chắc là từ hồi bé đã xem cùng bố tôi, thích màu áo đỏ rực lửa tại nhà hát của những giấc mơ…
 
 – Ê cờ hó, đang làm gì đấy
-
 – Xem bóng, gọi gì đấy con điên
-
 – Ờ đợi tí sang nhé, làm tí bia nhé
-
 – Ờ ok sang đê
 
 Vừa rồi là con Hương, bạn thân từ hồi nối khố của tôi. Người ta tên Hương nền nã nhẹ nhàng bao nhiêu thì con này điên và nghịch bấy nhiêu, có lần hồi đi học nó còn suýt tẩn nhau với mấy thằng khóa trên. Còn tôi thì hồi bé tí suốt ngày bị nó trấn kẹo, còn đi học bao nhiêu năm thì cũng đi cùng nhau luôn. Bố mẹ nó cũng biết hoàn cảnh nhà tôi, cũng quý và thương tôi lắm. Con hâm này thì chắc lại bị bố mẹ mắng chuyện lấy chồng nên mới sang nhà tôi, lần nào cũng vậy, suốt rồi bố mẹ nó cũng quen với việc cứ mắng nó là nó sang nhà tôi chơi.
 
 – Ông bà già tao lắm mồm vl, có ngồi xem TV tí cũng đéo yên
-
 – Thì mày lấy chồng cho bố mẹ mày đỡ kêu, đơn giản vl
-
 – Đéo, thế thì tao thà nghe ông bà già nói còn hơn
-
 – Thế mày còn kêu đéo gì nữa, toàn bố mày làm bia hứng đạn đây
-
 – Kệ mẹ mày, được chơi với bố là niềm hạnh phúc vl rồi, trật tự mà xem bóng đi cho tao uống bia
-
 – Uống xong nhớ mà lượn về nhà đấy, tao đéo dọn đâu
-
 – Ờ, nhà còn gì không mày
-
 – Mực trong tủ ấy, lấy ra mà xẩu
 
 Mẹ, con điên này mặt mũi người ngợm thì cũng ổn, mà tính thì đéo ổn chút nào. Thằng nào lấy về chắc vợ chồng hôm nào cũng chửi nhau mất. Hay nó les nhỉ, mà cũng không thấy nó dính lấy con nào, kể cũng lạ. Mà nó không lấy chồng thì thỉnh thoảng bố mẹ nó lại nhờ tôi khuyên nhủ. Mà khuyên thế nào được cái con dở này, tôi khuyên thì nó cũng lại quay sang chửi tôi thôi. Thứ duy nhất mà nó dịu dàng chắc là con mèo của nó. Nghĩ đi nghĩ lại mình còn đéo bằng con mèo.
 
 – Đm mực nhà mày chán vl
-
 – Đm chê thì cút, đồ ngon sang nhà thằng Quang ấy, lúc đéo nào cũng sang nhà tao
-
 – Đéo, nhà mày gần, tao bếch mông cái là đến, với lại ông bà già nhà thằng Dũng khó bỏ mẹ, ngại lắm
-
 – Vl mày mà cũng biết ngại á
-
 – Lại chả, cái mồm tao sang nhà nó chắc hôm nào cũng ăn bạt tai quá
 
 Hai đứa bọn tôi đến đại học thì kết nạp thêm thằng Quang vào hội. Thằng này thì kiểu nerd, cũng giỏi, thích cày game và giống con dở kia là ko thấy có hứng thú gì với chuyện trai gái. Đấy là tôi thấy thế chứ chúng nó tàu ngầm thì có giời mới biết được. À không, con Hương ko có người yêu vì nó chửi bậy nhiều quá, còn thằng Quang, nó cũng chửi bậy, nhưng là với bọn tôi thôi, chứ bập vào gái thì nó như cục cứt ngâm vậy, và thở ra câu nào là gái thấy thối câu đấy. Thỉnh thoảng bọn tôi hay tụ tập ở nhà tôi, rượu chè cờ bạc đủ cả, đương nhiên là ko có vụ hút hít cần cỏ gì cả, ông bà già thằng Quang làm công an, quản con cực kỳ chặt, đến lúc đi làm mới gọi là thả cho nó tí, với lại tôi cũng ko thích mấy thứ nghiện ngập đấy.
-
-
 
 ==================== Chương 6 ====================
 
@@ -536,17 +439,13 @@ CHAP 6
 Con điên kia dọn tủ nhà tôi nửa đêm thì về. Sáng dậy hôm sau tôi phải sớm lấy xe qua đón Trúc, đây là tuần đầu tiền đi làm kể từ khi hai đứa chính thức yêu nhau. Em vui lắm, còn tôi thì phải dậy sớm hơn để còn đi đón em. Bình thường em đi làm hay đi tàu điện, không thì có cái Mai Anh qua lai, giờ có tôi đưa đón lại thích quá. Tôi cũng thích, chả mấy khi hai đứa được thoải mái tâm sự như khi trên xe, chứ trên công ty thì lại phải im lặng nhắn tin. Mà vừa lái còn được sờ đùi em nữa. Công nhận đùi em vừa thon vừa mềm lại còn trắng. Em thì cứ để yên cho tôi sờ, mồm thì cứ cười nói ríu rít, nhìn chung là quen rồi. Thỉnh thoảng tôi đưa tay sâu hơn, gãi gãi quần lót em, em lại đánh yêu vài cái rồi lườm tôi cháy mặt. Chẹp, đi làm mà chỉ được ngắm em thì quả là bứt rứt khó chịu. Xách mông vào pantry thấy em cũng đang trong đấy. Quay qua thấy mọi người vẫn chăm chỉ làm việc, phòng nghỉ cũng không có ai. Tôi quay vào, ôm lấy eo em từ phía sau.
 
 – Kìa anh, mọi người thấy bây giờ – em quay người khẽ đẩy tôi ra
-
 – Nhớ em quá, mọi người đang làm, không ai nhìn đâu
-
 – Gớm, ngày nào cũng đi với nhau còn kêu nhớ, có mà nhớ cái gì ấy
-
 – Hi hi cứ em là nhớ rùi
 
 Nói rồi tôi lại hôn em một cái, em thì có vẻ hơi sợ, vừa hôn vừa phải nhìn xem có ai vào không. Được một lúc thì người em cũng thả lỏng. Tay tôi lại bắt đầu chu du khắp cơ thể em, từ eo chuyển sang đến mông, tôi lại nhẹ nhàng kéo váy em lên, luồn tay vào trong xoa mông em qua lớp quần lót.
 
 – Đừng anh, nhỡ có người vào thì sao
-
 – Không đâu, đang giữa giờ, mọi người còn đang làm mà
 
 Trên thì mồm hai đứa vẫn dính lấy nhau, tay tôi thì vẫn yên vị ở hai miếng bánh tròn lẳn. Kéo nhẹ hai mép quần lót em vào giữa, giờ tay tôi ôm trọn lấy cặp mông em mà nhào nặn. Người em mềm thật, chỗ nào cũng thấy mềm, tấm lòng cũng mềm nữa.
@@ -560,39 +459,26 @@ Bíp. “sang phòng anh nhờ”
 Ồ được đấy nhỉ, ok thôi. Đưa Trúc về xong quay lại nhà thay đồ tắm rửa rồi sang làm bữa, không quên mang theo dăm lon bia với cái gối tựa làm quà tân gia.
 
 – Hế lu chị, ơ mới có mỗi em thôi à
-
 – Ừ ở đây chị chả quen ai khác cả, mà hàng xóm tận tình giúp đỡ thế này phải mời riêng một bữa chứ
-
 – Vinh dự quá, hàng xóm có chút quà mọn tặng gia chủ
-
 – Hi hi chị xin, ăn luôn em nhỉ
-
 – Ok chị, triển thôi
 
 Bữa tân gia kiểu “truyền thống”: lẩu. Nhà ít người nên bà chị mới sắm cái bàn ăn bé tí, hai chị em lại bê đồ xuống ngồi đất, ở phòng khách tựa lưng vào sofa, vừa ăn vừa xem TV vừa chém gió. Tiết trời vẫn còn đang mùa xuân, ngồi ăn lẩu đã nóng rồi lại bia bọt, mà ngồi cạnh bà í còn thấy người cứ rạo rực hết cả. Bà í mặc mỗi cái áo ba lỗ rộng với cái quần đùi, cổ áo thì rộng, mỗi lần cúi xuống là lại thấy cái khe sâu hun hút, dù vẫn mặc áo lót nhưng cảm giác như nó cũng sắp bung đến nơi rồi. Ngồi ăn một lúc thì nóng quá, điều hòa vào cũng không ăn thua cho lắm. Ngồi ăn mà bà í cứ phẩy phẩy áo, tôi thì đã no lẩu rồi lại được dịp no mắt. Làm bữa lẩu xong thì dọn, cứ vứt vào máy rửa bát thôi. Hai chị em lại ngồi uống bia gặm mồi ăn tráng miệng chém gió tiếp. Hai chị em cũng hơi tây tây. Cơ mà bà í có cái bánh ngon quá.
 
 – Bánh chị mua đâu đấy, ngon thế
-
 – Tự làm đấy, mua đâu, ngon thật ko
-
 – Ngon, mà chị biết làm bánh cơ á
-
 – Này hơi khinh đấy, ngày xưa cũng đi thi có giải đấy nhé, hơi bị siêu luôn, chị còn chỉ cần nếm một lần là biết nấu y hệt luôn
-
 – Kinh, thế nếm cái là biết có nguyên liệu gì hay sao mà biết nấu luôn á. Em chả tin
-
 – Không tin thì lấy đồ ra đây, chị bịt mắt xong nếm, đảm bảo chuẩn luôn
-
 – Để em lấy đồ nhà em sang, chứ nhà chị chị thuộc hết rồi còn đâu
-
 – Được, chấp luôn
 
 Lóc cóc chạy về nhà lấy mấy thứ, vơ lấy mấy thứ lạ lạ xem bà í có đoạn được không, thử cho bà í 3 món xem. Lúc ăn thì không để ý lắm, giờ cho nếm thử thấy mồm bà í mút mút liếm liếm đồ ăn thấy nứng vl, người lại kiểu hơi rướn rướn để mút, cặp ngực lấp ló sau cái cổ áo, con chim bắt đầu ngỏng dần.
 
 – Cái này là kẹo dẻo que hàn quốc
-
 – Đúng rồi, tiếp nhé
-
 – Cái này là sá sùng
 
 Vãi, hack à, thế mà còn đoán được, để em thử mix vài thứ xem chị biết không
@@ -611,8 +497,6 @@ Mẹ, bà í nếm quả dưa chuột mà cảm giác bà í đang mút cu mình
 
 – Chuẩn đét, cuối nhé, đợi em tí
 
-
-
 ==================== Chương 7 ====================
 
 CHAP 7
@@ -628,11 +512,8 @@ Bà chị há mồm ra ngậm hết lấy đầu cặc rồi rồi giật mình 
 Mẹ, cố tình trả lời sai à. Đã thế thì sai phải phạt.
 
 – Sai rồi nhé, chị chịu phạt đi
-
 – Thôi đi, còn lâu, lúc đầu có nói là phạt đâu
-
 – Ơ ai bảo, sai thì bị phạt, quy luật muôn đời nay rồi
-
 – Thôi đang nóng lắm, tha cho chị đi
 
 Không biết, em cũng đang nóng, kệ chị
@@ -642,7 +523,6 @@ Không biết, em cũng đang nóng, kệ chị
 Đấy, bà chị cũng đang nứng cmnr. Cơ hội này không đến thì còn cơ hội nào nữa. Nhưng phạt gì nhỉ. Đúng lúc này, TV lại đang chiếu về món sushi trên cơ thể người. À, thế là có ý tưởng rồi.
 
 – Nãy em cho chị ăn nhiều rồi, giờ đến lượt chị đút cho em ăn nhé, nhưng bịt mắt lại.
-
 – Bịt mắt thì đút cho ăn kiểu gì
 
 Lấy một ít mứt, phết lên cổ bà í, rồi đặt bà í hơi ngả ra sofa
@@ -668,19 +548,16 @@ Khó thở quá, thôi vào việc chính thôi. Ngồi dậy đặt con cặc t
 Khít quá, đúng là ông chồng bỏ bê suốt, bà í nứng cũng không giải tỏa được. Con cặc vào sâu bên trong ấm sực, rồi cảm giác như bị búi thịt bó thít lại. May mà đã ra một lần rồi, chứ không thì quả này chắc trớ luôn quá. Đẩy ra đẩy vào đều đều, lúc này chả còn gì nữa, bà í cũng tự gỡ cái bịt mắt ra. Tôi cũng cúi xuống hôn bà í luôn. Tay bà í lại vòng qua ôm tôi, chân thì ngổng thẳng lên trời.
 
 – Bạch bạch bạch
-
 – Ư ư ư
 
 Được một lúc thì lật bà í lại, đổi sang kiểu chó, lại tiếp tục nhịp đẩy. Bà í cũng tự hẩy mông ra sau, tiếng da thịt chạm vào nhau ngày một to. Một tay nắm tay bà í, một tay thò xuống bóp vú, thằng em ở dưới thì tiếp tục khám phá hang động.
 
 – Bạch bạch
-
 – Nữa đi, ư ư ư
 
 Lồn bót quá, cảm giác nó cứ siết lại. Cứ thế này không biết trụ được bao lâu nữa.
 
 – Chi ơi lồn chị bót quá, phê quá
-
 – Chi sướng, ư ư, cho… Chi …. sướng nữa…..a…. a
 
 Dứt lời, cảm giác như có một dòng nước chạy ngược ngoài thân cặc. Chắc bà chị vừa ra rồi. Nhấp thêm vài cái rồi đẩy bà chị nằm nghiêng, chân gác lên vai tôi rồi tiếp tục hành trình kỳ thú. Lồn bà í đang ra một lần mà vẫn chưa hết bót, như kiểu đã thua game trước rồi thì bà quyết tâm thắng game này vậy. Mắt bà í nhắm nghiền, mồm thì vẫn há hốc vừa thở vừa rên.
@@ -690,12 +567,9 @@ Dứt lời, cảm giác như có một dòng nước chạy ngược ngoài th�
 Gạt chân bà chị sang, quay lại tư thế truyền thống. Con cặc đã bắt đầu phản ứng. Dập thêm dăm chục cái rồi tăng tốc.
 
 – Chi ơi Long raaa
-
 – Cho em điiiiiii – Vừa nói bà chị vừa lấy chân kẹp lấy hông tôi
 
 Tôi gồng người, đâm con cặc phát cuối lún cán rồi bùng nổ trong lồn bà chị. Lần thứ hai mà vẫn còn nhiều quá. Người tôi đổ gục xuống, bên trong con cặc vẫn đang giật giật. Lồn bà chị thì cứ siết lại theo nhịp giật của con cặc, cố nuốt lấy những giọt tinh cuối cùng. Mệt quá, cả hai thở hổn hển rồi lăn ra thiếp đi lúc nào không biết…
-
-
 
 ==================== Chương 8 ====================
 
@@ -703,12 +577,9 @@ CHAP 8​
 
 6h sáng, tỉnh, bia cũng tan. Bên cạnh bà chị đang ôm lấy mình ngủ ngon lành. Chắc cũng lâu lắm rồi bà chị không được thỏa mãn. Liếc thấy bắp tay bà chị cũng có nốt đỏ. À bà chị cũng có tiêm SInject. Cái này là một loại vi mạch siêu nhỏ, cấy vào máu và da, bản thân nó chứa các loại thuốc có rất nhiều công dụng. Đối với nữ thì giúp tránh thai, điều hòa kinh nguyệt, thậm chí chứa luôn cả vaccine ngừa mấy bệnh như kiểu HPV, của nam thì cũng tránh thai mà không ảnh hưởng khả năng sinh lý, giúp cả hai giới tránh bị HIV và các bệnh lây đường tình dục. Một sản phẩm tân tiến của y học mà không bị tác dụng phụ, có cái là 6 tháng đến 1 năm phải đi thay một lần. Bản thân tôi cũng đã tiêm một cái, thời nay gần như cứ đủ 18 tuổi là ai cũng đi tiêm cái này. Cái này giúp chúng tôi gần như có thể thoải mái sex mà không cần dùng bao hay sử dụng thuốc uống tránh thai như ngày xưa. Tôi khẽ cựa mình.
 
-
 – Đừng đi
 
-
 À, bà chị vẫn còn tỉnh. Mồm thì nói, tay bà chị bắt đầu luồn xuống dưới, nắm lấy con cặc đang xìu của tôi. Vẫn còn muốn nữa cơ à. Thôi thì tôi cũng chiều, tay tôi cũng nắm lấy mông bà í bóp nhẹ. Hai cái lưỡi lại quấn lấy nhau. Tay tôi lại mò sang khe suối, vl, ướt nhẹp. Không hiểu đây là chỗ tinh của tôi hôm qua hay là sáng sớm ra bà í đã nứng nữa, nhưng chắc là cả hai. Thọt một ngón vào hang rồi bắt đầu ngoáy. Người bà í giật lên mấy cái, rên ư ử, tay thì vẫn xóc nhẹ con cặc tôi. Được một lúc thì bà í bắt đầu đẩy tôi nằm ngửa ra, trườn xuống năm lấy con cặc tôi mút. Phê quá, phải nói kỹ năng thổi kèn của bà chị này tuyệt đỉnh. Cảm giác như con cặc tôi như cây cột, còn lưỡi bà í như một vũ nữ múa cột, xoay vòng, lên xuống rồi lại siết lấy, tạo ra những bài múa đẹp mắt. Tôi thì không được nhìn thấy nó đẹp thật không, cơ mà thằng em thì đang tán dương dữ dội phía dưới. Sáng sớm đã có người chăm sóc thằng cu thế này thì còn gì bằng. Thằng em thì ngỏng bên dưới, thằng anh thì cũng ngỏng lên nhìn xem tình hình như nào, chỉ thấy đầu bà chị nhấp nhô lên xuống. Bất chợt bà í lấy tay nắm lấy con cặc tôi xóc mạnh, mồm ngoạm lấy quả cà rồi mút mạnh, bên trong lưỡi bắt đầu cạ vào da bìu. Đm chết mất, con cặc lúc này chỉ trực bắn ra.
-
 
 Thích không
 
@@ -716,18 +587,13 @@ Có, chị bú giỏi quá – may quá, bà í dừng lại, không thì tôi l
 
 Nhưng nào bà chị có tha cho tôi ngay, trườn lên hôn tôi một cái rồi ngồi thẳng dậy, tay bà chị bắt đầu cầm con cặc tôi rồi chỉnh vào giữa háng, đầu cặc nhễu nước bọt lại hôn lấy cái cửa lồn rỉ nước. Ót, bà chị ngồi thẳng xuống, đầu ngửa lên thở hộc ra một cái rồi bắt đầu nhún. Phải công nhận lồn bà chị sinh con rồi mà vẫn bót quá, mà hình như đẻ thường chứ không phải đẻ mổ. Con cặc nãy giờ chắc chưa được một phút dính gió lạnh, vừa rời mồm bà chị xong lại được bao bọc tiếp bởi thớ thịt ấm nóng. Dâm thủy từ lồn chảy ra ngày một nhiều, ướt xuống cả bìu, nhễu ra bẹn cả hai, cộng hưởng với cũng cú nhún tạo thành một bản hòa tấu với tiếng chim hót ngoài trời cùng tiếng rên vang trời
 
-
 – Bạch bạch… chíp chíp…. bạch bạch bạch… aaaaaa…..
-
 
 Bên trên bà chị vẫn đang nhún nhiệt tình, mồm há hốc vừa thở vừa rên. Tay tôi thì cũng làm phận sự của nó, một tay bóp vú, một tay bóp mông. Cặp vú cương cứng lên, sệ xuống vì to, đỏ ửng cả một bên ngực. Tôi nhổm dậy, tay vẫn yên vị, đầu cúi xuống mút lấy cái đầu ti còn lại. Bà chị không nhún nữa, hông bắt đầu di chuyển ngang, ngoáy liên tục, tay thì ôm lấy đầu tôi.
 
-
 – Ôi, aaaaaa
 
-
 Bà chị nhiệt quá, cứ thế này lại ra nhanh mất. Kéo bà chị đứng dậy, đẩy ra chỗ bàn ăn rồi lại đút cặc vào làm thế doggy. Đầu bà chị gục hẳn xuống mặt bàn, tay bấu lấy hai cái mép cho khỏi trôi. Bàn ghế éo gì lỏng lẻo vl, mỗi nhịp dập của tôi thì cái bàn nó lại đập cành cạch vào tường. May bên tường này giáp nhà tôi, chứ không hàng xóm lại sang chửi. Chửi thì không biết được bao lâu chứ nhìn cảnh tượng này chắc họ cũng câm nín luôn mất. Ai bảo sáng sớm ra bà chị đã hư, cho chừa. “Tét”
-
 
 Hư này, dâm này
 
@@ -739,12 +605,9 @@ Tại…. tối qua …. ai … lừa nhét …. cặc … vào mồm chứ ….
 
 Mệt quá, sáng sớm chưa ăn gì đã phải vận động mạnh thế này. Thằng em bên dưới cũng thấy mệt, xin thằng anh cho nổ súng chào buổi sáng. Tôi bắt đầu tăng tốc, dập nhanh vào lồn bà chị, tay siết lấy hai bên hông. Bà chị rên càng ngày càng lớn
 
-
 – Á á á á ……
 
-
 Dập mạnh một phát lún cán rồi rút ra, đẩy bà chị ngồi bệt xuống đất. Hiểu ý, bà chị liền ngẩng mặt lên, há miệng ra chờ đợi. Phụt, phụt, phụt, từng dòng sữa ấm nóng bắn thẳng vào họng, bắn lên cả mặt, mũi bà chị, chảy nhễu xuống, hiện lên một vẻ dâm dục. Sau 2 shot tối qua có vẻ tinh còn chưa ra nhiều lắm, bà chị nuốt một cái rồi lấy tay quệt chỗ đang dính trên mặt, đưa vào mồm mút, xong lại cầm lấy cặc tôi mút cho sạch chỗ tinh còn sót lại trên đầu cặc.
-
 
 Bữa sáng ngon không chị
 
@@ -774,32 +637,23 @@ Không đâu, chỉ là vấn đề sinh lý và hoàn cảnh thôi, em hiểu m
 
 Chị ngồi thu mình lại, im lặng. Có lẽ lúc này tôi cũng không nên nói thêm gì nữa, chị cần một chút không gian tĩnh lặng. Khoác lại áo cho chị rồi quay về nhà tắm rửa, đi ăn sáng. Mệt quá, thế này gym gủng gì nữa. Nhắn cho Trúc mấy câu xem tình hình thế nào. Em gửi tôi mấy cái ảnh đi leo núi với đám bạn. Chà, sáng sớm cả hai đã vận động rồi, có cái là em đi leo núi, còn tôi lại đi đẩy xe bò…
 
-
-
 ==================== Chương 9 ====================
 
 CHAP 9​
 
 Ngày hôm nay cũng không có gì đặc sắc, check tí mail, ngồi café với mấy thằng bạn, Trúc thì đi chơi chưa về. Ngày thứ 7 trôi qua bình lặng. Thôi thì cứ ngủ nướng vậy.
 
-
 – Kính coong
-
 
 Tôi mở mắt dậy, giờ là 11h trưa, ai lại qua tầm này nhỉ. Nhìn qua màn hình chuông cửa thì không thấy ai. Đù mé, lại trẻ con nghịch chuông à. Thôi kệ.
 
-
 – Kính coong
-
 
 Đùa chứ bọn nhóc này hư vcl, bắt được bố đét đít cho chừa. Mở cửa ra xem đứa nhóc nhà nào nghịch ngợm thì
 
-
 – Tada, em về rồi nàyyyyyy
 
-
 Ô, là Trúc. Vẫn cái dáng vẻ đáng yêu đấy, em nhảy bổ vào ôm lấy cổ tôi
-
 
 Em đến anh mới dậy đúng không, như con mèo lười í, suốt ngày ngủ nướng
 
@@ -809,9 +663,7 @@ Khôngggggg, mồm anh hôi quá, thả em raaaaaa
 
 He he, ôm em vào rồi thì đời nào tôi chịu thả. Vần nhau một lúc, em lại đòi tôi đưa đi chơi. Vãi đạn, vừa đi leo núi về đã muốn đi chơi, người đâu nhiều năng lượng vậy, tôi mà là em thì leo núi xong tôi đã lăn cmn trên giường cả ngày rồi. Thôi thì chiều em, đánh răng rửa mặt tí rồi đưa em đi chơi, đi ăn. Công nhận em ăn nhiều thật. Từ hồi tán tôi cũng biết em ăn nhiều rồi nhưng càng ngày tôi càng cảm giác bụng em cứ như cái thùng không đáy vậy. Thế nhưng điều thần kỳ là người em lại vẫn gọn gàng đến lạ. Con gái quả là sinh vật khó hiểu nhất trên trái đất.
 
-
 Lượn lờ cả ngày thì cũng gần 10h đêm, đưa em về nhà. Cái khu nhà em như kiểu khu người già hay sao mà mới 10h đã chả còn mống nào trên đường, đèn thì tối om om.
-
 
 Sao khu nhà em cứ tối om thế nhỉ, mọi người 10h đã đi ngủ rồi à
 
@@ -823,24 +675,17 @@ Vâng được ạ,
 
 Thế là hai đứa cứ vừa đi bộ vừa tâm sự. Chỗ đường đi bộ vào còn sang sáng chút, ra đến chỗ vườn hoa thì tối om, xung quanh toàn cây là cây. May mà chỗ vườn hoa này ở nội khu, bên ngoài khu có tường bao, chứ không tối om này mấy ông nghiện lại vào chích thì nguy hiểm vl. Nhưng cái gì cũng có hai mặt của nó, chỗ tối lại là nơi an toàn cho các cặp đôi bên nhau. Kéo em ra một góc khuất sau một cái cây to rồi hôn. Tầm này em cũng không ngại nữa, trời tối có ai thấy đâu. Quá trình trao đổi enzyme cứ thế diễn ra, môi dính vào môi, lưỡi quện lấy lưỡi. Tay em quàng ôm lấy cổ tôi, tay tôi thì thọc vào cạp quần em, úp vào cặp mông mà xoa bóp. Ăn nhiều mà bụng em chả thấy to với mỡ, chắc vào hết mông với ngực. Được một lúc, tay tôi vuốt nhẹ khe mông. Người em hơi giật nhẹ. Một tay cứ xoa nắn, tạo hình một bên mông em, một tay thì cứ vuốt vuốt, gãi gãi khe mông rồi dần dần lần xuống dưới. Hơi thở em nặng dần. Ngón tay cứ thế trườn uống, từng phân một, thoáng cái đã chạm đũng quần lót, chạm phải một thứ nước nhờn nhờn, dinh dính. Tôi gạt khẽ gẩy ngón tay lại, đầu ngón chạm ngay vào mép lồn rồi miết nhẹ. Người em giật mạnh một cái, thở hắt ra. Nước nhớn ứa ra, ướt hết cả ngón tay. Bên dưới là thế, bên trên môi hai đứa đã rời nhau, tôi vén áo em, đẩy cái áo lót lên rồi ngoạm lấy cặp vú mà mút.
 
-
 – A … ư… đừng anh…đừng
-
 
 Thơm quá, không hiểu sao người em lúc nào cũng thấy thơm. Đầu vú thì trong mồm, mũi thì ngửi hương, món ngon này quả là khó mà cưỡng lại được. Nhẹ nhàng kéo quần với quần lót em xuống một chút, tầm này em không phản kháng gì nữa. Một tay ôm lấy eo em kéo lại, hai vú vẫn được mồm tôi chăm sóc kỹ càng, tay còn lại vòng ra đằng trước úp thẳng vào mu lồn em. Ơ vl, không có lông, nhẵn thín luôn, chắc là em wax. Không sao, càng thích. Bàn tay tôi cứ úp vào mu lồn em rồi xoa. Nước nhờn ra ngày một nhiều, ướt sũng cà bàn tay.
 
-
 – Ư ư …. anh ơi….. em…. Em
-
 
 Tay em vẫn cứ vần vò đầu tôi. Chẹp, có lẽ lúc này nên để em làm việc gì đấy có ích hơn. Rời vú, tôi lại bắt đầu hôn em, cầm lấy tay em đặt vào chỗ thằng nhỏ. Được một lúc, vẫn thấy em chỉ xoa xoa thằng nhỏ ở ngoài quần. Kiểu này chắc phải cầm tay chỉ việc rồi. Lại tự kéo khóa quần, lôi thằng nhỏ gân guốc ra. Biểu tình nãy giờ, thôi anh mày thưởng cho chút ít, sau còn làm việc chăm chỉ. Lại cầm tay em đặt vào thằng nhỏ xóc nhẹ. Em khẽ giật mình, nhưng cũng không bỏ tay ra. Cơn phê giờ đã lấn át lý trí rồi chứ còn gì nữa. Bàn tay em thon nhỏ, vuốt một đoạn mới hết chiều dài con cặc. Có lẽ giờ nó cần một nơi ấm áp hơn. Bỗng nhiên em giật nảy mình.
 
-
 – Chết, mẹ em gọi
 
-
 Giật cả mình. Hai đứa lại vội chỉnh quần áo, em thì nghe điện. Hóa ra mẹ em gọi xem đã đi leo núi về chưa, nào có biết con gái cưng vừa leo núi về đã tót sang nhà giai tí tởn. Cơ mà mấy lần toàn đang cao trào thì đứt dây đàn. Vừa ôm eo em vừa dẫn lên nhà, bóp mông em một cái.
-
 
 Nào anh, cái tay, người ta thấy bây giờ
 
@@ -860,12 +705,9 @@ Mặt em đỏ bừng, chạy vội vào nhà, bỏ lại mình tôi chơ vơ ng
 
 —
 
-
 Tuần này bận quá, việc thì nhiều, sếp thì ra một đống quyết định xuống, bên kinh doanh thì đẩy một đống hợp đồng lên, ra ngoài thì gặp đối tác, về công ty thì cái Mai Anh lại bắt đầu cà khịa, mệt hết chỗ nói. Mấy hôm nay quay như chong chóng, hôm nào cũng 11h đêm mới tạm xong việc nên cũng không đưa Trúc về được. Em ngồi gần tôi, biết tôi đang bận nhiều việc nên cũng không mè nheo gì, có hôm chạy ra chạy vào đã thấy có chai nước ép trên bàn, chặn lên cái note vàng ở dưới: “Nước tăng lực vị Trúc. Yêu anh <3”
 
-
 Đọc xong quay sang thấy em đang len lén cúi người bắn tim sang phía mình. Yêu quá. Có cô ny thế này ai mà chả thích cơ chứ. Làm một hơi rõ to rồi nhắn sang em
-
 
 Chơm chơm, dễ chịu quá
 
@@ -875,10 +717,7 @@ Thưởng gì thế, anh thích thưởng tinh thần cơ
 
 Nhắn xong quay sang nở một nụ cười nham hiểm. Có lẽ em cũng hiểu thưởng tinh thần nghĩa là gì, hai má lại đỏ ửng, mắt lườm tôi cháy khét lẹt.
 
-
 May quá, tuần này công việc đang tắc thì có nhiều biến số thuận lợi, thành ra các deadline hoàn thành xong sớm hơn dự kiến, làm nốt xuyên từ đêm thứ năm đến đầu giờ sáng thứ sáu kịp tổng hợp lập báo cáo. Khách hàng có phản hồi tích cực, sếp Hùng ưng lắm, rút túi ra thưởng nóng cho anh chị em mỗi người một ít, thực ra cũng không có bao nhiêu, chủ yếu để động viên tinh thần tập thể, vì cả tuần qua mọi người căng như dây đàn rồi. Ngồi thảnh thơi được một lúc, vừa lấy cái bánh lúc sáng Trúc mang cho ăn vội vừa check tin nhắn thì đã thấy tin nhắn của em từ nửa đêm…
-
-
 
 ==================== Chương 10 ====================
 
@@ -889,85 +728,59 @@ CHAP 10
 Ờ đấy hôm nay sinh nhật tôi, cả tuần bận quá quên bẵng mất, thế mà em vẫn nhớ được, còn nhắn tin chúc tôi đúng 0h đêm nữa. Cảm động rớt nước mắt. Từ hồi bố mẹ mất, tôi chỉ toàn đón sinh nhật một mình, lúc ở cùng cô chú cũng có chúc gọi là có, cho đến lúc ra riêng ở thì thôi hẳn, mỗi năm chỉ tự mua lấy cái bánh kem nho nhỏ rồi tự ngồi một mình.
 
 – Cám ơn em, anh cảm động quá, giờ mới hết bận để nhắn cho em được
-
 – Hôm nay anh yêu của em thích quà gì nàooooo
-
 – Anh quan trọng gì quà đâu, sinh nhật này được ở bên em là mãn nguyện rồi
-
 – Thì cũng phải tổ chức ăn uống gì chứ
-
 – Thế em sang nấu cơm cho anh đi, anh thích bữa cơm gia đình trong ngày sinh nhật
-
 – Đơn giản thế thui ạ, ăn trứng luộc với rau luộc nhé, hi hi
-
 – Cũng được, em nấu là anh thích rồi
-
 – Thế không được chê đâu đấy, tí em mua đồ rồi qua nhé
-
 – Ơ không lên nhà anh luôn à?
-
 – Không, em còn mua đồ sửa soạn rồi mới qua được chứ
 
 Ừ thì đợi vậy. Lát sau thấy em xin về sớm. Ha ha, em còn sốt ruột hơn cả tôi. Tan làm về nhà tắm rửa xong một lúc thì em cũng đến, tay xách một đống đồ. Bộ đồ công sở cũng đã được em thay ra, vận vào một chiếc váy xòe nhẹ màu hồng pastel, trông xinh xắn vô cùng, như một nàng công chúa vậy. Chả bù cho tôi thì quần đùi áo phông.
 
 – Ơ em đi đâu thế
-
 – Đợi tí em vào nhà vệ sinh thay đồ đã, mặc cái váy này nấu bất tiện lắm
-
 – Thì em cứ cởi ra thôi, thay đồ làm gì, tí đằng nào anh chả cởi
 
 Lại một cú lườm nguýt cháy mặt. Ban nãy bước vào em như một cô công chúa, giờ em như một người vợ nội trợ thực thụ với chiếc tạp dề bên bếp lửa hồng. Đời người đàn ông, ngoài sự nghiệp ra, được về nhà ăn bữa cơm ngon canh ngọt vợ nấu có lẽ cũng đã là một sự thành công lớn, một niềm tự hào trong cuộc đời. Ngắm em một lúc, tôi tiến lại ôm lấy em từ đằng sau, hôn lên chiếc cổ trắng ngần
 
 – Trúc của anh hôm nay cứ như người vợ damdang của anh vậy
-
 – Mơ nhé, hôm nay sinh nhật nên em chiều anh thôi, sau tự đi nấu nhé
-
 – Cũng được, năm nào ngày này em cũng nấu cho anh là được rồi, cám ơn em đã bên anh hôm nay
 
 Đặt lên môi em một nụ hôn, rồi tôi ra giúp em nấu cơm. Thoáng chốc mâm cơm đã sẵn sàng trên bàn, đủ các món mặn, canh rau. Có lẽ, đây là niềm hạnh phúc gia đình nhỏ nhoi xa vời mà tôi đã thiếu bấy lâu nay. Ăn xong là đến màn cắt bánh sinh nhật, thổi nến. Bộ đồ lúc em nấu cơm cũng đã được em thay ra, mặc lại chiếc váy hồng lúc mới đến. Em đặt một chiếc bánh con mèo, vì tôi tuổi mèo :)))), khui thêm 2 ly champagne. Mọi việc vẫn diễn ra như truyền thống, em hát, tôi thổi nến và ước. Tôi cũng chẳng có điều ước gì lớn lao, chỉ mong giây phút êm ấm gia đình này là mãi mãi…
 
 – Tèn ten, chúc mừng sinh nhật anh – em chìa ra món quà đã chuẩn bị trước
-
 – Gì đấy, cám ơn em, anh bóc luôn được không
 
 Vưng, anh bóc đi, hihi
 
 – Ồ, một chiếc đồng hồ. Tôi biết hãng này, hàng entry level thôi, giá trị chưa bằng một nửa chiếc tôi vẫn đang đeo, nhưng em tặng là tôi thích lắm rồi, với lại tôi biết em mới đi làm, mua được chiếc này cũng bằng gần cả nửa tháng lương của em.
-
 – Đẹp quá, cám ơn em, nhưng sau không phải mua quà cho anh đắt thế đâu
-
 – Thì quà sinh nhật đầu tiên của em tặng anh màaaa. Anh thích không.
-
 – Thích chứ, chỉ cần em bên cạnh anh ngày hôm nay là anh đã mãn nguyện rồi, chứ mọi năm anh toàn đón sinh nhật một mình
-
 – Sao lại thế
-
 – Ừ, bố mẹ anh mất từ khi anh còn bé rồi, anh ở với cô chú, nhưng sinh nhật cũng chỉ chúc qua loa cho có thôi, từ ngày anh lớn, ra riêng đi học đại học rồi đi làm thì mọi năm vẫn chỉ đón sinh nhật một mình. Thế nên năm nay có em ở bên cạnh anh là anh vui lắm. Lúc em nấu ăn, ngồi ăn với anh, tổ chức sinh nhật cho anh khiến anh cảm nhận được không khí gia đình, cảm nhận được tình yêu và sự ấm áp của em dành cho anh. Ngày đi làm, chiều tối về bên em, cùng ăn bữa cơm, cùng nhau vui đùa, cùng nhau thức dậy mỗi sáng, với anh, anh chỉ cần thế là đủ.
 
 Giọng tôi hơn run run, mắt em cũng rưng rưng ngấn lệ. Có lẽ em cũng cảm động bởi những lời tâm sự của tôi. Em nhoài người sang, ôm lấy tôi.
 
 – Vậy ngày nào em cũng sẽ ở bên anh nhé
-
 – Uh, ngày nào cũng nấu cơm cho anh ăn nhé, em nấu ngon lắm
-
 – Ứ, thế lúc đấy anh làm gì
-
 – Anh ngồi ngắm Trúc xinh đẹp đảm đang của anh nấu á
-
 – Xí, cái mồm dẻo quẹo chỉ được cái giỏi nịnh.
 
 Dẻo mới nhanh lấy em về làm vợ được
 
 – Ai thèm lấy anh chứ
-
 – Thế làm người yêu anh cả đời vậy, chỉ cần em yêu anh là anh mãn nguyện rồi
 
 Nhẹ nhàng, tôi lại đặt lên môi em một nụ hôn, ngọt ngào, nồng ấm. Không gian xung quanh như ngừng lại, khoảnh khắc này là mãi mãi. Thế giới này, căn phòng này, chỉ còn lại đôi uyên ương, tôi và em. Tiếng nhạc du dương nhẹ nhàng vang lên, ánh đèn trắng dịu đi, thay bằng sắc vàng nhẹ nhàng, trầm ấm. Đến một AI vô tri như Lily cũng đã tự điều chỉnh đèn và nhạc, tạo điều kiện cho đôi trẻ tiến vào tiên cảnh. Bế em vào phòng, từng bước, từng bước, nhẹ nhàng đặt em lên chiếc giường êm ái. Môi kề môi, lưỡi quấn lưỡi. Chiếc váy, rồi bộ đồ lót màu da của em lần lượt được cởi bỏ, tôi cũng vậy, chỉ còn hai tấm thân nguyên thủy.
 
 – Trúc ơi, anh yêu em
-
 – Em cũng yêu anh
-
 – Làm vợ anh nhé
 
 Em thẹn thùng khẽ gật đầu. Hai tay nắm lấy hai bầu vú em xoa nhẹ, môi tôi đảo từ tai em xuống đến cổ, mút, liếm. Người em run lên, hơi thở gấp gáp, hai tay bấu chặt lấy lưng tôi. Liếm một đường từ cổ xuống đến khe núi, lưỡi tôi đi đến đâu, người em lại run lên đến đó. Đẹp quá, quả là tạo hóa của thiên nhiên ban cho người con gái những gì đẹp nhất. Từ hồi yêu em, tôi cũng được tận hưởng hai trái đào này nhiều lần, nhưng có lẽ chẳng bao giờ hết chán nổi. Nó không to lắm, nhưng rất vừa tay, mềm mại, mịn màng, rung lên theo đường lưỡi và săn cứng theo nhịp tay. Đầu ti nhỏ, hồng hào, vểnh lên như mời gọi chiếc lưỡi của tôi đến chơi cùng. Bên mút bên nặn, ngực em không ngừng tạo thành những hình thù kỳ dị, rồi lại bật tưng lên, căng tròn đầy kiêu hãnh. Lưỡi tôi không liếm, đảo, rồi lại gẩy cái hột lạc ấy. Tay còn lại của tôi như một chàng trai du mục, thoải mái du ngoạn hết những đường cong tuyệt mỹ, rồi dừng lại trước một khe suối trong lành. Ướt đẫm. Cơ thể em như một bức tranh sơn thủy, đẹp và hữu tình. Trên có non cao trong xanh, dưới có dòng suối mát lành. Cổ họng tôi khô ran, thèm khát dòng nước mát ấy. Đẹp quá, đến giờ tôi mới được chiêm ngưỡng tuyệt phẩm hóa tạo hóa. Lồn em không có lông, hồng hào, hai mép khép chặt lấy nhau như con đập cố gắng ngăn dòng suối chỉ trực chờ xả lũ.
@@ -991,7 +804,6 @@ Con cặc đã sẵn sàng, quẹt qua quẹt lại, nhẹ nhàng hơi ấn đ�
 Em hét to, người giật mạnh. Lồn em siêt mạnh con cặc tôi. Nước mắt em trào ra.
 
 – Em đau…
-
 – Ngoan, đau một chút thôi hết liền ấy mà
 
 Hôn em một cái trấn an rồi chuyển sang cổ và ngực kích thích cho em quên bớt cái đau. Tiếng sụt sịt nhỏ dần, thay vào đó những tiếng rên nhẹ bắt đầu quay lại. Người em cũng đã thả lỏng bớt ra, không còn gống cứng như lúc tôi mới đâm cặc vào. Phải mất một lúc con cặc bên dưới mới thấy có vẻ dễ thở hơn. Nhẹ nhàng rút bớt cặc ra rồi đâm vào từng chút một. Lồn em khít quá, lúc rút cặc ra lồn em như kéo tôi lại, còn lúc vào lại như siết mạnh vào. Phải cố gắng tôi mới kìm nén không xuất ngay lúc này.
@@ -1017,19 +829,14 @@ Người em run bần bật, lồn bỗng nhiên siết lại, một dòng nư�
 Bỏ hai đùi em ra, tôi nắm chặt lấy eo em, đẩy con cặc lút cán vào lồn em. Người tôi gồng lên, thả vào trong em những gì tinh túy nhất của người đàn ông. Con cặc giật giật, bắn mạnh vào trong lồn em từng nhịp. Lồn em siết chặt lại, người run lên bần bật theo nhịp bắn, tay bấu chặt lấy đùi tôi. Tôi gục hẳn vào người em. Đôi môi lại bắt đầu tìm đến nhau.
 
 – Đừng rời xa em nhé
-
 – Uh, anh hứa
 
 Được lên thiên đường mà hai đứa nhễ nhại mồ hôi, cứ nằm thế được một lúc,
 
 – Dậy đi, cho em đi rửa
-
 – Thôi rửa làm gì, để đấy còn sinh cho anh đứa con
-
 – Ai thèm chứ, anh tự đi mà đẻ ấy
-
 – Thế cứ để thế cho sướng
-
 – Ghét anh, dậy điii
 
 Nói thế thôi chứ con cặc tôi cũng đã bắt đầu xìu xuống dần. Rút cặc ra khỏi lồn em, kéo theo một ít sữa đặc hồng hồng rỉ ra. Em đã chính thức trở thành người phụ nữ của tôi. Rửa ráy xong em vào, kéo chăn ra rúc vào lòng tôi nằm. Yêu quá, như một bé mèo con vậy. Tôi ôm em, xoa xoa tấm lưng mịn màng, ghé đầu ngửi lấy hương thơm từ mái tóc đen dài của em.
@@ -1037,8 +844,6 @@ Nói thế thôi chứ con cặc tôi cũng đã bắt đầu xìu xuống dần
 – Đêm nay ở lại đây với anh nhé
 
 Em không nói gì, khẽ gật gật. Hai thân thể trần truồng cứ thế ôm nhau ngủ đến sáng. Lily bắt đầu tự động tắt nhạc và đèn…
-
-
 
 ==================== Chương 11 ====================
 
@@ -1049,27 +854,18 @@ CHAP 11
 Trời đã sáng rồi cơ à. Quờ tay sang bên. Ơ, em đâu rồi nhỉ, nhưng áo lót vẫn ở đây mà. Lượn vào nhà vệ sinh không thấy. Ra bếp đã thấy em đang đứng lúi húi nấu ăn. Quần thì chả thấy đâu, mặc mỗi cái áo sơ mi, chắc là lấy trong tủ của tôi, với đeo cái tạp dề.
 
 – Hù
-
 – Anh nàyyy, làm em giật cả mình
-
 – Vợ yêu của anh làm gì thế
-
 – Em làm bữa sáng ạ
-
 – Có vợ thích thật
 
 Tay vòng lấy eo em từ đằng sau, em cũng ngửa đầu ra hôn tôi. Cơ mà tay tôi thì đâu có yên vị mãi trên eo em. Một tay xuống dưới, một tay lên trên. À thì ra em có mặc quần lót, nhưng ngực vẫn để trần.
 
 – Nào anh, đừng nghịch, để yên em làm
-
 – Kệ đi em
-
 – Thôi, cháy bây giờ
-
 – Ko sao, anh thích ăn cháy
-
 – Thôiii, để tí nữa
-
 – He he, thế tí nữa nhé
 
 Em nấu ăn ngon thật, đúng là con đường nhanh nhất dẫn đến tình yêu là qua dạ dày, mà cách giữ tình yêu cũng là qua dạ dày nốt. Thực ra cái ngon hay dở nó cũng không quan trọng lắm, quan trọng là được ăn món ăn mà người mình yêu nấu.
@@ -1077,33 +873,21 @@ Em nấu ăn ngon thật, đúng là con đường nhanh nhất dẫn đến tì
 Ăn sáng cũng không mất nhiều thời gian cho lắm, hai đứa không biết làm gì, lại ngồi xem phim. Tôi nằm gối đầu lên đùi em, tay thì mân mê chỗ bắp đùi non. Xem mãi thì đến một cảnh 18+. Chẹp, lại thấy nứng rồi. Ngửa đầu lên nhìn em, em cũng hiểu ý, cúi xuống tìm lấy môi tôi mà hôn. Tầm này thì còn gì nữa, lại lột em ra mà bú mút thôi.
 
 – Nhẹ thôi anh, em vẫn còn hơi ê
-
 – Tôi nắm lấy hai bầu vú em nhào nặn, mồm luân phiên mút hai đầu ti.
-
 – Ngực em đẹp quá
-
 – Anh thích không
-
 – Có chứ, ăn cả đời cũng vẫn thèm
 
 Em cười, đánh yêu tôi một cái, mắt thì vẫn khép hờ lại. Bên dưới thằng em đã bắt đầu biểu tình. Cầm lấy tay em dí vào chỗ con cặc. Lần này có lẽ em cũng quen hơn, tay nắm lấy xóc nhẹ. Tôi dịch hông ra cho em nắm dễ hơn, một tay rời vú ra, xoa lấy lồn em. Dâm thủy lại tuôn ra tràn trề.
 
 – Ơ ơ ư ….
-
 -Trúc ơi
-
 – Dạ…? ư ư ….
-
 – Em mút cặc anh nhé
-
 – Gì cơ ạ …. Ư ….
-
 – Mút cặc anh ấy
-
 – Không em không biết làm đâuuu
-
 – Như mút kem thôi mà
-
 – Ư … không em sợ lắm …
 
 Có vẻ cần phải động viên hoặc đào tạo thêm cô người yêu này mới được. Rời bỏ đôi vú, tôi quay xuống làm công tác uống nước nguồn. Người em uốn éo, giật giật, mồm thì há hốc ra thở.
@@ -1129,13 +913,11 @@ Người em cong lên. Bất giác một cảm giác ấm nóng, ướt át bao 
 Được một lúc, tôi ôm lấy em đỡ dậy, con cặc vẫn cắm nguyên trong lồn. Em hiểu ý, tay chống nhẹ vào ngực tôi, lấy lại tư thế rồi dập nguyên bộ mông tròn lẳn xuống.
 
 – Hự
-
 – Aaaaaaa…….
 
 Em nhấp như chưa bao giờ được nhấp vậy, nguyên cả sức nặng cơ thể đè lên con cặc tôi. Thứ an ủi duy nhất đối với nó là được tận hưởng những thớ thịt thơm phức, ấm nóng, ướt át. Tóc em xõa rũ rượi, mồm há hốc, bên dưới cặp vú nhảy tưng tưng theo nhịp dập lên xuống. Kích thích quá, tôi muốn nó ngay lập tức. Tay tôi với lên, nhào nặn hai chiếc bánh bao vừa trắng vừa tròn ấy. Em dập càng nhanh và mạnh. Ôi mẹ ơi, đúng là không thể đánh giá hết sức dâm của con gái tuổi này.
 
 – Bạch bạch bạch …….. báchhhhh
-
 – Aaaaaaa…….
 
 Em rên lên một tiếng dữ dội, người rung lên bần bật rồi đổ gục lên người tôi. Cái lồn siết lại, rồi nhả ra một dòng nước bao trùm lấy thân cặc. Người đâu trông nhẹ nhàng mảnh mai mà nặng vãi. Lật em lại, tay em chống vào sofa, tôi đẩy từ đằng sau một phát lút cán.
@@ -1145,12 +927,9 @@ Em rên lên một tiếng dữ dội, người rung lên bần bật rồi đ�
 Tay tôi cầm vào hông em kéo lại, kết hợp với nhịp dập vào của tôi. Tiếng da thịt va vào nhau chan chát ngày một to hơn. Cặp vú trễ xuống, lắc qua lắc lại. Một cảm giác căng cứng chạy dọc cơ thể. Thêm chừng chục phút, tôi bắt đầu dập thật nhanh để về đích.
 
 -Anh ra đây Trúc ơi, anh ra vào lồn em đây Trúc ơi….
-
 – Ư ư ư …. em sướnggggggg ….. á ….
 
 Vừa dứt lời, con cặc tôi lại bắn pháo hoa trong lồn em. Từng đợt, khắp mọi ngóc ngách trong cái hang động ướt sũng ấy. Tôi khuỵu chân xuống, ôm lấy em ngồi thẳng lên, hôn lên cổ em, tay vòng ra trước nhào nặn cặp vú. Em vẫn đang trong cơn phê, vừa rên khẽ vừa thở, đầu cắm mặt xuống sàn nhà, mông chổng lên. Tôi rút cặc ra một tiếng “póc”. Lồn em ngay lập tức khép chặt lại, ngăn không cho bất cứ giọt tinh nào chảy ra.
-
-
 
 ==================== Chương 12 ====================
 
@@ -1161,45 +940,29 @@ CHAP 12
 Tiếng em gọi với ra từ nhà tắm. Hành sự xong em thì đi tắm trước, tôi thì vẫn tồng ngồng ngồi xem phim. Bộ quần áo à, chắc là bộ lúc hôm qua em mặc nấu cơm. Mang vào thì thấy em đang xả nước trong phòng tắm kính.
 
 – Trúc ơi, anh tắm cùng nhéeee
-
 – Khônggg, anh đi ra điiii
-
 – Anh kỳ lưng choooo
 
 Tầm này còn ngại ngùng gì nữa chứ. Lúc đầu tôi vào thì cũng là kỳ lưng cho nhau thật, cơ mà cái phòng tắm kính bé tẹo, hai đứa người cứ áp sát vào nhau, hơi nước bốc lên càng hâm nóng bầu không khí chật hẹp. Tay thì vẫn kỳ lưng, cơ mà môi thì đã kỳ cọ môi nhau rồi. Ngực em đẫm nước, chà sát lên người tôi. Thằng em bên dưới bắt đầu ngỏng lên giật nhẹ, chọc vào bụng dưới của em. Tay em chộp lấy thằng cu, bóp nhẹ.
 
 – Bắt quả tang nhé, anh lại hư rồi, thế này mà bảo vào kỳ lưng cho em
-
 – Tại yêu em ấy chứ
-
 – Ghét, chỉ hành người ta là giỏi
-
 – Chứ không phải nãy em kêu sướng à
-
 – Anh nàyyy, thì lúc đấy …. nó tự nhiên thế, em biết đâu được
-
 – Hi hi, Trúc ơi
-
 – Dạ?
-
 – Em thổi kèn đi
-
 – Ơ sao lại thổi kèn? – Mặt em hơi ngơ ra, mất một lúc mới vắt đầu hiểu ra vấn đề – Mút cái đấy á? Không đâuuuuu
-
 – Nãy em cũng mút rồi mà, nước rửa trôi hết rồi, sạch lắm
-
 – ứ
 
 Mồm thì ứ nhưng người em vẫn quỳ xuống, tay xóc nhẹ, mắt nhìn trân trân vào thằng nhỏ.
 
 – Anh ơi sao nó to thế, nóng nữa
-
 – Thế mới làm Trúc của anh sướng chứ
-
 – Hứ
-
 – Mút nó đi em
-
 – Không, em nhìn thôiiii
 
 Làm gì có kiểu con gái nào cặc để trước mặt rồi còn kêu chỉ nhìn thôi chứ. Tôi hẩy nhẹ mông, đầu cặc hôn nhẹ lên môi em một cái. Em hơi giật người lại, nhưng rồi đôi môi cũng mở ra đáp lễ nụ hôn vừa rồi của thằng nhỏ.
@@ -1209,11 +972,8 @@ Làm gì có kiểu con gái nào cặc để trước mặt rồi còn kêu ch�
 Đầu em bắt đầu những chuyển động ra vào đều đặn. Tay em vẫn cầm ở gốc cặc, nửa đầu cặc thì là lãnh địa của đôi môi em. Được người yêu mình thổi kèn cho còn gì bằng nữa, cơ mà Trúc chưa có kinh nghiệm gì, răng môi lẫn lộn.
 
 – Ái
-
 – Sao thế anh, em làm anh đau ạ
-
 – Ừ hơi đau tí thôi, em đừng dùng răng, chỉ dùng môi với lưỡi thôi
-
 – Dạ
 
 Em lại tiếp tục công việc của mình. Tôi đứng yên cho em mút, không tác động thêm gì cả. Lúc này nên để em tự nguyện thì hơn. Cứ thế này chắc em hơi mỏi cổ. Mất một lúc, con cặc mới bắt đầu có tín hiệu muốn xuất.
@@ -1227,11 +987,8 @@ Em hơi giật mình, mồm vội nhả con cặc tôi ra, tay vẫn nắm lấy
 Em mút lấy chỗ tinh còn sót lại. Tinh trùng trên mặt em cũng bắt đầu chảy xuống khóe miệng. Mặt em hơi nhăn lại
 
 – Mùi quá
-
 – Uh nhưng bổ lắm đấy, giúp da đẹp hơn luôn.
-
 – Điêu, ai bảo thế
-
 – Ơ khoa học chứng minh nhé
 
 Em cũng bán tín bán nghi, liếm chỗ chỗ tinh trên khóe miệng, mặt vẫn nhăn nhăn ngờ vực. Em có vẻ không thích mùi này cho lắm, cơ mà vẫn liếm, phần vì chiều tôi, phần vì có vẻ cũng hơi tin tin vào cái lý thuyết làm đẹp kia.
@@ -1239,11 +996,8 @@ Em cũng bán tín bán nghi, liếm chỗ chỗ tinh trên khóe miệng, mặt
 Quần thảo từ đêm đến sáng, hai đứa mệt đứt hơi, cũng đã đến lúc tôi phải đưa em về để mai còn đi làm. Bước ra cửa đã thấy chị Chi hàng xóm đi đâu về.
 
 – Hê lô em, ủa ai đây, người yêu à
-
 – À vâng, đây là Trúc, người yêu em, còn đây là chị Chi, hàng xóm mới chuyển đến cạnh nhà anh
-
 – Em chào chị ạ
-
 – Uh chào em, xinh quá, nhất cậu Long rồi nhé
 
 Hi hi, em cám ơn chị
@@ -1255,9 +1009,7 @@ Chuyển phiếm thêm dăm câu rồi đưa em về nhà. Quay lại lại th�
 Đột nhiên bà chị tiến đến, tay nắm lấy con cặc tôi, mặt hiện lên chữ dâm vcđ, ghé tai nói thầm
 
 – Đêm qua chắc vui lắm ha, khỏe thế cơ mà
-
 – Ơ, chị biết à
-
 – Có gì mà không biết, chắc hôm qua quên đóng cửa sổ hả, tiếng con bé hét lên to thế cơ mà, chắc lần đầu phải không, nhìn dáng đi thôi cũng đã biết rồi, sướng nhé
 
 Tầm này thì chối gì nữa, cười ngượng một cái với bà í thôi chứ cũng chả biết nói gì.
@@ -1266,14 +1018,11 @@ Tầm này thì chối gì nữa, cười ngượng một cái với bà í thô
 
 Nói xong bà chị quay vào nhà. Tôi cũng hiểu ý chị và cũng thấy thương cho hoàn cảnh của chị. Mối quan hệ giữa chúng tôi đơn thuần chỉ là về thể xác và nói đúng ra là sai trái. Có thể một vài lúc yếu lòng, chị cần có một người để che chở, để bù đắp những khoảng trống của dục vọng, nhưng trên hết, chị vẫn cần làm tròn bổn phận của một người vợ, một người mẹ.
 
-
-
 ==================== Chương 13 ====================
 
 CHAP 13​
 
 Thoắt cái cũng được gần một tháng kể từ ngày tôi và Trúc bắt đầu hẹn hò. Nhìn chung cuộc tình hai đứa vẫn đang trải màu hồng, hai đứa cứ sểnh ra là đi ăn, đi chơi, mua sắm, em vui vì được tôi cưng chiều và ngược lại, em cũng rất chiều tôi trong khoản tình dục.
-
 
 Xì xụp…
 
@@ -1281,18 +1030,13 @@ Xì xụp…
 
 Căn phòng độc chỉ có tiếng mút lồn và tiếng rên của em. Vẫn như thường lệ, mọi việc vẫn diễn ra trong căn nhà nhỏ của tôi, phần vì em ở chung với bạn còn tôi thì ở riêng một mình một nhà, làm gì cũng tiện hơn, đỡ ngại ai.
 
-
 – Vào đi anh….
-
 
 Cầm con cặc căng cứng gân guốc, quệt quệt đầu cặc quanh mép lồn em rồi tôi đút một phát lút cán.
 
-
 – Aaaa… ư… ư….
 
-
 Có vẻ như Trúc rất thích trò này của tôi và tôi cũng khá là khoái, mỗi lần đút vào một phát như này, con cặc đang trong không khí lạnh lẽo bỗng nhiên được làm ấm lại, bao quanh bởi những thớ thịt nóng bỏng, siết chặt mạnh mẽ nhưng cũng rất dịu dàng âu yếm. Sau lần đầu tôi lấy đi cái ngàn vàng của em, chúng tôi cũng sex thường xuyên nhưng lồn em cũng chỉ có vẻ dãn ra chút tí xíu, vẫn bót kinh khủng. Mỗi cú nhấp là mỗi lần con cặc phải đấu tranh với những múi cơ chỉ trực bóp nghẹt lấy thằng bé.
-
 
 Bạch bạch….
 
@@ -1300,12 +1044,9 @@ Ah.. ah..ah
 
 Trúc cứ nắm và tập đánh vần, hai tay bấu lấy chân tôi, mắt nhắm nghiền, tiếng em vang khắp phòng. Em bây giờ cũng thoải mái hơn với việc rên to, cơ mà với một cô gái trong trắng mới yêu lần đầu thì có lẽ cần phải đào tạo thêm một chút để tạo cảm giác hưng phấn hơn.
 
-
 – Sướng không em
 
-
 Em vẫn chỉ rên ư ử, không nói gì. Tôi thúc thêm một cú mạnh.
-
 
 A… ứ… sướng… ạ.
 
@@ -1335,12 +1076,9 @@ Sướng gì cơ….
 
 Chữ lồn vừa phát ra, tôi bắt đầu dập lia lịa vào lồn em, từng cú thật nhanh, thật mạnh, như đền đáp sự cố gắng của em vừa rồi vậy. Tay em bấu chặt hơn vào đùi, mắt nhằm nghiền, đầu lắc qua lắc lại. Con cặc liên tục dùng đầu của mình đánh vào bức tường thịt mềm mại trong cơ thể em rồi đón nhận một cú bóp thật mạnh. Tôi nhấc hông em lên, đẩy vào thật mạnh, con cặc ngập sâu trong lồn em đến tận gốc rồi xối thẳng thứ nước sốt trắng đặc quánh, quện với những miếng thịt mềm mại làm nên món ăn thăng hoa của tình yêu.
 
-
 – Chụt ….
 
-
 Tôi có thói quen mỗi lần xong là đều hôn khắp người em, để em cảm nhận được sự ấm áp, âu yếm của mình sau mỗi lần thăng hoa, quan trọng là cơ thể em đẹp quá, tôi không thể nào chối từ tuyệt tác của tạo hóa được, không nâng niu nó thì quả là có lỗi với cái đẹp.
-
 
 Muộn rồi anh, đưa em về đi, mai còn đi làm nữa
 
@@ -1362,7 +1100,6 @@ Cái đấy còn phải xét nhá, tiêu chuẩn làm chồng em cao lắm
 
 Tôi đến méo mặt vì cô người yêu này, gạ ở chung thì mãi không chịu, đành đưa em về. Bước ra cửa thì đang thấy một người đàn ông kéo cái vali đi từ nhà hàng xóm ra, theo sau là chị Chi.
 
-
 Ơ chị, đây là..?
 
 Ơ em, đây là anh nhà chị, còn đây là Long, hàng xóm nhà mình anh ạ
@@ -1370,7 +1107,6 @@ Tôi đến méo mặt vì cô người yêu này, gạ ở chung thì mãi khô
 Chào em, anh tên Huy – anh chìa tay ra bắt tay
 
 Bàn tay chắc nịch, thô ráp của một người đàn ông khá cao lớn, rám nắng của công trường.
-
 
 Vâng, em là Long, tối muộn rồi nhà mình định đi chơi đâu à
 
@@ -1380,22 +1116,17 @@ Vâng, em là Long, tối muộn rồi nhà mình định đi chơi đâu à
 
 Hai nhà cùng đi thang máy xuống với nhau, chuyện trò cũng không có gì nhiều, chủ yếu là tôi và anh xã giao vài câu liên quan đến nghề nghiệp, công việc. Ông anh này về lúc sáng sớm rồi tối muộn lại ra công trường trong miền Trung, có vẻ cực kỳ bận rộn, thảo nào cứ mãi bỏ bê bà chị với đứa con quanh bốn bức tường.
 
-
 Tối hôm sau, đang ngồi xem tv thì bà chị nhắn
-
 
 – Lát qua nhà chị chơi không?
 
-
 Ồ, bà chị chắc lại nứng rồi, cơ mà chồng vừa về hôm qua thì chắc cũng trả bài rồi mà nhỉ. Thôi cứ sang chơi xem sao. Ăn uống tắm rửa xong qua gõ cửa.
-
 
 Bé ngủ chưa chị?
 
 Uh ngủ rồi, vào đi, đợi tí chị nhét đồ vào máy giặt cái đã
 
 Đậu xanh, bà chị ở nhà mặc cái váy ngủ mỏng tang, có mỗi chỗ ngực là có tí ren che lấy cái đầu nhũ. Váy dài đến nửa bắp đùi, nhìn xuyên được quả quần lót hồng của bà chị. Đi theo bà chị đến chỗ máy giặt, thôi thì cũng chả biết làm gì, cứ để bà chị bỏ đồ rồi vào máy, mồm thì chém gió linh tinh. Cơ mà cái tướng bà chị thì gợi dục kinh khủng, quỳ xuống trước cái cửa máy giặt, tay với đầu thì lúi húi, mông thì chổng ngược lên về phía tôi, đập thẳng cái đũng quần lót vào mắt.
-
 
 Ơ cái khuy bung đâu rồi í nhỉ
 
@@ -1405,43 +1136,31 @@ Hả? chị cần em giúp gì không?
 
 Đầu bà chị chui hẳn vào trong cái máy giặt ngó nghiêng, mông càng lúc càng chổng lên. Chị mời thì em xơi vậy, chị đang làm việc thì em cũng nên làm việc của mình. Tốc cái váy ngủ của bà chị lên ngang bụng rồi kéo tụt cái quần lót của bà chị xuống đầu gối, tay tôi bụm lấy mu lồn bà chị rồi day qua day lại.
 
-
 – Ôi ôi em, từ từ đã, ư…
-
 
 Người bà chị giật nảy lên, đầu vẫn chui trong cái lồng giặt, một tay thì chống một tay cứ quờ quờ ra sau. Được một lúc thì nước lồn trào ra ướt cả tay. Công nhận bà chị nhanh nứng thật. Móc con cặc căng cứng ra rồi chỉnh ngay cửa lồn bà chị.
 
-
 – Chị cứ làm đi, để em giúp cho
-
 
 Dứt lời tôi đẩy hông về phía trước, con cặc đâm ngập trong cái lồn ướt nhẹp. Con cặc đi ra đi vào một cách trơn tru, còn đầu bà chị cũng đi ra đi vào cái lồng giặt theo nhịp nắc. Tay bà chị thì tự bịt mồm cho khỏi phát ra tiếng rên to, chắc sợ con bé tỉnh giấc.
 
-
 – Ưm, um…….
-
 
 Tiếng da thịt va vào nhau lạch bạch hòa cùng tiếng nước nhờn nhóp nhép. Tôi với tay kéo cái dây áo ngủ xuống, luồn bóp lấy vú bà chị. Khổ nỗi cái chỗ máy giặt nó là sàn gạch, làm tư thế này được một lúc là thấy đau đầu gối. Tôi liền kéo bà chị dậy, đặt lên ngồi trên nóc cái máy giặt, chân banh ra chổng ngược lên, hai tay chống ra sau. Người tôi cũng khá cao nên chỉ cần rướn tí là đẩy được con cặc vào một cách thoải mái. Bà chị thì vẫn cứ nhắm nghiền mắt tận hưởng, tay vẫn bụm miệng cho khỏi kêu to.
 
-
 – Nhanh, ưm…. Nhanh không con bé tỉnh…..
-
 
 Bà chị càng ngày càng nứng. Cái áo ngủ sệ xuống để lộ ra cặp vú cương cứng đung đưa theo nhịp nắc. Bên dưới nước lồn bà chị chảy ra ồ ạt, chảy ra xuống cái vỏ máy giặt. Cơ mà bà chị vẫn đang lạc trong cơn sướng lẫn cái lo sợ con bé tỉnh dậy lại tìm mẹ. Tôi cũng hưởng ứng dập thật nhanh.
 
-
 – Ưm…. sướng…. Chi sướng… ưm… nhanh lên…. em sướng….
 
-
 Nhấp thêm một lúc thì thấy mỏi quá, chân vừa phải kiễng mà tâm lý cũng hơi sợ con bé nhà chị tỉnh giấc mà thấy cảnh tượng này thì không hay cho lắm, làm cơn xuất đến nhanh hơn.
-
 
 Long ra, Long ra đây…
 
 Cho em, cho Chi điii
 
 Tôi liền rút con cặc ra, đứng lùi lại. Bà chị cũng nhanh chân quỳ xuống, tay nắm lấy con cặc tôi sóc nhanh, mồm há rộng ra chờ đợi từng cú bắn. Phụt, phụt, phụt, từng dòng sữa trắng bắn thẳng vào vòm họng bà chị, một vài giọt bắn lên cả mặt. Bà chị nuốt cái ực hết chỗ tinh trùng trong mồm rồi mút lấy cái đầu khấc, tay sóc nhẹ cho tinh ra hết hẳn. Cái ánh mắt lẫn vệt tinh trùng càng làm rõ lên vẻ dâm đãng quá sức của bà chị.
-
 
 Ngon không
 
@@ -1453,17 +1172,13 @@ Không, Chi thích
 
 Bà chị mút cặc xong, hôn phớt tôi một cái rồi đuổi về, kêu vào với con. Phụ nữ thật khó hiểu. Cảm giác như tôi vừa đóng vai một cái sextoy để thỏa mãn bà chị hàng xóm này vậy. Lại lật đật đi về nhà, thôi thì làm giấc mai đi làm vậy.
 
-
-
 ==================== Chương 14 ====================
 
 CHAP 14​
 
 – Anh ưi, tối qua nhà em chơi hông
 
-
 Ủa, giờ mới đang giữa tuần mà nhỉ, mà tự dưng em lại rủ đến nhà em chơi. Tôi thì cũng không vấn đề gì, chỉ có cái em ở cùng với bạn nữa, ko biết người ta có đồng ý không
-
 
 Uh, nhưng còn bạn của em nữa mà, như thế có tiện không?
 
@@ -1475,16 +1190,13 @@ Dạ <3
 
 Tan làm, tôi phi lên nhà, vơ lấy bộ quần áo để mai thay đi làm rồi bỏ vào một cái túi rồi vứt ra ghế sau xe. He he đêm nay lại một đêm mất ngủ nữa đây.
 
-
 Đến nơi, căn hộ của em cũng nhỏ nhắn, cỡ 40m2, 1 ngủ 1 vệ sinh, cũng không vấn đề gì, 2 người ở thì thuê phòng như thế là vừa vặn nếu không có nhu cầu gì quá to tát. Nhà con gái có khác, ngăn nắp sạch sẽ vãi. Nhà tôi thì cũng tương đối sạch, cơ mà đa phần là do Lily điều khiển mấy con robot là chính, chứ tôi cũng lười chảy thây ra. Phòng ngủ em thì chia 2 giường hai góc, mỗi đứa một cái, kiểu giường liền tủ, tận dụng không gian là chính. Bữa ăn hôm nay thì chúng tôi gọi về cho tiện.
-
 
 À mà anh xem hộ em cái kính với, nó bị sao ấy, cứ toàn nhận lệnh sai thôi.
 
 Uh đưa anh xem thử nào, cấp quyền cho anh đi.
 
 Thường mỗi kính sẽ gắn liền với đặc điểm sinh trắc của chủ sử dụng, thường gồm cả quét võng mạc và vân tay trên gọng kính. Để xem nào. Tôi cũng không phải dân chuyên, cơ mà mấy cái lỗi lặt vặt thì vẫn có thể tự mò ra sửa được. Ngồi một lúc thì cũng sửa được, một vài lỗi cài đặt đơn giản. Em thì vẫn đang rửa bát. Tự dưng tính tò mò trỗi dậy. Thử check tin nhắn xem. Cũng chả có gì đặc biệt, toàn tin nhắn công việc hoặc với đám con gái. Ngó qua trình duyệt thử, không biết ở nhà em hay làm gì. Xem nào, váy, áo, giày, dép, toàn đồ con gái. Ơ cái gì đây. “Bí quyết khiến chàng lên đỉnh”. “hướng dẫn thổi kèn”. Hahahaha, chết với em mất, hóa ra độ này cũng chịu khó tìm hiểu sau cái hôm đầu tiên em thổi kèn cho tôi mà dùng răng làm tôi bị đau. Trúc của tôi cũng dâm ngầm ra phết. Để rồi xem hôm nay em thực hành thế nào, học lý thuyết cũng mấy hôm rồi chứ cũng ít đâu. He he.
-
 
 Bắt quả tang em nhé, dạo này học hành chăm chỉ ghê, định dụ anh đúng không
 
@@ -1495,7 +1207,6 @@ Bắt quả tang em nhé, dạo này học hành chăm chỉ ghê, định dụ 
 Không biết đâu, trả em đâyyyy
 
 Tôi thì vẫn cười ha hả, mặt em vẫn cứ đỏ bừng lên, vừa đánh tôi vừa cố giật lại cái kính. Hai đứa vật lộn một lúc, rồi xong em cũng nằm gọn trong vòng tay tôi.
-
 
 Nãy ăn no rồi, em ăn nữa không
 
@@ -1511,37 +1222,27 @@ Không, ai cần giỏi chứ
 
 Mồm lại ứ, nhưng em vẫn quỳ xuống ngồi giữa hai chân tôi, kéo quần tôi xuống. Tôi nằm ngửa ra sofa bắt đầu công cuộc tận hưởng
 
-
 Hi hi, sao lại bé thế nàyyy
 
 Nó đợi em làm nó lớn lên đấy
 
 Con cặc đang xìu của tôi nằm gọn trong mồm em, bắt đầu lớn dần lên. Bao nhiêu lý thuyết chắc cũng được em vận dụng hết, chắc khỏi phải nói nữa, phê không tưởng. Tay em chỉ cầm gốc cặc bằng hai ngón để giữ chứ không còn nắm bằng cả bàn tay nữa. Mồm bắt đầu mút sâu hơn, kết hợp với liếm. Tiếng nước bọt trong mồm em vang lên
 
-
 – Ụp, ụp….
-
 
 Quả là một bước tiến lớn. Công nhận em cũng chịu khó học ghê thật. Mồm em mút lấy con cặc, nuốt sâu xuống, môi cố gắng chạm đến tận gốc, tay em cầm hai viên bi tôi xoa nhẹ. Em hơi nấc lên một cái. Có lẽ còn chưa quen lắm với việc đầu cặc tôi chạm sâu đến tận họng. Em tạm nhả con cặc tôi ra để thở, nước bọt nhễu cả ra, chảy xuống bìu với tay em, lưỡi bắt đầu liếm liếm, chà xát phía dưới đầu cặc. Chắc bao nhiêu lý thuyết học được em cố vận dụng cho bằng hết. Và thành quả tôi cũng sớm đền đáp cho sự cố gắng của em.
 
-
 – Anh sướng quá Trúc ơi
-
 
 Em không nói gì, ngước mắt lên nhìn, cười híp lại trong khi mồm vẫn lên xuống trên con cặc căng cứng của tôi, rồi lại nhả ra, làm một đường từ gốc lên đến đầu cặc. Nhìn em lúc này dâm khó tả. Tôi cúi người xuống, tay thò vào cổ áo em bóp lấy cặp vú. Giờ em ở nhà với tôi thì toàn thả rông, cũng quen rồi. Lấy ngón tay gẩy gẩy hai đầu ti, ngực em bắt đầu săn lại. Em vừa mút cặc tôi vừa rên nhẹ trong cổ họng
 
-
 – Ưm, ưm….
-
 
 Con cặc bắt đầu không chịu nổi sự dâm tà của em, tôi ngồi ngửa ra, các cơ căng cứng lại.
 
-
 – Trúc ơi anh raaa
 
-
 Em không dừng lại mà còn tăng tốc, đầu lên xuống lia lịa. Con cặc không chịu nổi nữa, bắn thẳng vào trong mồm em. Mắt em nhắm nghiền, mũi chun chun lại, cổ họng bắt đầu nuốt từng đợt nghe tiếng ực ực. Tinh trùng ra nhiều quá, có lẽ em phải cố gắng mới nuốt hết, không để trào ra. Xem chừng có vẻ cặc tôi đã ngưng xuất, tay em cầm lấy gốc cặc, xóc nhẹ cho tinh ra hết hẳn rồi mút cái chụt, nuốt lần cuối trước khi chạy ra lấy cốc nước đầy uống một hơi.
-
 
 Anh ơi nồng quá – em lại sà vào lòng tôi
 
@@ -1551,14 +1252,11 @@ Nhưng mấy trang web kia bảo đàn ông thích được phụ nữ nuốt ti
 
 Thương em quá, tôi ôm em chặt hơn, tay vuốt mái tóc dài óng mượt, đặt lên trán em một nụ hôn nhẹ nhàng. Phải nói về khoản tình dục, em chiều tôi hết mực. Bởi vậy mà tôi lại càng thấy yêu em hơn, muốn dành cho em những gì tốt đẹp nhất.
 
-
-
 ==================== Chương 15 ====================
 
 CHAP 15​
 
 Hai đứa lại bật phim lên xem. Thời đại này các nền tảng xem trực tuyến cũng sẵn nên gần như người ta ra rạp chủ yếu để tận hưởng không khí, hoặc xem những phim bom tấn sử dụng công nghệ tân tiến hơn mà TV gia đình không có. Xem xong một bộ, lúc này cũng đã gần 11h.
-
 
 Bạn em bao giờ về í nhỉ
 
@@ -1570,19 +1268,15 @@ Anh thèm quá, giờ đến anh trả công em nhé – tôi hôn lấy em, tay
 
 Bế thốc em vào phòng, kéo quai váy ngủ của em xuống, đầu tôi lại vục vào ngực em say sưa bú mút. Nhào nặn, xoa bóp, cắn, liếm, mút, không còn chỗ nào trên ngực em còn khô cả. Cặp vú đỏ ửng lên, giương cao mời gọi. Tôi cầm tay em đặt lên quần. Giờ em cũng đã tự giác biết cho tay vào kéo lấy con cặc tôi ra xóc nhẹ.
 
-
 Ư ư…..
 
-
 Lột cái váy ngủ của em ra, tiện tay kéo luôn quần lót, em khẽ nhấc mông lên để tôi dễ thao tác. Tay em cũng tự giác lột quần tôi ra, hai đứa lúc này đều trần truồng. Mồm tôi chuyển xuống địa bàn bên dưới làm vài đường.
-
 
 Ư ư…. Ahhh
 
 Xì xụp….
 
 Người em ưỡn lên, tay víu lấy đầu tôi ấn thêm về phía lồn em. Hic, sức dâm quả là mãnh liệt. Phải trêu em một tí mới được. Tôi ngồi dậy, đưa con cặc đang cương cứng chà chà vào mu lồn em, thỉnh thoảng lấy đầu cặc gẩy gẩy vào khe lồn rồi lại lấy ra, quẹt vào hai bên bẹn.
-
 
 Ư ư, cho em điiiii
 
@@ -1596,12 +1290,9 @@ Anh cho vào nhé, Trúc ơi, anh địt em nhé
 
 Chỉnh con cặc giữa lỗ lồn em, dập một phát lút cán. Người em giật mạnh, tay víu lấy đệm thở hồng hộc.
 
-
 AAAAAA……
 
-
 Nhịp cặc lại ra vào đều đặn trong lồn em. Những tiếng chop chép cứ thế vang lên. Da thịt cứ thế bập vào nhau rồi lại tách rời. Con cặc cứ thế đón nhận từng cú siết. Không hiểu sao lồn em có thể kỳ lạ như vậy, cái này có khi là cơ địa hay bản năng gì đó, thằng em tôi vất vả lắm mới có thể chịu đựng sự tra tấn sung sướng này.
-
 
 Sướng quá, Trúc ơi, địt em sướng quá
 
@@ -1625,30 +1316,21 @@ Vậy anh địt em nhé, địt lồn em nhé
 
 Sau trăm cú dập, tôi xoay người em lại, doggy. Tôi ngồi trong, đầu em quay ra ngoài, chống tay vào mép giường. Mỗi cú dập lại làm em chúi người về đằng trước. Tay tôi lại cầm một tay em, tay còn lại vòng ra trước bóp lấy một bên vú.
 
-
 Ư ư.. ah ah….
-
 
 Đang dập từng cú mạnh mẽ vào lồn Trúc thì tôi có cảm giác có cái gì đó không đúng lắm. Liếc ra thấy cửa phòng hơi hé mở, hình như có ai đang nhìn trộm chúng tôi. Trông dáng người có vẻ là con gái. Không lẽ bạn em về? Bên dưới em vẫn đang rên mãnh liệt, cơ mà nghe kỹ hình như còn có tiếng thở phập phồng khác, không phải của Trúc. Không lẽ…?
 
-
 Ư ư ư… nữa đi anhhh
-
 
 Có khi bạn em về thật. Nhưng đứng xem trộm chúng tôi nãy giờ chắc bạn em cũng thấy rạo rực trong người. Hay thử xem nhỉ. Tôi đỡ Trúc ngồi dậy rồi bản thân nằm ngửa ra, xoay chân ra phía ngoài. Đặt Trúc ngồi lên người tôi cưỡi ngựa, mông vẫn quay về phía tôi. Con cặc chĩa thẳng ra ngoài cửa, rồi lại mất hút trong lồn em. Lúc này bạn em đang xem trộm bên ngoài có thể thấy rõ ràng con cặc tôi đang địt lồn Trúc như thế nào. Dập một lúc lâu, có vẻ Trúc thấy thấm mệt. Đấy là em, chứ tôi vẫn đang chăm chú quan sát động tĩnh phía ngoài cửa. Tôi lấy lại tư thế, nắm lấy hông em rồi ưỡn hông, đẩy một cú mạnh lên trên.
 
-
 AAAA……
-
 
 Có hai tiếng a, một mãnh liệt, man dại, một nhẹ nhàng, lén lút. Người em ngửa ra, tay chống xuống đệm. Tôi lấy hai chân banh chân em ra, tiếp tục dập từ dưới lên, cốt để bạn em nhìn cho rõ cặc và lồn giao lưu với nhau. Cái tư thế này nhanh mất sức quá, mà cảm giác có người lén lút xem cũng kích thích, cơn xuất tinh nhanh chóng ập đến. Bỗng nhiên em quờ tay, đập đập vào người tôi
 
-
 Ư…. anh… anh ơi…. Ư…..
 
-
 Hình như có vẻ em cũng biết có cô bạn em đang xem trộm bên ngoài, nhưng tôi vẫn cứ giả vờ như không thấy, lại càng dập . Nắm lấy hông em kéo xuống, cặc tôi đẩy mạnh lên một phát nghe “bách” rồi xuất ra ồ ạt. Em thở dốc, người lấm tấm mồ hôi, cái cơ lồn kỳ diệu của em lại siết chặt lấy cặc tôi. Con cặc tuột ra khỏi lồn, tinh trùng theo đà chảy xuống rỉ qua khe lồn em. Một ánh mắt run rẩy rồi nhanh chóng vụt đi. Em gục xuống, lấy lại hơi thở đều đặn rồi nói
-
 
 Chết rồi, hình như cái My về
 
@@ -1666,13 +1348,11 @@ Anh này, chết dở, nó mà về thật thì ngại quá, để em ra xem th�
 
 Tôi lấy tờ giấy lau qua chỗ tinh trên lồn em để em mặc lại đồ ra xem. Lúc sau thấy tiếng nói chuyện vọng vào. Bạn em về thật. Vậy là nãy giờ bạn em đã xem trộm chúng tôi thật. Chẹp. Mùi tinh trùng lẫn dâm thủy nồng nặc khắp căn phòng. Không biết bạn em đêm nay có ngủ được không đây. Thôi thì cũng phải ra chào một cái cho phải phép đã.
 
-
 Chào em, anh là Long, người yêu của Trúc
 
 Em chào anh, em là My, bạn cùng nhà với Trúc, anh mới qua chơi ạ
 
 Một cô gái cũng khá xinh xắn, đương nhiên không bằng Trúc của tôi rồi. Em này chỉ cao tầm gần 1m6, nhìn thấp hơn hẳn so với chiều cao 1m7 của Trúc, tóc ngắn. Ấn tượng ban đầu chỉ có vậy. Chào hỏi qua loa vài câu, tôi cũng phải xin phép về vì cũng ngại. Về đến nhà tôi nhắn cho em
-
 
 Anh về rồi, bạn em có trách gì không?
 
@@ -1754,14 +1434,11 @@ Yêu em
 
 Chat với em một hồi mà sao thấy nứng quá. Kèo này không biết có gạ em được không. Chắc là vẫn chịch được em thôi, nếu ngon ăn có khi lại được thêm quả thơm. Nhìn cách em không từ chối thẳng thừng chắc em cũng thấy tò mò kích thích. Thôi thì để đến thứ 6 tới xem thế nào.
 
-
-
 ==================== Chương 16 ====================
 
 CHAP 16​
 
 Chà, một tuần làm việc nữa lại trôi qua. Nhớ đến cái hẹn, tôi sửa soạn chút rồi đặt ít đồ nhắm với bia rồi xách qua nhà em. Vẫn là Trúc mở cửa cho tôi, thơm em một cái rồi vào nhà.
-
 
 Tôi: Chào em, hôm trước ngại quá, chưa chào hỏi em tử tế được, nay có mang ít bia mồi sang gọi là chào hỏi ra mắt chính thức đằng gái
 
@@ -1775,7 +1452,6 @@ My: Cái con này, vừa gặp đã làm tao mang tiếng xấu rồi. Anh Long 
 
 Cũng không có nhiều đồ gì lắm, mực, cá bò, nem, khoai …v.v… toàn mấy đồ nhắm với ăn vặt, thêm chục lon bia. Tôi cứ tính vo 1 người cỡ 2 chai gì đấy, cơ mà cứ mua dư ra, thừa thì để lại nhà em. Hôm nay hai cô gái đều mặc áo thun quần đùi ngắn, nhìn hai cặp giò cứ thấy rạo rực. Chân My cũng tương đối trắng, thon, nhưng chân Trúc của tôi còn trắng hơn, đẹp hơn. Bữa nhậu diễn ra khá rôm rả, My cũng thoải mái trò chuyện. Trúc có vẻ hơi ngấm bia, người bắt đầu ngả ngả sang người tôi. Em và My cũng được gần hail on, tôi thì đã sang lon thứ tư. Chẹp, cứ bia bọt vào xong ôm Trúc là tôi lại thấy nứng, con cặc bắt đầu hơi có phản ứng chút.
 
-
 Tôi: mà My có người yêu chưa í nhỉ
 
 Trúc: ối anh ơi, con này có mà có cả đám – giọng em bắt đầu hơi lè nhè
@@ -1783,7 +1459,6 @@ Trúc: ối anh ơi, con này có mà có cả đám – giọng em bắt đầu
 My: cái con này lại nói xấu tao, em mới chia tay thôi anh ạ
 
 My vừa nói vừa đánh vào đùi Trúc một cái. Em ngồi đối diện với tôi và Trúc nên lúc đánh sang phải hơi với người. Cái áo rộng lại vô tình làm lộ cái khe ngực đập vào mắt tôi. Con cặc nãy còn đang liu diu giờ bắt đầu ngỏng ngỏng lên một chút. Quần tôi đang mặc lại là quần kiểu jogger, nãy về nhà thay cho bộ đồ công sở, nên con cặc ngỏng ngỏng độn lên càng rõ. Ánh mắt My hơi lạ, bắt đầu liếc liếc xuống cục u dưới quần tôi.
-
 
 Tôi: thế à, thằng nào lại dại dột thế, có phúc mà không biết giữ, như anh giữ Trúc xinh của anh này – tôi quay sang, bẹo má em một cái
 
@@ -1821,7 +1496,6 @@ My: giỏi thì làm đê, con gà
 
 Tôi ngồi im lặng nãy giờ nhìn hai cô gái đấu khẩu. Con gái quả là đáng sợ, tôi chắc phải can chứ để thế này chắc tan cửa nát nhà mất.
 
-
 Tôi: Thôi em ơi, say rồi đấy, mặt mũi đỏ hết cả lên rồi đây này
 
 TRúc: Ứ, em chưa sayyyyy
@@ -1842,18 +1516,13 @@ My: vâng, anh đưa nó vào hộ e với, em chắc cũng ngủ luôn, đồ d
 
 Ôi dồi ôi, không ngờ cô người yêu của tôi cũng có cái lúc thế này, uống có tí bia thôi cũng lăn lóc. Đặt em lên giường tôi cũng leo lên luôn, tôi nằm sát tường, đặt em vào trong cho đỡ lạnh. Mấy phút sau My cũng vào rồi tắt đèn, trùm chăn nằm luôn.
 
-
 Tích tắc…
-
 
 Hơi giật mình tỉnh dậy, vớ lấy cái kính. Nãy giờ cũng thiếp đi được hơn tiếng, bia bắt đầu tan dần. Bên cạnh Trúc vẫn đang nằm thở đều đều, người quay lưng lại phía tôi, người co co lại như con mèo con đang rúc vào ổ ấm. Yêu quá, cứ nằm ôm em thế này lại không chịu được. Mà không biết bên kia My đã ngủ chưa. Lại nhẹ nhàng vén áo Trúc lên, cởi chốt áo ngực rồi thò tay ra đằng trước bóp nhẹ vú em. Bên trên tôi vén tóc em ra, mút lấy cổ.
 
-
 Ư…. ưm….
 
-
 Tay tôi bắt đầu nhào nặn vú em nhanh hơn, mạnh hơn. Hai ngón tay cầm lấy đầu ti em mân mê, thỉnh thoảng lại siết lại, kéo kéo ra một chút. Em bắt đẩu tỉnh, rên khẽ
-
 
 Ư…. đừng anh…. Cái My nó tỉnh bây giờ… ư….
 
@@ -1861,24 +1530,17 @@ Không sao đâu, My nó ngủ rồi, anh sờ tí thôi
 
 Tôi thì thầm vào tai em rồi ngậm lấy. Người em co lại, hơi thở gấp gáp dần. Tôi luồn tay xuống, kéo trễ cạp quần xuống rồi lòn tay vào trong mò lồn. Chưa gì đã nhoe nhoét cả rồi. Bia vào cộng với cái cảm giác vụng trộm này có vẻ cũng làm em hứng. Tôi chọc nhẹ một ngón vào trong lồn em.
 
-
 Aaaa
-
 
 Em rên nhẹ lên một tiếng, nhỏ thôi nhưng cũng đủ cho ai ở trong căn phòng này còn thức cũng nghe thấy. Tay em nắm lấy một góc chăn, bịt lên mồm cho khỏi rên to, nhưng với tiếng rên vừa rồi có vẻ cũng không có tác dụng cho lắm. Giường bên kia có động, không lẽ My cũng tỉnh rồi? Ngón tay tôi bắt đầu ngoáy trong lồn Trúc rồi thụt ra thụt vào, tay kia không ngừng nhào nặn vú em.
 
-
 Ư ư ư ư….
-
 
 Em cố kìm nén tiếng rên, nhưng có vẻ nó ngày một to hơn. Khoan đã, hình như không phải chỉ có mỗi tiếng thở dốc của em, đâu có còn có một thứ tiếng là lạ. Của My chăng? Tôi rút ngón tay ra, cầm lấy cái đầu rùa kê vào cửa lồn, chỉnh tư thế rồi từ từ đâm vào. Mồm Trúc há hốc, cố gắng không phát ra tiếng rên. Con cặc cứ thế ra vào chậm rãi, đều đặn. Cái tư thế này khiến lồn em lại càng khít, cứ nhằm con cặc tôi mà siết lại.
 
-
 Ư ư ư…….Ứ
 
-
 Bất ngờ tôi dập mạnh một phát, Trúc rên lên một tiếng to. Giường bên kia tiếng thở phì phò ngày một nặng hơn. Cái chăn bên tôi đã tuột khỏi người hai đứa từ lúc nào. Tôi ngẩng đầu lên xem tình hình thế nào. Chăn của My hơi động đậy, không lẽ My đang thủ dâm? Tôi ngừng lại, kéo hết quần ra khỏi chân em rồi tiếp tục nhấp, mút lấy tai em rồi thì thầm
-
 
 Hình như My tỉnh rồi em à
 
@@ -1892,19 +1554,15 @@ Vậy mình địt cho My xem nhé?
 
 Em không nói gì, cũng không gật đầu. Tôi liền thúc thêm một nhát mạnh.
 
-
 Ứ….ah…. – đầu em gật gật
 
-
 Tôi cầm lấy một chân em nhấc lên, hông vẫn đẩy ra đẩy vào đều đặn. Lồn em đỡ bót hơn ban nãy một chút. Ngẩng lên thấy My quay đầu lại, len lén nhìn chúng tôi, đôi mắt chăm chú vào chỗ con cặc đang khám phá hang động. Tôi dập mạnh hơn, không còn nhẹ nhàng như lúc nãy nữa. Trúc cũng bắt đầu thả người theo dòng, rên to
-
 
 Ah ah ah ah ….
 
 Bạch bạch…..
 
 Tôi lật Trúc nằm nửa ra, tiếp tục tư thế truyền thống. Chân tay em cứ quắp lấy tôi. Hông đẩy vào những cú dập đanh thép.
-
 
 Bạch bạch bạch….
 
@@ -1922,12 +1580,9 @@ Mình cho My nhìn rõ hơn nhé.
 
 Em không trả lời gì, chỉ nằm rên. Tôi liền kéo em xuống dưới đất, làm tư thế doggy. Chỉnh lại con cặc rồi thúc mạnh một nhát.
 
-
 Ư… á… ah ah ….
 
-
 Em ngã dúi về đằng trước, tay bấu lấy thành giường của My. Lúc này My gần chúng tôi hơn bao giờ hết. My ngồi dậy, một tay vẫn bấu lấy đũng quần, một tay bám vào tay Trúc, mắt trân trân theo dõi từng cú dập của tôi, mắt đờ đẫn cả lại. Tôi với tay nắm lấy tay Trúc kéo thẳng người lên, tay còn lại bóp lên bộ ngực đang ưỡn cong khêu gợi.
-
 
 Ư…. ư…. em sướng…..
 
@@ -1949,31 +1604,23 @@ Anh địt em xong rồi địt My nhé, nhìn My nứng tội quá
 
 Tôi đặt Trúc xuống, em chống hẳn tay vào giường My, giờ My ngồi ngay cạnh nhìn chúng tôi đẩy xe bò. Tôi thò tay vào áo My, đẩy cái áo lót lên rồi bóp vú. Vú My không được to của như Trúc, hơi nhao nhão 1 tí, chắc do qua tay nhiều thằng bóp xong không giữ của đây mà. My ngước lên nhìn tôi, bặm môi lại, tay thò hẳn vào trong quần chà chà như kiểu muốn tôi cũng chăm sóc cái lồn mong manh của My vậy. Hông đẩy ra đẩy vào, một tay bóp vú Trúc, một tay kéo My dậy rồi thọc thẳng tay vào lồn My. Nước nôi lênh láng khắp cả. Thò ngón tay vào trong lồn My rồi móc, vẫn vừa cả hai ngón, nước dâm tuôn ra ồ ạt. Không biết do cơ địa hay đang nứng mà nước lồn My ra nhiều khủng khiếp. Hai cô gái cùng đang rên vang khắp phòng, một cô đang tận hưởng con cặc, một cô đang được bàn tay chăm sóc. My đang bấu lấy vai tôi, còn Trúc đang cố đẩy hông cho cặc tôi vào sâu thêm trong lồn em, siết lại. Có tí men vào làm con cặc tôi phải gần tiếng mới bắt đầu muốn xuất. Thả tay ra khỏi lồn My, My ngồi khuỵu xuống đất. Tôi quay người Trúc ra, tay nắm lấy hai bầu vú kéo em hơi ngửa lên, chỉnh cho chỗ con cặc tôi ngay trước mặt My rồi dập lia lịa.
 
-
 Ah ah ah aaaaaaa….em… em raaa…..
-
 
 Tôi thúc mạnh lút cán rồi bắn ầm ầm vào lồn em, tay siết lấy hai bầu vú. Người Trúc giật liên tục, mồm há hốc ra thở. Tôi rút con cặc ra, một dòng tinh theo đó cũng chảy xuống khỏi lồn Trúc. My xòe tay ra hứng lấy, đưa lên mũi ngửi rồi mút chụt một cái. Quả là dâm nữ. Trúc nằm lăn ra giường của My thở mạnh. Nãy giờ quần em cũng cả tiếng đồng hồ, mệt lả. Con cặc tôi lúc này chĩa thẳng vào mặt My.
 
-
 Em…..
-
 
 My ngước nhìn tôi, nói ra một tiếng rồi ngay lập tức chồm lấy con cặc tôi mà mút. Phê vãi. Con cặc vừa xuất xong đã lại được một cái mồm khác chăm sóc, cảm giác tê rần chạy dọc chân lên sống lưng. Mệt quá, tôi cần nghỉ chút đã. Tôi cúi xuống nằm bên cạnh Trúc, ngoạm lấy vú em mà mút, ngón tay chọc vào lồn em ngoáy. Vừa lên đỉnh xong giờ lại được kích thích, người Trúc lại quằn quại. Bên dưới tôi vẫn ngửa hông ra để My bú. Bất chợt, một cảm giác ấm nóng khác lại bao trùm lấy con cặc.
 
-
 Aaaaa
 
-
 My bắt đầu nhún, nhún mạnh. Con cặc tôi nãy giờ chưa được phút nào nghỉ ngơi. Bên trên tôi nằm hẳn ra, Trúc lúc này đã hoàn hồn, quỳ xuống bên cạnh, giơ vú ra cho tôi mút. Tay tôi một cái yên vị trên mông My, một cái móc trong lồn Trúc. Tiếng rên lan khắp căn phòng
-
 
 Aaaaaaa….
 
 Ưm ưm…..
 
 Đang sướng bỗng Trúc véo lấy tay tôi một cái đau điếng
-
 
 Ái, đau anh
 
@@ -1999,12 +1646,9 @@ Aaaa…… á…….
 
 Bên dưới My đã lên đỉnh, người gục xuống. Tôi rời Trúc, đặt My nằm xuống rồi tiếp tục hẩy mông địt. Kéo Trúc quỳ lên trên người My, chống chân sang hai bên, ôm lên em rồi bú vú. Một tay ôm lấy em, một tay chọc vào lồn ngoáy. Hai cô gái người uốn éo, ưỡn cong lên. Thúc một cú thật mạnh, con cặc lại nhả đạn lần 2 thẳng vào lồn My ồ ạt. Xuất được một vài đợt, tôi rút cặc ra khỏi lồn My, cắm thẳng vào lồn Trúc, nằm ngửa ra đặt em nằm trên người tôi rồi hẩy mông địt liên tiếp từ dưới lên thật nhanh, thật mạnh.
 
-
 Aaaaaaa, chết emm…….
 
-
 Con cặc ra vào tầm 2 phút thì lại giật giật, xuất hết những gì còn lại vào lồn Trúc. Tôi hẩy mông vài cái cho tinh ra hết hẳn. Em đổ gục hẳn lên người tôi thở phì phò.
-
 
 Nhất vợ nhé, có ai chiều em như anh không
 

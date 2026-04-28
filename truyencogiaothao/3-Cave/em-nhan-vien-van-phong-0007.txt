@@ -2,92 +2,59 @@
  TITLE: Em nhân viên văn phòng
 ==============================
 
-
-
 ==================== Chương 1 ====================
 
 Vài dòng đầu tiên ra mắt chuyện mới, mong ae ủng hộ để có tinh thần viết truyện cho anh em đọc làm niềm vui trong cuộc sống
 
-
 ****************
-
 
 Ánh nắng chiều hắt lên khung cửa kính tạo thành những vệt dài lấp lánh trong phòng. Máy lạnh vẫn chạy rì rì, phả hơi lạnh đều khắp cả phòng. Trang đang ngồi chăm chú gõ cho xong mấy giấy tờ chứng từ. Tốt nghiệp kinh tế ra trường, Trang loay hoay mãi mới tìm được việc làm ở một khu du lịch resort với chức danh kế toán. Lương cũng đủ sống, nhưng còn hơn không so với đám bạn còn đang lông bông chạy việc. Trang khá cao, khuôn mặt dễ nhìn, có nét và tươi tắn cộng với sống mũi cao. Làn da trắng, đôi mắt long lanh cộng với lối nói chuyện cuốn hút khiến nhiều anh chàng si mê đeo đuổi nàng. Dạo này, Trang ra sức ăn uống đều đặn, chiều hay tập thể dục thẩm mĩ, cuối tuần đi bơi nên vóc dáng nàng càng thêm săn chắc gọn gàng. Vòng nào ra vòng nấy, nẩy nở, săn sắt và núng nính.
 
-
 Đi làm Trang vẫn gọn gàng trong bộ đồng phục quần tây đen dài, áo vest đen khoác ngoài, bên trong áo sơ mi trắng đóng thùng gọn gàng. Trang không đeo bất cứ đồ trang sức nào ngoại trừ chiếc đồng hồ nhỏ xinh xắn nơi cổ tay nàng. Môi nàng chỉ thoa nhẹ lớp son hồng khi đi làm. Mái tóc nàng để tự nhiên, đen óng, không duỗi buông lửng chấm bờ vai.  Đơn  giản không cầu kỳ, nhưng vẫn toát lên vẻ đẹp thanh tao từ con người nàng.
 
-
-Đang chăm chú trên màn hình, bỗng skype trên máy Trang nhấp nháy báo tin nhắn. 
+Đang chăm chú trên màn hình, bỗng skype trên máy Trang nhấp nháy báo tin nhắn.
 
 – "Em khỏe không Trang ?"
-
 – "Dạ, em chào thầy. Lâu lắm mới thầy online nhắn tin. Em vẫn bình thường và đi làm rồi."
-
 – "Thầy cũng lu bu công việc, đi dạy nhiều nơi. Cô cũng hay ốm liên miên nên thầy phải chăm lo cho cô nhiều hơn. À, thầy sắp ra chỗ em để dạy một lớp tập huấn về luật kinh doanh."
-
 – "Dạ, thầy trò mình lại có cơ hội gặp nhau. Từ khi thầy hướng dẫn em tốt nghiệp đến giờ, thầy trò vẫn chưa gặp lại ."
-
 – "Ngày kia thầy ra rồi. "
-
 – "Tiếc quá bên em không có ai tham gia lớp tập huấn này do đăng ký trễ quá."
-
 – "Em cứ mạnh dạn đi, để thầy báo cho BTC, họ sẽ em vào thôi. Em đừng lo."
-
 – "Để em báo lại cho sếp bên em biết."
-
 – "Thầy off đây, thầy có chuyện cần phải đi ngay. Hẹn gặp lại em nhé."
-
 – "Dạ, em chào thầy. Hẹn gặp lại thầy ạ"
-
 
 Nhờ có sự giúp đỡ của thầy Tuấn, Trang được tham dự buổi tập huấn kéo dài khoảng một tuần.  Giữa giờ giải lao, thầy trò gặp nhau nói chuyện vui vẻ trò chuyện hỏi han về mọi thứ một cách rôm rả. Tối nay diễn ra tiệc chiêu đãi chào mừng các học viên tham dự khóa học, Trang nhanh chóng về nhà, tắm rửa thật sạch sẽ. Đứng tần ngần mãi trước tủ áo, Trang cuối cùng cũng lựa cho mình một bộ váy thật đẹp. Nàng diện chiếc váy đỏ cao hơn lên đầu gối một chút khoe đôi chân trắng ngần thuôn dài, chiếc áo đen sát nách khoe hai cánh tay trắng thon thả, cổ đeo một sợi dây chuyền bạc được chạm khắc tinh tế, sáng lấp lánh. Trang xịt nhẹ một chút dầu thơm, cho vài vật dụng cá nhân vào chiếc bóp xách tay, rồi xỏ chân vào đôi giày cao gót đen tuyền. Soi mình thật kỹ trước gương, rồi nàng mới bước ra khỏi nhà.
 
-
 Trong bữa tiệc được tháp tùng với thầy, Trang lấy làm hãnh diện lắm. Ai cũng trầm trồ trước vẻ đẹp tao nhã cùng sự hoạt bát của Trang. Riêng phần thầy Tuấn, thầy rất phấn khởi đi cùng cô học trò xinh xắn và giỏi giang thế này. Khi về nhà, lúc tắm táp xong, Trang thấy thầy còn nhắn tin chúc Trang ngủ ngon, và kèm theo một câu khen vẻ đẹp của nàng. Tối hôm sau, thầy mời Trang đi ăn tối tại resort nơi thầy ở. Một căn phòng bày biện chu đáo đã dọn sẵn. Một bàn ăn với ánh nến lung linh, nhìn ra xa kia là bãi biển êm dịu và lặn sóng, bãi cát trắng trải dài. Khi Trang tới nơi, hai thầy trò cùng chọn lựa những món ăn mà mình yêu thích. Hai người vừa ăn vừa nói chuyện vui vẻ. Thầy Tuấn kêu một chai vang Pháp loại sang rót vào ly mời Trang uống.
 
-
 – "Dạ, em uống không được nhiều."
-
 – "Rượu vang nhẹ lắm em. Uống ly này vừa chúc mừng thầy trò ta lại gặp nhau. Đồng thời thầy cũng cảm ơn em vì một điều. "
-
 – "Điều gì vậy thầy ?"
-
 – "Thầy nhắn tin đề nghị em mặc lại bộ váy đêm hôm trước em mặc. Bộ đó em mặc đẹp lắm. Thầy cảm ơn em đã mặc lại trong đêm hôm nay."
-
 – "Dạ, có gì đâu thầy."
-
 
 Rượu vang làm khuôn mặt Trang dần ửng đỏ, hai gò má nàng hây hẩy hồng khiến nàng càng thêm phần duyên dáng hơn dưới ánh nến lung linh lúc mờ lúc tỏ. Bất giác thầy Tuấn nắm chặt lấy bàn tay của Trang, nói phát ra từng câu ngập ngừng như có cái gì đó chẹn ngang cổ thầy: "Thầy thích em lâu lắm rồi. Hôm nay thầy cầm lòng không được. Em cũng biết cô đau ốm liên miên, nên thầy thiếu thốn về mặt tình cảm rất nhiều. Thầy kìm nén rất nhiều, giờ thầy chỉ bung xả dù chỉ một lần thầy cũng cam tâm. Em…. thầy chỉ muốn ….."
 
-
 Nói rồi, thầy Tuấn hôn lấy hôn để bàn tay của Trang. Thầy mút từng ngón tay của Trang, cạ má mình vào lòng bàn tay của nàng. Thầy lại mút từng ngón tay của nàng như đứa trẻ mút say sưa một cây kẹo ngọt vậy. Bản thân Trang cũng khá bất ngờ, nàng chưa biết phản ứng ra sao. Bất ngờ thầy Tuấn ngồi thụp xuống, ôm lấy chân nàng. Tay thầy mân mê, vuốt ve bắp đùi nàng, thầy dùng lưỡi rà rê trên từng thớ thịt bắp đùi nõn nà. Thầy hôn dần lên đầu gối, lên cao một xíu rồi lại hôn xuống dưới gần tới mắt cá chân, rồi lại lên trên xa hơn một xíu trên đầu gối. Cứ như thế một lát Trang cảm thấy rạo rực hẳn trong người.
 
-
 Bản thân nàng cũng có một người yêu sắp cưới. Gia đình nàng đã mai mốt sẵn cho nàng. Người yêu Trang tên Nam, hiện đang là bác sỹ của bệnh viện lớn. Cả hai gia đình đã bàn chuyện ăn hỏi cưới xin vào cuối năm. Trang cũng khá hài lòng về anh chàng người yêu này, mặc dù Nam thuộc loại đàn ông gia trưởng. Họ cũng đã vài lần quan hệ với nhau vì bản thân xác định trước sau gì họ cũng cưới nhau nên không câu nệ lắm. Nhưng Nam cũng ít hứng thú khi làm tình, thường ra nhanh và hầu như có thể đoán được các động tác sẽ làm, lúc nào cũng y chang như vậy. Trang thì cảm thấy bản thân mình vẫn còn khao khát nhiều lắm, muốn hơn thế nữa, nàng chưa lên sự tột cùng của sung sướng như bản thân đang thầm khát khao. Trang cảm thấy trong mình ngọn lửa vẫn chưa bùng cháy hết, vẫn âm ỉ dai dẳng. Nhiều khi Trang cho rằng mình có những suy nghĩ không tốt, rằng mình ham muốn quá chăng và rằng đàn bà không nên ham muốn nhiều. Trang cố kìm bản thân lại và cho rằng hiện tại như thế là hạnh phúc, còn bản thân mình chưa thỏa mãn chắc cũng chỉ làm cảm giác nhất thời mà thôi.
-
-
 
 ==================== Chương 2 ====================
 
 Trang đứng bật dậy, nàng thấy hơi nhột và như bị giật mình. Nàng bị bất ngờ, sự bất ngờ chưa có chuẩn bị trước, không ngờ ông thày giáo trước nay mình vẫn quý mến lại là người như vậy.
 
 – " Thày dừng lại ngay, có tin là em la lên cho tất cả mọi người nghe thấy không?"
-
 – "Ôii, đừng đừng em, thày xin lỗi, nhất thời trong một phút giây thày không kìm chế được.."
-
 – "Tại sao thày lại làm vậy, chúng ta từng là thày trò cơ mà?"
-
 – "Thày xin lỗi, tại…tại em đẹp quá, thày… thày không kìm lòng được" – Thày Tuấn lúng túng vẫn chưa đứng dậy đứng mà vẫn quỳ lóp móp dưới chân người đẹp.
 
 Mà cũng chả trách được, Trang đường đường cũng là hoa khôi thời đi học, giờ mới bắt đầu đi làm, cách ăn mặc trở nên thay đổi, cuộc sống đi làm khiến nàng ăn mặc lại phải sang trọng hơn. Tuy mặc lại bộ váy đêm hôm trước, nhưng nàng giờ đã thành thiếu nữ trưởng thành, người đã nở nang, chân dài thẳng tắp, thu hút biết bao ánh nhìn và thèm muốn của những đồng nghiệp trong công ty. Ông thày quỳ mọp xuống nhìn thẳng mặt vào cặp chân nõn nà của nàng, Tuấn cũng thấy một sự hấp dẫn lạ kỳ khó tả nổi.
 
 – "Thày hãy ngồi lên đi"
-
 – "Em, hãy bỏ qua cho anh nhé" – Tuấn xưng anh, thay vì xưng thày.
-
 – "Tại sao, thày lại làm vậy với em?" – Trang từ từ nói và dần ngồi xuống ghế.
-
 – " Anh xin lỗi"
 
 Uống một chút mà cũng khiến nàng hơi nóng mặt, một tình huống bất ngờ như vậy xảy ra, nàng bị bất ngờ nhưng giờ đã lấy lại được bình tĩnh. Ông thày này  muốn gì đây?? (nàng suy nghĩ trong lòng)
@@ -101,23 +68,14 @@ Nàng đang cãi nhau với người yêu. Anh ta không nhiệt tình với nà
 Trang nghiêm mặt khiến Tuấn có vẻ sợ và ngại.
 
 – Tại sao anh ta lại thích liếm tay và liếm chân mình nhỉ, đàn ông ngộ thật. Quả thật là nhìn vẻ mặt ngố thộn của Tuấn lúc này thật là đáng yêu." (Trang nghĩ trong lòng như vậy). Nhưng nàng lại lớn tiếng:
-
 – "Thày xin lỗi không được. Em muốn thày phải hối lỗi thực sự cơ." – Nàng dần lấy lại tự tin và tinh nghịch hơn một chút.
-
 – "Em muốn anh phải làm sao?"
-
 – "Thày phải bị phạt"
-
 – "Phạt thế nào cơ?"
-
 – " Thày phải uống 3 cốc rượu đầy." – Nàng đắc chí.
-
 – "Ơ. Chuyện này. Thú thật là anh cũng không uống được"
-
 – "Không uống cũng PHẢI uống" – nàng hắng giọng, Trang biết kiểu gì Tuấn cũng sẽ tuân theo thôi.
-
 – "Thế vậy a uống 3 cốc thì e uống 1 cốc được không?, em đồng ý nhé?"
-
 – "Được" – Nàng buột miệng – Ôi chết, uống 1 cốc đầy chắc mình say chết mất, một ly vừa rồi đã hơi chuyếnh choáng rồi, mà thôi kệ nó đi. Mấy khi chia tay người yêu.
 
 Tuấn rót đầy 2 ly, và uống hết 1 ly. Anh lại rót ly thứ 2 và uống cạn. Ly thứ 3 bắt đầu.
@@ -129,7 +87,6 @@ Nàng tự dưng cầm ly và nốc cạn, muốn tới đâu thì tới, cho qu
 Nàng bắt đầu thấy nóng và rạo rực.
 
 – " Em có uống được không thế?"
-
 – " Em uống được, thày cứ rót đi"
 
 Tuấn thấy mặt Trang đỏ lên trông rõ, nhìn nàng đỏ mặt trông càng xinh và gợi cảm hơn. Bộ váy trông càng hấp dẫn, nàng trông thở gấp hơn và khuôn ngực phập phồng.
@@ -141,25 +98,17 @@ Nàng hỏi khẽ: "Tại sao thày lại hôn lên ngón tay của em?"
 Tuấn hơi bối rối và cũng hơi chuyến vì 3 ly rượu nốc cùng một lúc, là dân giảng dạy nên anh cũng không giỏi gì khoản bia rượu, người cũng hơi khó chịu.
 
 – "Tại vì, vì… Em đẹp quá, a đã có cảm tình với em từ lâu, từ hồi mới gặp lần đầu cơ.."
-
 – "Thế thì liên quan gì đến việc mút ngón tay chứ?"
-
 – "Có chứ, với một người con gái đẹp như em, chỉ cần được chạm vào làn da của em anh đã thấy rạo rực rồi, huống chi là hôn lên đó"
-
 – " Nó có vị gì vậy?" – Trang hỏi trống không!
-
 – "Vị gì àh, vị của em. Của sự nõn nà."
-
 – "Có gì mà anh thích vậy?"
-
 – "Thứ anh thích là chiều và làm em được vui, bất kể là việc gì, a nghĩ nó là một sự thể hiện cảm tình, và massage nhẹ" – Tuấn thấy như được cởi mở hơn vì những câu hỏi hơi bất ngờ của Trang, không ngờ cô nàng lại đang mơn trớn ngược lại anh thì phải.
 
 Tuấn hỏi ngược lại
 
 – "Thế em không thích àh?"
-
 – "Không, em bị giật mình"
-
 – "A xin lỗi, chắc do anh không nói trước, có phải vậy không?"
 
 Trang không nói gì. Nàng thấy ngộ ghê, bắt thóp được một ông thày đẹp trai này rồi. Nàng đang hơi khó chịu trong người, chắc do 2 ly rượu.
@@ -167,22 +116,15 @@ Trang không nói gì. Nàng thấy ngộ ghê, bắt thóp được một ông 
 Tuấn mời nàng nâng ly, nàng không những không chối từ mà còn uống sạch. Một ngày đặc biệt thì cũng phá lệ đi, đừng làm như thường ngày nữa, mặc xác cuộc đời tới đâu thì tới. Dù sao, Trang cũng có cảm giác được an tâm khi đi với Tuấn, dù sao thì hai người cũng đã quen nhau khá lâu rồi, nàng không có cảm giác nguy hiểm, trái lại còn thấy an toàn, vì nàng đã biết Tuấn thích nàng từ lâu. Với phụ nữ thì chẳng khó gì để nhận ra một chàng trai đã si tình với mình, nhất là khi điều đó đã là nhiều năm nay, cả ở quá khứ và thực tại.
 
 – "Anh có thể hôn lên bàn tay của em, một lần nữa được không?"
-
 – " Trong bao lâu?"
-
 – "1 phút nhé"
-
 – " Em cho thày 10 phút thì thày sẽ làm gì với bàn tay của em?" Trang chợt nói giọng điệu lả lơi hơn. Tuấn thì chưa hiểu điều gì đang xảy ra.
 
 Có vẻ như Trang đang là người làm chủ vấn đề, ngược lại tình thế thì phải.
 
 – "Với 1 điều kiện" – Trang sẵng giọng, một giọng điệu của người ra lệnh.
-
 – " Thày phải uống hết 1 ly đầy, và nhắm mắt khi hôn nó" – Nàng nói như ra lệnh thật sự
-
 – "Ôi, anh được làm như vậy sao?"
-
-
 
 ==================== Chương 3 ====================
 
@@ -206,7 +148,7 @@ Tuấn mở miệng ra từ từ mắt nhắm nghiền, chân anh đang quỳ ph
 
 "Lè lưỡi ra chứ thày"
 
-Tuấn lè lưỡi theo mệnh lệnh, chẳng biết trời chăng là gì. 
+Tuấn lè lưỡi theo mệnh lệnh, chẳng biết trời chăng là gì.
 
 Trang ngó quanh cầm đại cái mở nút chai nhét vào mồm Tuấn và ra lệnh tiếp tục trò vui, nàng dần thấy mình cũng sắp điên điên rồi.
 
@@ -239,11 +181,8 @@ Trang lại nghĩ ra một trò vui mới.
 Nàng rót đầy 2 ly rượu và nói:
 
 – "Thày bị phạt em thấy vẫn chưa đủ, nhưng em muốn chơi trò chơi vậy, thày có đồng ý không?"
-
 – ‘Trò gì vậy em nói luôn đi"
-
 – " Em sẽ đưa ngón tay cho thày mút như khi nãy, nếu thày đoán trúng đó là ngón nào thì em cho thày mút tiếp, nếu sai thì thày phải uống 1 ly"
-
 – "Được thôi người đẹp ơi, cứ gì tầm này. Em nói gì anh cũng nghe hết. Anh sắp không chịu được nữa rồi."
 
 Cứ như vậy, Tuấn bị Trang cho uống 4-5 ly liền, có khi mút ngón nọ cũng bảo ngón kia, khiến Tuấn uống nốc sạch cả chai lúc nào không hay.
@@ -262,20 +201,13 @@ Trang dứt cuộc điện thoại thì rút tay ra lệnh cho Tuấn đứng l�
 
 "Thôi, mình về đi thày"
 
-
-
 ==================== Chương 4 ====================
 
 – "Ơ sao lại về?! Mới có 8h30 tối mà e" – Tuấn mở choàng mắt.
-
 – "Em thấy người khó chịu"
-
 – "Chắc do em uống hơi say đấy, hay là…mình đi đâu cho tỉnh rượu một lát nhé e"
-
 – "Thế thì thôi, e muốn ngồi đây”
-
 – “A gọi thêm bia vậy nhé”
-
 – “Vâng, cũng được ạh, tuỳ tthày, em đi vào phòng WC một lát”
 
 Trang thò tay lên bàn rút lấy 5-6 tờ giấy ăn liền một lúc. Nhà hàng dùng loại giấy rút lên từng tờ vì vậy nàng phải kéo giấy tới 5-6 lần..
@@ -286,9 +218,9 @@ Phòng ăn riêng nhưng phòng VS ở cái resòft này rõ là xa.
 
 Trang đóng sầm cánh cửa phòng WC nữ, hơi men chếnh choáng khiến nàng hơi mệt và buồn bực khó chịu, đúng hơn là bứt rứt trong người.
 
-Nàng phi vào WC và lấy 2 tờ giấy lau cái bồn cầu, tụt chiếc váy đỏ có ren xuống, và cả chiếc quần lót ren màu đen luôn đoạn ngồi thụp xuống. 
+Nàng phi vào WC và lấy 2 tờ giấy lau cái bồn cầu, tụt chiếc váy đỏ có ren xuống, và cả chiếc quần lót ren màu đen luôn đoạn ngồi thụp xuống.
 
-Nước từ trong tam giác bí ẩn đã chảy ra ướt sũng đáy quần lót từ khi nào. 
+Nước từ trong tam giác bí ẩn đã chảy ra ướt sũng đáy quần lót từ khi nào.
 
 “Ôi, mình đang nghĩ gì đây, đầu óc thật là đen tối, chẳng lẽ mình lại không về đêm nay” – Trang nghĩ ngợi trong sự kích thích và bứt rứt quay cuồng, dục vọng và sự kích thích của Tuấn, sự ngoan ngoãn và nâng niu của Tuấn đã khiến nàng như bị bỏ bùa mê. Vốn dĩ nàng đã có máu SM trong người, muốn điều khiển và sai bảo đàn ông, nàng không muốn phải phục tùng ai cả, ngược lại, bắt đàn ông phải răm rắp nghe theo và liếm chính chiếc lưỡi của họ vào nơi hạ thể của nàng một cách ngoan ngoãn mới là điều làm nàng thích thú.
 
@@ -304,7 +236,7 @@ Nghĩ sao nàng lại quay trở lại bồn cầu và tè hết chỗ nước x
 
 “Hết giấy”
 
-“Chả lẽ khỏi phải lau để chốc lão kia lau luôn bướm mh bằng lưỡi nhỉ” – Trang nghĩ bụng tinh nghịch. Nhưng thôi, nàng đánh liều cởi truồng lê theo cả chiếc váy và quần lót sang phòng bên cạnh, cũng là WC nữ, 
+“Chả lẽ khỏi phải lau để chốc lão kia lau luôn bướm mh bằng lưỡi nhỉ” – Trang nghĩ bụng tinh nghịch. Nhưng thôi, nàng đánh liều cởi truồng lê theo cả chiếc váy và quần lót sang phòng bên cạnh, cũng là WC nữ,
 
 “Có giấy rồi, may quá ko có ai nhìn thấy, ah quên, tiếc quá ko có ai nhìn thấy”
 
@@ -331,33 +263,19 @@ Căn phòng riêng tư mỗi 2 thày trò lại mở cửa. Ông Tuấn vẫn ng
 “ Em không may lỡ tay làm ướt váy anh ạ, chắc uống hơi say rồi đấy ạ” – Nàng bắt đầu gọi ANH, khiến Tuấn mở cờ trong bụng nên lấn tới.
 
 – “ Có cần anh hong cho khô không?!”
-
 – “ Thày cứ đùa, hong váy kiểu gì. Em nói thật đấy, ướt cả vạt đàng sau đây này, đứa nào quên ko tắt vòi hoa sen làm em ướt hết rồi”
-
 – “ Ướt thật á em? Ướt nhiều không đâu a xem nào”
-
 – “Thày xem thế nào được”
-
 – “Em xem đấy, ở đây đâu có ai, nãy giờ anh liếm chân em cũng để a liếm một lúc còn gì”
-
 – “Nhưng em vừa cởi ra vắt cho nó khô được một ít rồi”
-
-– “Đâu đưa thày xem nào” – Nói không chớp mắt Tuấn lại cúi xuống vị trí mà nãy hắn quỳ cả nửa giờ, giờ lại là để xem váy với quần người đẹp có ướt không. 
-
+– “Đâu đưa thày xem nào” – Nói không chớp mắt Tuấn lại cúi xuống vị trí mà nãy hắn quỳ cả nửa giờ, giờ lại là để xem váy với quần người đẹp có ướt không.
 – “ Đúng là ướt thật rồi Trang ạh, em làm thế nào mà ướt hết cả nửa người luôn rồi ấy” – Chiếc váy đỏ vốn che ngang đầu gối được vén lên và Tuấn đã thấy được “màu đen”, àh màu đen. Nó là màu đen, chiếc quần lót mà nãy giờ hắn tha hồ tưởng tượng.
-
 – “ Bia rót rồi thày không lên uống đi àh”
-
 – “ Anh sợ em bị ướt khó chịu, hay em hong váy cho khô đi” – Tuấn lại kích, với hơi men trong người và dục tình mách bảo.
-
 – “ Thày hâm àh, chả lẽ cởi truồng ở đây để phơi váy àh, em còn ướt cả chân đây này”
-
 – “ Thì anh lại liếm chân cho em để khô là được chứ gì?!”
-
 – “ Ối giời, thế làm sao mà em đủ tiền lương giả thày ạh”
-
 – “ Thì thày liếm khô 1 chân thì em uống 1 cốc bia. Khô 2 chân thì em uống 2 cốc, khô nốt chỗ nào ướt nữa thì em uống 3 cốc” – Tuấn căng giọng làm liều.
-
 – “ Thôi thày đi, thày ăn gì mà thích liếm lắm thế. Lưỡi thày làm khô chân em hay làm ướt chân em thêm hả. Nếu liếm 1 chân thì thày uống 1 cốc, liếm thêm thì uống 2 cốc. Mà ướt thêm chỗ nào nữa đồ dâm dê.” Trang cũng không phải vừa và phá lên vừa cười vừa chỉ mặt thày cợt nhả.
 
 “ Anh chui xuống uống ngay nhé” Trang lại ra lệnh.
@@ -365,8 +283,6 @@ Căn phòng riêng tư mỗi 2 thày trò lại mở cửa. Ông Tuấn vẫn ng
 Tuấn lại lấy cốc uống 100% xong phừng phừng cắm mặt vào đùi trang, trời ơi, cầu được ước thấy đây rồi.
 
 Tuấn liếm nhẹ từng đường, từng đường lưỡi vào chân Trang, quanh đầu gối. Cuộc chơi chưa tuyên chiến nhưng đã bắt đầu.
-
-
 
 ==================== Chương 5 ====================
 
@@ -379,11 +295,8 @@ Trộm vía trông hắn rất đẹp trai hiền lành kiểu thư sinh có h�
 Trang cắt dòng suy nghĩ và hơi ngả người ra sau. Bất chợt lộ váy lên cao và chiếc quần lót ren màu đen hở ra,  Tuấn nhanh chóng tia vào được vì nãy giờ mải liếm chân liếm váy chưa dám nhấc lên nhìn vào. Trang lại khẽ kéo nó xuống và Tuấn lại nhấc nó lên để nhìn liếc vào trong và quay sang liếm chân kia.
 
 – “ Bên đấy không ướt thày ạ”
-
 – “ A liếc qua thấy nhiều chỗ ướt lắm, hay là anh liếm nốt cho em nhé?!”
-
 – “ Chỗ nào vậy thày?!”
-
 – “ Chỗ màu đỏ ướt thì ít, chỗ màu đen ướt thì nhiều, a thấy nước chảy ra rồi đây này” – Tuấn sãng giọng, còn Trang thì lấy tay theo phản xạ sờ lấy bướm.
 
 Nàng chợt nhận ra rằng mình bị hớ.
@@ -401,9 +314,7 @@ Nàng chợt nhận ra rằng mình bị hớ.
 Mỗi chữ liếm thật nhạy cảm làm cả 2 như sôi sục dục vọng trong đầu, nhưng họ vẫn còn giữ kẽ chưa ai chịu nhường ai xuống nước. Tình thế như kiểu tình trong như đã mặt ngoài còn e, giá như lão Tuấn cắm mặt vào bú l ồn luôn có khi em Trang còn sướng cười ko khép được miệng. Còn Trang thì như phơi hoa bày ngọc mời chàng tới hái, mà mỗi lần chỉ cho nhích một tí, quá tay lại đánh cho cái lùi về chỗ cũ.
 
 – “ Mà thày ko uống được nữa thì đèo em về. Uống nữa thì uống đi”
-
 – “ Anh ko uống đc nữa thật mà”
-
 – “ Thày mà uống được 10 cốc thì thích liếm chỗ nào em cũng cho liếm.”
 
 “ Áh àh, thật nhé”
@@ -447,9 +358,7 @@ Tuấn vừa đi vừa ngắm nàng từng sợt tóc và ngắm vành tai nàng
 “ Em lạnh”
 
 – “ Quay lại Resoft nghỉ ngơi đã nhé em?!” – Tuấn lại kích thích nàng.
-
 – “ Quần áo em ướt và bẩn hết rồi.”
-
 – “ Thế anh ra mua bộ váy khác cho em nhé?!”
 
 GẬT GẬT!
@@ -469,13 +378,9 @@ Nghĩ sao Tuấn lại bảo Trang hay vào tiệm Massage trong trung tâm củ
 Thấy khách vào hai nữ NV cúi đầu chào hỏi anh chị đi 2 người ạ. Tuấn và Trang bẽn lẽn, Tuấn hỏi luôn hay mình vào massage cho khoẻ luôn nhé e. Trang cũng gật đầu đồng ý.
 
 – “ Anh chị dùng phòng 2 người hay phòng đôi ạh?!”
-
 – “Là sao em?!” Tuấn vờ hỏi.
-
 – “ Bên em phòng 2 người là làm Masssage chung phòng, NV nam làm cho chị và NV nữ làm cho anh, còn phòng Đôi là phòng VIP ở đây, có phòng tắm / xông / sục và Massage riêng, không có NV ạ, có NV nếu anh chị yêu cầu thôi ạ.”
-
 – “ Vợ anh cần nghỉ nngơi chút nên ko ccần ai làm phiền đâu, cho a khu VIP để tắm qua và thay đồ là được.”
-
 – Từ học trò mà đã thành “vợ” rồi sao, Trang nửa say nửa tỉnh nên không nói gì mặc cho Tuấn làm thế nào cũng được.
 
 Giây phút cởi được quần lót em Trang để tha hồ bú mút sắp tới rồi.
@@ -488,8 +393,6 @@ Hay a ta cố tình nhỉ.
 
 “Thôi lát chắc mình ở truồng thật cũng nên.” ( Trang nghĩ)
 
-
-
 ==================== Chương 6 ====================
 
 Hơi men đã chuyến choáng, Trang được Tuấn rìu lên phòng Massage. Chiếc áo đen sát nách đã bắt đầu lấm tấm mồ hôi, vừa dạo biển gió lạnh, giờ lại nóng đổ mồ hôi. Nàng đang bị sao thế này, chính Trang cũng không biết nữa. Trang không uống được, nên vài cốc đã say thật, nhưng cảm giác say lúc này cũng chưa bằng nỗi buồn trong lòng nàng, một sự cô đơn trống trải trào dâng mỗi khi có hơi men. Nàng đã buồn chán bao lâu, giờ lại thêm một hôm nữa cũng có gì đâu, nhưng hôm nay cũng chính là một ngày đặc biệt, có lý do để nàng uống, cho thoả những gì đã kìm nén bấy lâu. Cũng hay người đàn ông đang ngúng nguẩy theo đuôi nàng lại là Tuấn, một ông thày dê mình đã nhiều năm mà chưa được miếng nào. Hôm nay, cũng chính Tuấn là người đã mời Trang đi cuộc vui này, và nàng đáp lại bằng việc bật đèn xanh cho hắn là mặc bộ váy sexy của hôm nào.
@@ -499,7 +402,6 @@ Hơi men đã chuyến choáng, Trang được Tuấn rìu lên phòng Massage. 
 Những suy nghĩ cứ miên man trong đầu Trang.
 
 – "Hay mình say thật rồi nhỉ" (Trang nghĩ) "Mà thôi mặc kệ, đến đâu thì đến, dù sao thì lão Tuấn vẫn là một người đạo mạo thư sinh và dễ bảo. Và trên hết, nhìn hắn trông "sạch sẽ" và rất có cảm tình. Thực ra, Trang đã nắm được thóp của Tuấn từ rất lâu rồi.
-
 – "Em thấy vẫn ẩm ướt thày ah, chiếc váy này hơi dày" – Trang nói trong thang máy.
 
 Tuấn thấy trang có vẻ nửa say nửa tỉnh nên thản nhiên vén váy Trang lên sờ thử, Trang cũng không nói gì. Chiếc quần lót ren màu đen lộ ra, Trang cũng lơ đi như chưa nhìn thấy, còn Tuấn thì cảm giác phê nãy giờ và như đích đến đã rất cận kề.
@@ -519,11 +421,8 @@ Cậu NV mở vòi nước nóng xả chiếc bồn tắm lớn, xong lại vào
 Cánh cửa phòng đóng lại cũng là lúc chỉ còn có mỗi Tuấn và Trang trong một căn phòng chật hẹp và sắp phải làm những việc tế nhị cùng nhau. Vào đến đây là Tuấn đã cầm chắc 99% của sự thành công rồi. Lột đồ em Trang, em học trò mà mình đã mơ ước được  thưởng thức bấy lâu nay.
 
 – " Em thay đồ đi"
-
 – " Ơ, thôi ngại lắm em không thay đâu ạ, hay thày tắm cho khoẻ đi, còn em muốn nằm nghỉ một lúc, em nằm ở kia nhé" – Trang từ chối thay đồ và chỉ vào phòng Massage muốn nằm.
-
 – "Thế em cũng nên thay đồ đi chứ, thay váy vào rồi nằm vậy" – Tuấn hơi thất vọng, cứ tưởng là người đẹp nhảy vào tắm cùng, nhưng thôi cứ từ từ, thời cơ chưa đến.
-
 – " Em buồn ngủ và hơi đau đầu, thôi lát em thay, em muốn nằm"
 
 Thằng cu mang nước lên thì chẳng ai muốn uống cả, nó để cạnh giường và chạy biến.
@@ -550,7 +449,7 @@ Tuấn đỡ Trang dậy thì nàng bước hụt suýt ngã, Tuấn lại đỡ
 
 Trang đáp OK để Tuấn bước ra ngoài. Nhưng cánh cửa chỉ khép hờ.
 
-Trang biết vậy nhưng vẫn tụt váy và quần lót xuống để đi vệ sinh, biết là Tuấn đang nhìn ở bóng tối từ bên ngoài, nhưng kệ thôi, xoã đi nghĩ gì tầm này nữa. 
+Trang biết vậy nhưng vẫn tụt váy và quần lót xuống để đi vệ sinh, biết là Tuấn đang nhìn ở bóng tối từ bên ngoài, nhưng kệ thôi, xoã đi nghĩ gì tầm này nữa.
 
 Tuấn bên ngoài nhìn chăm chú qua khe cửa, lần đầu tiên được thấy bướm của cô nữ sinh mình mong ước mấy lâu nay. Trang tụt quần xuống trông rõ cụm lông tơ đen nhánh không qúa nhiều, kích thích nhất ở nàng là một vòng eo thon gọn, rất đúng gu của Tuấn, phụ nữ eo thon, mặt xinh và nhất là làn da rất trắng, một làn da và dáng điệu của một tiểu thư khuê các.
 
@@ -564,7 +463,7 @@ Bướm nàng đang phập phồng thổn thức dưới bồn cầu, xả hết
 
 Tiếng quát của Tuấn và cái tát trời giáng khiến nàng choàng tỉnh. Thấy mình vẫn ngồi trong bồn cầu. Hoá ra mình vừa ngủ mơ ư. Trời ơi, trong một khoảng khắc, chắc mình bị say thật rồi. Trong một lúc nào đó chính mình cũng không điều khiển được mình nữa.
 
-Ngó ra cửa phòng vệ sinh vẫn thấy một vùng tối om, chắc Tuấn vẫn đứng lom khom ở đó. 
+Ngó ra cửa phòng vệ sinh vẫn thấy một vùng tối om, chắc Tuấn vẫn đứng lom khom ở đó.
 
 "Phù, hoá ra chỉ là mơ, … Ôi giời, một giấc mơ kỳ quái làm bướm nàng đã ướt lại càng thêm ướt sũng" – Hoá ra chính đầu Trang cũng đang tràn ngập sự kích thích của dâm dục loạn cảm xúc mất rồi.
 
@@ -592,9 +491,9 @@ Chiếc váy đỏ tốc lên hết cỡ còn lại cả phần hạ thể với
 
 " Thay quần thôi em ơi, ướt hết rồi"
 
-Trang vẫn không nói gì. 
+Trang vẫn không nói gì.
 
-"Thái độ gì đây?!" Tuấn bị kích thích hết cỡ. 
+"Thái độ gì đây?!" Tuấn bị kích thích hết cỡ.
 
 "Em say quá rồi àh?" – Tuấn vờ lay hỏi nhưng không thấy Trang trả lời.
 
@@ -612,25 +511,18 @@ Tuấn thò 2 tay xuống 2 mông và toan cầm chiếc quần lót kéo xuốn
 
 – " Thày làm gì vậy?"
 
-
-
 ==================== Chương 7 ====================
 
 – "Trang, anh thích em, hãy để anh được chiều em nhé" – Tuấn nhẹ giọng khẩn khoản
-
 – "Không được đâu thày"
-
 – "Sao vậy em?"
-
 – "Làm thế kỳ lắm"
-
 – "Anh biết là em thích mà, chúng ta đã vào tới đây rồi, chẳng lẽ em không muốn được anh chiều sao, em cũng rất thích mà, của em cũng ướt hết rồi đúng không?"
-
 – "Thày từ từ đi" – Trang khẽ nói.
 
 Bản thân Trang cũng không biết mình muốn gì nữa, dục vọng trong bản thân Trang đang từ từ đánh nhau với sự lạ lẫm, một người xa lạ với mình, đó không phải cảm giác quen thuộc của nàng.
 
-Thực ra, ngay trong lúc này đây, người Trang đang nhớ đến nhất chính là sếp Trường, một phó giám đốc ngân hàng có tiếng ở tỉnh. Chính nàng đã chinh phục được sếp Trường để giành được hợp đồng từ tay biết bao nhiêu nhà cung cấp khác. Nhưng cái giá phải trả cũng thật không dễ dàng gì. Con đường tiến thân của một em nhân viên văn phòng, chân dài váy zip thật khó mà tránh khỏi sự cám dỗ của tình ái. Trong một lần đi ký hợp đồng và nhậu với đối tác, Trang đã lọt vào tầm ngắm của sếp Trường. 
+Thực ra, ngay trong lúc này đây, người Trang đang nhớ đến nhất chính là sếp Trường, một phó giám đốc ngân hàng có tiếng ở tỉnh. Chính nàng đã chinh phục được sếp Trường để giành được hợp đồng từ tay biết bao nhiêu nhà cung cấp khác. Nhưng cái giá phải trả cũng thật không dễ dàng gì. Con đường tiến thân của một em nhân viên văn phòng, chân dài váy zip thật khó mà tránh khỏi sự cám dỗ của tình ái. Trong một lần đi ký hợp đồng và nhậu với đối tác, Trang đã lọt vào tầm ngắm của sếp Trường.
 
 Mọi chuyện dường như đã được sắp đặt từ trước, một nhân viên văn phòng quèn sao quá nhanh chóng trở thành phó phòng kinh doanh chỉ trong một thời gian ngắn như vậy, rõ ràng việc biến Trang trở thành con tốt trong ván cờ này không ai khác là ngoài sếp Quân, giám đốc công ty dịch vụ bảo hiểm của nàng.
 
@@ -642,7 +534,7 @@ Chuyện đã được nửa năm trước….
 
 – "Em gửi sếp ạ" – Trang bẽn lẽn đặt ly nước lên bàn.
 
-Đi làm Trang vẫn gọn gàng trong bộ đồng phục váy zip ngang đầu gối, áo vest đen khoác ngoài, bên trong áo sơ mi trắng đóng thùng gọn gàng. Trang không đeo bất cứ đồ trang sức nào ngoại trừ chiếc đồng hồ nhỏ xinh xắn nơi cổ tay nàng. Môi nàng chỉ thoa nhẹ lớp son hồng khi đi làm. Mái tóc nàng để tự nhiên, đen óng, không duỗi buông lửng chấm bờ vai. Đơn giản không cầu kỳ, nhưng vẫn toát lên vẻ đẹp thanh tao từ con người nàng. 
+Đi làm Trang vẫn gọn gàng trong bộ đồng phục váy zip ngang đầu gối, áo vest đen khoác ngoài, bên trong áo sơ mi trắng đóng thùng gọn gàng. Trang không đeo bất cứ đồ trang sức nào ngoại trừ chiếc đồng hồ nhỏ xinh xắn nơi cổ tay nàng. Môi nàng chỉ thoa nhẹ lớp son hồng khi đi làm. Mái tóc nàng để tự nhiên, đen óng, không duỗi buông lửng chấm bờ vai. Đơn giản không cầu kỳ, nhưng vẫn toát lên vẻ đẹp thanh tao từ con người nàng.
 
 Quân vẻ mặt hơi đỏ do bữa trưa với đối tác miền Nam vừa làm mấy chai bia. Anh gật đầu, từ từ đưa ghế ngả ra và ra lệnh cho Trang tiến lại gần và đoạn nàng quỳ thụp xuống cởi khoá quần của Quân và chuẩn bị dùng miệng bj cho sếp, nói nghe cho sang chứ thực ra công việc là quỳ xuống bú cu cho sếp.
 

@@ -2,1398 +2,887 @@
  TITLE: Ứng Dụng Thần Kỳ
 ==============================
 
-
-
 ==================== Chương 1: Đám cưới chị Dâu ====================
 
 Tôi là Minh, năm nay mười chín tuổi đang học đại học. Nhà còn có một ông anh, anh ấy đang đi làm tại ngân hàng có tiếng trong thành phố … Bố của tôi thì về hưu , còn mẹ tôi thì mở cửa hàng tạp hoá nho nhỏ ở nhà , nên nhà em cũng chỉ thuộc dạng trung bình trong xã hội bây giờ…
 
-
 Hôm nay là ngày anh trai tôi cưới vợ, …chị dâu của tôi năm nay hai năm tuổi , kém anh trai tôi một tuổi… Tuy nhiên chị trông rất trẻ chỉ như đám bạn của tôi , chị cao 1m70 một chiều cao lý tưởng ít cô gái có …
 
+Nhưng so với tôi vẫn thấp hơn 7cm lận , 3 vòng của chị thì tuyệt hảo với số đo 87-63-90,. Đôi mắt sắc sảo nhìn cực kỳ lạnh lùng ( nghe đồn ngày trước thằng anh tán chị đến nỗi suýt trầm cảm, nhưng tán xong chị đối với anh và gia đình bên tôi cực kỳ tình cảm). Chị là kế toán trưởng của một công ty nước ngoài, lương tháng tận 50 triệu, một mức lương bao nhiều người thèm khát… Nên để mà nói anh chị tôi thật đẹp đôi, và may mắn có kinh tế bình ổn sau này …
 
-Nhưng so với tôi vẫn thấp hơn 7cm lận , 3 vòng của chị thì tuyệt hảo với số đo 87-63-90,. Đôi mắt sắc sảo nhìn cực kỳ lạnh lùng ( nghe đồn ngày trước thằng anh tán chị đến nỗi suýt trầm cảm, nhưng tán xong chị đối với anh và gia đình bên tôi cực kỳ tình cảm). Chị là kế toán trưởng của một công ty nước ngoài, lương tháng tận 50 triệu, một mức lương bao nhiều người thèm khát… Nên để mà nói anh chị tôi thật đẹp đôi, và may mắn có kinh tế bình ổn sau này … 
+Hôm cưới chị mặc kiểu váy hiện đại, chỉ hở một bên vai trắng nõn của chị, cái áo hở nửa ngực khoe ra bầu vú căng trắng ngần . Làm thằng đệ của tôi nó cũng biểu tình mạnh mẽ… Biết là chi dâu mình rồi , hix … nhưng nghĩ lại cảnh đấy chắc không cửng, thì tôi là gay mất…. Rồi ngày cưới mệt mỏi ấy qua đi , chị dâu và anh tôi bắt đầu xách vali đi nhật du lịch tuần trăng mật . Tôi nhìn chị mà thèm lắm , cứ cố lại gần chị trước khi, vừa đi mè nheo đòi chị bảo sẽ mua cho 1 con iPhone X, vừa tranh thủ ngắm chị …
 
-
-
-
-Hôm cưới chị mặc kiểu váy hiện đại, chỉ hở một bên vai trắng nõn của chị, cái áo hở nửa ngực khoe ra bầu vú căng trắng ngần . Làm thằng đệ của tôi nó cũng biểu tình mạnh mẽ… Biết là chi dâu mình rồi , hix … nhưng nghĩ lại cảnh đấy chắc không cửng, thì tôi là gay mất…. Rồi ngày cưới mệt mỏi ấy qua đi , chị dâu và anh tôi bắt đầu xách vali đi nhật du lịch tuần trăng mật . Tôi nhìn chị mà thèm lắm , cứ cố lại gần chị trước khi, vừa đi mè nheo đòi chị bảo sẽ mua cho 1 con iPhone X, vừa tranh thủ ngắm chị … 
-
-
-Thế là hai chị đi trong tiếc nuối nơi tôi , còn tôi thì chỉ mong ngày anh chị sớm về , để có cái iPhone đi tán gái …và lại được chiêm ngưỡng chị dâu xinh đẹp của mình .. Đêm hôm ấy nhớ lại, tôi chỉ ước gì mình là thằng anh, được địt chị tơi bời. Nghĩ lại thế là lại bắt đầu cửng hết cu lên , và chỉ mong tối nay mơ thấy chị , rồi chìm vào giấc ngủ lúc nào không hay…. Đêm hôm ấy tôi mơ thì thấy mình địt chị, sướng thật các thím ạ,… nhưng khổ mỗi mơ thì có biết sự việc nó chỉ là ảo , khi thấy chim mình nó chui trong lồn chị thì sướng ngất ngây , rồi khi tôi tỉnh giấc khi quần mình ươn ướt 
-
-
-
+Thế là hai chị đi trong tiếc nuối nơi tôi , còn tôi thì chỉ mong ngày anh chị sớm về , để có cái iPhone đi tán gái …và lại được chiêm ngưỡng chị dâu xinh đẹp của mình .. Đêm hôm ấy nhớ lại, tôi chỉ ước gì mình là thằng anh, được địt chị tơi bời. Nghĩ lại thế là lại bắt đầu cửng hết cu lên , và chỉ mong tối nay mơ thấy chị , rồi chìm vào giấc ngủ lúc nào không hay…. Đêm hôm ấy tôi mơ thì thấy mình địt chị, sướng thật các thím ạ,… nhưng khổ mỗi mơ thì có biết sự việc nó chỉ là ảo , khi thấy chim mình nó chui trong lồn chị thì sướng ngất ngây , rồi khi tôi tỉnh giấc khi quần mình ươn ướt
 
 …. Sáng hôm sau ngủ đến hơn 10h, đang ngủ thì nhạc chuông điện thoại vang lên ” no kajimaaaa’’ , vừa nhấc máy lên thì đập ngay giọng của thằng Long, thằng bạn chí cốt của tôi , nó nói thầm thì ( chắc là đang trong tiết) :
 
-
 – Đm dậy đi hôm nay có bài kiểm tra 15 phút đấy mày , vừa nãy tao vừa điểm danh hộ mày ,. Mày mà không đến là nát đấy con…!
 
-
-Nói xong nó cúp máy luôn… Lúc này thì tôi hết tâm trạng ngủ rồi, cuống cuồng mặc quần áo đánh răng xong, phi xe đến trường luôn. Cũng may là trường gần nhà , nên tôi đi có hơn 10p là tới nơi. Đến trường cũng là lúc hết tiết ba , đợi ông thầy ra ngoài, là phi vào lớp luôn… Vào lớp thấy thằng Long đang ngồi kẹp pate giữa hai đứa con gái xinh nhất nhì lớp ( lớp tôi tận năm mươi đứa con gái, mà chỉ có mười đứa trai thôi các bác ạ..Nên ra mới có kiểu ngồi kẹp giữa bọn con gái như thế này , mà bọn con gái giờ bạo lắm, ngồi giữa xong trêu chúng nó , mà chả thấy đứa nào đỏ mặt tẹo nào à). Sau khi phi xuống chỗ thằng Long thì tôi ngồi cạnh con Trang, con này thì hơi thấp có 1m56 nhưng được cái điện nước đầy đủ, mặt nó rất baby chỉ thấy dễ thương, chứ nếu so xinh với chị dâu tôi , thì nói thẳng không có cửa…. 
-
-
-
+Nói xong nó cúp máy luôn… Lúc này thì tôi hết tâm trạng ngủ rồi, cuống cuồng mặc quần áo đánh răng xong, phi xe đến trường luôn. Cũng may là trường gần nhà , nên tôi đi có hơn 10p là tới nơi. Đến trường cũng là lúc hết tiết ba , đợi ông thầy ra ngoài, là phi vào lớp luôn… Vào lớp thấy thằng Long đang ngồi kẹp pate giữa hai đứa con gái xinh nhất nhì lớp ( lớp tôi tận năm mươi đứa con gái, mà chỉ có mười đứa trai thôi các bác ạ..Nên ra mới có kiểu ngồi kẹp giữa bọn con gái như thế này , mà bọn con gái giờ bạo lắm, ngồi giữa xong trêu chúng nó , mà chả thấy đứa nào đỏ mặt tẹo nào à). Sau khi phi xuống chỗ thằng Long thì tôi ngồi cạnh con Trang, con này thì hơi thấp có 1m56 nhưng được cái điện nước đầy đủ, mặt nó rất baby chỉ thấy dễ thương, chứ nếu so xinh với chị dâu tôi , thì nói thẳng không có cửa….
 
 Vừa ngồi ấm chỗ, thì con Trang nó hỏi sao tôi hôm qua không đi học …Tôi chưa kịp trả lời, thì thằng Long nó đã nhẩy vào miệng tôi …ức chế … Đã thế nó kể hết chuyện hôm qua của tôi , rồi còn kể cái lúc chị dâu tôi xinh như thế nào rồi , Nó còn kể cả ánh mắt tôi , khi nhìn chị dâu em say xưa như thế nào….
 
-
 Cay…đậu xanh nhà nó …! Tôi vội vàng đập nó một phát vào đầu chửi :
 
-
-– Đm …! mày nói thế này khác gì bảo tao hám gái, không biết ai vao ai đâu thằng ngu…! 
-
+– Đm …! mày nói thế này khác gì bảo tao hám gái, không biết ai vao ai đâu thằng ngu…!
 
 Nói xong tôi mới để ý, có ánh mắt hình viên đạn đang nhìn tôi . Hoá ra con Trang nó nhìn tôi các bác ạ,.. Xong cả buổi nó dỗi tôi , còn không cho tôi chép bài, mặc dù em còn chả phải người yêu nó các bác ạ…
 
-
-Thế là làm bài kiểm tra xong (..đậu xanh ! nộp giấy trắng chứ có làm được đâu 
-
+Thế là làm bài kiểm tra xong (..đậu xanh ! nộp giấy trắng chứ có làm được đâu
 
 ) Tôi chán đang định về nhà ngủ để quên nỗi buồn này đi , thì thằng Long nó gạ:
-– Ê mày bọn 01 nó gạ lớp mình đánh LO L, mày có vào không cho nó đủ team… ! 
-
+– Ê mày bọn 01 nó gạ lớp mình đánh LO L, mày có vào không cho nó đủ team… !
 
 Đúng lúc đang buồn về vụ vừa nãy, thế là tôi té luôn, kiểu gì cũng phải kiếm mấy lít , để sau này đóng tiền học lại môn này. Chứ xin tiền mẹ tôi , chắc lại nghe bài ca muôn thủa mất… Thế là tôi và thằng Long với 3 thằng cùng lớp, ra quán solo với bọn 01. Lúc ra thì bọn 01 đã chờ sẵn, làm luôn kèo bo3 các bác ạ…
 
-
-Trận 1 bọn lớp em đánh theo kiểu out meta, bảo kê xạ thủ với 3 thằng tank cứng maokai top, shen jung, malphite mid, tôi vs thằng Long chơi cặp ad sp lulu- kog mow,.. Trận đấy team tôi win , đến nỗi bọn 01 còn chả đẩy nổi cái trụ nào. Cứ tưởng bọn 01 hay lắm, cơ mà đời méo như mơ các bác ạ ! Hai trận sau bọn bên kia bắt đầu cấm tủ xong , chúng nó bắt đầu mới chọn những con tủ , chúng nó chơi thế là team tôi sấp mặt. Thua 2 trận liền, thằng đội trưởng sang lấy tiền xong, nó cười đểu: 
+Trận 1 bọn lớp em đánh theo kiểu out meta, bảo kê xạ thủ với 3 thằng tank cứng maokai top, shen jung, malphite mid, tôi vs thằng Long chơi cặp ad sp lulu- kog mow,.. Trận đấy team tôi win , đến nỗi bọn 01 còn chả đẩy nổi cái trụ nào. Cứ tưởng bọn 01 hay lắm, cơ mà đời méo như mơ các bác ạ ! Hai trận sau bọn bên kia bắt đầu cấm tủ xong , chúng nó bắt đầu mới chọn những con tủ , chúng nó chơi thế là team tôi sấp mặt. Thua 2 trận liền, thằng đội trưởng sang lấy tiền xong, nó cười đểu:
 – Lớp tao chỉ nhả trận một , xem team lớp mày thế nào thôi…. !
 
-
-Haizzzzz, nghe nó nói xong mà ức vl các bác ạ chỉ muốn đấm mặt nó 
-
+Haizzzzz, nghe nó nói xong mà ức vl các bác ạ chỉ muốn đấm mặt nó
 
 , thế là 5 lít đi tong luôn …Lúc về, trong lòng đang cay cực kỳ, hậm hực ra cửa lấy xe đi về thì đập vào một con bé….
 
-
 Đang chim cú …quay ra định chửi , vì lúc ấy tay đứa kia nó đập vào mặt em. Đang định chửi cho một trận thì tự nhiên tôi khựng lại, cả thời gian lúc ấy như ngừng lại… Con bé ấy…. , tiếc mỗi cảm xúc này không tồn tại được lâu… Con bé nó mắng luôn tôi mới đau … Cái miệng xinh xắn tru tréo :
 
-
-– Mày bị mù à, mắt mũi kiểu gì thế…! 
-
+– Mày bị mù à, mắt mũi kiểu gì thế…!
 
 Bla bla.. quá đen cho đội bán len … Tôi nghe thế bực lắm , nhưng tôi đành ậm ừ cho xong , Tôi đi về luôn trước sự ngạc nhiên của con bé và thằng Long… ( vì lúc ấy chúng nó thấy mặt tôi rõ là a cay , ôm ” con giận ” mà lại chẳng làm gì cả)
 Hết chương 1 !!!!
 
-
 Lần đầu viết có gì yếu kém mong các thím chém nhẹ :d
-
-
 
 ==================== Chương 2: Trang có tình cảm với mình ư ?? ====================
 
 Về nhà với sự ấm ức trong lòng, nhưng đứng trước cửa tôi lập tức thay đổi thái độ mình ngay, hix bực thế nào đi chăng nữa mà về nhà không thay đổi thái độ kiểu nào cũng ăn vạn câu hỏi vì sao. Chán nản bước vào phòng ném cái cặp xuống xong nằm xuống giường, lúc này nhớ đến con bé lúc nãy, rồi lại nghĩ đến hành động của mình lúc đấy (Với tính cách của tôi thì lúc ấy tôi đã chửi cho nó đến phát khóc thì thôi, tính cách của tôi vốn vậy đã không ai động đến mình thì thôi, nhưng nếu đã động thì tôi cũng chả để yên cho nó đâu kể cả trai lãn gái thành ra từ bé đến lớn tôi rất được lũ bạn cùng tuổi và một số anh chị khoá trên nể) có lẽ lý trông con bé ấy giống người ấy quá….
 
-
 Mấy ngày hôm sau mọi việc vẫn xảy ra rất bình thường, sáng đi học, có hôm thì ở nhà ngủ, chiều đi chơi, tối cày rank, mọi thứ deja vu đến phát ngán thì cũng đến hôm anh chị đi du lịch về. Sáng hôm ấy vẫn đi học bình thường thì mẹ gọi tối về ăn cơm anh chị vừa đi du lịch về, về đến nhà mẹ đã chuẩn bị xong xuôi gần xong rồi chị thì đang phụ bếp còn ông anh thì chẳng thế đâu, hỏi mẹ thì anh vừa có điện thoại nên ra ngoài nghe. Một lúc sau anh cũng nghe điện thoại xong, bố tôi thì cùng vừa lấy lương hưu về cả nhà bắt đầu ăn trưa. Lúc ăn cơm nghe anh chị kể chuyến đi du lịch nào thì nghỉ ở khách sạn nào, đi những đâu hix nghe xong chỉ muốn được đi thôi các thím ạ. Xong chị hỏi tôi dạo này học hành thế nào vẫn fa như trước à, có cần giới thiệu cô nào không,…. xong bữa cơm mà nước mắt cứ trào ra . Cuối cùng phần mà tôi mong đợi nhất cũng đến anh chị mua quà về… bố thì được chai rượu sake, mẹ thì mỹ phầm, còn tôi được con iPhone X. Nghe chị kể bên ấy bán iPhone x rẻ lắm bản 64GB khoá nhà mạng chỉ có hơn 43000 yên ~ 8tr990k tiền việt nhưng khổ mỗi là phải dùng sim ghép, 2 anh chị ngồi 1 lúc rồi cũng xin phép đi về. Cuối cùng cũng đã đến giờ được nghịch, lên cắm vào máy tính active tải apps các kiểu còn bonus mấy bức lên ngày của tôi, rồi trả lời cmt mấy bạn thì cũng đến 11h đêm.
-
-
-
 
 Ngày hôm sau đến lớp, vừa ngồi ấm chỗ thì thằng Long đã xuất hiện như một cơn gió rồi bắt tôi giao nộp điện thoại, nó cầm lên nghịch nghịch faceid các kiểu xong chụp vài bức thì con Trang cũng nhảy vào nghịch theo, mà các thím biết cho bọn con gái nghịch vào điện thoại như thế nào rồi đấy, cả đống hình ảnh phồng môi trợn má, xong tai thỏ tai mèo rồi chụp chung,… đủ kiểu. Buổi học hôm đấy là lý tưởng Hồ Chí Minh, cái môn theo tôi cảm giác là sướng nhất vì cơ bản ông thầy dễ tính nghịch điện thoại cả buổi ông cũng chả nói gì, thế là sau một hồi con Trang chụp ảnh chán chê tôi cũng cầm được máy về, vừa cầm xong nó đã hăm doạ cấm tôi xoá bức ảnh nào của nó. Sờ vào thì ôi mẹ ơi gần 600 bức mà kiểu nào cũng 20-30 bức giống nhau, đúng là đưa con gái điện thoại thật là tội ác. Ngôi đọc truyện hợp đồng bảo vệ trên MyTruyen.com một lúc, tôi vào facebook lướt linh tinh , thì tự nhiên con Trang tag tôi vào status của nó kèm theo bức ảnh vữa nãy nó bắt chụp trung:
 
-
-
-
 “Rõ ràng em đối với anh không đơn giản chỉ là thích, nhưng trong đôi mắt anh chưa từng có đán án đấy. Cứ lạnh rồi lại nóng làm em mất điên phát thôi!!”
-
 
 Đọc xong quả status này thì tôi biết có gì đó sai sai rồi, ngước mắt nên nhìn con Trang thì cũng là lúc nó ngẩng lên nhìn tôi, ánh mắt nhu tình cứ như kiểu tôi và nó là người yêu của nhau vậy…… Về nhà với suy nghĩ thổn thức cả sáng nay, nghĩ về cái Trang, nghĩ về hành động trước đấy nó đối với tôi. Đợt đi chơi nhóm nào nó cũng rủ tôi đi cùng, rồi một số hành động thân mật, cái lúc nó ghen khi thằng Long nói kể cái vụ chị tôi,… có lẽ từ ngày cô ấy bỏ tôi đi tôi đã không còn hứng thú với tình yêu nữa sao, để mà những cái hành động mà thằng lớp 6-7 cũng biết mà tôi lại không nhận ra. Mải mê suy nghĩ trong đầu mà tôi không biết rằng trong lúc ấy tôi đã ấn vào 1 ứng dụng thay đổi cả cuộc đời tôi sau này…..
 
-
-
-
 P/s: sau chap 2 này e sẽ ra đều đặn 3 ngày 2 chương. Hi vọng các bác ủng hộ :3
-
-
 
 ==================== Chương 3: Nó hoạt động really ??? ====================
 
 Để ý vào màn hình điện thoại, thoạt nhìn ứng dụng này rất bình thường. Với cái tên Body Jack’s, giao diện duy nhất là hình cái camera lúc này tôi nghĩ nó chỉ là ứng dụng chụp chỉnh sửa ảnh bình thường, ấn chụp thử nhưng chả có gì xảy ra ảnh không hề lưu vào máy. Nghĩ chắc phần mềm này vớ vẩn hoặc không họat động trên iphone tôi liền thoát ra màn hình chính để xoá ứng dụng, nhưng điều kỳ lạ là tôi không thể xoá được bình thường với những ứng dụng tải về chỉ cần giữ xong ấn x là xoá được nhưng ứng dụng này thì không có chữ x như thế. Hiếu kỳ tôi gõ google xem nó là phần mềm gì vì biết đâu nó là ứng dụng mặc định nhưng cuối cùng vẫn không hề thu được kết quả gì ngoài màn hình với những thông tin chả liên quan. Cũng lúc này mẹ gọi tôi xuống ăn cơm, ném điện thoại xuống giường tôi xuống ăn cơm với suy nghĩ về ứng dụng kỳ lạ này trong đầu. Cả tối hôm ấy vọc vạch tìm hiểu tìm hiểu nhưng tất cà vẫn thế, ứng dụng chỉ có chụp nhưng lại không hề có chỉnh sửa hay lưu vào trong máy. Chán nản tôi đi ngủ, kệ nó đến đâu thì đến không ảnh hưởng đến chén cơm của mình là được. Nhắm mắt lại tôi không hề để ý rằng lúc này chiếc điện thoại loé sáng đỏ rồi vụt tắt. Tôi lại mơ, lần này là một giấc mơ cực kỳ chân thực tôi cầm điện thoại chụp rất nhiều, từ vật nó đến vật kia, thì đột nhiên chị tôi đến nhà chơi tôi liền chụp chị biết đâu cái này chỉ có chụp người, vừa nháy chụp xong thì đầu óc tôi quay cuồng rồi tôi tỉnh dậy. Lúc này mô hồ tôi đầm đìa mặc dù điều hoà đã chỉnh 24 độ, cầm điện thoại lên lúc này đã gần 5h30 trằn trọc không ngủ rồi lại nghĩ đến giấc mơ vừa nãy, tại sao khi tôi chụp các khung cảnh thì không sao, nhưng khi chụp chị thì lập tực tỉnh dậy, viển vông mãi tôi liền quyết định đến trường sớm để quyết tìm ra chức năng của ứng dụng này. Xuống nhà với sự ngạc nhiên của cả bố lẫn mẹ vì thường giờ này tôi còn đang ngủ nướng trên giường gọi mãi không dậy, cười trừ xong ăn qua loa bữa sáng tôi lấy xe đi đến trường, lúc đến mới có 6h30 quá sớm, cả trường thưa thớt bóng người lên lớp cất cặp, rồi theo kế hoạch tôi liền chạy tới thư viện, chạy lên thư viện vì tôi biết trên đấy có một người con gái vô cùng đẹp và mang biệt: “Mỹ nhân đọc sách” cực kỳ hợp với kế hoạch của tôi. Sỡ dĩ chị có biệt danh mỹ nhân bởi vì chị nằm trong top 3 người đẹp nhất trường, à mà quên top 2 chứ, mà người số 1 lại đang bỏ trống vì vậy nói thẳng ra chị xinh nhất trường. Sỡ hữu chiều cao 1m72 với đôi chân của siêu mẫu số đo 3 vòng khỏi phải chê 88-64-93, một đôi môi biết cười và ánh mắt long lanh ẩn sau chiếc kính, còn đọc sách là vì chị luôn xuất hiện ở thư viện trường với cả đống sách anh văn trước mặt. Nghe đồn chị được nhiều ông theo đuổi lắm nhưng chả hiểu sao đến giờ chị vẫn len bóng một mình, nghe thằng Long kể hình như chị có yêu một anh nhưng hình như giờ anh ấy đang du học bên nước ngoài. Lên thư viện đúng như tôi nghĩ, chị đang đọc cuốn ngữ pháp anh văn, lúc này tôi đứng nép ở cửa và giơ điện thoại lên chụp bằng phần mềm. Tách một cái, tôi thấy đầu óc như quay cuồng rồi hình như ngất luôn thì phải, đến khi mở mắt ra tôi thấy mình đang ngồi trên bàn, xung quanh toàn là sách anh văn. Cảm giác có cái gì đó cực sai, tôi nhìn mình. Omg nếu để hình dung ở hoàn cảnh thì chỉ có 1 từ duy nhất: “SỐC”, vì bây giờ tôi không phải là tôi nữa, tôi đang ở trong chị người con gái đẹp nhất trường. Tôi đứng lên méo vào má một phát xem có phải mơ không nhưng chỉ thấy đau, cơ mà lúc véo cảm giác da thịt thật mềm mại. Nhưng lúc này tôi chợt nghĩ ra một điều rất quan trọng, nếu bây giờ tôi đang ở thân xác chị thì chả lẽ chị lại ở thân xác tôi, nghĩ vậy tôi liền chạy ra khỏi thư viện trước ánh mắt ngạc nhiên của bà thủ quỹ….
 
-
 Hết chương 3
-
-
 
 ==================== Chương 4: Ngạc nhiên này đến ngạc nhiên khác ====================
 
-Ra khỏi thư viện, cứ tưởng sẽ thấy bản thân mình nằm sõng soãi trước cửa thư viện nhưng không chả có ai cả. Nghĩ một lúc tôi đến thử lớp học xem sao , lúc này trường đã bắt đầu đông rồi tôi đi qua đâu mọi người nhìn tôi đến đấy. Một số ánh mắt thì ngạc nhiên ( chắc thường lúc này chị phải ở thư viện mới đúng), 1 số thì nhìn tôi chằm chằm như muốn ăn tươi nuốt sống. Nhưng tôi cũng chả để ý làm gì vì điều quan trọng nhất với tôi lúc này là bản thân mình ở đâu và đang làm gì, rảo bước nhanh hơn tôi đi hướng về lớp mình. 
-
+Ra khỏi thư viện, cứ tưởng sẽ thấy bản thân mình nằm sõng soãi trước cửa thư viện nhưng không chả có ai cả. Nghĩ một lúc tôi đến thử lớp học xem sao , lúc này trường đã bắt đầu đông rồi tôi đi qua đâu mọi người nhìn tôi đến đấy. Một số ánh mắt thì ngạc nhiên ( chắc thường lúc này chị phải ở thư viện mới đúng), 1 số thì nhìn tôi chằm chằm như muốn ăn tươi nuốt sống. Nhưng tôi cũng chả để ý làm gì vì điều quan trọng nhất với tôi lúc này là bản thân mình ở đâu và đang làm gì, rảo bước nhanh hơn tôi đi hướng về lớp mình.
 
 Đến nơi nhìn vào lớp, đúng như tôi dự đoán tôi thấy bản thân mình trong lớp, không những thế bản thân tôi còn đang trò truyện với thằng Long cứ như là chính tôi đang nói chuyện với nó vậy, dựa vào cửa lớp học tôi suy nghĩ: “ Quái lạ tại sao lại như vậy nhỉ, rõ ràng người đang nói chuyện với thằng Long chính là mình, 19 năm mà còn không biết tính cách, cách nói chuyện của mình ra sao thì đập mẹ vào cửa mà chết đi. Nhưng nếu tôi đang ở trong thân xác chị cơ mà, chả lẽ mình phân thân. Mà cứ cho phân thân đi, thì bây giờ chị đang ở đâu???” Ngổn ngang suy nghĩ, tôi không biết rằng Trang đã đứng trước mặt tôi từ lúc nào. Trang lên tiếng:
 
-
-
-
 “ Chị Ly, sao chị lại đứng ở lớp cửa em, bình thường giờ này chị phải ở thư viện chứ ?”
-
 
 Thoát ra khỏi suy nghĩ, tôi nhíu lông mày nhìn Trang thì một loạt ký ức của chị về Trang xuất hiện. Hoá ra chị với Trang có giao tình khá tốt, 2 chị em ở cùng một khu phố với nhau lại còn học cùng trường với nhau nữa chứ. Tôi liền đáp: “ Ừ, chị vào gặp Minh lớp em một chút”. Đáp xong, ánh mắt con Trang trông cực kỳ ngạc nhiên: “ kiếm Minh, nhưng chị kiếm Minh làm gì, 2 người có quen nhau à, sao em không biết nhỉ ?”. Tôi không đáp mà lập tức bước vào lớp trước sự ngạc nhiên của tất cả mọi người kể cả Long và bản thân tôi của tôi nữa. Đứng trước mặt bản thân tôi, tôi liền nói: “ Minh ra đây với chị một lúc”, cũng giống như Trang, Minh’m ( bắt đầu từ chương này mỗi lần khi phân thân tôi sẽ đế tên Minh thêm chữ ‘m’ đằng sau, viết tắt của Minh mirror) tỏ ra rất ngạc nhiên vì từ trước đến giờ 2 chúng tôi còn chả gặp nhau nói chi đến bây giờ nói chuyện với nhau. Minh’m chưa kịp nói gì thì thằng Long đã lên tiếng: “ đậu xanh mày, quen được hoa khôi mà chả nói anh em một câu gì cả, mày có còn coi tao là bạn của mày không hả ?, Chị ơi em bảo này, cái thằng này ấy nó bị cuồng chị dâu đấy chị ạ, từ cái hồi em đi học chung với nó chưa bao giờ em thấy thằng đệ nó cửng với ai ngoài chị dâu nó, chị cẩn thận đấy không có ngày nó cho đầu chị mọc sừng đấy”. Lúc này khỏi phải nói trong đầu tôi và Minh’m đều có chung một suy nghĩ tuyệt giao với thằng bạn mắc dịch này, nếu không có ngày nó kêu cả trường là mình cuồng chị dâu mầt T.T. Cười trừ với thằng Long 1 tiếng tôi và Minh’m đi ra ngoài hành lang nói chuyện, ra ngoài hành lang tôi hỏi luôn: “ Minh’m có phải sáng sớm nay em nhìn trộm chị ở thư viện không ?” Sở dĩ tôi hỏi câu này chỉ muốn chắc rằng đây chính là tôi, và tôi làm gì sau khi ngất. Nhưng Minh’m đáp lại khiến tôi vô cùnh bất ngờ “ Cậu chủ không cần lo lắng, em chính là 1 phần linh hồn của cậu chủ, khi cậu chủ sử dụng ứng dụng này và nhập vào ai đó em sẽ có trách nhiêm duy trì hành động của cậu chủ để không ai phát hiện cả!!”. Tôi nghi ngờ hỏi: “ Thật ư ? Thế nếu sau này tôi trở về thân xác của tôi thì sao”. Lúc này Minh’m chỉ nhún vai rồi đáp: “ Thì cậu chủ sẽ sở hữu hết ký ức của em thôi, thôi cậu chủ tận hưởng cảm giác này đi, em vào lớp”. Tôi chợt nhớ ra điều gì đó hỏi luôn: “ Hình như cậu rất am hiểu về ứng dụnh này có thể nói cho tôi biết được không” Minh’m không quay lại nhìn tôi mà chỉ nói: “ em chỉ là 1 phần linh hồn cậu chủ, nếu cậu chủ không biết thì em cũng không biết, em chỉ có nhiệm vụ giúp thân xác cậu chủ hoạt động như bình thường thôi còn mọi điều khác cậu chủ phải tự tìm hiểu” Nói xong Minh’m đi vào lớp.
 
-
-
-
 Lúc nãy IQ trong đầu tôi vận động mãnh liệt, sâu chuỗi cả sự việc thì tôi kết luận rằng tôi đang sở hữu một ứng dụng ma thuật, có khả năng đưa tôi vào thân xác người khác, và khi vào thân xác rồi thì sẽ để lại một phần linh hồn trong cơ thể tôi để giúp cơ thể tôi tiếp tục làm những hành động thường ngày. Nhưng tôi lại nghĩ đến một vấn đề rất rất quan trọng là làm thế nào để quay về thân xác mình vừa nãy cũng định hỏi nhưng nó bảo mình biết gì thì nó biết nấy nên lại thôi , lúc này IQ của tôi lại một lần nữa phát huy khả năng ( bình thường tôi chả thông minh như thế này đâu, nhưng từ lúc tôi nhập vào chị tôi thông minh ra hẳn, chậc chắc thông minh này là của chị rồi) tôi liền lấy điện thoại trong túi quần ra, nhập mật khẩu máy 230996 là ngày sinh người yêu chị. Tôi lướt màn hình và không ngoài dự đoán của tôi ứng dụng đó xuất hiện trên màn hình điện thoại, tôi liền ấn vào thì trên màn hình ứng dụng đã có sư khác lạ: không còn là hình camera nữa mà là hình exit in 23h20m or press here kèm theo một cái bình gì đó đã được 485/2000 điểm. Vậy là mình được phép nhập vào chị trong 24h hoặc ấn nút kia sẽ giúp mình về thân xác cũ, còn số điểm thì chắc mỗi lần mình nhập vào ai đó sẽ tăng lên khi tích đủ sẽ có điều gì đó xảy ra. Omg đúng là IQ cao có khác phân tích sự việc đâu ra đấy, đang định ấn vào cái hình kia để trở về thì đâu tôi chợt loé lên : “ Tại sao lúc này mình không tranh thủ ấy ấy một tí nhỉ”. Như mở cờ trong bụng, tôi bước về vệ sinh nữ trên miệng bất giác nở một nụ cười mà đứa con trai nào nhìn thấy có thể ngất ngay lập tực vì mất máu mũi.
 
-
-
-
 Hết chương 4
-
-
 
 ==================== Chương 5: Hoá ra thủ dâm sướng như vậy sao ====================
 
 Đến khu vực vệ sinh tôi đi vào, một không khí lạ lùng xung quanh tôi, quái lạ tôi biết là tôi đã có bộ dạng xinh xắn rồi , nhưng có cần phải dùng ánh mắt sợ hãi nhìn tôi, đâu lại còn che chim nữa chứ @@…
 
-
 – Ôi mẹ ơi…!
-
 
 Như nhớ ra điều gì tôi chạy ra khỏi cửa, và nhìn lên cái bảng thấy chữ “Nhà vệ sinh nam” cả bầu trời như sụp đổ dưới chân… Thiên thần, quỷ địa ơi ! ..nếu tin đồn này mà lan ra ngoài, thì khéo khi chị quay lại thân xác của chị , thì sẽ nghỉ học mất. Mà nếu thế khác gì tôi sẽ không bao giờ được nhập lại thân xác chị nữa sao ? … không động não, …động não nào… Lại thêm một dòng ký ức tràn vào trong đầu tôi, lập tức tôi gọi một dãy số, giọng nói của một người đàn ông vang lên :
 
-
 – Ơ mỹ nhân đọc sách, hôm nay có việc gì nhớ tới bác, mà lại gọi điện thế….?
-
-
-
 
 Tôi bỏ qua lời đùa cợt này, lập tức nói thẳng vấn đề:
 
-
 – Bác, cháu nhờ bác một việc,…..hơi lan man và lan man… bác giúp cháu nhé ?
-
 
 Bên kia truyền một tiếng cười và vang lên:
 
-
 – Mỹ nhân đọc sách, sao hôm nay bất cẩn thận thế đi bước nhầm vào vệ sinh nam cơ à..! Đừng lo cháu bác cam đoan tin này sẽ không lan ra, cháu yên tâm đi…. !
-
 
 Khỏi phải nói mặt tôi lúc này, đỏ như trái cà chua chín, nhưng nghe bác nói , thì tôi cũng an tâm phần nào, vì người tôi vừa gọi là hiệu trưởng trường này. Bác là bạn làm ăn của ba chị , và tất nhiên chị cũng quen biết bác. Thở phào một cái tôi tiếp tục kế hoạch vĩ đại của mình, không mắc thêm một sai lầm nào nữa, bước vào vệ sinh nữ rồi vào toilet khoá trái cửa…
 
-
 Nhìn mình trong gương, một thân hình đầy gợi cảm xuất hiện.Hôm nay chị mặc bộ váy liền quần, tôn lên đôi chân dài miên man của chị. Tôi cởi từng cái cúc, từng cái từng cái một. Tôi cởi bộ váy ra thì thân hình của vệ nữ của chị xuất hiện.. Cổ chị trắng ngần, bộ xương quai xanh đầy gợi cảm, mà khiến ai nhìn vào chỉ muốn cắn, cái bụng nhỏ xinh xinh, không một chút mỡ thừa nào, quả thật số đo tin đồn không hề sai ….
-
-
-
 
 Chị mặc bộ bra ren đen bên trong , lại càng tăng thêm vẻ sexy của chị, tôi quàng tay vào đằng sau cởi áo ngực ra, bộ ngực sữa của chị xuất hiện nảy lên rung rinh , nó không quá to, nhưng lại vô cùng vừa vặn với thân hình chị.. Hai bàn tay xoa nhè nhẹ vào bầu vú, lập tức trong đầu tôi xuất hiện , một cái cảm giác rùng mình nhè nhẹ .. Tôi tiếp mân mê hai đầu núm vú hồng hồng , cặp vú của cô gái thânh tân thật khác , chứ như mấy bà già già có chồng , tôi từng lén dòm ngực , thì xấu chảy xệ , đã thế còn màu đen đen , éo hiểu sao tôi lúc đó vẫn thấy sướng được … nản vãi .
 
-
 Được kích thích hai núm vú , tôi thấy ngực tự nhiên căng tức khó chịu , điều mà khi là thằng con trai tôi đéo hiểu được.., Một dòng điện như lan tỏa từ bên dưới râm ran , tôi cảm thấy ươn ướt như có thứ gì đó rỉ ra bên dưới … . Khiến tôi nghĩ đến chỗ đó … chính là lồn chị… tại sao chứ ..? mình nghịch chỗ ấy thì mới sướng ..ha ..ha….. Nghĩ vậy tôi lập tức cởi nốt vật cuối cùng , còn bị che kín cơ thể của chị… từ từ rồi . lại từ từ…. tam giác bí ẩn dần dần hiện ra…
 
-
-
-
 Hình như chị chăm sóc phía dưới khá kỹ, lông mu được cắt tỉa gọn gàng, để lộ cái lồn màu hồng vô cùng xinh xắn. Không nhịn được nữa tôi dùng đôi bàn tay búp măng của chị , bắt đầu xoa nhè nhẹ xung quanh chỗ ấy…
-
 
 Một dòng điện tê dại chảy qua đầu tôi, tôi rùng mình vì sướng. Xoa nhẹ đều đều, tôi bắt đầu tiến vào vùng hoa mật, tôi dùng ngón tay gãi nhè nhẹ vào hột lẹ, lần này không chỉ cảm giác… tôi giật nảy người lên, hóa ra chỗ này ở lồn con gái nhạy cảm vậy … sướng ghê .., miệng tôi vô thức .. ” ư ..ư..hư…” lên một tiếng. Vì tôi sử dụng thân thể chị , nên mọi cảm giác nhận được đều là của nữ khi bị kích thích , chỉ suy nghĩ là nam …Cảm giác mình rên hơi to, tôi lập tức bịt mồm lại… hai tai cố nghe xem có ai nghe thấy mình không…tim tôi đập thình thịch ..
 Nhưng bên ngoài không hề tiếng động gì cả. An tâm vì mọi thứ vẫn còn an toàn, bàn tay lại tiếp tục làm trò xấu xa. Lần này không còn kiểu thám hiểm nữa, tôi lấy hai ngón tay của chị bắt đầu chọc vào lồn, bàn tay còn lại tiếp tục che miệng, để đề phòng những việc không hay xảy ra. Tốc độ hai ngón tay lúc đầu chậm, vì bên trong vẫn khô … hơi ran rát rát … kích thích dần dần …rồi thì thì dâm thuỷ ứa ra…nhiều hơn..
 
-
 Cư như thế rút ra, rồi lại cắm vào , tôi bắt đầu cảm giác ngón tay bị thít lại , còn người tôi thì bồng bềnh như thằng phê thuốc . Hóa ra con gái sướng khi được địt là thế này … Một lúc thì tôi có cảm giác buồn đi vệ sinh, những cảm giác sung sướng, dồn từ háng lên ngày một nhiều … , khoái cảm càng đi lên… nhìn vào trong gương đôi mắt tôi như có sương bao phủ. Lý trí dần tan biến, để thế chỗ cho sự khoái cảm ngày càng mãnh liệt… pạch pạch pạch… tốc độ tôi thụt tay vào càng nhanh …nước nhờn trong lồn ngày càng ra nhiều hơn…. sướng quá:
 – Aahhhhh…..hhhhhư ư……… làm con gái thật tuyệttttttt.
-
-
 
 ==================== Chương 6: Cây muốn lặng mà gió chẳng ngừng ====================
 
 Tự xử xong, tôi lấy một ít giấy vệ sinh lau sạch sẽ chỗ ấy rồi bắt đầu mặc quần áo. Đầu tiền quần lót, áo lót rồi đến váy, mọi thứ tôi làm cực kỳ thuần thục như điều hiển nhiên vậy. Có lẽ khi nhập vào chị thì tôi không chỉ sỡ hữu ký ức, mà tất tật mọi thứ của chị đều là của tôi. Nói cách khác cái gì của chị Ly thì là của tôi, mà cái gì của tôi vẫn là của tôi, tôi nghĩ vậy.
 
-
 Bước ra khỏi phòng vệ sinh, tôi nhìn đồng hồ bây giờ là 8h10…..hm….. để xem xem hôm nay chị học môn gì…. thể dục à thú vị đấy, tại sao lại thú vị ư vì khi học thể dục thì phải thay đồ, mà khi thay đồ thì tôi tha hồ tia gá chứ sao he he he… nghĩ xong tôi lập tức đi vào phòng thay đồ nữ…..
-
 
 Đúng như tôi nghĩ, vào phòng thay đồ một loạt các cô gái đang cởi trang phục của mình để thay những đồng phục thể dục. Trong này đủ các thể loại con gái, một số cô gái tôi gọi lại không xinh xắn đi thì thay đồ rất nhanh, thoáng một cái đã cởi xong và đi ra ngoài, cơ bản vì họ ngại cho mọi người thấy hình dáng của mình nên cố thay đồ thật nhanh. Số khác thì vừa thay đồ vừa đùa nghịch.
 
-
-
-
 “Hằng ơi, ngực cậu to quá lại còn mềm nữa, ôi tớ iu chúng chết mất” giọng nói nũng nịu của một bạn học vang lên
-
 
 “Nhi, câu có mau mặc quần áo vào ngay không, mọi người đang nhìn kia kìa” bạn học Hằng đáp lại, giọng điệu cô có vẻ cứng rắn nhưng vẫn để bạn Học nhi sờ mó vú mình
 
-
 “Kệ người ta nhìn, có sao đâu, mà Hằng tớ cấm cậu không được yêu ai đấy, bầu ngực vĩ đại này chỉ của riêng tớ mà thôi cậu nhớ chưa”
-
 
 bạn học Nhi vừa nói tay vừa xoa bầu ngực Hương, rồi lại nắm bộ ngực nhỏ nhắn của mình để nó chạm vào bộ ngực của Hằng, vú chạm vú ti chạm ti, Nhi cứ thế mà đùa nghịch, thỉnh thoảng cô còn cúi đầu xuống dúi đầu vào bầu ngực Phương mà hít lấy hít để
 
-
 Một cảnh tường Yuri khiến tôi vừa bất ngờ vừa kích thích. Nhưng đa số bạn nữ ở đây thấy quá nhiều rồi nên họ coi đó là chuyện bình thường.
 
-
-
-
-Tôi vừa cởi quần áo vừa thầm so sánh bộ ngực của chị Ly với chị Phương, công nhận ngực Phương to thật thì có giọng nói chanh chua kèm theo mỉa mai bất ngờ vang lên cạnh tôi: 
-
+Tôi vừa cởi quần áo vừa thầm so sánh bộ ngực của chị Ly với chị Phương, công nhận ngực Phương to thật thì có giọng nói chanh chua kèm theo mỉa mai bất ngờ vang lên cạnh tôi:
 
 “ Ồ mỹ nhân đọc sách đang thay quần áo à, cứ tưởng là đang sáng nay đi gặp trai tân để đi hẹn hò chứ ??”
 
-
 Tôi quay đầu sang thì là một cô gái vô cùng xinh đẹp nhưng giờ mang nét độc ác, nhưng để mà nói kỹ thì chị này mang một vẻ đẹp của người á đông phá chút vẻ sắc sảo của người Đức. Người con gái này tên Trúc Anh con gái của một thương gia người Đức, bố là người Đức một lần đến Việt Nam làm ăn thì gặp được mẹ của Trúc Anh, và 2 người nảy sinh tình cảm rồi sinh ra Trúc Anh, hai người họ sống ở Việt Nam sinh sống đến năm Trúc Anh lên lớp 7 rồi định cư sang Đức để Trúc Anh ở lại với vú. Vốn từ bé được nuông chiều, muốn gì được nấy Trúc Anh luôn luôn nghĩ mình là nhất cho tới khi lên đại học, gặp Ly người con gái đi đâu cũng được mọi người tán khen, còn cô mặc dù chỉ xếp sau Ly nhưng thế đã đủ khiến Trúc Anh cảm thấy thất bại rồi, mối tình đầu của cô, người cô lần đầu rung động, làm cô chấp nhận bỏ đi tính kiêu ngạo của mình mà theo đuổi anh mà cuối cùng anh chả ngó ngàng đến cô mà lại theo đuôi Ly. Để rồi khi Ly từ chối, anh vẫn không đáp lại tình cảm của cô mà lại bỏ ra nước ngoài để đi du học. Từ đó Trúc Anh vô cùng hận Ly, hận vì Ly hơn cô ở mọi mặt: xinh đẹp hơn, học giỏi hơn, đến cả mối tình đầu của cô Ly cũng cướp mất, thử hỏi đả kích ấy thì người con gái nào chịu được. Trời đã sinh ra Trúc Anh sao lại còn sinh ra Ly????
 
+Không khí buổi thay đồ đang tràn đầy sức sống thì trùng xuống, một số bạn học mặc thật nhanh rồi đi ra ngoài, 2 bạn học Hằng và Nhi vốn đang đùa nhau thấy thế cũng vội vàng mặc quần áo rồi rời đi, chỉ còn một số bạn học tò mò ở lại. Biết Trúc Anh đối với chị chả tốt đẹp gì, nên tôi cũng lạnh lùng chả nói gì. Tâm trạng xem mấy chị xinh tươi thay đồ cũng tan biến, tôi mặc bộ đồ thể dục rồi bắt đầu đi ra ngoài.
 
-
-
-Không khí buổi thay đồ đang tràn đầy sức sống thì trùng xuống, một số bạn học mặc thật nhanh rồi đi ra ngoài, 2 bạn học Hằng và Nhi vốn đang đùa nhau thấy thế cũng vội vàng mặc quần áo rồi rời đi, chỉ còn một số bạn học tò mò ở lại. Biết Trúc Anh đối với chị chả tốt đẹp gì, nên tôi cũng lạnh lùng chả nói gì. Tâm trạng xem mấy chị xinh tươi thay đồ cũng tan biến, tôi mặc bộ đồ thể dục rồi bắt đầu đi ra ngoài. 
-
-
-Nhưng cây muốn lặng mà gió chả ngừng, Trúc Anh lại lên tiếng: 
-
+Nhưng cây muốn lặng mà gió chả ngừng, Trúc Anh lại lên tiếng:
 
 “ Đúng là loại người như mày vốn chẳng ra gì, lúc nào cũng tỏ ra vẻ thanh cao dù bên trong thì thối nát. Lúc nào cũng bảo có người yêu ở nước ngoài rồi mà lại lén lút hẹn hò với trai bên ngoài à lại còn nghèo nữa chứ, tao khinh!!”
 
-
-Đã định đi ra ngoài rồi, nhưng sau khi nghe thấy câu này, tôi sôi máu, quay lại tát Trúc Anh một phát giọng nói lạnh như muốn đóng băng mọi vật của tôi vang lên: 
-“Tôi nói cho cô biết, thứ nhất tôi và Minh chỉ có quan hệ chị em, không hề có quan hệ như cô nói, thư 2 cô bỏ ngay cái trò khinh người nghèo đi, họ cũng có tự trọng của riêng họ, không những thế họ hơn cô ở chỗ họ không bao giờ đặt điều như cô. Và thứ 3 tôi cảnh báo cô lần đầu cũng như lần cuối nếu cô còn tiếp tục đặt điều như vừa nãy hậu quả không chỉ là một phát tát đơn giản như vừa nãy đâu”. 
-
+Đã định đi ra ngoài rồi, nhưng sau khi nghe thấy câu này, tôi sôi máu, quay lại tát Trúc Anh một phát giọng nói lạnh như muốn đóng băng mọi vật của tôi vang lên:
+“Tôi nói cho cô biết, thứ nhất tôi và Minh chỉ có quan hệ chị em, không hề có quan hệ như cô nói, thư 2 cô bỏ ngay cái trò khinh người nghèo đi, họ cũng có tự trọng của riêng họ, không những thế họ hơn cô ở chỗ họ không bao giờ đặt điều như cô. Và thứ 3 tôi cảnh báo cô lần đầu cũng như lần cuối nếu cô còn tiếp tục đặt điều như vừa nãy hậu quả không chỉ là một phát tát đơn giản như vừa nãy đâu”.
 
 Nói xong một tràng tôi bước ra khỏi cửa mà không nhìn Trúc Anh lấy một lần, lúc này Trúc Anh rất sốc vì không nghĩ rằng Ly dám nói mình như thế chưa kể còn dám tát mình một phát. Tức giận Trúc Anh nắm chặt bàn tay lại, âm thầm nghĩ trong đâu: “ mày nghĩ tao không dám làm gì mày ư, mày sẽ phải trả giá!!” Trúc Anh nợ một nụ cười vô cùng độc ác.
 
-
 Hề chương 6
-
-
 
 ==================== Chương 7: Luồng Khí Bí Ẩn ====================
 
 Tiết thể dục bắt đầu, thầy giáo dậy thể dục của trường này được mệnh danh là Quỷ Vô Tính, tại sao lại như vậy ư vì 90% sinh viên trường này đều không qua được môn của ông vì khó quá, nữ để qua môn thể dục ông bắt chạy 1,5 vòng sân trong vòng 1 phút 15s còn nam thì 2 vòng sân trong 1 phút 30s thì bố đứa nào qua được, 10% còn lại thì phải là người có sức bền tốt và may mắn nữa như tôi chả hạn :)) . Thậm chí mỗi buổi học ông hành sinh viên đến thở không ra hơi, như ở địa ngục thật sự. Tuy chưa học ông này bao giờ nhưng nghe danh tiếng như vậy đã đủ khiến tôi khá là tò mò rồi. Ngồi ngắm trời ngắm đất được 5p thì cuối cùng ông cũng đến, tôi có cảm giác rằng ông này đi đến đâu cảnh vật héo tàn đến đấy, nhiệt độ như giảm xuống khiến sinh viên không rét mà rùng minh một cái. Ông liếc nhìn đám sinh viên rồi điểm danh, điểm danh xong ông nói: “ 45 phút cuối buổi hôm nay sẽ có bài kiểm tra, nữ gập bụng 40 cái, còn nam chống đẩy 65 cái. Ai không hoàn thành sẽ bị điểm kém, giờ cả lớp khởi động”. Nghe xong mặt ai cũng trắng bệch lại, ai cũng biết rằng bài kiểm tra 45 phút này nếu không qua thì chẳng khác gì trượt thẳng môn này luôn, mà đã trượt thì chỉ có xác định học lại. Tiền là 1 chuyện nhưng nếu bắt họ học lại môn nay thì thà họ chết quách đi xong. Nghĩ là như vậy nhưng chả ai dám ho he câu gì…
 
-
 ——Tích tắc tôi là giải phân cách thời gian——
-
 
 Bài Kiểm tra 45 cũng đến, ông bắt đầu kiểm tra theo kiểu 5 người một lượt, đợt đầu tiên lên để ý mắt ai cũng đang bùng lên ngọn lửa ý chí ngùn ngụt chả khác gì xông pha đi đánh trận, mọi người con khuyên nhau rằng làm chậm mà chắc, không cần phải làm nhanh tốn sức mà laj chẳng giải quyết được gì. Nhưng tiếc rằng lời nó và ý chí là 1 chuyện, đến lúc làm thì lại là 1 chuyện khác…. Lúc đầu ai cũng cố gắng làm nhưng chỉ đến được độ 1/3 mặt ai cũng đỏ như gấc vì mệt, một số bạn nữa mới gập đc 15 cái đã không thể nhấc được người lên và đanh bỏ cuộc, trong nhóm 5 người đấy có 1 ông anh nhìn cũng giai sức, ông hoàn thành bài kiểm tra chống đẩy trong vào 12p…. làm xong nhìn mặt ông như muốn chết đi sống lại. Còn tôi, thì cũng rất an nguy về khả năng sống sót qua môn này, dù trong ký ức, chị Ly cũng là một người chăm tập gym, nhưng gập bụng thì chị mỗi lần cũng chỉ gập 20-25 cái chưa bao giờ tập hơn cả, trong đầu tôi lúc này cũng đã có ý định đầu hàng số phận đến đâu thì đến. Cuối cùng cũng đến lượt tôi, tôi bắt đầu gập, đúng như dự đoán tôi gập 20 cái đầu ngon ơ, nhưng bắt đầu từ cái 30 chở đi tôi có cảm giác không còn sức đâu để mà nhấc người lên được nữa rồi, đang định bỏ cuộc thì tự dưng trong người có 1 luồng khí ấm nóng chảy vào khiến tôi cảm giác vô cùng dễ chịu. Lúc này tôi không còn cảm giác mệt mỏi nữa rồi và hoàn thành nốt số lần gập bụng trước ánh mắt ngưỡng mộ và có phần ghen tị của Trúc Anh vì cô ta cũng nằm trong thành phần tạch. Kết thúc bài kiểm tra, chỉ có tôi và 10 sinh viên khác trong tổng số 90 sinh viên là sống sót, còn lại mặt ai bây giời cũng buồn như đưa đám lững thững đi về phòng thay đồ. Thay đồ một số bạn học chúc mừng tôi: “ Lý cậu giỏi quá à, xinh đẹp học giỏi, chơi thể thao tốt, cậu đúng là mỹ nhân số 1 của trường mình !!” Tôi chỉ mỉm cười cho qua vì chính tôi cũng rất bất ngờ khi qua được bài kiểm tra này, nếu không nhờ luồng khí ấm nóng ấy thì tôi cũng sẽ chả qua được đâu, nhưng luồng khí đó ở đâu ra sao tôi không biết nhỉ, mình với chị Ly có rất nhiều điều cần phải tâm sự với nhau khi về nhà đây. Tôi thầm nghĩ
 
-
 Chiều hôm ấy, sau khi học xong tôi bắt đầu về nhà, xuống nhà để xe lấy con Sh tôi phóng về. Về đến nhà, bấm cầu thang máy đi lên, lúc thang máy chuẩn bị đóng vào thì một thân ảnh quen thuộc kêu lên giữ cửa, tôi ấn nút dừng thì thân ảnh đó bước vào. Không ai khác đó chính là Trang, Trang cũng vừa mới đi học về. 2 chị em đi lên thang máy, bầu không khí lúc nãy khá cứng ngắc thì Trang bất ngờ hỏi tôi: “ Chị à, lúc sáng chị nói chuyện gì với Minh thế, chị làm cậu ấy nổi tiếng quá trời luôn à!!”, tôi mỉm cười rồi chém bừa một lý do; “ Không có gì đâu em, chị chỉ cảm ơn vì hôm kia minh giúp chị sửa xe ấy mà”. Vẻ mặt Trang lúc này cũng bán tín bán nghĩ nhưng Trang vẫn đáp: “ Thế hả chị, thế mà lúc em hỏi Minh bạn ấy chẳng nói gi” Ting một tiếng, lúc này thang máy đã lên đến tầng căn hộ nhà Trang, Trang chào tôi một tiếng rồi đi ra ngoài!!
-
 
 Hết chương 7
 
-
-
 ==================== Chương 8: Có tiền có quyền là có tất cả ====================
 
-Khu chung cư mà chị và Trang đang sống là khu Ciputra, một khu chung cư dành cho người giàu, nhưng nếu Trang thì sống ở lầu 11 là căn hộ chưng cư bình thường, thì chị Ly lại sống ở căn penthouses cao cấp hơn nhiều, lúc này tôi lấy chìa khoá trong ví và mở cửa: “Con chào ba mẹ, chào vú con về rồi” nhưng đáp lại tôi chỉ là không gian trống vắng, không có bất kỳ ai trong nhà cả. Quái lạ theo ký ức của chị thì trong nhà phải có ba mẹ chị và một bà giúp việc chứ nhỉ, sao giờ lại không có ai ??. 
+Khu chung cư mà chị và Trang đang sống là khu Ciputra, một khu chung cư dành cho người giàu, nhưng nếu Trang thì sống ở lầu 11 là căn hộ chưng cư bình thường, thì chị Ly lại sống ở căn penthouses cao cấp hơn nhiều, lúc này tôi lấy chìa khoá trong ví và mở cửa: “Con chào ba mẹ, chào vú con về rồi” nhưng đáp lại tôi chỉ là không gian trống vắng, không có bất kỳ ai trong nhà cả. Quái lạ theo ký ức của chị thì trong nhà phải có ba mẹ chị và một bà giúp việc chứ nhỉ, sao giờ lại không có ai ??.
 
+Đi vào trong bếp uống một cốc nước cho đỡ mệt thì tôi thấy một tờ note được dán trên tủ lạnh:
 
-Đi vào trong bếp uống một cốc nước cho đỡ mệt thì tôi thấy một tờ note được dán trên tủ lạnh: 
+“ Ba mẹ đi Đà Nẵng du lịch, vú thì về quê chịu tang nên cũng xin nghỉ 1 tuần, thời gian này con tự chăm sóc bản thân thật tốt nhé!!”
 
+Bảo sao không có ai ở nhà, thế cũng tốt đỡ phải diễn mệt cả người. Rồi tôi mở tủ lạnh và tu sữa uống, một hình tượng không hề thục nữ một tẹo nào. Uống xong, tôi thăm quan căn penthouse một chút, lần đầu được vào 1 căn nhà đắt giá không tham quan thì phí phạm cả đời mất. Căn penthouse này có 2 tầng, là tầng 25 và 26 ( thường ở một số cư đắt tiền có những những lầu có căn penthouse, căn penthouse khác biệt những căn hộ chung cư thường ở chỗ nó có 2 tầng và nó nằm ở tầng cao nhất của chung cư, ví dụ trong truyện là 25-26, và giá của nó cực kỳ đắt). Căn penthouse này có diện tích 220m2, ở tầng 25 có phòng khách, phòng ăn và phòng ngủ của vú, còn tầng 26 là phòng ngủ của chị Ly và bố mẹ chị. Vừa đi vừa ngắm vừa suýt xoa, lần đầu trong đời tôi được ngắm một căn hộ xa hoa như thế này, nếu không may mắn được nhập vào chị khéo cả đời tôi cũng chẳng bao giờ được vào chung cư ciputra nói chi đến được vào căn penthouses xa hoa này.
 
-“ Ba mẹ đi Đà Nẵng du lịch, vú thì về quê chịu tang nên cũng xin nghỉ 1 tuần, thời gian này con tự chăm sóc bản thân thật tốt nhé!!” 
+Ngắm chán chê, tôi bước vào phòng của chị. Phòng của chị có tông màu chủ đạo là màu tím, phòng con gái có khác ngăn nắp sạch sẽ: một giá sách tiểu thuyết trinh thám, đến những truyện ngôn tình trung quốc như: Yêu em từ cái nhìn đầu tiên, Tam sinh tam thế thập lý đào hoa,…. rồi đến dàn iMac đắt tiền, tủ quần áo thì vô số bộ đồ: từ bộ mặc ở nhà đến những bộ đồ dạo phố, còn cả những bộ quần áo vô cùng sexy như bộ váy cúp ngực xẻ cao màu nude, rồi còn cả bộ cúp ngực trễ nải tộ lên bộ ngực đầy đặn của chị…. nhìn thấy bộ đồ này phần con của tôi trỗi lên mạnh mẽ, nhưng tôi vẫn bình tĩnh, trò hay vẫn còn nhiều mình không phải vội, trước hết lấp đầy cái bụng đã. Thế là tôi thay một bộ mặc ở nhà đơn giản, áo thun hở bụng và quần sooc ngắn cũn cỡn chi che 1/4 bộ đùi thon gọn, và để lộ đôi chân dài miên man của chỉ, nhìn chị trong gương không nhịn được, tôi thò tay vào sờ bướm thì lúc này dâm thuỷ đã tràn ra. Hix chị Ly cũng dâm quá, mới sờ có 1 tí mà nước đã ra nhiều thế này rồi, không biết khi địt còn ra nhiều như thế nào nữa.
 
-
-Bảo sao không có ai ở nhà, thế cũng tốt đỡ phải diễn mệt cả người. Rồi tôi mở tủ lạnh và tu sữa uống, một hình tượng không hề thục nữ một tẹo nào. Uống xong, tôi thăm quan căn penthouse một chút, lần đầu được vào 1 căn nhà đắt giá không tham quan thì phí phạm cả đời mất. Căn penthouse này có 2 tầng, là tầng 25 và 26 ( thường ở một số cư đắt tiền có những những lầu có căn penthouse, căn penthouse khác biệt những căn hộ chung cư thường ở chỗ nó có 2 tầng và nó nằm ở tầng cao nhất của chung cư, ví dụ trong truyện là 25-26, và giá của nó cực kỳ đắt). Căn penthouse này có diện tích 220m2, ở tầng 25 có phòng khách, phòng ăn và phòng ngủ của vú, còn tầng 26 là phòng ngủ của chị Ly và bố mẹ chị. Vừa đi vừa ngắm vừa suýt xoa, lần đầu trong đời tôi được ngắm một căn hộ xa hoa như thế này, nếu không may mắn được nhập vào chị khéo cả đời tôi cũng chẳng bao giờ được vào chung cư ciputra nói chi đến được vào căn penthouses xa hoa này. 
-
-
-
-
-Ngắm chán chê, tôi bước vào phòng của chị. Phòng của chị có tông màu chủ đạo là màu tím, phòng con gái có khác ngăn nắp sạch sẽ: một giá sách tiểu thuyết trinh thám, đến những truyện ngôn tình trung quốc như: Yêu em từ cái nhìn đầu tiên, Tam sinh tam thế thập lý đào hoa,…. rồi đến dàn iMac đắt tiền, tủ quần áo thì vô số bộ đồ: từ bộ mặc ở nhà đến những bộ đồ dạo phố, còn cả những bộ quần áo vô cùng sexy như bộ váy cúp ngực xẻ cao màu nude, rồi còn cả bộ cúp ngực trễ nải tộ lên bộ ngực đầy đặn của chị…. nhìn thấy bộ đồ này phần con của tôi trỗi lên mạnh mẽ, nhưng tôi vẫn bình tĩnh, trò hay vẫn còn nhiều mình không phải vội, trước hết lấp đầy cái bụng đã. Thế là tôi thay một bộ mặc ở nhà đơn giản, áo thun hở bụng và quần sooc ngắn cũn cỡn chi che 1/4 bộ đùi thon gọn, và để lộ đôi chân dài miên man của chỉ, nhìn chị trong gương không nhịn được, tôi thò tay vào sờ bướm thì lúc này dâm thuỷ đã tràn ra. Hix chị Ly cũng dâm quá, mới sờ có 1 tí mà nước đã ra nhiều thế này rồi, không biết khi địt còn ra nhiều như thế nào nữa. 
-
-
-
-
-Tạm bỏ nhũng suy nghĩ đó ra khỏi đầu, tôi vào phòng bếp bắt đầu nấu ăn, vốn dĩ chị Ly nấy ăn cũng khá tốt lại còn vô cùng khéo tay, nên cũng rất nhanh chỉ khoảng 20p một món mặn và một món rau đã hoàn thành, tôi bắt đầu thưởng thức tay nghề của chị trong chính thân xác của chị. Lục lọi ký ức thì tôi là người con trai thứ 2 được ăn món ăn chị nấu ( mặc dù cũng không phải chị làm, nhưng thôi tay chị nấu, ký ức nấ ăn cũng là của chị nên cứ coi là chị nấu đi) còn người đầu tiên là anh người yêu của chị đang du học ở nước ngoài. Nghĩ là người thứ 2 ăn tự nhiên có một cỗ cảm xúc khó tả tràn vào người tôi cứ như tôi đang ghen với anh ta vậy. Tôi tự trấn an bản thân mình: “ Minh, mày ghen cái gì chứ, được sở hữu thân xác của chị là hơn vạn lần thằng kia rồi, mày con ghen cái đéo gì nữa, đã thế mày đâu phải là cái gì của chị” thấy bản thân có vẻ nhẹ nhõm hơn tôi tiếp tục thưởng thức những món ngon trên bàn. Ăn xong tôi rửa bát rồi xem tivi rồi mới đi tắm. Tuy nhập vào chị nhưng tôi vẫn tôn trọng thói quen của chị là ăn xong phải nghỉ ngơi một lúc rồi mới đi tắm. Bật tivi lên xem thời sự một lúc, xem một vài tin tức nổi bật của ngày hôm nay: nào thì học sinh Hà Giang gian lận thi cử bị phát hiện cho đến đánh bom liều chết ở nước ngoài, vân vân và mây mây…. “Chậc thế giới bên loạn thật, thẳng nào nhiều quyền lực nhiều tiền thì thằng đấy thắng, còn không có tiền thì mãi vẫn chỉ có thật bại mà thôi” tôi thầm nghĩ. 
-
-
-
+Tạm bỏ nhũng suy nghĩ đó ra khỏi đầu, tôi vào phòng bếp bắt đầu nấu ăn, vốn dĩ chị Ly nấy ăn cũng khá tốt lại còn vô cùng khéo tay, nên cũng rất nhanh chỉ khoảng 20p một món mặn và một món rau đã hoàn thành, tôi bắt đầu thưởng thức tay nghề của chị trong chính thân xác của chị. Lục lọi ký ức thì tôi là người con trai thứ 2 được ăn món ăn chị nấu ( mặc dù cũng không phải chị làm, nhưng thôi tay chị nấu, ký ức nấ ăn cũng là của chị nên cứ coi là chị nấu đi) còn người đầu tiên là anh người yêu của chị đang du học ở nước ngoài. Nghĩ là người thứ 2 ăn tự nhiên có một cỗ cảm xúc khó tả tràn vào người tôi cứ như tôi đang ghen với anh ta vậy. Tôi tự trấn an bản thân mình: “ Minh, mày ghen cái gì chứ, được sở hữu thân xác của chị là hơn vạn lần thằng kia rồi, mày con ghen cái đéo gì nữa, đã thế mày đâu phải là cái gì của chị” thấy bản thân có vẻ nhẹ nhõm hơn tôi tiếp tục thưởng thức những món ngon trên bàn. Ăn xong tôi rửa bát rồi xem tivi rồi mới đi tắm. Tuy nhập vào chị nhưng tôi vẫn tôn trọng thói quen của chị là ăn xong phải nghỉ ngơi một lúc rồi mới đi tắm. Bật tivi lên xem thời sự một lúc, xem một vài tin tức nổi bật của ngày hôm nay: nào thì học sinh Hà Giang gian lận thi cử bị phát hiện cho đến đánh bom liều chết ở nước ngoài, vân vân và mây mây…. “Chậc thế giới bên loạn thật, thẳng nào nhiều quyền lực nhiều tiền thì thằng đấy thắng, còn không có tiền thì mãi vẫn chỉ có thật bại mà thôi” tôi thầm nghĩ.
 
 Xem xong thời sự nhìn đồng hồ cũng gần 8h đến giờ tắm rồi. Lần đầu tắm trong thân xác con gái cũng khiến tôi có một chút mong đợi. Tôi vào phòng tắm mở nước, bây giờ là mùa hè nên nở nước theo tỉ lệ 60-40 ( 60% nước nóng và 40% nước lạnh). Đổ thêm một ít sữa tắm Chanel Chance Eau Fraiche Gel Moussant, đúng là giàu có khác đến sửa tắm cũng là loại hàng hịn chứ ở nhà tôi thấy mẹ tôi toàn dùng enchanter. Đợi một lúc tôi tắt vòi nước cởi quần áo ra và đắm mình trong một thế giới hương thơm đầy quyến rũ….
 
-
 Hết chương 8
-
-
 
 ==================== Chương 9: Người Con Trai Ấy ====================
 
-Cảm giác lần đầu tiên được đắm mình trong bồn tắm xa hoa khiến tôi có phần không muốn ra khỏi bồn. 
+Cảm giác lần đầu tiên được đắm mình trong bồn tắm xa hoa khiến tôi có phần không muốn ra khỏi bồn.
 
+Hương thơm của sữa tắm làm cho tôi cảm giác ngất ngay, lúc nay da thịt của chị Ly ửng hồng nhìn chỉ muốn cắn. Không nhin được tôi cắn một miếng vào tay của chị, da chị thường được tắm trong sữa đắt tiền thành ra vô cùng mịn màng và đàn hồi, cắn một miếng lại càng khiến tôi say mê cơ thể chị, một cơ thể của nữ thần đội lốt người phàm.
 
-Hương thơm của sữa tắm làm cho tôi cảm giác ngất ngay, lúc nay da thịt của chị Ly ửng hồng nhìn chỉ muốn cắn. Không nhin được tôi cắn một miếng vào tay của chị, da chị thường được tắm trong sữa đắt tiền thành ra vô cùng mịn màng và đàn hồi, cắn một miếng lại càng khiến tôi say mê cơ thể chị, một cơ thể của nữ thần đội lốt người phàm. 
+Tắm rửa sạch sẽ xong tôi ra khỏi bồn và bắt đầu phần tôi mong đợi lúc từ lúc tôi về nhà chị đó là thủ dâm mà không cần sợ người khác làm phiền. Tôi mặc một chiếc váy cúp nhưng không mặc đồ lót, đứng trước gương, bầu ngực sữa của chị thoắt ẩn thoắt hiện nhìn vô cùng sexy.
 
+Không nhịn được tôi tiếng gần vào trước gương, cái lưỡi tôi thè ra khẽ chạm vào gương, rồi bất giác tôi hôn chị qua gương, hơi thở của chị phả vào gương rồi phả lại vào mặt khiến tôi vô cùng kích thích, tôi hôn thật sâu, đôi bàn tay không làm chủ được đã bắt đầu lần mò xuống 2 bầu vú mà bóp lấy không ngừng, hứng tình 2 tay tôi xé rách bộ váy, bộ ngực vốn đang được ôm lấy nay đã được tự do, 2 bày tay tiếp tục mân mê bầu vú.
 
-Tắm rửa sạch sẽ xong tôi ra khỏi bồn và bắt đầu phần tôi mong đợi lúc từ lúc tôi về nhà chị đó là thủ dâm mà không cần sợ người khác làm phiền. Tôi mặc một chiếc váy cúp nhưng không mặc đồ lót, đứng trước gương, bầu ngực sữa của chị thoắt ẩn thoắt hiện nhìn vô cùng sexy. 
+Dưới sự kích thích của tay bầy vú có vẻ cương lên cái cảm giác căng tức khó chịu lúc sáng lại xuất hiện, dâm thuỷ bắt đầu rỉ ra, cảm giác khoái cảm bắt đầu xuất hiện . Lấy trên bàn một cái điều khiển tivi, tôi kẹp giữa 2 bầu vú mình rồi 2 bàn tay tôi bắt đầu xoa bóp, nhưng điều khiên tivi không được tròn trịa như thằng đệ cho lắm thành ra khi làm nó không khiến khoái cảm tôi tăng lên mà lại khiến tụt đi.
 
-
-Không nhịn được tôi tiếng gần vào trước gương, cái lưỡi tôi thè ra khẽ chạm vào gương, rồi bất giác tôi hôn chị qua gương, hơi thở của chị phả vào gương rồi phả lại vào mặt khiến tôi vô cùng kích thích, tôi hôn thật sâu, đôi bàn tay không làm chủ được đã bắt đầu lần mò xuống 2 bầu vú mà bóp lấy không ngừng, hứng tình 2 tay tôi xé rách bộ váy, bộ ngực vốn đang được ôm lấy nay đã được tự do, 2 bày tay tiếp tục mân mê bầu vú. 
-
-
-
-
-Dưới sự kích thích của tay bầy vú có vẻ cương lên cái cảm giác căng tức khó chịu lúc sáng lại xuất hiện, dâm thuỷ bắt đầu rỉ ra, cảm giác khoái cảm bắt đầu xuất hiện . Lấy trên bàn một cái điều khiển tivi, tôi kẹp giữa 2 bầu vú mình rồi 2 bàn tay tôi bắt đầu xoa bóp, nhưng điều khiên tivi không được tròn trịa như thằng đệ cho lắm thành ra khi làm nó không khiến khoái cảm tôi tăng lên mà lại khiến tụt đi. 
-
-
-Khó chịu tôi vứt điều khiển đi, bàn tay bắt đầu lần mò vào lồn của chị. Dường như khu vực xung quanh lồn của chị vô cùng nhạy cảm, khi bàn 2 ngón tay xoa nhè nhẹ xung quanh lồn chị thì dòng điện kích thích lại vọt lên miệng cũng bắt đầu kêu lên những tiếng ưh…hư…. đầy dâm đãng, khiến nước lồn bắt đầu chảy nhiều. Thấy nước lồn chảy ra tôi không dùng ngón tay xoa xung quanh nữa mà bắt đầu sờ vào hột lẹ, lúc này tôi cảm giác như sướng điên lên ngã phịch xuống giường, một tay vẫn tiếp tục xoa hột lẹ, 1 tay còn lại ngày càng bóp vú mãnh liệt hơn. 
-
-
-
+Khó chịu tôi vứt điều khiển đi, bàn tay bắt đầu lần mò vào lồn của chị. Dường như khu vực xung quanh lồn của chị vô cùng nhạy cảm, khi bàn 2 ngón tay xoa nhè nhẹ xung quanh lồn chị thì dòng điện kích thích lại vọt lên miệng cũng bắt đầu kêu lên những tiếng ưh…hư…. đầy dâm đãng, khiến nước lồn bắt đầu chảy nhiều. Thấy nước lồn chảy ra tôi không dùng ngón tay xoa xung quanh nữa mà bắt đầu sờ vào hột lẹ, lúc này tôi cảm giác như sướng điên lên ngã phịch xuống giường, một tay vẫn tiếp tục xoa hột lẹ, 1 tay còn lại ngày càng bóp vú mãnh liệt hơn.
 
 Bầu vú lúc này đã được kích thích hết mức, đầu ti cương lên không còn thò thụt như lúc trước nữa, tay tôi mân mê đầu ti hồng hồng xinh xinh. Sờ chán hột lẹ tôi bắt đầu lấy 2 ngón tay bắt đầu ra vào trong lồn. Lúc đầu nhè nhẹ gãi ngứa chỗ đấy để kích thích, rồi mạnh dần lên, những tiếng ưh…hư… xuất hiện tần suất mãnh liệt hơn. Nước lồn ra càng nhiều 2 tay họat động càng nhanh cứ rút ra rồi lại cắm vào lỗ lồn ngón tay ngày càng thít lại khiến tôi kích thích vô cùng. Không chịu được nổi nữa vì sướng, tôi dừng tay lại, dâm thuỷ ào ào tràn ra lãm ướt đẫm tay tôi, còn người tôi giãy này nảy vì sướng. Đưa bàn tay lên miệng tôi nếm thử dâm thuỷ. Chà nó khá mằn mặn, khiến tôi không bỏ xót một giọt nào trên tay. Nghỉ ngơi một lúc cho đỡ mệt, nhưng cảm giác bản thân vẫn chưa thoả mãn, tôi thử đi sang phòng ba mẹ chị nhằm tìm kiếm sex toy.
-
-
-
 
 Sang phòng bố mẹ chị tìm kiếm, không ngoài tôi mong đợi, tôi tìm thấy một cái máy rung của mẹ chị, hí hửng đem về phòng tôi bắt đầu nghịch. Vì lần đầu tiên dùng nên lúc đầu tôi chỉ bất mực nhẹ nhất, rồi dần dần cho nó tiến vào lồn của mình… hư hưuuuuuu tôi gầm lên một tiếng vì sướng, máy rung kích thích tất cả vị trí trên lồn của tôi, khoái cảm lại bắt đầu quay trở về, bật được một lúc, cảm giác đã quen rồi tôi bất đầu bật dần lên mức số 3. Máy rung xoay mãnh liệt vào lồn chị, tôi điên lên vì sướng, cái miệng nhỏ nhắn không còn kều ưm ưm như trước lại hét lên ahhhhhhhhhh sướng quá….. sao lại sướng như thế này chứ…….. không chịu được nữa rồi….. em ra đây…… anh Phonggg em ra đây……… Nước lồn bắt tung toé tầng lúc này trong tôi như hoà nhập với chị, những tiếng kêu, tiếng nói sung sướng đầy dâm đãng vừa rồi là lời nói của cả tôi và chị vì trong lúc vô thức tôi không thể làm chủ được lời nói của chị mà lại để chị gọi tên người con trai mà chị yêu nhất trên đời, là người tôi chưa gặp bao giờ nhưng lại khiến tôi vô cừng ghen tức. Chính hắn “Phong” người yêu của chính cũng là kẻ cướp đi lần đầu tiên của chị. Nhưng tôi “Minh” thề sẽ cướp chị khỏi tay của hắn, khiến không những thể xác của chị thuộc về tôi, mà cả tâm hồn của chị nữa. Tôi thề!!
 Trong đầu tôi lúc này hình thành một kế hoạch biến chị là của tôi. Trước hết phải tạo ra thứ có thể khiến tôi uy hiếp được chị đã, lấy chiếc điện thoại ra tôi chụp một số bức ảnh khoả thân của chị từ khuôn mặt sung sướng khi liếm trong gương, đến những bức tôi dùng tay chị banh lỗ lồn ra để chụp. Vừa làm kỷ niệm vừa làm thứ uy hiếp, quá tuyệt vời tôi đăng nhập gmail của mình và up ảnh lên. Hoàn thành bước 1, tôi bắt đầu tiếp tục kế hoạch của mình. Tôi mặc quần áo ngủ rồi tắt đèn đi ngủ, không sai, biết địch biết ta, trăm trận trăm thắng. Lý do tôi mặc quần áo rồi đi ngủ rất đơn giản, tôi sẽ dạo chơi trong ký ức của chị để biết chị như thế nào, 2 đứa làm quen ra sao, để biết được điểm mạnh điểm yếu của hắn. Để khi hiểu rõ rồi mọi thứ tôi làm sẽ dễ dàng hơn rất nhiều. Phong à, chị Ly là của ta, mãi mãi chỉ là của mình ta mà thôi, khuôn mặt chị lần đầu tiên nở ra một nụ cười vô cùng độc ác!!!
 Hết chương 9
 
-
-
 ==================== Chương 10: Gia đình chị Ly P1 ====================
 
 21 năm trước, Tại một căn nhà biệt thự ở giữa thủ đô Hà Nội.
 
-
 “Đáng chết, cô ấy giờ đang ở đâu” giọng nói đầy sự tức giận của một nguòi đàn ông
-
 
 “Anh trai đừng lo quá, em nghĩ chị Dâu sẽ không sao đâu”
 
-
 “Tại sao lại không lo chứ, cô ấy đã biến mất gần 2 tháng rồi, lại còn mang trong mình đứa con của anh, nếu cô ấy có vấn đề gì anh không muốn sống nữa”
-
 
 “Anh đã tìm khắp nơi chưa, chị dâu vốn là cô nhi ngoài cô nhi có thể về ra thì liệu chị còn có thể đi đâu được chứ” cô gái đáp lại anh trai mình
 
-
 “Ngày từ hôm anh hiểu lầm cô ấy, cô ấy chỉ có đem theo vài bộ quần áo, không hề mang theo một xu nào cả, anh đã thử tìm khắp nơi từ cô nhi viện đến những chỗ anh và cô ấy thường hay đến nhưng không hề có một chút dấu tích nào cả” nhớ đến ngày anh chưa điều tra rõ chân tướng vụ việc đã vu tội cho cô là ăn cắp tiền, để rồi cô rời đi với vẻ mặt vô cùng đau thương, lúc này vẻ mặt của anh không còn sự tức giận mà là hối hận về những việc anh đã làm
-
-
-
 
 Đột nhiên chuông máy bàn reo lên, cô em gái chạy ra nghe điện thoại: “ alo, ai đấy ạ”. Lúc này mặt cô gái bắt đầu chuyển từ lo lắng sang ngạc nhiên và mừng rỡ cô đáp: “ Cảm ơn cậu, tôi sẽ lập tức báo anh Hai”. Cúp máy cô chạy ra báo với anh mình: “ anh đã tìm được chị dâu rồi……
 
-
-Trong một con hẻm náo nhiệt của trung tâm thủ đô, có một quán ăn kinh doanh rất đắt khách, mỗi ngày khách hàng ra vào liên tục, làm cho ông chủ mừng rỡ, mặt mày lúc nào cũng hớn hở. Quán ăn này thuê kha khá nhân viên, nhưng ông chủ keo kiệt lại chỉ thuê một người rửa chén, để phụ trách rửa toàn bộ bát đĩa dơ bẩn đầy dầu mỡ của quán ăn. Khi cô gái mảnh mai tái nhợt kia rửa xong những cái chén dĩa cuối cùng thì đồng hồ cũng đã chỉ đến số mười hai giờ đêm. 
-
+Trong một con hẻm náo nhiệt của trung tâm thủ đô, có một quán ăn kinh doanh rất đắt khách, mỗi ngày khách hàng ra vào liên tục, làm cho ông chủ mừng rỡ, mặt mày lúc nào cũng hớn hở. Quán ăn này thuê kha khá nhân viên, nhưng ông chủ keo kiệt lại chỉ thuê một người rửa chén, để phụ trách rửa toàn bộ bát đĩa dơ bẩn đầy dầu mỡ của quán ăn. Khi cô gái mảnh mai tái nhợt kia rửa xong những cái chén dĩa cuối cùng thì đồng hồ cũng đã chỉ đến số mười hai giờ đêm.
 
 “Cuối cùng cũng rửa xong rồi” Phương lau mồ hôi trên chán mình, nếu không hoàn thành sớm thể nào ông chủ cũng mắng minh.
 
-
-
-
 Ngày ấy khi Phương rời khỏi gia đình nhà họ Phương cô chẳng mai theo gì ngoài vài bộ quần áo, rất may khi cô không biết đi đầu về đâu thì gặp được đôi vợ chồng già. Thương cô, tối hôm ấy họ cho cô ở nhờ và giới thiệu cho cô quán ăn này. Vì thế cô vô cùng cảm khích, tiền lương tuy rằng không nhiều nhưng vẫn đủ cho cô sống qua ngày
 
+Về đến nhà là 12h30. Phương chỉ tắm qua loa và gặp 1 cái bánh mỳ sài gòn vừa mua lúc trên đường về. Ăn xong nghỉ ngơi một lúc cô leo lên giường ngủ, trong đầu bắt đầu nghĩ về người đàn ông vô tình kia, dù anh có đối xử vô tình với cô. Nhưng trong lòng Phương đối với anh không có hận, mà là tình yêu không hề phai. Ngày hôm sau vẫn đi làm như thường lệ, lúc cô đang vật lộn với đống bát đĩa thì bỗng nhiên ông chủ đi vào dẫn theo một người đàn ông.
 
-Về đến nhà là 12h30. Phương chỉ tắm qua loa và gặp 1 cái bánh mỳ sài gòn vừa mua lúc trên đường về. Ăn xong nghỉ ngơi một lúc cô leo lên giường ngủ, trong đầu bắt đầu nghĩ về người đàn ông vô tình kia, dù anh có đối xử vô tình với cô. Nhưng trong lòng Phương đối với anh không có hận, mà là tình yêu không hề phai. Ngày hôm sau vẫn đi làm như thường lệ, lúc cô đang vật lộn với đống bát đĩa thì bỗng nhiên ông chủ đi vào dẫn theo một người đàn ông. 
-
-
-
-
-“Mọi người đây là ông Vũ, là ông chủ tập đoàn thực phẩm có tiếng tại Hà Nội chúng ta, ông Vũ đây nhìn thấy quán ăn chúng ta có tương lai rộng mở nên đã mua lại quán. Từ nay tôi không còn là ông chủ của mọi người nữa, nhưng đừng vì thế mà mọi người phụ lòng ông Vũ đây nhé” Trái ngược với niềm vui của ông chũ là vẻ mặt đầy bất ngờ pha vẫn lo âu của nhân viên, nhưng ở một góc có 1 người đang vô cùng sợ hãi: “ Đây chả phải là anh hay sao, nhưng tại sao anh lại ở đây, đã thế anh còn nhìn mình với ánh mặt không hề hài lòng vậy, không được mình phải trốn khỏi đây”. Nghĩ rồi cô cởi tạp đê ra rồi chạy thật nhanh về phía cửa sau. 
-
+“Mọi người đây là ông Vũ, là ông chủ tập đoàn thực phẩm có tiếng tại Hà Nội chúng ta, ông Vũ đây nhìn thấy quán ăn chúng ta có tương lai rộng mở nên đã mua lại quán. Từ nay tôi không còn là ông chủ của mọi người nữa, nhưng đừng vì thế mà mọi người phụ lòng ông Vũ đây nhé” Trái ngược với niềm vui của ông chũ là vẻ mặt đầy bất ngờ pha vẫn lo âu của nhân viên, nhưng ở một góc có 1 người đang vô cùng sợ hãi: “ Đây chả phải là anh hay sao, nhưng tại sao anh lại ở đây, đã thế anh còn nhìn mình với ánh mặt không hề hài lòng vậy, không được mình phải trốn khỏi đây”. Nghĩ rồi cô cởi tạp đê ra rồi chạy thật nhanh về phía cửa sau.
 
 Về đến nhà cô đóng sầm cửa, nhưng chỉ được 5 phút sau, cửa gỗ bắt đầu vang lên: “ Phương mở cửa cho anh”. Cô không lên tiếng, nghĩ rằng nếu cô không lên tiếng anh sẽ chán rồi bỏ đi. Nhưng lúc này Vũ không bỏ đi mà lên tiếng, giọng điệu có phần đe doạ: “ Nếu em không nở cửa cho anh, anh sẽ phá cửa vào đấy”. Biết người đàn ông này nói được là làm được, cô đành bất đắc dĩ mở cửa cho anh vào.
 “Nơi này thật nhỏ” Anh khẽ nhíu mày.
 
-
 “Đủ cho em sống một mình, nói đi anh kiếm em có việc gì” Cô hờ hững đáp lại
-
 
 “Anh đã phát hiện kẻ ăn cắp tiền, thế nên em theo anh về” Anh vô cùng bình tĩnh đáp lại
 
-
 “Vậy là anh đã biết chân tướng, nhưng xin lỗi anh, em sẽ không theo anh về đâu” Giọng cô chua xót nói, anh coi cô là cái gì vậy, lúc không cần thì vứt đi, lúc cần thì lại gọi về
-
 
 “Phương bình tĩnh đi em, anh đã tự mình đi tìm em, em còn muốn gì nữa”
 
-
-“Em không muốn gì cả, Anh anh cút khỏi nhà em” giọng cô đầy phẫn uất 
-
+“Em không muốn gì cả, Anh anh cút khỏi nhà em” giọng cô đầy phẫn uất
 
 Thấy tâm trạng cô không ổn, Vũ đành lòng đi ra ngoài, rồi khép cửa lại. Thấy cánh cửa khéo lại cô bắt đầu rơi những giọt nước mắt đầy tủi thân. Sáng hôm sau, Phương bắt đầu tìm việc ở chỗ khác, nhưng mỗi lần cô xin làm ở đâu, cửa hàng ấy lại được mua với giá trên trời, từ tiệm bán hoa, cửa hàng tạp hoá đến tiệm bán phỏ nhỏ. Cô biết tất cả những chỗ đó đều ro anh làm ra, lúc này cô vô cùng mệt mỏi, không còn hơi sức nữa đâu để mà đấu đá với anh nữa. Về căn nhà với tâm trạng chán nản, Phương bật khóc, nhũng giọt nước mắt mệt mỏi đầy phẫn uất lăn trên má cô thì lúc này có một đôi bàn tay kéo cô lại rồi ôm chặt cô vào lòng.
-Ngẩng đầu lên người đó là anh, anh đang ôm cô vào lòng. Lúc này cô không có hơi đâu mà giãy dụa nữa mà chỉ nói: 
-
+Ngẩng đầu lên người đó là anh, anh đang ôm cô vào lòng. Lúc này cô không có hơi đâu mà giãy dụa nữa mà chỉ nói:
 
 “ Em xin anh, van anh, anh là ông trùm thực phẩm tại sao lại phải đi mua mấy cái quán bé xíu vậy, việc này đối anh không phải là tốt, em cầu xin anh tha cho em đi”
 
-
 “ Việc anh cần làm bây giờ là mang em quay trở về” Anh đầy kiêu ngạo đáp lại
-
 
 “ Nhưng anh không hề yêu em, anh mang em về bên anh làm gì chứ”
 
-
 “ Phương em nghe rõ đây, người Phương Văn Vũ yêu nhất trên đời này Trần Linh Phương, chính là em, em là người con gái anh yêu và sẽ mãi yêu” nói rồi anh quỳ xuống:
-
 
 “ Phương làm vợ anh nhé”
 
-
 4 tháng sau:
 
-
 Trên một ngọn đồi chong chóng có 1 cặp vợ chồng mới cưới. Lúc này người vợ chu cái mỏ xinh xắn đáng yêu lên hỏi chồng mình
-
 
 “ Anh muốn đặt tên con gái mình là gi ?”
 “ Anh sẽ đặt tên con là Phương Vũ Ly, để cho con bé biết rằng bố mẹ con bé phải vất vả thế nào mới đến được đến nhau, để nó trân trọng tình yêu, không còn dẫm vào bước xe đổ của anh nữa. Và anh hi vọng con bé sẽ giống em vợ yêu ah!!!!
 
-
 Hết chương 10
 
-
 Hix, k có sex thành ra ae k thích đọc hay sao ý :((. Nhưng thôi đã hứa làm hết thì mình sẽ cố gắng cho xong
-
-
 
 ==================== Chương 11: Gia đình chị Ly P2 ====================
 
 “Vũ, anh, anh là đồ khốn khiếp ahhhhh, tại sao lại đau như vậy chứ ahhhh” giọng của Phương gào ầm lên.
 
-
 “Cố lên nào vợ yêu, cố lên em sắp ra rồi, cố lênnn, em bé sắp ra rồi cố lên”
-
 
 “Hức hức đau quá, đúng là cha nào con nấy, lúc nào cũng chị biết ức hiếp em thôi…. ahhh”
 
-
 Lúc này vân xanh đã nổi lên trên trán Vũ, nếu không phải bây giờ cô đang đẻ, Vũ đã đè ra và giáo huấn cô 1 trận nên hồn rồi. Gì chứ dám nói anh hay ức hiệp cô, lại còn dám nói cả con anh nữa chứ. Nghĩ thế nhưng Vũ vẫn cười tươi động viện cô
-
 
 “Xin chúc mừng là một bé gái xinh xắn” Giọng nữ y ta vang lên rồi mang lên cho anh và cô xem, nhìn bé gái đỏ hỏn đang khóc lần đầu tiên cả anh và cô đều xúc động, bé là kết tinh của tình yêu giữa anh và cô, là một sinh linh bé bỏng vừa cất tiếng khóc chào cuộc đời. Cả anh và cô nhìn nhau, ánh mắt chan chứa tình cảm. Họ hứa với nhau sẽ mang cho cô cả cuộc đời ấm áp và hạnh phúc
 
-
-
-
 Bé Ly càng lớn càng xinh, vẻ đẹp của bé được thừa hưởng từ mẹ, ai ai nhìn thấy bé cũng nức nở khen bé là tiểu mỹ nhân, đôi mắt bé long lanh như nước mùa thu, làn da trắn nõn như trứng gà bóc khiến ai nhìn cũng chỉ muốn hôn 1 phát. Nhưng bố mẹ ly cũng khá nghiêm khắc trong việc dạy bé, bé không được chiều thái quá, từ dáng đi cách ăn uống cũng được rất kỹ lưỡng, rồi thì không được tiếp xúc với người lạ…. Dần dần tích cách của bé Ly dần dần được hình thành, cố bé thuỳ mị nết na, nhưng lại khá rụt rè khi tiếp xúc với người ngoài. Nên từ mẫu giáo cô không có bạn, 1 phần vì tính cách cô rụt rẽ, phần cũng vĩ đám trẻ con ai cũng ghen tị vì cô quá nổi bật so với bọn họ, từ học lực cho đến vẻ bề ngoài
 
-
-Một buổi chiều đẹp trời khi Ly chuẩn bị lên lớp 6: 
-
-
-
+Một buổi chiều đẹp trời khi Ly chuẩn bị lên lớp 6:
 
 “ Baba yêu dấu ơi, con muốn baba cho con học trường công, con không muốn học trường tư nữa”
 
-
 “Con gái yêu, tại sao lại không muốn học trường tư nói cho ba nghe xem nào”
 
-
-Lúc này Vũ khá thành công trong thị trường thực phẩm trong nước. Công ty anh nằm trong top 10 công ty có doanh thu cao nhất Việt Nam, nhưng Vũ lại rất ít khi để lộ mặt dưới truyền thông. Chỉ có hội đồng quản trị là biết mặt anh, còn lại danh tiếng của anh trên giới truyền thông là vô cùng bí ẩn. Làm vậy là vì anh không muốn vợ con anh phải chịu sự nổi tiếng không đáng có, không muốn xã hội cách ly bọn họ, không muốn họ đối mặt với đám thương gia lúc nào cũng nở nụ cười thân mật trước mặt mà lại lén cầm dao đâm sau lưng nhau. Tóm lại anh muốn vợ con có một cuộc sống yên bình đúng nghĩa. Đưa đứa con gái vào trường con nhà giàu anh cũng không muốn chút nào, nhưng sợ Ly con bé, vào trường công lại bị bạn bè bắt nạt, nên anh đành cho bé vào trường tư để bảo vệ bé tốt hơn. 
-
-
-
+Lúc này Vũ khá thành công trong thị trường thực phẩm trong nước. Công ty anh nằm trong top 10 công ty có doanh thu cao nhất Việt Nam, nhưng Vũ lại rất ít khi để lộ mặt dưới truyền thông. Chỉ có hội đồng quản trị là biết mặt anh, còn lại danh tiếng của anh trên giới truyền thông là vô cùng bí ẩn. Làm vậy là vì anh không muốn vợ con anh phải chịu sự nổi tiếng không đáng có, không muốn xã hội cách ly bọn họ, không muốn họ đối mặt với đám thương gia lúc nào cũng nở nụ cười thân mật trước mặt mà lại lén cầm dao đâm sau lưng nhau. Tóm lại anh muốn vợ con có một cuộc sống yên bình đúng nghĩa. Đưa đứa con gái vào trường con nhà giàu anh cũng không muốn chút nào, nhưng sợ Ly con bé, vào trường công lại bị bạn bè bắt nạt, nên anh đành cho bé vào trường tư để bảo vệ bé tốt hơn.
 
 “Ba à, có không thích một cuộc sống không có bạn nữa, con không thích một môi trường xung quanh lúc nào cũng đồ chơi xịn, rồi quấn áo đắt tiền. Con chỉ muốn một cuộc sống bình thường thôi”
 
-
-Vũ bất ngờ trước lời nói của Ly, vốn anh cũng định để con bé lớn hơn chút rồi mới chuyển và trường công để Ly hoà nhập xã hội. Nhìn con bé bị bạn bè xa lánh anh cũng xót lắm chứ, nhưng anh cũng chỉ muốn tốt cho con. Bất ngờ hôm nay nghe con bé nói vậy anh đã biết mình sai rồi, vốn muốn tốt cho con bé giờ lại làm bé đơn độc. Anh gật đầu nói: 
-
+Vũ bất ngờ trước lời nói của Ly, vốn anh cũng định để con bé lớn hơn chút rồi mới chuyển và trường công để Ly hoà nhập xã hội. Nhìn con bé bị bạn bè xa lánh anh cũng xót lắm chứ, nhưng anh cũng chỉ muốn tốt cho con. Bất ngờ hôm nay nghe con bé nói vậy anh đã biết mình sai rồi, vốn muốn tốt cho con bé giờ lại làm bé đơn độc. Anh gật đầu nói:
 
 “Ồ, con gái của ba lớn thật rồi, ok ba chấp nhận lời đề nghị của con. Nhưng con phải hứa với ba một điều. Thứ nhất; không được tiết lộ về gia đình chúng ta. Thứ 2: nếu ba nghe lời than phiền về thành tích học tập của con, ba sẽ đưa con về trường tư ngay lập tức, con hiểu không ?”
-Vốn Ly đang tìm cách để thuyết phục ba, từ ăn vạ đến khóc nhè… Nhưng nghe được lời ba nói như vậy, Ly vô cùng nhạc nhiên, cô không nghĩ ba dễ dàng chấp nhận lời đề nghị của cô dễ dàng như vậy. Mà thôi không sao càng tốt, cô hơn hở nhày vào lòng Vũ nói: 
+Vốn Ly đang tìm cách để thuyết phục ba, từ ăn vạ đến khóc nhè… Nhưng nghe được lời ba nói như vậy, Ly vô cùng nhạc nhiên, cô không nghĩ ba dễ dàng chấp nhận lời đề nghị của cô dễ dàng như vậy. Mà thôi không sao càng tốt, cô hơn hở nhày vào lòng Vũ nói:
 
+“Con yêu ba ba nhiều lắm”
 
-“Con yêu ba ba nhiều lắm” 
-
-
-Thế còn mẹ thì sao, bật chợt từ đâu mẹ cô đi ra. Phương nói: 
-
+Thế còn mẹ thì sao, bật chợt từ đâu mẹ cô đi ra. Phương nói:
 
 “Hai ba con giỏi nhể, dám tự tiện quyết định mà không thèm hỏi ý kiến của mẹ. Mẹ giận rồi đấy nhé”
 
-
-Thế là bé Ly nhà ta thoát khỏi lòng Vũ chạy ra ồm chầm mẹ và nói: 
-
+Thế là bé Ly nhà ta thoát khỏi lòng Vũ chạy ra ồm chầm mẹ và nói:
 
 “Con yêu cả gia đình nhà mình”
-
 
 Vậy là Ly được theo học một trường công, làm theo lời bố mẹ, cô không hề nói về gia cảnh bố mẹ, ai hỏi cô cũng chỉ bảo bố mẹ đi làm công ăn lương. Bản thân cô cũng biết vẻ xinh đẹp của mình sẽ gây phiền toái cho cô như thế nào, thế là cô bảo vú mua cho một cái kính không độ, cũng thay đổi kiểu tóc làm che đi 1 phần khuôn mặt của cô. Sự thay đôi của cô khiến cả nhà phì cười
 “Từ khi nào thiên nga của chúng ta lại cải trang thành con vịt thế nhỉ” Vũ trêu con gái mình
 
+Mặt Ly ửng đỏ vì xấu hộ. Cô sợ vẻ đẹp của mình, nó chả giúp ích gì cho cô mà ngược lại đem đến cho cô những phiến toàn không đáng có.
 
-Mặt Ly ửng đỏ vì xấu hộ. Cô sợ vẻ đẹp của mình, nó chả giúp ích gì cho cô mà ngược lại đem đến cho cô những phiến toàn không đáng có. 
-
-
-Sự hoá trang này đem đến cho Ly những thay đổi tích cực. Lúc nhập học Ly cũng chủ động làm quen với các bạn học, thay vì có thái độ như các bạn cấp 1, thì các bạn cấp 2 tỏ ra thân thiện và hoà đồng với Ly. Ly thầm nghĩ đây mới là cuộc sống học đường đúng nghĩa mà cô mong muốn. 
-
+Sự hoá trang này đem đến cho Ly những thay đổi tích cực. Lúc nhập học Ly cũng chủ động làm quen với các bạn học, thay vì có thái độ như các bạn cấp 1, thì các bạn cấp 2 tỏ ra thân thiện và hoà đồng với Ly. Ly thầm nghĩ đây mới là cuộc sống học đường đúng nghĩa mà cô mong muốn.
 
 Trường Ly theo học là một trường cấp song song 2 cấp là trung học cơ sở và trung học phổ thông. Thành ra sau khi hết 4 năm trung học cơ sở của tiếp tục vẫn được học ở trường thay vì phải chuyển trường như một số nơi khác. Cũng vào thời điểm này cô gặp anh, mối tình đâu của cô!!
-
-
 
 ==================== Chương 12: Bị bắt cóc ====================
 
 Thời gian thấm thoát thoi đưa, Ly không vòn là cô bé nữa mà là một thiếu nữ. Năm nay Ly lên lớp 9, năm cuối cấp, hiểu được sự quan trọng của kỳ thi cuối cấp, Ly không còn hoà đồng như mấy năm trước nữa nữa, cũng vì một phần cô cảm thấy mình không hợp nói chuyện với con gái cho lắm trừ một cô em gái mà gia đình họ nhờ kèm cặp ở dưới tầng 15, Hai chị em vừa học giỏi vừa thông minh, họ ước hẹn sẽ cùng nhau sau này đỗ vào cùng trường đại học. Rồi vào kỳ thi năm ấy cô đỗ vào khoa chuyên anh văn của một trường chuyên có tiếng ở Hà nội.
 
-
 Năm ấy khi cô đang học nửa năm lớp 10 thì lớp cô nhận được thông báo sẽ có học sinh mới chuyển vào. Bọn con gái ai ai cũng háo hức, hào hứng kể về bạn học mới sắp vào lớp mình:
-
 
 “Bạn ý đẹp trai lắm đó, hôm qua lúc tớ đi qua phòng hiệu trưởng nhìn thấy bạn ấy, ôi trông đẹp trai y hệt Lee Min Hoo vậy” một bạn học A thao thao bất tuyệt nói
 
-
-
-
 “Thật á” cả lũ con gái đồng thanh, ui tớ muốn được gặp anh ấy quá đi mất…
 
+Trái ngược với sự hào hứng của lũ con gái, Ly vẫn cắm đầu vào giải nốt bài toán. Một bạn nữ thấy vậy bèn hỏi:
 
-Trái ngược với sự hào hứng của lũ con gái, Ly vẫn cắm đầu vào giải nốt bài toán. Một bạn nữ thấy vậy bèn hỏi: 
+“Ly cậu không quan tâm đến bạn học mới sắp chuyển tới à, anh ấy đẹp trai lắm đó nhà”
 
-
-“Ly cậu không quan tâm đến bạn học mới sắp chuyển tới à, anh ấy đẹp trai lắm đó nhà” 
-
-
-“Đẹp trai cái đầu cậu ý, đẹp trai thì có ảnh hưởng tới mét vuông nào nhà tớ đâu mà tớ phải quan tâm” 
-
+“Đẹp trai cái đầu cậu ý, đẹp trai thì có ảnh hưởng tới mét vuông nào nhà tớ đâu mà tớ phải quan tâm”
 
 Ly hờ hững đáp lại, đôi mắt vẫn tập trung đến bài toán chưa giải được. Thấy vậy bạn học nữ cũng chả thèm hỏi nữa mà dúi đầu vào nghe nốt mấy cái loa phát thanh thông tấn xã con vịt bên cạnh.
 
-
 Giờ ra chơi kết thúc, cô giáo chủ nhiệm bước vào, đằng sau là một mỹ nam. Anh khá giống với những miêu tả của bạn học nữ vừa nãy. Mái tóc xoăn như Lee Min Hoo, khuôn mặt có nét phong lưu lãng tử. Cô giáo bắt đầu giới thiệu:
-
-
-
 
 “Đây là bạn học mới của chúng ta, tên là Hoàng Minh Phong, cô mong các em sẽ giúp đỡ bạn ấy”
 
-
 Bọn con gái vỗ tay rầm rầm, một mỹ nam trong lớp ai mà chả thích đặc biệt lớp chọn anh văn lại thuộc tình trạng âm dương mất cân bằng, quái gì cả lớp có đúng 5 thằng con trai đã thế lại bị gay mất 3 thằng, nay có thêm mỹ nam vào cuộc sống của các cô thú vị hơn nhiều rồi ha ha
-
 
 “Phong em muốn ngồi đâu” cô giáo hỏi
 
-
 “Em muốn ngồi cạnh bạn nữ đang cúi đầu kia cô” Phong đáp lại
-
 
 Thật ra từ lúc vào lớp Phong đã để ý đến cô rồi, một cô gái lạ kỳ. Thay vì như những bạn học khác ngắm anh như muốn ăn tươi nuốt sống thì cô lại tỏ vẻ chả quan tâm tới anh một tí nào hết. Từ đầu đến cuối chỉ chăm chăm nhìn vào cuốn sách làm anh cảm thấy rất thú vị mặc dù trông cô không được đẹp như một số bạn học khác.
 
-
-
-
 Chỉ khổ cho Ly vốn chả quan tâm đến Phong một tẹo nào, từ lúc cô giáo vào cô chỉ đứng lên chào cô 1 tiếng rồi lại tiếp tục cắm đầu vào làm bài. Ở trên có bao nhiều bàn chống như vậy mà chả hiểu sao hắn lại chọn ngồi cạnh cô. Thật là một gã con trai kỳ lạ.
 
-
-Lúc này Phong đã ngồi cạnh cô, anh nở 1 nụ cười chào hỏi: 
-
+Lúc này Phong đã ngồi cạnh cô, anh nở 1 nụ cười chào hỏi:
 
 “Chào cậu tớ là Phong, chúng ta sẽ còn làm phiền nhau nhiều đây”
 
-
 “Tớ là Ly, không dám tớ chả hơi đâu mà làm phiền cậu đâu” Ly vẫn chả thèm nhìn Phong đến 1 lần
-
 
 “Quả là một con gái kỳ lạ nhưng cũng đầy thú vị” Phong nghĩ.
 
-
 Sau khi Phong ổn định chỗ ngồi cô giáo bắt đầu tiết học. 45p trôi qua thật nhanh, hết tiết cô giáo đi ra ngoài. Chỉ đợi có thể lũ con gái nhao nhao vào hỏi Phong đủ thú kiểu trên đời.
-
 
 Hoá ra Phong là con của 1 quân nhân, vì không may năm nay mẹ Phong mất sợ nên anh theo ba ra ngoài Hà Nội học. Hiện tại anh đang sống với ba tại quận Thanh Xuân.
 ( Ừm… lý lịch cũng bình thường không đáng lo lắm…. dòng ký ức lại bắt đầu trôi tiếp…………)
 
-
 “Ê , mọt sách ra đây với mình” không đợi Ly kịp phản ứng, Phong kéo cô ra, cái cô nàng này chăm thì cũng chăm vừa phải thôi chứ, lúc nào ra chơi cũng cũng thấy cô ngồi học mà chả trò chuyện hay đi ra ngoài, điều này làm Phong khó chịu, và cuối cùng không chịu được nữa Phong đành kéo cô ra ngoài trước bao nhiều ánh mắt ngạc nhiên của bao nhiêu bạn học trong lớp.
-
 
 “Cho cậu này” Phong ném một hộp sữa milo cho cô
 
-
 “Nói, cậu kéo tôi ra ngoài làm gì, cậu không thấy tôi đang học à” Phương bắt lấy hộp sữa nhưng không uống, chỉ buồn bực nói
-
 
 “Đồ hâm, cả tiết học cậu không thấy chán à, ra ngoài vận động hít thở trong khí trong lành tí đi. Ít vận động bảo sao lùn tẹt Phong xoa đầu cô. Đi bắt đầu từ chiều nay tớ sẽ đưa cậu đi chơi bóng rổ
 Lúc này Ly cao 1m66 một chiều cao tốt hơn đại đa số con gái bây giờ, nhưng đứng cạnh Phong, một chàng trai cao 1m78 cô vẫn thấp hơn anh cả 1 cái đầu. Bị Phong xoa đầu, Ly ngây người lại. Lần đầu tiên trong cuộc đời Ly bị một người khác giới ngoài ba của mình xoa đầu. Cái xoa đầu này có cảm giác khác cái xoa đầu của ba, cảm giác gì thì cô cũng không biết, nhưng nó khiến cô đỏ mặt, ngượng ngùng… Nhưng không cam lòng bị Phong chê mình thấp, Ly nói:
 
-
 “Đi thì đi, đừng tưởng tớ sợ cậu nhé”
 
-
 “Haha ok, vậy sau khi tan học tớ đợi cậu tại cổng trường nhé” Phong sảng khoái đáp lại
-
 
 Thế là đôi bạn trẻ cứ sau mỗi buổi học lại đi chơi bóng rổ. Chiều cao của Ly cũng tăng rõ rệt từ 1m66 cô cao lên 1m72. Không những chiều cao của Ly tăng lên mà tình cảm của 2 người bắt đầu cũng bắt đầu và tăng theo tỉ lệ thuận với chiều cao của Ly.
 Một ngày như bao ngày khác. Ly đang đứng chờ Phong ở cổng trường thì bất ngờ có một chiếc xe đang không biển đang phóng về phía mình. Linh cảm có điều gì đó không lành, Ly định né ra, nhưng chưa kịp thực hiện ý định, cả trời đất tối sầm lại. Ly bị kẻ xấu bắt cóc
 
-
 Hết chương 12
 
-
 Còn 3 chương nữa là có sex. Liệu ai sẽ lấy lần đầu của Minh đây =)))
-
-
 
 ==================== Chương 13: Nụ Hôn Đánh Rơi ====================
 
 Ông Vũ lúc này đang nổi gân đen trên đầu, bên cạnh là Phương vợ ông đang khóc thụt thít vì lo cho sự an nguy của đứa con gái.
 
-
-Từ cái hôm cô con gái rượu xin ông tuần 3 buổi đi chơi bóng rổ t3-t5 và chủ nhật. Lúc đầu ông cũng không định đi, nhưng nghe lời khuyên của vợ và cũng điều tra danh tính đứa con trai kia, ông cũng an tâm cho cô đi. Chiều hôm nay, Ly xin phép đi nhưng bình thường. Nhưng bình thường Ly chỉ chơi khoảng 2 tiếng đồng hồ là về, nhưng giờ là hơn 5h30 mà không thấy Ly trở về. Đang định gọi điện cho cô, thì tự nhiên máy điện thoại của ông vang lên: 
-
+Từ cái hôm cô con gái rượu xin ông tuần 3 buổi đi chơi bóng rổ t3-t5 và chủ nhật. Lúc đầu ông cũng không định đi, nhưng nghe lời khuyên của vợ và cũng điều tra danh tính đứa con trai kia, ông cũng an tâm cho cô đi. Chiều hôm nay, Ly xin phép đi nhưng bình thường. Nhưng bình thường Ly chỉ chơi khoảng 2 tiếng đồng hồ là về, nhưng giờ là hơn 5h30 mà không thấy Ly trở về. Đang định gọi điện cho cô, thì tự nhiên máy điện thoại của ông vang lên:
 
 “Chào ngài chủ địch hội đồng quản trí, ngài có nhớ tôi không” mọt giọng nói quá quen thuộc với ông Vũ vang lên
 
-
-Biết có chuyện không lành nhưng ông Vũ vẫn điềm tĩnh nói: 
-
+Biết có chuyện không lành nhưng ông Vũ vẫn điềm tĩnh nói:
 
 “Ồ không phải là ông Quang cựu chủ địch tập đoàn KGroup đây sao, tôi nghĩ ông gọi cho tôi hẳn là có mục đích không tốt đẹp gì rồi. Tôi nói đúng không ông Quang”
 
-
-
-
 “Haha quả là ông trùm ngành thực phẩm không có khác, hiểu vấn đề nhanh hơn người thường. Vây tao nói thẳng luôn cô con gái xinh đẹp của mày đang ở trong tay tao, nếu mày không muốn nó trở thành đồ chơi của tao và đàn em thì tối nay mày chuẩn bị 10 triệu USD và mang đến địa điểm xxx cho tao. Nhớ rõ đến một mình nếu không mày biết hậu quả như thế nào rồi đấy… tút…tút
-
 
 Người vừa gọi cho Vũ, là ông Quang cựu chủ tịch hội đồng quản trị KGroup, cũng là 1 tập đoàn thực phẩm có danh tiếng gần bằng tập đoàn của Vũ cũng là 1 trong số ít người biết thân phận của Vũ. 2 tập đoàn thực phẩm này vốn từ trước hay đấu đá với nhau trên thương trường. Nhưng với cái đầu của Vũ đã khiến cho tập đoàn KGroup phải sát nhập vào tập đoàn Phương thị, bản thân Quang cũng bị dính hàng loạt tội trốn thuế, sản xuất thực phẩm vị phạm nghiêm trọng vệ sinh an toàn thực phẩm và đang chờ ngày lên ghế điện. Nhưng Quang kịp thời trốn thoát, cay cú Vũ làm hại mình, hắn quyết tâm trả thủ. Biết Vũ có cô con gái xinh đẹp nên hắn lập kế hoạch bắt cóc cô để đòi tiền chuộc giết Vũ rồi trốn sang nước ngoài.
 
-
-
-
 Biết không con cách nào khác, Vũ đành chuẩn bị 10 triệu USD và tự mình lái xe đến địa điểm Quang giao hẹn mặc dù biết đây hoàn toàn có thể là cái bãy. Người làm cha sao lại có thể nhẫn tâm nhìn con gái của mình như vậy..
-
 
 Cùng lúc ông Vũ đang chuẩn bị tiền thì lúc này Phong đang ở nơi của bọn bắt cóc Ly. Lúc đến đang thấy cô đứng chờ mình, Phong định đi đến thì anh thấy có một xe tải không biển vút đến và bắt cóc cô. Không kịp phản ứng, Phong chỉ có thể bám theo chiếc xe và gọi người đến ứng cứu. Anh thăm dò, đây là núi hàm lợn, khá gần sân bay Nội Bài, bọn này có tổng cộng 7 đứa, thêm một lão già đầu hói dường như là ông chủ nữa là 8. Lão ra lệnh cho 4 tên đứng ngoài canh cổng, 2 tên còn lại thì lên xe như đi đón người, chi có lão và 1 tên cao to bặm trợn kéo Ly vào bên trong.
 
-
-
-
 Phong lập tức đánh giá tình hình và triển khai kế hoạch cùng với 2 anh lính dưới trướng bố mình. Tại sao lại là 2 mà không phải nhiều hơn, vì Phong thừa hiểu nếu gọi nhiều thì nhất định sẽ rất dễ bị phát giác nên anh chỉ gọi 2 người tốt nhất đến trợ giúp thôi. Vạch ra kế hoạch xong xuôi, 3 người bắt đầu thực hiện.
-
 
 Xoẹt xoẹt… lâp tức 3 tên canh cổng đã bị hạ ngay lập tức. Chỉ còn 1 tên bị 3 người khống chế. Phong ra lệnh cho tên kia giả vờ gọi thằng đầu trọc ra ngoài.
 
-
 “Đại ca ơi, đại ca mau ra đây, có việc nghiêm trọng xảy ra rồi” tên kia nghe theo lời Phong lâp tức làm theo.
-
 
 “Có chuyện gì thế ?” Gã vốn đang cùng ông chủ của mình trông con ả kia, nhìn nó ngọt nước vô cùng tiếc rằng ông chủ bảo đợi xong xuôi rồi mới được thịt. Nghe giọng của mấy thằng đệ, nhìn ánh mắt ông chủ hắn lập tức đi ra ngoài.
 Sau khi gã to béo bặm trợn ra ngoài, hắn lập tức ngất luôn mà không hiểu chuyện gì xảy ra. Hoá ra là Phong đã chuẩn bị sẵn thuốc mê, chỉ đợi gã này ra ngoài là làm luôn. Bây giờ chỉ đợi nốt con cá lớn sập bẫy là xong
 
-
 Đợi mãi hơn 15p không thấy tên cao to bặm trợn quay trở lại, ông Quang lập tức lên tiếng
-
 
 “Đm chúng mày làm gì ngoài kia thế” nhưng ở ngoài không một tiếng trả lời nào cả. Bực mình ông Quang đi ra ngoài xem có chuyên gì xay ra
 
-
 Vừa đi ra ngoài, ông Quang thấy mấy tên vệ sĩ ngất hết ra đấy, biết có chuyện không ổn, lão quay đầu lại thì thấy Phong đang chạy vào cứu Ly, điên tiết vì biết bị mắc mưu, lão vội lấy khẩu lục phòng thân trong túi quần ra nhắm thẳng đầu Phong bắn, vừa nhắm bắn lão lập tức bị 2 người anh lính đánh gục ngay tại chỗ, nhưng đoàng lão vẫn kịp bắn 1 viên, viên đạn găm thẳng vào lưng của Phong, Phong ngã gục xuống trước anh mắt của Ly. Cảnh tượng kinh hoàng hiện ra trước mắt, Ly ngất ngay lập tức
-………. 
+……….
 
-
-Khi Ly tỉnh dậy cô đã thấy mình nằm trong viện, bên cạnh mẹ cô đang thiếp vì mệt. Cô a lên 1 tiếng, mẹ cô lập tức tỉnh lại. 
-
+Khi Ly tỉnh dậy cô đã thấy mình nằm trong viện, bên cạnh mẹ cô đang thiếp vì mệt. Cô a lên 1 tiếng, mẹ cô lập tức tỉnh lại.
 
 Lúc ông Vũ đi theo 2 tên đến địa điểm giao hẹn thì trước mắt ông và bọn chúng là khung cảnh hoang tàn, xác nằm la liệt. 2 tên hoảng quá chạy ra xem đồng bọn có bị sao không thì ngay lập tức bị Vũ cản lại và cho 2 đòn khiến chúng bất tỉnh nhân sự. Đi vào ông thấy có 1 người đang bị thương ở ngực nhưng vẫn đang cô gắng cởi trói cho con gái mình trước sự bất lực của 2 người đứng cạnh. Biết đây là người giúp đỡ con mình, ông lập tức gọi cứu thương.
-
 
 “Ly, con cảm thấy thế nào rồi” bà Phương lập tức đỡ Ly dậy. Theo lời bác sĩ Ly chỉ hoảng quá mà ngất còn trong người không hề có chấn thương gì cả, nhưng bà vẫn không hề hết lo lắng mà ngồi trông con cả tối đến giờ, nay Ly tỉnh lại bà yên tâm phần nào rồi.
 Ly không trả lời câu hỏi của mẹ, mà cô lại hỏi Phong đang ở đâu, cô biết vì cứu cô mà anh bị thương, lúc này trong cô không chỉ cảm thấy lo lắng mà lại có cảm giác vô hình sợ mất đi Phong, cô sợ anh xảy ra chuyện gì.
 
-
 “Nó không sao đâu con ạ, chỉ bị thương ở bắp chân thôi, bác sĩ đã gắp viên đạn ra rồi. Giờ nó đang ngủ ở phòng phục hồi sức. Ngay mai nếu muốn con có thể thăm nó” Bà Phương mỉm cười nhìn con gái, cái ánh mắt của con gái giống hệt bà lúc yêu ông Vũ.
 
-
 Ly định xin mẹ vào thăm Phong luôn, nhưng nghe bà nói thê cô đành thôi, dù sao bây giờ anh cũng đang ngủ và bản thân cô cũng vô cùng mệt mỏi. Có lẽ để mai tốt hơn thật
-
 
 Sáng hôm sau, vừa ăn sáng xong Ly lập tức sang phòng Phong. Lúc này Phong đang ăn bát cháo thấy cô mắt ngấn lệ nhìn mình, anh buông thìa xuống nói:
 “Nào mọt sách vào ngồi cạnh mình nào, sao tớ bị thương mà cậu chả hỏi thăm gì mà lại đứng ngây ra đấy là sao hả. Lại đây ngồi cạnh mình nào”.
 
-
-Ly tiến lại ngồi gần Vũ khóc nói: 
-
+Ly tiến lại ngồi gần Vũ khóc nói:
 
 “Đồ ngốc ai bắt cậu cứ tớ, huhu, giờ thì cậu bị thương rồi đấy…huhu sao cậu ngốc quá vây..”
 
-
 “Nào, ngoan đừng khóc, chỉ là vết thương be bé không đáng lo ngại gì đâu..” Lúc này Ly không đeo kính, mái tóc thì buộc gọn lại, không còn kiểu tóc che mặt như trước nữa, đôi mắt long lanh, đôi má ửng đỏ vì khóc trông cô vô cùng xinh đẹp và đáng yêu… anh vô thức nhìn cô thật lâu mà Ly thấy Phong không nói gì nữa cô cũng ngẩng lên nhìn Phong, thấy Phong nhìn mình thất thần, cô ngượng ngùng quay đi.
 
-
 Thấy Ly có hành động vô cùng đáng yêu, Phong bật cười, nhưng ánh mắt kiên định nhìn cô nói:
-“Ly làm bạn gái anh nhé, sau chuyện hôm qua anh nghĩ anh không thể sống thiếu em” 
-
+“Ly làm bạn gái anh nhé, sau chuyện hôm qua anh nghĩ anh không thể sống thiếu em”
 
 Bất ngờ vì lời Phong nói, Ly nhìn Phong thật lâu, thấy ánh mắt của anh rồi lại nghĩ những hành động của Phong đối với mình, mà chính bản thân cô cũng rất thích ở bên cạnh anh. Có lẽ cô cũng yêu anh, Ly vô thức gật đầu lúc nào không hay….. Trong mắt 2 người lúc này chỉ có đối phương…. mọi thứ còn lại không quan trọng…..
-
 
 2 người yêu nhau nhưng vẫn không muốn công khau trước lớp. Ly vẫn thế lên lớp lúc nào cũng đeo kính và dùng kiểu tóc che mặt lại, dù nhiều lúc bị Phong cằn nhằn nhưng cô vẫn giữ quan điểm không muốn lộ vẻ đẹp của mình. Tình yêu học trò của 2 người đẹp đúng nghĩa. Giúp đỡ nhau học tập, cuối tuần thì đi xem phim đi chơi với nhau…. cứ thể họ trải qua 3 năm cấp 3 với một tình yêu đẹp
 Hà Nội, một buổi tối cuối tháng 5.
 
-
 “Phong, sao vậy anh có chuyện gì dấu em à”, Ly hỏi, hôm qua Phong hẹn cô chiều mai đi chơi, họ đi xem phim, đi ăn rồi Phong đưa cô ra bờ hồ ăn kèm Tràng Tiền.
-
 
 Suỵt, em đừng nói gì cả, cùng anh nghe bài hát này nào, bài hát 25 minutes của Micheal Learns To Rock vang lên:
 
+“After some time I”ve finally made up my mind
 
-“After some time I”ve finally made up my mind 
+She is the girl and I really want to make her mine
 
+I”m searching everywhere to find her again to tell her I love her
 
-She is the girl and I really want to make her mine 
+and I”m sorry about the things I”ve done
 
+I find her standing in front of the church
 
-I”m searching everywhere to find her again to tell her I love her 
+the only place in town where I didn”t search
 
+She looks so happy in her wedding-dress
 
-and I”m sorry about the things I”ve done 
+but she”s crying while she”s saying this
 
+Boy I”ve missed your kisses all the time but this is
 
-I find her standing in front of the church 
+twenty five minutes too late
 
+Though you traveled so far boy I”m sorry your are
 
-the only place in town where I didn”t search 
+twenty-five minutes too late
 
+Against the wind I”m going home again
 
-She looks so happy in her wedding-dress 
+wishing me back to the time when we were more than friends
+But still I see her in front of the church
 
+the only place in town where I didn”t search
 
-but she”s crying while she”s saying this 
+She looked so happy in her wedding-dress
 
+but she cry while she was saying this
 
-Boy I”ve missed your kisses all the time but this is 
+Out in the streets
 
+places where hungry hearts have nothing to eat
 
-twenty five minutes too late 
-
-
-Though you traveled so far boy I”m sorry your are 
-
-
-twenty-five minutes too late 
-
-
-Against the wind I”m going home again 
-
-
-wishing me back to the time when we were more than friends 
-But still I see her in front of the church 
-
-
-the only place in town where I didn”t search 
-
-
-She looked so happy in her wedding-dress 
-
-
-but she cry while she was saying this 
-
-
-Out in the streets 
-
-
-places where hungry hearts have nothing to eat 
-
-
-inside my head 
-
+inside my head
 
 still I can hear the words she said…..”
 
-
 “Bài hát hay quá anh” Ly vô thức thốt lên.
-
 
 “Em biết bài hát này mang ý nghĩa gì không” Phong hỏi lại.
 
-
 “Em nghĩ, chàng trai đã đến muộn 25 phút, để rồi lạc mất tình yêu của anh ấy, đúng không anh ?” Ly đáp lại
-
 
 “Ừ đúng rồi em. Nhưng e có biết tại sao là 25 phút mà không phải là một con số khác? Bởi đám cưới ở nhà thờ theo nghi lễ kéo dài đúng 25 phút. Sau khoảng thời gian ấy,người con gái đã thuộc về một người khác,anh đã đến muộn. Anh không tìm nàng ở nhà thờ,chỉ vì anh nghĩ rằng anh không thể tìm thấy nàng ở nơi ấy,nơi mà anh tin rằng nàng chỉ bước vào sánh đôi cùng anh… Nhưng điều đáng nói ở đây là, thời gian 25 phút không phải là một con số cụ thể ,nó chỉ hàm ý nói lên sự muộn màng nên để đánh mất điều mình yêu quý nhất của mỗi con người. Tình yêu cần có sự kiên nhẫn và chờ đợi,nhưng nếu không thể quyết định hoặc quyết định quá chậm, rất dễ để vuột khỏi tay tình yêu của mình. Sự đau đớn trong lòng anh, lời thổn thức trong làn nước mắt của nàng sẽ luôn sống mãi, để nhắc mọi người dành cho tình yêu của mình một sự quan tâm đúng mực. Đừng quá vội vàng, nhưng cũng đừng quá muộn màng…. Anh… anh phải đi du học 4 năm em ạ…” Phong trầm giọng nói
 ……. Một sự im lặng….Phong nhìn thẳng mắt Ly. Đôi mắt cô ướt nhoè vì khóc… Cô phải xa anh 4 năm ư…, xa người yêu 4 năm…. một thời gian không quá lâu, nhưng nó cũng đủ khiến tình cảm nếu không biết giữ gìn thì sẽ hoàn toàn đánh mất nó
 
-
 “Anh muốn cho em nghe bài hát này vì, anh không muốn như chàng trai kia, không muốn chỉ vì 25 phút hoặc 1 con số không cụ thể nào đó để rồi lạc mất nhau…. Chúng ta hứa với nhau, sẽ không để lạc mất nhau được không em” Phong nói hết cảm xúc bấy giờ của anh..
 
-
 Thật ra anh cũng không muốn đi du học, anh muốn được ở cạnh người yêu mình để họ có những năm tháng hạnh phúc tiếp theo. Nhưng dòng đời xô đẩy… anh đành phải đi..
-
 
 “Anh Phong, vậy em muốn trao anh cái này để anh không quên em, để anh…..” chưa kịp nói hết câu môi Phong đã dán vào môi của Ly… hai người hôn nhau, nụ hôn đầu của 2 người. Một nụ hôn không hề có kinh nghiệm…….
 Sau khi đưa cô về đến nhà, Phong đột nhiên hét lên:
 
-
 “Ly à, đợi anh, anh sẽ quay về sớm thôiiiiiii. Wo ai niiiiiii!!!!”
 
-
 Hết chương 13
-
-
 
 ==================== Chương 14: Làm tình vói chính mình ====================
 
 Kết thúc dòng hồi tưởng, lúc này gần 1h sáng của ngày hôm sau:
 
-
 “Oh, một mối tình thật đáng yêu, nhưng rất tiếc nó sẽ kết thúc dưới bàn tay xinh đẹp này… yêu xa bằng một bài hát ư… vậy kết thúc cũng sẽ bằng 1 bài hát nhé” Tôi cười, chị Ly cũng cười.
-
 
 Cả đêm hôm ấy, tôi nghĩ kế hoạch để chiếm lấy chị, học thuộc sở thích của chị, biết những thứ chị không thích…. biết nhiều về Phong, biết hắn sẽ sớm quay về.. nếu đúng là thời điểm đầu năm sau… tầm 2 tháng nữa..
 
-
 “À mà từ bây giờ tôi sẽ không coi em là chị nữa Ly ah, em sẽ là người con gái của tôi, của Nhật Minh này… Phong may cho mày.. nếu lúc ấy mày để Ly nói hết câu thì mày đã có được lần đâu của chị… cũng đồng nghĩa mày sẽ không may mắn được tao cho sống sót đâu” tôi nghĩ.
-
 
 Sáng hôm sau, lần đầu tôi thức dậy trong thân hình một cô gái…. một mùi thơm của xử nữ.. vô cùng quyến rũ… định thủ dâm thêm 1 lần nữa nhưng thôi, còn ối thời gian sau này.. việc quan trọng là bâu giời quay về thân xác mình đã… bật điện thoại vào apps, lúc này chỉ còn 2 tiếng nữa là kết thúc… nhưng tôi ấn luôn vào nút exit…. thời gian bất động, tôi không ngất nữa mà là một thứ khác ảo diệu hơn nhiều:
 
-
-
-
 “Hướng dẫn lần đâu quay về, kết thúc hướng dẫn nhận về 1000 điểm” một dòng chữ trước mắt tôi hiện ra, kèm theo chữ hãy ấn vào nút bắt đầu, không nghĩ ngợi gì tôi ấn nút.
-
 
 “Sau khi nhập vào thân thể, bạn sẽ tích luỹ điểm để mở khoá chức năng mới sau này. Hiện tại bạn được phép nhập vào thân thể mỗi người tối đa 24h đồng hồ, sau khi hết giờ hay ấn nút thoát, bạn sẽ không được phép nhập lại vào người trong vòng 48h đồng hồ tiếp theo. Mỗi lần kết thúc nhập thời gian sẽ tạm dừng lại để bạn lựa chọn ký ức trong đầu nạn nhân. Bạn có thể xoá hoặc bắt nạn nhân giữ lại ký ức đó mà nạn nhân không hề nghi ngờ tại sao lại bị như vậy. Lưu ý quan trọng: sau khi quay về thân thể ngoại trừ những ký ức mà bạn có được trong đầu nạn nhân thì mọi thứ từ kỹ năng, khả năng của nạn nhân như học tập, trí thông minh, khả năng giao tiếp,.. etc..” sẽ không con nữa, nếu đã sẵn sàng. Ấn nút tôi đã hiểu.” Hệ thống hiện hàng loạt dòng chữ trước mắt tôi.
 
-
-
-
 “Một ứng dụng tuyệt vời” vốn còn đang lo khi toii quay về thân thể của mình bản thân Ly sẽ ra sao, nhưng giờ thì không đáng lo nữa rôi. Tôi xoá hết ký ức đoạn tôi thủ dâm trong cơ thể Ly, định xoá nốt cả lúc tôi đưa Ly đi nhầm vào vệ sịn nam nhưng chuyện ấy có người khác biết rồi, thôi đành phải giữ lại cứ coi như cô ấy đáng trĩ bước nhầm vào đi. Ok cảm thấy mọi thứ xong xuôi tôi ấn nút kết thúc.
-
 
 Trời đất lại quay cuồng, mở mắt ra tôi thấy mình đang nằm trong giường, cầm điện thoại lên lúc này là 6h chênh lệch từ lúc tôi bấm nút exit là không có. Ấn thử vào cái app vẫn là cái giao diện bình thường chỉ khác điểm bây giờ là
 
-
 1485 ở dưới có thêm dòng thêm người không thể nhập hiện tại: Phương Vũ Ly 47h59p. Hiểu được công năng cách sử dụng của apps này hoàn toàn rồi, giờ tôi sẽ làm gì tiếp đây.. thôi tính sau đã.. giờ lên lớn xem Ly như thế nào.
-
-
-
 
 Vệ sinh rửa mắt xong xuống ăn cơm. Mẹ tôi hỏi sao tự nhiên 2 hôm nay dậy sớm thế. Mỉm cười viện lý do nào đó, tôi ăn cái bánh mỳ xong lấy xe phóng đến trường luôn. Cất cặp, tôi lên thẳng thư viện, Ly vẫn ngồi đó, vẫn đống sách trước mặt bàn, vốn định nói chuyện nhưng bây giờ chị làm gì ký ức về tôi. Lúc tôi không biết định nói câu gì thì Ly ngẩng đâu lên thấy tôi, thấy Ly nhìn mình tôi miễn cưỡng nói chào chị, Ly cũng mỉm cười chào lại tôi bằng tên. Giật mình, tôi hỏi chị sao lại biết tên mình.
 
-
 “Cậu là người yêu tin đồn của tôi, sao tôi lại không biết cậu được. Xin lỗi vì đã để cậu vướng vào chuyện này” Ly mỉm cười nhưng giọng điệu có chút áy náy
 
-
-Ôi mẹ ơi, tôi quên mất, cả đoạn ký ức lúc tôi kéo tay Minh’m ra ngoài, còn cả khi Trúc Anh nói với tôi là tình nhân của chị, cả chi tiết quan trọng đấy sao tôi lại quên mất nhỉ. Giờ thì hay rồi không biết chị đối với tôi như thế nào đây. Tôi bắt đầu nấn ná hỏi thêm: 
+Ôi mẹ ơi, tôi quên mất, cả đoạn ký ức lúc tôi kéo tay Minh’m ra ngoài, còn cả khi Trúc Anh nói với tôi là tình nhân của chị, cả chi tiết quan trọng đấy sao tôi lại quên mất nhỉ. Giờ thì hay rồi không biết chị đối với tôi như thế nào đây. Tôi bắt đầu nấn ná hỏi thêm:
 “À mà hôm qua, lúc chị kéo em ra chị định nói gì ấy nhỉ, tự nhiên e quên mất rồi.
-
 
 Ngẫm nghĩ một lúc Ly đáp:
 
-
 “Chị, chị cũng không nhớ rõ nữa, chị chỉ nhớ lúc ấy cói cái gì hối thúc chị gặp em, bắt chị phải đi luôn, còn cả lúc… à mà chị định xuống hỏi em, ai ngờ lại gặp em ở đây, mà em lại cũng không biết chuyện lúc đấy nữa… ai da thôi không nhớ thì cứ để nó cho qua đi. À mà em làm gì ở đây thế. Ly hỏi lại tôi
-
 
 Phù hoá ra Ly cũng không biết, dường như những đoạn ký ức, khi tôi nói chuyện với Minh’m cũng được app xoá đi mặc dù tôi không hề động đến, à nhớ rồi cái lúc đọc lưu ý khi quay về cũng có đoạn app nó ghi mọi thứ liên quan đến app dù tôi có muốn hay không nó cũng sẽ lập tức thay đổi để xoá phù hợp vào tình hình. Ok lại hiểu, tôi mỉm cười bảo chị
 “ À em tìm cuốn sách ấy mà, thôi em tìm được rồi, em cũng về lớp”
 
-
 “ Ừ, đi cẩn thân nhé em” Ly mỉm cười với tôi
-
 
 “Chị Ly, nếu Trúc Anh có tìm đến chị cứ nói với em, em sẽ không để cho chị ta yên ổn đâu” tôi nói đầy quả quyết
 
-
-“Chị không sao đâu mà, em không phải lo đâu” 
-
+“Chị không sao đâu mà, em không phải lo đâu”
 
 “Chị đừng ngại với em, em nói thật đấy”
 
-
 “ Ừ, chị biết rồi”
-
 
 Tôi chào Ly một tiếng rồi quay về lớp. Tôi đâu biết rằng Ly đang thầm nghĩ trong đâu:
 
-
 “Em làm chị nhớ đến anh đấy Minh ạ. Phong còn 2 tháng nữa là chúng ta gặp nhau, hi vọng lời hứa năm xưa của chúng ta sẽ được tiếp tục”
 
-
-Về lớp, lúc này lớp cũng kha khá đông rồi. Ngồi nói chuyện với thằng Long, bàn chuyện đời, gái gú, lol các kiểu với nó đến hết buổi học. Hôm nay Trang không lên lớp, chán thật đôi còn đang định nhập vào Trang xem như thế nào nhưng giờ thì không được rồi. Đang tính kết thúc buổi học thì nhập vào ai, trông thế thôi nhưng tôi không thích nhập bừa bãi đâu. 
+Về lớp, lúc này lớp cũng kha khá đông rồi. Ngồi nói chuyện với thằng Long, bàn chuyện đời, gái gú, lol các kiểu với nó đến hết buổi học. Hôm nay Trang không lên lớp, chán thật đôi còn đang định nhập vào Trang xem như thế nào nhưng giờ thì không được rồi. Đang tính kết thúc buổi học thì nhập vào ai, trông thế thôi nhưng tôi không thích nhập bừa bãi đâu.
 Đang suy nghĩ, tự nhiên thằng Long nói:
-
 
 “mày ơi hình như Jiyeon sang Việt Nam đóng mv đấy, xinh vcl ra luôn, thần tượng tao từ bé đấy mày, nhớ trước xem t-ara chỉ để tìm Jiyeon ở đâu. Ước gì tao được gặp cô ấy một lần thôi”
 
-
 Nghĩ đến Jiyeon, tôi cũng thích cô ca sĩ này lắm, với cả nếu gặp được cô ca sĩ này thì tôi cũng sẽ được nhập vào Jiyeon và sẽ được sống cuộc sống show bít =)) nghĩ thôi là thú vị rồi
-
 
 “Thế 2 cậu muốn gặp lắm à, có muốn tôi giúp không” Một thằng đực rựa nói
 
-
 “Ừ, muốn chứ sao không, cậu giúp được bọn tôi à” Long đáp lại
 
-
 “Tôi có ông anh làm quay phim cho mv của Jiyeon, nếu 2 cậu muốn tôi có thể 2 cho cậu vào, nhưng cái giá không rẻ đâu”
-
 
 “Được bao nhiều bọn tôi cũng giả, bao giời đi” tôi hồ hởi đáp lại, đm có cơ hội gặp thần tượng lại còn được nhập, có bắt tôi trả 10 triệu tôi cũng đi”
 “ 3 triệu 2 người, ok không”
 
-
 “Duyệt, bao giờ đi ?”
-
 
 “Chiều ngày kia, tôi đón 2 cậu ở stargalaxy gần rạp chiếu phim quốc gia. Ok thế nhé”
 
-
 Cuộc trò chuyện 3 thằng kết thúc, tiếng chuông kết thúc buổi học cũng vang lên. Vậy là tôi sắp nhập vào Jiyeon rồi thú vị quá đi :3, nhưng bây giờ phải tìm ai để nhập đã…. tôi muốn được nghịch app này nhiều hơn
-
 
 “Trang thì ốm éo đi học thôi bỏ. Ly thì tạn thời không nhập được nữa. Mấy con đứng ở Trần Duy Hưng cũng toàn đĩ éo thích…. Đúng rồi chị Giang ( tên chị dâu của tôi), nhưng giờ cả anh và chị đi làm về rồi, nếu nhập vào chị chả lẽ bắt tôi làm tình với thằng anh mình, đéo được nghĩ đến cảnh hôn thằng anh là đủ khiến tôi rùng mình rồi. Vậy thì tôi sẽ nhập vào thằng anh mình rồi làm tình với chị vậy. Hehe cứ vậy đi, tôi lấy điện thoại ra gọi cho ông anh:
 “Ông anh yêu quý, anh em mình đi uống vào cốc bia chứ”
 
-
 “Ồ hôm nay chú em, có nhã hứng mời anh cơ à. Cơ mà tao đi công tác rồi để khi khác. À tối mày rảnh thì sang nhà chị ăn cơm xong ngủ lại đi, để chị mày ở một mình tao khônga an tâm”
-
 
 Mỡ đến miệng mèo, đéo ăn thì chết mẹ đi, cơ hội ngàn năm có một này ngu gì éo đồng ý, tôi đồng ý luôn, phi về nhà tắm cái đã. Kế hoạch thay đổi. Tôi sẽ làm tình với chính mình
 
-
 Hết chương 14
-
-
 
 ==================== Chương 15: Lần đầu làm tình ====================
 
-“Mẹ ơi, tối nay cơm ăn cơm bên nhà chị, mẹ không phải nấu cơm cho con đâu. Với cả tối con ngủ lại luôn. Anh vừa gọi điện nhờ con xong” 
-
+“Mẹ ơi, tối nay cơm ăn cơm bên nhà chị, mẹ không phải nấu cơm cho con đâu. Với cả tối con ngủ lại luôn. Anh vừa gọi điện nhờ con xong”
 
 “Ờ, thế cũng được. Có gì nhớ giúp đỡ chị đi nhé. Tối nay tao với bố mày đi nhà hàng vậy, lâu lắm rồi mới không vướng đến chúng mày, bố mẹ đi ăn cơm xong đi xem phim hâm nóng tình cảm luôn”
 
-
 Hix, hâm mộ voãi. Nghĩ tương lai tôi cũng muốn cùng với Ly được như vậy, không cần vất vả kiếm tiền. Mỗi ngày nấu cho nhau ăn, cuối tuần đi chơi, sinh 2 đứa, nhìn chúng nó lớn lên, về già hai vợ chồng đi du lịch vòng quay thế giới, thế là đủ rồi. Đang suy nghĩ bỗng nhạc chuông điện thoại vang lên:
-
 
 “Show me the meaning of being lonely, is this feeling i need to walk with…..” 1 những bài hát tôi thích nhất của Backstreet Boys vang lên mà tôi cài cho chị Giang . Trừ những người lạ ra, tất cả người thân trong gia đình tôi đều cài mỗi người một bản nhạc chuông khác nhau, đều là những bản nhạc trữ tình thập kỷ 90-2000 chứ tôi cũng không thích nhạc Vpop cho lắm. Nhấc máy lên nghe, giọng chị vang lên:
 
-
-
-
 “Minh hả em, vừa nãy anh Linh gọi cho chị bảo tối em qua ăn cơm với ngủ lại với chị, em qua chưa ?”
-
 
 “Em chưa chị ạ, giờ em mới bắt đầu từ nhà sang”
 
-
 “Ok, hay chị em mình đi ăn lẩu đi, chứ giờ chợ hết đồ ăn ngon rồi”
-
 
 “Em ăn gì cũng được mà, dễ nuôi lắm hehe. Mà ăn ở đâu thế chị”
 
-
 “Cứ qua nhà đón chị rồi chị em mình đi”
-
 
 Thế là tôi phóng đến nhà chị. Nhà anh chị Xuân Đỉnh cách nhà tôi khoảng hơn 8km bình thường đi mất khoảng 20 phút, nhưng lại đi vào lúc tan tầm thành ra gần 40 phút đến nơi. Đến nhà chị, tôi bấm chuông, đợi một lúc rồi thấy chị ra mở cửa:
 
-
 “Sao lâu thế em, tắc đường à, chị khoá cửa rồi chị em mình đi luôn”
-
 
 “Ok chị” tôi nhìn chị khoá cửa rồi lên xe tôi. Hôm Chị mặc một bồ đồ dạo phố bình thường áo crotop với quần kaki lỡ màu hồng nhìn cực xinh, trên người chị còn thoang thoảng mùi nước hoa. Lúc này thằng đệ tôi đã bắt đầu có dấu hiệu rồi, nhưng tôi vẫn giữ bình tĩnh, gì chứ riêng cái khoảng nhịn 19 năm rồi, nhịn thêm vài ba tiếng nữa cũng có sao đâu. Phóng xe đi, qua chỗ quán lẩu chị bảo, một con đường quen thuộc, hoá ra là quán lâu ven đường ngày trước tôi chỉ cho ông anh. Bảo sao chị bảo chỗ này ngon lắm, tôi chọn ngon là đúng rồi. 2 chị em vào ngồi xong gọi nồi lẩu riêu cua bắp bò. Trong lúc chờ đợi 2 chị em nói chuyện phiếm:
 
-
-
-
 “Em cứ tưởng chị dắt em vào gogi. Hoá ra lại đưa em ăn lẩu ven đường à”
-
 
 “Dốt lắm em, mấy chỗ đâu được cái sang thôi chứ sao ngon bằng ở đây được. Đi chơi với gái cứ dẫn nó vào chỗ này, đảm bảo ăn xong nó mê em luôn”
 
-
 “Haha thế hả chị, thế nếu nó không đổ lại chê em nghèo không đứa nó vào chỗ ăn tử tế thì sao chị ?”
-
 
 “Mình là sinh viên em ạ, sinh viên có cách yêu của sinh viên. Nếu nó chê em dắt nó vào chỗ này thì em cứ xác định nó họ Đào tên Mỏ đi. Thể loại đấy bỏ sớm là vừa. Con gái nếu nó thật lòng yêu em thì em đi đâu nó cũng theo chứ nó không quan trọng chỗ đấy sang hay bình dân đâu. Cơ mà mình cũng nên tuỳ lúc thôi em nhé, chứ mấy ngày kiểu sinh nhật này nọ dẫn vào đây cũng không ổn đâu”
 
-
 “Hehe, nghe chị có vẻ nhiều kinh nghiêm vãi, mà sao anh em tán được chị nhỉ, em nghe trước có ông đi con mẹt đỗ trước cổng nhà chị đưa chị đi chơi chị cũng từ chối mà không ngờ ông anh em lại có diễm phúc tán đổ chị”
-
-
-
 
 “Tiền đâu phải mua được tình yêu, mấy ông ấy tuy giàu thật nhưng chị đâu cần giàu hả em. Lương chị 50tr một tháng còn chả tiêu hết, thì cần nhiều tiền làm gì. Mà những người như họ chỉ quấn lấy chị, chinh phục vì chị xinh đẹp, lại còn có biệt hiệu lạnh lùng. Đến khi có được chị rồi, tính chinh phục cũng hoàn thành được mấy bữa lại kiểu đứa ai nấy đi, không như anh trai em, tuy nghèo hơn họ nhưng anh lại có trái tim ấm áp, luôn quan tâm đến chị những thứ tưởng chừng đơn giản nhất dù lúc đầu chị có đẩy anh ra xa như thế nào cho đi nữa, dần dần chị yêu anh từ lúc nào không hay, yêu sự chân thành của anh ấy, thích cảm giác yên bình khi bên cạnh anh ấy mà không người con trai khác làm được” vừa nói đôi mắt chị lộ rõ vẻ thâm tình không có sự lạnh lùng như lần đầu tôi mới gặp
 “Ok, thế chú kể cho chị nghe chuyện yêu đương của chú đi, nghe anh nói ngày xưa chú yêu một cô bé nhưng nó đi du học được 3 năm rồi thì phải từ đó đến nay chú không yêu ai à ?”
 
-
 Tôi kể lại mối tình đầu của tôi, rồi lại kể nhữn mối tình bây giờ về Trang về Ly… nói với chị tôi bây giờ chỉ muốn yêu Ly chứ không muốn tình cảm với ai khác cả..
 
-
 “Haizz, khổ thân cô bé Trang nghe em nói vậy là nó yêu em lắm đấy, nếu em không yêu nó thì nên chủ động giải thích rõ, mình không đến được với ngta thì nên chủ động cắt đi để họ có được ngườu yêu mới. Con về cái Ly thì khó em ạ, theo lời em kể Ly hơn em 3 tuổi là gần bằng tuổi chị, con gái hơn tuổi khó yêu lắm em ạ đặc biệt trong Ly lại còn 1 hình bóng người con trai từng cứu cô ấy như thế chỉ khi nào người con trai ấy phản bội Ly thì còn có cơ hội, chứ không chẳng bao giờ cô ấy yêu em đâu. Mà em đã suy nghĩ chắc chắn, yêu người hơn tuổi là mình phải phấn đấu nhiều đấy, sau này khoảng 20-30 năm nữa em sẽ thấy khác biết rõ rệt khi mà em vẫn còn phong độ còn cô ấy đã già. Nếu nói về một minh chứng thì em thể nhìn chính bố mẹ, mẹ kém bố 7 tuổi nhưng bây giờ ai nhận ra được mẹ chênh tuổi bố em, cả 2 nhìn vẫn rất trẻ. Nên Minh à chị khuyên em nếu có thể đương đầu với những khó khăn đó thì em đã trưởng thành và sẽ là một điểm tựa vững chắc cho ngừoi con gái dù đó là ai đi chăng nữa, vậy suy nghĩ đi em. Thanh xuân con gái không có dài đâu, chị hi vọng em sẽ có quyết định đúng đắn.
-Tôi cũng chỉ cười và vâng dạ với chị, trong lòng tôi có rất nhiều suy nghĩ ngổn ngang. Mình yêu chị Ly hay đơn thuần chỉ là chinh phục như chị nói. Haizz không nghĩ nữa dù sao tôi bây giờ cũng chả còn như xưa nữa, thích địt ai mà chả được, dù sao đối với chị Ly mình cũng muốn được quan hệ với chị một cách quan mình chính đại, không dùng khả năng nhập để ép buộc chị, cứ coi như đúng là mình chinh phục đi những thứ còn lại không quan trọng. 
-
+Tôi cũng chỉ cười và vâng dạ với chị, trong lòng tôi có rất nhiều suy nghĩ ngổn ngang. Mình yêu chị Ly hay đơn thuần chỉ là chinh phục như chị nói. Haizz không nghĩ nữa dù sao tôi bây giờ cũng chả còn như xưa nữa, thích địt ai mà chả được, dù sao đối với chị Ly mình cũng muốn được quan hệ với chị một cách quan mình chính đại, không dùng khả năng nhập để ép buộc chị, cứ coi như đúng là mình chinh phục đi những thứ còn lại không quan trọng.
 
 Ăn xong, chị trả tiền rồi cả 2 bắt đầu về. Về đến nhà chỉ chuẩn bị chăn gối mang vào phòng cho tôi. Nhà chị có 2 phòng ngủ, 1 phòng của anh chị, 1 phòng để không phòng trường hợp có ai qua ngủ. Lấy xong các thử thì chị về phòng, biết đến lúc thực hiện kế hoạch tôi đợi chị vừa quay người lại thi giơ diện thoại lên rồi tạch. Trời đất quay cuồng, tầm mắt thay đổi. Tôi là chị người con gái xinh đẹp giờ đã là của tôi.
 Nở nụ cười trên môi, tôi quay đầu lại nhìn Minh’m rồi bảo Minh’m vào phòng.
 
-
 “Chủ nhân có gì phân phó” Minh’m hỏi
-
 
 “Hỏi ngây thơ thế, 1 nam 1 nữ ở trong phòng chú nghĩ có chuyện gì xảy ra”
 
-
 Minh’m đã hiểu bắt đầu cởi quần áo, dáng người khoẻ khắn lộ ra, định cởi nốt quần nhưng tôi bảo thôi và ra lệnh tiến lại gần đây cởi áo cho tôi. Nếu ở bản thân thì đây là lần đầu của tôi, không hề có 1 chút kinh nghiệm nào, nhưng giờ đang sỡ hữu chị cả về thể xác lẫn tinh thần nên tôi hoàn toàn biết phài làm gì mặc dù đây sẽ là lần đầu chị ở thư thế chủ động.
-
 
 Từng chiếc cúc được Minh’m tháo ra, tháo xong tôi cởi ra rồi ném nó sang 1 bên, phần trên chị lộ ra. Phải nó rằng cả 2 ngươi con gái tôi nhập vào đến có dáng người same same nhau, chị chỉ thấp hơn Ly 2 cm, còn kích cỡ ngực thì khá giống nhau vừa vặn với thân hình. Lúc này phần trên chị chỉ con chiếc áo lót, nhưng tôi chưa cởi vội mà kêu Minh’m hãy liếm tôi. Hiểu ý Minh’m làm giống mấy bộ AV xem trên mạng, cậu ta hôn tôi. Môi chúng tôi chạm vào nhau, nhẹ nhàng chậm rãi mang theo sự thăm dò chờ đợi một cảm giác bất an… mỗi lúc chúng tôi càng dính chặt vào nhau… Sau sự đụng chạm mềm mại, đầu óc tôi bắt đầu hỗn loạn. Để nụ hôn sâu hơn, Minh’m một tay nâng mặt, một tay ôm chặt người tôi. Cả 2 hôn thật sâu khơi vọng bản năng nơi sâu thẳm trong tâm hồn, quấn quýt triền miên không dừng lại
 Kết thúc nụ hôn sâu, cũng là nụ hôn đầu của Minh’m, một nụ hôn mà đến cho tôi và cả Minh’m một sự bất ngờ. Tôi còn đang nghĩ mình sẽ là người chủ động trong nụ hôn đó nhưng Minh’m khiến cho mọi chuyện thay đổi. Một nụ hôn đúng nghĩa, một nụ hôn mang lại khát vọng cho cả hai. Thở hổn hển tôi hỏi Minh’m:
 
-
 “Hôn giỏi thế, ngay cả tôi cũng không nghĩ mình hôn giỏi như vậy đâu”
-
 
 “Em cũng bất cmn ngờ đấy chủ nhân ạ. Công nhận kinh nghiệm xem jav và ngôn tình cẩu huyết 8 năm đã có tác dụng “
 
-
 “Ờ thế tốt đấy, tôi hứng tình rồi đây này, mà bắt đầu từ giây phút này phải xưng hô em anh nhé, thế mới tăng kích thích được”
-
 
 “Ok em iu vậy để anh tiếp tục nào” khuôn mặt đều giả của tôi hiện ra khiến tôi muốn đạp một phát, nhưng thôi tôi cười và nhường quyền chủ động cho Minh’m, mình an phận hưởng thụ là tốt rồi…
 Anh bắt đầu hôn lên cổ tôi, rồi tiến dần đến xương quai xanh, vừa hôn anh ấy vừa khẽ cắn xương quai xanh khiến tôi rên lên vì sướng, 2 bàn tay thì không chịu để yên mà vòng ra đằng sau lưng tôi cởi ra và bắt đầu xoa nắn bộ ngực sữa, bộ ngực tôi dễ dang để bàn tay anh nắm trọn, 2 bày tay bóp nhè nhẹ rồi mên mê đâu ti để nó cương lên, nhìn quầng nhũ trắng hồng đã vun cao hơn, anh lấy lưỡi thăm dò trước, rồi anh nuốt một ngụm đem nó ngậm vào, dưới sự cắn mút của anh, khoái cảm tôi được tạo ra mãnh liệt hơn, ngực tôi ưỡn lên để anh bú dễ dàng hơn miệng không làm chủ mà kêu lên:
 
-
 “Sướng quá anh, bú mạnh nữa vào em sướng ahhh…, còn bên kia nữa anh đừng bỏ xót nó… ôi ưm….”
-
 
 Nghe vậy anh bú hăng hơn, một lúc anh chuyển sang bầu vú bên kia, bàn tay kia thì tiếp tục xoa nắn… bú sữa tôi chán chê anh nhà miệng ra, 2 bầu vú dính đấy nước dãi của anh vun cao lên khiến tôi khẽ run vì lạnh, anh bắt đầu dứng dậy và bắt tôi cởi quần anh ra. Thằng đệ lúc trước đã cứng lắm rồi sau khi được giải phóng nó oai hùng hiện ra trước mắt tôi, một con cặc vĩ đại mà trước giở tôi rất hãnh diện vì nó. Anh nói:
 “Giờ đến lượt em chăm sóc thằng nhỏ cho anh” Anh để vật to lớn bên môi tôi
 
-
 Hai chân anh mở rộng, tôi quỳ gối ở dưới, mở miệng đem vật to lớn nhét vào
-
 
 “A, trời ơi….” . Tôi ngượng ngùng nếm thử mùi vị kì lạ,cả người khẽ run
 
-
 Bàn tay anh đặt ở sau gáy tôi, dùng sức áp nhẹ tôi, muốn tôi đem vật to lớn của anh ngậm vào nhiều hơn
-
 
 Tôi cảm giác cái vật đó ở trong miệng mình càng trở nên to lớn
 
-
 “Tuyệt vời em yêu ơi” Giọng nói anh có chút khàn khàn…
-
 
 Tôi uốn cong lưỡi chạm vào đỉnh đầu mẫn cảm của anh… bất chợt một dòng khí phun thẳng vào miệng tôi… anh xuất tinh vào miệng tôi
 
-
 Ho sù sụ vì bất ngờ, miệng tôi dình đấy tinh trùng, nó có mùi hơi ngai ngải. Tôi kêu lên:
 
-
 “Khốn khiếp có xuất tinh thì phải báo để em cho chuẩn bị chứ, ôi nhiều quá!!”
-
 
 “Hì hì, ai bảo em bú điêu luyện quá làm anh không chịu được….” Bàn tay anh vuốt ve làn da trắng như tuyết của tôi… anh nhẹ nhàng nói thầm vào tai tôi:
 “Mình đi vào phần chính nhé” nói xong anh lại dùng lưỡi liếm xung quanh tai tôi. Tê dại vì sướng tôi nhắm mặt lại khẽ gật đầu…
 
-
 Ngón trỏ khẽ chui xuống vùng đất huyền bí, tìm kiếm chỗ nhảy cảm nhất trong tôi..
-
 
 “A…” tôi khẽ kêu lên khi anh chạm đên điểm nhạy cảm của tôi.. Anh khẽ xoa cho đến khi dâm thuỷ tràn ra.. cả khuôn mặt tôi ửng đỏ lên
 
-
 Anh cho ngón tay vào
-
 
 Cảm giác có một thứ lạ đang đi vào, cả người tôi bỗng hơi khượng lại một chút..
 
-
 “Nào em yêu thả lỏng ra nào….” Anh lần đầu còn không khẩn trưởng như em, cứ nghĩ bình thường thôi…
-
 
 Anh dùng tay đẩy khe hở ướt át , bắt đầu mạnh mẽ tiến vào..
 
-
 Cảm nhận thằng đệ của anh đã ở trong tôi, anh nhẹ nhàng rút ra rồi cắm vào như muốn tôi thich ứng dần… rồi mạnh dần..
-
 
 Một bên anh đâm vào, một bên lại không ngừng xoa bóp bộ ngực tôi, mỗi lần xuyên qua xuyên lại đều là trực tiếp đi vào nơi sâu nhất trong tôi.. khoái cảm ngày càng điên dại… miệng tôi ngày càng rên rỉ nhiều hơn…
 “Ưm… ưn… đúng rồi… mạnh lên anh……. mạnh nữa anh……ưm sâu quáaaaaa….. ah…….”
 
-
 Anh cũng gầm lên vì sướng… lúc này anh không xoa bóp ngực tôi nữa… mà ôm lấy eo tôi… va chạm lại càng mãnh liệt hơn.. những tiếng pạch.. pạch xuất hiện ngày càng dày đăc…. lý trí đã sớm biến mất trong 2 người…. nhường chỗ cho một bến bờ tràn đầy sự khoái cảm vào sung sướng…..
-
 
 “Ưm…ư….. sướng quá…… ư…..ư….. trời ơi..ưm..ưm… sâu quá…. sao lại sư…..ớ…n…g thế này…. em yêu anh… yêu cái thân thể đĩ đoạ này…. em ra đấy…… ah……”
 
-
 “Cù….ng nhau ra nào em…. anh xuấ…t đây………..”
-
 
 Một dòng tinh khí ấm nóng tràn vào trong tôi… nó nhiều quá… con cặc anh bé dần nhưng vẫn ở trong tôi, tinh trùng đặc trào ra khỏi âm đạo tôi… lúc này anh nằm xuống kéo tôi nằm trên người anh… mắt tôi nhắm lại 2 tay ghì chặt vào người anh…. sung sướng… cả anh và tôi vẫn vậy
 Được một lúc anh nói:
 
-
 “Em yêu, anh làm được chứ, có sướng hơn anh trai quý hoá không”
-
 
 “Quá mãnh liệt… hơn hẳn ông anh..” tôi đáp lại.. trong đầu tôi tưởng tượng lại lúc ông anh làm tình với chị, bú liếm một tí thò thụt một lúc rồi phun ra khiến chị trong lòng không thoải mái tẹo nào
 
-
 Đêm hôm ấy chúng tôi tiếp tục làm thêm vài nháy, từ kiểu 69 đến doggy, rồi phi ngựa đủ kiểu… vật vã triền miên nhau đến gần 3h sáng mới bắt đầu ôm nhau tràn vào giấc ngủ….
 
-
 Hết chương 15
-
-
 
 ==================== Chương 16 - Bị đánh xuân dược ====================
 
 Buổi sáng tinh khôi:
 
-
 “Ưm…., dậy thôi nào Minh’m, chú còn bài kiểm tra kia kìa, dậy đi….” lúc này cả tôi và Minh’m đều trong tình trạng không mảnh vải che thân còn cuốn chặt lấy nhau triền miên trên giường. Đảm bảo lúc này ông anh mà có mặt ở đây chắc chết vì hộc máu mất.
-
 
 “Vâng chủ nhân em dậy đây..” nói rồi Minh’m cũng dậy vào chào tôi. Kết thúc cuộc làm tình chúng tôi lại trở về xưng hô như xưa…. dù sao xưng hộ anh em với bản thân mình nó cũng chỉ hợp trên giường chứ tình huống bình thường nó không ổn cho lắm…
 
-
 “Thế chủ nhân định quay về hay ở lại thân xác chị ạ ?” Minh’m hỏi
-
 
 “Chắc không, tôi ngại làm bài kiểm tra bỏ mẹ…” nói rồi tôi rút điện thoại ra xem còn bao nhiêu thời gian. Bật lên giao diện apps hiện lên 1 thống báo:
 
-
 “Đã hoàn thành nhiệm vụ ẩn, nhập vào 2 người hơn tuổi tăng 1000 điểm. Chúc mừng bạn đã lên lv2:
 
-
-
-
 -Mở khoá chức năng giao tiếp với linh hồn trong thể xác gốc
-
-
 -Khi đang nhập ở thân xác khác có thể di chuyển linh hồn ngay lập tức vào thân xác khác mà không cần sử dụng app
-
-
 -Thời gian nhập tăng lên 36 tiếng đồng hồ và thời gian chờ sau khi nhập cũng được giảm xuống 36 tiếng.
-
-
 – Lv 3: 0/3000
-
 
 “Ôi voãi toàn chức năng xịn mà lại còn nâng cấp thêm thời gian sử dụng, lv2 đã ngon nghê thế này éo biết lên lv3 có gì ngon hơn, mà kệ tính sau test chức năng mới đã” nói xong tôi ấn vào mực giới thiệu tính năng mới.
 
-
 Một dòng hướng dẫn sử dụng tính năng mới hiện lên trước mắt tôi:
-
 
 “Với tính năng giao tiếp với linh hồn ở thể xác gốc bạn chỉ cần nói tên bản thân cộng ngày sinh là lập tực có thể giao tiếp với thể xác gốc”
 
-
 Nhìn dòng hướng dẫn tôi lẩm bẩm thử luôn
-
 
 “Đặng Nhật Minh 04/01-1999” lập tức có tiếng tút tút như chuông điện thoải, hướng mặt nhìn Minh’m thấy cậu ta không hề có gì khác biệt
 
-
-
-
 Khoảng 1s sau lập tực có giọng tôi vang lên trong đầu
-
 
 “Nghe rõ chủ nhân, giờ chúng ta có thể giao tiếp qua ý nghĩ, có việc gì cần gấp chủ nhân có thể ngay lập tức liên hệ với em” Minh’m lúc này chỉ cười mỉm trên môi, mà không hề nói bất cứ lời nói. Đúng thật chúng tôi đang giao tiếp qua ý nghĩ.
 
-
 “Ok, hiểu rồi”
-
 
 “Chủ nhân em đi học trước đây, chủ nhân cũng test nốt tính năng mới đi” Minh’m nói trực tiếp mà không sử dụng khả năng
 
-
 “Để tôi ra mở cửa cho cậu”
-
 
 “Thôi chủ nhân, em tự mở là được, tối gặp lại, à nhớ là dọn rẹp đống trên giường đi nhé, không ông anh thấy là nát đấy” nói rồi Minh’m lượn luôn
 
-
 “Ôi mẹ ơi, hoá ra là trốn việc…” có vẻ lúc giao tiếp Minh’m biết tôi định nhờ cậu ta dọn đống tinh dịch trào ra trên chiếu nên tìm cách lượn luôn. Giờ thì hay rồi tôi phải dọn một mình. Lấy chăn chiếu đi giặt mà tí quên mất tính năng mới. Làm xong lúc này là 7h còn 1 tiếng nữa là đến giờ làm của chị, mà công ty chị làm đi cũng sớm cũng chỉ mất 15 phút, vậy là tôi xuống nấu tạm gói mỳ rồi vừa ăn vừa nghịch chức năng mới:
 
-
-
-
 “Khả năng nhập vào thân xác số 3 khi ở thân xác số 2: lúc nhập ở trong thân xác số 2 bạn chỉ cần nhìn vào mục tiêu cần nhập số 3 nghĩ họ tên rồi xuất hồn bạn sẽ lập tức để lại một phần linh hồn trong thể xác số 2 và nhập vào thân xác số 3, không giống như phần linh hồn thể xác gốc, phần linh hồn thân xác số 2 có cả ký ức của thể xác gốc lẫn thể xác số 2 nên bạn hoàn toàn yên tâm về thân xác số 2. Còn bạn sẽ nhập vào thân xác số 3 và thời gian sử dụng của 2 thể xác số 2 và 3 sẽ bị giảm đi 1 tiếng đồng thời, thời gian chờ của cả hai thân xác 2 và 3 sau khi thoát sẽ là như nhau. Khi thoát thân xác số 3 sử dụng câu lệnh. Thoát…. tên người số 3!!
-
 
 Đọc đi đọc lại 2-3 lần tôi cũng hiểu rõ tính năng này, ngắn gọn là tôi có thể nhập thêm vào 1 thân xác khác nữa khi đang ở thân xác số 2 mà không cần sử dụng điện thoại. Và thời gian sử dụng của cả 2 sẽ bị giảm, và không thể nhập vào cả 2 sau 36 tiếng khi thoát ra.
 
 Ăn xong, tôi đi vào bắt đầu thay trang phục, tôi lựa chọn bộ bra ren màu đỏ đun vô cùng quyến rũ. Còn bên ngoài tôi mặc bộ công sở truyền thống kín đáo. Lúc đầu cũng định mặc bộ công sở xẻ ngực nhưng trong ký ức chị toàn mấy bà xấu lại thêm mấy thằng dê già suốt ngày đi tia chị, đặc biệt là lão giám đốc suốt ngày có mấy hành động biến thái.. nên tốt nhất là mặc bộ này cho an toàn.
 
-
 Đi xe khoảng 15 phút tôi đến công ty của chị, bấm dấu vân tay để bắt đầu 1 ngày làm việc. Nói chung cứ vận dụng kiến thức của chị vào mà làm thành ra cũng chả có khó khăn gì. Chủ yếu tôi tới đây để tia gái mà từ vừa nãy đến giờ chả tia được ai ngoài cô lễ tân lúc mới vào cả. Cũng định sử dụng kĩ năng nhập thân xác số 3 vào cô này cơ mà nghĩ lại nếu nhập vào thì cũng chả làm được gì cả vì lễ tân cả buổi phải ngồi đấy chứ có làm được gì đâu
 
 Đang chán tự nhiên tôi nghe thấy giọng của Minh’m:
 
-
 “Alo alo, chủ nhân nghe thấy em gọi không ?”
-
 
 “Có viện gì thế mà phải sử dụng khả năng thế ?” Tôi hỏi lại
 
-
 “Chủ nhân mau giúp em, bài ktra tiếng anh căng vãi!!!”
-
 
 “Ok chú đọc đi, tôi giải luôn”
 
-
 @&&&$$%$%¥€€$^¥… vân vân và mây mây.. kiến thức toeic 950 của chị hoàn toan phát huy tác dụng.. Minh’m làm đúng gần tuyệt đối
-
 
 “Tks chủ nhân, quả này qua môn chắc rồi”
 
-
 “Có gì mà cảm ơn, cậu qua môn thì tôi cũng qua môn, sau này có gì nhờ cứ gọi”
-
 
 “Ok chủ nhân, tuần sau có bài qua môn Mac đấy, chủ nhân xác định tìm người nhập đi”
 
-
 “Rồi rồi, chiều nay về sớm sớm nhé, tôi phải làm thêm mấy nháy nữa đấy…” nói xong tôi cũng ngắt kết nối với Minh’m
-
 
 Tiếp tục công việc của mình cho đến gần giờ tan sở, chuẩn bị sắp đồ để rời đi thì thư ký giám đốc đi vào bảo giám đốc có việc nhờ đến tôi.
 
 Đi theo thứ ký đến phòng làm việc của giám đốc, tôi bước vào, 1 lão đầu hói đang ngồi thảnh thơi uống nước, lão mời tôi ngồi xuống rồi bảo:
 
-
 “Đoá hoa lạnh lùng uống cốc nước trà xanh hảo hàng tôi mới lấy từ Đà Lạt nhé”
-
 
 “Nhìn cốc nước lão pha, nghi nghi có việc gì đó không ổn vì lão này mỗi lần gọi chị vào đều có thêm vài 3 câu treo hoa ghẹo nguyệt chị, chẳng bao giờ làm được việc tử tế. Nay pha trà mời tôi ắt hẳn có việc gì không ổn đây” nghĩ vậy nên tôi từ chối lão:
 
-
 “Giám đốc, không cần quá cầu toàn, có việc gì ông nói luôn đi, tôi đang gấp”
 
-
 “Cứ từ từ nào, cô không uống là không nể mặt tôi tí nào đâu đấy, trà này không phải ai tôi cũng mời đâu, uống đi rồi chúng ta bàn công việc làm ăn sắp tới”
-
 
 Biết nếu không uống thì lão cũng không tha cho tôi rời khỏi đây đâu, nên tôi đành uống một ngụm hết chén trà, thấy tôi uống hết, lão mỉm cười và bắt đầu bàn chuyện công việc. Bàn được khoảng 15p tôi thấy cảm giác trong người nóng nóng… cảm giác này giống như bị đánh thuốc khi tôi đọc truyện sex mấy thằng đểu giả đều đánh thuốc để quan hệ với mấy đứa con gái mà bọn chúng thích vậy. Nhiệt độ cơ thể tăng dần, khuôn mặt tôi cũng đỏ ửng lên.. Lúc này lão giám đốc nở nụ cười bỉ ổi nói
 
 “Haha có phải lúc này người cô đang rất nóng không, đúng là xuân dược xịn có khác công hiệu đến cũng nhanh thật, nếu đúng thi khoảng gần 1 tiếng nữa thôi cô sẽ phải cầu xin ta làm tình với cô. Để xem mỹ nhân mặt lạnh khi làm tình với ta cơ giám bày khuôn mặt nghìn năm xa cách nữa không.. Haha”
 
-
 Biết mình bị đánh thuốc rồi, tôi cố gắng suy nghĩ tìm cách trốn thoát. Đương nhiên phương án hữu hiệu nhất mà tôi nghĩ ra là tôi sẽ nhập vào lão này mặc dù tôi không hề muốn và cố gắng đưa chị về nhà càng nhanh càng tốt. Không nghĩ nhiều nữa tôi lập tực giao tiếp với Minh’m
 
-
 “Alo, gấp đây đừng hỏi nhiều mau đến đón tôi ở xxx, tôi bị đánh thuốc”
-
 
 Hiểu chuyện gì xảy ra ngay lập tức Minh’m đi luôn. Lúc này đến lượt tôi đối phó với tên dê già này, dám động đến tôi là đéo yên ổn đâu
 
 , lập tức tôi nhìn vào bảng tên hắn và nghĩ trong đầu: Hoàng Trung Quân xuất hồn..
 
-
 Xoẹt trời đất lại quay cuồng, trong người tôi không còn cảm giác nóng nữa, tầm mắt cũng thay đổi, tôi đang ở trong cơ thể lão. Ngay lập tức tôi dìu chị đứng dậy và nhờ bảo vệ đưa ra ngoài sảnh, vừa ra ngoài đã có Minh’m đứng đợi sẵn, thấy tôi trong thân xác lão, Minh’m hơi thoáng bất ngờ rồi lập tức chơ chị về
-
 
 Sau khi thấy 2 người trở về, tôi điều khiển lão đi về phòng lấy một con dao rồi đóng cửa phòng lại rồi nghĩ:
 
-
 “Tao cho mày mất giống để xem mày còn dám hại đời con gái nhà ai nữa. Có trách thì hãy trách mày dám động đến những người tao têu thương.. thôi hãy nói lời tạm biệt đến thằng đệ yêu dấu mày đi..” xoẹt ahhhhh đau
 
-
 “Ahh, thoát Hoàng Trung Quân”
-
 
 Hết chương 16
 
 Hôm nay đăng 4 chap cho ae. Thời gian tói mình xin drop một khoảng thời gian ngắn vì đang thi cử quan trọng nên viết cx k chuyên tâm đc. Hẹn ae tháng 9 tại TruyệnVKL.com =)))
 
-
-
 ==================== Chương 17 - I’m a Star ====================
 
 Gió lộng bên tai, tôi quay về thân xác chị tác dụng của xuân dược lại có tác dụng lên tôi. Lúc này trong người tôi có một ngọn lửa đang bùng cháy dữ dội trong người
 
-
 “Chào mừng chủ nhận quay lại, chủ nhân cảm thấy thế nào rồi” Giọng Minh’m vang lên
-
 
 “Cậu biết tôi quay trở lại ? Mà thôi không quan trọng, phóng nhanh nhanh về nhà đi tôi sắp không chịu nổi nữa rồi
 
-
 Minh’m lập tức phóng nhanh hơn, 5p sau đã về đến nhà chị. Minh’m dìu tôi lên phòng
-
 
 “Khát quá, hix lấy cho tôi cốc nước”
 
-
 Minh’m lập tức đi luôn, ngửa lửa vẫn cháy hùng hục, nóng nóng quá tôi cởi hết sạch bộ đồ công sở vào áo lót ra, trên người chỉ còn chỉ còn chiếc quần lót che dấu vị trí trọng điểm.. một lúc sau Minh’m đã lên cầm theo cốc nước đá:
-
 
 “Chủ nhân, nước….”
 
-
 “Mang lại gần đây giúp em uống, em khát quá…”
-
-
-
 
 Ực….
 
-
 “Anh.. anh đi xuống tầng, em.. nghỉ ngơi nhé..”
-
 
 “Đồ quỷ sứ, khi em đã xưng hô anh em thì anh phải hiều làm gì rồi chứ, lại đây nào… hãy dập ngọn lửa trong em đi…”
 
-
 Minh’m lại gần chỗ tôi, như bắt được vàng tôi lập tức kéo anh ấy vào. Không đợi anh ấy phản ứng, tôi lập tực cởi quần anh ra, thấy thằng cu đã chào cờ, tôi trêu
-
 
 “Thế mà còn chạy.. hihi để em chăm sóc nó nào”
 
-
 “Đừng mà em, anh.. anh chưa tắm chỗ đấy khai lắm!!”
-
 
 “Kệ, càng kích thích… em thích “
 
-
 Nói rồi tôi bắt đầu dùng lưỡi liếm vật cương cứng của anh, liếm nhè nhẹ phần thân, vật cương cứng lại tiếp tục to ra lộ phần gân guốc. Lén nhìn mặt anh, lúc này anh đang nhắm mắt, khuôn mặt lộ rõ vẻ hưởng thụ. Tiếp tục liếm, tôi liếm xuống khu vực 2 hòn dái của anh. Lấy 1 tay giữ vật cương cứng cho thẳng đúng, tôi hôn chụt 1 phát, dâu son môi hơi hồng hồng hiện lân thân vật cương cứng, tôi cười mỉm, lại dùng bàn tay con lại kèo 2 hòn dái ra rồi nhỏ 1 ít nước dãi rồi bằ đầu ngậm cả 2 hòn vào . Lúc ngậm tôi dùng lưỡi đảo xung quanh 2 hòn dái, rồi bất chợt cắn nhẹ vào lớp da mỏng.. Anh gầm 1 tiếng.. 2 tay bắt đầu ghì nhè vào đầu tôi..
-
-
-
 
 “Đừng liếm dái anh nữa em, chăm sóc phần trên đi em, anh sắp không chịu nổi rồi…”
 
-
 Nghe anh nói vậy, tôi nhả 2 hòn dái ra bắt đầu chăm sóc phần đỉnh đầu của anh. Phía trên của anh lúc này đã ửng đỏ. Tôi bắt đầu ngậm từ từ.. dương vật to hơn, tôi đẩy nhanh tốc độ.. nghe thấy tiếng gầm gừ rên rỉ của anh, tôi biết anh đang kích thích lắm rồi, tôi lại càng đẩy nhanh tốc độ hơn.. phụt.. một dòng sữa đặc trắng phun ra….
-
 
 “Khụ khụ… ra thì phải báo em chứ… đáng ghét đầy miệng rồi đây này….”
 
-
 “Hix… sr nàng… tại anh sướng quá… đôi môi khả ái của em, kỹ thuật của em làm anh sướng quá….”
-
 
 ……
 
-
 Lúc này lồn tôi ngứa ngáy lắm rồi.. đôi mắt tôi bốc lửa.. đẩy anh xuống tôi nói:
-
 
 “Còn nhiều thứ em muốn cho anh xem lắm, cứ từ từ thưởng thức nha cưng..”
 
-
-
-
 Đẩy anh xuống, tôi dùng tay nhét con cu vào lồn, rồi bắt đầu lên xuống đều đặn… nhịp độ tăng dần rồi lại tăng dần. Tư thế phi ngựa khiến nước lồn tôi ngày càng ra nhiều nước hơn. Tiếng rên xuất hiện trên miệng cả 2
-
 
 Người. Được hơn 10p.. anh bảo
 
-
 “Anh Anh ra…….”
-
 
 “Nào không được, anh mà anh chết với em”, tôi nhấp lên, con cu anh bóng nhẵn, tôi dùng tay cọ sát lên, tần suất tăng dần, nhìn mặt anh đang cố đè nén, biết anh không chịu được nữa tôi vội nắm chặt con cu lại rồi cho dùng miệng đón nhận làn tinh khí ấy..
 
-
 …… Dày vò nhau cả buổi…. cả tối hôm ấy 3 lần anh xuất vào miệng, 4 lần xuất vào lồn tôi
 
-
 Vậy là tôi sắp được làm cha rồi =))))
-
 
 Ngày qua ngày… tôi cũng trả lại thân xác cho chị, mà cũng không quên xoá hết ký ức ấy đi. Tiếp tục công việc đi học rồi về nhà tìm bừa một đứa thủ dâm tạm, tổng cộng 1 tuần nay tôi cũng nhập qua tông cộng 15 đứa con gái, từ mc truyền hình đến mấy hot girl mới nổi trên mạng như Linh Ka, Hot girl Lai Lai.. Mấy tấm ảnh lộ hàng trên mạng cũng do tôi làm đấy hihi… Còn có cả đông clip nhưng tôi không công khau đâu =)) dù sao nó cũng là thứ để tôi uy hiếp mấy em hot girl đấy chứ.
 

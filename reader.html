@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Đang tải truyện...</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d0d14; --surface: #16161f; --card: #1e1e2e; --border: #2a2a3e;
+  --accent: #a78bfa; --accent2: #7c3aed; --text: #e2e8f0; --muted: #64748b;
+  --green: #10b981; --red: #f43f5e;
+}
+body.light-mode {
+  --bg: #f8fafc; --surface: #ffffff; --card: #ffffff; --border: #e2e8f0;
+  --accent: #7c3aed; --accent2: #6d28d9; --text: #0f172a; --muted: #64748b;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: 'Inter', sans-serif; min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: rgba(13, 13, 20, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 100;
+  padding: 12px 24px;
+}
+.header-inner {
+  max-width: 900px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.back-btn {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--card); border: 1px solid var(--border);
+  color: var(--text); padding: 8px 16px; border-radius: 12px;
+  cursor: pointer; text-decoration: none; font-size: 14px; font-weight: 600;
+  transition: 0.2s;
+}
+.back-btn:hover { border-color: var(--accent); background: rgba(167, 139, 250, 0.1); }
+
+.controls { display: flex; gap: 12px; align-items: center; }
+.theme-toggle {
+  background: var(--card); border: 1px solid var(--border);
+  color: var(--text); width: 40px; height: 40px; border-radius: 12px;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  font-size: 18px; transition: 0.2s;
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
+.reader-container {
+  max-width: 800px; margin: 40px auto; padding: 0 24px 100px;
+}
+.story-header { margin-bottom: 40px; text-align: center; }
+.story-cat {
+  font-size: 12px; text-transform: uppercase; letter-spacing: 2px;
+  color: var(--accent); margin-bottom: 12px; font-weight: 700;
+}
+.story-title {
+  font-size: 32px; font-weight: 800; line-height: 1.2;
+  background: linear-gradient(135deg, #a78bfa, #60a5fa);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.story-meta {
+  display: flex; justify-content: center; gap: 12px;
+}
+.badge {
+  padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;
+}
+.badge-sum { background: rgba(16, 185, 129, 0.15); color: var(--green); }
+.badge-raw { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+
+.tab-nav {
+  display: flex; justify-content: center; gap: 4px;
+  background: var(--card); padding: 4px; border-radius: 14px;
+  width: fit-content; margin: 0 auto 30px; border: 1px solid var(--border);
+}
+.tab-link {
+  padding: 8px 24px; border-radius: 10px; border: none;
+  background: none; color: var(--muted); cursor: pointer;
+  font-size: 14px; font-weight: 600; transition: 0.2s;
+}
+.tab-link.active { background: var(--accent); color: white; }
+
+.content {
+  font-family: 'Lora', serif; font-size: 19px; line-height: 1.8;
+  color: var(--text); text-align: justify;
+}
+.section-head {
+  color: var(--accent); font-weight: 700; font-size: 22px;
+  margin: 40px 0 20px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--border); position: relative;
+}
+.section-head::after {
+  content: ''; position: absolute; bottom: -2px; left: 0;
+  width: 60px; height: 2px; background: var(--accent);
+}
+.section-body { margin-bottom: 24px; }
+.sep { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+
+.loading-wrap {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 100px 0; color: var(--muted);
+}
+.spinner {
+  width: 40px; height: 40px; border: 3px solid var(--border);
+  border-top-color: var(--accent); border-radius: 50%;
+  animation: spin 0.8s linear infinite; margin-bottom: 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 600px) {
+  .story-title { font-size: 24px; }
+  .content { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="back-btn"><span>⬅</span> Thư viện</a>
+    <div class="controls">
+      <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+    </div>
+  </div>
+</header>
+
+<main class="reader-container" id="readerContainer">
+  <div class="loading-wrap" id="loading">
+    <div class="spinner"></div>
+    <p>Đang tải nội dung truyện...</p>
+  </div>
+</main>
+
+<script>
+const CAT_ICONS = {
+  'Mẹ Con':'👩‍👦','Mẹ vợ':'👩‍🦱','Ghen tuông':'😠','Máy Bay':'✈️','Cô Giáo - Học Sinh':'👩‍🏫',
+  'Ngoại Tình':'💔','Y Tá - Bác Sĩ':'🏥','Bạo Dâm':'⛓️','Vợ Dâm':'👰','Chuyện cũ':'📜',
+  'Dâm thư Trung Quốc':'🇨🇳','truyện trung':'🏮','Truyện dâm hiệp':'⚔️','Kỹ Năng & Hành Động':'🎯',
+  'Địa Điểm & Đối Tượng':'📍','Phong Cách & Cảm Xúc':'💖','Cave':'💃','Cave / Gái Gọi':'💃','HE':'❤️',
+  'Chị dâu':'💋','Anh Em - Chị Em':'👫','Hàng xóm':'🏘️','Loạn Luân':'🔥','Mẹ bạn':'👩‍👩‍👦','Truyện dài':'📚'
+};
+
+function initTheme() {
+  const theme = localStorage.getItem('theme');
+  if (theme === 'light') document.body.classList.add('light-mode');
+}
+function toggleTheme() {
+  const isLight = document.body.classList.toggle('light-mode');
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+}
+initTheme();
+
+const params = new URLSearchParams(window.location.search);
+const uid = decodeURIComponent(params.get('uid'));
+let mode = params.get('mode') || 'sum';
+
+async function loadStory() {
+  try {
+    const res = await fetch('stories.json');
+    const stories = await res.json();
+    const story = stories.find(s => s.uid === uid);
+    if (!story) throw new Error("Không tìm thấy truyện");
+
+    document.getElementById('pageTitle').textContent = story.title;
+    renderSkeleton(story);
+    await fetchContent(story);
+  } catch (e) {
+    document.getElementById('readerContainer').innerHTML = `<p style="color:var(--red);text-align:center;padding:100px">❌ ${e.message}</p>`;
+  }
+}
+
+function renderSkeleton(story) {
+  const icon = CAT_ICONS[story.category] || '📖';
+  const container = document.getElementById('readerContainer');
+  container.innerHTML = `
+    <div class="story-header">
+      <div class="story-cat">${icon} ${story.category}</div>
+      <h1 class="story-title">${story.title}</h1>
+      <div class="tab-nav">
+        ${story.has_sum ? `<button class="tab-link ${mode==='sum'?'active':''}" onclick="switchMode('sum')">📝 Tóm tắt</button>` : ''}
+        ${story.has_raw ? `<button class="tab-link ${mode==='raw'?'active':''}" onclick="switchMode('raw')">📖 Truyện gốc</button>` : ''}
+      </div>
+    </div>
+    <div id="storyContent" class="content">
+      <div class="loading-wrap"><div class="spinner"></div></div>
+    </div>
+  `;
+}
+
+function switchMode(newMode) {
+  mode = newMode;
+  const url = new URL(window.location);
+  url.searchParams.set('mode', mode);
+  window.history.pushState({}, '', url);
+  
+  document.querySelectorAll('.tab-link').forEach(btn => {
+    btn.classList.toggle('active', (newMode === 'sum' && btn.textContent.includes('Tóm')) || (newMode === 'raw' && btn.textContent.includes('Gốc')));
+  });
+  loadStory(); // Reload content
+}
+
+async function fetchContent(story) {
+  const contentDiv = document.getElementById('storyContent');
+  try {
+    let url = '';
+    if (mode === 'sum') {
+      url = `Tóm tắt/${story.id}`;
+    } else {
+      url = `${story.base}/${story.id}`;
+    }
+    
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    
+    if (mode === 'sum') {
+      renderSummary(text);
+    } else {
+      renderRaw(text);
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } catch(e) {
+    contentDiv.innerHTML = `<p style="color:var(--red)">❌ Không tải được nội dung: ${e.message}</p>`;
+  }
+}
+
+function renderSummary(raw) {
+  const body = document.getElementById('storyContent');
+  const lines = raw.split('\n');
+  let html = '';
+  
+  const sectionMap = {
+    '1. Giới thiệu': '1. 📌 Giới thiệu',
+    '2. Tình huống': '2. 🎭 Tình huống',
+    '3. Diễn biến': '3. 📜 Diễn biến',
+    '4. Cao trào': '4. ⚡ Cao trào',
+    '5. Đỉnh điểm': '5. 🔥 Đỉnh điểm',
+    '6. Kết luận': '6. 🏁 Kết luận',
+  };
+
+  for (let line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) { html += '<br>'; continue; }
+    
+    if (trimmed.startsWith('🔹 Khởi đầu') || trimmed.startsWith('🔹 Diễn biến') || trimmed.startsWith('🔹 Cao trào') || trimmed.startsWith('🔹 Nút thắt') || trimmed.startsWith('🔹 Hậu quả') || trimmed.startsWith('🔹 Kết thúc') || trimmed.startsWith('🔹 Chương')) {
+        html += `<div class="section-head">${trimmed}</div>`;
+        continue;
+    }
+
+    if (trimmed.startsWith('===') || trimmed.startsWith('---')) {
+      html += `<hr class="sep">`;
+      continue;
+    }
+    if (trimmed.startsWith('TÓM TẮT TRUYỆN') || trimmed.startsWith('File gốc') || trimmed.startsWith('Thể loại') || trimmed.startsWith('Nhân vật')) {
+      html += `<div style="color:var(--muted);font-size:12px;margin-bottom:4px">${trimmed}</div>`;
+      continue;
+    }
+    
+    let isSection = false;
+    for (const [key, label] of Object.entries(sectionMap)) {
+      if (trimmed.startsWith(key)) {
+        html += `<div class="section-head">${label}</div>`;
+        const rest = trimmed.slice(key.length).replace(/^[:.]?\s*/, '');
+        if (rest) html += `<div class="section-body">${rest}</div>`;
+        isSection = true; break;
+      }
+    }
+    if (!isSection) html += `<div class="section-body">${trimmed}</div>`;
+  }
+  body.innerHTML = html;
+}
+
+function renderRaw(raw) {
+  const body = document.getElementById('storyContent');
+  const lines = raw.split('\n');
+  let html = '';
+  for (let line of lines) {
+    const t = line.trim();
+    if (!t) { html += '<br>'; continue; }
+    if (t.match(/^={5,}/)) { html += '<hr class="sep">'; continue; }
+    if (t.match(/^Chương \d+/i) || t.match(/^={3,} Chương/i) || t.match(/^={3,} PHẦN/i)) {
+      html += `<div class="section-head">📖 ${t}</div>`;
+    } else {
+      html += `<div class="section-body">${t}</div>`;
+    }
+  }
+  body.innerHTML = html;
+}
+
+loadStory();
+</script>
+</body>
+</html>
