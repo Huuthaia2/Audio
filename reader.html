@@ -547,9 +547,19 @@
       document.getElementById('startTtsBtn').style.display = 'none';
 
       ttsIndex = startIndex;
+      
+      // KIỂM TRA TIẾN TRÌNH CŨ (CHỈ KHI BẮT ĐẦU TỪ ĐẦU)
+      if (startIndex === 0) {
+        const savedIdx = localStorage.getItem(`tts_pos_${uid}_${mode}`);
+        if (savedIdx !== null && parseInt(savedIdx) > 0) {
+          const resume = confirm("Bạn có muốn nghe tiếp từ đoạn đã dừng không?");
+          if (resume) ttsIndex = parseInt(savedIdx);
+        }
+      }
+
       isTtsPlaying = true;
       document.getElementById('ttsPlayBtn').textContent = '⏸';
-      playNextTts();
+      playNextTts(true); // Cuộn đến đoạn đó luôn
     }
 
     function ttsSeek(val) {
@@ -619,6 +629,9 @@
       const currentId = ++ttsRequestId;
       document.getElementById('ttsSeekBar').value = ttsIndex;
       const text = ttsQueue[ttsIndex];
+
+      // GHI NHỚ VỊ TRÍ VÀO BỘ NHỚ
+      localStorage.setItem(`tts_pos_${uid}_${mode}`, ttsIndex);
 
       // Highlight và Cuộn
       document.querySelectorAll('.tts-highlight').forEach(el => el.classList.remove('tts-highlight'));
