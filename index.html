@@ -35,12 +35,17 @@ body.light-mode .theme-toggle{background:rgba(0,0,0,.05)}
 .layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 70px)}
 
 /* SIDEBAR */
-.sidebar{width:220px;flex-shrink:0;padding:20px 12px;border-right:1px solid var(--border);position:sticky;top:70px;height:calc(100vh - 70px);overflow-y:auto}
-.sidebar h3{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:12px;padding:0 8px}
-.cat-btn{display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;background:none;border:none;color:var(--muted);cursor:pointer;border-radius:10px;font-size:13px;text-align:left;transition:.15s;margin-bottom:2px}
-.cat-btn:hover{background:rgba(167,139,250,.1);color:var(--text)}
-.cat-btn.active{background:linear-gradient(135deg,rgba(167,139,250,.2),rgba(99,102,241,.15));color:var(--accent);font-weight:600}
-.cat-count{margin-left:auto;background:rgba(167,139,250,.15);color:var(--accent);padding:2px 7px;border-radius:20px;font-size:11px}
+.sidebar{width:260px;flex-shrink:0;padding:20px 12px;border-right:1px solid var(--border);position:sticky;top:70px;height:calc(100vh - 70px);overflow-y:auto;transition:transform 0.3s ease;z-index:150}
+.sidebar h3{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:16px;padding:0 12px;font-weight:700}
+.cat-btn{display:flex;align-items:center;gap:12px;width:100%;padding:12px 16px;background:none;border:none;color:var(--muted);cursor:pointer;border-radius:12px;font-size:14px;text-align:left;transition:.2s;margin-bottom:4px;font-weight:500}
+.cat-btn:hover{background:rgba(167,139,250,.08);color:var(--accent)}
+.cat-btn.active{background:#eeeefc;color:var(--accent2);font-weight:600}
+.cat-btn span:first-child{font-size:18px;display:flex;align-items:center;justify-content:center;width:24px}
+.cat-count{margin-left:auto;background:rgba(167,139,250,.1);color:var(--accent2);padding:2px 10px;border-radius:20px;font-size:11px;font-weight:600}
+.cat-btn.active .cat-count{background:rgba(124,58,237,.15)}
+
+/* MOBILE OVERLAY */
+.sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:140;backdrop-filter:blur(2px)}
 
 /* MAIN */
 main{flex:1;padding:20px;overflow:hidden}
@@ -109,50 +114,55 @@ main{flex:1;padding:20px;overflow:hidden}
 
 @media(max-width:768px){
   header { padding: 12px 16px; }
-  .header-inner { gap: 10px; }
-  .logo { font-size: 18px; }
+  .header-inner { gap: 8px; justify-content: space-between; }
+  .logo { font-size: 18px; flex: 1; }
   .stats { display: none; }
   
   .layout { flex-direction: column; }
+  
   .sidebar {
-    width: 100%;
-    height: auto;
-    position: sticky;
-    top: 105px; /* Điều chỉnh theo chiều cao thực tế của Header trên mobile */
-    padding: 10px 16px;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    overflow-x: auto;
-    background: var(--bg);
-    z-index: 110; /* Cao hơn header nếu cần, hoặc 90 nếu muốn nằm dưới */
-    gap: 12px;
-    -webkit-overflow-scrolling: touch; /* Cuộn mượt trên iOS */
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 280px;
+    height: 100vh;
+    background: var(--surface);
+    transform: translateX(-100%);
+    box-shadow: 20px 0 50px rgba(0,0,0,0.3);
+    z-index: 1000;
   }
-  .sidebar::-webkit-scrollbar { height: 4px; } 
-  .sidebar::-webkit-scrollbar-track { background: transparent; }
-  .sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
-  .sidebar h3 { display: none; }
-  #catList { display: flex; gap: 8px; width: auto; padding-right: 20px; }
-  .cat-btn { 
-    flex-shrink: 0;
-    width: auto; 
-    white-space: nowrap; 
-    padding: 8px 14px; 
-    margin-bottom: 0;
-    background: var(--card);
-    border: 1px solid var(--border);
+  .sidebar.open { transform: translateX(0); }
+  .sidebar h3 { display: block; margin-top: 20px; font-size: 14px; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 12px; margin-bottom: 12px; }
+  
+  #catList { display: block; width: 100%; }
+  .cat-btn { padding: 14px 16px; font-size: 15px; margin-bottom: 6px; }
+  
+  .sidebar-overlay.open { display: block; z-index: 999; }
+  
+  .menu-toggle {
+    display: flex !important;
+    background: var(--accent);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    align-items: center;
+    gap: 6px;
+    order: 2;
   }
+
+  main { padding: 10px 12px; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .card { padding: 12px; }
+  .card-title { font-size: 13px; -webkit-line-clamp: 2; height: 36px; }
   
-  main { padding: 10px 16px; }
-  .grid { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .view-header { margin-bottom: 12px; }
-  
-  /* Đảm bảo Header không quá cao khi wrap */
-  .search-wrap { order: 3; width: 100%; flex: none; }
-  #searchInput { padding: 8px 12px 8px 36px; }
-  .theme-toggle { order: 2; margin-left: auto; }
+  .search-wrap { order: 4; width: 100%; margin-top: 8px; }
+  .theme-toggle { order: 3; }
 }
+.menu-toggle { display: none; }
 </style>
 </head>
 <body>
@@ -160,6 +170,9 @@ main{flex:1;padding:20px;overflow:hidden}
 <header>
   <div class="header-inner">
     <div class="logo">📚 Kho Truyện</div>
+    <button class="menu-toggle" onclick="toggleSidebar()">
+      <span>📁</span> Thể loại
+    </button>
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
       <input id="searchInput" type="text" placeholder="Tìm kiếm tên truyện...">
@@ -170,7 +183,8 @@ main{flex:1;padding:20px;overflow:hidden}
 </header>
 
 <div class="layout">
-  <aside class="sidebar">
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+  <aside class="sidebar" id="sidebar">
     <h3>Thể loại</h3>
     <div id="catList"></div>
   </aside>
@@ -208,6 +222,13 @@ function toggleTheme() {
   const isLight = document.body.classList.toggle('light-mode');
   localStorage.setItem('theme', isLight ? 'light' : 'dark');
   document.getElementById('themeToggle').textContent = isLight ? '☀️' : '🌙';
+}
+
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebarOverlay');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('open');
 }
 
 function saveState() {
@@ -289,13 +310,21 @@ function buildCategories() {
 function setCategory(cat, scrollTop = true) {
   activecat = cat;
   document.querySelectorAll('.cat-btn').forEach(b => {
-    const btnText = b.textContent.replace(/\s+\d+$/, '').trim();
-    const catWithIcon = (CAT_ICONS[cat] ? CAT_ICONS[cat] + ' ' : '') + cat;
-    b.classList.toggle('active', (cat === 'all' && btnText.includes('Tất cả')) || btnText === catWithIcon || btnText.endsWith(cat));
+    const btnText = b.textContent.replace(/\d+$/, '').trim();
+    // Bỏ qua icon khi so sánh tên
+    const cleanBtnText = btnText.replace(/^[^\s]+\s/, '').trim();
+    b.classList.toggle('active', (cat === 'all' && btnText.includes('Tất cả')) || cleanBtnText === cat);
   });
   document.getElementById('viewTitle').textContent = cat === 'all' ? 'Tất cả truyện' : cat;
   applyFilter();
   if (scrollTop) window.scrollTo(0, 0);
+  
+  // Đóng sidebar trên mobile sau khi chọn
+  if (window.innerWidth <= 768) {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebarOverlay');
+    if (sidebar.classList.contains('open')) toggleSidebar();
+  }
   saveState();
 }
 
