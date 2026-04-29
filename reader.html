@@ -405,7 +405,7 @@ let nextPlayer = ttsPlayer2;
 
 // KHỞI TẠO BẢO MẬT VÀ THIẾT LẬP BAN ĐẦU
 [ttsPlayer1, ttsPlayer2].forEach(p => {
-  p.playbackRate = 1.1;
+  p.playbackRate = 1.2; // Tăng tốc độ đọc lên một chút
 });
 
 async function playNextTts(shouldScroll = false) {
@@ -474,12 +474,12 @@ async function playNextTts(shouldScroll = false) {
         ttsTimeout = setTimeout(() => {
           if (typeof renderChapter === 'function' && currentChapterIndex < storyChapters.length - 1) {
             renderChapter(currentChapterIndex + 1);
-            setTimeout(() => initTTS(0), 1500);
+            setTimeout(() => initTTS(0), 500); // RÚT NGẮN THỜI GIAN NGHỈ CÒN 0.5S
           } else {
             stopTTS();
             showToast("Đã đọc hết truyện!", "success");
           }
-        }, 1500);
+        }, 500); // RÚT NGẮN THỜI GIAN NGHỈ CÒN 0.5S
       }
     }
   };
