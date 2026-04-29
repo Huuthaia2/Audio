@@ -303,8 +303,8 @@ function prepareTtsSpans(container) {
       current = "";
     } else {
       current += s;
-      // GOOGLE API GIỚI HẠN ~200 KÝ TỰ, NÊN CHIA NHỎ HƠN (180)
-      if (current.length > 180) {
+      // GIẢM XUỐNG 140 KÝ TỰ ĐỂ URL KHÔNG QUÁ DÀI (TRÁNH LỖI 404)
+      if (current.length > 140) {
         ttsQueue.push(current.trim());
         current = "";
       }
@@ -424,23 +424,26 @@ async function playNextTts(shouldScroll = false) {
   document.getElementById('ttsStatus').textContent = text;
   document.getElementById('ttsProgress').textContent = `Đoạn ${ttsIndex + 1} / ${ttsQueue.length}`;
 
-  // TỰ ĐỘNG CHỌN NGUỒN PHÁT (LOCAL HOẶC GOOGLE TRỰC TIẾP)
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  let ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=${encodeURIComponent(text)}`;
+  
+  // DÙNG API GOOGLEAPIS (CLIENT=GTX) ĐỂ KHÔNG BỊ CHẶN TRÊN GITHUB
+  let ttsUrl = `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(text)}`;
   
   if (isLocal) {
     ttsUrl = `http://127.0.0.1:9999/tts?q=${encodeURIComponent(text)}`;
   }
   
   try {
+    // KHÔNG dùng crossOrigin vì Google API này không hỗ trợ CORS Preflight
     ttsAudio.src = ttsUrl;
     ttsAudio.playbackRate = 1.1;
     
-    // Ép phát âm thanh ngay lập tức
     const playPromise = ttsAudio.play();
     if (playPromise !== undefined) {
       playPromise.catch(e => {
-        console.warn("Auto-play blocked or Error:", e);
+        console.warn("Auto-play blocked:", e);
+        document.getElementById('ttsPlayBtn').textContent = '▶';
+        isTtsPlaying = false;
       });
     }
 
@@ -474,14 +477,11 @@ async function playNextTts(shouldScroll = false) {
 function prefetchNext(index) {
   if (index >= ttsQueue.length) return;
   const nextText = ttsQueue[index];
-  const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=${encodeURIComponent(nextText)}`;
+  const url = `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(nextText)}`;
   
-  // Dùng link prefetch để trình duyệt tự tải trước vào cache
-  const link = document.createElement('link');
-  link.rel = 'prefetch';
-  link.as = 'audio';
-  link.href = url;
-  document.head.appendChild(link);
+  const preAudio = new Audio();
+  preAudio.src = url;
+  preAudio.preload = "auto";
 }
 
 function toggleTTS() {
