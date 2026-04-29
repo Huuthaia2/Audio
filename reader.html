@@ -424,23 +424,31 @@ async function playNextTts(shouldScroll = false) {
   document.getElementById('ttsStatus').textContent = text;
   document.getElementById('ttsProgress').textContent = `Đoạn ${ttsIndex + 1} / ${ttsQueue.length}`;
 
-  // GỌI TRỰC TIẾP API GOOGLE (CHẠY ĐƯỢC TRÊN GITHUB PAGES)
-  const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=${encodeURIComponent(text)}`;
+  // TỰ ĐỘNG CHỌN NGUỒN PHÁT (LOCAL HOẶC GOOGLE TRỰC TIẾP)
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  let ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=${encodeURIComponent(text)}`;
   
-  ttsAudio.src = ttsUrl;
-  ttsAudio.playbackRate = 1.1;
+  if (isLocal) {
+    ttsUrl = `http://127.0.0.1:9999/tts?q=${encodeURIComponent(text)}`;
+  }
   
-  ttsAudio.oncanplaythrough = () => {
-    if (currentId === ttsRequestId && isTtsPlaying) ttsAudio.play();
-  };
+  try {
+    ttsAudio.src = ttsUrl;
+    ttsAudio.playbackRate = 1.1;
+    
+    // Ép phát âm thanh ngay lập tức
+    const playPromise = ttsAudio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(e => {
+        console.warn("Auto-play blocked or Error:", e);
+      });
+    }
 
-  ttsAudio.onerror = () => {
-    console.error("TTS Error, retrying...");
+    prefetchNext(ttsIndex + 1);
+
+  } catch (err) {
     if (isTtsPlaying && currentId === ttsRequestId) ttsTimeout = setTimeout(() => playNextTts(shouldScroll), 3000);
-  };
-
-  // TẢI TRƯỚC CÁC ĐOẠN TIẾP THEO BẰNG CÁCH TẠO AUDIO ẨN
-  prefetchNext(ttsIndex + 1);
+  }
 
   ttsAudio.onended = () => {
     if (isTtsPlaying && currentId === ttsRequestId) {
@@ -448,7 +456,6 @@ async function playNextTts(shouldScroll = false) {
       if (ttsIndex < ttsQueue.length) {
         playNextTts(false);
       } else {
-        // TỰ ĐỘNG CHUYỂN CHƯƠNG TIẾP THEO
         showToast("Hết chương, đang chuyển...", "info");
         ttsTimeout = setTimeout(() => {
           if (typeof renderChapter === 'function' && currentChapterIndex < storyChapters.length - 1) {
