@@ -114,8 +114,35 @@ header {
 @keyframes spin { to { transform: rotate(360deg); } }
 
 @media (max-width: 600px) {
-  .story-title { font-size: 24px; }
-  .content { font-size: 17px; }
+  header { padding: 8px 16px; }
+  .back-btn { padding: 6px 12px; font-size: 13px; }
+  .story-title { font-size: 24px; margin-bottom: 16px; }
+  .content { font-size: 17px; line-height: 1.7; }
+  .reader-container { margin: 20px auto; }
+  .tab-nav { width: 100%; border-radius: 10px; }
+  .tab-link { flex: 1; padding: 8px; text-align: center; }
+}
+
+/* TOAST */
+#toastContainer {
+  position: fixed; top: 80px; left: 50%; transform: translateX(-50%);
+  z-index: 9999; display: flex; flex-direction: column; gap: 8px;
+  pointer-events: none; width: 90%; max-width: 320px;
+}
+.toast {
+  background: rgba(30, 30, 46, 0.95); border: 1px solid var(--border);
+  color: var(--text); padding: 12px 16px; border-radius: 12px;
+  font-size: 13px; font-weight: 500; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px); animation: toastIn 0.3s ease-out;
+  display: flex; align-items: center; gap: 10px;
+}
+.toast-error { border-color: var(--red); color: var(--red); }
+@keyframes toastIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+.tts-highlight {
+  background-color: rgba(167, 139, 250, 0.2);
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  transition: all 0.3s;
 }
 </style>
 </head>
@@ -129,6 +156,8 @@ header {
     </div>
   </div>
 </header>
+
+<div id="toastContainer"></div>
 
 <main class="reader-container" id="readerContainer">
   <div class="loading-wrap" id="loading">
@@ -184,13 +213,308 @@ function renderSkeleton(story) {
       <h1 class="story-title">${story.title}</h1>
       <div class="tab-nav">
         ${story.has_sum ? `<button class="tab-link ${mode==='sum'?'active':''}" onclick="switchMode('sum')">📝 Tóm tắt</button>` : ''}
-        ${story.has_raw ? `<button class="tab-link ${mode==='raw'?'active':''}" onclick="switchMode('raw')">📖 Truyện gốc</button>` : ''}
+        ${story.has_raw ? `<button class="tab-link ${mode==='raw'?'active':''}" onclick="switchMode('raw')">📖 Theo chương</button>` : ''}
+        ${story.has_raw ? `<button class="tab-link ${mode==='full'?'active':''}" onclick="switchMode('full')">📚 Toàn bộ</button>` : ''}
       </div>
     </div>
     <div id="storyContent" class="content">
       <div class="loading-wrap"><div class="spinner"></div></div>
     </div>
+
+    <!-- Thanh điều khiển Audio -->
+    <div id="audioPlayerWrap" style="
+      display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+      background: var(--surface); border: 1px solid var(--accent); padding: 12px 20px;
+      border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 500;
+      flex-direction: column; gap: 8px; width: 95%; max-width: 500px;
+    ">
+      <!-- Thanh kéo tiến trình -->
+      <input type="range" id="ttsSeekBar" value="0" step="1" 
+        oninput="updateTtsPreview(this.value)" 
+        onchange="ttsSeek(this.value)" 
+        style="
+          width: 100%; height: 4px; border-radius: 2px; appearance: none;
+          background: rgba(167, 139, 250, 0.2); outline: none; cursor: pointer;
+        ">
+      
+      <div style="display: flex; align-items: center; gap: 15px; width: 100%;">
+        <button onclick="ttsSkip(-1)" class="theme-toggle" style="width:35px; height:35px; border-radius:50%; font-size:14px;">⏪</button>
+        <button onclick="toggleTTS()" id="ttsPlayBtn" class="theme-toggle" style="width:45px; height:45px; border-radius:50%; background:var(--accent); color:white; border:none;">▶</button>
+        <button onclick="ttsSkip(1)" class="theme-toggle" style="width:35px; height:35px; border-radius:50%; font-size:14px;">⏩</button>
+        
+        <div style="flex:1; overflow:hidden;">
+          <div id="ttsStatus" style="font-size:11px; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight: 500;">Sẵn sàng...</div>
+          <div id="ttsProgress" style="font-size:9px; color:var(--muted);">Đoạn 0 / 0</div>
+        </div>
+        
+        <button onclick="stopTTS()" class="theme-toggle" style="width:35px; height:35px; border-radius:50%; font-size:14px;">⏹</button>
+      </div>
+    </div>
+
+    <style>
+      #ttsSeekBar::-webkit-slider-thumb {
+        appearance: none; width: 12px; height: 12px; background: var(--accent);
+        border-radius: 50%; box-shadow: 0 0 10px var(--accent);
+      }
+    </style>
+
+    <button id="startTtsBtn" onclick="initTTS()" style="
+        position: fixed; bottom: 100px; right: 20px;
+        width: 56px; height: 56px; border-radius: 50%;
+        background: linear-gradient(135deg, var(--accent), var(--accent2));
+        color: white; border: none; font-size: 24px;
+        cursor: pointer; display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 8px 25px rgba(167, 139, 250, 0.4);
+        z-index: 400; transition: 0.3s;
+    " title="Đọc bằng giọng Google">🔊</button>
   `;
+}
+
+// --- TTS LOGIC (GOOGLE API - CHỐNG 429) ---
+let ttsQueue = [];
+let ttsIndex = 0;
+let isTtsPlaying = false;
+let ttsTimeout = null;
+let ttsAudio = new Audio();
+let ttsCache = new Map();
+let ttsRequestId = 0;
+
+let lastClickTime = 0;
+function handleTtsClick(e, idx) {
+  const now = Date.now();
+  if (now - lastClickTime < 350) { // Nhận diện Double Tap (350ms)
+    e.preventDefault();
+    ttsSeek(idx);
+  }
+  lastClickTime = now;
+}
+
+// CHIA NHỎ VĂN BẢN VÀ BỌC SPAN NGAY KHI HIỂN THỊ
+function prepareTtsSpans(container) {
+  const text = container.innerText.replace(/\s+/g, " ").trim();
+  const rawSegments = text.split(/([.\n?!])/).filter(s => s.trim().length > 0);
+  
+  ttsQueue = [];
+  let current = "";
+  for (let s of rawSegments) {
+    if (s.match(/[.\n?!]/)) {
+      current += s;
+      if (current.trim().length > 1 && /[a-zA-Z0-9à-ỹĐ]/.test(current)) ttsQueue.push(current.trim());
+      current = "";
+    } else {
+      current += s;
+      // GOOGLE API GIỚI HẠN ~200 KÝ TỰ, NÊN CHIA NHỎ HƠN (180)
+      if (current.length > 180) {
+        ttsQueue.push(current.trim());
+        current = "";
+      }
+    }
+  }
+  if (current.trim().length > 0 && /[a-zA-Z0-9à-ỹĐ]/.test(current)) ttsQueue.push(current.trim());
+
+  if (ttsQueue.length === 0) return;
+
+  let html = "";
+  ttsQueue.forEach((seg, i) => {
+    html += `<span id="tts-seg-${i}" onclick="handleTtsClick(event, ${i})" style="cursor:pointer; -webkit-tap-highlight-color: transparent;">${seg} </span>`;
+  });
+  container.innerHTML = html;
+  
+  const seekBar = document.getElementById('ttsSeekBar');
+  if (seekBar) seekBar.max = ttsQueue.length - 1;
+}
+
+function stopTTS() {
+  isTtsPlaying = false;
+  ttsAudio.pause();
+  if (ttsTimeout) {
+    clearTimeout(ttsTimeout);
+    ttsTimeout = null;
+  }
+  ttsCache.clear();
+  document.getElementById('ttsPlayBtn').textContent = '▶';
+  document.getElementById('ttsStatus').textContent = "Đã dừng.";
+}
+
+function initTTS(startIndex = 0) {
+  if (isTtsPlaying) { stopTTS(); return; }
+  
+  const body = document.querySelector('.chapter-body');
+  if (!body) return;
+
+  // Nếu chưa có spans thì tạo
+  if (ttsQueue.length === 0 || !document.getElementById('tts-seg-0')) {
+    prepareTtsSpans(body);
+  }
+
+  if (ttsQueue.length === 0) return;
+
+  document.getElementById('audioPlayerWrap').style.display = 'flex';
+  document.getElementById('startTtsBtn').style.display = 'none';
+  
+  ttsIndex = startIndex;
+  isTtsPlaying = true;
+  document.getElementById('ttsPlayBtn').textContent = '⏸';
+  playNextTts();
+}
+
+function ttsSeek(val) {
+  ttsIndex = parseInt(val);
+  
+  if (!document.getElementById(`tts-seg-${ttsIndex}`)) {
+    initTTS(ttsIndex);
+    return;
+  }
+  
+  ttsRequestId++; 
+  if (ttsTimeout) clearTimeout(ttsTimeout);
+  
+  ttsAudio.pause();
+  ttsAudio.src = ""; 
+  
+  // HIỂN THỊ GIAO DIỆN NẾU ĐANG ẨN
+  document.getElementById('audioPlayerWrap').style.display = 'flex';
+  const startBtn = document.getElementById('startTtsBtn');
+  if (startBtn) startBtn.style.display = 'none';
+
+  isTtsPlaying = true;
+  document.getElementById('ttsPlayBtn').textContent = '⏸';
+  playNextTts(true);
+}
+
+function updateTtsPreview(val) {
+  const idx = parseInt(val);
+  if (ttsQueue[idx]) {
+    // Bôi màu thử đoạn đang tua đến để người dùng dễ thấy
+    document.querySelectorAll('.tts-highlight').forEach(el => el.classList.remove('tts-highlight'));
+    const target = document.getElementById(`tts-seg-${idx}`);
+    if (target) target.classList.add('tts-highlight');
+    
+    document.getElementById('ttsStatus').textContent = ttsQueue[idx];
+    document.getElementById('ttsProgress').textContent = `Tua đến: Đoạn ${idx + 1}`;
+  }
+}
+
+function ttsSkip(offset) {
+  if (ttsQueue.length === 0) {
+    initTTS();
+    return;
+  }
+  let newIdx = ttsIndex + offset;
+  if (newIdx < 0) newIdx = 0;
+  if (newIdx >= ttsQueue.length) newIdx = ttsQueue.length - 1;
+  ttsSeek(newIdx);
+}
+
+async function playNextTts(shouldScroll = false) {
+  if (!isTtsPlaying) return;
+  if (ttsTimeout) clearTimeout(ttsTimeout);
+
+  const currentId = ++ttsRequestId; 
+  document.getElementById('ttsSeekBar').value = ttsIndex;
+  const text = ttsQueue[ttsIndex];
+  
+  document.querySelectorAll('.tts-highlight').forEach(el => el.classList.remove('tts-highlight'));
+  const currentSeg = document.getElementById(`tts-seg-${ttsIndex}`);
+  if (currentSeg) {
+    currentSeg.classList.add('tts-highlight');
+    if (shouldScroll) currentSeg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  document.getElementById('ttsStatus').textContent = text;
+  document.getElementById('ttsProgress').textContent = `Đoạn ${ttsIndex + 1} / ${ttsQueue.length}`;
+
+  // GỌI TRỰC TIẾP API GOOGLE (CHẠY ĐƯỢC TRÊN GITHUB PAGES)
+  const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=${encodeURIComponent(text)}`;
+  
+  ttsAudio.src = ttsUrl;
+  ttsAudio.playbackRate = 1.1;
+  
+  ttsAudio.oncanplaythrough = () => {
+    if (currentId === ttsRequestId && isTtsPlaying) ttsAudio.play();
+  };
+
+  ttsAudio.onerror = () => {
+    console.error("TTS Error, retrying...");
+    if (isTtsPlaying && currentId === ttsRequestId) ttsTimeout = setTimeout(() => playNextTts(shouldScroll), 3000);
+  };
+
+  // TẢI TRƯỚC CÁC ĐOẠN TIẾP THEO BẰNG CÁCH TẠO AUDIO ẨN
+  prefetchNext(ttsIndex + 1);
+
+  ttsAudio.onended = () => {
+    if (isTtsPlaying && currentId === ttsRequestId) {
+      ttsIndex++;
+      if (ttsIndex < ttsQueue.length) {
+        playNextTts(false);
+      } else {
+        // TỰ ĐỘNG CHUYỂN CHƯƠNG TIẾP THEO
+        showToast("Hết chương, đang chuyển...", "info");
+        ttsTimeout = setTimeout(() => {
+          if (typeof renderChapter === 'function' && currentChapterIndex < storyChapters.length - 1) {
+            renderChapter(currentChapterIndex + 1);
+            setTimeout(() => initTTS(0), 1500);
+          } else {
+            stopTTS();
+            showToast("Đã đọc hết truyện!", "success");
+          }
+        }, 1500);
+      }
+    }
+  };
+}
+
+function prefetchNext(index) {
+  if (index >= ttsQueue.length) return;
+  const nextText = ttsQueue[index];
+  const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=${encodeURIComponent(nextText)}`;
+  
+  // Dùng link prefetch để trình duyệt tự tải trước vào cache
+  const link = document.createElement('link');
+  link.rel = 'prefetch';
+  link.as = 'audio';
+  link.href = url;
+  document.head.appendChild(link);
+}
+
+function toggleTTS() {
+  if (isTtsPlaying) {
+    stopTTS();
+  } else {
+    if (ttsQueue.length > 0) {
+        isTtsPlaying = true;
+        document.getElementById('ttsPlayBtn').textContent = '⏸';
+        playNextTts();
+    } else {
+        initTTS();
+    }
+  }
+}
+
+function stopTTS() {
+  isTtsPlaying = false;
+  ttsAudio.pause();
+  ttsAudio.src = "";
+  
+  const playerWrap = document.getElementById('audioPlayerWrap');
+  const startBtn = document.getElementById('startTtsBtn');
+  if (playerWrap) playerWrap.style.display = 'none';
+  if (startBtn) startBtn.style.display = 'flex';
+  ttsIndex = 0;
+}
+
+function showToast(msg, type = "info") {
+  const container = document.getElementById('toastContainer');
+  if (!container) return;
+  const toast = document.createElement('div');
+  toast.className = `toast ${type === 'error' ? 'toast-error' : ''}`;
+  toast.innerHTML = `<span>${type === 'error' ? '❌' : 'ℹ️'}</span> ${msg}`;
+  container.appendChild(toast);
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transition = '0.5s';
+    setTimeout(() => toast.remove(), 500);
+  }, 4000);
 }
 
 function switchMode(newMode) {
@@ -200,21 +524,36 @@ function switchMode(newMode) {
   window.history.pushState({}, '', url);
   
   document.querySelectorAll('.tab-link').forEach(btn => {
-    btn.classList.toggle('active', (newMode === 'sum' && btn.textContent.includes('Tóm')) || (newMode === 'raw' && btn.textContent.includes('Gốc')));
+    const text = btn.textContent;
+    btn.classList.toggle('active', 
+      (newMode === 'sum' && text.includes('Tóm')) || 
+      (newMode === 'raw' && text.includes('chương')) ||
+      (newMode === 'full' && text.includes('Toàn bộ'))
+    );
   });
-  loadStory(); // Reload content
+  loadStory();
+}
+
+let storyChapters = [];
+let currentChapterIndex = 0;
+
+function saveReadingProgress() {
+  const progress = {
+    index: currentChapterIndex,
+    time: Date.now()
+  };
+  localStorage.setItem(`progress_${uid}`, JSON.stringify(progress));
+}
+
+function getReadingProgress() {
+  const saved = localStorage.getItem(`progress_${uid}`);
+  return saved ? JSON.parse(saved).index : 0;
 }
 
 async function fetchContent(story) {
   const contentDiv = document.getElementById('storyContent');
   try {
-    let url = '';
-    if (mode === 'sum') {
-      url = `Tóm tắt/${story.id}`;
-    } else {
-      url = `${story.base}/${story.id}`;
-    }
-    
+    let url = mode === 'sum' ? `Tóm tắt/${story.id}` : `${story.base}/${story.id}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const text = await res.text();
@@ -222,41 +561,200 @@ async function fetchContent(story) {
     if (mode === 'sum') {
       renderSummary(text);
     } else {
-      renderRaw(text);
+      storyChapters = splitIntoChapters(text);
+      if (mode === 'full') {
+        renderFullStory();
+      } else {
+        currentChapterIndex = getReadingProgress();
+        if (currentChapterIndex >= storyChapters.length) currentChapterIndex = 0;
+        renderChapterSelector();
+        renderChapter(currentChapterIndex);
+      }
     }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   } catch(e) {
-    contentDiv.innerHTML = `<p style="color:var(--red)">❌ Không tải được nội dung: ${e.message}</p>`;
+    contentDiv.innerHTML = `<p style="color:var(--red);text-align:center;padding:40px">❌ Không tải được nội dung: ${e.message}</p>`;
   }
+}
+
+function splitIntoChapters(text) {
+  const lines = text.split('\n');
+  let chapters = [];
+  let currentChapter = { title: 'Chương 1', content: [] };
+  let foundChapterKeyword = false;
+
+  const chapterRegex = /^Chương\s+(\d+|[IVXLCDM]+|[\u00C0-\u1EF9]+)/i;
+
+  for (let line of lines) {
+    const t = line.trim();
+    if (!t) {
+      currentChapter.content.push('');
+      continue;
+    }
+
+    if (chapterRegex.test(t) || t.match(/^={3,} Chương/i)) {
+      if (currentChapter.content.filter(l => l.trim()).length > 0) {
+        chapters.push(currentChapter);
+      }
+      currentChapter = { title: t.replace(/^={3,}\s*/, ''), content: [] };
+      foundChapterKeyword = true;
+    } else {
+      currentChapter.content.push(t);
+    }
+  }
+  chapters.push(currentChapter);
+
+  // Nếu không tìm thấy từ khóa chương, chia nhỏ theo độ dài
+  if (!foundChapterKeyword && text.length > 8000) {
+    return autoSplit(text);
+  }
+  
+  return chapters;
+}
+
+function autoSplit(text) {
+  const chunks = [];
+  const targetLength = 5000;
+  let remaining = text;
+  let count = 1;
+
+  while (remaining.length > 0) {
+    if (remaining.length <= targetLength + 1000) {
+      chunks.push({ title: `Chương ${count}`, content: remaining.split('\n') });
+      break;
+    }
+
+    let splitIndex = remaining.lastIndexOf('\n', targetLength);
+    if (splitIndex < targetLength * 0.7) {
+        splitIndex = remaining.lastIndexOf('. ', targetLength);
+    }
+    if (splitIndex === -1) splitIndex = targetLength;
+
+    const part = remaining.substring(0, splitIndex);
+    chunks.push({ title: `Chương ${count}`, content: part.split('\n') });
+    remaining = remaining.substring(splitIndex).trim();
+    count++;
+  }
+  return chunks;
+}
+
+function renderChapterSelector() {
+  const container = document.querySelector('.story-header');
+  let existingSelector = document.getElementById('chapterSelectorWrap');
+  if (existingSelector) existingSelector.remove();
+
+  if (storyChapters.length <= 1) return;
+
+  const wrap = document.createElement('div');
+  wrap.id = 'chapterSelectorWrap';
+  wrap.style = 'margin-top: 20px; display: flex; flex-direction: column; align-items: center; gap: 12px;';
+  
+  let options = storyChapters.map((ch, i) => `<option value="${i}">${ch.title}</option>`).join('');
+  
+  wrap.innerHTML = `
+    <div style="font-size: 13px; color: var(--muted);">Chọn chương (${storyChapters.length})</div>
+    <select id="chapterSelect" onchange="renderChapter(parseInt(this.value))" style="
+      background: var(--card); border: 1px solid var(--border); color: var(--text);
+      padding: 10px 20px; border-radius: 12px; font-size: 14px; font-weight: 600;
+      width: 100%; max-width: 300px; outline: none; cursor: pointer;
+    ">
+      ${options}
+    </select>
+  `;
+  container.appendChild(wrap);
+}
+
+function renderFullStory() {
+  const body = document.getElementById('storyContent');
+  let html = `<div style="color:var(--muted); text-align:center; margin-bottom:30px; font-size:13px;">💡 Chế độ đọc toàn bộ truyện (${storyChapters.length} chương)</div>`;
+  
+  html += `<div class="chapter-body">`; 
+  storyChapters.forEach((chapter, idx) => {
+    html += `<div class="section-head" style="text-align:center; margin: 40px 0 20px;">📖 ${chapter.title}</div>`;
+    for (let line of chapter.content) {
+      const t = line.trim();
+      if (!t) { html += '<br>'; continue; }
+      if (t.match(/^={5,}/)) { html += '<hr class="sep">'; continue; }
+      html += `<p style="margin-bottom: 15px;">${t}</p>`;
+    }
+  });
+  html += `</div>`;
+  
+  body.innerHTML = html;
+  
+  // CHUẨN BỊ SPANS LUÔN ĐỂ DOUBLE CLICK ĐƯỢC NGAY
+  const chapterBody = body.querySelector('.chapter-body');
+  if (chapterBody) prepareTtsSpans(chapterBody);
+  
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderChapter(index) {
+  currentChapterIndex = index;
+  saveReadingProgress();
+  
+  const body = document.getElementById('storyContent');
+  const chapter = storyChapters[index];
+  
+  // Update Select if exists
+  const select = document.getElementById('chapterSelect');
+  if (select) select.value = index;
+
+  let html = `<div class="section-head" style="text-align:center; margin-bottom: 20px; font-size: 20px;">📖 ${chapter.title}</div>`;
+  
+  // Navigation Buttons (Top)
+  html += `
+    <div style="display: flex; justify-content: space-between; margin-bottom: 30px; gap: 12px;">
+      ${index > 0 ? `<button class="back-btn" onclick="renderChapter(${index-1})" style="flex:1; justify-content: center; padding: 8px; font-size: 13px;">⬅ Trước</button>` : '<div style="flex:1"></div>'}
+      ${index < storyChapters.length - 1 ? `<button class="back-btn" onclick="renderChapter(${index+1})" style="flex:1; justify-content: center; padding: 8px; font-size: 13px; border-color: var(--accent); color: var(--accent);">Sau ➡</button>` : '<div style="flex:1"></div>'}
+    </div>
+  `;
+
+  html += `<div class="chapter-body">`; // BẮT ĐẦU NỘI DUNG CHÍNH
+
+  for (let line of chapter.content) {
+    const t = line.trim();
+    if (!t) { html += '<br>'; continue; }
+    if (t.match(/^={5,}/)) { html += '<hr class="sep">'; continue; }
+    html += `<p style="margin-bottom: 15px;">${t}</p>`;
+  }
+
+  html += `</div>`; // KẾT THÚC NỘI DUNG CHÍNH
+
+  // Navigation Buttons
+  html += `
+    <div style="display: flex; justify-content: space-between; margin-top: 60px; gap: 12px;">
+      ${index > 0 ? `<button class="back-btn" onclick="renderChapter(${index-1})" style="flex:1; justify-content: center;">⬅ Trước</button>` : '<div style="flex:1"></div>'}
+      ${index < storyChapters.length - 1 ? `<button class="back-btn" onclick="renderChapter(${index+1})" style="flex:1; justify-content: center; border-color: var(--accent); color: var(--accent);">Sau ➡</button>` : '<div style="flex:1"></div>'}
+    </div>
+  `;
+
+  body.innerHTML = html;
+  
+  // CHUẨN BỊ SPANS LUÔN ĐỂ DOUBLE CLICK ĐƯỢC NGAY
+  const chapterBody = body.querySelector('.chapter-body');
+  if (chapterBody) prepareTtsSpans(chapterBody);
+  
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderSummary(raw) {
   const body = document.getElementById('storyContent');
   const lines = raw.split('\n');
   let html = '';
-  
   const sectionMap = {
-    '1. Giới thiệu': '1. 📌 Giới thiệu',
-    '2. Tình huống': '2. 🎭 Tình huống',
-    '3. Diễn biến': '3. 📜 Diễn biến',
-    '4. Cao trào': '4. ⚡ Cao trào',
-    '5. Đỉnh điểm': '5. 🔥 Đỉnh điểm',
-    '6. Kết luận': '6. 🏁 Kết luận',
+    '1. Giới thiệu': '1. 📌 Giới thiệu', '2. Tình huống': '2. 🎭 Tình huống',
+    '3. Diễn biến': '3. 📜 Diễn biến', '4. Cao trào': '4. ⚡ Cao trào',
+    '5. Đỉnh điểm': '5. 🔥 Đỉnh điểm', '6. Kết luận': '6. 🏁 Kết luận',
   };
 
   for (let line of lines) {
     const trimmed = line.trim();
     if (!trimmed) { html += '<br>'; continue; }
-    
     if (trimmed.startsWith('🔹 Khởi đầu') || trimmed.startsWith('🔹 Diễn biến') || trimmed.startsWith('🔹 Cao trào') || trimmed.startsWith('🔹 Nút thắt') || trimmed.startsWith('🔹 Hậu quả') || trimmed.startsWith('🔹 Kết thúc') || trimmed.startsWith('🔹 Chương')) {
         html += `<div class="section-head">${trimmed}</div>`;
         continue;
     }
-
-    if (trimmed.startsWith('===') || trimmed.startsWith('---')) {
-      html += `<hr class="sep">`;
-      continue;
-    }
+    if (trimmed.startsWith('===') || trimmed.startsWith('---')) { html += `<hr class="sep">`; continue; }
     if (trimmed.startsWith('TÓM TẮT TRUYỆN') || trimmed.startsWith('File gốc') || trimmed.startsWith('Thể loại') || trimmed.startsWith('Nhân vật')) {
       html += `<div style="color:var(--muted);font-size:12px;margin-bottom:4px">${trimmed}</div>`;
       continue;
@@ -272,23 +770,6 @@ function renderSummary(raw) {
       }
     }
     if (!isSection) html += `<div class="section-body">${trimmed}</div>`;
-  }
-  body.innerHTML = html;
-}
-
-function renderRaw(raw) {
-  const body = document.getElementById('storyContent');
-  const lines = raw.split('\n');
-  let html = '';
-  for (let line of lines) {
-    const t = line.trim();
-    if (!t) { html += '<br>'; continue; }
-    if (t.match(/^={5,}/)) { html += '<hr class="sep">'; continue; }
-    if (t.match(/^Chương \d+/i) || t.match(/^={3,} Chương/i) || t.match(/^={3,} PHẦN/i)) {
-      html += `<div class="section-head">📖 ${t}</div>`;
-    } else {
-      html += `<div class="section-body">${t}</div>`;
-    }
   }
   body.innerHTML = html;
 }

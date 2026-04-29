@@ -108,11 +108,50 @@ main{flex:1;padding:20px;overflow:hidden}
 ::-webkit-scrollbar-thumb:hover{background:var(--accent)}
 
 @media(max-width:768px){
-  .sidebar{display:none}
-  .grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:480px){
-  .grid{grid-template-columns:1fr}
+  header { padding: 12px 16px; }
+  .header-inner { gap: 10px; }
+  .logo { font-size: 18px; }
+  .stats { display: none; }
+  
+  .layout { flex-direction: column; }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 105px; /* Điều chỉnh theo chiều cao thực tế của Header trên mobile */
+    padding: 10px 16px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    overflow-x: auto;
+    background: var(--bg);
+    z-index: 110; /* Cao hơn header nếu cần, hoặc 90 nếu muốn nằm dưới */
+    gap: 12px;
+    -webkit-overflow-scrolling: touch; /* Cuộn mượt trên iOS */
+  }
+  .sidebar::-webkit-scrollbar { height: 4px; } 
+  .sidebar::-webkit-scrollbar-track { background: transparent; }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+  .sidebar h3 { display: none; }
+  #catList { display: flex; gap: 8px; width: auto; padding-right: 20px; }
+  .cat-btn { 
+    flex-shrink: 0;
+    width: auto; 
+    white-space: nowrap; 
+    padding: 8px 14px; 
+    margin-bottom: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+  }
+  
+  main { padding: 10px 16px; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .view-header { margin-bottom: 12px; }
+  
+  /* Đảm bảo Header không quá cao khi wrap */
+  .search-wrap { order: 3; width: 100%; flex: none; }
+  #searchInput { padding: 8px 12px 8px 36px; }
+  .theme-toggle { order: 2; margin-left: auto; }
 }
 </style>
 </head>
@@ -303,9 +342,19 @@ function renderGrid() {
     const encUid = encodeURIComponent(s.uid);
     const safeTitle = s.title.replace(/'/g,'&apos;').replace(/"/g,'&quot;');
     const safeCat = s.category.replace(/'/g,'&apos;');
+    
+    // Lấy tiến trình đọc dở
+    const savedProgress = localStorage.getItem(`progress_${s.uid}`);
+    let progressHtml = '';
+    if (savedProgress) {
+      const prog = JSON.parse(savedProgress);
+      progressHtml = `<div style="font-size:11px; color:var(--accent); margin-top:4px; font-weight:600;">🔖 Đang đọc: Chương ${prog.index + 1}</div>`;
+    }
+
     return `<div class="card">
       <div class="card-cat">${icon} ${s.category}</div>
       <div class="card-title">${s.title}</div>
+      ${progressHtml}
       <div class="card-meta">
         ${s.has_sum ? `<span class="badge badge-sum">📝 Tóm tắt</span>` : ''}
         ${s.has_raw ? `<span class="badge badge-raw">📖 Truyện gốc</span>` : ''}

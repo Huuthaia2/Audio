@@ -9,8 +9,13 @@ Sau đó mở: http://localhost:8765
 import os
 import json
 import re
+import requests
+import socketserver
+import uuid
+import io
+from gtts import gTTS
 from http.server import HTTPServer, SimpleHTTPRequestHandler
-from urllib.parse import urlparse, parse_qs, unquote
+from urllib.parse import urlparse, parse_qs, unquote, quote
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TOMTAT_DIR = os.path.join(BASE_DIR, "Tóm tắt")
@@ -77,9 +82,20 @@ def read_raw_file(story_id):
     total_size = os.path.getsize(fpath)
     return content, total_size
 
+# --- HỖ TRỢ ĐA LUỒNG (THREADING) ---
+class ThreadedHTTPServer(socketserver.ThreadingMixIn, HTTPServer):
+    daemon_threads = True
+
 class StoryHandler(SimpleHTTPRequestHandler):
     def log_message(self, format, *args):
         pass  # tắt log
+
+    def do_OPTIONS(self):
+        self.send_response(200)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type')
+        self.end_headers()
 
     def send_json(self, data, status=200):
         body = json.dumps(data, ensure_ascii=False).encode('utf-8')
@@ -95,53 +111,89 @@ class StoryHandler(SimpleHTTPRequestHandler):
         self.send_response(status)
         self.send_header('Content-Type', 'text/html; charset=utf-8')
         self.send_header('Content-Length', len(body))
+        self.send_header('Access-Control-Allow-Origin', '*')
         self.end_headers()
         self.wfile.write(body)
 
     def do_GET(self):
-        parsed = urlparse(self.path)
-        path = parsed.path
-        qs = parse_qs(parsed.query)
+        try:
+            parsed = urlparse(self.path)
+            path = parsed.path
+            qs = parse_qs(parsed.query)
 
-        if path == '/' or path == '/index.html':
-            with open(os.path.join(BASE_DIR, 'story_reader.html'), 'r', encoding='utf-8') as f:
-                self.send_html(f.read())
+            # Phục vụ file tĩnh mặc định
+            if path == '/' or path == '/index.html':
+                fpath = os.path.join(BASE_DIR, 'index.html')
+                if os.path.exists(fpath):
+                    with open(fpath, 'r', encoding='utf-8') as f:
+                        self.send_html(f.read())
+                    return
+            
+            if path == '/reader.html':
+                fpath = os.path.join(BASE_DIR, 'reader.html')
+                if os.path.exists(fpath):
+                    with open(fpath, 'r', encoding='utf-8') as f:
+                        self.send_html(f.read())
+                    return
 
-        elif path == '/api/stories':
-            stories = get_all_stories()
-            self.send_json(stories)
+            # TTS PROXY: DÙNG GOOGLE TTS (SỬ DỤNG BYTESIO)
+            elif path == '/tts':
+                text = qs.get('q', [''])[0]
+                if not text:
+                    self.send_response(400); self.end_headers(); return
+                
+                print(f"[*] Đang lấy giọng Chị Google: {text[:30]}...")
+                
+                try:
+                    mp3_fp = io.BytesIO()
+                    tts = gTTS(text=text, lang='vi')
+                    tts.write_to_fp(mp3_fp)
+                    audio_data = mp3_fp.getvalue()
+                    
+                    self.send_response(200)
+                    self.send_header('Content-Type', 'audio/mpeg')
+                    self.send_header('Content-Length', len(audio_data))
+                    self.send_header('Access-Control-Allow-Origin', '*')
+                    self.end_headers()
+                    try:
+                        self.wfile.write(audio_data)
+                        print("    -> Thành công!")
+                    except:
+                        print("    -> Client ngắt kết nối")
+                except Exception as e:
+                    print(f"    -> Lỗi gTTS: {e}")
+                    try: self.send_response(500); self.end_headers()
+                    except: pass
+                return
 
-        elif path == '/api/story':
-            sid = qs.get('id', [''])[0]
-            sid = unquote(sid)
-            content = read_story_file(sid)
-            if content is None:
-                self.send_json({'error': 'Not found'}, 404)
-            else:
-                self.send_json({'id': sid, 'content': content})
+            # Các API khác
+            if path == '/api/stories':
+                self.send_json(get_all_stories()); return
+            
+            if path == '/api/story':
+                sid = unquote(qs.get('id', [''])[0])
+                content = read_story_file(sid)
+                if content: self.send_json({'id': sid, 'content': content})
+                else: self.send_json({'error': 'Not found'}, 404)
+                return
 
-        elif path == '/api/categories':
-            cats = [{"id": k, "name": v} for k, v in CATEGORIES.items()]
-            self.send_json(cats)
+            # Nếu không khớp cái nào thì dùng trình phục vụ file mặc định
+            return super().do_GET()
 
-        elif path == '/api/rawstory':
-            sid = qs.get('id', [''])[0]
-            sid = unquote(sid)
-            result = read_raw_file(sid)
-            if result is None:
-                self.send_json({'error': 'Không tìm thấy file gốc'}, 404)
-            else:
-                content, total_size = result
-                self.send_json({'id': sid, 'content': content, 'total_size': total_size})
+        except Exception as e:
+            print(f"!!! LỖI SERVER: {e}")
+            self.send_response(500); self.end_headers()
 
         else:
             self.send_json({'error': 'Not found'}, 404)
 
 if __name__ == '__main__':
-    port = 8765
-    server = HTTPServer(('localhost', port), StoryHandler)
-    print(f"🌟 Story Reader đang chạy tại: http://localhost:{port}")
-    print("   Nhấn Ctrl+C để dừng server")
+    port = 9999
+    server = ThreadedHTTPServer(('0.0.0.0', port), StoryHandler)
+    print("========================================")
+    print(f"🌟 TTS PROXY - ĐA LUỒNG SIÊU ỔN ĐỊNH")
+    print(f"🌟 Đang chạy tại: http://localhost:{port}")
+    print("========================================")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
