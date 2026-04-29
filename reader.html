@@ -325,17 +325,6 @@ function prepareTtsSpans(container) {
   if (seekBar) seekBar.max = ttsQueue.length - 1;
 }
 
-function stopTTS() {
-  isTtsPlaying = false;
-  ttsAudio.pause();
-  if (ttsTimeout) {
-    clearTimeout(ttsTimeout);
-    ttsTimeout = null;
-  }
-  ttsCache.clear();
-  document.getElementById('ttsPlayBtn').textContent = '▶';
-  document.getElementById('ttsStatus').textContent = "Đã dừng.";
-}
 
 function initTTS(startIndex = 0) {
   if (isTtsPlaying) { stopTTS(); return; }
@@ -370,8 +359,10 @@ function ttsSeek(val) {
   ttsRequestId++; 
   if (ttsTimeout) clearTimeout(ttsTimeout);
   
-  ttsAudio.pause();
-  ttsAudio.src = ""; 
+  ttsPlayer1.pause();
+  ttsPlayer2.pause();
+  ttsPlayer1.src = ""; 
+  ttsPlayer2.src = "";
   
   // HIỂN THỊ GIAO DIỆN NẾU ĐANG ẨN
   document.getElementById('audioPlayerWrap').style.display = 'flex';
@@ -407,6 +398,16 @@ function ttsSkip(offset) {
   ttsSeek(newIdx);
 }
 
+let ttsPlayer1 = new Audio();
+let ttsPlayer2 = new Audio();
+let currentPlayer = ttsPlayer1;
+let nextPlayer = ttsPlayer2;
+
+// KHỞI TẠO BẢO MẬT VÀ THIẾT LẬP BAN ĐẦU
+[ttsPlayer1, ttsPlayer2].forEach(p => {
+  p.playbackRate = 1.1;
+});
+
 async function playNextTts(shouldScroll = false) {
   if (!isTtsPlaying) return;
   if (ttsTimeout) clearTimeout(ttsTimeout);
@@ -415,6 +416,7 @@ async function playNextTts(shouldScroll = false) {
   document.getElementById('ttsSeekBar').value = ttsIndex;
   const text = ttsQueue[ttsIndex];
   
+  // Highlight và Cuộn
   document.querySelectorAll('.tts-highlight').forEach(el => el.classList.remove('tts-highlight'));
   const currentSeg = document.getElementById(`tts-seg-${ttsIndex}`);
   if (currentSeg) {
@@ -426,20 +428,16 @@ async function playNextTts(shouldScroll = false) {
   document.getElementById('ttsProgress').textContent = `Đoạn ${ttsIndex + 1} / ${ttsQueue.length}`;
 
   const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  
-  // DÙNG API GOOGLEAPIS (CLIENT=GTX) ĐỂ KHÔNG BỊ CHẶN TRÊN GITHUB
   let ttsUrl = `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(text)}`;
-  
-  if (isLocal) {
-    ttsUrl = `http://127.0.0.1:9999/tts?q=${encodeURIComponent(text)}`;
+  if (isLocal) ttsUrl = `http://127.0.0.1:9999/tts?q=${encodeURIComponent(text)}`;
+
+  // NẠP CHO CURRENT NẾU CHƯA CÓ
+  if (currentPlayer.src !== ttsUrl) {
+    currentPlayer.src = ttsUrl;
   }
-  
+
   try {
-    // KHÔNG dùng crossOrigin vì Google API này không hỗ trợ CORS Preflight
-    ttsAudio.src = ttsUrl;
-    ttsAudio.playbackRate = 1.1;
-    
-    const playPromise = ttsAudio.play();
+    const playPromise = currentPlayer.play();
     if (playPromise !== undefined) {
       playPromise.catch(e => {
         console.warn("Auto-play blocked:", e);
@@ -447,17 +445,29 @@ async function playNextTts(shouldScroll = false) {
         isTtsPlaying = false;
       });
     }
-
-    prefetchNext(ttsIndex + 1);
+    
+    // CHUẨN BỊ TRƯỚC CHO LOA TIẾP THEO (DOUBLE BUFFER)
+    const nextIdx = ttsIndex + 1;
+    if (nextIdx < ttsQueue.length) {
+      const nextText = ttsQueue[nextIdx];
+      let nextUrl = `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(nextText)}`;
+      if (isLocal) nextUrl = `http://127.0.0.1:9999/tts?q=${encodeURIComponent(nextText)}`;
+      nextPlayer.src = nextUrl;
+      nextPlayer.load();
+    }
 
   } catch (err) {
     if (isTtsPlaying && currentId === ttsRequestId) ttsTimeout = setTimeout(() => playNextTts(shouldScroll), 3000);
   }
 
-  ttsAudio.onended = () => {
+  currentPlayer.onended = () => {
     if (isTtsPlaying && currentId === ttsRequestId) {
       ttsIndex++;
       if (ttsIndex < ttsQueue.length) {
+        // TRÁO ĐỔI HAI LOA
+        let temp = currentPlayer;
+        currentPlayer = nextPlayer;
+        nextPlayer = temp;
         playNextTts(false);
       } else {
         showToast("Hết chương, đang chuyển...", "info");
@@ -473,16 +483,6 @@ async function playNextTts(shouldScroll = false) {
       }
     }
   };
-}
-
-function prefetchNext(index) {
-  if (index >= ttsQueue.length) return;
-  const nextText = ttsQueue[index];
-  const url = `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(nextText)}`;
-  
-  const preAudio = new Audio();
-  preAudio.src = url;
-  preAudio.preload = "auto";
 }
 
 function toggleTTS() {
@@ -501,13 +501,23 @@ function toggleTTS() {
 
 function stopTTS() {
   isTtsPlaying = false;
-  ttsAudio.pause();
-  ttsAudio.src = "";
+  [ttsPlayer1, ttsPlayer2].forEach(p => {
+    p.pause();
+    p.src = "";
+  });
+  
+  if (ttsTimeout) {
+    clearTimeout(ttsTimeout);
+    ttsTimeout = null;
+  }
   
   const playerWrap = document.getElementById('audioPlayerWrap');
   const startBtn = document.getElementById('startTtsBtn');
   if (playerWrap) playerWrap.style.display = 'none';
   if (startBtn) startBtn.style.display = 'flex';
+  
+  document.getElementById('ttsPlayBtn').textContent = '▶';
+  document.getElementById('ttsStatus').textContent = "Đã dừng.";
   ttsIndex = 0;
 }
 
