@@ -31,11 +31,18 @@ FOLDER_MAPPING = {
 }
 
 def clean_title(filename):
-    # Remove extension and trailing numbers like -0001
+    # Remove extension
     name = os.path.splitext(filename)[0]
+    # Remove chapter suffixes like -0001, +chuong 0001, -part 1, +123
+    # Matches + or - followed by optional 'chuong'/'part'/'chapter' and then digits
+    name = re.sub(r'[\-\+](chuong|part|chapter|chương)?\s*\d+.*$', '', name, flags=re.IGNORECASE)
+    # Remove any trailing numbers
     name = re.sub(r'-\d+$', '', name)
     name = re.sub(r'\+\d+$', '', name)
-    name = name.replace('-', ' ').replace('_', ' ')
+    
+    name = name.replace('-', ' ').replace('_', ' ').replace('+', ' ')
+    # Remove multiple spaces
+    name = re.sub(r'\s+', ' ', name).strip()
     return name.title()
 
 def extract_title_from_file(filepath, fallback_title):

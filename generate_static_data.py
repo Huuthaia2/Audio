@@ -6,14 +6,17 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TOMTAT_DIR = os.path.join(BASE_DIR, "Tóm tắt")
 RAW_DIR = os.path.join(BASE_DIR, "truyencogiaothao")
 
-CATEGORIES = {
-    "1-Mẹ Con": "Mẹ Con",
-    "2-Cha Chồng - Con Dâu": "Cha Chồng - Con Dâu",
-    "3-Cave": "Cave / Gái Gọi",
-    "5-Chị dâu": "Chị Dâu",
-    "6-Anh Em - Chị Em": "Anh Em - Chị Em",
-    "8-Loạn Luân": "Loạn Luân",
-}
+def get_categories():
+    categories = {}
+    if not os.path.isdir(TOMTAT_DIR): return categories
+    for d in os.listdir(TOMTAT_DIR):
+        if os.path.isdir(os.path.join(TOMTAT_DIR, d)):
+            # Chuyển "1-Mẹ Con" thành "Mẹ Con"
+            display_name = re.sub(r'^\d+-', '', d)
+            categories[d] = display_name
+    return categories
+
+CATEGORIES = get_categories()
 
 def get_title_from_file(fpath, fallback_slug):
     """Đọc tiêu đề có dấu từ nội dung file"""
@@ -61,6 +64,8 @@ def generate_stories_json():
                 "title": get_title_from_file(fpath, fname),
                 "size": size,
                 "has_raw": has_raw,
+                "has_sum": True,
+                "uid": f"{folder}/{fname}" # Dùng path làm uid nếu không có base
             })
     
     output_path = os.path.join(BASE_DIR, "stories.json")
