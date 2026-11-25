@@ -3,440 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>📚 Kho Truyện Tóm Tắt</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --bg:#0d0d14;--surface:#16161f;--card:#1e1e2e;--border:#2a2a3e;
-  --accent:#a78bfa;--accent2:#7c3aed;--text:#e2e8f0;--muted:#64748b;
-  --green:#10b981;--red:#f43f5e;
-}
-body.light-mode {
-  --bg:#f8fafc;--surface:#ffffff;--card:#ffffff;--border:#e2e8f0;
-  --accent:#7c3aed;--accent2:#6d28d9;--text:#0f172a;--muted:#64748b;
-}
-body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh}
-
-/* HEADER */
-header{background:linear-gradient(135deg,#1e1b4b,#312e81,#1e1b4b);padding:20px 24px;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;backdrop-filter:blur(10px)}
-.header-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.logo{font-size:22px;font-weight:700;background:linear-gradient(135deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap}
-.search-wrap{flex:1;min-width:200px;position:relative}
-#searchInput{width:100%;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:10px 16px 10px 42px;color:#ffffff;font-size:14px;outline:none;transition:.2s}
-#searchInput::placeholder{color:rgba(255,255,255,.5)}
-#searchInput:focus{border-color:var(--accent);background:rgba(255,255,255,.22);box-shadow:0 0 0 3px rgba(167,139,250,.25)}
-.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:16px;z-index:1;cursor:pointer;transition:.2s}
-.search-icon:hover{transform:translateY(-50%) scale(1.2);color:var(--accent2)}
-.stats{color:var(--muted);font-size:13px;white-space:nowrap}
-.theme-toggle{background:rgba(255,255,255,.07);border:1px solid var(--border);color:var(--text);width:36px;height:36px;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:18px;transition:.15s}
-.theme-toggle:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
-body.light-mode .theme-toggle{background:rgba(0,0,0,.05)}
-
-/* LAYOUT */
-.layout{display:flex;max-width:1400px;margin:0 auto;min-height:calc(100vh - 70px)}
-
-/* SIDEBAR */
-.sidebar{width:260px;flex-shrink:0;padding:20px 12px;border-right:1px solid var(--border);position:sticky;top:70px;height:calc(100vh - 70px);overflow-y:auto;transition:transform 0.3s ease;z-index:150}
-.sidebar h3{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:16px;padding:0 12px;font-weight:700}
-.cat-btn{display:flex;align-items:center;gap:12px;width:100%;padding:12px 16px;background:none;border:none;color:var(--muted);cursor:pointer;border-radius:12px;font-size:14px;text-align:left;transition:.2s;margin-bottom:4px;font-weight:500}
-.cat-btn:hover{background:rgba(167,139,250,.08);color:var(--accent)}
-.cat-btn.active{background:#eeeefc;color:var(--accent2);font-weight:600}
-.cat-btn span:first-child{font-size:18px;display:flex;align-items:center;justify-content:center;width:24px}
-.cat-count{margin-left:auto;background:rgba(167,139,250,.1);color:var(--accent2);padding:2px 10px;border-radius:20px;font-size:11px;font-weight:600}
-.cat-btn.active .cat-count{background:rgba(124,58,237,.15)}
-
-/* MOBILE OVERLAY */
-.sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:140;backdrop-filter:blur(2px)}
-
-/* MAIN */
-main{flex:1;padding:20px;overflow:hidden}
-.view-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px}
-.view-title{font-size:16px;font-weight:600;color:var(--accent)}
-.sort-bar{display:flex;gap:8px}
-.sort-btn{padding:6px 14px;background:var(--card);border:1px solid var(--border);border-radius:8px;color:var(--muted);cursor:pointer;font-size:12px;transition:.15s}
-.sort-btn:hover,.sort-btn.active{border-color:var(--accent);color:var(--accent)}
-
-/* GRID */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;cursor:pointer;transition:.2s;position:relative;overflow:hidden}
-.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),#60a5fa);opacity:0;transition:.2s}
-.card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 25px rgba(167,139,250,.15)}
-.card:hover::before{opacity:1}
-.card-cat{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--accent);margin-bottom:8px;opacity:.8}
-.card-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.card-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.badge{padding:3px 9px;border-radius:20px;font-size:11px;font-weight:500}
-.badge-sum{background:rgba(16,185,129,.15);color:var(--green)}
-.badge-chapters{background:rgba(99,102,241,.15);color:#818cf8}
-.badge-raw{background:rgba(59,130,246,.15);color:#60a5fa}
-.card-icon{margin-left:auto;font-size:18px;opacity:.4}
-.card-actions{display:flex;gap:6px;margin-top:10px}
-.btn-read{flex:1;padding:7px 10px;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:600;transition:.15s}
-.btn-sum{background:rgba(16,185,129,.15);color:var(--green);border:1px solid rgba(16,185,129,.25)}
-.btn-sum:hover{background:rgba(16,185,129,.3)}
-.btn-raw{background:rgba(59,130,246,.12);color:#60a5fa;border:1px solid rgba(59,130,246,.2)}
-.btn-raw:hover{background:rgba(59,130,246,.25)}
-.no-results{text-align:center;padding:60px 20px;color:var(--muted)}
-.no-results .emoji{font-size:48px;margin-bottom:12px}
-
-/* READER MODAL */
-.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:200;backdrop-filter:blur(4px);animation:fadeIn .2s}
-.overlay.open{display:flex;align-items:flex-start;justify-content:center;padding:20px}
-.reader{background:var(--surface);border:1px solid var(--border);border-radius:20px;width:100%;max-width:800px;max-height:90vh;display:flex;flex-direction:column;animation:slideUp .25s ease}
-.reader-header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:12px}
-.reader-header h2{flex:1;font-size:18px;font-weight:700;line-height:1.3;background:linear-gradient(135deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.close-btn{background:rgba(255,255,255,.07);border:1px solid var(--border);color:var(--text);width:36px;height:36px;border-radius:10px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.15s}
-.close-btn:hover{background:var(--red);border-color:var(--red)}
-.reader-meta{padding:12px 24px;border-bottom:1px solid var(--border);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.tab-btns{margin-left:auto;display:flex;gap:6px}
-.tab-btn{padding:5px 14px;border-radius:8px;border:1px solid var(--border);background:none;color:var(--muted);cursor:pointer;font-size:12px;font-weight:600;transition:.15s}
-.tab-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
-.raw-notice{padding:10px 24px;background:rgba(245,158,11,.08);border-bottom:1px solid rgba(245,158,11,.15);font-size:12px;color:#fbbf24;display:none}
-.reader-body{padding:24px;overflow-y:auto;flex:1;line-height:1.9;font-size:14.5px;color:#cbd5e1}
-.reader-body pre{white-space:pre-wrap;font-family:'Inter',sans-serif}
-.section-head{color:var(--accent);font-weight:700;font-size:15px;margin:20px 0 8px;border-left:3px solid var(--accent);padding-left:10px}
-.section-body{color:#cbd5e1;margin-bottom:16px}
-.sep{border:none;border-top:1px solid var(--border);margin:20px 0}
-
-/* LOADING */
-.loading{display:none;text-align:center;padding:40px;color:var(--muted)}
-.spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 12px}
-
-/* ANIMATIONS */
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-/* SCROLLBAR */
-::-webkit-scrollbar{width:6px}
-::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
-::-webkit-scrollbar-thumb:hover{background:var(--accent)}
-
-@media(max-width:768px){
-  header { padding: 12px 16px; }
-  .header-inner { gap: 8px; justify-content: space-between; }
-  .logo { font-size: 18px; flex: 1; }
-  .stats { display: none; }
-  
-  .layout { flex-direction: column; }
-  
-  .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 280px;
-    height: 100vh;
-    background: var(--surface);
-    transform: translateX(-100%);
-    box-shadow: 20px 0 50px rgba(0,0,0,0.3);
-    z-index: 1000;
-  }
-  .sidebar.open { transform: translateX(0); }
-  .sidebar h3 { display: block; margin-top: 20px; font-size: 14px; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 12px; margin-bottom: 12px; }
-  
-  #catList { display: block; width: 100%; }
-  .cat-btn { padding: 14px 16px; font-size: 15px; margin-bottom: 6px; }
-  
-  .sidebar-overlay.open { display: block; z-index: 999; }
-  
-  .menu-toggle {
-    display: flex !important;
-    background: var(--accent);
-    color: white;
-    padding: 8px 12px;
-    border-radius: 10px;
-    font-size: 13px;
-    font-weight: 600;
-    border: none;
-    align-items: center;
-    gap: 6px;
-    order: 2;
-  }
-
-  main { padding: 10px 12px; }
-  .grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .card { padding: 12px; }
-  .card-title { font-size: 13px; -webkit-line-clamp: 2; height: 36px; }
-  
-  .search-wrap { order: 4; width: 100%; margin-top: 8px; }
-  .theme-toggle { order: 3; }
-}
-.menu-toggle { display: none; }
-</style>
+<meta name="referrer" content="no-referrer">
+<title>Kho Truyện</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23fe628e' d='M2 4h7a3 3 0 0 1 3 3v14a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v14a2 2 0 0 1 2-2h8z'/></svg>">
+<script>try { if (localStorage.getItem('theme') === 'light') document.documentElement.classList.add('light'); } catch (e) {}</script>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ui.css">
 </head>
 <body>
 
+<!-- 1 trang duy nhất (kiểu Local Cinema): #/ = danh sách, #/read?uid=... = đọc truyện.
+     Thanh phát #abar nằm ngoài 2 màn ⇒ quay lại danh sách / mở truyện khác vẫn đọc tiếp. -->
 <header>
-  <div class="header-inner">
-    <div class="logo">📚 Kho Truyện</div>
-    <button class="menu-toggle" onclick="toggleSidebar()">
-      <span>📁</span> Thể loại
-    </button>
-    <div class="search-wrap">
-      <span class="search-icon">🔍</span>
-      <input id="searchInput" type="text" placeholder="Tìm kiếm tên truyện...">
-    </div>
-    <div class="stats" id="statsText">Đang tải...</div>
-    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Đổi giao diện">🌓</button>
+  <div class="bar">
+    <button class="icon-btn round" id="backBtn" title="Về danh sách" hidden><i data-i="left"></i></button>
+    <a class="logo" href="#/">Kho<span>Truyện</span></a>
+    <label class="search" id="searchBox">
+      <input id="searchInput" type="text" placeholder="Tìm kiếm tên truyện..." autocomplete="off">
+      <i data-i="search"></i>
+    </label>
+    <span class="bar-stat" id="statsText"></span>
+    <a class="icon-btn round" id="favBtn" href="#/favorites" title="Yêu thích"><i data-i="heart"></i></a>
+    <a class="icon-btn round" id="histBtn" href="#/history" title="Lịch sử nghe"><i data-i="history"></i></a>
+    <button class="icon-btn round sync-off" id="syncBtn" title="Đồng bộ lịch sử"><i data-i="cloud"></i></button>
+    <button class="icon-btn round" id="themeToggle" title="Đổi giao diện sáng / tối"></button>
   </div>
 </header>
 
-<div class="layout">
-  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
-  <aside class="sidebar" id="sidebar">
-    <h3>Thể loại</h3>
-    <div id="catList"></div>
-  </aside>
-  <main>
-    <div class="view-header">
-      <div class="view-title" id="viewTitle">Tất cả truyện</div>
-      <div class="sort-bar">
-        <button class="sort-btn active" onclick="setSort('name')">A-Z</button>
-        <button class="sort-btn" onclick="setSort('size')">Dài nhất</button>
-      </div>
+<div id="toastContainer"></div>
+
+<!-- Hộp cài đặt đồng bộ lịch sử qua GitHub Gist (history.js) -->
+<div class="modal" id="syncModal" hidden>
+  <div class="modal-box">
+    <div class="modal-head"><i data-i="cloud"></i> Đồng bộ lịch sử giữa các thiết bị<button class="ab-btn" id="syncClose" title="Đóng"><i data-i="x"></i></button></div>
+    <p>Lịch sử đang đọc / đã đọc được lưu vào 1 Gist <b>bí mật</b> trên tài khoản GitHub của bạn. Mỗi thiết bị dán cùng 1 token là dùng chung lịch sử.</p>
+    <ol>
+      <li><a href="https://github.com/settings/tokens/new?scopes=gist&amp;description=Kho%20Truyen%20-%20dong%20bo%20lich%20su" target="_blank" rel="noopener">Bấm vào đây để tạo token</a> (đã chọn sẵn quyền <b>gist</b>) → chọn thời hạn <b>No expiration</b> → <b>Generate token</b>.</li>
+      <li>Chép token (bắt đầu bằng <code>ghp_</code>) dán vào ô dưới → <b>Lưu</b>. Lưu lại token để dán ở thiết bị kia.</li>
+    </ol>
+    <input id="syncToken" type="password" placeholder="ghp_..." autocomplete="off" spellcheck="false">
+    <div class="modal-info" id="syncInfo"></div>
+    <div class="modal-foot">
+      <button class="icon-btn" id="syncOff" hidden>Tắt đồng bộ trên máy này</button>
+      <button class="icon-btn primary" id="syncSave"><i data-i="check"></i> Lưu</button>
     </div>
-    <div class="loading" id="loading"><div class="spinner"></div>Đang tải danh sách...</div>
-    <div class="grid" id="storyGrid"></div>
-  </main>
+  </div>
 </div>
 
+<main class="page">
+  <!-- Màn danh sách -->
+  <div id="libView">
+    <div class="crumbs"><i data-i="bookOpen" class="sm"></i> Kho truyện</div>
 
+    <section id="resumeSec" hidden>
+      <div class="sec-head">
+        <h2 class="section-h"><i data-i="play" class="fill sm"></i> Đang nghe dở</h2>
+        <a class="sec-link" href="#/history?tab=partial">Xem tất cả <i data-i="arrowRight" class="sm"></i></a>
+      </div>
+      <div class="alist resume" id="resumeList"></div>
+    </section>
 
+    <div class="sec-head"><h2 class="section-h" id="srcHead">Nguồn</h2></div>
+    <div class="folders" id="srcList"></div>
+
+    <div class="sec-head"><h2 class="section-h" id="tagHead">Tag</h2></div>
+    <div class="tags" id="tagList"></div>
+
+    <div class="toolbar">
+      <h1 id="viewTitle">Tất cả truyện</h1>
+      <span class="count" id="viewCount"></span>
+      <label class="toggle"><input type="checkbox" id="hideDone"> Ẩn truyện đã nghe</label>
+    </div>
+    <div class="chips" id="sortChips">
+      <button class="chip" data-sort="name">Tên A-Z</button>
+      <button class="chip" data-sort="size">Dài nhất</button>
+    </div>
+    <div class="empty" id="loading"><div class="spinner"></div>Đang tải danh sách...</div>
+    <div class="alist" id="storyList"></div>
+    <div class="pager" id="pager"></div>
+  </div>
+
+  <!-- Màn đọc truyện (reader.js dựng) -->
+  <div id="readView" hidden></div>
+
+  <!-- Màn lịch sử nghe (#/history, library.js dựng) -->
+  <div id="histView" hidden></div>
+</main>
+
+<!-- Nút nổi thu gọn phần nội dung truyện (hiện khi đang cuộn trong nội dung) -->
+<button class="fold-btn" id="foldBtn" title="Thu gọn nội dung" hidden><i data-i="chevronUp"></i></button>
+
+<!-- Thanh phát cố định ở đáy: hiện từ lúc bấm Nghe, bấm ✕ để tắt -->
+<div id="abar" hidden>
+  <div class="ab-seek"><div class="ab-fill"></div><input type="range" min="0" max="0" value="0" aria-label="Tua theo đoạn"></div>
+  <div class="ab-row">
+    <div class="ab-info" title="Mở truyện đang nghe">
+      <div class="ab-cover"><i data-i="headphones"></i></div>
+      <div class="ab-text"><div class="ab-title"></div><div class="ab-sub"></div></div>
+    </div>
+    <div class="ab-ctrls">
+      <button class="ab-btn ab-prev" title="Chương trước"><i data-i="skipBack" class="fill"></i></button>
+      <button class="ab-btn ab-back" title="Lùi 1 đoạn"><i data-i="restart"></i></button>
+      <button class="ab-btn ab-play" title="Phát / tạm dừng"></button>
+      <button class="ab-btn ab-fwd" title="Tới 1 đoạn"><i data-i="rotateCw"></i></button>
+      <button class="ab-btn ab-next" title="Chương sau"><i data-i="skipFwd" class="fill"></i></button>
+    </div>
+    <div class="ab-right">
+      <span class="ab-time"></span>
+      <!-- Chọn chương (như nút "1/6" chọn phần của Local Cinema) + chọn tốc độ: bấm ⇒ bảng chọn bật lên -->
+      <div class="ab-pop"><button class="ab-btn ab-parts" title="Chọn chương"></button><div class="ab-menu" id="chapMenu" hidden></div></div>
+      <div class="ab-pop"><button class="ab-btn ab-rate" title="Tốc độ đọc"></button><div class="ab-menu" id="rateMenu" hidden></div></div>
+      <button class="ab-btn ab-close" title="Tắt đọc"><i data-i="x"></i></button>
+    </div>
+  </div>
+</div>
+
+<script src="icons.js"></script>
 <script>
-let allStories = [];
-let filtered = [];
-let activecat = 'all';
-let sortMode = 'name';
+// ---- Dùng chung cho library.js + reader.js ----
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const lsGet = (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+const fmtSize = (b) => b >= 1048576 ? (b / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(b / 1024)) + ' KB';
+const chapterCount = (f) => { const m = f.match(/-(\d+)\.txt$/) || f.match(/\+(\d+)\.txt$/); return m ? parseInt(m[1]) : 0; };
+// Màu ô bìa như Local Cinema: truyện nhiều chương = hồng, truyện 1 chương / không rõ = xanh dương
+const coverHue = (s) => (chapterCount(s.file) > 1 ? 335 : 215);
+// Nguồn = thư mục cấp 1 trong Truyện/ (phần đầu uid)
+const sourceOf = (s) => s.uid.split('/')[0];
+const STORIES = fetch('stories.json').then((r) => r.json());
+const readLink = (uid, mode) => `#/read?uid=${encodeURIComponent(uid)}${mode === 'sum' ? '&mode=sum' : ''}`;
 
-function removeAccents(str) {
-  if (!str) return '';
-  return str.normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .replace(/đ/g, 'd').replace(/Đ/g, 'D')
-            .toLowerCase();
+function showToast(msg, type = 'info') {
+  const t = document.createElement('div');
+  t.className = `toast ${type === 'error' ? 'toast-error' : ''}`;
+  t.innerHTML = `${icon(type === 'error' ? 'x' : type === 'success' ? 'check' : 'bell', 'sm')} ${msg}`;
+  $('toastContainer').appendChild(t);
+  setTimeout(() => { t.style.transition = '.5s'; t.style.opacity = '0'; setTimeout(() => t.remove(), 500); }, 3500);
 }
 
-function initTheme() {
-  if (localStorage.getItem('theme') === 'light') {
-    document.body.classList.add('light-mode');
-    document.getElementById('themeToggle').textContent = '☀️';
+function paintThemeBtn() { $('themeToggle').innerHTML = icon(document.documentElement.classList.contains('light') ? 'sun' : 'moon'); }
+$('themeToggle').onclick = () => { lsSet('theme', document.documentElement.classList.toggle('light') ? 'light' : 'dark'); paintThemeBtn(); };
+paintThemeBtn();
+</script>
+<script src="history.js"></script>
+<script src="library.js"></script>
+<script src="reader.js"></script>
+<script>
+// ---- Điều hướng theo #hash ----
+let inApp = 0; // số lần đã chuyển màn trong app ⇒ nút ‹ dùng history.back() cho đúng chỗ cuộn
+function showView(id) {
+  if (!$('libView').hidden && id !== 'libView') libLeave(); // rời danh sách ⇒ nhớ chỗ đang cuộn
+  if (id !== 'readView') readerLeave();
+  for (const v of ['libView', 'readView', 'histView']) $(v).hidden = v !== id;
+  const lib = id === 'libView';
+  $('backBtn').hidden = lib; $('searchBox').hidden = !lib; $('statsText').hidden = !lib;
+  $('histBtn').classList.toggle('active', id === 'histView' && location.hash.startsWith('#/history'));
+  $('favBtn').classList.toggle('active', id === 'histView' && location.hash.startsWith('#/favorites'));
+}
+function route() {
+  const h = location.hash;
+  if (h.startsWith('#/read?')) {
+    const q = new URLSearchParams(h.slice(7));
+    showView('readView');
+    openReader(q.get('uid'), q.get('mode') || 'raw');
+  } else if (h.startsWith('#/history')) {
+    showView('histView');
+    renderHistory(new URLSearchParams(h.split('?')[1] || ''));
+  } else if (h.startsWith('#/favorites')) {
+    showView('histView');
+    renderFavorites(new URLSearchParams(h.split('?')[1] || ''));
   } else {
-    document.getElementById('themeToggle').textContent = '🌙';
+    showView('libView');
+    document.title = 'Kho Truyện';
+    libShow();
   }
 }
-
-function toggleTheme() {
-  const isLight = document.body.classList.toggle('light-mode');
-  localStorage.setItem('theme', isLight ? 'light' : 'dark');
-  document.getElementById('themeToggle').textContent = isLight ? '☀️' : '🌙';
-}
-
-function toggleSidebar() {
-  const sidebar = document.getElementById('sidebar');
-  const overlay = document.getElementById('sidebarOverlay');
-  sidebar.classList.toggle('open');
-  overlay.classList.toggle('open');
-}
-
-function saveState() {
-  const state = {
-    cat: activecat,
-    sort: sortMode,
-    search: document.getElementById('searchInput').value,
-    scroll: window.scrollY
-  };
-  sessionStorage.setItem('libraryState', JSON.stringify(state));
-}
-
-function restoreState() {
-  const saved = sessionStorage.getItem('libraryState');
-  if (saved) {
-    const state = JSON.parse(saved);
-    activecat = state.cat || 'all';
-    sortMode = state.sort || 'name';
-    document.getElementById('searchInput').value = state.search || '';
-    return state;
-  }
-  return null;
-}
-
-initTheme();
-
-const CAT_ICONS = {
-  'Mẹ Con':'👩‍👦','Mẹ vợ':'👩‍🦱','Ghen tuông':'😠','Máy Bay':'✈️','Cô Giáo - Học Sinh':'👩‍🏫',
-  'Ngoại Tình':'💔','Y Tá - Bác Sĩ':'🏥','Bạo Dâm':'⛓️','Vợ Dâm':'👰','Chuyện cũ':'📜',
-  'Dâm thư Trung Quốc':'🇨🇳','truyện trung':'🏮','Truyện dâm hiệp':'⚔️','Kỹ Năng & Hành Động':'🎯',
-  'Địa Điểm & Đối Tượng':'📍','Phong Cách & Cảm Xúc':'💖','Cave':'💃','Cave / Gái Gọi':'💃','HE':'❤️',
-  'Chị dâu':'💋','Anh Em - Chị Em':'👫','Hàng xóm':'🏘️','Loạn Luân':'🔥','Mẹ bạn':'👩‍👩‍👦','Truyện dài':'📚'
-};
-
-async function init() {
-  document.getElementById('loading').style.display = 'block';
-  try {
-    const res = await fetch('stories.json');
-    allStories = await res.json();
-    
-    const saved = restoreState();
-    buildCategories();
-    if (saved) {
-      setCategory(saved.cat, false); // don't scroll top
-    }
-    applyFilter();
-    
-    // Restore scroll position after a short delay to ensure grid is rendered
-    if (saved && saved.scroll) {
-      setTimeout(() => window.scrollTo(0, saved.scroll), 100);
-    }
-    
-    document.getElementById('statsText').textContent = `${allStories.length} truyện`;
-  } catch(e) {
-    document.getElementById('loading').innerHTML = '❌ Không tải được danh sách truyện. Hãy đảm bảo file stories.json tồn tại!';
-    document.getElementById('loading').style.display = 'block';
-  }
-}
-
-function buildCategories() {
-  const counts = {};
-  allStories.forEach(s => counts[s.category] = (counts[s.category]||0)+1);
-  const catList = document.getElementById('catList');
-  
-  let html = `<button class="cat-btn active" onclick="setCategory('all')">
-    <span>🌐</span> Tất cả <span class="cat-count">${allStories.length}</span></button>`;
-  
-  // Sort categories by count or name
-  const sortedCats = Object.entries(counts).sort((a,b) => b[1] - a[1]);
-
-  sortedCats.forEach(([cat, count]) => {
-    const icon = CAT_ICONS[cat] || '📖';
-    html += `<button class="cat-btn" onclick="setCategory('${cat}')">
-      <span>${icon}</span> ${cat} <span class="cat-count">${count}</span></button>`;
-  });
-  catList.innerHTML = html;
-}
-
-function setCategory(cat, scrollTop = true) {
-  activecat = cat;
-  document.querySelectorAll('.cat-btn').forEach(b => {
-    const btnText = b.textContent.replace(/\d+$/, '').trim();
-    // Bỏ qua icon khi so sánh tên
-    const cleanBtnText = btnText.replace(/^[^\s]+\s/, '').trim();
-    b.classList.toggle('active', (cat === 'all' && btnText.includes('Tất cả')) || cleanBtnText === cat);
-  });
-  document.getElementById('viewTitle').textContent = cat === 'all' ? 'Tất cả truyện' : cat;
-  applyFilter();
-  if (scrollTop) window.scrollTo(0, 0);
-  
-  // Đóng sidebar trên mobile sau khi chọn
-  if (window.innerWidth <= 768) {
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebarOverlay');
-    if (sidebar.classList.contains('open')) toggleSidebar();
-  }
-  saveState();
-}
-
-function setSort(mode) {
-  sortMode = mode;
-  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-  applyFilter();
-  saveState();
-}
-
-function applyFilter() {
-  const qRaw = document.getElementById('searchInput').value.trim();
-  const q = removeAccents(qRaw);
-  
-  if (!q) {
-    filtered = allStories.filter(s => activecat === 'all' || s.category === activecat);
-  } else {
-    filtered = allStories.filter(s => {
-      const matchCat = activecat === 'all' || s.category === activecat;
-      if (!matchCat) return false;
-
-      const titleSafe = removeAccents(s.title);
-      const fileSafe = removeAccents(s.file);
-
-      // Tìm kiếm chính xác (không dấu) trong tiêu đề hoặc tên file
-      return titleSafe.includes(q) || fileSafe.includes(q);
-    });
-  }
-
-  if (sortMode === 'size') filtered.sort((a,b) => b.size - a.size);
-  else filtered.sort((a,b) => a.title.localeCompare(b.title, 'vi'));
-  
-  document.getElementById('statsText').textContent = `${filtered.length}/${allStories.length} truyện`;
-  renderGrid();
-  saveState();
-}
-
-function renderGrid() {
-  document.getElementById('loading').style.display = 'none';
-  const grid = document.getElementById('storyGrid');
-  if (!filtered.length) {
-    grid.innerHTML = `<div class="no-results"><div class="emoji">🔍</div><div>Không tìm thấy truyện nào</div></div>`;
-    return;
-  }
-  
-  // Extract chapter count from filename
-  const chapterCount = f => {
-    const m = f.match(/-(\d+)\.txt$/) || f.match(/\+(\d+)\.txt$/);
-    return m ? parseInt(m[1]) : 0;
-  };
-
-  grid.innerHTML = filtered.map(s => {
-    const chapters = chapterCount(s.file);
-    const icon = CAT_ICONS[s.category] || '📖';
-    const encUid = encodeURIComponent(s.uid);
-    const safeTitle = s.title.replace(/'/g,'&apos;').replace(/"/g,'&quot;');
-    const safeCat = s.category.replace(/'/g,'&apos;');
-    
-    // Lấy tiến trình đọc dở
-    const savedProgress = localStorage.getItem(`progress_${s.uid}`);
-    let progressHtml = '';
-    if (savedProgress) {
-      const prog = JSON.parse(savedProgress);
-      progressHtml = `<div style="font-size:11px; color:var(--accent); margin-top:4px; font-weight:600;">🔖 Đang đọc: Chương ${prog.index + 1}</div>`;
-    }
-
-    return `<div class="card">
-      <div class="card-cat">${icon} ${s.category}</div>
-      <div class="card-title">${s.title}</div>
-      ${progressHtml}
-      <div class="card-meta">
-        ${s.has_sum ? `<span class="badge badge-sum">📝 Tóm tắt</span>` : ''}
-        ${s.has_raw ? `<span class="badge badge-raw">📖 Truyện gốc</span>` : ''}
-        ${chapters > 0 ? `<span class="badge badge-chapters">${chapters} chương</span>` : ''}
-      </div>
-      <div class="card-actions">
-        ${s.has_sum ? `<button class="btn-read btn-sum" onclick="openStory('${encUid}','${safeTitle}','${safeCat}','sum')">📝 Đọc tóm tắt</button>` : ''}
-        ${s.has_raw ? `<button class="btn-read btn-raw" onclick="openStory('${encUid}','${safeTitle}','${safeCat}','raw')">📖 Đọc truyện</button>` : ''}
-      </div>
-    </div>`;
-  }).join('');
-}
-
-let currentStoryUid = '';
-
-function openStory(encodedUid, title, category, mode='sum') {
-  saveState(); // Ensure last scroll position is saved
-  const url = `reader.html?uid=${encodedUid}&mode=${mode}`;
-  window.location.href = url;
-}
-
-document.getElementById('searchInput').addEventListener('input', applyFilter);
-document.getElementById('searchInput').addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    applyFilter();
-  }
+window.addEventListener('hashchange', () => { inApp++; route(); });
+// Lịch sử vừa tải về từ thiết bị khác ⇒ vẽ lại danh sách (Đang đọc dở, nhãn Đã đọc)
+window.addEventListener('histchange', () => {
+  if (!$('libView').hidden) libRefresh();
+  if (!$('histView').hidden) route();
 });
-
-window.onscroll = saveState;
-
-init();
+$('backBtn').onclick = () => (inApp > 0 ? history.back() : (location.hash = '#/'));
+route();
 </script>
 </body>
 </html>
