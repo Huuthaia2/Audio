@@ -15,10 +15,14 @@ function splitIntoChapters(text) {
   let cur = { title: 'Chương 1', content: [] };
   let found = false;
   const chapterRegex = /^Chương\s+(\d+|[IVXLCDM]+|[À-ỹ]+)/i;
+  const markRegex = /^={3,}\s*Chương/i;
+  // File tool tải truyện có dòng mốc "==== Chương N ====" ⇒ CHỈ tách theo dòng mốc; dòng "Chương N: ..." trong
+  // nội dung giữ làm chữ (trước đây tách cả 2 ⇒ 246 truyện bị dư 1 chương rỗng chỉ có câu phụ đề)
+  const hasMarks = text.split('\n').some((l) => markRegex.test(l.trim()));
   for (const line of text.split('\n')) {
     const t = line.trim();
     if (!t) { cur.content.push(''); continue; }
-    if (chapterRegex.test(t) || /^={3,} Chương/i.test(t)) {
+    if (hasMarks ? markRegex.test(t) : chapterRegex.test(t)) {
       // Khối đầu file chỉ có "=====" + "TITLE: ..." (file tool leech) thì bỏ, không tính là 1 chương
       if (cur.content.filter((l) => l.trim() && !/^=+$/.test(l) && !/^TITLE:/i.test(l)).length > 0) out.push(cur);
       cur = { title: t.replace(/^={3,}\s*/, '').replace(/\s*={3,}$/, ''), content: [] };
@@ -39,7 +43,8 @@ function autoSplit(text) {
     if (remaining.length <= targetLength + 1000) { chunks.push({ title: `Chương ${count}`, content: remaining.split('\n') }); break; }
     let i = remaining.lastIndexOf('\n', targetLength);
     if (i < targetLength * 0.7) i = remaining.lastIndexOf('. ', targetLength);
-    if (i === -1) i = targetLength;
+    // Không tìm được chỗ cắt / chỗ cắt ở đầu (vd đoạn còn lại bắt đầu bằng ". ") ⇒ cắt cứng, tránh lặp vô hạn treo trang
+    if (i <= 0) i = targetLength;
     chunks.push({ title: `Chương ${count}`, content: remaining.substring(0, i).split('\n') });
     remaining = remaining.substring(i).trim();
     count++;
