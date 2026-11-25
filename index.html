@@ -158,15 +158,35 @@ const STORIES = fetch('stories.json').then((r) => r.json()).then((d) => {
   });
 });
 // Nội dung truyện: nguồn nén (alicesw) ⇒ tải <id>.gz rồi giải nén ngay trên trình duyệt (Safari ≥ 16.4, Chrome ≥ 80)
-async function fetchStoryText(s) {
+// Tải nội dung truyện THEO LUỒNG: onText(chữ đã nhận, xong?) được gọi mỗi khi mạng gửi thêm ⇒ truyện dài hiện chương
+// đầu ngay khi tới, không chờ tải hết file. Nguồn nén (alicesw) giải nén dần trên trình duyệt (Safari ≥ 16.4, Chrome ≥ 80);
+// chỉ giải nén khi đúng là gzip (2 byte đầu 1f 8b) — server nào tự giải nén hộ (Content-Encoding) thì đọc thẳng.
+async function streamStoryText(s, onText) {
   const res = await fetch(`${s.base}/${s.id}${s.gz ? '.gz' : ''}`);
   if (!res.ok) throw new Error(`Không tải được nội dung: HTTP ${res.status}`);
-  if (!s.gz) return res.text();
-  // Chỉ giải nén khi đúng là dữ liệu gzip (2 byte đầu 1f 8b): server nào tự giải nén hộ (Content-Encoding) thì đọc thẳng
-  const buf = new Uint8Array(await res.arrayBuffer());
-  if (buf[0] !== 0x1f || buf[1] !== 0x8b) return new TextDecoder().decode(buf);
-  return new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+  let body = res.body;
+  if (s.gz) {
+    const r = body.getReader();
+    const first = await r.read();
+    const head = first.value || new Uint8Array(0);
+    body = new ReadableStream({
+      start(c) { if (head.length) c.enqueue(head); if (first.done) c.close(); },
+      async pull(c) { const { done, value } = await r.read(); if (done) c.close(); else c.enqueue(value); },
+    });
+    if (head[0] === 0x1f && head[1] === 0x8b) body = body.pipeThrough(new DecompressionStream('gzip'));
+  }
+  const reader = body.pipeThrough(new TextDecoderStream()).getReader();
+  let text = '';
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    text += value;
+    onText(text, false);
+  }
+  onText(text, true);
+  return text;
 }
+const fetchStoryText = (s) => streamStoryText(s, () => {});
 const readLink = (uid, mode) => `#/read?uid=${encodeURIComponent(uid)}${mode === 'sum' ? '&mode=sum' : ''}`;
 
 function showToast(msg, type = 'info') {
@@ -222,6 +242,25 @@ window.addEventListener('histchange', () => {
 });
 $('backBtn').onclick = () => (inApp > 0 ? history.back() : (location.hash = '#/'));
 route();
+
+// ---- Lưu sẵn trên máy (sw.js): mở app tức thì, truyện đã đọc mở được cả khi mất mạng ----
+// Web trên máy (127.0.0.1, bat 3) KHÔNG dùng ⇒ sửa code xong F5 là thấy ngay; muốn thử thì localStorage sw = '1'
+if ('serviceWorker' in navigator) {
+  if (!isLocal || lsGet('sw') === '1') {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+    navigator.serviceWorker.addEventListener('message', (e) => {
+      if (e.data && e.data.type === 'update') {
+        const t = document.createElement('div');
+        t.className = 'toast toast-update';
+        t.innerHTML = `${icon('refresh', 'sm')} Có bản cập nhật — chạm để tải lại`;
+        t.onclick = () => location.reload();
+        $('toastContainer').appendChild(t);
+      }
+    });
+  } else {
+    navigator.serviceWorker.getRegistrations().then((rs) => rs.forEach((r) => r.unregister())).catch(() => {});
+  }
+}
 </script>
 </body>
 </html>

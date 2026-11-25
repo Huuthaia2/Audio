@@ -406,3 +406,6 @@ html { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 
 /* Khu Tag mở hết ("Xem tất cả tag" / đang tìm tag): xuống dòng bình thường, quá dài thì cuộn trong khung */
 .tags.open { display: flex; flex-wrap: wrap; max-height: 60vh; overflow-y: auto; overflow-x: hidden; margin-right: 0; }
+
+/* Thông báo có bản cập nhật (sw.js): bấm được, không tự mất */
+.toast.toast-update { pointer-events: auto; cursor: pointer; border-color: var(--accent); }

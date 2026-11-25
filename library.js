@@ -185,7 +185,7 @@ function rowTags(s) {
 
 // Bấm tag trên trang truyện ⇒ về danh sách, lọc đúng nguồn + tag đó
 function libFilterTag(src, tag) {
-  lib.src = src; lib.tags = [tag]; lib.page = 1;
+  lib.src = src; lib.tags = tag ? [tag] : []; lib.page = 1;
   $('searchInput').value = ''; $('tagSearch').value = '';
   libScroll = 0;
   saveLibState();

@@ -134,16 +134,68 @@ function savePos(s, played = false) {
   histSet(s.story.uid, { ch: s.ch, i: s.seg, n, cp, ...(played ? { p: Date.now() } : {}) });
 }
 
+// Tải truyện theo luồng: có đủ chương cần mở (chương đang nghe dở, chưa có thì chương 1) ⇒ trả phiên NGAY (s.loading = true),
+// phần còn lại tải tiếp ở nền rồi gộp vào (finishLoad). Truyện 4 MB không phải chờ tải hết mới thấy chương đầu.
 async function loadSession(story) {
-  const s = { story, chapters: [], ch: 0, queue: [], seg: 0, html: '' };
-  if (story.has_raw) {
-    s.chapters = splitIntoChapters(await fetchStoryText(story));
+  const s = { story, chapters: [], ch: 0, queue: [], seg: 0, html: '', loading: false };
+  if (!story.has_raw) return s;
+  const h = histGet(story.uid);
+  const want = h ? h.ch || 0 : 0;
+  const init = () => {
     // Mở lại đúng chương + câu đã nghe dở (lịch sử chung các thiết bị)
-    const h = histGet(story.uid);
     if (h) { s.ch = Math.min(h.ch || 0, s.chapters.length - 1); s.seg = h.i || 0; }
     buildChapter(s);
+  };
+  return new Promise((resolve, reject) => {
+    let ready = false, checked = 0;
+    streamStoryText(story, (text, done) => {
+      if (done) {
+        const full = splitIntoChapters(text);
+        if (!ready) { s.chapters = full; init(); ready = true; resolve(s); } else finishLoad(s, full);
+        return;
+      }
+      // Mỗi ~150 KB mới tách thử 1 lần (tách chương cả file mỗi lần nhận vài KB thì tốn CPU)
+      if (ready || text.length - checked < 150000) return;
+      checked = text.length;
+      const chs = splitIntoChapters(text);
+      if (chs.length > want + 1) {          // chương cuối có thể chưa tải hết ⇒ chỉ lấy các chương đã đủ
+        s.chapters = chs.slice(0, -1);
+        s.loading = true;
+        init(); ready = true; resolve(s);
+      }
+    }).catch((e) => {
+      if (!ready) reject(e);
+      else { s.loading = false; showToast('Không tải hết được truyện: ' + e.message, 'error'); }
+    });
+  });
+}
+
+// Tải xong phần còn lại của truyện đang mở dở
+function finishLoad(s, full) {
+  const same = s.chapters.every((c, i) => full[i] && full[i].title === c.title);
+  s.chapters = full;
+  s.loading = false;
+  if (!same) {  // hiếm: phần sau đổi hẳn cách chia chương ⇒ dựng lại chương đang mở
+    s.ch = Math.min(s.ch, full.length - 1);
+    const seg = s.seg; buildChapter(s); s.seg = Math.min(seg, Math.max(0, s.queue.length - 1));
   }
-  return s;
+  if (s === view && !$('readView').hidden && $('chapList')) {
+    $('chapList').innerHTML = chapListHtml(s, coverHue(s.story));
+    $('chapHead').textContent = `Các chương (${full.length})`;
+    if ($('metaChs')) $('metaChs').innerHTML = `${icon('fileText', 'sm')} ${full.length} chương`;
+    renderContent();
+  }
+  paintAll();
+  // Đang nghe tới chương cuối của phần đã tải ⇒ đọc tiếp chương sau
+  if (s.pendingNext) { s.pendingNext = false; if (s === player && s.ch + 1 < s.chapters.length) setChapter(s, s.ch + 1); }
+}
+
+function chapListHtml(s, hue) {
+  return s.chapters.map((c, i) => `
+      <div class="arow" data-ch="${i}">
+        <div class="acover" style="--h:${hue}">${icon('headphones')}<span class="eq"><i></i><i></i><i></i></span></div>
+        <div class="ainfo"><div class="title">${esc(c.title)}</div><div class="sub">${fmtSize(c.content.join(' ').length * 1.4)}</div></div>
+      </div>`).join('');
 }
 
 // =====================================================================
@@ -183,15 +235,15 @@ function renderReader() {
   $('readView').innerHTML = `
     <div class="crumbs">
       <a href="#/">${icon('bookOpen', 'sm')} Kho truyện</a> <span class="sep">${icon('right', 'sm')}</span>
-      <span>${esc(sourceOf(story))}</span> <span class="sep">${icon('right', 'sm')}</span>
-      <span>${esc(story.category)}</span> <span class="sep">${icon('right', 'sm')}</span> <b>${esc(story.title)}</b>
+      <a href="#/" data-crumb-src>${esc(sourceOf(story))}</a> <span class="sep">${icon('right', 'sm')}</span>
+      <a href="#/" data-crumb-tag>${esc(story.category)}</a> <span class="sep">${icon('right', 'sm')}</span> <b>${esc(story.title)}</b>
     </div>
     <div class="ad-head">
       <div class="ad-cover" style="--h:${hue}">${icon('headphones')}</div>
       <div class="ad-main">
         <h1>${esc(story.title)}</h1>
         <div class="meta">
-          ${raw ? `<span>${icon('fileText', 'sm')} ${s.chapters.length} chương</span>` : ''}
+          ${raw ? `<span id="metaChs">${icon('fileText', 'sm')} ${s.loading ? `${s.chapters.length}+` : s.chapters.length} chương</span>` : ''}
           <span>${icon('folder', 'sm')} ${esc(sourceOf(story))}</span>
           <span>${icon('list', 'sm')} ${esc(story.category)}</span>
           <span>${icon('drive', 'sm')} ${fmtSize(story.size)}</span>
@@ -232,17 +284,15 @@ function renderReader() {
         </div>
       </div>
     </section>
-    <h2 class="section-h" style="margin-bottom:10px">Các chương (${s.chapters.length})</h2>
-    <div class="alist parts" id="chapList">${s.chapters.map((c, i) => `
-      <div class="arow" data-ch="${i}">
-        <div class="acover" style="--h:${hue}">${icon('headphones')}<span class="eq"><i></i><i></i><i></i></span></div>
-        <div class="ainfo"><div class="title">${esc(c.title)}</div><div class="sub">${fmtSize(c.content.join(' ').length * 1.4)}</div></div>
-      </div>`).join('')}
-    </div>` : ''}`;
+    <h2 class="section-h" style="margin-bottom:10px" id="chapHead">Các chương (${s.chapters.length}${s.loading ? ', đang tải thêm…' : ''})</h2>
+    <div class="alist parts" id="chapList">${chapListHtml(s, hue)}</div>` : ''}`;
 
   // Gập / mở khung; Nội dung nhớ lựa chọn
   $('readView').querySelectorAll('.sum-h').forEach((h) => h.onclick = () => toggleSection(h.parentElement));
   $('readView').querySelector('[data-fav]').onclick = (e) => onFavClick(e.currentTarget);
+  // Đường dẫn: bấm nguồn ⇒ danh sách lọc nguồn đó; bấm thể loại ⇒ lọc nguồn + tag đó
+  $('readView').querySelector('[data-crumb-src]').onclick = (e) => { e.preventDefault(); libFilterTag(sourceOf(story)); };
+  $('readView').querySelector('[data-crumb-tag]').onclick = (e) => { e.preventDefault(); libFilterTag(sourceOf(story), story.category); };
   // Bấm tag ⇒ về danh sách lọc đúng nguồn + tag đó; truyện nhiều tag ⇒ thu gọn, bấm "+N" để xem hết
   const tagBox = $('readView').querySelector('.story-tags');
   if (tagBox) tagBox.onclick = (e) => {
@@ -402,7 +452,10 @@ const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
 const ttsUrl = (t) => isLocal
   ? `http://127.0.0.1:9999/tts?q=${encodeURIComponent(t)}`
   : `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(t)}`;
-let curP = new Audio(), nxtP = new Audio();
+// 4 loa: 1 đang đọc + 3 tải sẵn 3 câu kế (mạng chập chờn ⇒ ít khựng giữa câu). Mỗi loa nhớ câu đang giữ ở dataset.u
+const PRELOAD = 3;
+const pool = Array.from({ length: PRELOAD + 1 }, () => new Audio());
+let curP = pool[0];
 let playing = false, reqId = 0, retryTimer = null, retries = 0;
 let resumeOnVisible = false; // điện thoại chặn phát (NotAllowedError) ⇒ mở lại app thì phát tiếp, không tắt hẳn
 // iPhone (iOS 17+): báo đây là phát nhạc ⇒ nghe được khi gạt im lặng / tắt màn hình
@@ -418,13 +471,13 @@ function startPlay(s) {
   playing = true;
   playSeg(true);
 }
-function stopSegAudio() { reqId++; clearTimeout(retryTimer); curP.pause(); nxtP.pause(); curP.removeAttribute('src'); }
+function stopSegAudio() { reqId++; clearTimeout(retryTimer); pool.forEach((a) => a.pause()); curP.removeAttribute('src'); delete curP.dataset.u; }
 function pauseAudio() {
   playing = false;
   resumeOnVisible = false;
   reqId++;
   clearTimeout(retryTimer);
-  curP.pause(); nxtP.pause();
+  pool.forEach((a) => a.pause());
   paintAll();
   if (sync.dirty) syncSoon(true); // dừng nghe ⇒ đẩy vị trí lên Gist sau 3s (máy kia mở là thấy đúng chỗ)
 }
@@ -438,8 +491,13 @@ function playSeg(scroll) {
   savePos(s, true);
   paintAll(scroll);
   const url = ttsUrl(s.queue[s.seg]);
+  // Màn sáng: dùng loa đã tải sẵn câu này (nếu có). Màn tắt: GIỮ NGUYÊN loa đang phát (điện thoại chặn phát ở loa khác)
+  if (!document.hidden) {
+    const ready = pool.find((a) => a.dataset.u === url && !a.error);
+    curP = ready || pool.find((a) => a !== curP && !a.dataset.u) || pool.find((a) => a !== curP) || curP;
+  }
   // Loa tải sẵn câu này mà bị lỗi (Google từ chối / rớt mạng) ⇒ tải lại; trước đây phát file lỗi ⇒ dừng hẳn
-  if (curP.src !== url || curP.error) curP.src = url;
+  if (curP.dataset.u !== url || curP.error) { curP.src = url; curP.dataset.u = url; }
   curP.defaultPlaybackRate = curP.playbackRate = rate;
   updateMediaSession();
   curP.play().then(() => { if (id === reqId) retries = 0; }).catch((e) => {
@@ -451,14 +509,26 @@ function playSeg(scroll) {
     }
     retryLater(id);
   });
-  // Màn hình tắt thì loa kia không dùng tới ⇒ không tải sẵn (đỡ tốn mạng)
-  if (!document.hidden && s.seg + 1 < s.queue.length) { nxtP.src = ttsUrl(s.queue[s.seg + 1]); nxtP.load(); }
+  // Tải sẵn PRELOAD câu kế vào các loa rảnh (màn tắt thì không dùng tới ⇒ không tải, đỡ tốn mạng)
+  if (!document.hidden) {
+    const want = [];
+    for (let k = 1; k <= PRELOAD && s.seg + k < s.queue.length; k++) want.push(ttsUrl(s.queue[s.seg + k]));
+    for (const u of want) {
+      if (pool.some((a) => a.dataset.u === u && !a.error)) continue;
+      const free = pool.find((a) => a !== curP && !want.includes(a.dataset.u));
+      if (!free) break;
+      free.src = u; free.dataset.u = u; free.load();
+    }
+  }
   curP.onended = () => {
     if (!playing || id !== reqId) return;
     if (s.seg + 1 < s.queue.length) {
       s.seg++;
-      if (!document.hidden) [curP, nxtP] = [nxtP, curP]; // màn sáng: đổi sang loa đã tải sẵn; màn tắt: giữ nguyên loa
-      playSeg(false);
+      playSeg(false); // playSeg tự chọn loa đã tải sẵn câu này (màn tắt: giữ nguyên loa)
+    } else if (s.loading) {
+      // Hết các chương đã tải mà truyện còn đang tải ⇒ chờ tải xong đọc tiếp (KHÔNG coi là hết truyện)
+      s.pendingNext = true;
+      showToast('Đang tải chương tiếp...');
     } else if (s.ch + 1 < s.chapters.length) {
       showToast('Hết chương, sang chương tiếp...');
       setChapter(s, s.ch + 1);
@@ -481,7 +551,7 @@ function retryLater(id) {
     return;
   }
   retryTimer = setTimeout(() => {
-    if (playing && id === reqId) { curP.removeAttribute('src'); playSeg(false); }
+    if (playing && id === reqId) { curP.removeAttribute('src'); delete curP.dataset.u; playSeg(false); }
   }, 2000 * retries);
 }
 
@@ -489,7 +559,7 @@ function retryLater(id) {
 // không báo hết câu ⇒ trước đây kẹt tới khi chạm 2 lần vào câu) ⇒ tự tải lại câu đó
 let watchT = -1, watchStuck = 0;
 setInterval(() => {
-  if (!playing || resumeOnVisible || !player) { watchStuck = 0; return; }
+  if (!playing || resumeOnVisible || !player || player.pendingNext) { watchStuck = 0; return; }
   const t = curP.currentTime;
   if (t !== watchT) { watchT = t; watchStuck = 0; return; }
   if (++watchStuck >= 8) {
@@ -652,7 +722,7 @@ function renderRateMenu() {
     if (!b) return;
     rate = +b.dataset.rate;
     lsSet('ttsRate', rate);
-    curP.playbackRate = nxtP.playbackRate = rate;
+    pool.forEach((a) => { a.playbackRate = rate; });
     $('rateMenu').hidden = true;
     paintRate();
   };
