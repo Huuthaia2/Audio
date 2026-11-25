@@ -31,3 +31,6 @@ rad.json
 *.flf
 TestResults.xml
 
+
+# Kết quả đếm chương của update_index.py (máy nào cũng tự đếm lại được)
+_Tool/2-Cập nhật web/chapter_cache.json

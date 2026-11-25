@@ -108,6 +108,115 @@ def get_stories_from_dir(base_path, relative_to):
                 })
     return stories
 
+# ---- Đếm chương THẬT (y hệt cách web chia chương trong reader.js: splitIntoChapters / splitByRule / autoSplit) ----
+# Trước đây web đoán số chương từ số cuối tên file ⇒ truyện gộp (không còn số) thành "1 phần", "nghe-phong-quyen-3" thành
+# "3 chương". Kết quả đếm lưu theo (size, mtime) ⇒ lần sau chỉ đếm file đã đổi.
+CH_CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "chapter_cache.json")
+RE_RULE = re.compile(r"^─{10,}\s*$", re.M)
+RE_MARK = re.compile(r"^={3,}\s*(Chương|Phần|Hồi|Quyển|Tập)\b", re.I)
+# KHÔNG dùng re.I: Python coi "s" ≈ "ſ" (U+017F, nằm trong dải chữ có dấu) ⇒ "Chương sau ..." thành tiêu đề chương,
+# trình duyệt thì không ⇒ tự ghi hoa / thường cho giống web
+RE_CHAP = re.compile(r"^[Cc][Hh][Ưư][Ơơ][Nn][Gg]\s+(\d+|[IVXLCDMivxlcdm]+|[À-ỹ]+)")
+
+
+def _auto_split_count(text):
+    # JS đếm độ dài theo UTF-16: emoji (ngoài BMP) = 2 ký tự ⇒ thay bằng 2 ký tự để điểm cắt 5000 khớp với web
+    text = re.sub("[\U00010000-\U0010FFFF]", "￿￿", text)
+    target, n, rest = 5000, 0, text
+    while rest:
+        if len(rest) <= target + 1000:
+            return n + 1
+        i = rest.rfind("\n", 0, target + 1)
+        if i < target * 0.7:
+            i = rest.rfind(". ", 0, target + 2)  # như lastIndexOf('. ', 5000) của JS: chỗ BẮT ĐẦU ≤ 5000
+        if i <= 0:
+            i = target
+        n += 1
+        rest = rest[i:].strip()
+    return n
+
+
+def count_chapters(text):
+    lines = text.split("\n")
+    if RE_RULE.search(text):  # kiểu alicesw: mỗi chương mở bằng dòng ────
+        n, cur = 0, None
+        want_title = False
+        for line in lines:
+            t = line.strip()
+            if re.match(r"^─{10,}$", t):
+                if cur: n += 1
+                cur, want_title = False, True
+                continue
+            if cur is None or not t: continue
+            if want_title: want_title = False; continue
+            cur = True
+        return max(1, n + (1 if cur else 0))
+    has_marks = any(RE_MARK.match(l.strip()) for l in lines)
+    n, content, found = 0, False, False
+    for line in lines:
+        t = line.strip()
+        if not t: continue
+        if (RE_MARK.match(t) if has_marks else RE_CHAP.match(t)):
+            if content: n += 1
+            content, found = False, True
+        elif not re.match(r"^=+$", t) and not re.match(r"^TITLE:", t, re.I):
+            content = True
+    n += 1
+    if not found and len(text) > 8000:
+        return _auto_split_count(text)
+    return n
+
+
+def add_chapter_counts(stories, sources):
+    """Ghi "ch" = số chương thật cho truyện chưa có (alicesw đã có sẵn). Đếm bằng chính code web (node dem_chuong.js),
+    không có Node ⇒ dùng count_chapters (Python, gần đúng). Lưu theo (size, mtime) ⇒ lần sau chỉ đếm file đổi."""
+    import subprocess, tempfile
+    try:
+        with open(CH_CACHE, encoding="utf-8") as f:
+            cache = json.load(f)
+    except (FileNotFoundError, ValueError):
+        cache = {}
+    todo, rel_of = [], {}
+    for st in stories:
+        if st.get("ch"):
+            continue
+        src, rest = st["uid"].split("/", 1)
+        rel = sources[src][0] + "/" + rest
+        full = os.path.join(ROOT_DIR, rel)
+        if not os.path.exists(full):
+            continue
+        sig = f"{os.path.getsize(full)}:{int(os.path.getmtime(full))}"
+        rel_of[st["uid"]] = (rel, sig)
+        if cache.get(rel, {}).get("sig") != sig:
+            todo.append(rel)
+    if todo:
+        print(f"Đếm chương {len(todo)} truyện mới / đổi...")
+        counts = {}
+        try:
+            with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as tf:
+                json.dump(todo, tf, ensure_ascii=False)
+            js = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dem_chuong.js")
+            r = subprocess.run(["node", js, tf.name], capture_output=True, encoding="utf-8", timeout=1800)
+            counts = json.loads(r.stdout) if r.returncode == 0 and r.stdout else {}
+            os.remove(tf.name)
+        except (OSError, ValueError, subprocess.TimeoutExpired):
+            counts = {}
+        if not counts:
+            print("(Không chạy được Node ⇒ đếm bằng Python, có thể lệch 1-2 chương ở truyện không có tiêu đề chương)")
+        for rel in todo:
+            n = counts.get(rel)
+            if n is None:
+                with open(os.path.join(ROOT_DIR, rel), encoding="utf-8", errors="replace") as f:
+                    n = count_chapters(f.read())
+            sig = [s for u, (r_, s) in rel_of.items() if r_ == rel][0]
+            cache[rel] = {"sig": sig, "ch": n}
+        with open(CH_CACHE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False, separators=(",", ":"))
+    for st in stories:
+        if st["uid"] in rel_of:
+            st["ch"] = cache[rel_of[st["uid"]][0]]["ch"]
+
+
 def main():
     # stories.json gọn (anh Thai chốt 2026-11-25): { sources: {tên nguồn: [thư mục truyện, thư mục tóm tắt]}, stories: [...] }
     # Mỗi truyện chỉ giữ trường web cần; id / base / sum_base / has_raw web tự tính lại từ uid + sources (index.html).
@@ -176,6 +285,7 @@ def main():
                 "done": a["done"],
             })
 
+    add_chapter_counts(all_stories, sources)
     print(f"Total stories found: {len(all_stories)}")
 
     # Tag ghi 1 lần ở "tags", mỗi truyện chỉ giữ số thứ tự (alicesw ~40 tag / truyện ⇒ file nhẹ đi gần 1 nửa); web tự đổi lại
