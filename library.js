@@ -5,6 +5,7 @@
 const PER_PAGE = 50;
 let allStories = [];
 let byUid = new Map();
+let sortedByName = [], sortedBySize = []; // sắp sẵn 1 lần lúc tải; lọc giữ nguyên thứ tự ⇒ không phải sắp lại mỗi lần gõ
 let filtered = [];
 let lib = { src: 'all', tag: 'all', sort: 'name', page: 1, hideDone: false };
 let libScroll = 0;
@@ -22,6 +23,10 @@ async function ensureStories() {
     return false;
   }
   byUid = new Map(allStories.map((s) => [s.uid, s]));
+  // Tên + tên file đã bỏ dấu tính sẵn 1 lần (trước đây mỗi lần gõ tìm bỏ dấu lại cả 4512 truyện)
+  for (const s of allStories) s._q = removeAccents(s.title) + '|' + removeAccents(s.file);
+  sortedByName = [...allStories].sort((a, b) => a.title.localeCompare(b.title, 'vi'));
+  sortedBySize = [...allStories].sort((a, b) => b.size - a.size);
   restoreLibState();
   libReady = true;
   return true;
@@ -84,12 +89,10 @@ function applyFilter(resetPage = true) {
   if (resetPage) lib.page = 1;
   renderFilters();
   const q = removeAccents($('searchInput').value.trim());
-  filtered = allStories.filter((s) => (lib.src === 'all' || sourceOf(s) === lib.src)
+  filtered = (lib.sort === 'size' ? sortedBySize : sortedByName).filter((s) => (lib.src === 'all' || sourceOf(s) === lib.src)
     && (lib.tag === 'all' || s.category === lib.tag)
     && (!lib.hideDone || !histGet(s.uid)?.done)
-    && (!q || removeAccents(s.title).includes(q) || removeAccents(s.file).includes(q)));
-  if (lib.sort === 'size') filtered.sort((a, b) => b.size - a.size);
-  else filtered.sort((a, b) => a.title.localeCompare(b.title, 'vi'));
+    && (!q || s._q.includes(q)));
 
   document.querySelectorAll('#sortChips .chip').forEach((b) => b.classList.toggle('on', b.dataset.sort === lib.sort));
   $('hideDone').checked = lib.hideDone;

@@ -143,18 +143,23 @@ async function syncNow() {
   })();
   return sync.busy;
 }
-function syncSoon() {
+// Hẹn đồng bộ. KHÔNG huỷ hẹn cũ khi có thay đổi mới (trước đây mỗi câu đọc xong lại huỷ ⇒ nghe liên tục thì không bao giờ
+// đẩy lên). Đang nghe ⇒ 60s / lần (mỗi lần ghi Gist = 1 phiên bản lưu trên GitHub, 8s / lần ⇒ 450 phiên bản / giờ);
+// không nghe ⇒ 8s. soon = true (vd vừa bấm dừng) ⇒ đẩy sau 3s.
+function syncSoon(soon = false) {
   sync.dirty = true;
   if (!sync.token) return;
+  const delay = soon ? 3000 : (typeof playing !== 'undefined' && playing ? 60000 : 8000);
+  if (sync.timer && !soon) return;
   clearTimeout(sync.timer);
-  sync.timer = setTimeout(syncNow, 8000);
+  sync.timer = setTimeout(() => { sync.timer = null; syncNow(); }, delay);
 }
 
 // Rời tab / tắt màn hình ⇒ ghi lên ngay (keepalive: trình duyệt vẫn gửi nốt dù trang bị đóng băng)
 document.addEventListener('visibilitychange', () => {
   if (!sync.token || !sync.id) return;
   if (document.visibilityState === 'hidden') {
-    if (sync.dirty) { sync.dirty = false; clearTimeout(sync.timer); pushHist(true).catch(() => { sync.dirty = true; }); }
+    if (sync.dirty) { sync.dirty = false; clearTimeout(sync.timer); sync.timer = null; pushHist(true).catch(() => { sync.dirty = true; }); }
   } else syncNow();
 });
 

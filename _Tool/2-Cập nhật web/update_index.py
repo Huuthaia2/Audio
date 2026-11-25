@@ -102,23 +102,27 @@ def get_stories_from_dir(base_path, relative_to):
     return stories
 
 def main():
+    # stories.json gọn (anh Thai chốt 2026-11-25): { sources: {tên nguồn: [thư mục truyện, thư mục tóm tắt]}, stories: [...] }
+    # Mỗi truyện chỉ giữ trường web cần; id / base / sum_base / has_raw web tự tính lại từ uid + sources (index.html).
     all_stories = []
     for name, base, sum_base in SOURCES:
         print(f"Scanning {base}...")
         src_dir = os.path.join(ROOT_DIR, base)
-        stories = get_stories_from_dir(src_dir, src_dir)
-        for s in stories:
-            s["base"] = base
-            s["sum_base"] = sum_base
-            s["has_raw"] = True
-            s["has_sum"] = os.path.exists(os.path.join(ROOT_DIR, sum_base, s["id"]))
-            s["uid"] = f"{name}/{s['id']}"
-        all_stories += stories
+        for s in get_stories_from_dir(src_dir, src_dir):
+            all_stories.append({
+                "uid": f"{name}/{s['id']}",
+                "file": s["file"],
+                "category": s["category"],
+                "title": s["title"],
+                "size": s["size"],
+                "has_sum": os.path.exists(os.path.join(ROOT_DIR, sum_base, s["id"])),
+            })
 
     print(f"Total stories found: {len(all_stories)}")
-    
+
+    data = {"sources": {name: [base, sum_base] for name, base, sum_base in SOURCES}, "stories": all_stories}
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(all_stories, f, ensure_ascii=False, indent=2)
+        json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
     
     print(f"Updated {OUTPUT_JSON}")
 

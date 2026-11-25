@@ -226,7 +226,17 @@ class StoryHandler(SimpleHTTPRequestHandler):
                 stories_path = os.path.join(BASE_DIR, "stories.json")
                 if os.path.exists(stories_path):
                     with open(stories_path, 'r', encoding='utf-8') as f:
-                        all_stories = json.load(f)
+                        data = json.load(f)
+                    # stories.json gọn: {sources: {nguồn: [thư mục truyện, thư mục tóm tắt]}, stories: [...]}
+                    # ⇒ uid "nguồn/đường dẫn" đổi sang đường dẫn file thật trong Truyện/
+                    if isinstance(data, dict):
+                        srcs = data.get('sources', {})
+                        all_stories = data['stories']
+                        for s in all_stories:
+                            src, _, rest = s['uid'].partition('/')
+                            if src in srcs: s['uid'] = srcs[src][0] + '/' + rest
+                    else:
+                        all_stories = data
                 else:
                     all_stories = get_all_stories()
 

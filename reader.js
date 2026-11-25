@@ -87,15 +87,18 @@ function buildChapter(s) {
 }
 
 // Lưu chương + câu vào lịch sử chung (history.js ⇒ đồng bộ Gist)
-// cp = % đã nghe của từng chương (cho bảng chọn chương ở thanh đáy, như % từng phần của Local Cinema)
+// Như Local Cinema: CHỈ NGHE mới đưa truyện vào lịch sử / Đang nghe dở. Mở xem, chọn chương, tua khi chưa nghe ⇒ chỉ
+// cập nhật vị trí nếu truyện đã có trong lịch sử (không tạo mục mới).
+// cp = % đã nghe của từng chương (bảng chọn chương ở thanh đáy) — giữ số LỚN NHẤT (mở lại chương đã nghe xong không bị về 1%)
 // played = đang phát ⇒ ghi mốc "lần nghe cuối" (p) để mở app lại thì thanh đáy hiện đúng truyện nghe gần nhất
 function savePos(s, played = false) {
+  const h = histGet(s.story.uid);
+  if (!h && !played) return;
   const n = s.queue.length;
-  const cp = { ...(histGet(s.story.uid)?.cp || {}) };
-  if (n) cp[s.ch] = Math.round((s.seg + 1) / n * 100);
+  const cp = { ...(h?.cp || {}) };
+  if (n && played) cp[s.ch] = Math.max(cp[s.ch] || 0, Math.round((s.seg + 1) / n * 100));
   histSet(s.story.uid, { ch: s.ch, i: s.seg, n, cp, ...(played ? { p: Date.now() } : {}) });
 }
-const saveProgress = savePos;
 
 async function loadSession(story) {
   const s = { story, chapters: [], ch: 0, queue: [], seg: 0, html: '' };
@@ -134,7 +137,6 @@ async function openReader(uid, mode) {
       }
     }
   }
-  if (view.chapters.length) saveProgress(view); // mở truyện ⇒ lên đầu "Đang đọc dở" (như trước)
   renderReader();
   window.scrollTo(0, 0);
   if (mode === 'sum' && $('sumSec')) $('sumSec').scrollIntoView();
@@ -174,7 +176,7 @@ function renderReader() {
             <button class="adp-btn adp-fwd" title="Tới 1 đoạn">${icon('rotateCw')}</button>
           </div>
         </div>` : ''}
-        <div class="actions">${favBtnHtml(story.uid, 'icon-btn', ' Yêu thích')}<button class="icon-btn" id="doneBtn"></button></div>
+        <div class="actions">${favBtnHtml(story.uid, 'icon-btn', ' Yêu thích')}</div>
       </div>
     </div>
     ${story.has_sum ? `
@@ -204,9 +206,7 @@ function renderReader() {
 
   // Gập / mở khung; Nội dung nhớ lựa chọn
   $('readView').querySelectorAll('.sum-h').forEach((h) => h.onclick = () => toggleSection(h.parentElement));
-  $('doneBtn').onclick = () => { histSet(story.uid, { done: !histGet(story.uid)?.done }); paintDone(); };
   $('readView').querySelector('[data-fav]').onclick = (e) => onFavClick(e.currentTarget);
-  paintDone();
   if (story.has_sum) loadSummary(story);
   if (!raw) return;
 
@@ -245,14 +245,6 @@ function toggleSection(sec) {
   updateFoldBtn();
 }
 
-// Nút Đã nghe xong / Đánh dấu đã nghe xong
-function paintDone() {
-  const b = $('doneBtn');
-  if (!b || !view) return;
-  const done = !!histGet(view.story.uid)?.done;
-  b.classList.toggle('active', done);
-  b.innerHTML = done ? `${icon('circleCheck', 'sm')} Đã nghe xong` : `${icon('check', 'sm')} Đánh dấu đã nghe xong`;
-}
 
 // Vẽ lại nội dung chương của view + hàng chương đang chọn
 function renderContent() {
@@ -310,7 +302,6 @@ function setChapter(s, i) {
   s.ch = i;
   s.seg = 0;
   buildChapter(s);
-  saveProgress(s);
   savePos(s);
   if (s === view && !$('readView').hidden) {
     renderContent();
@@ -347,21 +338,28 @@ function viewTogglePlay() {
 }
 
 // =====================================================================
-// Đọc TTS (Google) — 2 loa luân phiên: loa kia tải sẵn câu sau ⇒ không khựng giữa câu
+// Đọc TTS (Google) — màn hình sáng: 2 loa luân phiên (loa kia tải sẵn câu sau ⇒ không khựng giữa câu).
+// Tắt màn hình / sang app khác: điện thoại CHẶN bắt đầu phát ở loa khác ⇒ phát tiếp trên CÙNG loa (như Local Cinema).
+// Google trả file "no-store" + không CORS ⇒ không tải sẵn vào bộ nhớ được, nên không thể chỉ dùng 1 loa lúc màn sáng.
 // =====================================================================
-const RATES = [1, 1.2, 1.32, 1.5, 1.75, 2];
-let rate = parseFloat(lsGet('ttsRate')) || 1.32;
+const RATES = [0.9, 1, 1.05, 1.1, 1.15, 1.2, 1.3, 1.5, 1.75, 2];
+const DEFAULT_RATE = 1.15; // anh Thai chốt 2026-11-25
+// Tốc độ đã lưu không có trong danh sách (vd 1.32 = mặc định bản cũ, không phải tự chọn) ⇒ về mặc định
+let rate = RATES.includes(parseFloat(lsGet('ttsRate'))) ? parseFloat(lsGet('ttsRate')) : DEFAULT_RATE;
 const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
 const ttsUrl = (t) => isLocal
   ? `http://127.0.0.1:9999/tts?q=${encodeURIComponent(t)}`
   : `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(t)}`;
 let curP = new Audio(), nxtP = new Audio();
-let playing = false, reqId = 0, retryTimer = null;
+let playing = false, reqId = 0, retryTimer = null, retries = 0;
+let resumeOnVisible = false; // điện thoại chặn phát (NotAllowedError) ⇒ mở lại app thì phát tiếp, không tắt hẳn
+// iPhone (iOS 17+): báo đây là phát nhạc ⇒ nghe được khi gạt im lặng / tắt màn hình
+try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}
 
 function startPlay(s) {
   if (!s || !s.queue.length) return;
-  // Nghe lại truyện đã đọc xong ⇒ thành "đang đọc" lại
-  if (histGet(s.story.uid)?.done) { histSet(s.story.uid, { done: false }); paintDone(); }
+  // "Đã nghe xong" do app tự đánh (nghe hết câu cuối chương cuối); nghe lại truyện đó ⇒ thành "đang nghe" lại
+  if (histGet(s.story.uid)?.done) histSet(s.story.uid, { done: false });
   if (player !== s) { pauseAudio(); player = s; }
   $('abar').hidden = false;
   document.documentElement.classList.add('has-abar');
@@ -371,10 +369,12 @@ function startPlay(s) {
 function stopSegAudio() { reqId++; clearTimeout(retryTimer); curP.pause(); nxtP.pause(); curP.removeAttribute('src'); }
 function pauseAudio() {
   playing = false;
+  resumeOnVisible = false;
   reqId++;
   clearTimeout(retryTimer);
   curP.pause(); nxtP.pause();
   paintAll();
+  if (sync.dirty) syncSoon(true); // dừng nghe ⇒ đẩy vị trí lên Gist sau 3s (máy kia mở là thấy đúng chỗ)
 }
 function togglePlay() { playing ? pauseAudio() : startPlay(player); }
 
@@ -386,20 +386,26 @@ function playSeg(scroll) {
   savePos(s, true);
   paintAll(scroll);
   const url = ttsUrl(s.queue[s.seg]);
-  if (curP.src !== url) curP.src = url;
+  // Loa tải sẵn câu này mà bị lỗi (Google từ chối / rớt mạng) ⇒ tải lại; trước đây phát file lỗi ⇒ dừng hẳn
+  if (curP.src !== url || curP.error) curP.src = url;
   curP.defaultPlaybackRate = curP.playbackRate = rate;
-  curP.play().catch((e) => {
+  updateMediaSession();
+  curP.play().then(() => { if (id === reqId) retries = 0; }).catch((e) => {
     if (id !== reqId || e.name === 'AbortError') return;
-    console.warn('Không phát được:', e);
-    pauseAudio();
-    showToast('Không phát được — bấm Nghe lại', 'error');
+    if (e.name === 'NotAllowedError') {
+      // Điện thoại không cho phát lúc này (đang ở nền) ⇒ chờ mở lại app rồi phát tiếp
+      resumeOnVisible = true;
+      return;
+    }
+    retryLater(id);
   });
-  if (s.seg + 1 < s.queue.length) { nxtP.src = ttsUrl(s.queue[s.seg + 1]); nxtP.load(); }
+  // Màn hình tắt thì loa kia không dùng tới ⇒ không tải sẵn (đỡ tốn mạng)
+  if (!document.hidden && s.seg + 1 < s.queue.length) { nxtP.src = ttsUrl(s.queue[s.seg + 1]); nxtP.load(); }
   curP.onended = () => {
     if (!playing || id !== reqId) return;
     if (s.seg + 1 < s.queue.length) {
       s.seg++;
-      [curP, nxtP] = [nxtP, curP];
+      if (!document.hidden) [curP, nxtP] = [nxtP, curP]; // màn sáng: đổi sang loa đã tải sẵn; màn tắt: giữ nguyên loa
       playSeg(false);
     } else if (s.ch + 1 < s.chapters.length) {
       showToast('Hết chương, sang chương tiếp...');
@@ -407,14 +413,69 @@ function playSeg(scroll) {
     } else {
       pauseAudio();
       histSet(s.story.uid, { done: true });
-      paintDone();
       showToast('Đã đọc hết truyện!', 'success');
     }
   };
-  curP.onerror = () => {
-    if (!playing || id !== reqId) return;
-    retryTimer = setTimeout(() => { if (playing && id === reqId) { curP.removeAttribute('src'); playSeg(false); } }, 3000);
-  };
+  curP.onerror = () => { if (playing && id === reqId) retryLater(id); };
+}
+
+// Lỗi mạng / Google từ chối ⇒ thử lại câu đó (2s, 4s, 6s...), tối đa 5 lần rồi mới dừng
+function retryLater(id) {
+  clearTimeout(retryTimer);
+  if (++retries > 5) {
+    retries = 0;
+    pauseAudio();
+    showToast('Mất kết nối giọng đọc — bấm Nghe để thử lại', 'error');
+    return;
+  }
+  retryTimer = setTimeout(() => {
+    if (playing && id === reqId) { curP.removeAttribute('src'); playSeg(false); }
+  }, 2000 * retries);
+}
+
+// Bộ canh: đang phát mà âm thanh đứng yên > 8s (Google gửi chậm / nghẽn mạng: trình duyệt chờ mãi, không báo lỗi,
+// không báo hết câu ⇒ trước đây kẹt tới khi chạm 2 lần vào câu) ⇒ tự tải lại câu đó
+let watchT = -1, watchStuck = 0;
+setInterval(() => {
+  if (!playing || resumeOnVisible || !player) { watchStuck = 0; return; }
+  const t = curP.currentTime;
+  if (t !== watchT) { watchT = t; watchStuck = 0; return; }
+  if (++watchStuck >= 8) {
+    watchStuck = 0;
+    console.warn('Âm thanh kẹt ⇒ tải lại câu', player.seg + 1);
+    stopSegAudio();
+    playSeg(false);
+  }
+}, 1000);
+
+// Mở lại app sau khi điện thoại chặn phát ⇒ phát tiếp đúng câu
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && playing && resumeOnVisible) {
+    resumeOnVisible = false;
+    playSeg(false);
+  }
+});
+
+// Màn hình khoá / tai nghe: tên truyện + chương, nút phát/dừng, câu trước/sau, chương trước/sau
+function updateMediaSession() {
+  if (!('mediaSession' in navigator) || !player) return;
+  try {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: player.story.title,
+      artist: `${player.chapters[player.ch].title} · Đoạn ${player.seg + 1}/${player.queue.length}`,
+      album: 'Kho Truyện',
+    });
+    navigator.mediaSession.playbackState = playing ? 'playing' : 'paused';
+  } catch (e) {}
+}
+if ('mediaSession' in navigator) {
+  const set = (a, fn) => { try { navigator.mediaSession.setActionHandler(a, fn); } catch (e) {} };
+  set('play', () => { if (player && !playing) startPlay(player); });
+  set('pause', () => { if (playing) pauseAudio(); updateMediaSession(); });
+  set('seekbackward', () => player && seekTo(player, player.seg - 1));
+  set('seekforward', () => player && seekTo(player, player.seg + 1));
+  set('previoustrack', () => player && setChapter(player, player.ch - 1));
+  set('nexttrack', () => player && setChapter(player, player.ch + 1));
 }
 
 // Thanh tua theo đoạn: kéo chỉ xem trước (tô câu + chữ), thả tay mới tua
@@ -594,4 +655,22 @@ async function restoreLastPlayed() {
   } catch (e) {}
 }
 restoreLastPlayed();
-window.addEventListener('histchange', restoreLastPlayed); // lịch sử vừa tải về từ máy khác
+
+// Lịch sử mới tải về từ máy khác ⇒ truyện ĐANG DỪNG trên máy này lấy vị trí mới (trước đây vẫn giữ vị trí cũ trong bộ nhớ:
+// bấm ▶ là đọc lại chỗ cũ rồi ghi đè vị trí mới của máy kia). Đang phát thì máy này là bản mới nhất ⇒ giữ nguyên.
+function applyRemotePos(s) {
+  if (!s || !s.chapters.length || (s === player && playing)) return;
+  const h = histGet(s.story.uid);
+  if (!h) return;
+  const ch = Math.min(h.ch || 0, s.chapters.length - 1);
+  if (ch === s.ch && (h.i || 0) === s.seg) return;
+  if (ch !== s.ch) { s.ch = ch; buildChapter(s); }
+  s.seg = Math.min(h.i || 0, Math.max(0, s.queue.length - 1));
+  if (s === view && !$('readView').hidden) renderContent();
+}
+window.addEventListener('histchange', () => {
+  applyRemotePos(player);
+  if (view !== player) applyRemotePos(view);
+  paintAll();
+  restoreLastPlayed();
+});

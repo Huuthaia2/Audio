@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <title>Kho Truyện</title>
+<!-- Ghim vào màn hình chính (iPhone / Android) ⇒ mở toàn màn hình như app, không có thanh địa chỉ (như Local Cinema) -->
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Kho Truyện">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#18181b">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23fe628e' d='M2 4h7a3 3 0 0 1 3 3v14a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v14a2 2 0 0 1 2-2h8z'/></svg>">
 <script>try { if (localStorage.getItem('theme') === 'light') document.documentElement.classList.add('light'); } catch (e) {}</script>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -131,7 +139,16 @@ const chapterCount = (f) => { const m = f.match(/-(\d+)\.txt$/) || f.match(/\+(\
 const coverHue = (s) => (chapterCount(s.file) > 1 ? 335 : 215);
 // Nguồn = thư mục cấp 1 trong Truyện/ (phần đầu uid)
 const sourceOf = (s) => s.uid.split('/')[0];
-const STORIES = fetch('stories.json').then((r) => r.json());
+// stories.json gọn: { sources: {nguồn: [thư mục truyện, thư mục tóm tắt]}, stories: [{uid, file, category, title, size, has_sum}] }
+// ⇒ tự tính lại id / base / sum_base / has_raw (bản cũ dạng mảng đầy đủ trường vẫn đọc được)
+const STORIES = fetch('stories.json').then((r) => r.json()).then((d) => {
+  if (Array.isArray(d)) return d;
+  return d.stories.map((s) => {
+    const src = s.uid.slice(0, s.uid.indexOf('/'));
+    const [base, sum_base] = d.sources[src] || ['', ''];
+    return { ...s, id: s.uid.slice(src.length + 1), base, sum_base, has_raw: true };
+  });
+});
 const readLink = (uid, mode) => `#/read?uid=${encodeURIComponent(uid)}${mode === 'sum' ? '&mode=sum' : ''}`;
 
 function showToast(msg, type = 'info') {

@@ -144,7 +144,7 @@ main.page { max-width: 1600px; margin: 0 auto; padding: 16px 16px 48px; }
 
 /* Khung gập / mở (Tóm tắt, Nội dung) — giống khung Tóm tắt Local Cinema */
 .summary { background: var(--bg2); border: 1px solid var(--bg3); border-radius: 12px; padding: 4px 22px 18px; margin-bottom: 20px; }
-.sum-h { display: flex; align-items: center; gap: 8px; font-size: 16px; margin: 14px 0 6px; color: var(--accent2); cursor: pointer; user-select: none; }
+.sum-h { display: flex; align-items: center; gap: 8px; font-size: 16px; margin: 0 -22px; padding: 14px 22px 10px; color: var(--accent2); cursor: pointer; user-select: none; }
 .sum-h .t { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sum-chev { margin-left: auto; color: var(--muted); display: inline-flex; transition: transform .2s; }
 .summary.closed { padding-bottom: 4px; }
@@ -154,7 +154,7 @@ main.page { max-width: 1600px; margin: 0 auto; padding: 16px 16px 48px; }
 .sum-body .section-head { color: var(--text); font-weight: 700; margin: 16px 0 4px; }
 .sum-body .sum-meta { color: var(--muted); font-size: 12px; }
 .sum-body hr { border: 0; border-top: 1px solid var(--bg3); margin: 16px 0; }
-@media (max-width: 700px) { .summary { padding: 2px 14px 14px; } }
+@media (max-width: 700px) { .summary { padding: 2px 14px 14px; } .sum-h { margin: 0 -14px; padding: 14px 14px 10px; } }
 
 /* Nội dung chương: vừa nghe vừa đọc, câu đang đọc tô màu */
 .content { font-family: 'Lora', Georgia, serif; font-size: 19px; line-height: 1.8; text-align: justify; }
@@ -162,7 +162,7 @@ main.page { max-width: 1600px; margin: 0 auto; padding: 16px 16px 48px; }
 .content hr { border: 0; border-top: 1px solid var(--bg3); margin: 24px 0; }
 .content .seg { cursor: pointer; -webkit-tap-highlight-color: transparent; border-radius: 3px; }
 .content .seg.on { background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent2); }
-@media (max-width: 700px) { .content { font-size: 17px; line-height: 1.7; } }
+@media (max-width: 700px) { .content { font-size: 17px; line-height: 1.7; text-align: left; } }
 .chap-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; }
 .chap-nav .icon-btn { flex: 1; justify-content: center; }
 .chap-nav .next { border-color: var(--accent); color: var(--accent); }
@@ -347,4 +347,39 @@ html.a-playing .arow.cur[data-uid]:hover .acover .ic-pause { display: block; }
   .ab-pw, .ab-pc { display: none; }
   .ab-parts { padding: 0 8px; }
   .ab-row { grid-template-columns: minmax(0, 1fr) auto auto; }
+}
+
+/* ===================== Điện thoại / màn cảm ứng (đo 390px + 360px, 2026-11-25) ===================== */
+/* Chạm 2 lần vào câu không bị trình duyệt phóng to; bỏ ô xám nháy khi chạm */
+html { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+/* Header: ẩn số truyện (đã có ở tiêu đề danh sách) ⇒ logo + 4 nút vừa 1 hàng ở 360px (trước rớt thành 3 hàng, cao 151px) */
+@media (max-width: 700px) { .bar-stat { display: none; } .bar { gap: 8px; } }
+@media (hover: none) {
+  /* Vùng chạm tối thiểu ~40px (trước: nút Tóm tắt 30x18, ♡ 31x23, ✕ 30x30, tag 30px...) */
+  .icon-btn.round { width: 40px; height: 40px; }
+  .arow .abadge { min-width: 40px; min-height: 40px; justify-content: center; border-color: transparent; }
+  .arow .abadge .i { width: 18px; height: 18px; }
+  .fav.inline { width: 40px; height: 40px; padding: 0; }
+  .hcard .rm { width: 40px; height: 40px; }
+  .tag, .tab { padding: 8px 14px; }
+  .chip { padding: 9px 16px; }
+  .toggle { padding: 10px 0; }
+  .toggle input { width: 18px; height: 18px; }
+  .sec-link { padding: 10px 0 10px 12px; }
+  .pager button { min-width: 40px; height: 40px; }
+  .pager .pager-jump button, .pager-jump input { height: 38px; }
+  .ab-btn { width: 40px; height: 40px; }
+  .ab-parts, .ab-rate { height: 40px; }
+  .ab-menu button { padding: 11px 10px; }
+  .seek { height: 36px; }
+  /* Cảm ứng không có "rê chuột": kiểu :hover dính lại sau khi chạm ⇒ trả về như chưa rê, thay bằng phản hồi lúc đang chạm */
+  .arow:not(.cur):hover { background: none; }
+  .arow:not(.cur):hover .title { color: inherit; }
+  .arow:active { background: var(--bg2); }
+  .arow[data-uid]:not(.cur):hover .acover .ic-idle { display: block; }
+  .arow[data-uid]:not(.cur):hover .acover .ic-play { display: none; }
+  html.a-playing .arow.cur[data-uid]:hover .acover .eq { display: flex; }
+  html.a-playing .arow.cur[data-uid]:hover .acover .ic-pause { display: none; }
+  .fcard:not(.on):hover, .tag:not(.on):hover, .chip:not(.on):hover { border-color: var(--bg3); color: inherit; }
+  .fcard:active, .tag:active, .chip:active, .tab:active { opacity: .6; }
 }
