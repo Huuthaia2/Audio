@@ -100,7 +100,7 @@ def process_file(filepath):
         print(f"Error writing {filepath}: {e}")
 
 def main():
-    root_dir = r"c:\Users\Windows\Documents\MEGA\Audio\Text Mp3"
+    root_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "Truyện", "1-Text Mp3")
     count = 0
     for root, dirs, files in os.walk(root_dir):
         for file in files:

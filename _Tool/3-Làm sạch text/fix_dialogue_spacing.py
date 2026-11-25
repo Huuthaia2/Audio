@@ -51,10 +51,10 @@ def fix_dialogue_spacing(filepath):
     return False
 
 def main():
+    truyen_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "Truyện")
     target_dirs = [
-        r"c:\Users\Windows\Documents\MEGA\Audio\Text Mp3",
-        r"c:\Users\Windows\Documents\MEGA\Audio\truyencogiaothao",
-        r"c:\Users\Windows\Documents\MEGA\Audio\zDaCoMp3"
+        os.path.join(truyen_dir, "1-Text Mp3"),
+        os.path.join(truyen_dir, "2-truyencogiaothao"),  # đã gồm zDaCoMp3 bên trong
     ]
     
     total_processed = 0

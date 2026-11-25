@@ -5,7 +5,7 @@ Xóa các file phần sau khi nối thành công.
 """
 import os, re
 
-DIR = r'c:\Users\Windows\Documents\MEGA\Audio\truyencogiaothao\2-Cha Chồng - Con Dâu'
+DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "Truyện", "2-truyencogiaothao", "2-Cha Chồng - Con Dâu")
 
 files = os.listdir(DIR)
 parts_map = {}

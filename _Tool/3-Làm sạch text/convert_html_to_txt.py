@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 
 # --- CONFIG ---
-SOURCE_DIR = r"c:\Users\Windows\Documents\MEGA\Audio\Text Mp3"
+SOURCE_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "Truyện", "1-Text Mp3")
 
 def clean_html_to_text(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
