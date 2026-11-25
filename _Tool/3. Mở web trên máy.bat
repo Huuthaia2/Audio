@@ -16,5 +16,10 @@ echo ==================================================
 
 start "TTS proxy" python "%TTS_DIR%\story_server.py"
 start "" cmd /c "timeout /t 2 >nul & start http://127.0.0.1:8765/index.html"
+rem Web server tu dung (loi, mat ket noi...) => tu chay lai sau 2 giay. Muon tat han: dong cua so nay.
+:serve
 python -m http.server 8765 --bind 127.0.0.1
-pause
+echo.
+echo  [!] Web server vua dung - tu chay lai sau 2 giay (dong cua so nay de tat han)...
+timeout /t 2 >nul
+goto serve

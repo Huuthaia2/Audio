@@ -77,7 +77,7 @@ def extract_url_from_file(file_path):
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             first_lines = "".join([f.readline() for _ in range(10)])
-            match = re.search(r'https://truyencogiaothao\.site/truyen/[a-zA-Z0-9-]+/', first_lines)
+            match = re.search(r'https://truyencogiaothaox\.net/truyen/[a-zA-Z0-9-]+/', first_lines)
             if match:
                 return match.group(0)
     except:
@@ -90,7 +90,7 @@ def process_file_with_path(file_name, file_dir):
     
     url = extract_url_from_file(file_path)
     if not url:
-        url = f"https://truyencogiaothao.site/truyen/{slug}/"
+        url = f"https://truyencogiaothaox.net/truyen/{slug}/"  # tên miền mới (.site / .info đã chết)
     
     all_tags = get_tags_from_web(url, slug)
     

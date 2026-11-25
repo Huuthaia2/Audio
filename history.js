@@ -61,12 +61,49 @@ function histPct(h, chapters) {
   if (!chapters) return 0;
   return Math.min(1, ((h.ch || 0) + (h.n ? (h.i || 0) / h.n : 0)) / chapters);
 }
+// ---- File truyện đổi tên vì có chương mới (gia-dinh-nam-0125.txt → -0144.txt) ⇒ uid đổi ----
+// stories.json ghi uid cũ ở s.was ⇒ chuyển lịch sử + yêu thích sang uid mới; uid cũ đánh dấu xoá (máy khác đồng bộ về cũng
+// không hiện lại). Truyện đã nghe xong ⇒ thành đang nghe dở ở chương mới đầu tiên.
+let histMoves = []; // [[uid cũ, uid mới, số chương của file cũ]]
+function histMoveFrom(stories) {
+  histMoves = [];
+  for (const s of stories) for (const w of s.was || []) histMoves.push([w, s.uid, chapterCount(w)]);
+  if (histApplyMoves()) {
+    lsSet('hist', JSON.stringify(hist));
+    syncSoon();
+    window.dispatchEvent(new Event('histchange'));
+  }
+}
+function histApplyMoves() {
+  let changed = false;
+  const t = Date.now();
+  for (const [from, to, oldN] of histMoves) {
+    const h = hist[from];
+    if (h && !h.del) {
+      // uid mới đã có lịch sử (vd nghe trên máy khác sau khi đổi tên) ⇒ giữ bản đó, chỉ bỏ uid cũ
+      if (!histGet(to)) hist[to] = h.done && oldN ? { ...h, done: false, ch: oldN, i: 0, n: 0 } : h;
+      hist[from] = { del: true, t };
+      changed = true;
+    }
+    const f = hist['fav:' + from];
+    if (f && f.on) {
+      if (!favOn(to)) hist['fav:' + to] = f;
+      hist['fav:' + from] = { on: false, t };
+      changed = true;
+    }
+  }
+  return changed;
+}
+STORIES.then(histMoveFrom).catch(() => {});
+
 function histMerge(remote) {
   let changed = false;
   for (const [uid, r] of Object.entries(remote || {})) {
     const l = hist[uid];
     if (!l || (r.t || 0) > (l.t || 0)) { hist[uid] = r; changed = true; }
   }
+  // Máy khác chưa chuyển uid cũ ⇒ bản tải về có thể mang lại mục uid cũ
+  if (changed && histApplyMoves()) syncSoon();
   if (changed) {
     lsSet('hist', JSON.stringify(hist));
     window.dispatchEvent(new Event('histchange'));

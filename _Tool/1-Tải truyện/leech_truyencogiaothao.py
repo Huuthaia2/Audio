@@ -66,49 +66,90 @@ def pre_scan_storage():
                 count += 1
     print(f"[*] Đã index {count} truyện. Sẵn sàng tải!")
 
+def parse_site_date(s, now=None):
+    """Ngày trên trang ⇒ 'YYYY-MM-DD'. Dạng 'Tháng 11 20, 2026' hoặc tương đối '6 phút ago' / '1 ngày ago'. Không đọc được ⇒ None"""
+    from datetime import datetime, timedelta
+    s = (s or "").strip().lower()
+    m = re.search(r'tháng\s*(\d{1,2})\s+(\d{1,2}),?\s*(\d{4})', s)
+    if m:
+        try: return datetime(int(m.group(3)), int(m.group(1)), int(m.group(2))).strftime('%Y-%m-%d')
+        except ValueError: return None
+    m = re.search(r'(\d{1,2})/(\d{1,2})/(\d{4})', s)
+    if m:
+        try: return datetime(int(m.group(3)), int(m.group(2)), int(m.group(1))).strftime('%Y-%m-%d')
+        except ValueError: return None
+    m = re.search(r'(\d+)\s*(giây|phút|giờ|ngày|tuần|tháng|năm)', s)
+    if m:
+        n = int(m.group(1))
+        days = {'giây': 0, 'phút': 0, 'giờ': 0, 'ngày': 1, 'tuần': 7, 'tháng': 30, 'năm': 365}[m.group(2)]
+        secs = {'giây': 1, 'phút': 60, 'giờ': 3600}.get(m.group(2), 0)
+        return ((now or datetime.now()) - timedelta(days=n * days, seconds=n * secs)).strftime('%Y-%m-%d')
+    return None
+
+def fetch_story(url):
+    """Đọc trang truyện ⇒ dict: title, slug, chapters [{title, url, date}] (cũ → mới), tags, genres, author, status, year,
+    updated (ngày chương mới nhất), posted (ngày chương đầu), guessed (= không thấy danh sách chương, đang đoán Phần 1–5)"""
+    response = session.get(url, timeout=10)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    title_tag = soup.select_one('.post-title h1') or soup.select_one('h1')
+    title = title_tag.get_text().strip() if title_tag else "Truyen_Leech"
+    url_slug = url.strip('/').split('/')[-1]
+
+    chapter_list = []
+    links = soup.select('li.wp-manga-chapter a')
+
+    if not links:
+        ajax_url = url.rstrip('/') + "/ajax/chapters/"
+        try:
+            ajax_res = session.post(ajax_url, timeout=10)
+            if ajax_res.status_code == 200:
+                ajax_soup = BeautifulSoup(ajax_res.text, 'html.parser')
+                links = ajax_soup.select('li.wp-manga-chapter a')
+        except: pass
+
+    for a in links:
+        c_url = a.get('href')
+        c_title = a.get_text().strip()
+        if c_url:
+            if c_url.rstrip('/') == url.rstrip('/'):
+                # Link bị lỗi (trỏ về trang chủ truyện), thử đoán link từ title
+                num_match = re.search(r'(\d+)', c_title)
+                if num_match:
+                    num = num_match.group(1)
+                    prefix = "chuong" if "Chương" in c_title else "phan"
+                    c_url = url.rstrip('/') + f"/{prefix}-{num}/"
+
+            li = a.find_parent('li')
+            d = li.select_one('.chapter-release-date') if li else None
+            chapter_list.append({'title': c_title, 'url': c_url, 'date': parse_site_date(d.get_text(' ', strip=True)) if d else None})
+
+    guessed = not chapter_list
+    if not chapter_list:
+        for i in range(1, 6):
+            chapter_list.append({'title': f'Phần {i}', 'url': url.rstrip('/') + f"/phan-{i}/", 'date': None})
+    else:
+        chapter_list = chapter_list[::-1]
+
+    # Bảng thông tin: .summary-heading (Tác giả, Năm, Tình trạng...) + .summary-content
+    facts = {}
+    for item in soup.select('.post-content_item'):
+        h, c = item.select_one('.summary-heading'), item.select_one('.summary-content')
+        if h and c: facts[h.get_text(' ', strip=True).lower()] = c.get_text(' ', strip=True)
+    dates = [c['date'] for c in chapter_list if c['date']]
+    return {
+        'title': title, 'slug': url_slug, 'chapters': chapter_list, 'guessed': guessed,
+        'tags': [a.get_text(strip=True) for a in soup.select('.tags-content a') if a.get_text(strip=True)],
+        'genres': [a.get_text(strip=True) for a in soup.select('.genres-content a') if a.get_text(strip=True)],
+        'author': facts.get('tác giả', ''), 'status': facts.get('tình trạng', ''), 'year': facts.get('năm', ''),
+        'updated': max(dates) if dates else None, 'posted': min(dates) if dates else None,
+    }
+
 def get_story_info(url):
     print(f"[*] Đang lấy thông tin truyện từ: {url}")
     try:
-        response = session.get(url, timeout=10)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        title_tag = soup.select_one('.post-title h1') or soup.select_one('h1')
-        title = title_tag.get_text().strip() if title_tag else "Truyen_Leech"
-        url_slug = url.strip('/').split('/')[-1]
-        
-        chapter_list = []
-        links = soup.select('li.wp-manga-chapter a')
-        
-        if not links:
-            ajax_url = url.rstrip('/') + "/ajax/chapters/"
-            try:
-                ajax_res = session.post(ajax_url, timeout=10)
-                if ajax_res.status_code == 200:
-                    ajax_soup = BeautifulSoup(ajax_res.text, 'html.parser')
-                    links = ajax_soup.select('li.wp-manga-chapter a')
-            except: pass
-
-        for a in links:
-            c_url = a.get('href')
-            c_title = a.get_text().strip()
-            if c_url:
-                if c_url.rstrip('/') == url.rstrip('/'):
-                    # Link bị lỗi (trỏ về trang chủ truyện), thử đoán link từ title
-                    num_match = re.search(r'(\d+)', c_title)
-                    if num_match:
-                        num = num_match.group(1)
-                        prefix = "chuong" if "Chương" in c_title else "phan"
-                        c_url = url.rstrip('/') + f"/{prefix}-{num}/"
-                
-                chapter_list.append({'title': c_title, 'url': c_url})
-        
-        if not chapter_list:
-            for i in range(1, 6):
-                chapter_list.append({'title': f'Phần {i}', 'url': url.rstrip('/') + f"/phan-{i}/"})
-        else:
-            chapter_list = chapter_list[::-1]
-            
-        return title, url_slug, chapter_list
+        info = fetch_story(url)
+        return info['title'], info['slug'], info['chapters']
     except Exception as e:
         print(f"[!] Lỗi khi lấy thông tin: {e}")
         return None, "error", []
@@ -135,10 +176,12 @@ def download_chapter_worker(index, title, url):
     except: pass
     return index, title, None
 
-def leech_story(url_input):
+def leech_story(url_input, info=None):
+    """info = kết quả fetch_story đã có sẵn (tool tự cập nhật) ⇒ không tải lại trang truyện. Trả tên file đã lưu (None = bỏ qua)"""
     if not url_input.endswith('/'): url_input += '/'
 
-    title, slug, chapters = get_story_info(url_input)
+    if info: title, slug, chapters = info['title'], info['slug'], info['chapters']
+    else: title, slug, chapters = get_story_info(url_input)
     if not chapters: return
 
     if normalize_simple(title) in EXISTING_TITLES:
@@ -193,6 +236,7 @@ def leech_story(url_input):
                 f.write(f"\n\n{'='*20} CHƯƠNG {i} (LỖI TẢI) {'='*20}\n\n")
     
     print(f"\n[OK] Đã lưu: {file_name}")
+    return file_name
 
 def main():
     pre_scan_storage()

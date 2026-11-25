@@ -11,11 +11,13 @@ let viewMode = 'raw';
 // Chia chương + chia câu
 // =====================================================================
 function splitIntoChapters(text) {
+  if (/^─{10,}\s*$/m.test(text)) return splitByRule(text);
   const out = [];
   let cur = { title: 'Chương 1', content: [] };
   let found = false;
   const chapterRegex = /^Chương\s+(\d+|[IVXLCDM]+|[À-ỹ]+)/i;
-  const markRegex = /^={3,}\s*Chương/i;
+  // Dòng mốc "==== Chương / Phần / Hồi / Quyển / Tập N ====" (tool tải truyện, tool gộp file Text Mp3)
+  const markRegex = /^={3,}\s*(Chương|Phần|Hồi|Quyển|Tập)\b/i;
   // File tool tải truyện có dòng mốc "==== Chương N ====" ⇒ CHỈ tách theo dòng mốc; dòng "Chương N: ..." trong
   // nội dung giữ làm chữ (trước đây tách cả 2 ⇒ 246 truyện bị dư 1 chương rỗng chỉ có câu phụ đề)
   const hasMarks = text.split('\n').some((l) => markRegex.test(l.trim()));
@@ -33,6 +35,38 @@ function splitIntoChapters(text) {
   // Không có chữ "Chương" ⇒ tự chia theo độ dài
   if (!found && text.length > 8000) return autoSplit(text);
   return out;
+}
+
+// File alicesw: khối thông tin (Tác giả, Tag...) ở đầu, mỗi chương mở bằng dòng "──────" rồi dòng tên chương.
+// Tên chương hay lặp 2 dòng (2 bản dịch cùng 1 tên: "Chương 1: Bắt gặp..." / "Chương 1: Phước lành...") ⇒ bỏ dòng lặp,
+// TTS khỏi đọc tên 2 lần. Phần trước dòng "──────" đầu tiên (khối thông tin) không phải chương.
+function splitByRule(text) {
+  const out = [];
+  let cur = null, wantTitle = false, skipDup = false;
+  const num = (t) => (t.match(/^Chương\s+(\d+)/i) || [])[1];
+  for (const line of text.split('\n')) {
+    const t = line.trim();
+    if (/^─{10,}$/.test(t)) {
+      if (cur && cur.content.some((l) => l)) out.push(cur);
+      cur = { title: `Chương ${out.length + 1}`, content: [] };
+      wantTitle = true;
+      continue;
+    }
+    if (!cur) continue;
+    if (!t) { cur.content.push(''); continue; }
+    if (wantTitle) {
+      // "Chương 2 Chương 2 Người mẹ..." ⇒ "Chương 2: Người mẹ..."
+      cur.title = t.replace(/^(Chương\s+\d+)\s*[:：.\-–]?\s*Chương\s+\d+\s*[:：.\-–]?\s*/i, '$1: ');
+      wantTitle = false; skipDup = true; continue;
+    }
+    if (skipDup) {
+      skipDup = false;
+      if (t.toLowerCase() === cur.title.toLowerCase() || (num(t) && num(t) === num(cur.title))) continue;
+    }
+    cur.content.push(t);
+  }
+  if (cur && cur.content.some((l) => l)) out.push(cur);
+  return out.length ? out : [{ title: 'Chương 1', content: text.split('\n') }];
 }
 
 function autoSplit(text) {
@@ -103,9 +137,7 @@ function savePos(s, played = false) {
 async function loadSession(story) {
   const s = { story, chapters: [], ch: 0, queue: [], seg: 0, html: '' };
   if (story.has_raw) {
-    const res = await fetch(`${story.base}/${story.id}`);
-    if (!res.ok) throw new Error(`Không tải được nội dung: HTTP ${res.status}`);
-    s.chapters = splitIntoChapters(await res.text());
+    s.chapters = splitIntoChapters(await fetchStoryText(story));
     // Mở lại đúng chương + câu đã nghe dở (lịch sử chung các thiết bị)
     const h = histGet(story.uid);
     if (h) { s.ch = Math.min(h.ch || 0, s.chapters.length - 1); s.seg = h.i || 0; }
@@ -163,6 +195,9 @@ function renderReader() {
           <span>${icon('folder', 'sm')} ${esc(sourceOf(story))}</span>
           <span>${icon('list', 'sm')} ${esc(story.category)}</span>
           <span>${icon('drive', 'sm')} ${fmtSize(story.size)}</span>
+          ${story.author ? `<span title="Tác giả">✍ ${esc(story.author)}</span>` : ''}
+          ${story.t ? `<span title="Cập nhật">${icon('calendar', 'sm')} ${story.t.split('-').reverse().join('/')}</span>` : ''}
+          ${story.done !== undefined ? `<span class="st-badge${story.done ? ' done' : ''}">${story.done ? 'Đã hoàn thành' : 'Đang ra'}</span>` : ''}
           ${raw ? '<span id="metaPos"></span>' : ''}
         </div>
         ${raw ? `
@@ -177,6 +212,7 @@ function renderReader() {
           </div>
         </div>` : ''}
         <div class="actions">${favBtnHtml(story.uid, 'icon-btn', ' Yêu thích')}</div>
+        ${storyTagsHtml(story)}
       </div>
     </div>
     ${story.has_sum ? `
@@ -207,6 +243,13 @@ function renderReader() {
   // Gập / mở khung; Nội dung nhớ lựa chọn
   $('readView').querySelectorAll('.sum-h').forEach((h) => h.onclick = () => toggleSection(h.parentElement));
   $('readView').querySelector('[data-fav]').onclick = (e) => onFavClick(e.currentTarget);
+  // Bấm tag ⇒ về danh sách lọc đúng nguồn + tag đó; truyện nhiều tag ⇒ thu gọn, bấm "+N" để xem hết
+  const tagBox = $('readView').querySelector('.story-tags');
+  if (tagBox) tagBox.onclick = (e) => {
+    const b = e.target.closest('[data-ftag]');
+    if (b) libFilterTag(sourceOf(story), b.dataset.ftag);
+    else if (e.target.closest('.tag-more-inline')) tagBox.classList.add('open');
+  };
   if (story.has_sum) loadSummary(story);
   if (!raw) return;
 
@@ -236,6 +279,15 @@ function renderReader() {
     lastTap = now;
   };
   renderContent();
+}
+
+// Tag trên trang truyện (thể loại + tag trang nguồn, bỏ R-18 / Tiếng Trung). > 12 tag ⇒ ẩn bớt, nút "+N"
+function storyTagsHtml(story) {
+  const tags = [...new Set([story.category, ...(story.tags || [])])].filter((t) => t && !SKIP_TAGS.has(t));
+  if (tags.length < 2 && !story.tags) return '';
+  const MAX = 12;
+  return `<div class="story-tags">${tags.map((t, i) => `<button class="tag${i >= MAX ? ' extra' : ''}" data-ftag="${esc(t)}">${esc(t)}</button>`).join('')}`
+    + (tags.length > MAX ? `<button class="tag tag-more-inline">+${tags.length - MAX}</button>` : '') + '</div>';
 }
 
 // Khung Nội dung luôn gập khi mở truyện (anh Thai chốt 2026-11-25), bấm tiêu đề để mở

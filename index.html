@@ -27,7 +27,7 @@
     <button class="icon-btn round" id="backBtn" title="Về danh sách" hidden><i data-i="left"></i></button>
     <a class="logo" href="#/">Kho<span>Truyện</span></a>
     <label class="search" id="searchBox">
-      <input id="searchInput" type="text" placeholder="Tìm kiếm tên truyện..." autocomplete="off">
+      <input id="searchInput" type="text" placeholder="Tìm kiếm tên truyện, tag..." autocomplete="off">
       <i data-i="search"></i>
     </label>
     <span class="bar-stat" id="statsText"></span>
@@ -74,8 +74,10 @@
     <div class="sec-head"><h2 class="section-h" id="srcHead">Nguồn</h2></div>
     <div class="folders" id="srcList"></div>
 
-    <div class="sec-head"><h2 class="section-h" id="tagHead">Tag</h2></div>
+    <!-- Tag: chọn nhiều tag ⇒ truyện phải có ĐỦ các tag đã chọn; mặc định hiện tag ≥ 10 truyện + ô tìm tag -->
+    <div class="sec-head"><h2 class="section-h" id="tagHead">Tag</h2><input id="tagSearch" class="tag-search" type="search" placeholder="Tìm tag..." autocomplete="off"></div>
     <div class="tags" id="tagList"></div>
+    <button class="sec-link tag-more" id="tagMore" hidden></button>
 
     <div class="toolbar">
       <h1 id="viewTitle">Tất cả truyện</h1>
@@ -85,6 +87,7 @@
     <div class="chips" id="sortChips">
       <button class="chip" data-sort="name">Tên A-Z</button>
       <button class="chip" data-sort="size">Dài nhất</button>
+      <button class="chip" data-sort="new">Mới cập nhật</button>
     </div>
     <div class="empty" id="loading"><div class="spinner"></div>Đang tải danh sách...</div>
     <div class="alist" id="storyList"></div>
@@ -136,19 +139,34 @@ const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
 const fmtSize = (b) => b >= 1048576 ? (b / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(b / 1024)) + ' KB';
 const chapterCount = (f) => { const m = f.match(/-(\d+)\.txt$/) || f.match(/\+(\d+)\.txt$/); return m ? parseInt(m[1]) : 0; };
 // Màu ô bìa như Local Cinema: truyện nhiều chương = hồng, truyện 1 chương / không rõ = xanh dương
-const coverHue = (s) => (chapterCount(s.file) > 1 ? 335 : 215);
+// Số chương: alicesw ghi sẵn (ch); nguồn khác lấy từ tên file (-0044.txt / +44.txt)
+const storyChapters = (s) => s.ch || chapterCount(s.file);
+const coverHue = (s) => (storyChapters(s) > 1 ? 335 : 215);
 // Nguồn = thư mục cấp 1 trong Truyện/ (phần đầu uid)
 const sourceOf = (s) => s.uid.split('/')[0];
-// stories.json gọn: { sources: {nguồn: [thư mục truyện, thư mục tóm tắt]}, stories: [{uid, file, category, title, size, has_sum}] }
+// stories.json gọn: { sources: {nguồn: [thư mục truyện, thư mục tóm tắt]}, stories: [{uid, file, category, title, size, has_sum, t?, tags?, was?}] }
+// (t = ngày cập nhật YYYY-MM-DD, tags = thẻ tag trên trang nguồn, was = uid cũ trước khi file đổi tên vì có chương mới)
 // ⇒ tự tính lại id / base / sum_base / has_raw (bản cũ dạng mảng đầy đủ trường vẫn đọc được)
 const STORIES = fetch('stories.json').then((r) => r.json()).then((d) => {
   if (Array.isArray(d)) return d;
+  // tags: số thứ tự trong d.tags (ghi tên 1 lần cho nhẹ file) ⇒ đổi lại thành tên; nguồn có cờ gz ⇒ file nén .gz
   return d.stories.map((s) => {
     const src = s.uid.slice(0, s.uid.indexOf('/'));
-    const [base, sum_base] = d.sources[src] || ['', ''];
-    return { ...s, id: s.uid.slice(src.length + 1), base, sum_base, has_raw: true };
+    const [base, sum_base, opt] = d.sources[src] || ['', ''];
+    const tags = s.tags && s.tags.map((t) => (typeof t === 'number' ? d.tags[t] : t));
+    return { ...s, ...(tags ? { tags } : {}), id: s.uid.slice(src.length + 1), base, sum_base, has_raw: true, gz: !!(opt && opt.gz) };
   });
 });
+// Nội dung truyện: nguồn nén (alicesw) ⇒ tải <id>.gz rồi giải nén ngay trên trình duyệt (Safari ≥ 16.4, Chrome ≥ 80)
+async function fetchStoryText(s) {
+  const res = await fetch(`${s.base}/${s.id}${s.gz ? '.gz' : ''}`);
+  if (!res.ok) throw new Error(`Không tải được nội dung: HTTP ${res.status}`);
+  if (!s.gz) return res.text();
+  // Chỉ giải nén khi đúng là dữ liệu gzip (2 byte đầu 1f 8b): server nào tự giải nén hộ (Content-Encoding) thì đọc thẳng
+  const buf = new Uint8Array(await res.arrayBuffer());
+  if (buf[0] !== 0x1f || buf[1] !== 0x8b) return new TextDecoder().decode(buf);
+  return new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+}
 const readLink = (uid, mode) => `#/read?uid=${encodeURIComponent(uid)}${mode === 'sum' ? '&mode=sum' : ''}`;
 
 function showToast(msg, type = 'info') {

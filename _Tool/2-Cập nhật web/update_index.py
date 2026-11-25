@@ -10,6 +10,13 @@ SOURCES = [
     ("Text Mp3", "Truyện/1-Text Mp3", "Truyện/3-Tóm tắt/1-Text Mp3"),
 ]
 OUTPUT_JSON = os.path.join(ROOT_DIR, "stories.json")
+# Thông tin truyện truyencogiaothao do tool tự cập nhật ghi (_Tool/1-Tải truyện/update_truyencogiaothao.py)
+META_JSON = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "1-Tải truyện", "giaothao_meta.json")
+# Nguồn alicesw: file nén + danh sách do sync_alicesw.py ghi (tạm chung repo Audio, sau có thể tách repo riêng)
+ALICE_BASE = "Truyện/4-alicesw"
+ALICE_INDEX = os.path.join(ROOT_DIR, ALICE_BASE, "index.json")
+# Bảng gộp file Text Mp3 (ten_1/_2/... ⇒ ten.txt), ghi bởi _Tool/3-Làm sạch text/gop_file_text_mp3.py
+MERGE_MAP = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "3-Làm sạch text", "gop_file_map.json")
 
 # Mapping Text Mp3 folders to categories
 FOLDER_MAPPING = {
@@ -104,23 +111,85 @@ def get_stories_from_dir(base_path, relative_to):
 def main():
     # stories.json gọn (anh Thai chốt 2026-11-25): { sources: {tên nguồn: [thư mục truyện, thư mục tóm tắt]}, stories: [...] }
     # Mỗi truyện chỉ giữ trường web cần; id / base / sum_base / has_raw web tự tính lại từ uid + sources (index.html).
+    # Truyện truyencogiaothao có thêm: t = ngày chương mới nhất (YYYY-MM-DD), tags = thẻ tag trên trang,
+    # was = uid cũ trước khi file đổi tên vì nối chương mới (web chuyển lịch sử nghe + yêu thích sang uid mới)
+    try:
+        with open(META_JSON, encoding="utf-8") as f:
+            meta = json.load(f)
+    except FileNotFoundError:
+        meta = {}
+    try:
+        with open(MERGE_MAP, encoding="utf-8") as f:
+            merged = json.load(f)
+    except FileNotFoundError:
+        merged = {}
     all_stories = []
     for name, base, sum_base in SOURCES:
         print(f"Scanning {base}...")
         src_dir = os.path.join(ROOT_DIR, base)
         for s in get_stories_from_dir(src_dir, src_dir):
-            all_stories.append({
+            st = {
                 "uid": f"{name}/{s['id']}",
                 "file": s["file"],
                 "category": s["category"],
                 "title": s["title"],
                 "size": s["size"],
                 "has_sum": os.path.exists(os.path.join(ROOT_DIR, sum_base, s["id"])),
+            }
+            # Text Mp3: file gộp từ ten_1.txt, ten_2.txt... (gop_file_text_mp3.py) ⇒ web chuyển lịch sử từ uid cũ
+            if st["uid"] in merged:
+                st["was"] = merged[st["uid"]]
+            m = meta.get(re.sub(r'-\d+\.txt$', '', s["file"])) if name == "truyencogiaothao" else None
+            if m:
+                if m.get("updated"): st["t"] = m["updated"]
+                if m.get("tags"): st["tags"] = m["tags"]
+                folder = s["id"].rsplit("/", 1)[0]
+                was = [f"{name}/{folder}/{w}" for w in m.get("was", []) if w != s["file"]]
+                if was: st["was"] = was
+            all_stories.append(st)
+
+    # Nguồn alicesw: file nén ở Truyện/4-alicesw (sync_alicesw.py tạo). Thêm: ch = số chương, author, done = đã hoàn thành
+    sources = {name: [base, sum_base] for name, base, sum_base in SOURCES}
+    try:
+        with open(ALICE_INDEX, encoding="utf-8") as f:
+            alice = json.load(f)
+    except FileNotFoundError:
+        alice = {}
+        print(f"(Chưa có {ALICE_BASE}/index.json — chạy sync_alicesw.py trước để có nguồn alicesw)")
+    if alice:
+        print(f"Scanning alicesw ({len(alice)} truyện)...")
+        sources["alicesw"] = [ALICE_BASE, "", {"gz": True}]
+        for nid, a in alice.items():
+            tags = a["tags"]
+            all_stories.append({
+                "uid": f"alicesw/{nid}.txt",
+                "file": a["file"].rsplit("/", 1)[-1],
+                # 📁 trên hàng truyện: tag cụ thể đầu tiên (gần như truyện nào cũng có "Mẹ con")
+                "category": next((t for t in tags if t != "Mẹ con"), tags[0] if tags else "alicesw"),
+                "title": a["title"],
+                "size": a["size"],
+                "has_sum": False,
+                "t": a["t"],
+                "tags": tags,
+                "ch": a["ch"],
+                "author": a["author"],
+                "done": a["done"],
             })
 
     print(f"Total stories found: {len(all_stories)}")
 
-    data = {"sources": {name: [base, sum_base] for name, base, sum_base in SOURCES}, "stories": all_stories}
+    # Tag ghi 1 lần ở "tags", mỗi truyện chỉ giữ số thứ tự (alicesw ~40 tag / truyện ⇒ file nhẹ đi gần 1 nửa); web tự đổi lại
+    tag_list, tag_id = [], {}
+    def tag_index(t):
+        if t not in tag_id:
+            tag_id[t] = len(tag_list)
+            tag_list.append(t)
+        return tag_id[t]
+    for st in all_stories:
+        if st.get("tags"):
+            st["tags"] = [tag_index(t) for t in st["tags"]]
+
+    data = {"sources": sources, "tags": tag_list, "stories": all_stories}
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
     

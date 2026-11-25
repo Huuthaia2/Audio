@@ -8,15 +8,19 @@ echo ==================================================
 echo              CAP NHAT WEB DOC TRUYEN
 echo ==================================================
 echo.
-echo [1/3] Chia the loai cho truyen moi tai (truyencogiaothao)...
+echo [1/4] Chia the loai cho truyen moi tai (truyencogiaothao)...
 python "%WEB_DIR%\auto_sort_giaothao.py"
 
 echo.
-echo [2/3] Tao lai danh sach truyen (stories.json)...
+echo [2/4] Dong bo nguon alicesw (nen truyen moi / doi vao Truyen\4-alicesw)...
+python "%WEB_DIR%\sync_alicesw.py"
+
+echo.
+echo [3/4] Tao lai danh sach truyen (stories.json)...
 python "%WEB_DIR%\update_index.py"
 
 echo.
-echo [3/3] Dua len GitHub de web online cap nhat
+echo [4/4] Dua len GitHub de web online cap nhat
 cd /d "%~dp0.."
 git -c core.quotepath=false status --short -- stories.json "Truy*"
 set "p="

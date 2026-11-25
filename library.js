@@ -1,13 +1,16 @@
 // Màn danh sách (#/) + màn lịch sử (#/history) — hiển thị theo phần Audio của Local Cinema.
 // Danh sách: Đang nghe dở · Nguồn (thư mục cấp 1) · Tag (thể loại) · danh sách chia trang.
-// Nguồn: 1-Text Mp3, 2-truyencogiaothao (phần đầu uid). Tag: tạm thời = thư mục thể loại (story.category).
+// Nguồn: 1-Text Mp3, 2-truyencogiaothao, alicesw (phần đầu uid).
+// Tag của truyện = thể loại (story.category) + tag trên trang nguồn (story.tags). Chọn NHIỀU tag ⇒ truyện phải có ĐỦ.
 
 const PER_PAGE = 50;
 let allStories = [];
 let byUid = new Map();
-let sortedByName = [], sortedBySize = []; // sắp sẵn 1 lần lúc tải; lọc giữ nguyên thứ tự ⇒ không phải sắp lại mỗi lần gõ
+let sortedByName = [], sortedBySize = [], sortedByNew = []; // sắp sẵn 1 lần lúc tải; lọc giữ nguyên thứ tự ⇒ không phải sắp lại mỗi lần gõ
 let filtered = [];
-let lib = { src: 'all', tag: 'all', sort: 'name', page: 1, hideDone: false };
+let lib = { src: 'all', tags: [], sort: 'name', page: 1, hideDone: false };
+let showAllTags = false;           // "Xem tất cả tag": mặc định chỉ 2 dòng
+const SKIP_TAGS = new Set(['R-18', 'Tiếng Trung']); // không phải thể loại (anh Thai chốt 2026-11-25)
 let libScroll = 0;
 let libReady = false;
 
@@ -23,10 +26,15 @@ async function ensureStories() {
     return false;
   }
   byUid = new Map(allStories.map((s) => [s.uid, s]));
-  // Tên + tên file đã bỏ dấu tính sẵn 1 lần (trước đây mỗi lần gõ tìm bỏ dấu lại cả 4512 truyện)
-  for (const s of allStories) s._q = removeAccents(s.title) + '|' + removeAccents(s.file);
+  // Tên + tên file + tag đã bỏ dấu tính sẵn 1 lần (trước đây mỗi lần gõ tìm bỏ dấu lại cả 4512 truyện)
+  for (const s of allStories) {
+    s._q = removeAccents(s.title) + '|' + removeAccents(s.file) + (s.tags ? '|' + removeAccents(s.tags.join('|')) : '');
+    s._tags = new Set([s.category, ...(s.tags || [])].filter((t) => t && !SKIP_TAGS.has(t)));
+  }
   sortedByName = [...allStories].sort((a, b) => a.title.localeCompare(b.title, 'vi'));
   sortedBySize = [...allStories].sort((a, b) => b.size - a.size);
+  // Mới cập nhật: theo t (ngày chương mới nhất) giảm dần, truyện không có ngày xếp cuối; cùng ngày giữ thứ tự tên
+  sortedByNew = [...sortedByName].sort((a, b) => (b.t || '').localeCompare(a.t || ''));
   restoreLibState();
   libReady = true;
   return true;
@@ -40,7 +48,9 @@ function restoreLibState() {
   try {
     const st = JSON.parse(sessionStorage.getItem('libraryState'));
     if (!st) return;
-    lib = { src: st.src || 'all', tag: st.tag || st.cat || 'all', sort: st.sort || 'name', page: st.page || 1, hideDone: !!st.hideDone };
+    const old = st.tag || st.cat; // bản cũ chỉ lọc 1 tag (chuỗi)
+    lib = { src: st.src || 'all', tags: Array.isArray(st.tags) ? st.tags : old && old !== 'all' ? [old] : [],
+      sort: st.sort || 'name', page: st.page || 1, hideDone: !!st.hideDone };
     $('searchInput').value = st.search || '';
     libScroll = st.scroll || 0;
   } catch (e) {}
@@ -52,6 +62,7 @@ async function libShow() {
   if (!(await ensureStories())) return;
   if (first || !$('storyList').children.length) applyFilter(false);
   else libRefresh();
+  clampTags();
   requestAnimationFrame(() => window.scrollTo(0, libScroll));
 }
 function libLeave() { libScroll = window.scrollY; saveLibState(); }
@@ -67,36 +78,77 @@ function libRefresh() {
 function renderFilters() {
   const srcCount = {};
   allStories.forEach((s) => srcCount[sourceOf(s)] = (srcCount[sourceOf(s)] || 0) + 1);
-  const srcs = Object.keys(srcCount).sort((a, b) => (a === 'Text Mp3' ? -1 : b === 'Text Mp3' ? 1 : a.localeCompare(b)));
+  const ORDER = ['Text Mp3', 'truyencogiaothao', 'alicesw']; // nguồn mới thêm xếp sau
+  const rank = (k) => (ORDER.includes(k) ? ORDER.indexOf(k) : ORDER.length);
+  const srcs = Object.keys(srcCount).sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
   $('srcHead').textContent = `Nguồn (${srcs.length})`;
   $('srcList').innerHTML = srcs.map((k) => `<button class="fcard${lib.src === k ? ' on' : ''}" data-src="${esc(k)}">
       <div class="fimg">${icon('folder')}</div>
       <div><div class="fname">${esc(k)}</div><div class="fcount">${srcCount[k]} truyện</div></div>
     </button>`).join('');
 
-  // Số truyện của mỗi tag theo nguồn đang chọn
-  const tagCount = {};
-  allStories.forEach((s) => { if (lib.src === 'all' || sourceOf(s) === lib.src) tagCount[s.category] = (tagCount[s.category] || 0) + 1; });
-  const tags = Object.entries(tagCount).sort((a, b) => b[1] - a[1]);
-  if (lib.tag !== 'all' && !tagCount[lib.tag]) lib.tag = 'all';
-  $('tagHead').textContent = `Tag (${tags.length})`;
-  const total = tags.reduce((n, t) => n + t[1], 0);
-  $('tagList').innerHTML = `<button class="tag${lib.tag === 'all' ? ' on' : ''}" data-tag="all">Tất cả <small>${total}</small></button>`
-    + tags.map(([t, n]) => `<button class="tag${lib.tag === t ? ' on' : ''}" data-tag="${esc(t)}">${esc(t)} <small>${n}</small></button>`).join('');
 }
+
+// Khu Tag (anh Thai chốt 2026-11-25): tối đa 2 DÒNG — "Tất cả", tag đang chọn (bấm lại để bỏ), rồi tag nhiều truyện nhất.
+// Số trên tag = số truyện trong KẾT QUẢ ĐANG LỌC (chọn thêm tag là thu hẹp dần). "Xem tất cả tag" / gõ ô tìm tag ⇒ mở hết.
+function renderTags(baseCount) {
+  const count = new Map();
+  for (const s of filtered) for (const t of s._tags) count.set(t, (count.get(t) || 0) + 1);
+  const tq = removeAccents($('tagSearch').value.trim());
+  const rest = [...count].filter(([t]) => !lib.tags.includes(t)).sort((a, b) => b[1] - a[1]);
+  const open = showAllTags || !!tq;
+  // Thu gọn: chỉ vẽ ~80 tag đầu (2 dòng không chứa nổi hơn), mở ra mới vẽ hết
+  const shown = tq ? rest.filter(([t]) => removeAccents(t).includes(tq)) : open ? rest : rest.slice(0, 80);
+  const box = $('tagList');
+  $('tagHead').textContent = `Tag (${count.size})`;
+  box.classList.toggle('open', open);
+  box.innerHTML = `<button class="tag${lib.tags.length ? '' : ' on'}" data-tag="all">Tất cả <small>${baseCount}</small></button>`
+    + lib.tags.map((t) => `<button class="tag on" data-tag="${esc(t)}" title="Bỏ tag này">${esc(t)} <small>${count.get(t) || 0}</small> ${icon('x', 'sm')}</button>`).join('')
+    + shown.map(([t, n]) => `<button class="tag" data-tag="${esc(t)}">${esc(t)} <small>${n}</small></button>`).join('')
+    + (tq && !shown.length ? '<span class="tag-none">Không có tag nào khớp</span>' : '');
+  tagRest = rest.length;
+  $('tagMore').innerHTML = showAllTags ? `Thu gọn ${icon('chevronUp', 'sm')}` : `Xem tất cả tag (${rest.length}) ${icon('right', 'sm')}`;
+  clampTags();
+}
+
+// Cắt khu Tag còn 2 dòng: đo vị trí thật của chip (đúng ở mọi cỡ chữ / màn hình). Gọi lại khi hiện màn danh sách / đổi cỡ
+// cửa sổ (lúc màn đang ẩn không đo được). Điện thoại = lưới 2 hàng vuốt ngang ⇒ bỏ qua.
+let tagRest = 0;
+function clampTags() {
+  const box = $('tagList');
+  if ($('libView').hidden || !box.children.length) return;
+  const chips = [...box.children];
+  chips.forEach((c) => { c.hidden = false; });
+  const open = box.classList.contains('open');
+  let visible = chips.filter((c) => c.dataset.tag && c.dataset.tag !== 'all' && !c.classList.contains('on')).length;
+  if (!open && getComputedStyle(box).display !== 'grid') {
+    const rows = [...new Set(chips.map((c) => c.offsetTop))].sort((x, y) => x - y);
+    if (rows.length > 2) {
+      visible = 0;
+      for (const c of chips) {
+        if (c.offsetTop > rows[1]) c.hidden = true;
+        else if (c.dataset.tag !== 'all' && !c.classList.contains('on')) visible++;
+      }
+    }
+  }
+  $('tagMore').hidden = !!$('tagSearch').value.trim() || (!showAllTags && visible >= tagRest);
+}
+let clampTimer;
+window.addEventListener('resize', () => { clearTimeout(clampTimer); clampTimer = setTimeout(clampTags, 150); });
 
 function applyFilter(resetPage = true) {
   if (resetPage) lib.page = 1;
   renderFilters();
   const q = removeAccents($('searchInput').value.trim());
-  filtered = (lib.sort === 'size' ? sortedBySize : sortedByName).filter((s) => (lib.src === 'all' || sourceOf(s) === lib.src)
-    && (lib.tag === 'all' || s.category === lib.tag)
+  const base = (lib.sort === 'size' ? sortedBySize : lib.sort === 'new' ? sortedByNew : sortedByName).filter((s) => (lib.src === 'all' || sourceOf(s) === lib.src)
     && (!lib.hideDone || !histGet(s.uid)?.done)
     && (!q || s._q.includes(q)));
+  filtered = lib.tags.length ? base.filter((s) => lib.tags.every((t) => s._tags.has(t))) : base;
+  renderTags(base.length);
 
   document.querySelectorAll('#sortChips .chip').forEach((b) => b.classList.toggle('on', b.dataset.sort === lib.sort));
   $('hideDone').checked = lib.hideDone;
-  const parts = [lib.src !== 'all' ? lib.src : '', lib.tag !== 'all' ? lib.tag : ''].filter(Boolean);
+  const parts = [lib.src !== 'all' ? lib.src : '', lib.tags.join(' + ')].filter(Boolean);
   $('viewTitle').textContent = q ? `Kết quả: “${$('searchInput').value.trim()}”` : (parts.join(' · ') || 'Tất cả truyện');
   $('viewCount').textContent = `${filtered.length} truyện`;
   $('statsText').textContent = `${allStories.length} truyện`;
@@ -109,7 +161,7 @@ function applyFilter(resetPage = true) {
 // Hàng truyện kiểu hàng audio Local Cinema:
 // [ô bìa: 🎧 · rê chuột ▶ · đang phát 3 vạch] Tên + "N chương" / 📁 tag · đang nghe chương X · dung lượng  [Tóm tắt] ♡  ── thanh tiến độ
 function rowHtml(s, extraSub = '') {
-  const chapters = chapterCount(s.file);
+  const chapters = storyChapters(s);
   const h = histGet(s.uid);
   const pct = histPct(h, chapters) * 100;
   const info = h && !h.done ? `đang nghe chương ${(h.ch || 0) + 1} · ` : '';
@@ -117,12 +169,29 @@ function rowHtml(s, extraSub = '') {
     <button class="acover" style="--h:${coverHue(s)}" aria-label="Phát">${icon('headphones', 'ic-idle')}${icon('play', 'fill ic-play')}${icon('pause', 'fill ic-pause')}<span class="eq"><i></i><i></i><i></i></span></button>
     <div class="ainfo">
       <div class="title">${esc(s.title)}${chapters > 1 ? `<span class="apart">${chapters} chương</span>` : ''}</div>
-      <div class="sub">${extraSub || `${icon('folder', 'sm')} ${esc(s.category)} · ${info}${fmtSize(s.size)}`}</div>
+      <div class="sub">${extraSub || `${icon('folder', 'sm')} ${esc(rowTags(s))} · ${s.t ? `${icon('calendar', 'sm')} ${s.t.split('-').reverse().join('/')} · ` : ''}${info}${fmtSize(s.size)}`}</div>
     </div>
     ${s.has_sum ? `<button class="abadge" data-sum="${esc(s.uid)}" title="Xem tóm tắt">${icon('fileText', 'sm')}<span>Tóm tắt</span></button>` : ''}
     ${favBtnHtml(s.uid, 'inline')}
     ${pct ? `<span class="aprog" style="width:${pct}%"></span>` : ''}
   </div>`;
+}
+
+// 📁 trên hàng: alicesw có hàng chục tag ⇒ 2 tag cụ thể đầu; nguồn khác ⇒ thể loại
+function rowTags(s) {
+  if (sourceOf(s) !== 'alicesw' || !s.tags) return s.category;
+  return s.tags.filter((t) => t !== 'Mẹ con' && !SKIP_TAGS.has(t)).slice(0, 2).join(', ') || s.category;
+}
+
+// Bấm tag trên trang truyện ⇒ về danh sách, lọc đúng nguồn + tag đó
+function libFilterTag(src, tag) {
+  lib.src = src; lib.tags = [tag]; lib.page = 1;
+  $('searchInput').value = ''; $('tagSearch').value = '';
+  libScroll = 0;
+  saveLibState();
+  if (libReady) applyFilter();
+  location.hash = '#/';
+  setTimeout(() => { $('viewTitle').scrollIntoView({ block: 'start' }); window.scrollBy(0, -70); }, 50);
 }
 
 // Nút ♡ yêu thích (đồng bộ qua history.js). inline = trên hàng; icon-btn = trên trang truyện
@@ -173,7 +242,7 @@ function goPage(n) {
 function renderResume() {
   if (!libReady) return;
   // Chọn Nguồn / Tag ⇒ vẫn hiện, chỉ lọc theo nguồn / tag đó (như "Đang nghe dở" trong thư mục của Local Cinema)
-  const inView = (s) => (lib.src === 'all' || sourceOf(s) === lib.src) && (lib.tag === 'all' || s.category === lib.tag);
+  const inView = (s) => (lib.src === 'all' || sourceOf(s) === lib.src) && lib.tags.every((t) => s._tags.has(t));
   const items = histList().filter(([uid, h]) => !h.done && byUid.has(uid) && inView(byUid.get(uid))).slice(0, 5);
   $('resumeList').innerHTML = items.map(([uid]) => rowHtml(byUid.get(uid))).join('');
   $('resumeSec').hidden = !items.length || !!$('searchInput').value.trim();
@@ -219,7 +288,7 @@ async function renderHistory(params) {
   }
   const time = (ms) => new Date(ms).toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
   const sub = (s, h) => `${icon('folder', 'sm')} ${esc(s.category)} · `
-    + (h.done ? `${icon('check', 'sm')} Đã nghe xong` : `đang nghe chương ${(h.ch || 0) + 1}${h.n ? ` · ${Math.round(histPct(h, chapterCount(s.file) || 1) * 100)}%` : ''}`)
+    + (h.done ? `${icon('check', 'sm')} Đã nghe xong` : `đang nghe chương ${(h.ch || 0) + 1}${h.n ? ` · ${Math.round(histPct(h, storyChapters(s) || 1) * 100)}%` : ''}`)
     + ` · ${time(h.t)}`;
 
   $('histView').innerHTML = `
@@ -293,7 +362,15 @@ $('libView').addEventListener('click', (e) => {
   const src = e.target.closest('.fcard[data-src]');
   if (src) { lib.src = lib.src === src.dataset.src ? 'all' : src.dataset.src; applyFilter(); return; }
   const tag = e.target.closest('.tag[data-tag]');
-  if (tag) { lib.tag = tag.dataset.tag; applyFilter(); return; }
+  if (tag) {
+    // "Tất cả" ⇒ bỏ hết tag; tag đã chọn ⇒ bỏ; tag khác ⇒ thêm (truyện phải có đủ các tag đã chọn)
+    const t = tag.dataset.tag;
+    lib.tags = t === 'all' ? [] : lib.tags.includes(t) ? lib.tags.filter((x) => x !== t) : [...lib.tags, t];
+    $('tagSearch').value = '';
+    applyFilter();
+    $('tagList').scrollLeft = 0; // điện thoại: dải tag vuốt ngang ⇒ về đầu để thấy tag vừa chọn (đã xếp lên đầu)
+    return;
+  }
   const chip = e.target.closest('#sortChips .chip');
   if (chip) { lib.sort = chip.dataset.sort; applyFilter(); return; }
   const pg = e.target.closest('#pager button[data-page]');
@@ -305,6 +382,9 @@ $('pager').addEventListener('submit', (e) => {
   if (v) goPage(v);
 });
 $('hideDone').onchange = () => { lib.hideDone = $('hideDone').checked; applyFilter(); };
+$('tagMore').onclick = () => { showAllTags = !showAllTags; applyFilter(false); };
+let tqTimer;
+$('tagSearch').addEventListener('input', () => { clearTimeout(tqTimer); tqTimer = setTimeout(() => applyFilter(false), 150); });
 let qTimer;
 $('searchInput').addEventListener('input', () => { clearTimeout(qTimer); qTimer = setTimeout(() => applyFilter(), 150); });
 let sTimer;
