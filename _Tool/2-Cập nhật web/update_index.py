@@ -2,10 +2,13 @@ import os
 import json
 import re
 
-ROOT_DIR = r"c:\Users\Windows\Documents\MEGA\Audio"
-TRUYEN_DIR = os.path.join(ROOT_DIR, "truyencogiaothao")
-TEXT_MP3_DIR = os.path.join(ROOT_DIR, "Text Mp3")
-TOM_TAT_DIR = os.path.join(ROOT_DIR, "Tóm tắt")
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # _Tool/2-Cập nhật web/ -> gốc
+# Thư mục gộp: Truyện/{1-Text Mp3, 2-truyencogiaothao, 3-Tóm tắt/{1-Text Mp3, 2-truyencogiaothao}}
+# Mỗi nguồn: (tên nguồn — giữ làm tiền tố uid để không mất tiến độ đọc cũ, thư mục truyện, thư mục tóm tắt)
+SOURCES = [
+    ("truyencogiaothao", "Truyện/2-truyencogiaothao", "Truyện/3-Tóm tắt/2-truyencogiaothao"),
+    ("Text Mp3", "Truyện/1-Text Mp3", "Truyện/3-Tóm tắt/1-Text Mp3"),
+]
 OUTPUT_JSON = os.path.join(ROOT_DIR, "stories.json")
 
 # Mapping Text Mp3 folders to categories
@@ -64,6 +67,8 @@ def extract_title_from_file(filepath, fallback_title):
 def get_stories_from_dir(base_path, relative_to):
     stories = []
     for root, dirs, files in os.walk(base_path):
+        # Bỏ zDaCoMp3 (đã có mp3) và zzzzLoi (file lỗi) — trước khi gộp 2 thư mục này cũng không được index
+        dirs[:] = [d for d in dirs if not d.startswith("z")]
         for f in files:
             if f.endswith(".txt"):
                 full_path = os.path.join(root, f)
@@ -93,29 +98,22 @@ def get_stories_from_dir(base_path, relative_to):
                     "category": clean_cat,
                     "title": real_title,
                     "size": os.path.getsize(full_path),
-                    "base": os.path.basename(relative_to)
                 })
     return stories
 
 def main():
-    print("Scanning truyencogiaothao...")
-    stories_raw = get_stories_from_dir(TRUYEN_DIR, TRUYEN_DIR)
-    
-    print("Scanning Text Mp3...")
-    stories_mp3 = get_stories_from_dir(TEXT_MP3_DIR, TEXT_MP3_DIR)
-    
-    all_stories = stories_raw + stories_mp3
-    
-    # Check for summaries
-    for s in all_stories:
-        sum_path = os.path.join(TOM_TAT_DIR, s["id"])
-        s["has_raw"] = True
-        s["has_sum"] = os.path.exists(sum_path)
-
-    # Dedup by id? No, id is relative to base.
-    # We should probably use a unique id.
-    for s in all_stories:
-        s["uid"] = f"{s['base']}/{s['id']}"
+    all_stories = []
+    for name, base, sum_base in SOURCES:
+        print(f"Scanning {base}...")
+        src_dir = os.path.join(ROOT_DIR, base)
+        stories = get_stories_from_dir(src_dir, src_dir)
+        for s in stories:
+            s["base"] = base
+            s["sum_base"] = sum_base
+            s["has_raw"] = True
+            s["has_sum"] = os.path.exists(os.path.join(ROOT_DIR, sum_base, s["id"]))
+            s["uid"] = f"{name}/{s['id']}"
+        all_stories += stories
 
     print(f"Total stories found: {len(all_stories)}")
     

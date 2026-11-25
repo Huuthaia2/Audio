@@ -2,9 +2,9 @@ import os
 import json
 import re
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-TOMTAT_DIR = os.path.join(BASE_DIR, "Tóm tắt")
-RAW_DIR = os.path.join(BASE_DIR, "truyencogiaothao")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # _Tool/2-Cập nhật web/ -> gốc
+TOMTAT_DIR = os.path.join(BASE_DIR, "Truyện", "3-Tóm tắt", "2-truyencogiaothao")
+RAW_DIR = os.path.join(BASE_DIR, "Truyện", "2-truyencogiaothao")
 
 def get_categories():
     categories = {}

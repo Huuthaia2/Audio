@@ -788,7 +788,7 @@
     async function fetchContent(story) {
       const contentDiv = document.getElementById('storyContent');
       try {
-        let url = mode === 'sum' ? `Tóm tắt/${story.id}` : `${story.base}/${story.id}`;
+        let url = mode === 'sum' ? `${story.sum_base}/${story.id}` : `${story.base}/${story.id}`;
         const res = await fetch(url);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const text = await res.text();
@@ -827,10 +827,11 @@
         }
 
         if (chapterRegex.test(t) || t.match(/^={3,} Chương/i)) {
-          if (currentChapter.content.filter(l => l.trim()).length > 0) {
+          // Khối đầu file chỉ có "=====" + "TITLE: ..." (file tool leech) thì bỏ, không tính là 1 chương
+          if (currentChapter.content.filter(l => l.trim() && !/^=+$/.test(l) && !/^TITLE:/i.test(l)).length > 0) {
             chapters.push(currentChapter);
           }
-          currentChapter = { title: t.replace(/^={3,}\s*/, ''), content: [] };
+          currentChapter = { title: t.replace(/^={3,}\s*/, '').replace(/\s*={3,}$/, ''), content: [] };
           foundChapterKeyword = true;
         } else {
           currentChapter.content.push(t);

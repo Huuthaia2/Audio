@@ -8,7 +8,9 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # --- CẤU HÌNH ---
-CHECK_DIR = r"C:\Users\Windows\Documents\MEGA\Audio\Text Mp3"
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CHECK_DIR = os.path.join(ROOT_DIR, "Truyện")  # Check trùng với toàn bộ kho truyện
+OUT_DIR = os.path.join(ROOT_DIR, "Truyện", "2-truyencogiaothao")  # Lưu truyện mới tải (rồi auto_sort chia thể loại)
 MAX_WORKERS = 10  # Tải 10 chương cùng lúc
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
@@ -150,7 +152,7 @@ def leech_story(url_input):
         if finger in FINGERPRINT_MAP:
             matched_name = os.path.basename(FINGERPRINT_MAP[finger])
             print(f"[*] CẢNH BÁO: Trùng nội dung với: {matched_name}")
-            with open(f"_{slug}-=-{matched_name}", "w", encoding="utf-8") as f:
+            with open(os.path.join(OUT_DIR, f"_{slug}-=-{matched_name}"), "w", encoding="utf-8") as f:
                 f.write(f"SKIP (Trung Noi Dung): {FINGERPRINT_MAP[finger]}")
             return
 
@@ -174,7 +176,7 @@ def leech_story(url_input):
         file_name = "_" + file_name
         failed_chapters.sort(key=int)
 
-    with open(file_name, "w", encoding="utf-8") as f:
+    with open(os.path.join(OUT_DIR, file_name), "w", encoding="utf-8") as f:
         f.write(f"{'='*30}\n TITLE: {title}\n{'='*30}\n\n")
         
         if failed_chapters:

@@ -10,7 +10,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # --- CẤU HÌNH ---
 BASE_URL = "https://truyensex18.com"
 NEW_STORIES_URL = "https://truyensex18.com/truyen-moi"
-CHECK_DIR = r"c:\Users\Windows\Documents\MEGA\Audio\Text Mp3"
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CHECK_DIR = os.path.join(ROOT_DIR, "Truyện")  # Check trùng với toàn bộ kho truyện
+OUT_DIR = os.path.join(ROOT_DIR, "Truyện", "1-Text Mp3", "Mới tải")  # Truyện mới tải — tự chuyển vào thư mục thể loại sau
 MAX_WORKERS = 10  # Số lượng luồng (Tải 10 chương cùng lúc)
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
@@ -138,7 +140,8 @@ def leech_truyensex18():
             final_file_name = "_" + final_file_name
             failed_chapters.sort(key=int)
 
-        with open(final_file_name, "w", encoding="utf-8") as f:
+        os.makedirs(OUT_DIR, exist_ok=True)
+        with open(os.path.join(OUT_DIR, final_file_name), "w", encoding="utf-8") as f:
             f.write(f"{'='*30}\n TITLE: {title}\n{'='*30}\n\n")
             
             # Ghi Note nếu có lỗi

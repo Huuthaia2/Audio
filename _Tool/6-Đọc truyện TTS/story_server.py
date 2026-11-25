@@ -18,9 +18,9 @@ from gtts import gTTS
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs, unquote, quote
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-TOMTAT_DIR = os.path.join(BASE_DIR, "Tóm tắt")
-RAW_DIR = os.path.join(BASE_DIR, "truyencogiaothao")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # _Tool/6-Đọc truyện TTS/ -> gốc
+TOMTAT_DIR = os.path.join(BASE_DIR, "Truyện", "3-Tóm tắt", "2-truyencogiaothao")
+RAW_DIR = os.path.join(BASE_DIR, "Truyện", "2-truyencogiaothao")
 
 def remove_accents(input_str):
     if not input_str: return ""

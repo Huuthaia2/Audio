@@ -2,6 +2,7 @@ import os
 import re
 import requests
 import shutil
+import sys
 import unicodedata
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -14,7 +15,8 @@ def remove_accents(input_str):
     return "".join([c for c in nfkd_form if not unicodedata.combining(c)]).replace('đ', 'd').replace('Đ', 'D').lower()
 
 # --- CẤU HÌNH ---
-BASE_DIR = r"d:\z\Audio\_Tool\Audio\truyencogiaothao"
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # _Tool/2-Cập nhật web/ -> gốc
+BASE_DIR = os.path.join(ROOT_DIR, "Truyện", "2-truyencogiaothao")
 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'}
 MAX_WORKERS = 15 # Tăng tốc độ xử lý hàng loạt
@@ -127,16 +129,18 @@ def process_file_with_path(file_name, file_dir):
     return f"[-] {file_name} no match"
 
 def main():
-    # Quét đệ quy toàn bộ thư mục gốc, trừ zzzzLoi
+    # Mặc định: chỉ chia thể loại cho truyện MỚI TẢI (nằm ngay ở gốc BASE_DIR).
+    # Chạy kèm --all để quét lại toàn bộ thư mục thể loại như cách cũ.
+    scan_all = "--all" in sys.argv
     files_to_process = []
-    
+
     for root, dirs, files in os.walk(BASE_DIR):
-        # Loại bỏ zzzzLoi khỏi danh sách duyệt
-        if "zzzzLoi" in root:
-            continue
-            
+        # Bỏ zzzzLoi (file lỗi) + zDaCoMp3 (đã có mp3, không kéo về thể loại)
+        dirs[:] = [d for d in dirs if not d.startswith("z")] if scan_all else []
+
         for f in files:
-            if f.lower().endswith(".txt") and f != "truyencogiaothao.txt":
+            # Bỏ file "_..." = truyện tải lỗi chương / file đánh dấu trùng
+            if f.lower().endswith(".txt") and f != "truyencogiaothao.txt" and not f.startswith("_"):
                 files_to_process.append((f, root))
 
     if not files_to_process: return print("No files to sort.")
