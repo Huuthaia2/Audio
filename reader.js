@@ -144,7 +144,7 @@ function splitSegs(text) {
 // Google đọc tối đa 200 ký tự / lần: câu dài hơn (vd 222 ký tự toàn dấu phẩy, không dấu chấm) ⇒ HTTP 400 ⇒ trước đây
 // thử lại mãi rồi DỪNG HẲN giữa truyện (anh Thai: "nghe 1-2 câu là dừng, chạm 2 lần mới tiếp" — đo trên Android thật).
 // ⇒ cắt câu > 180 ký tự ở dấu phẩy / chấm phẩy / hai chấm gần nhất, không có thì ở khoảng trắng.
-const SEG_MAX = 180;
+const SEG_MAX = 150; // ≤ 150 ⇒ luôn còn chỗ nối thêm 1 câu ngắn (< 40) mà vẫn dưới 196 (buildChapter)
 function capSeg(t, out) {
   while (t.length > SEG_MAX) {
     let i = Math.max(t.lastIndexOf(', ', SEG_MAX), t.lastIndexOf('; ', SEG_MAX), t.lastIndexOf(': ', SEG_MAX));
@@ -156,18 +156,42 @@ function capSeg(t, out) {
   if (t) out.push(t);
 }
 
-// Dựng hàng đợi câu + HTML (giữ đoạn văn, mỗi câu 1 span) cho chương đang chọn của phiên
+// Dựng hàng đợi đọc + HTML (giữ đoạn văn, mỗi câu 1 span) cho chương đang chọn của phiên.
+// Câu QUÁ NGẮN (< SEG_MIN ký tự, vd thoại 2-4 từ "– Tự con hôn thôi.") ⇒ file Google < ~1,5s, iPhone hay kẹt ở 0s không phát
+// (nhật ký phát của anh Thai 2026-11-26: báo "phát được" nhưng t=0 [stalled], tải lại vẫn kẹt) ⇒ KHÔNG BAO GIỜ gửi câu ngắn
+// riêng: nối với câu liền kề (kể cả sang đoạn văn kế) thành 1 lượt đọc ≤ 196 ký tự (Google nhận tối đa 200).
+// Trên màn hình mỗi câu vẫn 1 span riêng; các span cùng lượt đọc chung data-i (tô sáng cùng lúc).
+const SEG_MIN = 40;
 function buildChapter(s) {
-  s.queue = [];
-  let html = '';
+  const paras = [];   // mỗi đoạn văn: mảng câu, hoặc chuỗi HTML có sẵn (<hr>, đoạn không có chữ để đọc)
+  const all = [];     // mọi câu theo thứ tự: { t: chữ, g: số thứ tự lượt đọc }
   for (const line of s.chapters[s.ch].content) {
     const t = line.trim();
     if (!t) continue;
-    if (/^={5,}/.test(t)) { html += '<hr>'; continue; }
+    if (/^={5,}/.test(t)) { paras.push('<hr>'); continue; }
     const segs = splitSegs(t);
-    if (!segs.length) { html += `<p>${esc(t)}</p>`; continue; }
-    html += '<p>' + segs.map((x) => `<span class="seg" data-i="${s.queue.push(x) - 1}">${esc(x)}</span>`).join(' ') + '</p>';
+    if (!segs.length) { paras.push(`<p>${esc(t)}</p>`); continue; }
+    const items = segs.map((x) => ({ t: x, g: 0 }));
+    all.push(...items); paras.push(items);
   }
+  // Câu kế nhập vào lượt đang dở nếu lượt đó còn ngắn hoặc chính câu đó ngắn, và tổng không quá 196 ký tự
+  const groups = [];
+  for (const it of all) {
+    const last = groups[groups.length - 1];
+    if (last && (last.len < SEG_MIN || it.t.length < SEG_MIN) && last.len + 2 + it.t.length <= 196) { last.items.push(it); last.len += 2 + it.t.length; }
+    else groups.push({ items: [it], len: it.t.length });
+  }
+  // Lượt còn ngắn (câu ngắn kẹp giữa 2 câu dài) ⇒ nhập vào lượt PHÍA SAU nếu vừa
+  for (let i = groups.length - 2; i >= 0; i--) {
+    const g = groups[i], nx = groups[i + 1];
+    if (g.len < SEG_MIN && g.len + 2 + nx.len <= 196) { nx.items.unshift(...g.items); nx.len += 2 + g.len; groups.splice(i, 1); }
+  }
+  // Câu nối vào mà không kết bằng dấu câu ⇒ thêm dấu chấm để giọng đọc vẫn ngắt nghỉ giữa các câu
+  s.queue = groups.map((g, i) => {
+    g.items.forEach((it) => { it.g = i; });
+    return g.items.map((it, k) => (k < g.items.length - 1 && !/[.!?…:;,”"]$/.test(it.t) ? it.t + '.' : it.t)).join(' ');
+  });
+  const html = paras.map((p) => (typeof p === 'string' ? p : '<p>' + p.map((it) => `<span class="seg" data-i="${it.g}">${esc(it.t)}</span>`).join(' ') + '</p>')).join('');
   s.html = html || '<div class="empty">Chương trống</div>';
   if (!(s.seg < s.queue.length)) s.seg = 0;
 }
@@ -568,9 +592,34 @@ const DEFAULT_RATE = 1.15; // anh Thai chốt 2026-11-25
 // Tốc độ đã lưu không có trong danh sách (vd 1.32 = mặc định bản cũ, không phải tự chọn) ⇒ về mặc định
 let rate = RATES.includes(parseFloat(lsGet('ttsRate'))) ? parseFloat(lsGet('ttsRate')) : DEFAULT_RATE;
 const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
-const ttsUrl = (t) => isLocal
+// v > 0 = lần tải lại thứ v của câu ⇒ thêm &r=v cho địa chỉ khác đi (Google vẫn trả đúng câu đó). Nhật ký iPhone 2026-11-26:
+// câu kẹt ở 0s (Google gửi file không báo độ dài, iPhone thỉnh thoảng không chịu) mà tải lại ĐÚNG địa chỉ cũ thì kẹt y như cũ
+// cả 3 lần ⇒ đổi địa chỉ để iPhone coi là yêu cầu mới.
+const ttsUrl = (t, v = 0) => (isLocal
   ? `http://127.0.0.1:9999/tts?q=${encodeURIComponent(t)}`
-  : `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(t)}`;
+  : `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(t)}`) + (v ? `&r=${v}` : '');
+let segVariant = 0, segVariantKey = null; // số lần đã tải lại câu đang đọc (đổi câu ⇒ về 0)
+// Cắt im lặng có sẵn trong file Google (đo 50 câu 2026-11-26: đầu 0,09-0,16s, cuối 0,26-0,97s, không theo quy luật) ⇒ bỏ
+// LEAD giây đầu + chuyển câu sớm TAIL giây trước khi hết file. Cả 2 nhỏ hơn mức im lặng NHỎ NHẤT đo được ⇒ không mất chữ.
+// Muốn khoảng hở thật sự = 0 phải đọc được dữ liệu âm thanh để dò đúng chỗ im lặng của từng file (Google chặn ⇒ cần trạm trung chuyển).
+// Đo trên Android thật: loa bắt đầu phát từ vị trí 0 mất ~300ms khởi động; loa đã "làm nóng" (chạy thử tắt tiếng rồi đứng ở
+// TTS_LEAD) thì phát ngay ⇒ làm nóng + tua tới TTS_LEAD lúc CHƯA tới lượt; tới lượt phát thì KHÔNG tua gì nữa.
+const TTS_LEAD = 0.08, TTS_TAIL = 0.22;
+let earlyT = null, earlyArmed = 0;
+function armEarly(p, id) {
+  clearTimeout(earlyT); earlyArmed = 0;
+  // Màn tắt: timer bị hãm ⇒ để sự kiện ended tự chuyển câu. File quá ngắn (< 0,6s, file Google thật ≥ 0,9s) ⇒ không cắt.
+  if (document.hidden || !isFinite(p.duration) || p.duration < 0.6 || p.paused) return;
+  earlyArmed = id;
+  const ms = (p.duration - p.currentTime - TTS_TAIL) / (p.playbackRate || 1) * 1000;
+  earlyT = setTimeout(() => {
+    if (!playing || id !== reqId || p !== curP || p.paused) return;
+    if (p.duration - p.currentTime > TTS_TAIL + 0.15) { armEarly(p, id); return; } // bị khựng giữa chừng ⇒ hẹn lại
+    tlog('  → chuyển sớm (bỏ im lặng cuối)', '', p);
+    p.pause();
+    if (p.onended) p.onended();
+  }, Math.max(0, ms));
+}
 // 4 loa: 1 đang đọc + 3 tải sẵn 3 câu kế (mạng chập chờn ⇒ ít khựng giữa câu). Mỗi loa nhớ câu đang giữ ở dataset.u
 const PRELOAD = 3;
 const pool = Array.from({ length: PRELOAD + 1 }, () => new Audio());
@@ -670,6 +719,7 @@ function pauseAudio() {
   clearTimeout(retryTimer);
   pool.forEach((a) => a.pause());
   keepAliveStop();
+  clearTimeout(earlyT);
   paintAll();
   if (sync.dirty) syncSoon(true); // dừng nghe ⇒ đẩy vị trí lên Gist sau 3s (máy kia mở là thấy đúng chỗ)
 }
@@ -682,7 +732,9 @@ function playSeg(scroll) {
   const s = player;
   savePos(s, true);
   paintAll(scroll);
-  const url = ttsUrl(s.queue[s.seg]);
+  const vKey = s.story.uid + ':' + s.ch + ':' + s.seg;
+  if (vKey !== segVariantKey) { segVariantKey = vKey; segVariant = 0; }
+  const url = ttsUrl(s.queue[s.seg], segVariant);
   // Màn sáng: dùng loa đã tải sẵn câu này (nếu có). Màn tắt: GIỮ NGUYÊN loa đang phát (điện thoại chặn phát ở loa khác)
   if (!document.hidden && !singleSpeaker) {
     const ready = pool.find((a) => a.dataset.u === url && !a.error);
@@ -694,8 +746,9 @@ function playSeg(scroll) {
   curP.defaultPlaybackRate = curP.playbackRate = rate;
   updateMediaSession();
   const p = curP;
+  p.muted = false;
   const txt = s.queue[s.seg];
-  tlog('▶ câu', `${txt.length}kt "${txt.slice(0, 28)}${txt.length > 28 ? '…' : ''}"${p.dataset.u === url && p.readyState > 0 ? ' (tải sẵn)' : ''}`, p);
+  tlog('▶ câu', `${txt.length}kt "${txt.slice(0, 28)}${txt.length > 28 ? '…' : ''}"${p.dataset.u === url && p.readyState > 0 ? (p.dataset.warm ? ' (tải sẵn, đã làm nóng)' : ' (tải sẵn, CHƯA làm nóng)') : ''}`, p);
   p.play().then(() => { okP = p; bgDenied = 0; if (id === reqId) retries = 0; tlog('  phát được', '', p); }).catch((e) => {
     tlog('  play() LỖI', e.name + (id !== reqId ? ' (cũ)' : ''), p);
     if (id !== reqId || e.name === 'AbortError') return;
@@ -729,7 +782,21 @@ function playSeg(scroll) {
       if (pool.some((a) => a.dataset.u === u && !a.error)) continue;
       const free = pool.find((a) => a !== curP && !want.includes(a.dataset.u));
       if (!free) break;
-      free.src = u; free.dataset.u = u; free.load();
+      free.src = u; free.dataset.u = u; delete free.dataset.warm; free.load();
+      // Tua sẵn qua im lặng đầu file ngay khi biết độ dài ⇒ tới lượt phát ngay, không mất thời gian tua
+      // Làm nóng: chạy thử TẮT TIẾNG 1 chút rồi đứng ở TTS_LEAD (bỏ im lặng đầu file) ⇒ buộc tải đủ dữ liệu + trình phát
+      // đã khởi động sẵn ⇒ tới lượt phát ngay.
+      const warmU = u;
+      free.onloadedmetadata = () => {
+        if (free === curP || free.dataset.u !== warmU) return;
+        free.muted = true;
+        free.play().then(() => setTimeout(() => {
+          if (free === curP || free.dataset.u !== warmU) { free.muted = false; return; }
+          free.pause(); free.muted = false;
+          try { free.currentTime = TTS_LEAD; } catch (e) {}
+          free.dataset.warm = '1';
+        }, 60)).catch((e) => { free.muted = false; tlog('  làm nóng loa tải sẵn lỗi', e.name, free); });
+      };
     }
   }
   curP.onended = () => {
@@ -751,6 +818,11 @@ function playSeg(scroll) {
     }
   };
   curP.onerror = () => { if (playing && id === reqId) retryLater(id); };
+  // Hẹn chuyển câu sớm TTS_TAIL giây (bỏ im lặng cuối file); hẹn lại khi biết độ dài / đổi tốc độ / phát tiếp sau khựng
+  curP.onplaying = curP.ondurationchange = curP.onratechange = () => { if (playing && id === reqId) armEarly(p, id); };
+  // Google gửi file không báo độ dài ⇒ lúc bắt đầu phát chưa biết (∞) ⇒ vừa biết độ dài trong lúc phát là hẹn ngay
+  curP.ontimeupdate = () => { if (playing && id === reqId && earlyArmed !== id && isFinite(p.duration)) armEarly(p, id); };
+  armEarly(p, id);
 }
 
 // Lỗi mạng / Google từ chối ⇒ thử lại câu đó (2s, 4s, 6s...), tối đa 5 lần rồi mới dừng
@@ -764,7 +836,7 @@ function retryLater(id) {
     return;
   }
   retryTimer = setTimeout(() => {
-    if (playing && id === reqId) { curP.removeAttribute('src'); delete curP.dataset.u; playSeg(false); }
+    if (playing && id === reqId) { curP.removeAttribute('src'); delete curP.dataset.u; segVariant++; playSeg(false); }
   }, 2000 * retries);
 }
 
@@ -780,11 +852,12 @@ const WATCH_MS = 200;
 const atAudioEnd = (a) => isFinite(a.duration) && a.duration > 0 && a.currentTime >= a.duration - 0.15;
 function watchReload(why) {
   watchStuck = 0;
-  if (++watchReloads > 2) {
-    console.warn('Câu', player.seg + 1, 'không phát được ⇒ bỏ qua'); tlog('⚠ bộ canh: tải lại 2 lần vẫn hỏng ⇒ BỎ QUA câu');
+  if (++watchReloads > 3) {
+    console.warn('Câu', player.seg + 1, 'không phát được ⇒ bỏ qua'); tlog('⚠ bộ canh: tải lại 3 lần vẫn hỏng ⇒ BỎ QUA câu');
     if (curP.onended) curP.onended();
   } else {
-    console.warn(why, '⇒ tải lại câu', player.seg + 1); tlog('⚠ bộ canh: ' + why + ' ⇒ tải lại câu');
+    segVariant++;
+    console.warn(why, '⇒ tải lại câu', player.seg + 1); tlog('⚠ bộ canh: ' + why + ' ⇒ tải lại câu (địa chỉ mới r=' + segVariant + ')');
     stopSegAudio();
     playSeg(false);
   }
@@ -806,7 +879,8 @@ setInterval(() => {
   } else if (t > 0.3 && !(curP.networkState === 2 && curP.readyState < 3)) {
     if (watchStuck === Math.round(1000 / WATCH_MS)) { tlog('⚠ bộ canh: đứng giữa câu ⇒ phát tiếp'); curP.play().catch(() => {}); }
     else if (sec >= 4) watchReload('Đứng giữa câu');
-  } else if (sec >= 8) watchReload('Âm thanh kẹt');
+  } else if (t <= 0.3 && curP.readyState >= 3 && !curP.paused && sec >= 2.5) watchReload('Kẹt ở 0s dù đã có dữ liệu');
+  else if (sec >= 8) watchReload('Âm thanh kẹt');
 }, WATCH_MS);
 
 // Mở lại app sau khi điện thoại chặn phát ⇒ phát tiếp đúng câu
@@ -944,9 +1018,10 @@ function renderChapMenu() {
   $('chapMenu').querySelector('.on')?.scrollIntoView({ block: 'center' });
 }
 function renderRateMenu() {
-  $('rateMenu').innerHTML = '<div class="ab-menu-h">Tốc độ đọc</div>'
-    + RATES.map((r) => `<button class="${r === rate ? 'on' : ''}" data-rate="${r}"><span>${r}x${r === 1 ? ' (thường)' : ''}</span><em>${r === rate ? icon('check', 'sm') : ''}</em></button>`).join('')
-    + `<button class="ab-menu-log" data-log>${icon('list', 'sm')}<span>Nhật ký phát</span><em>${tlogBuf.length}</em></button>`;
+  // "Nhật ký phát" ở ĐẦU bảng (để cuối thì trên điện thoại bị khuất, phải cuộn mới thấy)
+  $('rateMenu').innerHTML = `<button class="ab-menu-log" data-log>${icon('list', 'sm')}<span>Nhật ký phát</span><em>${tlogBuf.length}</em></button>`
+    + '<div class="ab-menu-h">Tốc độ đọc</div>'
+    + RATES.map((r) => `<button class="${r === rate ? 'on' : ''}" data-rate="${r}"><span>${r}x${r === 1 ? ' (thường)' : ''}</span><em>${r === rate ? icon('check', 'sm') : ''}</em></button>`).join('');
 }
 
 // Hộp xem nhật ký phát: khung chữ nhỏ, tự xuống dòng ⇒ chụp 1 màn hình là thấy đủ (ô nhập trên điện thoại bị ép chữ 16px
