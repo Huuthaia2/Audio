@@ -319,6 +319,7 @@ function renderReader() {
           ${story.author ? `<span title="Tác giả">✍ ${esc(story.author)}</span>` : ''}
           ${story.t ? `<span title="Cập nhật">${icon('calendar', 'sm')} ${story.t.split('-').reverse().join('/')}</span>` : ''}
           ${story.done !== undefined ? `<span class="st-badge${story.done ? ' done' : ''}">${story.done ? 'Đã hoàn thành' : 'Đang ra'}</span>` : ''}
+          ${newTag(story)}
           ${raw ? '<span id="metaPos"></span>' : ''}
         </div>
         ${raw ? `
@@ -595,6 +596,29 @@ function unlockPool() {
 // iPhone (iOS 17+): báo đây là phát nhạc ⇒ nghe được khi gạt im lặng / tắt màn hình
 try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}
 
+// iPhone tắt màn hình vẫn dừng (anh Thai báo 2026-11-26): giữa 2 câu có 1 khoảng KHÔNG có tiếng (đang tải câu kế, màn tắt
+// không tải sẵn được) ⇒ iOS coi như hết phát, treo trang ⇒ câu kế không bao giờ chạy, bộ canh (timer) cũng đứng.
+// ⇒ trong lúc đang nghe luôn phát kèm 1 đoạn "im lặng" lặp vô hạn trên 1 loa riêng: phiên âm thanh không lúc nào ngắt,
+// trang không bị treo. Chỉ bật trên iPhone / iPad (Android tắt màn hình vẫn đọc, đã đo trên máy thật).
+const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+let keepAlive = null, bgDenied = 0;
+function keepAliveStart() {
+  if (!IS_IOS) return;
+  if (!keepAlive) {
+    // WAV 8 kHz 8-bit mono 4 giây; dao động 1 nấc ở 10 Hz (tai không nghe được) để không bị coi là file rỗng
+    const n = 32000, b = new Uint8Array(44 + n), v = new DataView(b.buffer);
+    const str = (o, t) => { for (let i = 0; i < t.length; i++) b[o + i] = t.charCodeAt(i); };
+    str(0, 'RIFF'); v.setUint32(4, 36 + n, true); str(8, 'WAVEfmt '); v.setUint32(16, 16, true); v.setUint16(20, 1, true);
+    v.setUint16(22, 1, true); v.setUint32(24, 8000, true); v.setUint32(28, 8000, true); v.setUint16(32, 1, true);
+    v.setUint16(34, 8, true); str(36, 'data'); v.setUint32(40, n, true);
+    for (let i = 0; i < n; i++) b[44 + i] = 128 + (Math.floor(i / 400) % 2);
+    keepAlive = new Audio(URL.createObjectURL(new Blob([b], { type: 'audio/wav' })));
+    keepAlive.loop = true;
+  }
+  keepAlive.play().catch(() => {});
+}
+function keepAliveStop() { if (keepAlive) keepAlive.pause(); }
+
 function startPlay(s) {
   if (!s || !s.queue.length) return;
   // "Đã nghe xong" do app tự đánh (nghe hết câu cuối chương cuối); nghe lại truyện đó ⇒ thành "đang nghe" lại
@@ -606,6 +630,7 @@ function startPlay(s) {
   if (barWasHidden) refitReadBox();
   playing = true;
   unlockPool();
+  keepAliveStart();
   playSeg(true);
 }
 function stopSegAudio() { reqId++; clearTimeout(retryTimer); pool.forEach((a) => a.pause()); curP.removeAttribute('src'); delete curP.dataset.u; }
@@ -615,6 +640,7 @@ function pauseAudio() {
   reqId++;
   clearTimeout(retryTimer);
   pool.forEach((a) => a.pause());
+  keepAliveStop();
   paintAll();
   if (sync.dirty) syncSoon(true); // dừng nghe ⇒ đẩy vị trí lên Gist sau 3s (máy kia mở là thấy đúng chỗ)
 }
@@ -638,10 +664,14 @@ function playSeg(scroll) {
   curP.defaultPlaybackRate = curP.playbackRate = rate;
   updateMediaSession();
   const p = curP;
-  p.play().then(() => { okP = p; if (id === reqId) retries = 0; }).catch((e) => {
+  p.play().then(() => { okP = p; bgDenied = 0; if (id === reqId) retries = 0; }).catch((e) => {
     if (id !== reqId || e.name === 'AbortError') return;
     if (e.name === 'NotAllowedError') {
-      if (document.hidden) { resumeOnVisible = true; return; } // đang ở nền ⇒ mở lại app thì phát tiếp
+      if (document.hidden) {
+        // Đang ở nền: thử lại 3 lần cách nhau 1,5s (loa im lặng giữ trang còn chạy) rồi mới chờ mở lại app
+        if (++bgDenied <= 3) { retryTimer = setTimeout(() => { if (playing && id === reqId) playSeg(false); }, 1500); return; }
+        bgDenied = 0; resumeOnVisible = true; return;
+      }
       // Màn sáng mà bị chặn = loa này chưa được mở khoá ⇒ đọc tiếp trên loa vừa phát được, bỏ chế độ nhiều loa
       if (okP && okP !== p && !singleSpeaker) {
         console.warn('Loa bị iPhone chặn ⇒ chuyển sang đọc 1 loa');

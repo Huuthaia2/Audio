@@ -467,3 +467,8 @@ html.sheet-open, html.sheet-open body { overflow: hidden; }
   .ab-menu { position: fixed; left: 8px; right: 8px; width: auto; bottom: calc(76px + env(safe-area-inset-bottom)); max-height: 60vh; max-height: 60dvh; }
 }
 @media (min-width: 701px) { .ad-main h1 { padding-right: 130px; } }
+
+/* Nhãn "Mới": truyện thêm / cập nhật trong 7 ngày (isNew ở index.html) */
+.new-tag { display: inline-block; margin-left: 8px; padding: 0 7px; border-radius: 999px; background: #22c55e; color: #052e16;
+  font-size: 11px; font-weight: 700; line-height: 17px; vertical-align: 2px; letter-spacing: .2px; }
+.meta .new-tag { margin-left: 0; vertical-align: 0; }

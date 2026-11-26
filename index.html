@@ -142,6 +142,11 @@ const chapterCount = (f) => { const m = f.match(/-(\d+)\.txt$/) || f.match(/\+(\
 // Số chương: alicesw ghi sẵn (ch); nguồn khác lấy từ tên file (-0044.txt / +44.txt)
 const storyChapters = (s) => s.ch || chapterCount(s.file);
 const coverHue = (s) => (storyChapters(s) > 1 ? 335 : 215); // xanh = truyện 1 chương (anh Thai giữ lại 2026-11-26)
+// Truyện mới = ngày thêm / cập nhật (t) trong 7 ngày gần đây ⇒ nhãn "Mới" sau tên truyện (danh sách, lịch sử, trang truyện)
+const NEW_DAYS = 7;
+const NEW_SINCE = (() => { const d = new Date(Date.now() - NEW_DAYS * 864e5); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; })();
+const isNew = (s) => !!s.t && s.t >= NEW_SINCE;
+const newTag = (s) => (isNew(s) ? '<span class="new-tag" title="Mới thêm / cập nhật trong 7 ngày">Mới</span>' : '');
 // Nguồn = thư mục cấp 1 trong Truyện/ (phần đầu uid)
 const sourceOf = (s) => s.uid.split('/')[0];
 // stories.json gọn: { sources: {nguồn: [thư mục truyện, thư mục tóm tắt]}, stories: [{uid, file, category, title, size, has_sum, t?, tags?, was?}] }

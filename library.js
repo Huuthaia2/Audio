@@ -168,7 +168,7 @@ function rowHtml(s, extraSub = '') {
   return `<div class="arow" data-uid="${esc(s.uid)}" data-mode="${s.has_raw ? 'raw' : 'sum'}">
     <button class="acover" style="--h:${coverHue(s)}" aria-label="Phát">${icon('headphones', 'ic-idle')}${icon('play', 'fill ic-play')}${icon('pause', 'fill ic-pause')}<span class="eq"><i></i><i></i><i></i></span></button>
     <div class="ainfo">
-      <div class="title">${esc(s.title)}${chapters > 1 ? `<span class="apart">${chapters} chương</span>` : ''}</div>
+      <div class="title">${esc(s.title)}${newTag(s)}${chapters > 1 ? `<span class="apart">${chapters} chương</span>` : ''}</div>
       <div class="sub">${extraSub || `${icon('folder', 'sm')} ${esc(rowTags(s))} · ${s.t ? `${icon('calendar', 'sm')} ${s.t.split('-').reverse().join('/')} · ` : ''}${info}${fmtSize(s.size)}`}</div>
     </div>
     ${s.has_sum ? `<button class="abadge" data-sum="${esc(s.uid)}" title="Xem tóm tắt">${icon('fileText', 'sm')}<span>Tóm tắt</span></button>` : ''}
