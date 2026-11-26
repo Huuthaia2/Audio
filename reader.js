@@ -704,18 +704,44 @@ function retryLater(id) {
 
 // Bộ canh: đang phát mà âm thanh đứng yên > 8s (Google gửi chậm / nghẽn mạng: trình duyệt chờ mãi, không báo lỗi,
 // không báo hết câu ⇒ trước đây kẹt tới khi chạm 2 lần vào câu) ⇒ tự tải lại câu đó
-let watchT = -1, watchStuck = 0;
-setInterval(() => {
-  if (!playing || resumeOnVisible || !player || player.pendingNext) { watchStuck = 0; return; }
-  const t = curP.currentTime;
-  if (t !== watchT) { watchT = t; watchStuck = 0; return; }
-  if (++watchStuck >= 8) {
-    watchStuck = 0;
-    console.warn('Âm thanh kẹt ⇒ tải lại câu', player.seg + 1);
+// Bộ canh âm thanh (kiểm mỗi 0,2s) — đo trên Android thật 2026-11-26:
+// 1) Đứng ĐÚNG CUỐI FILE mà không có 'ended' (điện thoại hay bị ở file ngắn vài từ) ⇒ sang câu kế sau ~0,4s.
+// 2) Đứng GIỮA câu (mạng khựng, hệ thống tạm ngắt tiếng) ⇒ KHÔNG được coi là hết câu (sẽ cắt mất nửa câu sau):
+//    1s thử phát tiếp; 4s vẫn đứng ⇒ đọc lại câu đó từ đầu.
+// 3) Chưa phát được gì ⇒ 8s tải lại. Tải lại 2 lần vẫn hỏng ⇒ bỏ qua câu đó (không kẹt cả truyện vì 1 câu).
+let watchT = -1, watchStuck = 0, watchSeg = null, watchReloads = 0;
+const WATCH_MS = 200;
+const atAudioEnd = (a) => isFinite(a.duration) && a.duration > 0 && a.currentTime >= a.duration - 0.15;
+function watchReload(why) {
+  watchStuck = 0;
+  if (++watchReloads > 2) {
+    console.warn('Câu', player.seg + 1, 'không phát được ⇒ bỏ qua');
+    if (curP.onended) curP.onended();
+  } else {
+    console.warn(why, '⇒ tải lại câu', player.seg + 1);
     stopSegAudio();
     playSeg(false);
   }
-}, 1000);
+}
+setInterval(() => {
+  if (!playing || resumeOnVisible || !player || player.pendingNext) { watchStuck = 0; return; }
+  const key = player.ch + ':' + player.seg;
+  if (key !== watchSeg) { watchSeg = key; watchReloads = 0; }
+  const t = curP.currentTime;
+  if (t !== watchT) { watchT = t; watchStuck = 0; return; }
+  watchStuck++;
+  const sec = watchStuck * WATCH_MS / 1000;
+  if (t > 0.3 && atAudioEnd(curP)) {
+    if (sec >= 0.4) {
+      watchStuck = 0;
+      console.warn('Câu', player.seg + 1, 'hết mà không báo ⇒ sang câu kế');
+      if (curP.onended) curP.onended();
+    }
+  } else if (t > 0.3 && !(curP.networkState === 2 && curP.readyState < 3)) {
+    if (watchStuck === Math.round(1000 / WATCH_MS)) curP.play().catch(() => {});
+    else if (sec >= 4) watchReload('Đứng giữa câu');
+  } else if (sec >= 8) watchReload('Âm thanh kẹt');
+}, WATCH_MS);
 
 // Mở lại app sau khi điện thoại chặn phát ⇒ phát tiếp đúng câu
 document.addEventListener('visibilitychange', () => {
