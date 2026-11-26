@@ -169,6 +169,7 @@ function buildChapter(s) {
     const t = line.trim();
     if (!t) continue;
     if (/^={5,}/.test(t)) { paras.push('<hr>'); continue; }
+    if (/^TITLE:/i.test(t)) continue; // dòng "TITLE: tên truyện" đầu file Text Mp3 (2678 truyện) ⇒ không đọc to, không hiện
     const segs = splitSegs(t);
     if (!segs.length) { paras.push(`<p>${esc(t)}</p>`); continue; }
     const items = segs.map((x) => ({ t: x, g: 0 }));
@@ -316,7 +317,21 @@ async function openReader(uid, mode) {
   window.scrollTo(0, 0);
   if (mode === 'sum' && $('sumSec')) $('sumSec').scrollIntoView();
 }
-function readerLeave() { $('foldBtn').hidden = true; closeChapSheet(); }
+function readerLeave() { $('foldBtn').hidden = true; closeChapSheet(); closeSumSheet(); }
+
+// Bảng tóm tắt (bật từ đáy như bảng chương); tải nội dung lần đầu mở
+let sumLoaded = null;
+function openSumSheet() {
+  if (!$('sumSheet')) return;
+  $('sumSheet').hidden = false;
+  document.documentElement.classList.add('sheet-open');
+  if (sumLoaded !== view.story.uid) { sumLoaded = view.story.uid; loadSummary(view.story); }
+}
+function closeSumSheet() {
+  if (!$('sumSheet') || $('sumSheet').hidden) return;
+  $('sumSheet').hidden = true;
+  if (!$('chapSheet') || $('chapSheet').hidden) document.documentElement.classList.remove('sheet-open');
+}
 
 function renderReader() {
   const s = view, story = s.story;
@@ -331,8 +346,8 @@ function renderReader() {
     </div>
     <div class="ad-head">
       <div class="ad-cover" style="--h:${hue}">${icon('headphones')}</div>
-      <!-- Yêu thích: góc phải cạnh ảnh bìa (anh Thai chốt 2026-11-26: đỡ tốn 1 hàng riêng) -->
-      <div class="ad-fav">${favBtnHtml(story.uid, 'icon-btn', ' Yêu thích')}</div>
+      <!-- Góc phải cạnh ảnh bìa: Yêu thích, dưới là Tóm tắt (bảng bật từ đáy) — anh Thai chốt 2026-11-26: đỡ tốn chỗ -->
+      <div class="ad-fav">${favBtnHtml(story.uid, 'icon-btn', ' Yêu thích')}${story.has_sum && raw ? `<button class="icon-btn" id="sumBtn">${icon('fileText', 'sm')} Tóm tắt</button>` : ''}</div>
       <div class="ad-main">
         <h1>${esc(story.title)}</h1>
         <div class="meta">
@@ -360,11 +375,18 @@ function renderReader() {
         ${storyTagsHtml(story)}
       </div>
     </div>
-    ${story.has_sum ? `
-    <section class="summary${viewMode === 'sum' || !raw ? '' : ' closed'}" id="sumSec">
+    ${story.has_sum && !raw ? `
+    <section class="summary" id="sumSec">
       <h2 class="sum-h" role="button" tabindex="0">${icon('fileText')} <span class="t">Tóm tắt</span><span class="sum-chev">${icon('chevronUp', 'sm')}</span></h2>
       <div class="sum-body"><div class="empty">Đang tải...</div></div>
     </section>` : ''}
+    ${story.has_sum && raw ? `
+    <div class="sheet" id="sumSheet" hidden>
+      <div class="sheet-box">
+        <div class="sheet-head"><span>${icon('fileText', 'sm')} Tóm tắt</span><button class="ab-btn" data-close title="Đóng">${icon('x')}</button></div>
+        <div class="sheet-list sum-body sum-sheet-body"><div class="empty">Đang tải...</div></div>
+      </div>
+    </div>` : ''}
     ${raw ? `
     <!-- Chọn chương: nút riêng (anh Thai chốt 2026-11-26: không gộp vào khung đọc) ⇒ bảng danh sách chương bật từ đáy -->
     <button class="chap-open" id="chapOpen" title="Danh sách chương">${icon('list')}<span class="co-l">Chọn chương</span><span class="co-t" id="textTitle"></span><span class="chap-num" id="chapNum"></span>${icon('chevronUp', 'sm')}</button>
@@ -379,7 +401,10 @@ function renderReader() {
       </h2>
       <div class="sum-body">
         <p class="hint">Chạm 2 lần vào một câu để nghe từ câu đó.</p>
-        <div class="content" id="storyContent"></div>
+        <div class="content-wrap">
+          <div class="content" id="storyContent"></div>
+          <button class="icon-btn follow-btn" id="followBtn" hidden>${icon('volume', 'sm')} Về câu đang đọc</button>
+        </div>
       </div>
     </section>
     <!-- Danh sách chương = bảng bật lên từ đáy (truyện 300 chương không phải cuộn cả trang) -->
@@ -402,7 +427,12 @@ function renderReader() {
     const b = e.target.closest('[data-ftag]');
     if (b) libFilterTag(sourceOf(story), b.dataset.ftag);
   };
-  if (story.has_sum) loadSummary(story);
+  if (story.has_sum && !raw) loadSummary(story);
+  if (story.has_sum && raw) {
+    $('sumBtn').onclick = openSumSheet;
+    $('sumSheet').onclick = (e) => { if (e.target === $('sumSheet') || e.target.closest('[data-close]')) closeSumSheet(); };
+    if (viewMode === 'sum') openSumSheet(); // bấm "Tóm tắt" ở danh sách ⇒ mở thẳng bảng tóm tắt
+  }
   if (!raw) return;
 
   const P = (sel) => document.querySelector('#adPlayer ' + sel);
@@ -425,6 +455,15 @@ function renderReader() {
   $('chapClose').onclick = closeChapSheet;
   $('chapSheet').onclick = (e) => { if (e.target === $('chapSheet')) closeChapSheet(); }; // chạm vùng tối ⇒ đóng
   // Chạm 2 lần nhanh (< 350ms) vào 1 câu ⇒ nghe từ câu đó (iPhone không bắn dblclick ổn định ⇒ tự đo)
+  // Người dùng chạm / lăn chuột trong khung rồi khung cuộn ⇒ đang tự cuộn đọc ⇒ ngừng tự theo
+  const box = $('storyContent');
+  const markUser = () => { userScrollT = Date.now(); };
+  box.addEventListener('touchstart', markUser, { passive: true });
+  box.addEventListener('touchmove', markUser, { passive: true });
+  box.addEventListener('wheel', markUser, { passive: true });
+  box.addEventListener('scroll', () => { if (Date.now() - userScrollT < 800 && followRead) setFollow(false); }, { passive: true });
+  $('followBtn').onclick = followNow;
+  setFollow(true);
   let lastTap = 0;
   $('storyContent').onclick = (e) => {
     const x = e.target.closest('.seg');
@@ -452,6 +491,7 @@ function storyTagsHtml(story) {
 function toggleSection(sec) {
   sec.classList.toggle('closed');
   if (sec.id === 'textSec' && !sec.classList.contains('closed')) {
+    setFollow(true);
     window.scrollTo(0, fitReadBox());
     paintView(true);
   }
@@ -483,6 +523,19 @@ window.addEventListener('resize', () => fitReadBox());
 // Thanh đáy hiện / ẩn khi đang mở khung chữ ⇒ tính lại chiều cao + vị trí cuộn (không thì chữ chui dưới thanh đáy)
 function refitReadBox() { if ($('textSec') && !$('textSec').classList.contains('closed')) window.scrollTo(0, fitReadBox()); }
 
+// Tự cuộn theo câu đang đọc. Anh Thai tự cuộn đi chỗ khác ⇒ NGỪNG tự cuộn (trước đây cứ giật về mỗi câu mới) và hiện nút
+// "Về câu đang đọc"; bấm nút ⇒ cuộn tới câu đang đọc + tự theo lại. Đổi chương / bấm Nghe ⇒ tự theo lại.
+let followRead = true, userScrollT = 0;
+function setFollow(on) {
+  followRead = on;
+  if ($('followBtn')) $('followBtn').hidden = on;
+}
+function followNow() {
+  setFollow(true);
+  const el = document.querySelector('#storyContent .seg.on');
+  if (el) scrollSegIntoBox(el);
+}
+
 // Cuộn khung chữ (không cuộn trang) để câu đang đọc nằm giữa khung
 function scrollSegIntoBox(el, smooth = true) {
   const box = $('storyContent');
@@ -496,6 +549,7 @@ function renderContent() {
   if (!view || !$('storyContent')) return;
   $('storyContent').innerHTML = view.html;
   $('storyContent').scrollTop = 0;
+  setFollow(true);
   $('textTitle').textContent = view.chapters[view.ch].title;
   $('chapNum').textContent = `${view.ch + 1}/${view.chapters.length}${view.loading ? '+' : ''}`;
   $('navPrev').disabled = view.ch === 0;
@@ -510,7 +564,7 @@ function renderContent() {
 }
 
 async function loadSummary(story) {
-  const body = document.querySelector('#sumSec .sum-body');
+  const body = document.querySelector('#sumSec .sum-body, #sumSheet .sum-body');
   try {
     const res = await fetch(`${story.sum_base}/${story.id}`);
     if (!res.ok) throw new Error();
@@ -599,23 +653,27 @@ const ttsUrl = (t, v = 0) => (isLocal
   ? `http://127.0.0.1:9999/tts?q=${encodeURIComponent(t)}`
   : `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(t)}`) + (v ? `&r=${v}` : '');
 let segVariant = 0, segVariantKey = null; // số lần đã tải lại câu đang đọc (đổi câu ⇒ về 0)
-// Cắt im lặng có sẵn trong file Google (đo 50 câu 2026-11-26: đầu 0,09-0,16s, cuối 0,26-0,97s, không theo quy luật) ⇒ bỏ
-// LEAD giây đầu + chuyển câu sớm TAIL giây trước khi hết file. Cả 2 nhỏ hơn mức im lặng NHỎ NHẤT đo được ⇒ không mất chữ.
+// Cắt im lặng có sẵn trong file Google: bỏ TTS_LEAD giây đầu + chuyển câu sớm ttsTail giây trước khi hết file.
 // Muốn khoảng hở thật sự = 0 phải đọc được dữ liệu âm thanh để dò đúng chỗ im lặng của từng file (Google chặn ⇒ cần trạm trung chuyển).
 // Đo trên Android thật: loa bắt đầu phát từ vị trí 0 mất ~300ms khởi động; loa đã "làm nóng" (chạy thử tắt tiếng rồi đứng ở
 // TTS_LEAD) thì phát ngay ⇒ làm nóng + tua tới TTS_LEAD lúc CHƯA tới lượt; tới lượt phát thì KHÔNG tua gì nữa.
-const TTS_LEAD = 0.08, TTS_TAIL = 0.22;
+// Đo 300 lượt đọc thật (3 nguồn, 2026-11-26, ngưỡng -55dB): im lặng đầu file nhỏ nhất 0,079s; im lặng CUỐI file tuỳ chữ cuối:
+//   kết bằng , ; :  ⇒ nhỏ nhất 0,82s | kết bằng . ? ! … " ” ⇒ 0,21s | kết bằng chữ (câu dài cắt đôi) ⇒ 0,166s
+// ⇒ cắt chừa ~0,04s dự phòng dưới mức nhỏ nhất. Tính theo thời gian FILE; hẹn giờ chia cho tốc độ đọc ⇒ mọi tốc độ đều đúng.
+const TTS_LEAD = 0.06;
+const ttsTail = (t) => (/[,;:]\s*$/.test(t) ? 0.70 : /[.?!…"”'»)]\s*$/.test(t) ? 0.17 : 0.12);
 let earlyT = null, earlyArmed = 0;
 function armEarly(p, id) {
   clearTimeout(earlyT); earlyArmed = 0;
   // Màn tắt: timer bị hãm ⇒ để sự kiện ended tự chuyển câu. File quá ngắn (< 0,6s, file Google thật ≥ 0,9s) ⇒ không cắt.
   if (document.hidden || !isFinite(p.duration) || p.duration < 0.6 || p.paused) return;
   earlyArmed = id;
-  const ms = (p.duration - p.currentTime - TTS_TAIL) / (p.playbackRate || 1) * 1000;
+  const tail = ttsTail(player.queue[player.seg] || '');
+  const ms = (p.duration - p.currentTime - tail) / (p.playbackRate || 1) * 1000;
   earlyT = setTimeout(() => {
     if (!playing || id !== reqId || p !== curP || p.paused) return;
-    if (p.duration - p.currentTime > TTS_TAIL + 0.15) { armEarly(p, id); return; } // bị khựng giữa chừng ⇒ hẹn lại
-    tlog('  → chuyển sớm (bỏ im lặng cuối)', '', p);
+    if (p.duration - p.currentTime > tail + 0.15) { armEarly(p, id); return; } // bị khựng giữa chừng ⇒ hẹn lại
+    tlog('  → chuyển sớm (bỏ ' + tail + 's im lặng cuối)', '', p);
     p.pause();
     if (p.onended) p.onended();
   }, Math.max(0, ms));
@@ -705,6 +763,7 @@ function startPlay(s) {
   document.documentElement.classList.add('has-abar');
   if (barWasHidden) refitReadBox();
   playing = true;
+  if (s === view) setFollow(true);
   tlog('■ BẤM NGHE', `${navigator.userAgent.match(/(iPhone|iPad|Android)[^;)]*/)?.[0] || 'máy tính'} · tốc độ ${rate}`);
   unlockPool();
   keepAliveStart();
@@ -735,8 +794,9 @@ function playSeg(scroll) {
   const vKey = s.story.uid + ':' + s.ch + ':' + s.seg;
   if (vKey !== segVariantKey) { segVariantKey = vKey; segVariant = 0; }
   const url = ttsUrl(s.queue[s.seg], segVariant);
-  // Màn sáng: dùng loa đã tải sẵn câu này (nếu có). Màn tắt: GIỮ NGUYÊN loa đang phát (điện thoại chặn phát ở loa khác)
-  if (!document.hidden && !singleSpeaker) {
+  // Dùng loa đã tải sẵn câu này (nếu có). iPhone tắt màn hình: GIỮ NGUYÊN loa đang phát (iPhone chặn phát ở loa khác).
+  // Android tắt màn hình vẫn chuyển loa + tải sẵn được (đo trên máy thật) ⇒ hết khoảng chờ tải mỗi câu lúc tắt màn hình.
+  if (!(document.hidden && IS_IOS) && !singleSpeaker) {
     const ready = pool.find((a) => a.dataset.u === url && !a.error);
     curP = ready || pool.find((a) => a !== curP && !a.dataset.u) || pool.find((a) => a !== curP) || curP;
   }
@@ -774,8 +834,8 @@ function playSeg(scroll) {
     }
     retryLater(id);
   });
-  // Tải sẵn PRELOAD câu kế vào các loa rảnh (màn tắt / chế độ 1 loa thì không dùng tới ⇒ không tải, đỡ tốn mạng)
-  if (!document.hidden && !singleSpeaker) {
+  // Tải sẵn PRELOAD câu kế vào các loa rảnh (iPhone tắt màn hình / chế độ 1 loa thì không dùng tới ⇒ không tải)
+  if (!(document.hidden && IS_IOS) && !singleSpeaker) {
     const want = [];
     for (let k = 1; k <= PRELOAD && s.seg + k < s.queue.length; k++) want.push(ttsUrl(s.queue[s.seg + k]));
     for (const u of want) {
@@ -818,7 +878,7 @@ function playSeg(scroll) {
     }
   };
   curP.onerror = () => { if (playing && id === reqId) retryLater(id); };
-  // Hẹn chuyển câu sớm TTS_TAIL giây (bỏ im lặng cuối file); hẹn lại khi biết độ dài / đổi tốc độ / phát tiếp sau khựng
+  // Hẹn chuyển câu sớm ttsTail giây (bỏ im lặng cuối file); hẹn lại khi biết độ dài / đổi tốc độ / phát tiếp sau khựng
   curP.onplaying = curP.ondurationchange = curP.onratechange = () => { if (playing && id === reqId) armEarly(p, id); };
   // Google gửi file không báo độ dài ⇒ lúc bắt đầu phát chưa biết (∞) ⇒ vừa biết độ dài trong lúc phát là hẹn ngay
   curP.ontimeupdate = () => { if (playing && id === reqId && earlyArmed !== id && isFinite(p.duration)) armEarly(p, id); };
@@ -970,7 +1030,7 @@ function paintView(scroll, preview = null) {
   const el = els[0];
   if (el) {
     els.forEach((x) => x.classList.add('on'));
-    if (scroll && !document.querySelector('#textSec.closed')) scrollSegIntoBox(el);
+    if (scroll && followRead && !document.querySelector('#textSec.closed')) scrollSegIntoBox(el);
   }
   const adIn = document.querySelector('#adPlayer input');
   if (!adIn.dataset.drag) { adIn.max = Math.max(0, n - 1); adIn.value = i; }

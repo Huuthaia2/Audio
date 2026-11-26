@@ -107,7 +107,7 @@ main.page { max-width: 1600px; margin: 0 auto; padding: 16px 16px 48px; }
 #readView { max-width: 1000px; margin: 0 auto; }
 .ad-head { position: relative; display: flex; gap: 20px; align-items: flex-start; margin-bottom: 24px; }
 /* Yêu thích: góc phải trên, cạnh ảnh bìa */
-.ad-fav { position: absolute; top: 0; right: 0; }
+.ad-fav { position: absolute; top: 0; right: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
 .ad-cover { --h: 330; flex: none; width: 140px; aspect-ratio: 1; border-radius: 14px; display: grid; place-items: center; color: #fff;
   background: linear-gradient(135deg, hsl(var(--h) 55% 42%), hsl(calc(var(--h) + 40) 60% 28%)); box-shadow: 0 10px 30px rgba(0,0,0,.35); }
 .ad-cover .i { width: 56px; height: 56px; stroke-width: 1.5; }
@@ -478,3 +478,11 @@ html.sheet-open, html.sheet-open body { overflow: hidden; }
 .log-box { max-width: 720px; }
 .log-text { height: 60vh; height: 60dvh; overflow: auto; background: var(--bg); color: var(--text); border: 1px solid var(--bg3); border-radius: 8px;
   padding: 8px; font: 10.5px/1.45 ui-monospace, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; -webkit-user-select: text; user-select: text; }
+
+/* Nút "Về câu đang đọc": nổi ở góc dưới khung chữ, chỉ hiện khi người dùng tự cuộn đi chỗ khác */
+.content-wrap { position: relative; }
+.follow-btn { position: absolute; right: 8px; bottom: 10px; z-index: 2; background: var(--accent); border-color: var(--accent); color: #fff;
+  font-size: 13px; font-weight: 600; box-shadow: 0 6px 18px rgba(0,0,0,.45); }
+.follow-btn:hover { background: var(--accent2); border-color: var(--accent2); color: #fff; }
+/* Bảng tóm tắt bật từ đáy */
+.sum-sheet-body { padding: 10px 18px 16px; line-height: 1.7; }

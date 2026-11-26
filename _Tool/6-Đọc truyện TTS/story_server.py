@@ -12,9 +12,7 @@ import re
 import requests
 import socketserver
 import uuid
-import io
 import time
-from gtts import gTTS
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs, unquote, quote
 
@@ -108,6 +106,10 @@ def read_raw_file(story_id):
     return content, total_size
 
 # --- HỖ TRỢ ĐA LUỒNG (THREADING) ---
+TTS_SESSION = requests.Session()  # giữ kết nối tới Google ⇒ mỗi câu khỏi bắt tay lại
+TTS_SESSION.headers['User-Agent'] = 'Mozilla/5.0'
+TTS_CACHE = {}  # câu ⇒ mp3 (nhớ tạm, tối đa 300)
+
 class ThreadedHTTPServer(socketserver.ThreadingMixIn, HTTPServer):
     daemon_threads = True
 
@@ -171,33 +173,35 @@ class StoryHandler(SimpleHTTPRequestHandler):
                         self.send_html(f.read())
                     return
 
-            # TTS PROXY: DÙNG GOOGLE TTS (SỬ DỤNG BYTESIO)
+            # TTS PROXY (2026-11-26): gọi thẳng Google translate_tts 1 LẦN cho cả câu (như web trên điện thoại).
+            # Trước dùng gTTS: cắt câu thành khúc ~100 ký tự, gọi Google LẦN LƯỢT từng khúc rồi ghép ⇒ câu dài mất 1,5-5s,
+            # file to 40-140 KB. Giờ ~0,3s, file ~10-30 KB, có Content-Length (trình phát chạy mượt), nhớ tạm 300 câu gần nhất.
             elif path == '/tts':
                 text = qs.get('q', [''])[0]
                 if not text:
                     self.send_response(400); self.end_headers(); return
-                
-                print(f"[*] Đang lấy giọng Chị Google: {text[:30]}...")
-                
                 try:
-                    mp3_fp = io.BytesIO()
-                    tts = gTTS(text=text, lang='vi')
-                    tts.write_to_fp(mp3_fp)
-                    audio_data = mp3_fp.getvalue()
-                    
+                    audio_data = TTS_CACHE.get(text)
+                    if audio_data is None:
+                        url = 'https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=' + quote(text)
+                        r = TTS_SESSION.get(url, timeout=15)
+                        r.raise_for_status()
+                        audio_data = r.content
+                        TTS_CACHE[text] = audio_data
+                        if len(TTS_CACHE) > 300: TTS_CACHE.pop(next(iter(TTS_CACHE)))
                     self.send_response(200)
                     self.send_header('Content-Type', 'audio/mpeg')
                     self.send_header('Content-Length', len(audio_data))
+                    self.send_header('Accept-Ranges', 'none')
                     self.send_header('Access-Control-Allow-Origin', '*')
                     self.end_headers()
                     try:
                         self.wfile.write(audio_data)
-                        print("    -> Thành công!")
-                    except:
-                        print("    -> Client ngắt kết nối")
+                    except Exception:
+                        pass
                 except Exception as e:
-                    print(f"    -> Lỗi gTTS: {e}")
-                    try: self.send_response(500); self.end_headers()
+                    print(f"    -> Lỗi lấy giọng đọc: {e}")
+                    try: self.send_response(502); self.end_headers()
                     except: pass
                 return
 
