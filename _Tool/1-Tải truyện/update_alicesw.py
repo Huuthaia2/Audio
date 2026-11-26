@@ -1,5 +1,5 @@
 # Tự động cập nhật nguồn alicesw (https://www.alicesw.com, tiếng Trung → dịch Google) — chạy bằng
-# "_Tool/5. Cập nhật truyện alicesw.bat". Tải + dịch nằm ở repo riêng Documents/zzz/alicesw (thư mục cạnh repo Audio),
+# "_Tool/5. Tải truyện alicesw.bat" (--chi-tai) và "_Tool/6. Dịch truyện alicesw.bat" (--chi-dich). Tải + dịch nằm ở repo riêng Documents/zzz/alicesw (thư mục cạnh repo Audio),
 # repo Audio chỉ nhận bản dịch qua sync_alicesw.py. Chạy TUẦN TỰ 4 bước (downloader và translator ghi chung file
 # trạng thái trong alicesw/downloaded ⇒ không được chạy song song):
 #   1. Quét trang danh sách tag 母子 1 lần + tải truyện mới (như alicesw_downloader.py --all của run_download.bat)
@@ -26,10 +26,14 @@ WEB_TOOL_DIR = os.path.join(os.path.dirname(TOOL_DIR), "2-Cập nhật web")
 # {"dates": {id: ngày cập nhật trên danh sách lúc đã kiểm xong}} — ngày đổi ⇒ truyện có thể có chương mới
 STATE_FILE = os.path.join(TOOL_DIR, "alicesw_update_state.json")
 SITE = "https://www.alicesw.com"
-LIST_URL = SITE + "/search?q=母子&f=tag"  # tag "mẹ con" — như run_download.bat
+# tag "mẹ con" như run_download.bat, sắp theo NGÀY CẬP NHẬT mới trước (anh Thai chốt 2026-11-26) ⇒ gặp trang toàn truyện
+# cập nhật trước mốc thì dừng quét (~20 trang thay vì 228 trang). Mốc = ngày HÔM TRƯỚC của lần tải trót lọt gần nhất
+# (state "last_run", anh Thai chốt 2026-11-26 — lùi 1 ngày cho thư thả); chưa có last_run ⇒ STOP_BEFORE.
+LIST_URL = SITE + "/search?q=母子&f=tag&sort=update_time_DESC"
+STOP_BEFORE = "2026-05-01"
 OUT_REL = os.path.join("Truyện", "4-alicesw")
 STEPS = 4
-DL_WORKERS = 1  # tải chương tuần tự (nhánh 1 luồng của downloader nghỉ --delay giữa các chương; nhiều luồng thì không)
+DL_WORKERS = 4  # 4 luồng như run_download.bat (anh Thai chốt 2026-11-26: 1 luồng quá chậm); bị chặn ⇒ downloader tự đổi IP WARP
 MAX_FAILS = 5  # lỗi liền 5 truyện khi kiểm chương ⇒ coi như bị chặn, dừng bước 2 (lần sau làm tiếp)
 CHAPTER_LINE = re.compile(r"\[\s*\d+/\s*\d+\]")  # dòng tiến độ từng chương "[  3/20] OK ..." ⇒ chỉ hiện ở dòng đang làm
 
@@ -160,6 +164,13 @@ def tai_truyen(only_check=False, vpn="auto"):
     except (FileNotFoundError, ValueError):
         state = {}
     dates = state.setdefault("dates", {})
+    from datetime import datetime, timedelta
+    run_start = datetime.now().strftime("%Y-%m-%d %H:%M")
+    last = state.get("last_run")
+    stop_before = ((datetime.strptime(last[:10], "%Y-%m-%d") - timedelta(days=1)).strftime("%Y-%m-%d")
+                   if last else STOP_BEFORE)
+    print(f"[*] Lần tải trót lọt gần nhất: {last or 'chưa có'} ⇒ chỉ quét truyện cập nhật từ {stop_before}.", flush=True)
+    had_err = False  # có lỗi ⇒ KHÔNG dời mốc last_run (lần sau còn quét lại đoạn này)
 
     # ---------- Bước 1: truyện lỗi lần trước + quét danh sách + tải truyện mới ----------
     print("@@step 1 Quét danh sách + tải truyện mới", flush=True)
@@ -185,10 +196,20 @@ def tai_truyen(only_check=False, vpn="auto"):
                 if m.group(1) in st["origin_done"] and m.group(1) not in st["origin_fail"]:
                     dates[m.group(1)] = seen[m.group(1)]  # vừa tải đủ ⇒ bước 2 khỏi kiểm lại
                     save_json(STATE_FILE, state)
-    full_scan = total_pages > 0 and len(pages_ok) == total_pages
+                else:
+                    had_err = True
+        page_dates = [(s.get("update_date") or "?")[:10] for s in novels]
+        if page_dates and all(d[:4].isdigit() and d < stop_before for d in page_dates):
+            by_date = True
+            print(f"[*] Trang {page}: mọi truyện cập nhật trước {stop_before} ⇒ dừng quét danh sách.", flush=True)
+            break
+    else:
+        by_date = False
+    # Dừng theo ngày ⇒ truyện không thấy trong danh sách = không cập nhật từ STOP_BEFORE, không phải "không có trong tag"
+    full_scan = total_pages > 0 and len(pages_ok) == total_pages and not by_date
     print(f"\n[*] Danh sách: {len(pages_ok)}/{total_pages} trang, {len(seen)} truyện"
           + (f", {new} truyện mới chưa tải" if only_check else "")
-          + ("" if full_scan else " — CHƯA quét đủ trang (lỗi mạng / bị chặn)") + ".", flush=True)
+          + ("" if full_scan or by_date else " — CHƯA quét đủ trang (lỗi mạng / bị chặn)") + ".", flush=True)
 
     # ---------- Bước 2: truyện đang ra có ngày cập nhật khác lần kiểm trước ⇒ đếm chương ----------
     print("@@step 2 Kiểm truyện đang ra có chương mới", flush=True)
@@ -216,6 +237,7 @@ def tai_truyen(only_check=False, vpn="auto"):
         time.sleep(delay)
         if not chapters:
             fails += 1
+            had_err = True
             print(f"  [!] {name}: không lấy được danh sách chương ({fails} lần liền).", flush=True)
             if fails >= MAX_FAILS:
                 print(f"[!] Lỗi {MAX_FAILS} truyện liền ⇒ có thể đang bị chặn, dừng bước 2 (lần sau làm tiếp).", flush=True)
@@ -235,6 +257,7 @@ def tai_truyen(only_check=False, vpn="auto"):
         if not info:
             print("  [!] Không lấy được thông tin truyện — lần sau thử lại.", flush=True)
             print("@@count err 1", flush=True)
+            had_err = True
             continue
         # Giữ đúng tên Việt cũ: cache tên đã mất ⇒ downloader dịch lại tên, ra tên khác ⇒ thành 2 file cùng truyện
         # (bản cũ không bị dọn). Ghi sẵn tên cũ vào cache ⇒ file mới cùng tên, downloader tự xoá bản cũ.
@@ -255,7 +278,13 @@ def tai_truyen(only_check=False, vpn="auto"):
             print("@@count upd 1", flush=True)
         else:
             print("@@count err 1", flush=True)  # không ghi ngày ⇒ lần sau kiểm lại
+            had_err = True
         time.sleep(delay)
+    if (full_scan or by_date) and not had_err:  # trót lọt ⇒ lần sau chỉ quét từ hôm trước ngày này
+        state["last_run"] = run_start
+        print(f"[*] Ghi mốc lần tải: {run_start} (lần sau quét truyện cập nhật từ hôm trước ngày này).", flush=True)
+    else:
+        print(f"[*] Có lỗi / chưa quét đủ ⇒ giữ mốc cũ ({last or 'chưa có'}) để lần sau quét lại.", flush=True)
     save_json(STATE_FILE, state)
     print(f"@@prog {len(cand)} {len(cand)}", flush=True)
     return 0
@@ -295,10 +324,18 @@ class AliceUpdater:
         self.log("[*] Lưu ý VPN: khi bị chặn, tool đổi IP WARP ⇒ mạng cả máy rớt vài giây.")
         py = [sys.executable, "-u"]
 
-        if not self.stop.is_set():  # bước 1 + 2: 1 tiến trình con, quét danh sách 1 lần (báo bước qua "@@step")
+        # Tải và dịch tách 2 bat (anh Thai chốt 2026-11-26): bat 5 "--chi-tai" = bước 1–2, bat 6 "--chi-dich" = bước 3–4
+        mode = "tai" if "--chi-tai" in sys.argv else "dich" if "--chi-dich" in sys.argv else "all"
+        if mode != "dich" and not self.stop.is_set():  # bước 1 + 2: 1 tiến trình con, quét danh sách 1 lần (báo bước qua "@@step")
             self.step(1, "Quét danh sách + tải truyện mới")
             self.run_proc(py + [os.path.abspath(__file__), "--tai", "--vpn", "auto"], ALICE_DIR,
                           self.on_download, killable=True)
+        if mode == "tai":
+            c = self.count
+            self.ui("step", ("Đã dừng" if self.stop.is_set() else "Tải xong") + f" — {c['new']} truyện mới, "
+                    f"{c['upd']} truyện có chương mới, {c['err']} lỗi")
+            self.log("[OK] Tải xong bản gốc. Muốn dịch + đưa lên web: chạy \"6. Dịch truyện alicesw.bat\".")
+            return
         if not self.stop.is_set():
             self.step(3, "Dịch Google")
             self.ui("prog", 0, 1)

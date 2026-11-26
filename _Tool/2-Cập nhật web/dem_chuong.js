@@ -10,6 +10,6 @@ const splitIntoChapters = new Function(body + '; return splitIntoChapters;')();
 const files = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 const out = {};
 for (const f of files) {
-  try { out[f] = splitIntoChapters(fs.readFileSync(path.join(root, f), 'utf8')).length; } catch (e) { /* bỏ qua file lỗi */ }
+  try { out[f] = splitIntoChapters(fs.readFileSync(path.join(root, f), 'utf8'), f).length; } catch (e) { /* bỏ qua file lỗi */ }
 }
 process.stdout.write(JSON.stringify(out));

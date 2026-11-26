@@ -176,6 +176,11 @@ def add_chapter_counts(stories, sources):
             cache = json.load(f)
     except (FileNotFoundError, ValueError):
         cache = {}
+    # Sửa cách chia chương trong reader.js ⇒ mã hàm đổi ⇒ đếm lại hết (trước đây chỉ đếm lại file đổi ⇒ số cũ sai)
+    import hashlib
+    with open(os.path.join(ROOT_DIR, "reader.js"), encoding="utf-8") as f:
+        src_js = f.read()
+    ver = hashlib.md5(src_js[src_js.find("function splitIntoChapters"):src_js.find("// Chia 1 đoạn văn")].encode()).hexdigest()[:8]
     todo, rel_of = [], {}
     for st in stories:
         if st.get("ch"):
@@ -185,7 +190,7 @@ def add_chapter_counts(stories, sources):
         full = os.path.join(ROOT_DIR, rel)
         if not os.path.exists(full):
             continue
-        sig = f"{os.path.getsize(full)}:{int(os.path.getmtime(full))}"
+        sig = f"{os.path.getsize(full)}:{int(os.path.getmtime(full))}:{ver}"
         rel_of[st["uid"]] = (rel, sig)
         if cache.get(rel, {}).get("sig") != sig:
             todo.append(rel)

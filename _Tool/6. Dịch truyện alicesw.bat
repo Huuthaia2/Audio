@@ -6,16 +6,14 @@ for /d %%D in ("%~dp01-*") do set "DL_DIR=%%~fD"
 for %%A in ("%~dp0..\..\alicesw") do set "ALICE_DIR=%%~fA"
 
 echo ==================================================
-echo           CAP NHAT TRUYEN NGUON ALICESW
+echo            DICH TRUYEN NGUON ALICESW
 echo ==================================================
-echo  Nguon:   alicesw - https://www.alicesw.com (tieng Trung)
-echo  Tai/dich: %ALICE_DIR%
-echo  Luu vao: Truyen\4-alicesw
+echo  Nguon:   %ALICE_DIR%\downloaded\origin (tieng Trung)
+echo  Dich:    Google, 3 truyen cung luc
+echo  Luu vao: %ALICE_DIR%\downloaded	ranslated
 echo.
-echo  1. Tai truyen moi (tag me con)
-echo  2. Truyen dang ra co chuong moi: tai lai
-echo  3. Dich Google
-echo  4. Dong bo Truyen\4-alicesw + lam lai stories.json (KHONG push)
+echo  3. Dich ban goc moi / co chuong moi (chi dich chuong moi)
+echo  4. Dong bo Truyen-alicesw + lam lai stories.json (KHONG push)
 echo  - Muon dua len web online: chay "2. Cap nhat web.bat"
 echo.
 echo  Cua so tien do se hien len - dung tat cua so nay.
@@ -25,5 +23,5 @@ if not exist "%ALICE_DIR%\alicesw_downloader.py" (
     pause
     exit /b 1
 )
-python "%DL_DIR%\update_alicesw.py"
+python "%DL_DIR%\update_alicesw.py" --chi-dich
 if errorlevel 1 pause

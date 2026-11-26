@@ -163,9 +163,6 @@ main.page { max-width: 1600px; margin: 0 auto; padding: 16px 16px 48px; }
 .content .seg { cursor: pointer; -webkit-tap-highlight-color: transparent; border-radius: 3px; }
 .content .seg.on { background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent2); }
 @media (max-width: 700px) { .content { font-size: 17px; line-height: 1.7; text-align: left; } }
-.chap-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; }
-.chap-nav .icon-btn { flex: 1; justify-content: center; }
-.chap-nav .next { border-color: var(--accent); color: var(--accent); }
 .hint { color: var(--muted); font-size: 12px; margin: 0 0 12px; }
 
 /* Các chương — kiểu "Các phần" */
@@ -183,7 +180,7 @@ html.a-playing .arow.playing-row .acover .i { display: none; }
 html.a-playing .arow.playing-row .acover .eq { display: flex; }
 
 /* Thanh phát cố định ở đáy (#abar Local Cinema) */
-html.has-abar body { padding-bottom: 84px; }
+html.has-abar body { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
 #abar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding-bottom: env(safe-area-inset-bottom); background: var(--head-bg);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid var(--bg3); }
 .ab-seek { position: relative; height: 14px; margin-top: -7px; }
@@ -369,7 +366,7 @@ html { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
   .pager button { min-width: 40px; height: 40px; }
   .pager .pager-jump button, .pager-jump input { height: 38px; }
   .ab-btn { width: 40px; height: 40px; }
-  .ab-parts, .ab-rate { height: 40px; }
+  .ab-parts, .ab-rate { width: auto; height: 40px; } /* .ab-btn 40px ở trên ép nút "1/222" ⇒ chữ tràn đè nút tốc độ */
   .ab-menu button { padding: 11px 10px; }
   .seek { height: 36px; }
   /* Cảm ứng không có "rê chuột": kiểu :hover dính lại sau khi chạm ⇒ trả về như chưa rê, thay bằng phản hồi lúc đang chạm */
@@ -409,3 +406,62 @@ html { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 
 /* Thông báo có bản cập nhật (sw.js): bấm được, không tự mất */
 .toast.toast-update { pointer-events: auto; cursor: pointer; border-color: var(--accent); }
+
+/* ===== iPhone / điện thoại: tai thỏ + thanh Home, khung đọc cuộn riêng, bảng chọn chương ===== */
+/* viewport-fit=cover ⇒ env(safe-area-inset-*) có giá trị thật: thanh đáy chừa chỗ cho vạch Home, không bị che chữ */
+#abar { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+
+/* Khung Nội dung: chữ nằm trong 1 khung cuộn riêng; chiều cao do fitReadBox (reader.js) tính vừa khít tới thanh đáy */
+#textSec { scroll-margin-top: 64px; }
+#storyContent { position: relative; height: 60vh; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+  padding-right: 8px; scrollbar-width: thin; }
+/* Tiêu đề khung đọc: [Đọc truyện] … [‹ Trước] [Sau ›] [gập] — Trước / Sau chỉ hiện khi khung đang mở */
+#textSec .sum-h { gap: 8px; }
+.chap-step { flex: none; padding: 6px 12px; font-size: 13px; font-weight: 600; gap: 4px; color: var(--text); }
+.chap-step.next { border-color: var(--accent); color: var(--accent2); }
+#navPrev { margin-left: auto; }
+.summary.closed .chap-step { display: none; }
+#textSec .sum-chev { margin-left: 4px; }
+#textSec.closed .sum-chev { margin-left: auto; }
+@media (hover: none) { .chap-step { min-height: 36px; } }
+
+/* Nút chọn chương riêng: [☰ Chọn chương] tên chương đang mở · 131/222 ▾ */
+.chap-open { width: 100%; display: flex; align-items: center; gap: 8px; padding: 12px 16px; margin-bottom: 12px; background: var(--bg2);
+  border: 1px solid var(--bg3); border-radius: 12px; cursor: pointer; text-align: left; color: var(--text); font: inherit; }
+.chap-open:hover { border-color: var(--accent); }
+.chap-open > .i:first-child { color: var(--accent2); }
+.co-l { flex: none; font-weight: 700; color: var(--accent2); }
+.co-t { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text); }
+.chap-num { flex: none; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.chap-open > .i:last-child { flex: none; color: var(--muted); transform: rotate(180deg); }
+
+/* Bảng bật lên từ đáy */
+html.sheet-open, html.sheet-open body { overflow: hidden; }
+.sheet { position: fixed; inset: 0; z-index: 40; background: rgba(0,0,0,.55); display: flex; align-items: flex-end; justify-content: center; }
+.sheet-box { width: 100%; max-width: 640px; max-height: 80vh; max-height: 80dvh; display: flex; flex-direction: column; background: var(--bg);
+  border: 1px solid var(--bg3); border-bottom: 0; border-radius: 16px 16px 0 0; box-shadow: 0 -12px 40px rgba(0,0,0,.45);
+  padding-bottom: env(safe-area-inset-bottom); animation: sheet-up .18s ease-out; }
+@keyframes sheet-up { from { transform: translateY(40px); opacity: .4; } }
+.sheet-head { display: flex; align-items: center; gap: 8px; padding: 10px 10px 10px 18px; font-weight: 700; border-bottom: 1px solid var(--bg3); }
+.sheet-head .ab-btn { margin-left: auto; }
+.sheet-list .arow { flex: none; } /* trong khung cao giới hạn, hàng flex bị ép dẹp chồng chữ */
+.sheet-list { overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: 6px 8px 10px; }
+@media (min-width: 701px) { .sheet { align-items: center; } .sheet-box { border-radius: 16px; border-bottom: 1px solid var(--bg3); } }
+
+/* Thanh tua ở thanh đáy: điện thoại hiện rõ vạch + nút tròn, vùng chạm cao 28px; chạm đâu tua tới đó (bindSeek tự tính) */
+.ab-fill::after { content: ''; position: absolute; right: -6px; top: 50%; width: 12px; height: 12px; margin-top: -6px; border-radius: 50%; background: var(--accent); }
+@media (hover: none) {
+  .ab-seek { height: 28px; margin-top: -14px; touch-action: none; }
+  .ab-seek::before, .ab-fill { top: 12px; height: 4px; }
+  .ab-seek:hover::before, .ab-seek:hover .ab-fill { top: 12px; height: 4px; }
+  .ab-seek input { pointer-events: none; }
+  .ab-fill::after { width: 14px; height: 14px; margin-top: -7px; right: -7px; }
+  .adp-seek { touch-action: none; }
+  .seek { pointer-events: none; }
+  .seek::-webkit-slider-thumb { width: 16px; height: 16px; margin-top: -6px; border-radius: 50%; background: var(--accent); }
+}
+
+/* Bảng chọn chương / tốc độ ở thanh đáy trên điện thoại: rộng hết màn hình, cao hơn */
+@media (max-width: 700px) {
+  .ab-menu { position: fixed; left: 8px; right: 8px; width: auto; bottom: calc(76px + env(safe-area-inset-bottom)); max-height: 60vh; max-height: 60dvh; }
+}
