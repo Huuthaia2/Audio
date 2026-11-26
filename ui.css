@@ -472,3 +472,9 @@ html.sheet-open, html.sheet-open body { overflow: hidden; }
 .new-tag { display: inline-block; margin-left: 8px; padding: 0 7px; border-radius: 999px; background: #22c55e; color: #052e16;
   font-size: 11px; font-weight: 700; line-height: 17px; vertical-align: 2px; letter-spacing: .2px; }
 .meta .new-tag { margin-left: 0; vertical-align: 0; }
+
+/* Nhật ký phát (bảng tốc độ ⇒ "Nhật ký phát") */
+.ab-menu button.ab-menu-log { border-top: 1px solid var(--bg3); margin-top: 4px; padding-top: 10px; border-radius: 0 0 6px 6px; color: var(--muted); }
+.log-box { max-width: 720px; }
+.log-text { height: 60vh; height: 60dvh; overflow: auto; background: var(--bg); color: var(--text); border: 1px solid var(--bg3); border-radius: 8px;
+  padding: 8px; font: 10.5px/1.45 ui-monospace, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; -webkit-user-select: text; user-select: text; }

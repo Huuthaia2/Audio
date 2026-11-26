@@ -575,6 +575,34 @@ const ttsUrl = (t) => isLocal
 const PRELOAD = 3;
 const pool = Array.from({ length: PRELOAD + 1 }, () => new Audio());
 let curP = pool[0];
+
+// =====================================================================
+// Nhật ký phát (anh Thai 2026-11-26): iPhone dừng ở câu ngắn / khi tắt màn hình mà máy tính không tái hiện được ⇒ ghi lại
+// ~150 sự kiện gần nhất (câu nào, loa nào, phát được bao lâu, lỗi gì, màn sáng / tắt) vào localStorage 'ttsLog'.
+// Xem: nút tốc độ ở thanh đáy ⇒ "Nhật ký phát" ⇒ chụp màn hình / Sao chép gửi lại.
+// =====================================================================
+const TLOG_MAX = 150;
+let tlogBuf = (() => { try { return JSON.parse(lsGet('ttsLog') || '[]'); } catch (e) { return []; } })();
+let tlogSaveT = null;
+function tlog(type, detail = '', a = curP) {
+  const d = new Date();
+  const hh = `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}:${String(d.getSeconds()).padStart(2, '0')}.${Math.floor(d.getMilliseconds() / 100)}`;
+  const pos = player ? `${player.ch + 1}.${player.seg + 1}` : '-';
+  const st = a ? `loa${pool.indexOf(a) + 1} t=${a.currentTime.toFixed(1)}/${isFinite(a.duration) ? a.duration.toFixed(1) : a.duration ? '∞' : '?'} rs${a.readyState} ns${a.networkState}${a.error ? ' err' + a.error.code : ''}${a.paused ? ' dừng' : ''}` : '';
+  tlogBuf.push(`${hh} [${pos}] ${type}${detail ? ' ' + detail : ''} · ${st}${document.hidden ? ' · NỀN' : ''}`);
+  if (tlogBuf.length > TLOG_MAX) tlogBuf = tlogBuf.slice(-TLOG_MAX);
+  clearTimeout(tlogSaveT);
+  tlogSaveT = setTimeout(() => lsSet('ttsLog', JSON.stringify(tlogBuf)), 500);
+}
+// Sự kiện của chính thẻ audio (chỉ ghi khi là loa đang đọc, đang nghe) ⇒ thấy iPhone tự dừng / chờ tải / lỗi ở đâu
+for (const a of pool) {
+  for (const ev of ['stalled', 'waiting', 'error', 'pause', 'ended', 'emptied', 'abort']) {
+    a.addEventListener(ev, () => { if (playing && a === curP) tlog('[' + ev + ']', '', a); });
+  }
+  // Loa đang tải sẵn câu kế mà lỗi (Google từ chối / rớt mạng) cũng ghi lại
+  a.addEventListener('error', () => { if (playing && a !== curP) tlog('[error] loa tải sẵn', `câu "${(decodeURIComponent((a.dataset.u || '').split('q=')[1] || '')).slice(0, 24)}"`, a); });
+}
+document.addEventListener('visibilitychange', () => tlog(document.hidden ? 'TẮT MÀN HÌNH / ẩn app' : 'MỞ MÀN HÌNH / hiện app'));
 let playing = false, reqId = 0, retryTimer = null, retries = 0;
 let resumeOnVisible = false; // điện thoại chặn phát (NotAllowedError) ⇒ mở lại app thì phát tiếp, không tắt hẳn
 // iPhone: 1 loa CHỈ được tự phát nếu đã từng play() trong lúc người dùng chạm ⇒ loa tải sẵn chưa "mở khoá" bị chặn
@@ -605,17 +633,16 @@ let keepAlive = null, bgDenied = 0;
 function keepAliveStart() {
   if (!IS_IOS) return;
   if (!keepAlive) {
-    // WAV 8 kHz 8-bit mono 4 giây; dao động 1 nấc ở 10 Hz (tai không nghe được) để không bị coi là file rỗng
-    const n = 32000, b = new Uint8Array(44 + n), v = new DataView(b.buffer);
+    // WAV 8 kHz 16-bit mono 4 giây, IM LẶNG THẬT (toàn số 0). Bản đầu 8-bit dao động 1 nấc ⇒ anh Thai nghe tiếng tích tích liên tục
+    const n = 64000, b = new Uint8Array(44 + n), v = new DataView(b.buffer);
     const str = (o, t) => { for (let i = 0; i < t.length; i++) b[o + i] = t.charCodeAt(i); };
     str(0, 'RIFF'); v.setUint32(4, 36 + n, true); str(8, 'WAVEfmt '); v.setUint32(16, 16, true); v.setUint16(20, 1, true);
-    v.setUint16(22, 1, true); v.setUint32(24, 8000, true); v.setUint32(28, 8000, true); v.setUint16(32, 1, true);
-    v.setUint16(34, 8, true); str(36, 'data'); v.setUint32(40, n, true);
-    for (let i = 0; i < n; i++) b[44 + i] = 128 + (Math.floor(i / 400) % 2);
+    v.setUint16(22, 1, true); v.setUint32(24, 8000, true); v.setUint32(28, 16000, true); v.setUint16(32, 2, true);
+    v.setUint16(34, 16, true); str(36, 'data'); v.setUint32(40, n, true);
     keepAlive = new Audio(URL.createObjectURL(new Blob([b], { type: 'audio/wav' })));
     keepAlive.loop = true;
   }
-  keepAlive.play().catch(() => {});
+  keepAlive.play().catch((e) => tlog('⚠ loa im lặng không phát', e.name, keepAlive));
 }
 function keepAliveStop() { if (keepAlive) keepAlive.pause(); }
 
@@ -629,12 +656,14 @@ function startPlay(s) {
   document.documentElement.classList.add('has-abar');
   if (barWasHidden) refitReadBox();
   playing = true;
+  tlog('■ BẤM NGHE', `${navigator.userAgent.match(/(iPhone|iPad|Android)[^;)]*/)?.[0] || 'máy tính'} · tốc độ ${rate}`);
   unlockPool();
   keepAliveStart();
   playSeg(true);
 }
 function stopSegAudio() { reqId++; clearTimeout(retryTimer); pool.forEach((a) => a.pause()); curP.removeAttribute('src'); delete curP.dataset.u; }
 function pauseAudio() {
+  if (playing) tlog('■ DỪNG');
   playing = false;
   resumeOnVisible = false;
   reqId++;
@@ -660,26 +689,32 @@ function playSeg(scroll) {
     curP = ready || pool.find((a) => a !== curP && !a.dataset.u) || pool.find((a) => a !== curP) || curP;
   }
   // Loa tải sẵn câu này mà bị lỗi (Google từ chối / rớt mạng) ⇒ tải lại; trước đây phát file lỗi ⇒ dừng hẳn
+  if (curP.dataset.u === url && curP.error) tlog('  loa tải sẵn câu này bị lỗi ⇒ tải lại', '', curP);
   if (curP.dataset.u !== url || curP.error) { curP.src = url; curP.dataset.u = url; }
   curP.defaultPlaybackRate = curP.playbackRate = rate;
   updateMediaSession();
   const p = curP;
-  p.play().then(() => { okP = p; bgDenied = 0; if (id === reqId) retries = 0; }).catch((e) => {
+  const txt = s.queue[s.seg];
+  tlog('▶ câu', `${txt.length}kt "${txt.slice(0, 28)}${txt.length > 28 ? '…' : ''}"${p.dataset.u === url && p.readyState > 0 ? ' (tải sẵn)' : ''}`, p);
+  p.play().then(() => { okP = p; bgDenied = 0; if (id === reqId) retries = 0; tlog('  phát được', '', p); }).catch((e) => {
+    tlog('  play() LỖI', e.name + (id !== reqId ? ' (cũ)' : ''), p);
     if (id !== reqId || e.name === 'AbortError') return;
     if (e.name === 'NotAllowedError') {
       if (document.hidden) {
         // Đang ở nền: thử lại 3 lần cách nhau 1,5s (loa im lặng giữ trang còn chạy) rồi mới chờ mở lại app
+        tlog('⚠ bị chặn ở nền', `lần ${bgDenied + 1}`);
         if (++bgDenied <= 3) { retryTimer = setTimeout(() => { if (playing && id === reqId) playSeg(false); }, 1500); return; }
         bgDenied = 0; resumeOnVisible = true; return;
       }
       // Màn sáng mà bị chặn = loa này chưa được mở khoá ⇒ đọc tiếp trên loa vừa phát được, bỏ chế độ nhiều loa
       if (okP && okP !== p && !singleSpeaker) {
-        console.warn('Loa bị iPhone chặn ⇒ chuyển sang đọc 1 loa');
+        console.warn('Loa bị iPhone chặn ⇒ chuyển sang đọc 1 loa'); tlog('⚠ chuyển sang đọc 1 loa');
         singleSpeaker = true; p.pause(); curP = okP;
         playSeg(false);
         return;
       }
       // Cả loa đó cũng bị chặn ⇒ dừng hẳn + báo rõ (trước đây đứng im mà nút vẫn hiện đang phát)
+      tlog('⚠ cả loa dự phòng bị chặn ⇒ DỪNG');
       pauseAudio();
       showToast('Điện thoại chặn tự phát — bấm Nghe để đọc tiếp', 'error');
       return;
@@ -721,6 +756,7 @@ function playSeg(scroll) {
 // Lỗi mạng / Google từ chối ⇒ thử lại câu đó (2s, 4s, 6s...), tối đa 5 lần rồi mới dừng
 function retryLater(id) {
   clearTimeout(retryTimer);
+  tlog('⚠ lỗi tải câu ⇒ thử lại', `lần ${retries + 1}`);
   if (++retries > 5) {
     retries = 0;
     pauseAudio();
@@ -745,10 +781,10 @@ const atAudioEnd = (a) => isFinite(a.duration) && a.duration > 0 && a.currentTim
 function watchReload(why) {
   watchStuck = 0;
   if (++watchReloads > 2) {
-    console.warn('Câu', player.seg + 1, 'không phát được ⇒ bỏ qua');
+    console.warn('Câu', player.seg + 1, 'không phát được ⇒ bỏ qua'); tlog('⚠ bộ canh: tải lại 2 lần vẫn hỏng ⇒ BỎ QUA câu');
     if (curP.onended) curP.onended();
   } else {
-    console.warn(why, '⇒ tải lại câu', player.seg + 1);
+    console.warn(why, '⇒ tải lại câu', player.seg + 1); tlog('⚠ bộ canh: ' + why + ' ⇒ tải lại câu');
     stopSegAudio();
     playSeg(false);
   }
@@ -764,11 +800,11 @@ setInterval(() => {
   if (t > 0.3 && atAudioEnd(curP)) {
     if (sec >= 0.4) {
       watchStuck = 0;
-      console.warn('Câu', player.seg + 1, 'hết mà không báo ⇒ sang câu kế');
+      console.warn('Câu', player.seg + 1, 'hết mà không báo ⇒ sang câu kế'); tlog('⚠ bộ canh: hết câu mà không báo ⇒ sang câu kế');
       if (curP.onended) curP.onended();
     }
   } else if (t > 0.3 && !(curP.networkState === 2 && curP.readyState < 3)) {
-    if (watchStuck === Math.round(1000 / WATCH_MS)) curP.play().catch(() => {});
+    if (watchStuck === Math.round(1000 / WATCH_MS)) { tlog('⚠ bộ canh: đứng giữa câu ⇒ phát tiếp'); curP.play().catch(() => {}); }
     else if (sec >= 4) watchReload('Đứng giữa câu');
   } else if (sec >= 8) watchReload('Âm thanh kẹt');
 }, WATCH_MS);
@@ -855,9 +891,11 @@ function paintView(scroll, preview = null) {
   const isCur = player === view;
   document.querySelector('#adPlayer .adp-play').innerHTML = icon(isCur && playing ? 'pause' : 'play', 'fill');
   document.querySelectorAll('#storyContent .seg.on').forEach((el) => el.classList.remove('on'));
-  const el = document.querySelector(`#storyContent .seg[data-i="${i}"]`);
+  // 1 lượt đọc có thể gồm vài câu ngắn gộp lại (buildChapter) ⇒ tô hết các câu của lượt đó, cuộn tới câu đầu
+  const els = document.querySelectorAll(`#storyContent .seg[data-i="${i}"]`);
+  const el = els[0];
   if (el) {
-    el.classList.add('on');
+    els.forEach((x) => x.classList.add('on'));
     if (scroll && !document.querySelector('#textSec.closed')) scrollSegIntoBox(el);
   }
   const adIn = document.querySelector('#adPlayer input');
@@ -907,7 +945,43 @@ function renderChapMenu() {
 }
 function renderRateMenu() {
   $('rateMenu').innerHTML = '<div class="ab-menu-h">Tốc độ đọc</div>'
-    + RATES.map((r) => `<button class="${r === rate ? 'on' : ''}" data-rate="${r}"><span>${r}x${r === 1 ? ' (thường)' : ''}</span><em>${r === rate ? icon('check', 'sm') : ''}</em></button>`).join('');
+    + RATES.map((r) => `<button class="${r === rate ? 'on' : ''}" data-rate="${r}"><span>${r}x${r === 1 ? ' (thường)' : ''}</span><em>${r === rate ? icon('check', 'sm') : ''}</em></button>`).join('')
+    + `<button class="ab-menu-log" data-log>${icon('list', 'sm')}<span>Nhật ký phát</span><em>${tlogBuf.length}</em></button>`;
+}
+
+// Hộp xem nhật ký phát: khung chữ nhỏ, tự xuống dòng ⇒ chụp 1 màn hình là thấy đủ (ô nhập trên điện thoại bị ép chữ 16px
+// ⇒ tràn ngang). Nút Sao chép dùng 1 ô ẩn tạm thời.
+function openTtsLog() {
+  let m = $('ttsLogModal');
+  if (!m) {
+    m = document.createElement('div');
+    m.className = 'modal'; m.id = 'ttsLogModal';
+    m.innerHTML = `<div class="modal-box log-box">
+      <div class="modal-head">${icon('list')} Nhật ký phát<button class="ab-btn" data-close title="Đóng">${icon('x')}</button></div>
+      <p>Khi bị dừng: mở đây, chụp màn hình (hoặc Sao chép) gửi lại. Mới nhất ở dưới cùng.</p>
+      <div class="log-text" id="ttsLogText"></div>
+      <div class="modal-foot">
+        <button class="icon-btn" data-clear>${icon('trash', 'sm')} Xoá</button>
+        <button class="icon-btn primary" data-copy>${icon('copy', 'sm')} Sao chép</button>
+      </div></div>`;
+    document.body.appendChild(m);
+    m.onclick = (e) => {
+      if (e.target === m || e.target.closest('[data-close]')) m.hidden = true;
+      else if (e.target.closest('[data-clear]')) { tlogBuf = []; lsSet('ttsLog', '[]'); $('ttsLogText').textContent = ''; }
+      else if (e.target.closest('[data-copy]')) {
+        const ta = document.createElement('textarea'); ta.value = tlogBuf.join(String.fromCharCode(10));
+        ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+        document.body.appendChild(ta); ta.focus(); ta.select(); ta.setSelectionRange(0, ta.value.length);
+        let done = false; try { done = document.execCommand('copy'); } catch (er) {}
+        ta.remove();
+        if (!done && navigator.clipboard) navigator.clipboard.writeText(ta.value).then(() => showToast('Đã sao chép', 'success'), () => {});
+        else showToast(done ? 'Đã sao chép' : 'Không sao chép được — giữ tay vào ô chữ để chọn', done ? 'success' : 'error');
+      }
+    };
+  }
+  $('ttsLogText').textContent = tlogBuf.join(String.fromCharCode(10));
+  m.hidden = false;
+  $('ttsLogText').scrollTop = $('ttsLogText').scrollHeight;
 }
 
 // ---- Thanh phát ở đáy (luôn điều khiển truyện đang nghe) ----
@@ -948,6 +1022,7 @@ function renderRateMenu() {
     if (!playing) startPlay(player);
   };
   $('rateMenu').onclick = (e) => {
+    if (e.target.closest('[data-log]')) { $('rateMenu').hidden = true; openTtsLog(); return; }
     const b = e.target.closest('[data-rate]');
     if (!b) return;
     rate = +b.dataset.rate;
