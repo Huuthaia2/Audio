@@ -17,6 +17,40 @@ OUT_DIR = os.path.join(ROOT_DIR, "Truyện", "4-alicesw")
 TXT_DIR = OUT_DIR
 INDEX = os.path.join(OUT_DIR, "index.json")
 SKIP_TAGS = {"R-18", "Tiếng Trung"}  # không phải thể loại (anh Thai chốt 2026-11-25)
+# Tag + tên tác giả trong file bị Google dịch nửa vời ("榨 Tinh", "Vô 聊 Nhật Nhật 陈") ⇒ từ điển do AI dịch lại
+# (anh Thai yêu cầu 2026-11-26): {"tags": {gốc: mới}, "authors": {gốc: mới}}. Tag / tên mới chưa có trong từ điển ⇒ giữ nguyên
+# và in ra cuối lần chạy để bổ sung.
+DICH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "alicesw_dich.json")
+
+
+def load_dich():
+    try:
+        with open(DICH, encoding="utf-8") as f:
+            d = json.load(f)
+        return d.get("tags", {}), d.get("authors", {})
+    except FileNotFoundError:
+        return {}, {}
+
+
+def apply_dich(info, tmap, amap, missing, tvals):
+    tags = []
+    for t in info["tags"]:
+        n = tmap.get(t)
+        if n is None:
+            if t not in tvals:  # đã là tag dịch rồi (mục cũ giữ lại từ index) thì không báo thiếu
+                missing["tags"].add(t)
+            n = t
+        # Tag gộp "Sa đọa / Huấn luyện" ⇒ tách thành từng tag riêng (lọc được từng cái)
+        for p in n.split(" / "):
+            p = p.strip()
+            if p and p not in SKIP_TAGS and p not in tags:
+                tags.append(p)
+    info["tags"] = tags
+    a = info.get("author", "")
+    if a in amap:
+        info["author"] = amap[a]
+    elif a and a not in amap.values():
+        missing["authors"].add(a)
 
 
 def field(head, name):
@@ -104,6 +138,13 @@ def main():
                 best[info["id"]] = info
     print(f"[*] {total} file ⇒ {len(best)} truyện (bỏ {total - len(best) - no_id} file trùng, {no_id} file không có id)")
 
+    # Dịch lại tag + tác giả theo từ điển (trước bước gộp hoa / thường)
+    tmap, amap = load_dich()
+    tvals = set(tmap.values())
+    missing = {"tags": set(), "authors": set()}
+    for info in best.values():
+        apply_dich(info, tmap, amap, missing, tvals)
+
     # Tag chỉ khác hoa / thường ("NTR" / "Ntr") ⇒ gộp, lấy cách viết phổ biến nhất (tránh 2 chip giống nhau khi lọc)
     forms = {}
     for info in best.values():
@@ -149,6 +190,7 @@ def main():
         if origin_ids is None or nid in origin_ids:
             if nid in old:
                 best[nid] = {"id": nid, **old[nid]}
+                apply_dich(best[nid], tmap, amap, missing, tvals)
             kept += 1
         else:
             os.remove(os.path.join(TXT_DIR, name))
@@ -161,6 +203,9 @@ def main():
         json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
     gz_mb = sum(os.path.getsize(os.path.join(TXT_DIR, n)) for n in os.listdir(TXT_DIR) if n.endswith(".txt.gz")) / 1e6
     print(f"[OK] alicesw: {len(best)} truyện | nén mới {changed} | xoá {removed} | tổng .gz {gz_mb:.0f} MB")
+    if missing["tags"] or missing["authors"]:
+        print(f"[!] Chưa có trong alicesw_dich.json (giữ nguyên bản Google): {len(missing['tags'])} tag, "
+              f"{len(missing['authors'])} tác giả — vd: {', '.join(sorted(missing['tags'])[:8])}")
     return 0
 
 
