@@ -34,3 +34,8 @@ TestResults.xml
 
 # Kết quả đếm chương của update_index.py (máy nào cũng tự đếm lại được)
 _Tool/2-Cập nhật web/chapter_cache.json
+
+# Phiên đăng nhập / bí mật — KHÔNG BAO GIỜ đẩy lên GitHub
+*cookies*.txt
+.dev.vars
+.wrangler/

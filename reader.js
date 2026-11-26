@@ -653,6 +653,65 @@ const ttsUrl = (t, v = 0) => (isLocal
   ? `http://127.0.0.1:9999/tts?q=${encodeURIComponent(t)}`
   : `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=vi&q=${encodeURIComponent(t)}`) + (v ? `&r=${v}` : '');
 let segVariant = 0, segVariantKey = null; // số lần đã tải lại câu đang đọc (đổi câu ⇒ về 0)
+
+// =====================================================================
+// Giọng đọc tải sẵn vào BỘ NHỚ (2026-11-26) qua trạm trung chuyển Cloudflare (_Tool/7-Cloudflare TTS/worker.js; trên máy
+// thì qua proxy cổng 9999) — 2 trạm đều cho phép trang đọc dữ liệu (CORS), Google thì không.
+// ⇒ tải sẵn MEM_AHEAD câu kế kể cả lúc tắt màn hình; dò đúng chỗ BẮT ĐẦU / HẾT TIẾNG của từng file (giải mã âm thanh) để
+// nối câu sát nhau; phát từ blob (biết độ dài ⇒ iPhone không kẹt 0s). Trạm lỗi ⇒ tự quay về gọi thẳng Google như cũ.
+// =====================================================================
+const TTS_FETCH = isLocal ? 'http://127.0.0.1:9999/tts?q=' : 'https://khotruyen-tts.7--loudflare.workers.dev/tts?q=';
+const MEM_AHEAD = 6, MEM_MAX = 30, MEM_PAR = 3;
+const MEM = new Map();          // câu ⇒ { st: 'loading' | 'ok' | 'err', url (blob), lead, end, dur }
+let memBusy = 0, memFails = 0;  // memFails: trạm lỗi liên tiếp ≥ 5 ⇒ thôi dùng trạm (quay về Google trực tiếp)
+const memQueue = [];
+let decodeCtx = null;
+async function ttsAnalyze(buf) {
+  try {
+    const C = window.OfflineAudioContext || window.webkitOfflineAudioContext;
+    if (!C) return null;
+    decodeCtx = decodeCtx || new C(1, 2, 22050);
+    const ab = await decodeCtx.decodeAudioData(buf);
+    const d = ab.getChannelData(0), sr = ab.sampleRate, TH = 0.004; // ~ -48 dB
+    let i = 0; while (i < d.length && Math.abs(d[i]) < TH) i++;
+    let j = d.length - 1; while (j > i && Math.abs(d[j]) < TH) j--;
+    if (i >= j) return null;
+    return { lead: Math.max(0, i / sr - 0.03), end: Math.min(ab.duration, j / sr + 0.06), dur: ab.duration };
+  } catch (e) { return null; }
+}
+function memPump() {
+  while (memBusy < MEM_PAR && memQueue.length) {
+    const t = memQueue.shift();
+    const m = MEM.get(t);
+    if (!m || m.st !== 'loading' || m.started) continue;
+    m.started = true; memBusy++;
+    fetch(TTS_FETCH + encodeURIComponent(t))
+      .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.arrayBuffer(); })
+      .then(async (buf) => {
+        const info = await ttsAnalyze(buf.slice(0));
+        Object.assign(m, { st: 'ok', url: URL.createObjectURL(new Blob([buf], { type: 'audio/mpeg' })) }, info || {});
+        memFails = 0;
+      })
+      .catch((e) => { m.st = 'err'; memFails++; tlog('⚠ trạm giọng đọc lỗi', e.message, null); })
+      .finally(() => { memBusy--; memPump(); if (player && playing) fillPreload(player); });
+  }
+}
+function memWant(t) {
+  if (memFails >= 5 || MEM.has(t)) return;
+  MEM.set(t, { st: 'loading' });
+  memQueue.push(t);
+  // Giữ tối đa MEM_MAX câu: bỏ câu cũ nhất (không bỏ câu đang dùng)
+  while (MEM.size > MEM_MAX) {
+    const [k, v] = MEM.entries().next().value;
+    if (pool.some((a) => a.dataset.u === ttsUrl(k))) { MEM.delete(k); MEM.set(k, v); break; }
+    if (v.url) URL.revokeObjectURL(v.url);
+    MEM.delete(k);
+  }
+  memPump();
+}
+// Địa chỉ để phát câu t: blob trong bộ nhớ nếu đã có, không thì gọi thẳng Google (như trước)
+const ttsSrc = (t, v = 0) => { const m = MEM.get(t); return m && m.st === 'ok' && !v ? m.url : ttsUrl(t, v); };
+const memInfo = (t) => { const m = MEM.get(t); return m && m.st === 'ok' && m.end ? m : null; };
 // Cắt im lặng có sẵn trong file Google: bỏ TTS_LEAD giây đầu + chuyển câu sớm ttsTail giây trước khi hết file.
 // Muốn khoảng hở thật sự = 0 phải đọc được dữ liệu âm thanh để dò đúng chỗ im lặng của từng file (Google chặn ⇒ cần trạm trung chuyển).
 // Đo trên Android thật: loa bắt đầu phát từ vị trí 0 mất ~300ms khởi động; loa đã "làm nóng" (chạy thử tắt tiếng rồi đứng ở
@@ -668,7 +727,9 @@ function armEarly(p, id) {
   // Màn tắt: timer bị hãm ⇒ để sự kiện ended tự chuyển câu. File quá ngắn (< 0,6s, file Google thật ≥ 0,9s) ⇒ không cắt.
   if (document.hidden || !isFinite(p.duration) || p.duration < 0.6 || p.paused) return;
   earlyArmed = id;
-  const tail = ttsTail(player.queue[player.seg] || '');
+  const mi = memInfo(player.queue[player.seg] || '');
+  // Đã dò được chỗ hết tiếng (blob) ⇒ cắt đúng phần im lặng còn lại; chưa ⇒ mức an toàn theo dấu câu
+  const tail = mi && p.dataset.blob && Math.abs(p.duration - mi.dur) < 0.3 ? Math.max(0, p.duration - mi.end) : ttsTail(player.queue[player.seg] || '');
   const ms = (p.duration - p.currentTime - tail) / (p.playbackRate || 1) * 1000;
   earlyT = setTimeout(() => {
     if (!playing || id !== reqId || p !== curP || p.paused) return;
@@ -784,6 +845,40 @@ function pauseAudio() {
 }
 function togglePlay() { playing ? pauseAudio() : startPlay(player); }
 
+// Đưa PRELOAD câu kế vào các loa rảnh (iPhone tắt màn hình / chế độ 1 loa thì không dùng tới). Câu đã có trong bộ nhớ ⇒
+// gắn blob; chưa có ⇒ chờ (memPump gọi lại khi tải xong), trừ khi không dùng được trạm thì gắn thẳng địa chỉ Google.
+function fillPreload(s) {
+  if ((document.hidden && IS_IOS) || singleSpeaker || s !== player) return;
+  const want = [];
+  for (let k = 1; k <= PRELOAD && s.seg + k < s.queue.length; k++) want.push(s.queue[s.seg + k]);
+  const wantU = want.map((t) => ttsUrl(t));
+  for (const t of want) {
+    const u = ttsUrl(t);
+    const m = MEM.get(t);
+    const ready = m && m.st === 'ok';
+    const held = pool.find((a) => a.dataset.u === u && !a.error);
+    if (held && (held.dataset.blob || !ready)) continue;
+    if (!ready && m && m.st === 'loading') continue;
+    const free = held || pool.find((a) => a !== curP && !wantU.includes(a.dataset.u));
+    if (!free || free === curP) break;
+    free.src = ready ? m.url : u; free.dataset.u = u; delete free.dataset.warm;
+    if (ready) free.dataset.blob = '1'; else delete free.dataset.blob;
+    free.load();
+    // Làm nóng: chạy thử TẮT TIẾNG 1 chút rồi đứng ở chỗ bắt đầu có tiếng ⇒ tới lượt phát ngay
+    const lead = ready && m.lead != null ? m.lead : TTS_LEAD;
+    free.onloadedmetadata = () => {
+      if (free === curP || free.dataset.u !== u) return;
+      free.muted = true;
+      free.play().then(() => setTimeout(() => {
+        if (free === curP || free.dataset.u !== u) { free.muted = false; return; }
+        free.pause(); free.muted = false;
+        try { free.currentTime = lead; } catch (e) {}
+        free.dataset.warm = '1';
+      }, 60)).catch((e) => { free.muted = false; tlog('  làm nóng loa tải sẵn lỗi', e.name, free); });
+    };
+  }
+}
+
 function playSeg(scroll) {
   if (!playing || !player) return;
   clearTimeout(retryTimer);
@@ -802,13 +897,18 @@ function playSeg(scroll) {
   }
   // Loa tải sẵn câu này mà bị lỗi (Google từ chối / rớt mạng) ⇒ tải lại; trước đây phát file lỗi ⇒ dừng hẳn
   if (curP.dataset.u === url && curP.error) tlog('  loa tải sẵn câu này bị lỗi ⇒ tải lại', '', curP);
-  if (curP.dataset.u !== url || curP.error) { curP.src = url; curP.dataset.u = url; }
+  if (curP.dataset.u !== url || curP.error) {
+    const src = ttsSrc(s.queue[s.seg], segVariant);
+    curP.src = src; curP.dataset.u = url;
+    if (src.startsWith('blob:')) curP.dataset.blob = '1'; else delete curP.dataset.blob;
+  }
+  for (let k = 0; k <= MEM_AHEAD && s.seg + k < s.queue.length; k++) memWant(s.queue[s.seg + k]); // tải sẵn vào bộ nhớ
   curP.defaultPlaybackRate = curP.playbackRate = rate;
   updateMediaSession();
   const p = curP;
   p.muted = false;
   const txt = s.queue[s.seg];
-  tlog('▶ câu', `${txt.length}kt "${txt.slice(0, 28)}${txt.length > 28 ? '…' : ''}"${p.dataset.u === url && p.readyState > 0 ? (p.dataset.warm ? ' (tải sẵn, đã làm nóng)' : ' (tải sẵn, CHƯA làm nóng)') : ''}`, p);
+  tlog('▶ câu', `${txt.length}kt "${txt.slice(0, 28)}${txt.length > 28 ? '…' : ''}"${p.dataset.u === url && p.readyState > 0 ? (p.dataset.warm ? ' (tải sẵn, đã làm nóng)' : ' (tải sẵn, CHƯA làm nóng)') : ''}${p.dataset.blob ? ' [bộ nhớ]' : ' [mạng]'}`, p);
   p.play().then(() => { okP = p; bgDenied = 0; if (id === reqId) retries = 0; tlog('  phát được', '', p); }).catch((e) => {
     tlog('  play() LỖI', e.name + (id !== reqId ? ' (cũ)' : ''), p);
     if (id !== reqId || e.name === 'AbortError') return;
@@ -834,31 +934,7 @@ function playSeg(scroll) {
     }
     retryLater(id);
   });
-  // Tải sẵn PRELOAD câu kế vào các loa rảnh (iPhone tắt màn hình / chế độ 1 loa thì không dùng tới ⇒ không tải)
-  if (!(document.hidden && IS_IOS) && !singleSpeaker) {
-    const want = [];
-    for (let k = 1; k <= PRELOAD && s.seg + k < s.queue.length; k++) want.push(ttsUrl(s.queue[s.seg + k]));
-    for (const u of want) {
-      if (pool.some((a) => a.dataset.u === u && !a.error)) continue;
-      const free = pool.find((a) => a !== curP && !want.includes(a.dataset.u));
-      if (!free) break;
-      free.src = u; free.dataset.u = u; delete free.dataset.warm; free.load();
-      // Tua sẵn qua im lặng đầu file ngay khi biết độ dài ⇒ tới lượt phát ngay, không mất thời gian tua
-      // Làm nóng: chạy thử TẮT TIẾNG 1 chút rồi đứng ở TTS_LEAD (bỏ im lặng đầu file) ⇒ buộc tải đủ dữ liệu + trình phát
-      // đã khởi động sẵn ⇒ tới lượt phát ngay.
-      const warmU = u;
-      free.onloadedmetadata = () => {
-        if (free === curP || free.dataset.u !== warmU) return;
-        free.muted = true;
-        free.play().then(() => setTimeout(() => {
-          if (free === curP || free.dataset.u !== warmU) { free.muted = false; return; }
-          free.pause(); free.muted = false;
-          try { free.currentTime = TTS_LEAD; } catch (e) {}
-          free.dataset.warm = '1';
-        }, 60)).catch((e) => { free.muted = false; tlog('  làm nóng loa tải sẵn lỗi', e.name, free); });
-      };
-    }
-  }
+  fillPreload(s);
   curP.onended = () => {
     if (!playing || id !== reqId) return;
     if (s.seg + 1 < s.queue.length) {

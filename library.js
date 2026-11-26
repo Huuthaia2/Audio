@@ -168,7 +168,7 @@ function rowHtml(s, extraSub = '') {
   return `<div class="arow" data-uid="${esc(s.uid)}" data-mode="${s.has_raw ? 'raw' : 'sum'}">
     <button class="acover" style="--h:${coverHue(s)}" aria-label="Phát">${icon('headphones', 'ic-idle')}${icon('play', 'fill ic-play')}${icon('pause', 'fill ic-pause')}<span class="eq"><i></i><i></i><i></i></span></button>
     <div class="ainfo">
-      <div class="title">${esc(s.title)}${newTag(s)}${chapters > 1 ? `<span class="apart">${chapters} chương</span>` : ''}</div>
+      <div class="title"><span class="tt" data-full="${esc(s.title)}">${esc(s.title)}</span>${newTag(s)}${chapters > 1 ? `<span class="apart">${chapters} chương</span>` : ''}</div>
       <div class="sub">${extraSub || `${icon('folder', 'sm')} ${esc(rowTags(s))} · ${s.t ? `${icon('calendar', 'sm')} ${s.t.split('-').reverse().join('/')} · ` : ''}${info}${fmtSize(s.size)}`}</div>
     </div>
     ${s.has_sum ? `<button class="abadge" data-sum="${esc(s.uid)}" title="Xem tóm tắt">${icon('fileText', 'sm')}<span>Tóm tắt</span></button>` : ''}
@@ -393,3 +393,44 @@ window.addEventListener('scroll', () => {
   clearTimeout(sTimer);
   sTimer = setTimeout(() => { libScroll = window.scrollY; saveLibState(); }, 150);
 }, { passive: true });
+
+
+// =====================================================================
+// Tên truyện tối đa 2 dòng (tính cả nhãn "Mới" / "N chương"); dài quá ⇒ giữ đầu + cuối tên, cắt GIỮA bằng "…"
+// (anh Thai chốt 2026-11-26: cuối tên hay có số tập / "(cuối)"). CSS không cắt giữa được ⇒ đo bằng JS, dò nhị phân
+// số ký tự giữ lại. Chạy lại khi danh sách vẽ lại (MutationObserver) và khi đổi cỡ màn hình.
+// =====================================================================
+function fitTitle(el) {
+  const tt = el.querySelector('.tt');
+  if (!tt) return;
+  const w = el.clientWidth;
+  if (!w || el.dataset.fw === String(w)) return; // đang ẩn / đã cắt đúng độ rộng này ⇒ thôi
+  const full = tt.dataset.full;
+  if (tt.textContent !== full) tt.textContent = full;
+  el.dataset.fw = w;
+  const h0 = el.getBoundingClientRect().height;
+  const max = (parseFloat(getComputedStyle(el).lineHeight) || 19) * 2 + 2;
+  if (h0 <= max) { tt.removeAttribute('title'); return; }
+  const set = (n) => {
+    const a = Math.ceil(n * 0.55), b = n - a;
+    tt.textContent = full.slice(0, a).trimEnd() + '…' + (b ? full.slice(full.length - b).trimStart() : '');
+  };
+  let lo = 6, hi = full.length - 1, best = 6;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    set(mid);
+    if (el.getBoundingClientRect().height <= max) { best = mid; lo = mid + 1; } else hi = mid - 1;
+  }
+  set(best);
+  tt.title = full; // giữ tay / rê chuột ⇒ thấy tên đầy đủ
+}
+function fitTitles(root = document) {
+  root.querySelectorAll('.arow .title').forEach(fitTitle);
+}
+let fitRaf = 0;
+const fitSoon = () => { cancelAnimationFrame(fitRaf); fitRaf = requestAnimationFrame(() => fitTitles()); };
+// Chỉ theo dõi 3 khung danh sách được vẽ lại bằng innerHTML (không theo dõi cả trang: chính việc cắt tên cũng là thay đổi
+// ⇒ lặp vô hạn; thanh phát đổi chữ mỗi câu ⇒ đo lại cả danh sách vô ích)
+const fitObs = new MutationObserver(fitSoon);
+for (const id of ['storyList', 'resumeList', 'histView']) if ($(id)) fitObs.observe($(id), { childList: true });
+window.addEventListener('resize', fitSoon);
