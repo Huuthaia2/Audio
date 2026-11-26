@@ -307,6 +307,8 @@ function renderReader() {
     </div>
     <div class="ad-head">
       <div class="ad-cover" style="--h:${hue}">${icon('headphones')}</div>
+      <!-- Yêu thích: góc phải cạnh ảnh bìa (anh Thai chốt 2026-11-26: đỡ tốn 1 hàng riêng) -->
+      <div class="ad-fav">${favBtnHtml(story.uid, 'icon-btn', ' Yêu thích')}</div>
       <div class="ad-main">
         <h1>${esc(story.title)}</h1>
         <div class="meta">
@@ -330,7 +332,6 @@ function renderReader() {
             <button class="adp-btn adp-fwd" title="Tới 1 đoạn">${icon('rotateCw')}</button>
           </div>
         </div>` : ''}
-        <div class="actions">${favBtnHtml(story.uid, 'icon-btn', ' Yêu thích')}</div>
         ${storyTagsHtml(story)}
       </div>
     </div>
@@ -370,12 +371,11 @@ function renderReader() {
   // Đường dẫn: bấm nguồn ⇒ danh sách lọc nguồn đó; bấm thể loại ⇒ lọc nguồn + tag đó
   $('readView').querySelector('[data-crumb-src]').onclick = (e) => { e.preventDefault(); libFilterTag(sourceOf(story)); };
   $('readView').querySelector('[data-crumb-tag]').onclick = (e) => { e.preventDefault(); libFilterTag(sourceOf(story), story.category); };
-  // Bấm tag ⇒ về danh sách lọc đúng nguồn + tag đó; truyện nhiều tag ⇒ thu gọn, bấm "+N" để xem hết
+  // Bấm tag ⇒ về danh sách lọc đúng nguồn + tag đó
   const tagBox = $('readView').querySelector('.story-tags');
   if (tagBox) tagBox.onclick = (e) => {
     const b = e.target.closest('[data-ftag]');
     if (b) libFilterTag(sourceOf(story), b.dataset.ftag);
-    else if (e.target.closest('.tag-more-inline')) tagBox.classList.add('open');
   };
   if (story.has_sum) loadSummary(story);
   if (!raw) return;
@@ -418,9 +418,8 @@ function renderReader() {
 function storyTagsHtml(story) {
   const tags = [...new Set([story.category, ...(story.tags || [])])].filter((t) => t && !SKIP_TAGS.has(t));
   if (tags.length < 2 && !story.tags) return '';
-  const MAX = 12;
-  return `<div class="story-tags">${tags.map((t, i) => `<button class="tag${i >= MAX ? ' extra' : ''}" data-ftag="${esc(t)}">${esc(t)}</button>`).join('')}`
-    + (tags.length > MAX ? `<button class="tag tag-more-inline">+${tags.length - MAX}</button>` : '') + '</div>';
+  // 1 dòng duy nhất, vuốt ngang xem hết (anh Thai chốt 2026-11-26)
+  return `<div class="story-tags">${tags.map((t) => `<button class="tag" data-ftag="${esc(t)}">${esc(t)}</button>`).join('')}</div>`;
 }
 
 // Khung Nội dung luôn gập khi mở truyện (anh Thai chốt 2026-11-25), bấm tiêu đề để mở.
@@ -444,8 +443,9 @@ function fitReadBox() {
   const abar = $('abar').hidden ? 0 : $('abar').offsetHeight;
   const head = document.querySelector('header').offsetHeight;
   const Y = (el) => el.getBoundingClientRect().top + scrollY;
-  const pad = 30;                                   // lề dưới khung Nội dung + khoảng hở trên thanh đáy
-  let y = Math.max(0, Y(adp) - head - 8);
+  const pad = 20;                                   // lề dưới khung Nội dung + khoảng hở trên thanh đáy
+  // Thanh đáy đã có thanh tua ⇒ chỉ chừa hàng nút nghe (bỏ thanh tua trên trang khỏi màn) ⇒ khung chữ cao thêm
+  let y = Math.max(0, Y(adp.querySelector('.adp-ctrls')) - head - 4);
   let h = innerHeight - abar - (Y(box) - y) - pad;
   if (h < 200) {
     y = Y(sec) - head - 4;

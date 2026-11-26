@@ -141,7 +141,7 @@ const chapterCount = (f) => { const m = f.match(/-(\d+)\.txt$/) || f.match(/\+(\
 // Màu ô bìa như Local Cinema: truyện nhiều chương = hồng, truyện 1 chương / không rõ = xanh dương
 // Số chương: alicesw ghi sẵn (ch); nguồn khác lấy từ tên file (-0044.txt / +44.txt)
 const storyChapters = (s) => s.ch || chapterCount(s.file);
-const coverHue = (s) => (storyChapters(s) > 1 ? 335 : 215);
+const coverHue = (s) => (storyChapters(s) > 1 ? 335 : 215); // xanh = truyện 1 chương (anh Thai giữ lại 2026-11-26)
 // Nguồn = thư mục cấp 1 trong Truyện/ (phần đầu uid)
 const sourceOf = (s) => s.uid.split('/')[0];
 // stories.json gọn: { sources: {nguồn: [thư mục truyện, thư mục tóm tắt]}, stories: [{uid, file, category, title, size, has_sum, t?, tags?, was?}] }

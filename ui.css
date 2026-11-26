@@ -105,11 +105,13 @@ main.page { max-width: 1600px; margin: 0 auto; padding: 16px 16px 48px; }
 /* ===================== Màn đọc truyện (#/read) ===================== */
 /* Trang đọc = trang chi tiết audio của Local Cinema: đầu trang có trình phát, Tóm tắt / Nội dung gập mở, Các chương */
 #readView { max-width: 1000px; margin: 0 auto; }
-.ad-head { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 24px; }
+.ad-head { position: relative; display: flex; gap: 20px; align-items: flex-start; margin-bottom: 24px; }
+/* Yêu thích: góc phải trên, cạnh ảnh bìa */
+.ad-fav { position: absolute; top: 0; right: 0; }
 .ad-cover { --h: 330; flex: none; width: 140px; aspect-ratio: 1; border-radius: 14px; display: grid; place-items: center; color: #fff;
   background: linear-gradient(135deg, hsl(var(--h) 55% 42%), hsl(calc(var(--h) + 40) 60% 28%)); box-shadow: 0 10px 30px rgba(0,0,0,.35); }
 .ad-cover .i { width: 56px; height: 56px; stroke-width: 1.5; }
-.ad-main { flex: 1; min-width: 0; }
+.ad-main { flex: 1; min-width: 0; max-width: 100%; }
 .ad-main h1 { font-size: 22px; margin: 4px 0 8px; line-height: 1.35; }
 .meta { color: var(--muted); display: flex; gap: 16px; flex-wrap: wrap; align-items: center; font-size: 13px; }
 .meta span { display: inline-flex; align-items: center; gap: 5px; }
@@ -135,7 +137,7 @@ main.page { max-width: 1600px; margin: 0 auto; padding: 16px 16px 48px; }
 .adp-btn:disabled, .ab-btn:disabled { opacity: .3; cursor: default; background: none; }
 @media (hover: none) { .adp-btn:not(.adp-play):hover, .ab-btn:not(.ab-play):hover { background: none; } .adp-btn:active, .ab-btn:active { opacity: .6; } }
 @media (max-width: 700px) {
-  .ad-head { flex-direction: column; gap: 12px; }
+  .ad-head { flex-direction: column; align-items: stretch; gap: 12px; }
   .ad-cover { width: 96px; border-radius: 12px; }
   .ad-cover .i { width: 40px; height: 40px; }
   .ad-main h1 { font-size: 20px; }
@@ -390,11 +392,10 @@ html { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 /* Trang truyện: tác giả, tình trạng, các tag (bấm ⇒ lọc danh sách) */
 .st-badge { padding: 0 8px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent2); font-size: 12px; font-weight: 600; }
 .st-badge.done { background: color-mix(in srgb, #22c55e 18%, transparent); color: #4ade80; }
-.story-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
-.story-tags .tag { font-size: 12px; padding: 3px 10px; }
-.story-tags .tag.extra { display: none; }
-.story-tags.open .tag.extra { display: inline-block; }
-.story-tags.open .tag-more-inline { display: none; }
+/* Tag thể loại trên trang truyện: 1 dòng duy nhất, vuốt ngang xem hết */
+.story-tags { display: flex; flex-wrap: nowrap; gap: 6px; margin-top: 10px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.story-tags::-webkit-scrollbar { display: none; }
+.story-tags .tag { flex: none; white-space: nowrap; font-size: 12px; padding: 3px 10px; }
 @media (max-width: 700px) {
   .tag-search { width: 130px; }
   .tag-more { margin: -14px 0 20px; }
@@ -413,7 +414,7 @@ html { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 
 /* Khung Nội dung: chữ nằm trong 1 khung cuộn riêng; chiều cao do fitReadBox (reader.js) tính vừa khít tới thanh đáy */
 #textSec { scroll-margin-top: 64px; }
-#storyContent { position: relative; height: 60vh; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+#storyContent { position: relative; height: 60vh; overflow-y: auto; overflow-x: hidden; overflow-wrap: anywhere; touch-action: pan-y; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
   padding-right: 8px; scrollbar-width: thin; }
 /* Tiêu đề khung đọc: [Đọc truyện] … [‹ Trước] [Sau ›] [gập] — Trước / Sau chỉ hiện khi khung đang mở */
 #textSec .sum-h { gap: 8px; }
@@ -465,3 +466,4 @@ html.sheet-open, html.sheet-open body { overflow: hidden; }
 @media (max-width: 700px) {
   .ab-menu { position: fixed; left: 8px; right: 8px; width: auto; bottom: calc(76px + env(safe-area-inset-bottom)); max-height: 60vh; max-height: 60dvh; }
 }
+@media (min-width: 701px) { .ad-main h1 { padding-right: 130px; } }
