@@ -15,6 +15,7 @@ META_JSON = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file_
 # Nguồn alicesw: file nén + danh sách do sync_alicesw.py ghi (tạm chung repo Audio, sau có thể tách repo riêng)
 ALICE_BASE = "Truyện/4-alicesw"
 ALICE_INDEX = os.path.join(ROOT_DIR, ALICE_BASE, "index.json")
+EXTRA_SOURCES = [("18av", "Truyện/5-18av"), ("fsnovel", "Truyện/6-fsnovel"), ("langyou", "Truyện/7-langyou"), ("sosing", "Truyện/8-sosing")]
 # Bảng gộp file Text Mp3 (ten_1/_2/... ⇒ ten.txt), ghi bởi _Tool/3-Làm sạch text/gop_file_text_mp3.py
 MERGE_MAP = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "3-Làm sạch text", "gop_file_map.json")
 
@@ -289,6 +290,31 @@ def main():
                 "author": a["author"],
                 "done": a["done"],
             })
+
+    # 4 nguồn thêm 2026-11-27 (sync_nguon_khac.py tạo, cùng kiểu file nén như alicesw)
+    for key, base in EXTRA_SOURCES:
+        try:
+            with open(os.path.join(ROOT_DIR, base, "index.json"), encoding="utf-8") as f:
+                idx = json.load(f)
+        except FileNotFoundError:
+            continue
+        print(f"Scanning {key} ({len(idx)} truyện)...")
+        sources[key] = [base, "", {"gz": True}]
+        for nid, a in idx.items():
+            tags = a["tags"]
+            st = {
+                "uid": f"{key}/{nid}.txt",
+                "file": a["file"].rsplit("/", 1)[-1],
+                "category": next((t for t in tags if t != "Mẹ con"), tags[0] if tags else key),
+                "title": a["title"],
+                "size": a["size"],
+                "has_sum": False,
+                "t": a["t"],
+                "tags": tags,
+                "ch": a["ch"] or 1,
+            }
+            if a.get("author"): st["author"] = a["author"]
+            all_stories.append(st)
 
     add_chapter_counts(all_stories, sources)
     print(f"Total stories found: {len(all_stories)}")

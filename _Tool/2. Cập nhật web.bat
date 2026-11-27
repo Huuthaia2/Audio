@@ -16,6 +16,10 @@ echo [2/4] Dong bo nguon alicesw (nen truyen moi / doi vao Truyen\4-alicesw)...
 python "%WEB_DIR%\sync_alicesw.py"
 
 echo.
+echo [2b/4] Dong bo 4 nguon: 18av, fsnovel, langyou, sosing (thu muc Truyen 5 den 8)...
+python "%WEB_DIR%\sync_nguon_khac.py"
+
+echo.
 echo [3/4] Tao lai danh sach truyen (stories.json)...
 python "%WEB_DIR%\update_index.py"
 

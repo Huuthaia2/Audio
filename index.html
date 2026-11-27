@@ -250,6 +250,7 @@ route();
 
 // ---- Lưu sẵn trên máy (sw.js): mở app tức thì, truyện đã đọc mở được cả khi mất mạng ----
 // Web trên máy (127.0.0.1, bat 3) KHÔNG dùng ⇒ sửa code xong F5 là thấy ngay; muốn thử thì localStorage sw = '1'
+let resumeCheckAt = 0;
 if ('serviceWorker' in navigator) {
   if (!isLocal || lsGet('sw') === '1') {
     navigator.serviceWorker.register('sw.js').catch(() => {});
@@ -257,13 +258,26 @@ if ('serviceWorker' in navigator) {
       if (e.data && e.data.type === 'update') {
         // Vừa mở app (< 15s) và chưa nghe gì ⇒ tự tải lại lấy bản mới luôn (trước phải chạm thông báo, không chạm thì
         // cả phiên đó vẫn chạy bản cũ — anh Thai push bản sửa lỗi mà điện thoại vẫn dính lỗi cũ)
-        if (performance.now() < 15000 && !(typeof playing !== 'undefined' && playing) && !document.querySelector('.toast-update')) { location.reload(); return; }
+        // Quay lại app (iPhone đánh thức app ghim, không tải lại trang) vừa kiểm có bản mới ⇒ cũng tự tải lại nếu không đang nghe
+        const fresh = performance.now() < 15000 || Date.now() - resumeCheckAt < 15000;
+        if (fresh && !(typeof playing !== 'undefined' && playing)) { location.reload(); return; }
         if (document.querySelector('.toast-update')) return;
         const t = document.createElement('div');
         t.className = 'toast toast-update';
         t.innerHTML = `${icon('refresh', 'sm')} Có bản cập nhật — chạm để tải lại`;
         t.onclick = () => location.reload();
         $('toastContainer').appendChild(t);
+      }
+    });
+    // iPhone: bấm biểu tượng app ghim chỉ ĐÁNH THỨC app đang ngủ (không tải lại trang) ⇒ trước đây không bao giờ kiểm bản mới
+    // cho tới khi app bị tắt hẳn. Rời app > 30s rồi quay lại ⇒ nhờ service worker kiểm khung web + stories.json.
+    let hiddenAt = 0;
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) { hiddenAt = Date.now(); return; }
+      if (hiddenAt && Date.now() - hiddenAt > 30000 && navigator.serviceWorker.controller) {
+        resumeCheckAt = Date.now();
+        navigator.serviceWorker.controller.postMessage({ type: 'check' });
+        navigator.serviceWorker.getRegistration().then((r) => r && r.update()).catch(() => {}); // cả file sw.js mới
       }
     });
   } else {

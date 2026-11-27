@@ -78,7 +78,7 @@ function libRefresh() {
 function renderFilters() {
   const srcCount = {};
   allStories.forEach((s) => srcCount[sourceOf(s)] = (srcCount[sourceOf(s)] || 0) + 1);
-  const ORDER = ['Text Mp3', 'truyencogiaothao', 'alicesw']; // nguồn mới thêm xếp sau
+  const ORDER = ['Text Mp3', 'truyencogiaothao', 'alicesw', 'fsnovel', 'langyou', '18av', 'sosing']; // nguồn mới thêm xếp sau
   const rank = (k) => (ORDER.includes(k) ? ORDER.indexOf(k) : ORDER.length);
   const srcs = Object.keys(srcCount).sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
   $('srcHead').textContent = `Nguồn (${srcs.length})`;
@@ -177,9 +177,9 @@ function rowHtml(s, extraSub = '') {
   </div>`;
 }
 
-// 📁 trên hàng: alicesw có hàng chục tag ⇒ 2 tag cụ thể đầu; nguồn khác ⇒ thể loại
+// 📁 trên hàng: truyện có nhiều tag ⇒ 2 tag cụ thể đầu; truyện chỉ có thể loại ⇒ thể loại
 function rowTags(s) {
-  if (sourceOf(s) !== 'alicesw' || !s.tags) return s.category;
+  if (!s.tags || s.tags.length < 2) return s.category; // nguồn có nhiều tag (alicesw, sosing…) ⇒ 2 tag cụ thể đầu
   return s.tags.filter((t) => t !== 'Mẹ con' && !SKIP_TAGS.has(t)).slice(0, 2).join(', ') || s.category;
 }
 

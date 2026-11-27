@@ -69,12 +69,34 @@ function changed(a, b) {
   return !!(la && lb && la !== lb);
 }
 
-let notified = false;
+// Báo trang có bản mới (tối đa 1 lần / 10s: nhiều file cùng đổi chỉ báo 1 lần; trước chỉ báo 1 lần cả đời service worker
+// ⇒ push lần 2 không báo nữa)
+let notifiedAt = 0;
 async function notify() {
-  if (notified) return;
-  notified = true;
+  if (Date.now() - notifiedAt < 10000) return;
+  notifiedAt = Date.now();
   for (const c of await self.clients.matchAll()) c.postMessage({ type: 'update' });
 }
+
+// Trang nhờ kiểm bản mới (iPhone quay lại app ghim mà không tải lại trang): tải lại khung web + stories.json, khác ⇒ báo
+self.addEventListener('message', (e) => {
+  if (!e.data || e.data.type !== 'check') return;
+  e.waitUntil((async () => {
+    const cache = await caches.open(SHELL);
+    let diff = false;
+    await Promise.all(SHELL_FILES.map(async (f) => {
+      try {
+        const key = new Request(new URL(f, self.location).href);
+        const cached = await cache.match(key);
+        const res = await fetch(key, { cache: 'no-cache' });
+        if (!res.ok) return;
+        if (cached && changed(cached, res)) diff = true;
+        await cache.put(key, res);
+      } catch (err) { /* mất mạng ⇒ thôi */ }
+    }));
+    if (diff) notify();
+  })());
+});
 
 // Giữ STORY_MAX truyện mở gần nhất (mỗi lần mở / tải lại ⇒ lên cuối hàng)
 async function trim(cache) {
