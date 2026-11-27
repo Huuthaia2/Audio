@@ -590,7 +590,11 @@ function summaryHtml(raw) {
       if (rest) html += `<div>${esc(rest)}</div>`;
       continue;
     }
-    html += `<div style="margin-bottom:8px">${esc(t)}</div>`;
+    // Tóm tắt alicesw viết kiểu Markdown: "### 1. Phân tích…", "**đậm**", "- gạch đầu dòng"
+    const md = (x) => esc(x).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+    if (/^#{1,6}\s/.test(t)) { html += `<div class="section-head">${esc(t.replace(/^#+\s*/, '').replace(/\*\*/g, ''))}</div>`; continue; }
+    if (/^[-*•]\s/.test(t)) { html += `<div class="sum-li${/^\s{2,}/.test(line) ? ' sub' : ''}">${md(t.replace(/^[-*•]\s+/, ''))}</div>`; continue; }
+    html += `<div style="margin-bottom:8px">${md(t)}</div>`;
   }
   return html || '<div class="empty">Trống</div>';
 }
@@ -802,53 +806,25 @@ for (const a of pool) {
 }
 document.addEventListener('visibilitychange', () => tlog(document.hidden ? 'TẮT MÀN HÌNH / ẩn app' : 'MỞ MÀN HÌNH / hiện app'));
 
-// =====================================================================
-// Bị app khác / cuộc gọi chiếm loa ⇒ tự đọc tiếp (làm giống Local Cinema — anh Thai 2026-11-27)
-// playing = anh MUỐN đang nghe. Loa đang đọc tự dừng mà KHÔNG phải do app dừng (ourPause) và chưa hết câu ⇒ bị ngắt:
-//   thử phát lại sau 3s, 10s, 30s rồi mỗi 60s (~30 phút). Android: app kia hết tiếng là giành lại loa; iPhone thường chặn
-//   phát khi đang ở nền ⇒ đọc tiếp ngay lúc quay lại app. Rút tai nghe / ngắt Bluetooth ⇒ coi như bấm dừng (không phát ra loa ngoài).
-// =====================================================================
-let interrupted = false, intT = null, devAt = 0;
+// Bị app khác / cuộc gọi chiếm loa, rút tai nghe ⇒ DỪNG hẳn, không tự đọc tiếp (anh Thai chốt 2026-11-27).
+// ourPause = app tự dừng loa (chuyển câu, tải sẵn…); loa đang đọc dừng mà không phải do app ⇒ coi như bấm dừng
+// (trước đây bộ canh tự play() lại sau ~1s ⇒ giành loa với app khác)
 function ourPause(a) { if (!a.paused) a.dataset.selfPause = '1'; a.pause(); }
-const INT_RETRY = [3000, 10000, 30000];
-function resumeAfterInterrupt(n) {
-  clearTimeout(intT);
-  if (n > 32) return;
-  intT = setTimeout(() => {
-    if (!playing || !interrupted) return;
-    curP.play().then(() => { tlog('↺ giành lại loa, đọc tiếp'); keepAliveStart(); }).catch(() => resumeAfterInterrupt(n + 1));
-  }, INT_RETRY[n] ?? 60000);
-}
 for (const a of pool) {
   a.addEventListener('play', () => { delete a.dataset.selfPause; });
-  a.addEventListener('playing', () => { if (a === curP && interrupted) { interrupted = false; clearTimeout(intT); } });
   a.addEventListener('pause', () => {
     const mine = a.dataset.selfPause; delete a.dataset.selfPause;
     if (mine || !playing || a !== curP || a.ended) return;
-    if (Date.now() - devAt < 3000) { tlog('■ rút tai nghe / ngắt Bluetooth ⇒ dừng'); pauseAudio(); return; }
-    interrupted = true;
-    tlog('⚠ bị app khác / cuộc gọi ngắt tiếng ⇒ sẽ tự đọc tiếp', '', a);
-    resumeAfterInterrupt(0);
+    tlog('■ app khác / cuộc gọi / tai nghe dừng tiếng ⇒ DỪNG', '', a);
+    pauseAudio();
   });
 }
-try {
-  navigator.mediaDevices?.addEventListener('devicechange', () => {
-    devAt = Date.now();
-    if (playing && curP.paused) { tlog('■ rút tai nghe / ngắt Bluetooth ⇒ dừng'); pauseAudio(); }
-  });
-} catch (e) {}
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) { if (playing) lsSet('playingAt', String(Date.now())); return; }
-  if (playing && interrupted) {
-    curP.play().then(() => { tlog('↺ quay lại app ⇒ đọc tiếp'); keepAliveStart(); }).catch(() => {});
-  }
-});
 let playing = false, reqId = 0, retryTimer = null, retries = 0;
 let resumeOnVisible = false; // điện thoại chặn phát (NotAllowedError) ⇒ mở lại app thì phát tiếp, không tắt hẳn
 // iPhone: 1 loa CHỈ được tự phát nếu đã từng play() trong lúc người dùng chạm ⇒ loa tải sẵn chưa "mở khoá" bị chặn
 // (NotAllowedError) ⇒ trước đây đọc 1-2 câu là đứng im, chạm 2 lần vào câu mới đọc tiếp. okP = loa vừa phát được;
 // singleSpeaker = có loa bị chặn ⇒ từ đó đọc trên 1 loa okP (mất tải sẵn nhưng không bao giờ đứng)
-let okP = null, singleSpeaker = false, autoResumeTry = false;
+let okP = null, singleSpeaker = false;
 const SILENT = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
 // Gọi trong lúc người dùng chạm (bấm Nghe / chạm 2 lần vào câu): play() rồi pause() ngay từng loa ⇒ iPhone ghi nhận
 // loa đó đã được người dùng cho phép (chỉ cần lời gọi play() trong lúc chạm, không cần phát ra tiếng)
@@ -907,7 +883,6 @@ function pauseAudio() {
   if (playing) tlog('■ DỪNG');
   playing = false;
   resumeOnVisible = false;
-  interrupted = false; clearTimeout(intT); lsSet('playingAt', '');
   reqId++;
   clearTimeout(retryTimer);
   pool.forEach(ourPause);
@@ -982,7 +957,7 @@ function playSeg(scroll) {
   p.muted = false;
   const txt = s.queue[s.seg];
   tlog('▶ câu', `${txt.length}kt "${txt.slice(0, 28)}${txt.length > 28 ? '…' : ''}"${p.dataset.u === url && p.readyState > 0 ? (p.dataset.warm ? ' (tải sẵn, đã làm nóng)' : ' (tải sẵn, CHƯA làm nóng)') : ''}${p.dataset.blob ? ' [bộ nhớ]' : ' [mạng]'}`, p);
-  p.play().then(() => { okP = p; bgDenied = 0; autoResumeTry = false; if (id === reqId) retries = 0; tlog('  phát được', '', p); }).catch((e) => {
+  p.play().then(() => { okP = p; bgDenied = 0; if (id === reqId) retries = 0; tlog('  phát được', '', p); }).catch((e) => {
     tlog('  play() LỖI', e.name + (id !== reqId ? ' (cũ)' : ''), p);
     if (id !== reqId || e.name === 'AbortError') return;
     if (e.name === 'NotAllowedError') {
@@ -999,12 +974,10 @@ function playSeg(scroll) {
         playSeg(false);
         return;
       }
-      // Cả loa đó cũng bị chặn ⇒ dừng hẳn + báo rõ (trước đây đứng im mà nút vẫn hiện đang phát).
-      // Đang thử tự đọc tiếp lúc mở app (autoResumeTry) ⇒ dừng đúng chỗ, không báo lỗi
+      // Cả loa đó cũng bị chặn ⇒ dừng hẳn + báo rõ (trước đây đứng im mà nút vẫn hiện đang phát)
       tlog('⚠ cả loa dự phòng bị chặn ⇒ DỪNG');
       pauseAudio();
-      if (!autoResumeTry) showToast('Điện thoại chặn tự phát — bấm Nghe để đọc tiếp', 'error');
-      autoResumeTry = false;
+      showToast('Điện thoại chặn tự phát — bấm Nghe để đọc tiếp', 'error');
       return;
     }
     retryLater(id);
@@ -1074,7 +1047,7 @@ function watchReload(why) {
   }
 }
 setInterval(() => {
-  if (!playing || resumeOnVisible || interrupted || !player || player.pendingNext) { watchStuck = 0; return; }
+  if (!playing || resumeOnVisible || !player || player.pendingNext) { watchStuck = 0; return; }
   const key = player.ch + ':' + player.seg;
   if (key !== watchSeg) { watchSeg = key; watchReloads = 0; }
   const t = curP.currentTime;
@@ -1365,8 +1338,6 @@ async function restoreLastPlayed() {
     document.documentElement.classList.add('has-abar'); refitReadBox();
     paintAll();
     updateFoldBtn();
-    const at = +lsGet('playingAt') || 0;
-    if (at && Date.now() - at < 30 * 60e3) { autoResumeTry = true; tlog('↺ app bị đóng lúc đang nghe ⇒ thử đọc tiếp'); startPlay(s); }
   } catch (e) {}
 }
 restoreLastPlayed();

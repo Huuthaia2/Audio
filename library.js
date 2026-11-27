@@ -8,7 +8,7 @@ let allStories = [];
 let byUid = new Map();
 let sortedByName = [], sortedBySize = [], sortedByNew = []; // sắp sẵn 1 lần lúc tải; lọc giữ nguyên thứ tự ⇒ không phải sắp lại mỗi lần gõ
 let filtered = [];
-let lib = { src: 'all', tags: [], sort: 'name', page: 1, hideDone: false };
+let lib = { srcs: [], tags: [], sort: 'name', page: 1, hideDone: false, q: '' }; // q = từ khoá đã chốt (Enter / "Xem tất cả")
 let showAllTags = false;           // "Xem tất cả tag": mặc định chỉ 2 dòng
 const SKIP_TAGS = new Set(['R-18', 'Tiếng Trung']); // không phải thể loại (anh Thai chốt 2026-11-25)
 let libScroll = 0;
@@ -42,16 +42,16 @@ async function ensureStories() {
 
 // ---- Nhớ trạng thái (tải lại trang / mở lại tab vẫn đúng chỗ) ----
 function saveLibState() {
-  sessionStorage.setItem('libraryState', JSON.stringify({ ...lib, search: $('searchInput').value, scroll: libScroll }));
+  sessionStorage.setItem('libraryState', JSON.stringify({ ...lib, scroll: libScroll }));
 }
 function restoreLibState() {
   try {
     const st = JSON.parse(sessionStorage.getItem('libraryState'));
     if (!st) return;
     const old = st.tag || st.cat; // bản cũ chỉ lọc 1 tag (chuỗi)
-    lib = { src: st.src || 'all', tags: Array.isArray(st.tags) ? st.tags : old && old !== 'all' ? [old] : [],
-      sort: st.sort || 'name', page: st.page || 1, hideDone: !!st.hideDone };
-    $('searchInput').value = st.search || '';
+    lib = { srcs: Array.isArray(st.srcs) ? st.srcs : st.src && st.src !== 'all' ? [st.src] : [], tags: Array.isArray(st.tags) ? st.tags : old && old !== 'all' ? [old] : [],
+      sort: st.sort || 'name', page: st.page || 1, hideDone: !!st.hideDone, q: st.q ?? st.search ?? '' };
+    $('searchInput').value = lib.q;
     libScroll = st.scroll || 0;
   } catch (e) {}
 }
@@ -75,6 +75,7 @@ function libRefresh() {
 }
 
 // ---- Nguồn + Tag ----
+const srcOk = (s) => !lib.srcs.length || lib.srcs.includes(sourceOf(s));
 function renderFilters() {
   const srcCount = {};
   allStories.forEach((s) => srcCount[sourceOf(s)] = (srcCount[sourceOf(s)] || 0) + 1);
@@ -82,10 +83,10 @@ function renderFilters() {
   const rank = (k) => (ORDER.includes(k) ? ORDER.indexOf(k) : ORDER.length);
   const srcs = Object.keys(srcCount).sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
   $('srcHead').textContent = `Nguồn (${srcs.length})`;
-  $('srcList').innerHTML = srcs.map((k) => `<button class="fcard${lib.src === k ? ' on' : ''}" data-src="${esc(k)}">
-      <div class="fimg">${icon('folder')}</div>
-      <div><div class="fname">${esc(k)}</div><div class="fcount">${srcCount[k]} truyện</div></div>
-    </button>`).join('');
+  // Nguồn = ô tích chọn gọn (anh Thai chốt 2026-11-27): tích nhiều nguồn ⇒ truyện thuộc 1 trong các nguồn đã tích; không tích = tất cả
+  lib.srcs = lib.srcs.filter((k) => srcCount[k]);
+  $('srcList').innerHTML = `<button class="src-ck${lib.srcs.length ? '' : ' on'}" data-src="all"><span class="box">${icon('check')}</span>Tất cả<small>${allStories.length}</small></button>`
+    + srcs.map((k) => `<button class="src-ck${lib.srcs.includes(k) ? ' on' : ''}" data-src="${esc(k)}"><span class="box">${icon('check')}</span>${esc(k)}<small>${srcCount[k]}</small></button>`).join('');
 
 }
 
@@ -139,17 +140,17 @@ window.addEventListener('resize', () => { clearTimeout(clampTimer); clampTimer =
 function applyFilter(resetPage = true) {
   if (resetPage) lib.page = 1;
   renderFilters();
-  const q = removeAccents($('searchInput').value.trim());
-  const base = (lib.sort === 'size' ? sortedBySize : lib.sort === 'new' ? sortedByNew : sortedByName).filter((s) => (lib.src === 'all' || sourceOf(s) === lib.src)
+  const q = lib.q, words = qWords(q);
+  const base = (lib.sort === 'size' ? sortedBySize : lib.sort === 'new' ? sortedByNew : sortedByName).filter((s) => srcOk(s)
     && (!lib.hideDone || !histGet(s.uid)?.done)
-    && (!q || s._q.includes(q)));
+    && qMatch(s, words));
   filtered = lib.tags.length ? base.filter((s) => lib.tags.every((t) => s._tags.has(t))) : base;
   renderTags(base.length);
 
   document.querySelectorAll('#sortChips .chip').forEach((b) => b.classList.toggle('on', b.dataset.sort === lib.sort));
   $('hideDone').checked = lib.hideDone;
-  const parts = [lib.src !== 'all' ? lib.src : '', lib.tags.join(' + ')].filter(Boolean);
-  $('viewTitle').textContent = q ? `Kết quả: “${$('searchInput').value.trim()}”` : (parts.join(' · ') || 'Tất cả truyện');
+  const parts = [lib.srcs.join(', '), lib.tags.join(' + ')].filter(Boolean);
+  $('viewTitle').textContent = q ? `Kết quả: “${q}”` : (parts.join(' · ') || 'Tất cả truyện');
   $('viewCount').textContent = `${filtered.length} truyện`;
   $('statsText').textContent = `${allStories.length} truyện`;
   $('loading').style.display = 'none';
@@ -185,8 +186,8 @@ function rowTags(s) {
 
 // Bấm tag trên trang truyện ⇒ về danh sách, lọc đúng nguồn + tag đó
 function libFilterTag(src, tag) {
-  lib.src = src; lib.tags = tag ? [tag] : []; lib.page = 1;
-  $('searchInput').value = ''; $('tagSearch').value = '';
+  lib.srcs = src && src !== 'all' ? [src] : []; lib.tags = tag ? [tag] : []; lib.page = 1;
+  lib.q = ''; $('searchInput').value = ''; $('tagSearch').value = '';
   libScroll = 0;
   saveLibState();
   if (libReady) applyFilter();
@@ -242,10 +243,10 @@ function goPage(n) {
 function renderResume() {
   if (!libReady) return;
   // Chọn Nguồn / Tag ⇒ vẫn hiện, chỉ lọc theo nguồn / tag đó (như "Đang nghe dở" trong thư mục của Local Cinema)
-  const inView = (s) => (lib.src === 'all' || sourceOf(s) === lib.src) && lib.tags.every((t) => s._tags.has(t));
-  const items = histList().filter(([uid, h]) => !h.done && byUid.has(uid) && inView(byUid.get(uid))).slice(0, 5);
+  const inView = (s) => srcOk(s) && lib.tags.every((t) => s._tags.has(t));
+  const items = histList().filter(([uid, h]) => !h.done && byUid.has(uid) && inView(byUid.get(uid))).slice(0, 3);
   $('resumeList').innerHTML = items.map(([uid]) => rowHtml(byUid.get(uid))).join('');
-  $('resumeSec').hidden = !items.length || !!$('searchInput').value.trim();
+  $('resumeSec').hidden = !items.length || !!lib.q;
 }
 
 // Truyện đang nghe (reader.js gọi khi đổi trạng thái): tô hàng + ô bìa 3 vạch nhảy
@@ -359,8 +360,13 @@ function onRowClick(e) {
 $('histView').addEventListener('click', onRowClick);
 $('libView').addEventListener('click', (e) => {
   if (onRowClick(e)) return;
-  const src = e.target.closest('.fcard[data-src]');
-  if (src) { lib.src = lib.src === src.dataset.src ? 'all' : src.dataset.src; applyFilter(); return; }
+  const src = e.target.closest('.src-ck[data-src]');
+  if (src) {
+    const k = src.dataset.src;
+    lib.srcs = k === 'all' ? [] : lib.srcs.includes(k) ? lib.srcs.filter((x) => x !== k) : [...lib.srcs, k];
+    applyFilter();
+    return;
+  }
   const tag = e.target.closest('.tag[data-tag]');
   if (tag) {
     // "Tất cả" ⇒ bỏ hết tag; tag đã chọn ⇒ bỏ; tag khác ⇒ thêm (truyện phải có đủ các tag đã chọn)
@@ -385,13 +391,72 @@ $('hideDone').onchange = () => { lib.hideDone = $('hideDone').checked; applyFilt
 $('tagMore').onclick = () => { showAllTags = !showAllTags; applyFilter(false); };
 let tqTimer;
 $('tagSearch').addEventListener('input', () => { clearTimeout(tqTimer); tqTimer = setTimeout(() => applyFilter(false), 150); });
+// =====================================================================
+// Ô tìm kiểu Local Cinema (anh Thai chốt 2026-11-27): gõ tới đâu thả xuống 8 truyện khớp tới đó + "Xem tất cả N kết quả";
+// KHÔNG lọc cả danh sách theo từng phím. Enter / "Xem tất cả" ⇒ danh sách = kết quả. Xoá trắng ô ⇒ về danh sách đầy đủ.
+// Khớp: mọi từ (bỏ dấu) đều có trong tên / tên file / tag ⇒ số "Xem tất cả N" = số truyện ở danh sách kết quả.
+// =====================================================================
+const qWords = (q) => removeAccents(q.trim()).split(/\s+/).filter(Boolean);
+const qMatch = (s, words) => words.every((w) => s._q.includes(w));
+const qDrop = document.createElement('div');
+qDrop.className = 'qdrop'; qDrop.hidden = true;
+$('searchBox').append(qDrop);
 let qTimer;
-$('searchInput').addEventListener('input', () => { clearTimeout(qTimer); qTimer = setTimeout(() => applyFilter(), 150); });
+function qSuggest() {
+  const words = qWords($('searchInput').value);
+  if (!words.length || !libReady) { qDrop.hidden = true; return; }
+  // Xếp gợi ý: tên chứa nguyên cụm đã gõ ⇒ tên có đủ các từ (đầu từ) ⇒ còn lại (khớp tag / tên file)
+  const phrase = words.join(' '), best = [[], [], []];
+  let n = 0;
+  for (const s of sortedByName) {
+    if (!qMatch(s, words)) continue;
+    n++;
+    const t = s._t ??= ' ' + removeAccents(s.title).replace(/[^a-z0-9]+/g, ' ');
+    const r = t.includes(' ' + phrase) ? 0 : words.every((w) => t.includes(' ' + w)) ? 1 : 2;
+    if (best[r].length < 8) best[r].push(s);
+  }
+  const hits = best.flat().slice(0, 8);
+  qDrop.innerHTML = hits.length ? hits.map((s) => {
+    const ch = storyChapters(s);
+    return `<a class="qitem" href="${readLink(s.uid, s.has_raw ? 'raw' : 'sum')}">
+      <span class="acover" style="--h:${coverHue(s)}">${icon('headphones')}</span>
+      <span class="qtext"><span class="qtitle">${esc(s.title)}</span><span class="qsub">${esc(sourceOf(s))} · ${esc(rowTags(s))}${ch > 1 ? ` · ${ch} chương` : ''} · ${fmtSize(s.size)}</span></span>
+    </a>`;
+  }).join('') + `<button type="button" class="qall">Xem tất cả ${n} kết quả</button>`
+    : '<div class="qnone">Không có kết quả</div>';
+  qDrop.hidden = false;
+}
+function qCommit() {
+  clearTimeout(qTimer);
+  qDrop.hidden = true; $('searchInput').blur();
+  lib.q = $('searchInput').value.trim();
+  if (location.hash !== '#/' && location.hash !== '') location.hash = '#/';
+  applyFilter();
+  setTimeout(() => { $('viewTitle').scrollIntoView({ block: 'start' }); window.scrollBy(0, -70); }, 50);
+}
+$('searchInput').addEventListener('input', () => {
+  clearTimeout(qTimer);
+  if (!$('searchInput').value.trim() && lib.q) { qDrop.hidden = true; lib.q = ''; applyFilter(); return; } // xoá trắng ⇒ bỏ tìm
+  qTimer = setTimeout(qSuggest, 150);
+});
+$('searchInput').addEventListener('focus', () => { if ($('searchInput').value.trim()) qSuggest(); });
+// Ô tìm nằm trong <form> ⇒ nút Nhập / Tìm của bàn phím ảo (kể cả lúc đang gõ dấu tiếng Việt, Android không báo phím Enter)
+// luôn gửi form ⇒ chốt tìm + blur ô ⇒ bàn phím ẩn đi
+$('searchBox').addEventListener('submit', (e) => { e.preventDefault(); qCommit(); });
+$('searchBox').addEventListener('click', (e) => { if (!e.target.closest('.qdrop')) $('searchInput').focus(); }); // bấm kính lúp = bấm ô
+$('searchInput').addEventListener('keydown', (e) => { if (e.key === 'Escape') qDrop.hidden = true; });
+$('searchInput').addEventListener('blur', () => { qDrop.hidden = true; });
+qDrop.addEventListener('mousedown', (e) => e.preventDefault()); // bấm thẻ không làm ô tìm mất focus trước khi click
+qDrop.addEventListener('click', (e) => {
+  if (e.target.closest('.qall')) { e.preventDefault(); qCommit(); return; }
+  if (e.target.closest('.qitem')) { qDrop.hidden = true; $('searchInput').blur(); }
+});
+addEventListener('hashchange', () => { qDrop.hidden = true; });
 let sTimer;
 window.addEventListener('scroll', () => {
   if ($('libView').hidden) return;
   clearTimeout(sTimer);
-  sTimer = setTimeout(() => { libScroll = window.scrollY; saveLibState(); }, 150);
+  sTimer = setTimeout(() => { if ($('libView').hidden) return; libScroll = window.scrollY; saveLibState(); }, 150); // đã sang trang khác ⇒ không ghi đè chỗ cuộn
 }, { passive: true });
 
 

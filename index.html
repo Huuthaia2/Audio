@@ -26,10 +26,10 @@
   <div class="bar">
     <button class="icon-btn round" id="backBtn" title="Về danh sách" hidden><i data-i="left"></i></button>
     <a class="logo" href="#/">Kho<span>Truyện</span></a>
-    <label class="search" id="searchBox">
-      <input id="searchInput" type="text" placeholder="Tìm kiếm tên truyện, tag..." autocomplete="off">
+    <form class="search" id="searchBox" role="search" action="javascript:void 0">
+      <input id="searchInput" type="text" enterkeyhint="search" placeholder="Tìm kiếm tên truyện, tag..." autocomplete="off">
       <i data-i="search"></i>
-    </label>
+    </form>
     <span class="bar-stat" id="statsText"></span>
     <a class="icon-btn round" id="favBtn" href="#/favorites" title="Yêu thích"><i data-i="heart"></i></a>
     <a class="icon-btn round" id="histBtn" href="#/history" title="Lịch sử nghe"><i data-i="history"></i></a>
@@ -72,7 +72,7 @@
     </section>
 
     <div class="sec-head"><h2 class="section-h" id="srcHead">Nguồn</h2></div>
-    <div class="folders" id="srcList"></div>
+    <div class="src-list" id="srcList"></div>
 
     <!-- Tag: chọn nhiều tag ⇒ truyện phải có ĐỦ các tag đã chọn; mặc định hiện tag ≥ 10 truyện + ô tìm tag -->
     <div class="sec-head"><h2 class="section-h" id="tagHead">Tag</h2><input id="tagSearch" class="tag-search" type="search" placeholder="Tìm tag..." autocomplete="off"></div>
