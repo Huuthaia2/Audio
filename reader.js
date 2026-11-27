@@ -670,14 +670,28 @@ async function ttsAnalyze(buf) {
   try {
     const C = window.OfflineAudioContext || window.webkitOfflineAudioContext;
     if (!C) return null;
-    decodeCtx = decodeCtx || new C(1, 2, 22050);
+    decodeCtx = decodeCtx || new C(1, 2, 24000); // Google TTS = 24 kHz mono
     const ab = await decodeCtx.decodeAudioData(buf);
     const d = ab.getChannelData(0), sr = ab.sampleRate, TH = 0.004; // ~ -48 dB
     let i = 0; while (i < d.length && Math.abs(d[i]) < TH) i++;
     let j = d.length - 1; while (j > i && Math.abs(d[j]) < TH) j--;
     if (i >= j) return null;
-    return { lead: Math.max(0, i / sr - 0.03), end: Math.min(ab.duration, j / sr + 0.06), dur: ab.duration };
+    // Cắt sẵn thành file WAV CHỈ CÓ PHẦN CÓ TIẾNG (chừa 0,03s trước + 0,06s sau) ⇒ file tự hết đúng lúc hết tiếng: không
+    // cần hẹn giờ chuyển câu sớm (iPhone tắt màn hình hãm hẹn giờ ⇒ trước đó vẫn phát hết 0,2-0,9s im lặng cuối file)
+    const a = Math.max(0, i - Math.round(0.03 * sr)), b = Math.min(d.length, j + Math.round(0.06 * sr));
+    // lead 0,02 (trong 0,03s đệm): loa đứng chờ ở đúng 0 thì khởi động chậm ~120ms, lệch khỏi 0 một chút thì phát ngay
+    return { wav: pcmToWav(d.subarray(a, b), sr), lead: 0.02, end: (b - a) / sr, dur: (b - a) / sr };
   } catch (e) { return null; }
+}
+// PCM float ⇒ WAV 16-bit mono (Blob)
+function pcmToWav(f, sr) {
+  const n = f.length, buf = new ArrayBuffer(44 + n * 2), v = new DataView(buf);
+  const str = (o, t) => { for (let k = 0; k < t.length; k++) v.setUint8(o + k, t.charCodeAt(k)); };
+  str(0, 'RIFF'); v.setUint32(4, 36 + n * 2, true); str(8, 'WAVEfmt '); v.setUint32(16, 16, true); v.setUint16(20, 1, true);
+  v.setUint16(22, 1, true); v.setUint32(24, sr, true); v.setUint32(28, sr * 2, true); v.setUint16(32, 2, true);
+  v.setUint16(34, 16, true); str(36, 'data'); v.setUint32(40, n * 2, true);
+  for (let k = 0; k < n; k++) { const x = Math.max(-1, Math.min(1, f[k])); v.setInt16(44 + k * 2, x < 0 ? x * 0x8000 : x * 0x7fff, true); }
+  return new Blob([buf], { type: 'audio/wav' });
 }
 function memPump() {
   while (memBusy < MEM_PAR && memQueue.length) {
@@ -689,7 +703,9 @@ function memPump() {
       .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.arrayBuffer(); })
       .then(async (buf) => {
         const info = await ttsAnalyze(buf.slice(0));
-        Object.assign(m, { st: 'ok', url: URL.createObjectURL(new Blob([buf], { type: 'audio/mpeg' })) }, info || {});
+        // Có file đã cắt im lặng ⇒ phát file đó (trim = true); giải mã lỗi ⇒ phát nguyên file mp3 như cũ
+        const blob = info && info.wav ? info.wav : new Blob([buf], { type: 'audio/mpeg' });
+        Object.assign(m, { st: 'ok', url: URL.createObjectURL(blob), trim: !!(info && info.wav) }, info ? { lead: info.lead, end: info.end, dur: info.dur } : {});
         memFails = 0;
       })
       .catch((e) => { m.st = 'err'; memFails++; tlog('⚠ trạm giọng đọc lỗi', e.message, null); })
@@ -720,6 +736,7 @@ const memInfo = (t) => { const m = MEM.get(t); return m && m.st === 'ok' && m.en
 //   kết bằng , ; :  ⇒ nhỏ nhất 0,82s | kết bằng . ? ! … " ” ⇒ 0,21s | kết bằng chữ (câu dài cắt đôi) ⇒ 0,166s
 // ⇒ cắt chừa ~0,04s dự phòng dưới mức nhỏ nhất. Tính theo thời gian FILE; hẹn giờ chia cho tốc độ đọc ⇒ mọi tốc độ đều đúng.
 const TTS_LEAD = 0.06;
+const TTS_OVERLAP = 0.015; // câu sau khởi động sớm hơn lúc hết tiếng câu trước (gối vào 0,03s đệm im lặng đầu file của nó)
 const ttsTail = (t) => (/[,;:]\s*$/.test(t) ? 0.70 : /[.?!…"”'»)]\s*$/.test(t) ? 0.17 : 0.12);
 let earlyT = null, earlyArmed = 0;
 function armEarly(p, id) {
@@ -729,15 +746,28 @@ function armEarly(p, id) {
   earlyArmed = id;
   const mi = memInfo(player.queue[player.seg] || '');
   // Đã dò được chỗ hết tiếng (blob) ⇒ cắt đúng phần im lặng còn lại; chưa ⇒ mức an toàn theo dấu câu
-  const tail = mi && p.dataset.blob && Math.abs(p.duration - mi.dur) < 0.3 ? Math.max(0, p.duration - mi.end) : ttsTail(player.queue[player.seg] || '');
-  const ms = (p.duration - p.currentTime - tail) / (p.playbackRate || 1) * 1000;
-  earlyT = setTimeout(() => {
+  // File đã cắt: chuyển GỐI ĐẦU — câu sau khởi động sớm TTS_OVERLAP giây trước lúc hết tiếng (trình phát cần ~20ms mới chạy),
+  // câu trước vẫn phát nốt đuôi + 0,06s đệm im lặng rồi mới dừng ⇒ không hở, không mất chữ (chỉ chồng lên phần im lặng).
+  const overlap = mi && mi.trim && p.dataset.blob;
+  const tail = overlap ? 0.06 + TTS_OVERLAP
+    : mi && p.dataset.blob && Math.abs(p.duration - mi.dur) < 0.3 ? Math.max(0, p.duration - mi.end) : ttsTail(player.queue[player.seg] || '');
+  const remain = () => (p.duration - p.currentTime - tail) / (p.playbackRate || 1);
+  const fire = () => {
     if (!playing || id !== reqId || p !== curP || p.paused) return;
-    if (p.duration - p.currentTime > tail + 0.15) { armEarly(p, id); return; } // bị khựng giữa chừng ⇒ hẹn lại
-    tlog('  → chuyển sớm (bỏ ' + tail + 's im lặng cuối)', '', p);
-    p.pause();
+    // Kiểm lại vị trí THẬT trước khi chuyển: hẹn giờ tính theo currentTime đọc lúc trước (hơi cũ) ⇒ hay bấm sớm 50-80ms,
+    // câu sau đè đuôi chữ câu trước. Chưa tới điểm ⇒ hẹn tiếp phần còn lại (chạy sát điểm thì bước 4ms).
+    const r = remain();
+    if (r > 0.004) { earlyT = setTimeout(fire, Math.max(4, Math.min(r * 1000 - 8, 250))); return; }
+    tlog('  → chuyển sớm (bỏ ' + tail.toFixed(2) + 's im lặng cuối)' + (overlap ? ', gối đầu' : ''), '', p);
+    if (overlap) {
+      // Giữ loa cũ phát nốt đuôi; không cho tải sẵn đè lên loa này cho tới khi nó dừng
+      p.dataset.tailing = '1';
+      const left = (p.duration - p.currentTime) / (p.playbackRate || 1) * 1000 + 30;
+      setTimeout(() => { if (p !== curP) p.pause(); delete p.dataset.tailing; if (player && playing) fillPreload(player); }, left);
+    } else p.pause();
     if (p.onended) p.onended();
-  }, Math.max(0, ms));
+  };
+  earlyT = setTimeout(fire, Math.max(0, remain() * 1000 - 120)); // dậy sớm 120ms rồi kiểm sát dần tới đúng điểm
 }
 // 4 loa: 1 đang đọc + 3 tải sẵn 3 câu kế (mạng chập chờn ⇒ ít khựng giữa câu). Mỗi loa nhớ câu đang giữ ở dataset.u
 const PRELOAD = 3;
@@ -859,7 +889,7 @@ function fillPreload(s) {
     const held = pool.find((a) => a.dataset.u === u && !a.error);
     if (held && (held.dataset.blob || !ready)) continue;
     if (!ready && m && m.st === 'loading') continue;
-    const free = held || pool.find((a) => a !== curP && !wantU.includes(a.dataset.u));
+    const free = held || pool.find((a) => a !== curP && !a.dataset.tailing && !wantU.includes(a.dataset.u));
     if (!free || free === curP) break;
     free.src = ready ? m.url : u; free.dataset.u = u; delete free.dataset.warm;
     if (ready) free.dataset.blob = '1'; else delete free.dataset.blob;
@@ -893,7 +923,7 @@ function playSeg(scroll) {
   // Android tắt màn hình vẫn chuyển loa + tải sẵn được (đo trên máy thật) ⇒ hết khoảng chờ tải mỗi câu lúc tắt màn hình.
   if (!(document.hidden && IS_IOS) && !singleSpeaker) {
     const ready = pool.find((a) => a.dataset.u === url && !a.error);
-    curP = ready || pool.find((a) => a !== curP && !a.dataset.u) || pool.find((a) => a !== curP) || curP;
+    curP = ready || pool.find((a) => a !== curP && !a.dataset.tailing && !a.dataset.u) || pool.find((a) => a !== curP && !a.dataset.tailing) || curP;
   }
   // Loa tải sẵn câu này mà bị lỗi (Google từ chối / rớt mạng) ⇒ tải lại; trước đây phát file lỗi ⇒ dừng hẳn
   if (curP.dataset.u === url && curP.error) tlog('  loa tải sẵn câu này bị lỗi ⇒ tải lại', '', curP);
