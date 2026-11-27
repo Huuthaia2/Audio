@@ -273,7 +273,8 @@ def main():
         print(f"(Chưa có {ALICE_BASE}/index.json — chạy sync_alicesw.py trước để có nguồn alicesw)")
     if alice:
         print(f"Scanning alicesw ({len(alice)} truyện)...")
-        sources["alicesw"] = [ALICE_BASE, "", {"gz": True}]
+        ALICE_SUM = "Truyện/3-Tóm tắt/4-alicesw"  # sync_alicesw.py chép từ alicesw/summaries (anh Thai thêm 2026-11-27)
+        sources["alicesw"] = [ALICE_BASE, ALICE_SUM, {"gz": True}]
         for nid, a in alice.items():
             tags = a["tags"]
             all_stories.append({
@@ -283,7 +284,7 @@ def main():
                 "category": next((t for t in tags if t != "Mẹ con"), tags[0] if tags else "alicesw"),
                 "title": a["title"],
                 "size": a["size"],
-                "has_sum": False,
+                "has_sum": os.path.exists(os.path.join(ROOT_DIR, ALICE_SUM, f"{nid}.txt")),
                 "t": a["t"],
                 "tags": tags,
                 "ch": a["ch"],

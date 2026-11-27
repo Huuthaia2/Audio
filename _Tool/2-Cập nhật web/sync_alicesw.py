@@ -122,6 +122,7 @@ def main():
 
     # 1) Đọc thông tin mọi file; trùng id ⇒ giữ bản nhiều chương hơn (bằng nhau ⇒ file mới hơn)
     best, total, no_id = {}, 0, 0
+    names = {}  # id ⇒ mọi tên file của truyện đó (kể cả bản trùng) ⇒ tóm tắt đặt theo tên bản trùng vẫn khớp
     for root, _, files in os.walk(SRC_DIR):
         rel = os.path.relpath(root, SRC_DIR)
         folder = "" if rel == "." else rel.split(os.sep)[0]
@@ -133,6 +134,7 @@ def main():
             if not info:
                 no_id += 1
                 continue
+            names.setdefault(info["id"], []).append(name)
             cur = best.get(info["id"])
             if not cur or (info["ch"], info["src_mtime"]) > (cur["ch"], cur["src_mtime"]):
                 best[info["id"]] = info
@@ -203,10 +205,62 @@ def main():
         json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
     gz_mb = sum(os.path.getsize(os.path.join(TXT_DIR, n)) for n in os.listdir(TXT_DIR) if n.endswith(".txt.gz")) / 1e6
     print(f"[OK] alicesw: {len(best)} truyện | nén mới {changed} | xoá {removed} | tổng .gz {gz_mb:.0f} MB")
+    sync_summaries(best, names)
     if missing["tags"] or missing["authors"]:
         print(f"[!] Chưa có trong alicesw_dich.json (giữ nguyên bản Google): {len(missing['tags'])} tag, "
               f"{len(missing['authors'])} tác giả — vd: {', '.join(sorted(missing['tags'])[:8])}")
     return 0
+
+
+SUM_SRC = os.path.join(os.path.dirname(ROOT_DIR), "alicesw", "summaries")
+SUM_OUT = os.path.join(ROOT_DIR, "Truyện", "3-Tóm tắt", "4-alicesw")
+
+
+def sum_key(name):
+    """Tên file bỏ đuôi "+N Chuong(_end).txt" ⇒ khớp tóm tắt với truyện cả khi truyện đã ra thêm chương (file đổi tên)."""
+    return re.sub(r"\+\d+\s*Chuong(_end)?\.txt$|\.txt$", "", name).strip().lower()
+
+
+def sync_summaries(best, names):
+    """Tóm tắt alicesw (anh Thai thêm 2026-11-27): alicesw/summaries/<tên file truyện> ⇒ Truyện/3-Tóm tắt/4-alicesw/<id>.txt
+    (web mở theo <thư mục tóm tắt>/<id truyện>). Chỉ ghi file đổi; truyện không còn tóm tắt ⇒ xoá."""
+    if not os.path.isdir(SUM_SRC):
+        print(f"[!] Không thấy thư mục tóm tắt: {SUM_SRC}")
+        return
+    os.makedirs(SUM_OUT, exist_ok=True)
+    by_name, by_key = {}, {}
+    for n in os.listdir(SUM_SRC):
+        if n.endswith(".txt"):
+            by_name[n] = n
+            by_key.setdefault(sum_key(n), n)
+    want, used, written = set(), set(), 0
+    for nid, info in best.items():
+        cands = [info["file"].rsplit("/", 1)[-1]] + names.get(nid, [])
+        src = next((by_name[c] for c in cands if c in by_name), None) or next((by_key[sum_key(c)] for c in cands if sum_key(c) in by_key), None)
+        if not src:
+            continue
+        with open(os.path.join(SUM_SRC, src), "rb") as f:
+            data = f.read()
+        if not data.strip():
+            continue
+        out = os.path.join(SUM_OUT, nid + ".txt")
+        want.add(nid + ".txt"); used.add(src)
+        try:
+            with open(out, "rb") as f:
+                if f.read() == data:
+                    continue
+        except FileNotFoundError:
+            pass
+        with open(out, "wb") as f:
+            f.write(data)
+        written += 1
+    removed = 0
+    for n in os.listdir(SUM_OUT):
+        if n not in want:
+            os.remove(os.path.join(SUM_OUT, n))
+            removed += 1
+    print(f"[OK] Tóm tắt alicesw: {len(want)}/{len(best)} truyện có tóm tắt | ghi mới {written} | xoá {removed}"
+          f" | {len(by_name) - len(used)} file tóm tắt không khớp truyện nào")
 
 
 if __name__ == "__main__":
